@@ -20,15 +20,15 @@
           <text id="/covid_rdt/cleanup_group:label">
             <value>Test Cleanup</value>
           </text>
-          <text id="/covid_rdt/disinfect_group/generated_note_name_32:label">
+          <text id="/covid_rdt/disinfect_group/generated_note_name_33:label">
             <value form="image">jr://images/collect_blood.png</value>
             <value>Collect blood into capillary tube or sampler (~20-50uL)</value>
           </text>
-          <text id="/covid_rdt/disinfect_group/generated_note_name_33:label">
+          <text id="/covid_rdt/disinfect_group/generated_note_name_34:label">
             <value form="image">jr://images/blood_to_well.png</value>
             <value>Put the blood into the sample well of the cassette</value>
           </text>
-          <text id="/covid_rdt/disinfect_group/generated_note_name_34:label">
+          <text id="/covid_rdt/disinfect_group/generated_note_name_35:label">
             <value form="image">jr://images/buffer_to_well.png</value>
             <value>After the blood has completely entered the sample well, add 2 to 3 drops (70 to 100μl) of buffer solution. Make sure to test on a level surface at room temperature.</value>
           </text>
@@ -50,7 +50,7 @@
           <text id="/covid_rdt/finger_group/finger:label">
             <value>Prick the patient's finger</value>
           </text>
-          <text id="/covid_rdt/finger_group/generated_note_name_29:label">
+          <text id="/covid_rdt/finger_group/generated_note_name_30:label">
             <value form="image">jr://images/finger.png</value>
           </text>
           <text id="/covid_rdt/finger_group:label">
@@ -58,6 +58,9 @@
           </text>
           <text id="/covid_rdt/has_symptoms:label">
             <value>Has Symptoms</value>
+          </text>
+          <text id="/covid_rdt/inputs/contact/_id:label">
+            <value>_id</value>
           </text>
           <text id="/covid_rdt/inputs/contact/date_of_birth:label">
             <value>Date of birth</value>
@@ -86,7 +89,7 @@
           <text id="/covid_rdt/inputs:label">
             <value>Patient</value>
           </text>
-          <text id="/covid_rdt/interpret_group/generated_note_name_41:label">
+          <text id="/covid_rdt/interpret_group/generated_note_name_42:label">
             <value form="image">jr://images/interpretation_guide.png</value>
           </text>
           <text id="/covid_rdt/interpret_group/interpretation/c:label">
@@ -164,7 +167,7 @@
           <text id="/covid_rdt/summary-group:label">
             <value>Summary of Assessment Result</value>
           </text>
-          <text id="/covid_rdt/symptoms_group/generated_note_name_19:label">
+          <text id="/covid_rdt/symptoms_group/generated_note_name_20:label">
             <value>&amp;lt;style&amp;gt;.pages .loader { display: none; }&amp;lt;/style&amp;gt;</value>
           </text>
           <text id="/covid_rdt/symptoms_group/symptoms/breathing:label">
@@ -226,15 +229,15 @@
           <text id="/covid_rdt/cleanup_group:label">
             <value>-</value>
           </text>
-          <text id="/covid_rdt/disinfect_group/generated_note_name_32:label">
-            <value form="image">jr://images/-</value>
-            <value>-</value>
-          </text>
           <text id="/covid_rdt/disinfect_group/generated_note_name_33:label">
             <value form="image">jr://images/-</value>
             <value>-</value>
           </text>
           <text id="/covid_rdt/disinfect_group/generated_note_name_34:label">
+            <value form="image">jr://images/-</value>
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/disinfect_group/generated_note_name_35:label">
             <value form="image">jr://images/-</value>
             <value>-</value>
           </text>
@@ -256,13 +259,16 @@
           <text id="/covid_rdt/finger_group/finger:label">
             <value>-</value>
           </text>
-          <text id="/covid_rdt/finger_group/generated_note_name_29:label">
+          <text id="/covid_rdt/finger_group/generated_note_name_30:label">
             <value form="image">jr://images/-</value>
           </text>
           <text id="/covid_rdt/finger_group:label">
             <value>-</value>
           </text>
           <text id="/covid_rdt/has_symptoms:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/inputs/contact/_id:label">
             <value>-</value>
           </text>
           <text id="/covid_rdt/inputs/contact/date_of_birth:label">
@@ -292,7 +298,7 @@
           <text id="/covid_rdt/inputs:label">
             <value>-</value>
           </text>
-          <text id="/covid_rdt/interpret_group/generated_note_name_41:label">
+          <text id="/covid_rdt/interpret_group/generated_note_name_42:label">
             <value form="image">jr://images/-</value>
           </text>
           <text id="/covid_rdt/interpret_group/interpretation/c:label">
@@ -367,7 +373,7 @@
           <text id="/covid_rdt/summary-group:label">
             <value>-</value>
           </text>
-          <text id="/covid_rdt/symptoms_group/generated_note_name_19:label">
+          <text id="/covid_rdt/symptoms_group/generated_note_name_20:label">
             <value>-</value>
           </text>
           <text id="/covid_rdt/symptoms_group/symptoms/breathing:label">
@@ -415,12 +421,13 @@
         </translation>
       </itext>
       <instance>
-        <covid_rdt delimiter="#" id="covid_rdt" prefix="J1!covid_rdt!" version="2020-03-22  18-38">
+        <covid_rdt delimiter="#" id="covid_rdt" prefix="J1!covid_rdt!" version="2020-03-22  19-33">
           <inputs tag="hidden">
             <source>user</source>
             <source_id/>
             <user/>
             <contact>
+              <_id/>
               <name/>
               <date_of_birth/>
               <sex/>
@@ -432,7 +439,7 @@
           <test_result tag="hidden"/>
           <symptoms_group tag="hidden">
             <symptoms/>
-            <generated_note_name_19/>
+            <generated_note_name_20/>
           </symptoms_group>
           <precautions_group tag="hidden">
             <precautions/>
@@ -442,19 +449,19 @@
           </preparations_group>
           <finger_group tag="hidden">
             <finger/>
-            <generated_note_name_29/>
+            <generated_note_name_30/>
           </finger_group>
           <disinfect_group>
-            <generated_note_name_32/>
             <generated_note_name_33/>
             <generated_note_name_34/>
+            <generated_note_name_35/>
           </disinfect_group>
           <wait_group tag="hidden">
             <evaluation_timer>900</evaluation_timer>
             <waiting/>
           </wait_group>
           <interpret_group tag="hidden">
-            <generated_note_name_41/>
+            <generated_note_name_42/>
             <interpretation/>
           </interpret_group>
           <cleanup_group tag="hidden">
@@ -476,6 +483,7 @@
       <bind nodeset="/covid_rdt/inputs" relevant="./source = 'user'"/>
       <bind nodeset="/covid_rdt/inputs/source" type="string"/>
       <bind nodeset="/covid_rdt/inputs/source_id" type="string"/>
+      <bind nodeset="/covid_rdt/inputs/contact/_id" type="string"/>
       <bind nodeset="/covid_rdt/inputs/contact/name" type="string"/>
       <bind nodeset="/covid_rdt/inputs/contact/date_of_birth" type="string"/>
       <bind nodeset="/covid_rdt/inputs/contact/sex" type="string"/>
@@ -484,23 +492,23 @@
       <bind calculate="if( /covid_rdt/symptoms_group/symptoms ,'true','false')" nodeset="/covid_rdt/has_symptoms" required="true()" type="string"/>
       <bind calculate="if(selected( /covid_rdt/interpret_group/interpretation ,'c'),if(selected( /covid_rdt/interpret_group/interpretation ,'m') or selected( /covid_rdt/interpret_group/interpretation ,'g'),'positive','negative'),'invalid')" nodeset="/covid_rdt/test_result" type="string"/>
       <bind nodeset="/covid_rdt/symptoms_group/symptoms" type="select"/>
-      <bind nodeset="/covid_rdt/symptoms_group/generated_note_name_19" readonly="true()" type="string"/>
+      <bind nodeset="/covid_rdt/symptoms_group/generated_note_name_20" readonly="true()" type="string"/>
       <bind nodeset="/covid_rdt/precautions_group" relevant=" /covid_rdt/has_symptoms ='true'"/>
       <bind jr:constraintMsg="jr:itext('/covid_rdt/precautions_group/precautions:jr:constraintMsg')" nodeset="/covid_rdt/precautions_group/precautions" required="true()" type="select"/>
       <bind nodeset="/covid_rdt/preparations_group" relevant=" /covid_rdt/has_symptoms ='true'"/>
       <bind jr:constraintMsg="jr:itext('/covid_rdt/preparations_group/preparations:jr:constraintMsg')" nodeset="/covid_rdt/preparations_group/preparations" required="true()" type="select"/>
       <bind nodeset="/covid_rdt/finger_group" relevant=" /covid_rdt/has_symptoms ='true'"/>
       <bind jr:constraintMsg="jr:itext('/covid_rdt/finger_group/finger:jr:constraintMsg')" nodeset="/covid_rdt/finger_group/finger" required="true()" type="select"/>
-      <bind nodeset="/covid_rdt/finger_group/generated_note_name_29" readonly="true()" type="string"/>
+      <bind nodeset="/covid_rdt/finger_group/generated_note_name_30" readonly="true()" type="string"/>
       <bind nodeset="/covid_rdt/disinfect_group" relevant=" /covid_rdt/has_symptoms ='true'"/>
-      <bind nodeset="/covid_rdt/disinfect_group/generated_note_name_32" readonly="true()" type="string"/>
       <bind nodeset="/covid_rdt/disinfect_group/generated_note_name_33" readonly="true()" type="string"/>
       <bind nodeset="/covid_rdt/disinfect_group/generated_note_name_34" readonly="true()" type="string"/>
+      <bind nodeset="/covid_rdt/disinfect_group/generated_note_name_35" readonly="true()" type="string"/>
       <bind nodeset="/covid_rdt/wait_group" relevant=" /covid_rdt/has_symptoms ='true'"/>
       <bind nodeset="/covid_rdt/wait_group/evaluation_timer" readonly="true()" required="true()" type="string"/>
       <bind jr:constraintMsg="jr:itext('/covid_rdt/wait_group/waiting:jr:constraintMsg')" nodeset="/covid_rdt/wait_group/waiting" type="select"/>
       <bind nodeset="/covid_rdt/interpret_group" relevant=" /covid_rdt/has_symptoms ='true'"/>
-      <bind nodeset="/covid_rdt/interpret_group/generated_note_name_41" readonly="true()" type="string"/>
+      <bind nodeset="/covid_rdt/interpret_group/generated_note_name_42" readonly="true()" type="string"/>
       <bind nodeset="/covid_rdt/interpret_group/interpretation" type="select"/>
       <bind nodeset="/covid_rdt/cleanup_group" relevant=" /covid_rdt/has_symptoms ='true'"/>
       <bind jr:constraintMsg="jr:itext('/covid_rdt/cleanup_group/cleanup:jr:constraintMsg')" nodeset="/covid_rdt/cleanup_group/cleanup" required="true()" type="select"/>
@@ -526,6 +534,9 @@
       </group>
       <group ref="/covid_rdt/inputs/contact">
         <label ref="jr:itext('/covid_rdt/inputs/contact:label')"/>
+        <input appearance="hidden" ref="/covid_rdt/inputs/contact/_id">
+          <label ref="jr:itext('/covid_rdt/inputs/contact/_id:label')"/>
+        </input>
         <input appearance="hidden" ref="/covid_rdt/inputs/contact/name">
           <label ref="jr:itext('/covid_rdt/inputs/contact/name:label')"/>
         </input>
@@ -561,8 +572,8 @@
           <value>diarrhea</value>
         </item>
       </select>
-      <input ref="/covid_rdt/symptoms_group/generated_note_name_19">
-        <label ref="jr:itext('/covid_rdt/symptoms_group/generated_note_name_19:label')"/>
+      <input ref="/covid_rdt/symptoms_group/generated_note_name_20">
+        <label ref="jr:itext('/covid_rdt/symptoms_group/generated_note_name_20:label')"/>
       </input>
     </group>
     <group appearance="field-list" ref="/covid_rdt/precautions_group">
@@ -614,20 +625,20 @@
           <value>flow</value>
         </item>
       </select>
-      <input ref="/covid_rdt/finger_group/generated_note_name_29">
-        <label ref="jr:itext('/covid_rdt/finger_group/generated_note_name_29:label')"/>
+      <input ref="/covid_rdt/finger_group/generated_note_name_30">
+        <label ref="jr:itext('/covid_rdt/finger_group/generated_note_name_30:label')"/>
       </input>
     </group>
     <group ref="/covid_rdt/disinfect_group">
       <label ref="jr:itext('/covid_rdt/disinfect_group:label')"/>
-      <input ref="/covid_rdt/disinfect_group/generated_note_name_32">
-        <label ref="jr:itext('/covid_rdt/disinfect_group/generated_note_name_32:label')"/>
-      </input>
       <input ref="/covid_rdt/disinfect_group/generated_note_name_33">
         <label ref="jr:itext('/covid_rdt/disinfect_group/generated_note_name_33:label')"/>
       </input>
       <input ref="/covid_rdt/disinfect_group/generated_note_name_34">
         <label ref="jr:itext('/covid_rdt/disinfect_group/generated_note_name_34:label')"/>
+      </input>
+      <input ref="/covid_rdt/disinfect_group/generated_note_name_35">
+        <label ref="jr:itext('/covid_rdt/disinfect_group/generated_note_name_35:label')"/>
       </input>
     </group>
     <group appearance="field-list" ref="/covid_rdt/wait_group">
@@ -653,8 +664,8 @@
     </group>
     <group appearance="field-list" ref="/covid_rdt/interpret_group">
       <label ref="jr:itext('/covid_rdt/interpret_group:label')"/>
-      <input ref="/covid_rdt/interpret_group/generated_note_name_41">
-        <label ref="jr:itext('/covid_rdt/interpret_group/generated_note_name_41:label')"/>
+      <input ref="/covid_rdt/interpret_group/generated_note_name_42">
+        <label ref="jr:itext('/covid_rdt/interpret_group/generated_note_name_42:label')"/>
       </input>
       <select ref="/covid_rdt/interpret_group/interpretation">
         <label ref="jr:itext('/covid_rdt/interpret_group/interpretation:label')"/>
