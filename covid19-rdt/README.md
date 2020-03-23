@@ -1,0 +1,1 @@
+https://github.com/medic/config-cht-demo/wiki/COVID%2019%20Assessment
