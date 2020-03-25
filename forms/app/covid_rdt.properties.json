@@ -12,7 +12,7 @@
   "context": {
       "place": false,
       "person": true,
-      "expression": "!contact || (contact.type === 'person' && user.parent.type === 'health_center')"
+      "expression": "!contact || (contact.type === 'person' && user.parent.type === 'health_center' && user.role === 'chw_rdt')"
   },
-  "icon": "treatment"
+  "icon": "icon-healthcare"
 }

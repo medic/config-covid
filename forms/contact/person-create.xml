@@ -97,6 +97,9 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
           <text id="/data/person/role/chw_supervisor:label">
             <value>CHW Supervisor</value>
           </text>
+          <text id="/data/person/role/inputter:label">
+            <value>Airport inputter</value>
+          </text>
           <text id="/data/person/role/manager:label">
             <value>Facility Manager</value>
           </text>
@@ -1032,6 +1035,9 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
           <text id="/data/person/role/chw_supervisor:label">
             <value>Superviseur ASC</value>
           </text>
+          <text id="/data/person/role/inputter:label">
+            <value>Enregistreur</value>
+          </text>
           <text id="/data/person/role/manager:label">
             <value>Personnel médical</value>
           </text>
@@ -1857,7 +1863,7 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
         </translation>
       </itext>
       <instance>
-        <data delimiter="#" id="contact:person:create" prefix="J1!contact:person:create!" version="2020-03-25 20-30">
+        <data delimiter="#" id="contact:person:create" prefix="J1!contact:person:create!" version="2020-03-25 21-41">
           <inputs>
             <meta>
               <location>
@@ -2054,6 +2060,10 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
         <item>
           <label ref="jr:itext('/data/person/role/traveler:label')"/>
           <value>traveler</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/role/inputter:label')"/>
+          <value>inputter</value>
         </item>
       </select1>
       <group ref="/data/person/traveler">
