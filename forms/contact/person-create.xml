@@ -91,6 +91,9 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
           <text id="/data/person/role/chw:label">
             <value>CHW</value>
           </text>
+          <text id="/data/person/role/chw_rdt:label">
+            <value>Rdt CHW</value>
+          </text>
           <text id="/data/person/role/chw_supervisor:label">
             <value>CHW Supervisor</value>
           </text>
@@ -135,6 +138,167 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
           </text>
           <text id="/data/person/type:label">
             <value>Person Type</value>
+          </text>
+        </translation>
+        <translation lang="es">
+          <text id="/data/init/name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/init/parent_id:hint">
+            <value>-</value>
+          </text>
+          <text id="/data/init/parent_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/init/type:label">
+            <value>-</value>
+          </text>
+          <text id="/data/init/type_selector/clinic:label">
+            <value>-</value>
+          </text>
+          <text id="/data/init/type_selector/district_hospital:label">
+            <value>-</value>
+          </text>
+          <text id="/data/init/type_selector/health_center:label">
+            <value>-</value>
+          </text>
+          <text id="/data/init/type_selector:label">
+            <value>-</value>
+          </text>
+          <text id="/data/init:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/facility_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs:label">
+            <value>-</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/age_label:label">
+            <value>-</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/age_months:jr:constraintMsg">
+            <value>-</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/age_months:label">
+            <value>-</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/age_years:jr:constraintMsg">
+            <value>-</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/age_years:label">
+            <value>-</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/dob_calendar:hint">
+            <value>-</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/dob_calendar:jr:constraintMsg">
+            <value>-</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/dob_calendar:label">
+            <value>-</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/dob_debug:label">
+            <value>-</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/dob_method/approx:label">
+            <value>-</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/dob_method:label">
+            <value>-</value>
+          </text>
+          <text id="/data/person/ephemeral_dob:label">
+            <value>-</value>
+          </text>
+          <text id="/data/person/external_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/person/meta:label">
+            <value>-</value>
+          </text>
+          <text id="/data/person/name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/person/notes:label">
+            <value>-</value>
+          </text>
+          <text id="/data/person/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/person/phone:jr:constraintMsg">
+            <value>-</value>
+          </text>
+          <text id="/data/person/phone:label">
+            <value>-</value>
+          </text>
+          <text id="/data/person/phone_alternate:jr:constraintMsg">
+            <value>-</value>
+          </text>
+          <text id="/data/person/phone_alternate:label">
+            <value>-</value>
+          </text>
+          <text id="/data/person/role/chw:label">
+            <value>-</value>
+          </text>
+          <text id="/data/person/role/chw_rdt:label">
+            <value>Rdt CHW</value>
+          </text>
+          <text id="/data/person/role/chw_supervisor:label">
+            <value>-</value>
+          </text>
+          <text id="/data/person/role/manager:label">
+            <value>-</value>
+          </text>
+          <text id="/data/person/role/nurse:label">
+            <value>-</value>
+          </text>
+          <text id="/data/person/role/other:label">
+            <value>-</value>
+          </text>
+          <text id="/data/person/role/patient:label">
+            <value>-</value>
+          </text>
+          <text id="/data/person/role:hint">
+            <value>-</value>
+          </text>
+          <text id="/data/person/role:label">
+            <value>-</value>
+          </text>
+          <text id="/data/person/role_other:label">
+            <value>-</value>
+          </text>
+          <text id="/data/person/sex/female:label">
+            <value>-</value>
+          </text>
+          <text id="/data/person/sex/male:label">
+            <value>-</value>
+          </text>
+          <text id="/data/person/sex:label">
+            <value>-</value>
+          </text>
+          <text id="/data/person/short_name:hint">
+            <value>-</value>
+          </text>
+          <text id="/data/person/short_name:jr:constraintMsg">
+            <value>-</value>
+          </text>
+          <text id="/data/person/short_name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/person/type:label">
+            <value>-</value>
+          </text>
+          <text id="/data/person:label">
+            <value>-</value>
           </text>
         </translation>
         <translation lang="fr">
@@ -224,6 +388,9 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
           </text>
           <text id="/data/person/role/chw:label">
             <value>ASC</value>
+          </text>
+          <text id="/data/person/role/chw_rdt:label">
+            <value>ASC Tdr</value>
           </text>
           <text id="/data/person/role/chw_supervisor:label">
             <value>Superviseur ASC</value>
@@ -359,6 +526,9 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
           <text id="/data/person/role/chw:label">
             <value>सामुदायिक स्वास्थ्यकर्मी</value>
           </text>
+          <text id="/data/person/role/chw_rdt:label">
+            <value>Rdt CHW</value>
+          </text>
           <text id="/data/person/role/chw_supervisor:label">
             <value>सामुदायिक स्वास्थ्यकर्मी के मैनेजर</value>
           </text>
@@ -492,6 +662,9 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
           </text>
           <text id="/data/person/role/chw:label">
             <value>Kader</value>
+          </text>
+          <text id="/data/person/role/chw_rdt:label">
+            <value>Rdt CHW</value>
           </text>
           <text id="/data/person/role/chw_supervisor:label">
             <value>Kader Pengawas</value>
@@ -627,6 +800,9 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
           <text id="/data/person/role/chw:label">
             <value>महिला स्वास्थ्य स्वयम् सेविका</value>
           </text>
+          <text id="/data/person/role/chw_rdt:label">
+            <value>Rdt CHW</value>
+          </text>
           <text id="/data/person/role/chw_supervisor:label">
             <value>महिला स्वास्थ्य स्वयम् सेविकाको सुपरभाइजर</value>
           </text>
@@ -761,6 +937,9 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
           <text id="/data/person/role/chw:label">
             <value>Mhudumu wa afya</value>
           </text>
+          <text id="/data/person/role/chw_rdt:label">
+            <value>Rdt CHW</value>
+          </text>
           <text id="/data/person/role/chw_supervisor:label">
             <value>Mkuu wa wahudumu wa afya</value>
           </text>
@@ -809,7 +988,7 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
         </translation>
       </itext>
       <instance>
-        <data delimiter="#" id="contact:person:create" prefix="J1!contact:person:create!" version="2019-10-22_00-21">
+        <data delimiter="#" id="contact:person:create" prefix="J1!contact:person:create!" version="2020-03-24 23-41">
           <inputs>
             <meta>
               <location>
@@ -1023,6 +1202,10 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
         <item>
           <label ref="jr:itext('/data/person/role/other:label')"/>
           <value>other</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/role/chw_rdt:label')"/>
+          <value>chw_rdt</value>
         </item>
       </select1>
       <input ref="/data/person/role_other">

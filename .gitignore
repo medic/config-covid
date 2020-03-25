@@ -5,3 +5,4 @@ backups/**/*
 /._revs/
 /.hashes/
 /.idea/
+/node_modules/

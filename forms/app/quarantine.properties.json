@@ -1,0 +1,9 @@
+{
+    "icon": "icon-calendar",
+    "title": "Self-quarantine Agreement",
+    "context": {
+        "person": true,
+        "place": false,
+        "expression": "!contact || (contact.type === 'person' && user.parent.type === 'health_center' && user.role === 'chw')"
+    }
+}

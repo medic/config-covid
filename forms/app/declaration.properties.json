@@ -1,0 +1,9 @@
+{
+    "icon": "icon-form-general",
+    "title": "Traveller Public Health Declaration",
+    "context": {
+        "person": true,
+        "place": false,
+        "expression": "!contact || (contact.type === 'person' && user.parent.type === 'health_center' && user.role === 'chw')"
+    }
+}

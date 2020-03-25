@@ -1,0 +1,9 @@
+{
+    "icon": "icon-service-rating",
+    "title": "Public Health Passenger Locator",
+    "context": {
+        "person": true,
+        "place": false,
+        "expression": "!contact || (contact.type === 'person' && user.parent.type === 'health_center' && user.role === 'chw')"
+    }
+}

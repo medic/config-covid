@@ -1,0 +1,450 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Traveller Public Health Declaration</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/declaration/contact_info/admit/false:label">
+            <value>No</value>
+          </text>
+          <text id="/declaration/contact_info/admit/true:label">
+            <value>Yes</value>
+          </text>
+          <text id="/declaration/contact_info/admit:label">
+            <value>Visited any traditional healers or been admitted to hospital?</value>
+          </text>
+          <text id="/declaration/contact_info/ari/false:label">
+            <value>No</value>
+          </text>
+          <text id="/declaration/contact_info/ari/true:label">
+            <value>Yes</value>
+          </text>
+          <text id="/declaration/contact_info/ari:label">
+            <value>Did you come across some patients with signs of acute respiratory illness within last 14 days?</value>
+          </text>
+          <text id="/declaration/contact_info/care/false:label">
+            <value>No</value>
+          </text>
+          <text id="/declaration/contact_info/care/true:label">
+            <value>Yes</value>
+          </text>
+          <text id="/declaration/contact_info/care:label">
+            <value>Cared for anyone with a severe illness or who has died of an unknown cause?</value>
+          </text>
+          <text id="/declaration/contact_info/dead/false:label">
+            <value>No</value>
+          </text>
+          <text id="/declaration/contact_info/dead/true:label">
+            <value>Yes</value>
+          </text>
+          <text id="/declaration/contact_info/dead:label">
+            <value>Attended any funerals or had any contact with any dead bodies?</value>
+          </text>
+          <text id="/declaration/contact_info:label">
+            <value>Contact Information</value>
+          </text>
+          <text id="/declaration/health/bleeding/false:label">
+            <value>No</value>
+          </text>
+          <text id="/declaration/health/bleeding/true:label">
+            <value>Yes</value>
+          </text>
+          <text id="/declaration/health/bleeding:label">
+            <value>Unexplained or unusual bleeding</value>
+          </text>
+          <text id="/declaration/health/bruising/false:label">
+            <value>No</value>
+          </text>
+          <text id="/declaration/health/bruising/true:label">
+            <value>Yes</value>
+          </text>
+          <text id="/declaration/health/bruising:label">
+            <value>Bruising</value>
+          </text>
+          <text id="/declaration/health/diarrhoea/false:label">
+            <value>No</value>
+          </text>
+          <text id="/declaration/health/diarrhoea/true:label">
+            <value>Yes</value>
+          </text>
+          <text id="/declaration/health/diarrhoea:label">
+            <value>Diarrhoea</value>
+          </text>
+          <text id="/declaration/health/fatigue/false:label">
+            <value>No</value>
+          </text>
+          <text id="/declaration/health/fatigue/true:label">
+            <value>Yes</value>
+          </text>
+          <text id="/declaration/health/fatigue:label">
+            <value>Intense fatigue, body-ache or exhaustion</value>
+          </text>
+          <text id="/declaration/health/fever/false:label">
+            <value>No</value>
+          </text>
+          <text id="/declaration/health/fever/true:label">
+            <value>Yes</value>
+          </text>
+          <text id="/declaration/health/fever:label">
+            <value>Fever (38° C/100° F or higher), feeling feverish, or having chills?</value>
+          </text>
+          <text id="/declaration/health/fever_history/false:label">
+            <value>No</value>
+          </text>
+          <text id="/declaration/health/fever_history/true:label">
+            <value>Yes</value>
+          </text>
+          <text id="/declaration/health/fever_history:label">
+            <value>Have you had an increased temperature/fever at any time during the past 48 hours?</value>
+          </text>
+          <text id="/declaration/health/headache/false:label">
+            <value>No</value>
+          </text>
+          <text id="/declaration/health/headache/true:label">
+            <value>Yes</value>
+          </text>
+          <text id="/declaration/health/headache:label">
+            <value>Headache</value>
+          </text>
+          <text id="/declaration/health/notes:hint">
+            <value>Add anything you might like to add about the form.</value>
+          </text>
+          <text id="/declaration/health/notes:label">
+            <value>Notes</value>
+          </text>
+          <text id="/declaration/health/respi/false:label">
+            <value>No</value>
+          </text>
+          <text id="/declaration/health/respi/true:label">
+            <value>Yes</value>
+          </text>
+          <text id="/declaration/health/respi:label">
+            <value>Respiratory symptoms like (Cough, Sneezing, Running Nose etc.)</value>
+          </text>
+          <text id="/declaration/health/vomiting/false:label">
+            <value>No</value>
+          </text>
+          <text id="/declaration/health/vomiting/true:label">
+            <value>Yes</value>
+          </text>
+          <text id="/declaration/health/vomiting:label">
+            <value>Vomiting/feeling sick</value>
+          </text>
+          <text id="/declaration/health:label">
+            <value>Health Information</value>
+          </text>
+          <text id="/declaration/inputs/contact/_id:label">
+            <value>What is the passenger's name?</value>
+          </text>
+          <text id="/declaration/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/declaration/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/declaration/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/declaration/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/declaration/journey/flight_number:label">
+            <value>Flight number</value>
+          </text>
+          <text id="/declaration/journey/journey_history/from:label">
+            <value>From</value>
+          </text>
+          <text id="/declaration/journey/journey_history/to:label">
+            <value>To</value>
+          </text>
+          <text id="/declaration/journey/journey_history:label">
+            <value>Where did you start and transit during this journey?</value>
+          </text>
+          <text id="/declaration/journey:hint">
+            <value>Click the + icon below to add an entry.</value>
+          </text>
+          <text id="/declaration/journey:label">
+            <value>Journey Information</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <declaration delimiter="#" id="declaration" prefix="J1!declaration!" version="2020-03-19 00:45:16">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <contact>
+              <_id/>
+              <name/>
+              <patient_id/>
+            </contact>
+          </inputs>
+          <patient_uuid/>
+          <patient_id/>
+          <patient_name/>
+          <r_high_risk/>
+          <journey>
+            <flight_number/>
+            <journey_history jr:template="">
+              <from/>
+              <to/>
+            </journey_history>
+          </journey>
+          <contact_info>
+            <ari/>
+            <care/>
+            <dead/>
+            <admit/>
+            <r_contact_risk/>
+          </contact_info>
+          <health>
+            <fever/>
+            <respi/>
+            <fever_history/>
+            <headache/>
+            <vomiting/>
+            <diarrhoea/>
+            <fatigue/>
+            <bruising/>
+            <bleeding/>
+            <notes/>
+            <r_health_risk/>
+          </health>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </declaration>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/declaration/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/declaration/inputs/source" type="string"/>
+      <bind nodeset="/declaration/inputs/source_id" type="string"/>
+      <bind nodeset="/declaration/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/declaration/inputs/contact/name" type="string"/>
+      <bind nodeset="/declaration/inputs/contact/patient_id" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/declaration/patient_uuid" type="string"/>
+      <bind calculate="../inputs/contact/patient_id" nodeset="/declaration/patient_id" type="string"/>
+      <bind calculate="../inputs/contact/name" nodeset="/declaration/patient_name" type="string"/>
+      <bind calculate="if(../contact_info/r_contact_risk = 'true' or ../health/r_health_risk = 'true', 'true', 'false')" nodeset="/declaration/r_high_risk" type="string"/>
+      <bind nodeset="/declaration/journey/flight_number" type="string"/>
+      <bind nodeset="/declaration/journey/journey_history/from" type="string"/>
+      <bind nodeset="/declaration/journey/journey_history/to" type="string"/>
+      <bind nodeset="/declaration/contact_info/ari" type="select1"/>
+      <bind nodeset="/declaration/contact_info/care" type="select1"/>
+      <bind nodeset="/declaration/contact_info/dead" type="select1"/>
+      <bind nodeset="/declaration/contact_info/admit" type="select1"/>
+      <bind calculate="if(../ari = 'true' or 
+../care = 'true' or 
+../dead = 'true' or 
+../admin = 'true', 'true', 'false')" nodeset="/declaration/contact_info/r_contact_risk" type="string"/>
+      <bind nodeset="/declaration/health/fever" type="select1"/>
+      <bind nodeset="/declaration/health/respi" type="select1"/>
+      <bind nodeset="/declaration/health/fever_history" type="select1"/>
+      <bind nodeset="/declaration/health/headache" type="select1"/>
+      <bind nodeset="/declaration/health/vomiting" type="select1"/>
+      <bind nodeset="/declaration/health/diarrhoea" type="select1"/>
+      <bind nodeset="/declaration/health/fatigue" type="select1"/>
+      <bind nodeset="/declaration/health/bruising" type="select1"/>
+      <bind nodeset="/declaration/health/bleeding" type="select1"/>
+      <bind nodeset="/declaration/health/notes" type="string"/>
+      <bind calculate="if(../fever = 'true' or 
+../respi = 'true' or 
+../fever_history = 'true' or 
+../headache= 'true' or 
+../vomiting = 'true' or 
+../diarrhoea = 'true' or 
+../fatigue = 'true' or 
+../bruising = 'true' or 
+../bleeding = 'true', 'true', 'false')" nodeset="/declaration/health/r_health_risk" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/declaration/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <group appearance="field-list" ref="/declaration/inputs">
+      <group ref="/declaration/inputs/contact">
+        <input appearance="db-object" ref="/declaration/inputs/contact/_id">
+          <label ref="jr:itext('/declaration/inputs/contact/_id:label')"/>
+        </input>
+      </group>
+    </group>
+    <group ref="/declaration/journey">
+      <label ref="jr:itext('/declaration/journey:label')"/>
+      <input ref="/declaration/journey/flight_number">
+        <label ref="jr:itext('/declaration/journey/flight_number:label')"/>
+      </input>
+      <group ref="/declaration/journey/journey_history">
+        <label ref="jr:itext('/declaration/journey/journey_history:label')"/>
+        <repeat nodeset="/declaration/journey/journey_history">
+          <input ref="/declaration/journey/journey_history/from">
+            <label ref="jr:itext('/declaration/journey/journey_history/from:label')"/>
+          </input>
+          <input ref="/declaration/journey/journey_history/to">
+            <label ref="jr:itext('/declaration/journey/journey_history/to:label')"/>
+          </input>
+        </repeat>
+      </group>
+    </group>
+    <group ref="/declaration/contact_info">
+      <label ref="jr:itext('/declaration/contact_info:label')"/>
+      <select1 ref="/declaration/contact_info/ari">
+        <label ref="jr:itext('/declaration/contact_info/ari:label')"/>
+        <item>
+          <label ref="jr:itext('/declaration/contact_info/ari/true:label')"/>
+          <value>true</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/declaration/contact_info/ari/false:label')"/>
+          <value>false</value>
+        </item>
+      </select1>
+      <select1 ref="/declaration/contact_info/care">
+        <label ref="jr:itext('/declaration/contact_info/care:label')"/>
+        <item>
+          <label ref="jr:itext('/declaration/contact_info/care/true:label')"/>
+          <value>true</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/declaration/contact_info/care/false:label')"/>
+          <value>false</value>
+        </item>
+      </select1>
+      <select1 ref="/declaration/contact_info/dead">
+        <label ref="jr:itext('/declaration/contact_info/dead:label')"/>
+        <item>
+          <label ref="jr:itext('/declaration/contact_info/dead/true:label')"/>
+          <value>true</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/declaration/contact_info/dead/false:label')"/>
+          <value>false</value>
+        </item>
+      </select1>
+      <select1 ref="/declaration/contact_info/admit">
+        <label ref="jr:itext('/declaration/contact_info/admit:label')"/>
+        <item>
+          <label ref="jr:itext('/declaration/contact_info/admit/true:label')"/>
+          <value>true</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/declaration/contact_info/admit/false:label')"/>
+          <value>false</value>
+        </item>
+      </select1>
+    </group>
+    <group ref="/declaration/health">
+      <label ref="jr:itext('/declaration/health:label')"/>
+      <select1 ref="/declaration/health/fever">
+        <label ref="jr:itext('/declaration/health/fever:label')"/>
+        <item>
+          <label ref="jr:itext('/declaration/health/fever/true:label')"/>
+          <value>true</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/declaration/health/fever/false:label')"/>
+          <value>false</value>
+        </item>
+      </select1>
+      <select1 ref="/declaration/health/respi">
+        <label ref="jr:itext('/declaration/health/respi:label')"/>
+        <item>
+          <label ref="jr:itext('/declaration/health/respi/true:label')"/>
+          <value>true</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/declaration/health/respi/false:label')"/>
+          <value>false</value>
+        </item>
+      </select1>
+      <select1 ref="/declaration/health/fever_history">
+        <label ref="jr:itext('/declaration/health/fever_history:label')"/>
+        <item>
+          <label ref="jr:itext('/declaration/health/fever_history/true:label')"/>
+          <value>true</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/declaration/health/fever_history/false:label')"/>
+          <value>false</value>
+        </item>
+      </select1>
+      <select1 ref="/declaration/health/headache">
+        <label ref="jr:itext('/declaration/health/headache:label')"/>
+        <item>
+          <label ref="jr:itext('/declaration/health/headache/true:label')"/>
+          <value>true</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/declaration/health/headache/false:label')"/>
+          <value>false</value>
+        </item>
+      </select1>
+      <select1 ref="/declaration/health/vomiting">
+        <label ref="jr:itext('/declaration/health/vomiting:label')"/>
+        <item>
+          <label ref="jr:itext('/declaration/health/vomiting/true:label')"/>
+          <value>true</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/declaration/health/vomiting/false:label')"/>
+          <value>false</value>
+        </item>
+      </select1>
+      <select1 ref="/declaration/health/diarrhoea">
+        <label ref="jr:itext('/declaration/health/diarrhoea:label')"/>
+        <item>
+          <label ref="jr:itext('/declaration/health/diarrhoea/true:label')"/>
+          <value>true</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/declaration/health/diarrhoea/false:label')"/>
+          <value>false</value>
+        </item>
+      </select1>
+      <select1 ref="/declaration/health/fatigue">
+        <label ref="jr:itext('/declaration/health/fatigue:label')"/>
+        <item>
+          <label ref="jr:itext('/declaration/health/fatigue/true:label')"/>
+          <value>true</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/declaration/health/fatigue/false:label')"/>
+          <value>false</value>
+        </item>
+      </select1>
+      <select1 ref="/declaration/health/bruising">
+        <label ref="jr:itext('/declaration/health/bruising:label')"/>
+        <item>
+          <label ref="jr:itext('/declaration/health/bruising/true:label')"/>
+          <value>true</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/declaration/health/bruising/false:label')"/>
+          <value>false</value>
+        </item>
+      </select1>
+      <select1 ref="/declaration/health/bleeding">
+        <label ref="jr:itext('/declaration/health/bleeding:label')"/>
+        <item>
+          <label ref="jr:itext('/declaration/health/bleeding/true:label')"/>
+          <value>true</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/declaration/health/bleeding/false:label')"/>
+          <value>false</value>
+        </item>
+      </select1>
+      <input appearance="multiline" ref="/declaration/health/notes">
+        <label ref="jr:itext('/declaration/health/notes:label')"/>
+        <hint ref="jr:itext('/declaration/health/notes:hint')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>
