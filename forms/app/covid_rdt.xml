@@ -168,6 +168,9 @@
             <value>&lt;b&gt;The test result for your patient is negative.&lt;/b&gt; But this doesn't mean they do not have COVID-19. Since hey were showing symptoms, you should advise the following:
 &lt;ul&gt;&lt;li&gt;Advise your patient to stay home and avoid seeing other people if possible.&lt;/li&gt;&lt;li&gt;Your patient should call or text if symptoms worsen or new symptoms arise.&lt;/li&gt;&lt;li&gt;Follow up with your patient in 24 hours.&lt;/li&gt;&lt;/ul&gt;</value>
           </text>
+          <text id="/covid_rdt/summary-group/next_followup:label">
+            <value>The next followup is due on : <output value=" /covid_rdt/summary-group/next_visit "/></value>
+          </text>
           <text id="/covid_rdt/summary-group/no_symptoms:label">
             <value>This assessment is for patients exhibiting symptoms of COVID-19. Your patient did not have symptoms of COVID-19 and should not be tested.
 &lt;ul&gt;&lt;li&gt;Please advise your patient to stay home and limit contact with others.&lt;/li&gt;&lt;li&gt;Your patient should call or text if symptoms develop&lt;/li&gt;&lt;li&gt;Follow-up with your patient in one week&lt;/li&gt;&lt;/ul&gt;</value>
@@ -190,9 +193,6 @@
           </text>
           <text id="/covid_rdt/symptoms_group/symptoms/cough:label">
             <value>New cough</value>
-          </text>
-          <text id="/covid_rdt/symptoms_group/symptoms/diarrhea:label">
-            <value>Diarrhea</value>
           </text>
           <text id="/covid_rdt/symptoms_group/symptoms/fever:label">
             <value>Fever</value>
@@ -395,6 +395,9 @@
             <value>&lt;b&gt; Le résultat du test de votre patient est négatif. &lt;/b&gt; Mais cela ne signifie pas qu'il n'a pas la COVID-19. Comme il présentait des symptômes, vous devez lui donner les conseils suivants :
 &lt;ul&gt;&lt;li&gt;Conseillez à votre patient de rester à la maison et d'éviter de voir d'autres personnes si possible.&lt;/li&gt;&lt;li&gt;Votre patient doit appeler ou envoyer un SMS si les symptômes s'aggravent ou si de nouveaux symptômes apparaissent.&lt;/li&gt;&lt;li&gt;Faire un suivi de votre patient dans les 24 heures.&lt;/li&gt;&lt;/ul&gt;</value>
           </text>
+          <text id="/covid_rdt/summary-group/next_followup:label">
+            <value>Le prochain suivi par l'ASC est le: <output value=" /covid_rdt/summary-group/next_visit "/></value>
+          </text>
           <text id="/covid_rdt/summary-group/no_symptoms:label">
             <value>Cette évaluation concerne les patients présentant des symptômes de COVID-19. Votre patient ne présentait pas de symptômes de COVID-19 et ne doit pas être testé.
 &lt;ul&gt;&lt;li&gt;Veuillez conseiller à votre patient de rester chez lui et de limiter ses contacts avec les autres.&lt;/li&gt;&lt;li&gt;Votre patient doit appeler ou envoyer un SMS si des symptômes apparaissent&lt;/li&gt;&lt;li&gt;Faire un suivi de votre patient dans une semaine&lt;/li&gt;&lt;/ul&gt;</value>
@@ -417,9 +420,6 @@
           </text>
           <text id="/covid_rdt/symptoms_group/symptoms/cough:label">
             <value>Toux</value>
-          </text>
-          <text id="/covid_rdt/symptoms_group/symptoms/diarrhea:label">
-            <value>Diarrhée</value>
           </text>
           <text id="/covid_rdt/symptoms_group/symptoms/fever:label">
             <value>Fiévre</value>
@@ -460,7 +460,7 @@
         </translation>
       </itext>
       <instance>
-        <covid_rdt delimiter="#" id="covid_rdt" prefix="J1!covid_rdt!" version="2020-03-24 6-46">
+        <covid_rdt delimiter="#" id="covid_rdt" prefix="J1!covid_rdt!" version="2020-03-26 20-58">
           <inputs tag="hidden">
             <source>user</source>
             <source_id/>
@@ -512,6 +512,8 @@
             <negative_result/>
             <invalid_result/>
             <style/>
+            <next_visit/>
+            <next_followup/>
           </summary-group>
           <meta tag="hidden">
             <instanceID/>
@@ -556,6 +558,8 @@
       <bind nodeset="/covid_rdt/summary-group/negative_result" readonly="true()" relevant=" /covid_rdt/test_result ='negative'" type="string"/>
       <bind nodeset="/covid_rdt/summary-group/invalid_result" readonly="true()" relevant=" /covid_rdt/test_result ='invalid' and  /covid_rdt/has_symptoms ='true'" type="string"/>
       <bind nodeset="/covid_rdt/summary-group/style" readonly="true()" type="string"/>
+      <bind calculate="format-date-time(date-time(decimal-date-time(today())+ 1),&quot;%d/%m/%Y&quot;)" nodeset="/covid_rdt/summary-group/next_visit" type="string"/>
+      <bind nodeset="/covid_rdt/summary-group/next_followup" readonly="true()" relevant=" /covid_rdt/test_result ='positive'" type="string"/>
       <bind calculate="concat('uuid:', uuid())" nodeset="/covid_rdt/meta/instanceID" readonly="true()" type="string"/>
     </model>
   </h:head>
@@ -605,10 +609,6 @@
         <item>
           <label ref="jr:itext('/covid_rdt/symptoms_group/symptoms/breathing:label')"/>
           <value>breathing</value>
-        </item>
-        <item>
-          <label ref="jr:itext('/covid_rdt/symptoms_group/symptoms/diarrhea:label')"/>
-          <value>diarrhea</value>
         </item>
       </select>
       <input ref="/covid_rdt/symptoms_group/generated_note_name_20">
@@ -752,6 +752,9 @@
       </input>
       <input ref="/covid_rdt/summary-group/style">
         <label ref="jr:itext('/covid_rdt/summary-group/style:label')"/>
+      </input>
+      <input ref="/covid_rdt/summary-group/next_followup">
+        <label ref="jr:itext('/covid_rdt/summary-group/next_followup:label')"/>
       </input>
     </group>
   </h:body>
