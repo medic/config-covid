@@ -1,0 +1,14 @@
+{
+  "title": [
+    {
+      "locale": "en",
+      "content": "COVID-19 Followup"
+    }
+  ],
+  "context": {
+      "place": false,
+      "person": true,
+      "expression": "false"
+  },
+  "icon": "icon-healthcare"
+}
