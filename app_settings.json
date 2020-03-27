@@ -468,6 +468,85 @@
         "extra.chw._id": "doc.parent.parent.contact._id",
         "extra.chw.name": "doc.parent.parent.contact.name"
       }
+    },
+    "forms": {
+      "PHONE_VERIFICATION": {
+        "meta": {
+          "code": "PHONE_VERIFICATION",
+          "icon": "icon-on",
+          "translation_key": "form.phone_verification.title"
+        },
+        "fields": {
+          "patient_id": {
+            "labels": {
+              "short": {
+                "translation_key": "patient_id"
+              },
+              "tiny": {
+                "en": "ID"
+              }
+            },
+            "position": 0,
+            "flags": {
+              "input_digits_only": true
+            },
+            "length": [
+              5,
+              13
+            ],
+            "type": "string",
+            "required": true
+          }
+        },
+        "use_sentinel": true
+      },
+      "COVID_SYMPTOMS": {
+        "meta": {
+          "code": "COVID_SYMPTOMS",
+          "icon": "icon-risk",
+          "translation_key": "form.covid_symptoms.title"
+        },
+        "fields": {
+          "patient_id": {
+            "labels": {
+              "short": {
+                "translation_key": "patient_id"
+              },
+              "tiny": {
+                "en": "ID"
+              }
+            },
+            "position": 0,
+            "flags": {
+              "input_digits_only": true
+            },
+            "length": [
+              5,
+              13
+            ],
+            "type": "string",
+            "required": true
+          },
+          "notes": {
+            "labels": {
+              "short": {
+                "translation_key": "notes"
+              },
+              "tiny": {
+                "en": "n"
+              }
+            },
+            "position": 1,
+            "length": [
+              0,
+              200
+            ],
+            "type": "string",
+            "required": false
+          }
+        },
+        "use_sentinel": true
+      }
     }
   }
 }
