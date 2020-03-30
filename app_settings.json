@@ -440,7 +440,7 @@
   },
   "outbound": {
     "textit-message": {
-      "relevant_to": "doc.type === 'data_record' && doc.tasks[0].state === 'pending'",
+      "relevant_to": "doc.type === 'data_record' && doc.tasks && doc.tasks[0] && doc.tasks[0].state && doc.tasks[0].state === 'pending'",
       "destination": {
         "base_url": "https://textit.in",
         "auth": {
