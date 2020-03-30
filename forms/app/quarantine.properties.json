@@ -1,9 +1,18 @@
 {
     "icon": "icon-calendar",
-    "title": "Self-quarantine Agreement",
+    "title": [
+        {
+            "locale": "en",
+            "content": "Self-quarantine Agreement"
+        },
+        {
+            "locale": "fr",
+            "content": "Accord sur l'auto-quarantaine"
+        }
+    ],
     "context": {
         "person": true,
         "place": false,
-        "expression": "!contact || (contact.type === 'person' && user.parent.type === 'health_center' && user.role === 'inputter')"
+        "expression": "!contact || (contact.type === 'person' && user.parent.type === 'health_center' && user.role === 'inputter') || (contact.type === 'person' && user.parent.type === 'clinic' && user.role === 'inputter')"
     }
 }

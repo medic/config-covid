@@ -1,9 +1,19 @@
 {
+    "title": [
+    {
+        "locale": "en",
+        "content": "Traveller Public Health Declaration"
+    },
+    {
+        "locale": "fr",
+        "content": "Déclaration du voyageur pour la santé publique"
+    }
+],
+
     "icon": "icon-form-general",
-    "title": "Traveller Public Health Declaration",
     "context": {
         "person": true,
         "place": false,
-        "expression": "!contact || (contact.type === 'person' && user.parent.type === 'health_center' && user.role === 'inputter')"
+        "expression": "!contact || (contact.type === 'person' && user.parent.type === 'health_center' && user.role === 'inputter') || (contact.type === 'person' && user.parent.type === 'clinic' && user.role === 'inputter')"
     }
 }

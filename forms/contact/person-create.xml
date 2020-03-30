@@ -145,6 +145,9 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
           <text id="/data/person/traveler/destination_address:label">
             <value>Address</value>
           </text>
+          <text id="/data/person/traveler/email:jr:requiredMsg">
+            <value>If not filled, put a dash sign (-).</value>
+          </text>
           <text id="/data/person/traveler/email:label">
             <value>Email address</value>
           </text>
@@ -901,11 +904,20 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
           <text id="/data/person/traveler/nationality/zw:label">
             <value>Zimbabwe</value>
           </text>
+          <text id="/data/person/traveler/nationality:jr:requiredMsg">
+            <value>If not filled, put Other</value>
+          </text>
           <text id="/data/person/traveler/nationality:label">
             <value>Nationality</value>
           </text>
+          <text id="/data/person/traveler/nationality_other:jr:requiredMsg">
+            <value>If not filled, put a dash sign (-).</value>
+          </text>
           <text id="/data/person/traveler/nationality_other:label">
             <value>Please specify nationality:</value>
+          </text>
+          <text id="/data/person/traveler/passport:jr:requiredMsg">
+            <value>If not filled, put a dash sign (-).</value>
           </text>
           <text id="/data/person/traveler/passport:label">
             <value>Passport Number</value>
@@ -964,19 +976,19 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
             <value>-</value>
           </text>
           <text id="/data/person/ephemeral_dob/age_label:label">
-            <value>-</value>
+            <value>Veuillez entrer votre date de naissance</value>
           </text>
           <text id="/data/person/ephemeral_dob/age_months:jr:constraintMsg">
             <value>-</value>
           </text>
           <text id="/data/person/ephemeral_dob/age_months:label">
-            <value>-</value>
+            <value>Mois</value>
           </text>
           <text id="/data/person/ephemeral_dob/age_years:jr:constraintMsg">
             <value>-</value>
           </text>
           <text id="/data/person/ephemeral_dob/age_years:label">
-            <value>-</value>
+            <value>Ans</value>
           </text>
           <text id="/data/person/ephemeral_dob/dob_calendar:hint">
             <value>-</value>
@@ -985,7 +997,7 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
             <value>-</value>
           </text>
           <text id="/data/person/ephemeral_dob/dob_calendar:label">
-            <value>-</value>
+            <value>Âge</value>
           </text>
           <text id="/data/person/ephemeral_dob/dob_debug:label">
             <value>-</value>
@@ -994,37 +1006,33 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
             <value>Date de naissance inconnue</value>
           </text>
           <text id="/data/person/ephemeral_dob/dob_method:label">
-            <value>-</value>
-          </text>
-          <text id="/data/person/ephemeral_dob:label">
-            <value>-</value>
           </text>
           <text id="/data/person/external_id:label">
-            <value>-</value>
+            <value>ID externe</value>
           </text>
           <text id="/data/person/meta:label">
             <value>-</value>
           </text>
           <text id="/data/person/name:label">
-            <value>-</value>
+            <value>Nom complet</value>
           </text>
           <text id="/data/person/notes:label">
-            <value>-</value>
+            <value>Notes</value>
           </text>
           <text id="/data/person/parent:label">
-            <value>-</value>
+            <value>ID Parent</value>
           </text>
           <text id="/data/person/phone:jr:constraintMsg">
             <value>-</value>
           </text>
           <text id="/data/person/phone:label">
-            <value>-</value>
+            <value>Numéro de téléphone primaire</value>
           </text>
           <text id="/data/person/phone_alternate:jr:constraintMsg">
             <value>-</value>
           </text>
           <text id="/data/person/phone_alternate:label">
-            <value>-</value>
+            <value>Numéro de téléphone secondaire</value>
           </text>
           <text id="/data/person/role/chw:label">
             <value>ASC</value>
@@ -1057,10 +1065,10 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
             <value>-</value>
           </text>
           <text id="/data/person/role:label">
-            <value>-</value>
+            <value>Rôle</value>
           </text>
           <text id="/data/person/role_other:label">
-            <value>-</value>
+            <value>Specifiez</value>
           </text>
           <text id="/data/person/sex/female:label">
             <value>Femme</value>
@@ -1069,7 +1077,7 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
             <value>Homme</value>
           </text>
           <text id="/data/person/sex:label">
-            <value>-</value>
+            <value>Genre</value>
           </text>
           <text id="/data/person/short_name:hint">
             <value>-</value>
@@ -1078,792 +1086,801 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
             <value>-</value>
           </text>
           <text id="/data/person/short_name:label">
-            <value>-</value>
+            <value>Nom court</value>
           </text>
           <text id="/data/person/traveler/destination_address:label">
+            <value>Adresse</value>
+          </text>
+          <text id="/data/person/traveler/email:jr:requiredMsg">
             <value>-</value>
           </text>
           <text id="/data/person/traveler/email:label">
-            <value>-</value>
+            <value>Adresse électronique</value>
           </text>
           <text id="/data/person/traveler/home_address:label">
-            <value>-</value>
+            <value>Adresse du domicile</value>
           </text>
           <text id="/data/person/traveler/nationality/ad:label">
-            <value>-</value>
+            <value>Andorre</value>
           </text>
           <text id="/data/person/traveler/nationality/ae:label">
-            <value>-</value>
+            <value>Emirats Arabes Unis</value>
           </text>
           <text id="/data/person/traveler/nationality/af:label">
-            <value>-</value>
+            <value>Afghanistan</value>
           </text>
           <text id="/data/person/traveler/nationality/ag:label">
-            <value>-</value>
+            <value>Antigua-et-Barbuda</value>
           </text>
           <text id="/data/person/traveler/nationality/ai:label">
-            <value>-</value>
+            <value>Anguilla</value>
           </text>
           <text id="/data/person/traveler/nationality/al:label">
-            <value>-</value>
+            <value>Albanie</value>
           </text>
           <text id="/data/person/traveler/nationality/am:label">
-            <value>-</value>
+            <value>Arménie</value>
           </text>
           <text id="/data/person/traveler/nationality/ao:label">
-            <value>-</value>
+            <value>Angola</value>
           </text>
           <text id="/data/person/traveler/nationality/aq:label">
-            <value>-</value>
+            <value>Antarctique</value>
           </text>
           <text id="/data/person/traveler/nationality/ar:label">
-            <value>-</value>
+            <value>Argentine</value>
           </text>
           <text id="/data/person/traveler/nationality/as:label">
-            <value>-</value>
+            <value>Samoa américaines</value>
           </text>
           <text id="/data/person/traveler/nationality/at:label">
-            <value>-</value>
+            <value>L'Autriche</value>
           </text>
           <text id="/data/person/traveler/nationality/au:label">
-            <value>-</value>
+            <value>Australie</value>
           </text>
           <text id="/data/person/traveler/nationality/aw:label">
-            <value>-</value>
+            <value>Aruba</value>
           </text>
           <text id="/data/person/traveler/nationality/ax:label">
-            <value>-</value>
+            <value>Iles Aland</value>
           </text>
           <text id="/data/person/traveler/nationality/az:label">
-            <value>-</value>
+            <value>Azerbaïdjan</value>
           </text>
           <text id="/data/person/traveler/nationality/ba:label">
-            <value>-</value>
+            <value>Bosnie Herzégovine</value>
           </text>
           <text id="/data/person/traveler/nationality/bb:label">
-            <value>-</value>
+            <value>Barbade</value>
           </text>
           <text id="/data/person/traveler/nationality/bd:label">
-            <value>-</value>
+            <value>Bangladesh</value>
           </text>
           <text id="/data/person/traveler/nationality/be:label">
-            <value>-</value>
+            <value>Belgique</value>
           </text>
           <text id="/data/person/traveler/nationality/bf:label">
-            <value>-</value>
+            <value>Burkina Faso</value>
           </text>
           <text id="/data/person/traveler/nationality/bg:label">
-            <value>-</value>
+            <value>Bulgarie</value>
           </text>
           <text id="/data/person/traveler/nationality/bh:label">
-            <value>-</value>
+            <value>Bahreïn</value>
           </text>
           <text id="/data/person/traveler/nationality/bi:label">
-            <value>-</value>
+            <value>Burundi</value>
           </text>
           <text id="/data/person/traveler/nationality/bj:label">
-            <value>-</value>
+            <value>Bénin</value>
           </text>
           <text id="/data/person/traveler/nationality/bl:label">
-            <value>-</value>
+            <value>Saint Barthélemy</value>
           </text>
           <text id="/data/person/traveler/nationality/bm:label">
-            <value>-</value>
+            <value>Bermudes</value>
           </text>
           <text id="/data/person/traveler/nationality/bn:label">
-            <value>-</value>
+            <value>Brunei Darussalam</value>
           </text>
           <text id="/data/person/traveler/nationality/bo:label">
-            <value>-</value>
+            <value>Bolivie, État plurinational de</value>
           </text>
           <text id="/data/person/traveler/nationality/bq:label">
-            <value>-</value>
+            <value>Bonaire, Saint-Eustache et Saba</value>
           </text>
           <text id="/data/person/traveler/nationality/br:label">
-            <value>-</value>
+            <value>Brésil</value>
           </text>
           <text id="/data/person/traveler/nationality/bs:label">
-            <value>-</value>
+            <value>Bahamas</value>
           </text>
           <text id="/data/person/traveler/nationality/bt:label">
-            <value>-</value>
+            <value>Bhoutan</value>
           </text>
           <text id="/data/person/traveler/nationality/bv:label">
-            <value>-</value>
+            <value>Île Bouvet</value>
           </text>
           <text id="/data/person/traveler/nationality/bw:label">
-            <value>-</value>
+            <value>Botswana</value>
           </text>
           <text id="/data/person/traveler/nationality/by:label">
-            <value>-</value>
+            <value>Biélorussie</value>
           </text>
           <text id="/data/person/traveler/nationality/bz:label">
-            <value>-</value>
+            <value>Belize</value>
           </text>
           <text id="/data/person/traveler/nationality/ca:label">
-            <value>-</value>
+            <value>Canada</value>
           </text>
           <text id="/data/person/traveler/nationality/cc:label">
-            <value>-</value>
+            <value>Îles Cocos (Keeling)</value>
           </text>
           <text id="/data/person/traveler/nationality/cd:label">
-            <value>-</value>
+            <value>Congo, la République démocratique du</value>
           </text>
           <text id="/data/person/traveler/nationality/cf:label">
-            <value>-</value>
+            <value>République centrafricaine</value>
           </text>
           <text id="/data/person/traveler/nationality/cg:label">
-            <value>-</value>
+            <value>Congo</value>
           </text>
           <text id="/data/person/traveler/nationality/ch:label">
-            <value>-</value>
+            <value>Suisse</value>
           </text>
           <text id="/data/person/traveler/nationality/ci:label">
-            <value>-</value>
+            <value>Côte d'Ivoire</value>
           </text>
           <text id="/data/person/traveler/nationality/ck:label">
-            <value>-</value>
+            <value>les Îles Cook</value>
           </text>
           <text id="/data/person/traveler/nationality/cl:label">
-            <value>-</value>
+            <value>Chili</value>
           </text>
           <text id="/data/person/traveler/nationality/cm:label">
-            <value>-</value>
+            <value>Cameroun</value>
           </text>
           <text id="/data/person/traveler/nationality/cn:label">
-            <value>-</value>
+            <value>Chine</value>
           </text>
           <text id="/data/person/traveler/nationality/co:label">
-            <value>-</value>
+            <value>Colombie</value>
           </text>
           <text id="/data/person/traveler/nationality/cr:label">
-            <value>-</value>
+            <value>Costa Rica</value>
           </text>
           <text id="/data/person/traveler/nationality/cu:label">
-            <value>-</value>
+            <value>Cuba</value>
           </text>
           <text id="/data/person/traveler/nationality/cv:label">
-            <value>-</value>
+            <value>Cap-Vert</value>
           </text>
           <text id="/data/person/traveler/nationality/cw:label">
-            <value>-</value>
+            <value>Curacao</value>
           </text>
           <text id="/data/person/traveler/nationality/cx:label">
-            <value>-</value>
+            <value>L'île de noël</value>
           </text>
           <text id="/data/person/traveler/nationality/cy:label">
-            <value>-</value>
+            <value>Chypre</value>
           </text>
           <text id="/data/person/traveler/nationality/cz:label">
-            <value>-</value>
+            <value>République Tchèque</value>
           </text>
           <text id="/data/person/traveler/nationality/de:label">
-            <value>-</value>
+            <value>Allemagne</value>
           </text>
           <text id="/data/person/traveler/nationality/dj:label">
-            <value>-</value>
+            <value>Djibouti</value>
           </text>
           <text id="/data/person/traveler/nationality/dk:label">
-            <value>-</value>
+            <value>Danemark</value>
           </text>
           <text id="/data/person/traveler/nationality/dm:label">
-            <value>-</value>
+            <value>Dominique</value>
           </text>
           <text id="/data/person/traveler/nationality/do:label">
-            <value>-</value>
+            <value>République Dominicaine</value>
           </text>
           <text id="/data/person/traveler/nationality/dz:label">
-            <value>-</value>
+            <value>Algérie</value>
           </text>
           <text id="/data/person/traveler/nationality/ec:label">
-            <value>-</value>
+            <value>Equateur</value>
           </text>
           <text id="/data/person/traveler/nationality/ee:label">
-            <value>-</value>
+            <value>Estonie</value>
           </text>
           <text id="/data/person/traveler/nationality/eg:label">
-            <value>-</value>
+            <value>Egypte</value>
           </text>
           <text id="/data/person/traveler/nationality/eh:label">
-            <value>-</value>
+            <value>Sahara occidental</value>
           </text>
           <text id="/data/person/traveler/nationality/er:label">
-            <value>-</value>
+            <value>Érythrée</value>
           </text>
           <text id="/data/person/traveler/nationality/es:label">
-            <value>-</value>
+            <value>Espagne</value>
           </text>
           <text id="/data/person/traveler/nationality/et:label">
-            <value>-</value>
+            <value>Ethiopie</value>
           </text>
           <text id="/data/person/traveler/nationality/fi:label">
-            <value>-</value>
+            <value>Finlande</value>
           </text>
           <text id="/data/person/traveler/nationality/fj:label">
-            <value>-</value>
+            <value>Fidji</value>
           </text>
           <text id="/data/person/traveler/nationality/fk:label">
-            <value>-</value>
+            <value>Îles Falkland (Malvinas)</value>
           </text>
           <text id="/data/person/traveler/nationality/fm:label">
-            <value>-</value>
+            <value>Micronésie, États fédérés de</value>
           </text>
           <text id="/data/person/traveler/nationality/fo:label">
-            <value>-</value>
+            <value>Îles Féroé</value>
           </text>
           <text id="/data/person/traveler/nationality/fr:label">
-            <value>-</value>
+            <value>France</value>
           </text>
           <text id="/data/person/traveler/nationality/ga:label">
-            <value>-</value>
+            <value>Gabon</value>
           </text>
           <text id="/data/person/traveler/nationality/gb:label">
-            <value>-</value>
+            <value>Royaume-Uni</value>
           </text>
           <text id="/data/person/traveler/nationality/gd:label">
-            <value>-</value>
+            <value>Grenade</value>
           </text>
           <text id="/data/person/traveler/nationality/ge:label">
-            <value>-</value>
+            <value>Géorgie</value>
           </text>
           <text id="/data/person/traveler/nationality/gf:label">
-            <value>-</value>
+            <value>Guyane Française</value>
           </text>
           <text id="/data/person/traveler/nationality/gg:label">
-            <value>-</value>
+            <value>Guernesey</value>
           </text>
           <text id="/data/person/traveler/nationality/gh:label">
-            <value>-</value>
+            <value>Ghana</value>
           </text>
           <text id="/data/person/traveler/nationality/gi:label">
-            <value>-</value>
+            <value>Gibraltar</value>
           </text>
           <text id="/data/person/traveler/nationality/gl:label">
-            <value>-</value>
+            <value>Groenland</value>
           </text>
           <text id="/data/person/traveler/nationality/gm:label">
-            <value>-</value>
+            <value>Gambie</value>
           </text>
           <text id="/data/person/traveler/nationality/gn:label">
-            <value>-</value>
+            <value>Guinée</value>
           </text>
           <text id="/data/person/traveler/nationality/gp:label">
-            <value>-</value>
+            <value>Guadeloupe</value>
           </text>
           <text id="/data/person/traveler/nationality/gq:label">
-            <value>-</value>
+            <value>Guinée Équatoriale</value>
           </text>
           <text id="/data/person/traveler/nationality/gr:label">
-            <value>-</value>
+            <value>Grèce</value>
           </text>
           <text id="/data/person/traveler/nationality/gs:label">
-            <value>-</value>
+            <value>Géorgie du Sud et les îles Sandwich du Sud</value>
           </text>
           <text id="/data/person/traveler/nationality/gt:label">
-            <value>-</value>
+            <value>Guatemala</value>
           </text>
           <text id="/data/person/traveler/nationality/gu:label">
-            <value>-</value>
+            <value>Guam</value>
           </text>
           <text id="/data/person/traveler/nationality/gw:label">
-            <value>-</value>
+            <value>Guinée-Bissau</value>
           </text>
           <text id="/data/person/traveler/nationality/gy:label">
-            <value>-</value>
+            <value>Guyane</value>
           </text>
           <text id="/data/person/traveler/nationality/hk:label">
-            <value>-</value>
+            <value>Hong Kong</value>
           </text>
           <text id="/data/person/traveler/nationality/hm:label">
-            <value>-</value>
+            <value>Les îles Heard et McDonald</value>
           </text>
           <text id="/data/person/traveler/nationality/hn:label">
-            <value>-</value>
+            <value>Honduras</value>
           </text>
           <text id="/data/person/traveler/nationality/hr:label">
-            <value>-</value>
+            <value>Croatie</value>
           </text>
           <text id="/data/person/traveler/nationality/ht:label">
-            <value>-</value>
+            <value>Haïti</value>
           </text>
           <text id="/data/person/traveler/nationality/hu:label">
-            <value>-</value>
+            <value>Hongrie</value>
           </text>
           <text id="/data/person/traveler/nationality/id:label">
-            <value>-</value>
+            <value>Indonésie</value>
           </text>
           <text id="/data/person/traveler/nationality/ie:label">
-            <value>-</value>
+            <value>Irlande</value>
           </text>
           <text id="/data/person/traveler/nationality/il:label">
-            <value>-</value>
+            <value>Israël</value>
           </text>
           <text id="/data/person/traveler/nationality/im:label">
-            <value>-</value>
+            <value>île de Man</value>
           </text>
           <text id="/data/person/traveler/nationality/in:label">
-            <value>-</value>
+            <value>Inde</value>
           </text>
           <text id="/data/person/traveler/nationality/io:label">
-            <value>-</value>
+            <value>Territoire britannique de l'océan Indien</value>
           </text>
           <text id="/data/person/traveler/nationality/iq:label">
-            <value>-</value>
+            <value>Irak</value>
           </text>
           <text id="/data/person/traveler/nationality/ir:label">
-            <value>-</value>
+            <value>Iran (République islamique d</value>
           </text>
           <text id="/data/person/traveler/nationality/is:label">
-            <value>-</value>
+            <value>Islande</value>
           </text>
           <text id="/data/person/traveler/nationality/it:label">
-            <value>-</value>
+            <value>Italie</value>
           </text>
           <text id="/data/person/traveler/nationality/je:label">
-            <value>-</value>
+            <value>Jersey</value>
           </text>
           <text id="/data/person/traveler/nationality/jm:label">
-            <value>-</value>
+            <value>Jamaïque</value>
           </text>
           <text id="/data/person/traveler/nationality/jo:label">
-            <value>-</value>
+            <value>Jordan</value>
           </text>
           <text id="/data/person/traveler/nationality/jp:label">
-            <value>-</value>
+            <value>Japon</value>
           </text>
           <text id="/data/person/traveler/nationality/ke:label">
-            <value>-</value>
+            <value>Kenya</value>
           </text>
           <text id="/data/person/traveler/nationality/kg:label">
-            <value>-</value>
+            <value>Kirghizistan</value>
           </text>
           <text id="/data/person/traveler/nationality/kh:label">
-            <value>-</value>
+            <value>Cambodge</value>
           </text>
           <text id="/data/person/traveler/nationality/ki:label">
-            <value>-</value>
+            <value>Kiribati</value>
           </text>
           <text id="/data/person/traveler/nationality/km:label">
-            <value>-</value>
+            <value>Comores</value>
           </text>
           <text id="/data/person/traveler/nationality/kn:label">
-            <value>-</value>
+            <value>Saint-Christophe-et-Niévès</value>
           </text>
           <text id="/data/person/traveler/nationality/kp:label">
-            <value>-</value>
+            <value>République populaire démocratique de Corée</value>
           </text>
           <text id="/data/person/traveler/nationality/kr:label">
-            <value>-</value>
+            <value>Corée, République de</value>
           </text>
           <text id="/data/person/traveler/nationality/kw:label">
-            <value>-</value>
+            <value>Koweit</value>
           </text>
           <text id="/data/person/traveler/nationality/ky:label">
-            <value>-</value>
+            <value>Îles Caïmans</value>
           </text>
           <text id="/data/person/traveler/nationality/kz:label">
-            <value>-</value>
+            <value>Kazakhstan</value>
           </text>
           <text id="/data/person/traveler/nationality/la:label">
-            <value>-</value>
+            <value>République démocratique populaire lao</value>
           </text>
           <text id="/data/person/traveler/nationality/lb:label">
-            <value>-</value>
+            <value>Liban</value>
           </text>
           <text id="/data/person/traveler/nationality/lc:label">
-            <value>-</value>
+            <value>Sainte-Lucie</value>
           </text>
           <text id="/data/person/traveler/nationality/li:label">
-            <value>-</value>
+            <value>Liechtenstein</value>
           </text>
           <text id="/data/person/traveler/nationality/lk:label">
-            <value>-</value>
+            <value>Sri Lanka</value>
           </text>
           <text id="/data/person/traveler/nationality/lr:label">
-            <value>-</value>
+            <value>Libéria</value>
           </text>
           <text id="/data/person/traveler/nationality/ls:label">
-            <value>-</value>
+            <value>Lesotho</value>
           </text>
           <text id="/data/person/traveler/nationality/lt:label">
-            <value>-</value>
+            <value>Lituanie</value>
           </text>
           <text id="/data/person/traveler/nationality/lu:label">
-            <value>-</value>
+            <value>Luxembourg</value>
           </text>
           <text id="/data/person/traveler/nationality/lv:label">
-            <value>-</value>
+            <value>Lettonie</value>
           </text>
           <text id="/data/person/traveler/nationality/ly:label">
-            <value>-</value>
+            <value>Libye</value>
           </text>
           <text id="/data/person/traveler/nationality/ma:label">
-            <value>-</value>
+            <value>Maroc</value>
           </text>
           <text id="/data/person/traveler/nationality/mc:label">
-            <value>-</value>
+            <value>Monaco</value>
           </text>
           <text id="/data/person/traveler/nationality/md:label">
-            <value>-</value>
+            <value>Moldova, République de</value>
           </text>
           <text id="/data/person/traveler/nationality/me:label">
-            <value>-</value>
+            <value>Monténégro</value>
           </text>
           <text id="/data/person/traveler/nationality/mf:label">
-            <value>-</value>
+            <value>Saint Martin (partie française)</value>
           </text>
           <text id="/data/person/traveler/nationality/mg:label">
-            <value>-</value>
+            <value>Madagascar</value>
           </text>
           <text id="/data/person/traveler/nationality/mh:label">
-            <value>-</value>
+            <value>Iles Marshall</value>
           </text>
           <text id="/data/person/traveler/nationality/mk:label">
-            <value>-</value>
+            <value>Macédoine, l'ex-République yougoslave de</value>
           </text>
           <text id="/data/person/traveler/nationality/ml:label">
-            <value>-</value>
+            <value>Mali</value>
           </text>
           <text id="/data/person/traveler/nationality/mm:label">
-            <value>-</value>
+            <value>Myanmar</value>
           </text>
           <text id="/data/person/traveler/nationality/mn:label">
-            <value>-</value>
+            <value>Mongolie</value>
           </text>
           <text id="/data/person/traveler/nationality/mo:label">
-            <value>-</value>
+            <value>Macao</value>
           </text>
           <text id="/data/person/traveler/nationality/mp:label">
-            <value>-</value>
+            <value>Îles Mariannes du Nord</value>
           </text>
           <text id="/data/person/traveler/nationality/mq:label">
-            <value>-</value>
+            <value>Martinique</value>
           </text>
           <text id="/data/person/traveler/nationality/mr:label">
-            <value>-</value>
+            <value>Mauritanie</value>
           </text>
           <text id="/data/person/traveler/nationality/ms:label">
-            <value>-</value>
+            <value>Montserrat</value>
           </text>
           <text id="/data/person/traveler/nationality/mt:label">
-            <value>-</value>
+            <value>Malte</value>
           </text>
           <text id="/data/person/traveler/nationality/mu:label">
-            <value>-</value>
+            <value>Ile Maurice</value>
           </text>
           <text id="/data/person/traveler/nationality/mv:label">
-            <value>-</value>
+            <value>Maldives</value>
           </text>
           <text id="/data/person/traveler/nationality/mw:label">
-            <value>-</value>
+            <value>Malawi</value>
           </text>
           <text id="/data/person/traveler/nationality/mx:label">
-            <value>-</value>
+            <value>Mexique</value>
           </text>
           <text id="/data/person/traveler/nationality/my:label">
-            <value>-</value>
+            <value>Malaisie</value>
           </text>
           <text id="/data/person/traveler/nationality/mz:label">
-            <value>-</value>
+            <value>Mozambique</value>
           </text>
           <text id="/data/person/traveler/nationality/na:label">
-            <value>-</value>
+            <value>Namibie</value>
           </text>
           <text id="/data/person/traveler/nationality/nc:label">
-            <value>-</value>
+            <value>Nouvelle Calédonie</value>
           </text>
           <text id="/data/person/traveler/nationality/ne:label">
-            <value>-</value>
+            <value>Niger</value>
           </text>
           <text id="/data/person/traveler/nationality/nf:label">
-            <value>-</value>
+            <value>l'ile de Norfolk</value>
           </text>
           <text id="/data/person/traveler/nationality/ng:label">
-            <value>-</value>
+            <value>Nigeria</value>
           </text>
           <text id="/data/person/traveler/nationality/ni:label">
-            <value>-</value>
+            <value>Nicaragua</value>
           </text>
           <text id="/data/person/traveler/nationality/nl:label">
-            <value>-</value>
+            <value>Pays-Bas</value>
           </text>
           <text id="/data/person/traveler/nationality/no:label">
-            <value>-</value>
+            <value>Norvège</value>
           </text>
           <text id="/data/person/traveler/nationality/np:label">
-            <value>-</value>
+            <value>Népal</value>
           </text>
           <text id="/data/person/traveler/nationality/nr:label">
-            <value>-</value>
+            <value>Nauru</value>
           </text>
           <text id="/data/person/traveler/nationality/nu:label">
-            <value>-</value>
+            <value>Niue</value>
           </text>
           <text id="/data/person/traveler/nationality/nz:label">
-            <value>-</value>
+            <value>Nouvelle-Zélande</value>
           </text>
           <text id="/data/person/traveler/nationality/om:label">
-            <value>-</value>
+            <value>Oman</value>
           </text>
           <text id="/data/person/traveler/nationality/ot:label">
-            <value>-</value>
+            <value>Autre</value>
           </text>
           <text id="/data/person/traveler/nationality/pa:label">
-            <value>-</value>
+            <value>Panama</value>
           </text>
           <text id="/data/person/traveler/nationality/pe:label">
-            <value>-</value>
+            <value>Pérou</value>
           </text>
           <text id="/data/person/traveler/nationality/pf:label">
-            <value>-</value>
+            <value>Polynésie française</value>
           </text>
           <text id="/data/person/traveler/nationality/pg:label">
-            <value>-</value>
+            <value>Papouasie Nouvelle Guinée</value>
           </text>
           <text id="/data/person/traveler/nationality/ph:label">
-            <value>-</value>
+            <value>Philippines</value>
           </text>
           <text id="/data/person/traveler/nationality/pk:label">
-            <value>-</value>
+            <value>Pakistan</value>
           </text>
           <text id="/data/person/traveler/nationality/pl:label">
-            <value>-</value>
+            <value>Pologne</value>
           </text>
           <text id="/data/person/traveler/nationality/pm:label">
-            <value>-</value>
+            <value>Saint-Pierre-et-Miquelon</value>
           </text>
           <text id="/data/person/traveler/nationality/pn:label">
-            <value>-</value>
+            <value>Pitcairn</value>
           </text>
           <text id="/data/person/traveler/nationality/pr:label">
-            <value>-</value>
+            <value>Porto Rico</value>
           </text>
           <text id="/data/person/traveler/nationality/ps:label">
-            <value>-</value>
+            <value>Territoires palestiniens</value>
           </text>
           <text id="/data/person/traveler/nationality/pt:label">
-            <value>-</value>
+            <value>le Portugal</value>
           </text>
           <text id="/data/person/traveler/nationality/pw:label">
-            <value>-</value>
+            <value>Palau</value>
           </text>
           <text id="/data/person/traveler/nationality/py:label">
-            <value>-</value>
+            <value>Paraguay</value>
           </text>
           <text id="/data/person/traveler/nationality/qa:label">
-            <value>-</value>
+            <value>Qatar</value>
           </text>
           <text id="/data/person/traveler/nationality/re:label">
-            <value>-</value>
+            <value>Réunion</value>
           </text>
           <text id="/data/person/traveler/nationality/ro:label">
-            <value>-</value>
+            <value>Roumanie</value>
           </text>
           <text id="/data/person/traveler/nationality/rs:label">
-            <value>-</value>
+            <value>Serbie</value>
           </text>
           <text id="/data/person/traveler/nationality/ru:label">
-            <value>-</value>
+            <value>Fédération Russe</value>
           </text>
           <text id="/data/person/traveler/nationality/rw:label">
-            <value>-</value>
+            <value>Rwanda</value>
           </text>
           <text id="/data/person/traveler/nationality/sa:label">
-            <value>-</value>
+            <value>Arabie Saoudite</value>
           </text>
           <text id="/data/person/traveler/nationality/sb:label">
-            <value>-</value>
+            <value>îles Salomon</value>
           </text>
           <text id="/data/person/traveler/nationality/sc:label">
-            <value>-</value>
+            <value>les Seychelles</value>
           </text>
           <text id="/data/person/traveler/nationality/sd:label">
-            <value>-</value>
+            <value>Soudan</value>
           </text>
           <text id="/data/person/traveler/nationality/se:label">
-            <value>-</value>
+            <value>Suède</value>
           </text>
           <text id="/data/person/traveler/nationality/sg:label">
-            <value>-</value>
+            <value>Singapour</value>
           </text>
           <text id="/data/person/traveler/nationality/sh:label">
-            <value>-</value>
+            <value>Sainte-Hélène, Ascension et Tristan da Cunha</value>
           </text>
           <text id="/data/person/traveler/nationality/si:label">
-            <value>-</value>
+            <value>Slovénie</value>
           </text>
           <text id="/data/person/traveler/nationality/sj:label">
-            <value>-</value>
+            <value>Spitzberg et Jan Mayen</value>
           </text>
           <text id="/data/person/traveler/nationality/sk:label">
-            <value>-</value>
+            <value>Slovaquie</value>
           </text>
           <text id="/data/person/traveler/nationality/sl:label">
-            <value>-</value>
+            <value>Sierra Leone</value>
           </text>
           <text id="/data/person/traveler/nationality/sm:label">
-            <value>-</value>
+            <value>Saint Marin</value>
           </text>
           <text id="/data/person/traveler/nationality/sn:label">
-            <value>-</value>
+            <value>Sénégal</value>
           </text>
           <text id="/data/person/traveler/nationality/so:label">
-            <value>-</value>
+            <value>Somalie</value>
           </text>
           <text id="/data/person/traveler/nationality/sr:label">
-            <value>-</value>
+            <value>Suriname</value>
           </text>
           <text id="/data/person/traveler/nationality/ss:label">
-            <value>-</value>
+            <value>Soudan du sud</value>
           </text>
           <text id="/data/person/traveler/nationality/st:label">
-            <value>-</value>
+            <value>Sao Tomé-et-Principe</value>
           </text>
           <text id="/data/person/traveler/nationality/sv:label">
-            <value>-</value>
+            <value>Le Salvador</value>
           </text>
           <text id="/data/person/traveler/nationality/sx:label">
-            <value>-</value>
+            <value>Sint Maarten (partie néerlandaise)</value>
           </text>
           <text id="/data/person/traveler/nationality/sy:label">
-            <value>-</value>
+            <value>République arabe syrienne</value>
           </text>
           <text id="/data/person/traveler/nationality/sz:label">
-            <value>-</value>
+            <value>Swaziland</value>
           </text>
           <text id="/data/person/traveler/nationality/tc:label">
-            <value>-</value>
+            <value>îles Turques-et-Caïques</value>
           </text>
           <text id="/data/person/traveler/nationality/td:label">
-            <value>-</value>
+            <value>Tchad</value>
           </text>
           <text id="/data/person/traveler/nationality/tf:label">
-            <value>-</value>
+            <value>Terres australes françaises</value>
           </text>
           <text id="/data/person/traveler/nationality/tg:label">
-            <value>-</value>
+            <value>Aller</value>
           </text>
           <text id="/data/person/traveler/nationality/th:label">
-            <value>-</value>
+            <value>Thaïlande</value>
           </text>
           <text id="/data/person/traveler/nationality/tj:label">
-            <value>-</value>
+            <value>Tadjikistan</value>
           </text>
           <text id="/data/person/traveler/nationality/tk:label">
-            <value>-</value>
+            <value>Tokelau</value>
           </text>
           <text id="/data/person/traveler/nationality/tl:label">
-            <value>-</value>
+            <value>Timor-Leste</value>
           </text>
           <text id="/data/person/traveler/nationality/tm:label">
-            <value>-</value>
+            <value>Turkménistan</value>
           </text>
           <text id="/data/person/traveler/nationality/tn:label">
-            <value>-</value>
+            <value>Tunisie</value>
           </text>
           <text id="/data/person/traveler/nationality/to:label">
-            <value>-</value>
+            <value>Tonga</value>
           </text>
           <text id="/data/person/traveler/nationality/tr:label">
-            <value>-</value>
+            <value>dinde</value>
           </text>
           <text id="/data/person/traveler/nationality/tt:label">
-            <value>-</value>
+            <value>Trinité-et-Tobago</value>
           </text>
           <text id="/data/person/traveler/nationality/tv:label">
-            <value>-</value>
+            <value>Tuvalu</value>
           </text>
           <text id="/data/person/traveler/nationality/tw:label">
-            <value>-</value>
+            <value>Taiwan, Province de Chine</value>
           </text>
           <text id="/data/person/traveler/nationality/tz:label">
-            <value>-</value>
+            <value>Tanzanie, République-Unie de</value>
           </text>
           <text id="/data/person/traveler/nationality/ua:label">
-            <value>-</value>
+            <value>Ukraine</value>
           </text>
           <text id="/data/person/traveler/nationality/ug:label">
-            <value>-</value>
+            <value>Ouganda</value>
           </text>
           <text id="/data/person/traveler/nationality/um:label">
-            <value>-</value>
+            <value>Îles mineures éloignées des États-Unis</value>
           </text>
           <text id="/data/person/traveler/nationality/us:label">
-            <value>-</value>
+            <value>États Unis</value>
           </text>
           <text id="/data/person/traveler/nationality/uy:label">
-            <value>-</value>
+            <value>Uruguay</value>
           </text>
           <text id="/data/person/traveler/nationality/uz:label">
-            <value>-</value>
+            <value>Ouzbékistan</value>
           </text>
           <text id="/data/person/traveler/nationality/va:label">
-            <value>-</value>
+            <value>Saint-Siège (Cité du Vatican)</value>
           </text>
           <text id="/data/person/traveler/nationality/vc:label">
-            <value>-</value>
+            <value>Saint-Vincent-et-les-Grenadines</value>
           </text>
           <text id="/data/person/traveler/nationality/ve:label">
-            <value>-</value>
+            <value>Venezuela, République bolivarienne du</value>
           </text>
           <text id="/data/person/traveler/nationality/vg:label">
-            <value>-</value>
+            <value>Îles Vierges britanniques</value>
           </text>
           <text id="/data/person/traveler/nationality/vi:label">
-            <value>-</value>
+            <value>Îles Vierges américaines,</value>
           </text>
           <text id="/data/person/traveler/nationality/vn:label">
-            <value>-</value>
+            <value>Viet Nam</value>
           </text>
           <text id="/data/person/traveler/nationality/vu:label">
-            <value>-</value>
+            <value>Vanuatu</value>
           </text>
           <text id="/data/person/traveler/nationality/wf:label">
-            <value>-</value>
+            <value>Wallis et Futuna</value>
           </text>
           <text id="/data/person/traveler/nationality/ws:label">
-            <value>-</value>
+            <value>Samoa</value>
           </text>
           <text id="/data/person/traveler/nationality/ye:label">
-            <value>-</value>
+            <value>Yémen</value>
           </text>
           <text id="/data/person/traveler/nationality/yt:label">
-            <value>-</value>
+            <value>Mayotte</value>
           </text>
           <text id="/data/person/traveler/nationality/za:label">
-            <value>-</value>
+            <value>Afrique du Sud</value>
           </text>
           <text id="/data/person/traveler/nationality/zm:label">
-            <value>-</value>
+            <value>Zambie</value>
           </text>
           <text id="/data/person/traveler/nationality/zw:label">
+            <value>Zimbabwe</value>
+          </text>
+          <text id="/data/person/traveler/nationality:jr:requiredMsg">
             <value>-</value>
           </text>
           <text id="/data/person/traveler/nationality:label">
+            <value>Nationalité</value>
+          </text>
+          <text id="/data/person/traveler/nationality_other:jr:requiredMsg">
             <value>-</value>
           </text>
           <text id="/data/person/traveler/nationality_other:label">
+            <value>Veuillez préciser la nationalité</value>
+          </text>
+          <text id="/data/person/traveler/passport:jr:requiredMsg">
             <value>-</value>
           </text>
           <text id="/data/person/traveler/passport:label">
-            <value>-</value>
+            <value>Numéro de passeport</value>
           </text>
           <text id="/data/person/traveler/skype:label">
-            <value>-</value>
+            <value>ID Skype</value>
           </text>
           <text id="/data/person/traveler:label">
-            <value>-</value>
+            <value>Informations du voyageur</value>
           </text>
           <text id="/data/person/type:label">
-            <value>-</value>
-          </text>
-          <text id="/data/person:label">
-            <value>-</value>
+            <value>Type de personne</value>
           </text>
         </translation>
       </itext>
       <instance>
-        <data delimiter="#" id="contact:person:create" prefix="J1!contact:person:create!" version="2020-03-25 21-41">
+        <data delimiter="#" id="contact:person:create" prefix="J1!contact:person:create!" version="2020-03-28 12-23">
           <inputs>
             <meta>
               <location>
@@ -1950,12 +1967,12 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
       <bind calculate="../ephemeral_dob/dob_method" nodeset="/data/person/date_of_birth_method" type="string"/>
       <bind nodeset="/data/person/role" type="select1"/>
       <bind nodeset="/data/person/traveler" relevant="selected(../role, 'traveler') and  /data/init/type_selector  = 'clinic'"/>
-      <bind jr:requiredMsg="If not filled, put Other" nodeset="/data/person/traveler/nationality" required="true()" type="select1"/>
-      <bind jr:requiredMsg="If not filled, put a dash sign (-)." nodeset="/data/person/traveler/nationality_other" relevant="selected(../nationality, 'ot')" required="true()" type="string"/>
-      <bind jr:requiredMsg="If not filled, put a dash sign (-)." nodeset="/data/person/traveler/passport" required="true()" type="string"/>
+      <bind jr:requiredMsg="jr:itext('/data/person/traveler/nationality:jr:requiredMsg')" nodeset="/data/person/traveler/nationality" required="true()" type="select1"/>
+      <bind jr:requiredMsg="jr:itext('/data/person/traveler/nationality_other:jr:requiredMsg')" nodeset="/data/person/traveler/nationality_other" relevant="selected(../nationality, 'ot')" required="true()" type="string"/>
+      <bind jr:requiredMsg="jr:itext('/data/person/traveler/passport:jr:requiredMsg')" nodeset="/data/person/traveler/passport" required="true()" type="string"/>
       <bind nodeset="/data/person/traveler/home_address" type="string"/>
       <bind nodeset="/data/person/traveler/destination_address" type="string"/>
-      <bind jr:requiredMsg="If not filled, put a dash sign (-)." nodeset="/data/person/traveler/email" required="true()" type="string"/>
+      <bind jr:requiredMsg="jr:itext('/data/person/traveler/email:jr:requiredMsg')" nodeset="/data/person/traveler/email" required="true()" type="string"/>
       <bind nodeset="/data/person/traveler/skype" type="string"/>
       <bind constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" jr:constraintMsg="jr:itext('/data/person/ephemeral_dob/dob_calendar:jr:constraintMsg')" nodeset="/data/person/ephemeral_dob/dob_calendar" relevant="not(selected(../dob_method,'approx'))" required="true()" type="date"/>
       <bind nodeset="/data/person/ephemeral_dob/age_label" readonly="true()" relevant="selected(../dob_method,'approx')" type="string"/>
@@ -1997,7 +2014,7 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
       </group>
     </group>
     <group ref="/data/init">
-      <input appearance="db-object" ref="/data/init/parent_id">
+      <input appearance="db-object hidden" ref="/data/init/parent_id">
         <label ref="jr:itext('/data/init/parent_id:label')"/>
         <hint ref="jr:itext('/data/init/parent_id:hint')"/>
       </input>

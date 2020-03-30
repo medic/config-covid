@@ -1,7 +1,7 @@
 module.exports = [{
   name: 'covid-rdt-followup',
   icon: 'icon-healthcare',
-  title: 'COVID-19 Follow-up',
+  title: 'task.covid_followup.title',
   appliesTo: 'contacts',
   appliesToType: ['person'],
   appliesIf: function (c) {
@@ -25,6 +25,6 @@ module.exports = [{
   actions: [{
     type: 'contacts',
     form: 'covid_rdt_followup',
-    label: 'COVID-19 Follow-up',
+    label: 'task.covid_followup.title',
   }],
 }];
