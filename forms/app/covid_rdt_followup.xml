@@ -59,19 +59,19 @@
         </translation>
         <translation lang="fr">
           <text id="/covid_rdt_followup/followup_group/followup/no:label">
-            <value>-</value>
+            <value>Non</value>
           </text>
           <text id="/covid_rdt_followup/followup_group/followup/yes:label">
-            <value>-</value>
+            <value>Oui</value>
           </text>
           <text id="/covid_rdt_followup/followup_group/followup:jr:constraintMsg">
-            <value>-</value>
+            <value>Vous devez recevoir une mise à jour sur la situation du patient pour accomplir cette tâche</value>
           </text>
           <text id="/covid_rdt_followup/followup_group/followup:label">
-            <value>-</value>
+            <value>Avez-vous appelé le patient et reçu des nouvelles sur sa situation?</value>
           </text>
           <text id="/covid_rdt_followup/followup_group:label">
-            <value>-</value>
+            <value>Suivi après un résultat positif du TDR</value>
           </text>
           <text id="/covid_rdt_followup/inputs/contact/_id:label">
             <value>_id</value>
@@ -112,7 +112,7 @@
         </translation>
       </itext>
       <instance>
-        <covid_rdt_followup delimiter="#" id="covid_rdt_followup" prefix="J1!covid_rdt_followup!" version="2020-03-26  16-42">
+        <covid_rdt_followup delimiter="#" id="covid_rdt_followup" prefix="J1!covid_rdt_followup!" version="2020-03-28 17-26">
           <inputs tag="hidden">
             <source>user</source>
             <source_id/>

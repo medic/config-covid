@@ -168,9 +168,191 @@
             <value>Journey Information</value>
           </text>
         </translation>
+        <translation lang="fr">
+          <text id="/declaration/contact_info/admit/false:label">
+            <value>Non</value>
+          </text>
+          <text id="/declaration/contact_info/admit/true:label">
+            <value>Oui</value>
+          </text>
+          <text id="/declaration/contact_info/admit:label">
+            <value>Avez-vous consulté des guérisseurs traditionnels ou été admis à l'hôpital?</value>
+          </text>
+          <text id="/declaration/contact_info/ari/false:label">
+            <value>Non</value>
+          </text>
+          <text id="/declaration/contact_info/ari/true:label">
+            <value>Oui</value>
+          </text>
+          <text id="/declaration/contact_info/ari:label">
+            <value>Avez-vous rencontré des patients présentant des signes de maladie respiratoire aiguë dans les 14 derniers jours?</value>
+          </text>
+          <text id="/declaration/contact_info/care/false:label">
+            <value>Non</value>
+          </text>
+          <text id="/declaration/contact_info/care/true:label">
+            <value>Oui</value>
+          </text>
+          <text id="/declaration/contact_info/care:label">
+            <value>Avez-vous été en contact avec une personne ayant une maladie grave ou qui est mort d'une cause inconnue?</value>
+          </text>
+          <text id="/declaration/contact_info/dead/false:label">
+            <value>Non</value>
+          </text>
+          <text id="/declaration/contact_info/dead/true:label">
+            <value>Oui</value>
+          </text>
+          <text id="/declaration/contact_info/dead:label">
+            <value>Avez-vous assisté ou été en contact avec un cadavre ?</value>
+          </text>
+          <text id="/declaration/contact_info:label">
+            <value>Informations du contact</value>
+          </text>
+          <text id="/declaration/health/bleeding/false:label">
+            <value>Non</value>
+          </text>
+          <text id="/declaration/health/bleeding/true:label">
+            <value>Oui</value>
+          </text>
+          <text id="/declaration/health/bleeding:label">
+            <value>saignements inexpliqués ou inhabituels</value>
+          </text>
+          <text id="/declaration/health/bruising/false:label">
+            <value>Non</value>
+          </text>
+          <text id="/declaration/health/bruising/true:label">
+            <value>Oui</value>
+          </text>
+          <text id="/declaration/health/bruising:label">
+            <value>Bleus</value>
+          </text>
+          <text id="/declaration/health/diarrhoea/false:label">
+            <value>Non</value>
+          </text>
+          <text id="/declaration/health/diarrhoea/true:label">
+            <value>Oui</value>
+          </text>
+          <text id="/declaration/health/diarrhoea:label">
+            <value>Diarrhée</value>
+          </text>
+          <text id="/declaration/health/fatigue/false:label">
+            <value>Non</value>
+          </text>
+          <text id="/declaration/health/fatigue/true:label">
+            <value>Oui</value>
+          </text>
+          <text id="/declaration/health/fatigue:label">
+            <value>Fatigue intense, corps endolori ou épuisement</value>
+          </text>
+          <text id="/declaration/health/fever/false:label">
+            <value>Non</value>
+          </text>
+          <text id="/declaration/health/fever/true:label">
+            <value>Oui</value>
+          </text>
+          <text id="/declaration/health/fever:label">
+            <value>Fièvre (température égale ou supérieure à 38° C/100° F), sensation de fébrilité ou d'avoir des frissons</value>
+          </text>
+          <text id="/declaration/health/fever_history/false:label">
+            <value>Non</value>
+          </text>
+          <text id="/declaration/health/fever_history/true:label">
+            <value>Oui</value>
+          </text>
+          <text id="/declaration/health/fever_history:label">
+            <value>Avez-vous eu une température élevée ou une fièvre à un moment donné au cours des 48 dernières heures?</value>
+          </text>
+          <text id="/declaration/health/headache/false:label">
+            <value>Non</value>
+          </text>
+          <text id="/declaration/health/headache/true:label">
+            <value>Oui</value>
+          </text>
+          <text id="/declaration/health/headache:label">
+            <value>Maux de tête</value>
+          </text>
+          <text id="/declaration/health/notes:hint">
+            <value>-</value>
+          </text>
+          <text id="/declaration/health/notes:label">
+            <value>Remarques</value>
+          </text>
+          <text id="/declaration/health/respi/false:label">
+            <value>Non</value>
+          </text>
+          <text id="/declaration/health/respi/true:label">
+            <value>Oui</value>
+          </text>
+          <text id="/declaration/health/respi:label">
+            <value>Symtômes respiratoires tels que la toux, des éternuements, un écoulement nasal, etc...</value>
+          </text>
+          <text id="/declaration/health/vomiting/false:label">
+            <value>Non</value>
+          </text>
+          <text id="/declaration/health/vomiting/true:label">
+            <value>Oui</value>
+          </text>
+          <text id="/declaration/health/vomiting:label">
+            <value>Vomissements/ sensation d'être malade</value>
+          </text>
+          <text id="/declaration/health:label">
+            <value>Information sur la santé</value>
+          </text>
+          <text id="/declaration/inputs/contact/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/declaration/inputs/contact/name:label">
+            <value>-</value>
+          </text>
+          <text id="/declaration/inputs/contact/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/declaration/inputs/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/declaration/inputs/source:label">
+            <value>-</value>
+          </text>
+          <text id="/declaration/inputs/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/declaration/inputs:label">
+            <value>-</value>
+          </text>
+          <text id="/declaration/journey/flight_number:label">
+            <value>Numéro de vol</value>
+          </text>
+          <text id="/declaration/journey/journey_history/from:label">
+            <value>De</value>
+          </text>
+          <text id="/declaration/journey/journey_history/to:label">
+            <value>Vers</value>
+          </text>
+          <text id="/declaration/journey/journey_history:label">
+            <value>Où avez-vous débuté et effectué une escale lors de ce voyage?</value>
+          </text>
+          <text id="/declaration/journey:hint">
+            <value>-</value>
+          </text>
+          <text id="/declaration/journey:label">
+            <value>Informations sur le trajet</value>
+          </text>
+          <text id="/declaration/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/declaration/patient_name:label">
+            <value>-</value>
+          </text>
+          <text id="/declaration/patient_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/declaration/r_high_risk:label">
+            <value>-</value>
+          </text>
+        </translation>
       </itext>
       <instance>
-        <declaration delimiter="#" id="declaration" prefix="J1!declaration!" version="2020-03-19 00:45:16">
+        <declaration delimiter="#" id="declaration" prefix="J1!declaration!" version="2020-03-28 18:55:23">
           <inputs>
             <meta>
               <location>

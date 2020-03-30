@@ -3,6 +3,10 @@
     {
       "locale": "en",
       "content": "COVID-19 Followup"
+    },
+    {
+      "locale": "fr",
+      "content": "Suivi du Covid 19"
     }
   ],
   "context": {

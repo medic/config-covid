@@ -1,9 +1,18 @@
 {
     "icon": "icon-hospital",
-    "title": "Referral",
+    "title": [
+        {
+            "locale": "en",
+            "content": "Referral"
+        },
+        {
+            "locale": "fr",
+            "content": "Référence "
+        }
+    ],
     "context": {
         "person": true,
         "place": false,
-        "expression": "!contact || (contact.type === 'person' && user.parent.type === 'health_center' && user.role === 'inputter')"
+        "expression": "!contact || (contact.type === 'person' && user.parent.type === 'health_center' && user.role === 'inputter') || (contact.type === 'person' && user.parent.type === 'clinic' && user.role === 'inputter')"
     }
 }

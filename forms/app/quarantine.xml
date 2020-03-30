@@ -435,9 +435,464 @@
             <value>No</value>
           </text>
         </translation>
+        <translation lang="fr">
+          <text id="/quarantine/accomodation/district:label">
+            <value>District</value>
+          </text>
+          <text id="/quarantine/accomodation/hotel_name:label">
+            <value>Précisez le nom Hôtel</value>
+          </text>
+          <text id="/quarantine/accomodation/house:label">
+            <value>Numéro du domicile</value>
+          </text>
+          <text id="/quarantine/accomodation/landline:label">
+            <value>téléphone fixe</value>
+          </text>
+          <text id="/quarantine/accomodation/mobile:label">
+            <value>Numéro mobile</value>
+          </text>
+          <text id="/quarantine/accomodation/municipality:label">
+            <value>Municipalité</value>
+          </text>
+          <text id="/quarantine/accomodation/other_name:label">
+            <value>Spécifiez un autre lieu de séjour</value>
+          </text>
+          <text id="/quarantine/accomodation/province/1:label">
+            <value>Province 1</value>
+          </text>
+          <text id="/quarantine/accomodation/province/2:label">
+            <value>Province 2</value>
+          </text>
+          <text id="/quarantine/accomodation/province/3:label">
+            <value>Bagmati</value>
+          </text>
+          <text id="/quarantine/accomodation/province/4:label">
+            <value>Gandaki</value>
+          </text>
+          <text id="/quarantine/accomodation/province/5:label">
+            <value>Province 5</value>
+          </text>
+          <text id="/quarantine/accomodation/province/6:label">
+            <value>Karnali</value>
+          </text>
+          <text id="/quarantine/accomodation/province/7:label">
+            <value>Sudur Pashchim</value>
+          </text>
+          <text id="/quarantine/accomodation/province:label">
+            <value>Province</value>
+          </text>
+          <text id="/quarantine/accomodation/room_share_repeat/mob_no:label">
+            <value>Numéro mobile</value>
+          </text>
+          <text id="/quarantine/accomodation/room_share_repeat/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/quarantine/accomodation/room_share_repeat:label">
+            <value>Chambre partagée avec</value>
+          </text>
+          <text id="/quarantine/accomodation/staying_at/home:label">
+            <value>Domicile</value>
+          </text>
+          <text id="/quarantine/accomodation/staying_at/hotel:label">
+            <value>Hôtel</value>
+          </text>
+          <text id="/quarantine/accomodation/staying_at/other:label">
+            <value>Autres lieux</value>
+          </text>
+          <text id="/quarantine/accomodation/staying_at:label">
+            <value>S'il vous plaît indiquer votre logement.</value>
+          </text>
+          <text id="/quarantine/accomodation/ward:label">
+            <value>Ward pas.</value>
+          </text>
+          <text id="/quarantine/accomodation:label">
+            <value>3. Hébergement</value>
+          </text>
+          <text id="/quarantine/filled_at:label">
+            <value>Rempli à</value>
+          </text>
+          <text id="/quarantine/flight_info/airline:label">
+            <value>Nom des compagnies aériennes</value>
+          </text>
+          <text id="/quarantine/flight_info/arrival_date:label">
+            <value>Date d'arrivée au Népal</value>
+          </text>
+          <text id="/quarantine/flight_info/flight:label">
+            <value>Numéro de vol.</value>
+          </text>
+          <text id="/quarantine/flight_info/seat:label">
+            <value>N ° de siège</value>
+          </text>
+          <text id="/quarantine/flight_info/visit_repeat/visited_place:label">
+            <value>PAS DE LABEL</value>
+          </text>
+          <text id="/quarantine/flight_info/visit_repeat:label">
+            <value>Pays / lieux visités au cours des 14 derniers jours</value>
+          </text>
+          <text id="/quarantine/flight_info:label">
+            <value>2. Historique du voyage</value>
+          </text>
+          <text id="/quarantine/inputs/contact/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/quarantine/inputs/contact/form_date:label">
+            <value>-</value>
+          </text>
+          <text id="/quarantine/inputs/contact/name:label">
+            <value>-</value>
+          </text>
+          <text id="/quarantine/inputs/contact/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/quarantine/inputs/contact/traveler/first_name:label">
+            <value>-</value>
+          </text>
+          <text id="/quarantine/inputs/contact/traveler/last_name:label">
+            <value>-</value>
+          </text>
+          <text id="/quarantine/inputs/contact/traveler/nationality:label">
+            <value>-</value>
+          </text>
+          <text id="/quarantine/inputs/contact/traveler/nationality_other:label">
+            <value>-</value>
+          </text>
+          <text id="/quarantine/inputs/contact/traveler:label">
+            <value>-</value>
+          </text>
+          <text id="/quarantine/inputs/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/quarantine/inputs/source:label">
+            <value>-</value>
+          </text>
+          <text id="/quarantine/inputs/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/quarantine/inputs:label">
+            <value>-</value>
+          </text>
+          <text id="/quarantine/local_contact/room_share_repeat/mob_no:label">
+            <value>Numéro mobile</value>
+          </text>
+          <text id="/quarantine/local_contact/room_share_repeat/name:label">
+            <value>Nom</value>
+          </text>
+          <text id="/quarantine/local_contact/room_share_repeat/relation:label">
+            <value>Relation avec les contacts locaux</value>
+          </text>
+          <text id="/quarantine/local_contact/room_share_repeat:label">
+            <value>PAS DE LABEL</value>
+          </text>
+          <text id="/quarantine/local_contact:label">
+            <value>contacts locaux</value>
+          </text>
+          <text id="/quarantine/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/quarantine/patient_name:label">
+            <value>-</value>
+          </text>
+          <text id="/quarantine/patient_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/quarantine/work_details/address:label">
+            <value>Adresse de bureau</value>
+          </text>
+          <text id="/quarantine/work_details/district:label">
+            <value>District</value>
+          </text>
+          <text id="/quarantine/work_details/email:label">
+            <value>Email</value>
+          </text>
+          <text id="/quarantine/work_details/office:label">
+            <value>Bureau</value>
+          </text>
+          <text id="/quarantine/work_details/phone:label">
+            <value>Téléphone</value>
+          </text>
+          <text id="/quarantine/work_details/supervisor_name:label">
+            <value>Nom du superviseur</value>
+          </text>
+          <text id="/quarantine/work_details:label">
+            <value>Détails sur l'emploi</value>
+          </text>
+          <text id="static_instance-districts-0">
+            <value>Bhojpur</value>
+          </text>
+          <text id="static_instance-districts-1">
+            <value>Dhankuta</value>
+          </text>
+          <text id="static_instance-districts-10">
+            <value>Sunsari</value>
+          </text>
+          <text id="static_instance-districts-11">
+            <value>Taplejung</value>
+          </text>
+          <text id="static_instance-districts-12">
+            <value>Terhathum</value>
+          </text>
+          <text id="static_instance-districts-13">
+            <value>Udayapur</value>
+          </text>
+          <text id="static_instance-districts-14">
+            <value>Saptari</value>
+          </text>
+          <text id="static_instance-districts-15">
+            <value>Siraha</value>
+          </text>
+          <text id="static_instance-districts-16">
+            <value>Dhanusa</value>
+          </text>
+          <text id="static_instance-districts-17">
+            <value>Mahottari</value>
+          </text>
+          <text id="static_instance-districts-18">
+            <value>Sarlahi</value>
+          </text>
+          <text id="static_instance-districts-19">
+            <value>Bara</value>
+          </text>
+          <text id="static_instance-districts-2">
+            <value>Ilam</value>
+          </text>
+          <text id="static_instance-districts-20">
+            <value>Parsa</value>
+          </text>
+          <text id="static_instance-districts-21">
+            <value>Rautahat</value>
+          </text>
+          <text id="static_instance-districts-22">
+            <value>Sindhuli</value>
+          </text>
+          <text id="static_instance-districts-23">
+            <value>Ramechhap</value>
+          </text>
+          <text id="static_instance-districts-24">
+            <value>Dolakha</value>
+          </text>
+          <text id="static_instance-districts-25">
+            <value>Bhaktapur</value>
+          </text>
+          <text id="static_instance-districts-26">
+            <value>Dhading</value>
+          </text>
+          <text id="static_instance-districts-27">
+            <value>Kathmandu</value>
+          </text>
+          <text id="static_instance-districts-28">
+            <value>Kavrepalanchok</value>
+          </text>
+          <text id="static_instance-districts-29">
+            <value>Lalitpur</value>
+          </text>
+          <text id="static_instance-districts-3">
+            <value>Jhapa</value>
+          </text>
+          <text id="static_instance-districts-30">
+            <value>Nuwakot</value>
+          </text>
+          <text id="static_instance-districts-31">
+            <value>Rasuwa</value>
+          </text>
+          <text id="static_instance-districts-32">
+            <value>Sindhupalchok</value>
+          </text>
+          <text id="static_instance-districts-33">
+            <value>Chitwan</value>
+          </text>
+          <text id="static_instance-districts-34">
+            <value>Makwanpur</value>
+          </text>
+          <text id="static_instance-districts-35">
+            <value>Baglung</value>
+          </text>
+          <text id="static_instance-districts-36">
+            <value>Gorkha</value>
+          </text>
+          <text id="static_instance-districts-37">
+            <value>Kaski</value>
+          </text>
+          <text id="static_instance-districts-38">
+            <value>Lamjung</value>
+          </text>
+          <text id="static_instance-districts-39">
+            <value>Manang</value>
+          </text>
+          <text id="static_instance-districts-4">
+            <value>Khotang</value>
+          </text>
+          <text id="static_instance-districts-40">
+            <value>Mustang</value>
+          </text>
+          <text id="static_instance-districts-41">
+            <value>Myagdi</value>
+          </text>
+          <text id="static_instance-districts-42">
+            <value>Nawalpur</value>
+          </text>
+          <text id="static_instance-districts-43">
+            <value>Parbat</value>
+          </text>
+          <text id="static_instance-districts-44">
+            <value>Syangja</value>
+          </text>
+          <text id="static_instance-districts-45">
+            <value>Tanahun</value>
+          </text>
+          <text id="static_instance-districts-46">
+            <value>Kapilvastu</value>
+          </text>
+          <text id="static_instance-districts-47">
+            <value>Parasi</value>
+          </text>
+          <text id="static_instance-districts-48">
+            <value>Rupandehi</value>
+          </text>
+          <text id="static_instance-districts-49">
+            <value>Arghakhanchi</value>
+          </text>
+          <text id="static_instance-districts-5">
+            <value>Morang</value>
+          </text>
+          <text id="static_instance-districts-50">
+            <value>Gulmi</value>
+          </text>
+          <text id="static_instance-districts-51">
+            <value>Palpa</value>
+          </text>
+          <text id="static_instance-districts-52">
+            <value>Dang</value>
+          </text>
+          <text id="static_instance-districts-53">
+            <value>Pyuthan</value>
+          </text>
+          <text id="static_instance-districts-54">
+            <value>Rolpa</value>
+          </text>
+          <text id="static_instance-districts-55">
+            <value>Rukum East</value>
+          </text>
+          <text id="static_instance-districts-56">
+            <value>Banke</value>
+          </text>
+          <text id="static_instance-districts-57">
+            <value>Bardiya</value>
+          </text>
+          <text id="static_instance-districts-58">
+            <value>Rukum West</value>
+          </text>
+          <text id="static_instance-districts-59">
+            <value>Salyan</value>
+          </text>
+          <text id="static_instance-districts-6">
+            <value>Okhaldhunga</value>
+          </text>
+          <text id="static_instance-districts-60">
+            <value>Dolpa</value>
+          </text>
+          <text id="static_instance-districts-61">
+            <value>Humla</value>
+          </text>
+          <text id="static_instance-districts-62">
+            <value>Jumla</value>
+          </text>
+          <text id="static_instance-districts-63">
+            <value>Kalikot</value>
+          </text>
+          <text id="static_instance-districts-64">
+            <value>Mugu</value>
+          </text>
+          <text id="static_instance-districts-65">
+            <value>Surkhet</value>
+          </text>
+          <text id="static_instance-districts-66">
+            <value>Dailekh</value>
+          </text>
+          <text id="static_instance-districts-67">
+            <value>Jajarkot</value>
+          </text>
+          <text id="static_instance-districts-68">
+            <value>Kailali</value>
+          </text>
+          <text id="static_instance-districts-69">
+            <value>Achham</value>
+          </text>
+          <text id="static_instance-districts-7">
+            <value>Panchthar</value>
+          </text>
+          <text id="static_instance-districts-70">
+            <value>Doti</value>
+          </text>
+          <text id="static_instance-districts-71">
+            <value>Bajhang</value>
+          </text>
+          <text id="static_instance-districts-72">
+            <value>Bajura</value>
+          </text>
+          <text id="static_instance-districts-73">
+            <value>Kanchanpur</value>
+          </text>
+          <text id="static_instance-districts-74">
+            <value>Dadeldhura</value>
+          </text>
+          <text id="static_instance-districts-75">
+            <value>Baitadi</value>
+          </text>
+          <text id="static_instance-districts-76">
+            <value>Darchula</value>
+          </text>
+          <text id="static_instance-districts-8">
+            <value>Sankhuwasabha</value>
+          </text>
+          <text id="static_instance-districts-9">
+            <value>Solukhumbu</value>
+          </text>
+          <text id="static_instance-male_female-0">
+            <value>Masculin</value>
+          </text>
+          <text id="static_instance-male_female-1">
+            <value>Féminin</value>
+          </text>
+          <text id="static_instance-places-0">
+            <value>Hôtel</value>
+          </text>
+          <text id="static_instance-places-1">
+            <value>Domicile</value>
+          </text>
+          <text id="static_instance-places-2">
+            <value>Autres lieux</value>
+          </text>
+          <text id="static_instance-provinces-0">
+            <value>Province 1</value>
+          </text>
+          <text id="static_instance-provinces-1">
+            <value>Province 2</value>
+          </text>
+          <text id="static_instance-provinces-2">
+            <value>Bagmati</value>
+          </text>
+          <text id="static_instance-provinces-3">
+            <value>Gandaki</value>
+          </text>
+          <text id="static_instance-provinces-4">
+            <value>Province 5</value>
+          </text>
+          <text id="static_instance-provinces-5">
+            <value>Karnali</value>
+          </text>
+          <text id="static_instance-provinces-6">
+            <value>Sudur Pashchim</value>
+          </text>
+          <text id="static_instance-yes_no-0">
+            <value>Oui</value>
+          </text>
+          <text id="static_instance-yes_no-1">
+            <value>Non</value>
+          </text>
+        </translation>
       </itext>
       <instance>
-        <quarantine delimiter="#" id="quarantine" prefix="J1!quarantine!" version="2020-03-21 20:30:59">
+        <quarantine delimiter="#" id="quarantine" prefix="J1!quarantine!" version="2020-03-28 12:18:06">
           <inputs>
             <meta>
               <location>
@@ -1046,7 +1501,9 @@
       <group ref="/quarantine/flight_info/visit_repeat">
         <label ref="jr:itext('/quarantine/flight_info/visit_repeat:label')"/>
         <repeat nodeset="/quarantine/flight_info/visit_repeat">
-          <input ref="/quarantine/flight_info/visit_repeat/visited_place"/>
+          <input ref="/quarantine/flight_info/visit_repeat/visited_place">
+            <label ref="jr:itext('/quarantine/flight_info/visit_repeat/visited_place:label')"/>
+          </input>
         </repeat>
       </group>
     </group>
