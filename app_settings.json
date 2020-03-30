@@ -439,6 +439,35 @@
     "death_reporting": true
   },
   "outbound": {
+    "textit-message": {
+      "relevant_to": "doc.type === 'data_record' && doc.tasks && doc.tasks[0] && doc.tasks[0].state && doc.tasks[0].state === 'pending'",
+      "destination": {
+        "base_url": "https://textit.in",
+        "auth": {
+          "type": "header",
+          "name": "Authorization",
+          "value_key": "textit.in"
+        },
+        "path": "/api/v2/flow_starts.json"
+      },
+      "mapping": {
+        "flow": {
+          "expr": "'0e819482-a9bf-45a9-9d44-21ce4a11b6c0'"
+        },
+        "urns": {
+          "expr": "[ 'tel:' + doc.tasks[0].messages[0].to ]",
+          "optional": false
+        },
+        "extra.message": {
+          "expr": "doc.tasks[0].messages[0].message",
+          "optional": false
+        },
+        "extra.uuid": {
+          "expr": "doc.tasks[0].messages[0].uuid",
+          "optional": false
+        }
+      }
+    },
     "textit-patient": {
       "relevant_to": "doc.type === 'person' && doc.phone && doc.parent.parent.parent",
       "destination": {
