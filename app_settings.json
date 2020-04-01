@@ -430,7 +430,7 @@
     "conditional_alerts": false,
     "default_responses": false,
     "update_sent_by": false,
-    "registration": false,
+    "registration": true,
     "update_clinics": true,
     "update_notifications": false,
     "update_scheduled_reports": false,
@@ -500,6 +500,95 @@
     }
   },
   "forms": {
+    "1": {
+      "meta": {
+        "code": "1",
+        "label": {
+          "en": "1"
+        }
+      },
+      "fields": {},
+      "public_form": false,
+      "use_sentinel": true,
+      "facility_reference": "rc_code"
+    },
+    "2": {
+      "meta": {
+        "code": "2",
+        "label": {
+          "en": "2"
+        }
+      },
+      "fields": {},
+      "public_form": false,
+      "use_sentinel": true
+    },
+    "3": {
+      "meta": {
+        "code": "3",
+        "label": {
+          "en": "3"
+        }
+      },
+      "fields": {},
+      "public_form": false,
+      "use_sentinel": true
+    },
+    "4": {
+      "meta": {
+        "code": "4",
+        "label": {
+          "en": "4"
+        }
+      },
+      "fields": {},
+      "public_form": false,
+      "use_sentinel": true
+    },
+    "5": {
+      "meta": {
+        "code": "5",
+        "label": {
+          "en": "5"
+        }
+      },
+      "fields": {},
+      "public_form": false,
+      "use_sentinel": true
+    },
+    "6": {
+      "meta": {
+        "code": "6",
+        "label": {
+          "en": "6"
+        }
+      },
+      "fields": {},
+      "public_form": false,
+      "use_sentinel": true
+    },
+    "7": {
+      "meta": {
+        "code": "7",
+        "label": {
+          "en": "7"
+        }
+      },
+      "fields": {},
+      "public_form": false,
+      "use_sentinel": true
+    },
+    "8": {
+      "meta": {
+        "code": "8",
+        "label": {
+          "en": "8"
+        }
+      },
+      "fields": {},
+      "public_form": false,
+      "use_sentinel": true
+    },
     "PHONE_VERIFICATION": {
       "meta": {
         "code": "PHONE_VERIFICATION",
@@ -576,6 +665,1461 @@
         }
       },
       "use_sentinel": true
+    },
+    "CHA_SIGNAL_VERIFICATION": {
+      "meta": {
+        "label": {
+          "en": "CHA Signal Verification"
+        },
+        "code": "CHA_SIGNAL_VERIFICATION"
+      },
+      "fields": {
+        "patient_id": {
+          "position": 1,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "patient_id"
+            },
+            "short": {
+              "en": "Signal ID"
+            },
+            "description": {
+              "en": "Signal ID"
+            }
+          },
+          "list": []
+        },
+        "signal_id": {
+          "position": 2,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "signal_id"
+            },
+            "short": {
+              "en": "Signal ID"
+            },
+            "description": {
+              "en": "Signal ID"
+            }
+          },
+          "list": []
+        },
+        "signal_desc": {
+          "position": 3,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "signal_desc"
+            },
+            "short": {
+              "en": "Provide brief description of signal (What happened/Is happening?)"
+            },
+            "description": {
+              "en": "Provide brief description of signal (What happened/Is happening?)"
+            }
+          },
+          "list": []
+        },
+        "among_cebs_signals": {
+          "position": 4,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "among_cebs_signals"
+            },
+            "short": {
+              "en": "Does the information match one of the signals on the list"
+            },
+            "description": {
+              "en": "Does the information match one of the signals on the list"
+            }
+          },
+          "list": []
+        },
+        "signal_type": {
+          "position": 5,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "signal_type"
+            },
+            "short": {
+              "en": "What was the final classification of the public health signal?"
+            },
+            "description": {
+              "en": "What was the final classification of the public health signal?"
+            }
+          },
+          "list": []
+        },
+        "signal_duplicate": {
+          "position": 6,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "signal_duplicate"
+            },
+            "short": {
+              "en": "Has this signal  been reported before?"
+            },
+            "description": {
+              "en": "Has this signal  been reported before?"
+            }
+          },
+          "list": []
+        },
+        "signal_start_date": {
+          "position": 7,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "signal_start_date"
+            },
+            "short": {
+              "en": "When did the health threat start? (date and time)"
+            },
+            "description": {
+              "en": "When did the health threat start? (date and time)"
+            }
+          },
+          "list": []
+        },
+        "no_people": {
+          "position": 8,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "no_people"
+            },
+            "short": {
+              "en": "Indicate an approximate number of people ill reported"
+            },
+            "description": {
+              "en": "Indicate an approximate number of people ill reported"
+            }
+          },
+          "list": []
+        },
+        "no_people_dead": {
+          "position": 9,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "no_people_dead"
+            },
+            "short": {
+              "en": "Indicate an approximate number of people reported dead"
+            },
+            "description": {
+              "en": "Indicate an approximate number of people reported dead"
+            }
+          },
+          "list": []
+        },
+        "involves_animals": {
+          "position": 10,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "involves_animals"
+            },
+            "short": {
+              "en": "Does this signal involve animals or animal exposures?"
+            },
+            "description": {
+              "en": "Does this signal involve animals or animal exposures?"
+            }
+          },
+          "list": []
+        },
+        "animals_involved": {
+          "position": 11,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "animals_involved"
+            },
+            "short": {
+              "en": "What animals are involved?"
+            },
+            "description": {
+              "en": "What animals are involved?"
+            }
+          },
+          "list": []
+        },
+        "animals_involved_other": {
+          "position": 12,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "animals_involved_other"
+            },
+            "short": {
+              "en": "Specify"
+            },
+            "description": {
+              "en": "Specify"
+            }
+          },
+          "list": []
+        },
+        "no_animals": {
+          "position": 13,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "no_animals"
+            },
+            "short": {
+              "en": "Indicate an approximate number of animals affected"
+            },
+            "description": {
+              "en": "Indicate an approximate number of animals affected"
+            }
+          },
+          "list": []
+        },
+        "no_animals_dead": {
+          "position": 14,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "no_animals_dead"
+            },
+            "short": {
+              "en": "Indicate an approximate number of animals reported dead"
+            },
+            "description": {
+              "en": "Indicate an approximate number of animals reported dead"
+            }
+          },
+          "list": []
+        },
+        "source": {
+          "position": 15,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "source"
+            },
+            "short": {
+              "en": "From whom did the CHV get this information?"
+            },
+            "description": {
+              "en": "From whom did the CHV get this information?"
+            }
+          },
+          "list": []
+        },
+        "additional_details": {
+          "position": 16,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "additional_details"
+            },
+            "short": {
+              "en": "Please, provide any additional information about the signal"
+            },
+            "description": {
+              "en": "Please, provide any additional information about the signal"
+            }
+          },
+          "list": []
+        },
+        "verification_date": {
+          "position": 17,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "verification_date"
+            },
+            "short": {
+              "en": "When was the public health threat verified? (date and time)"
+            },
+            "description": {
+              "en": "When was the public health threat verified? (date and time)"
+            }
+          },
+          "list": []
+        },
+        "threat_exists": {
+          "position": 18,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "threat_exists"
+            },
+            "short": {
+              "en": "Does the reported threat exist?"
+            },
+            "description": {
+              "en": "Does the reported threat exist?"
+            }
+          },
+          "list": []
+        },
+        "scdsc_informed_date": {
+          "position": 19,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "scdsc_informed_date"
+            },
+            "short": {
+              "en": "Date when SCDSC was informed about the public health event"
+            },
+            "description": {
+              "en": "Date when SCDSC was informed about the public health event"
+            }
+          },
+          "list": []
+        },
+        "referred_to_animal_health": {
+          "position": 20,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "referred_to_animal_health"
+            },
+            "short": {
+              "en": "Has the signal been referred to the animal health team?"
+            },
+            "description": {
+              "en": "Has the signal been referred to the animal health team?"
+            }
+          },
+          "list": []
+        }
+      },
+      "facility_reference": "rc_code",
+      "use_sentinel": true
+    },
+    "CHA_SIGNAL_REPORTING": {
+      "meta": {
+        "label": {
+          "en": "CHA Signal Reporting"
+        },
+        "code": "CHA_SIGNAL_REPORTING"
+      },
+      "fields": {
+        "signal_type": {
+          "position": 1,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "signal_type"
+            },
+            "short": {
+              "en": "What type of signal are you reporting?"
+            },
+            "description": {
+              "en": "What type of signal are you reporting?"
+            }
+          },
+          "list": []
+        },
+        "signal_type_desc": {
+          "position": 2,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "signal_type_desc"
+            },
+            "short": {
+              "en": "Signal description"
+            },
+            "description": {
+              "en": "Signal description"
+            }
+          },
+          "list": []
+        }
+      }
+    },
+    "SCDSC_INVESTIGATION": {
+      "meta": {
+        "label": {
+          "en": "SCDSC Investigation"
+        },
+        "code": "SCDSC_INVESTIGATION"
+      },
+      "fields": {
+        "patient_id": {
+          "position": 1,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "patient_id"
+            },
+            "short": {
+              "en": "Signal ID"
+            },
+            "description": {
+              "en": "Signal ID"
+            }
+          },
+          "list": []
+        },
+        "signal_id": {
+          "position": 2,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "signal_id"
+            },
+            "short": {
+              "en": "Signal ID"
+            },
+            "description": {
+              "en": "Signal ID"
+            }
+          },
+          "list": []
+        },
+        "scdc_informed_date": {
+          "position": 3,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "scdc_informed_date"
+            },
+            "short": {
+              "en": "When was the SCDSC informed?"
+            },
+            "description": {
+              "en": "When was the SCDSC informed?"
+            }
+          },
+          "list": []
+        },
+        "investigation_start_date": {
+          "position": 4,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "investigation_start_date"
+            },
+            "short": {
+              "en": "When did the investigation by Sub county begin/start?"
+            },
+            "description": {
+              "en": "When did the investigation by Sub county begin/start?"
+            }
+          },
+          "list": []
+        },
+        "event_start_date": {
+          "position": 5,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "event_start_date"
+            },
+            "short": {
+              "en": "When did the event start? "
+            },
+            "description": {
+              "en": "When did the event start? "
+            }
+          },
+          "list": []
+        },
+        "signs_symptoms": {
+          "position": 6,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "signs_symptoms"
+            },
+            "short": {
+              "en": "What are the signs and symptoms that are being reported?"
+            },
+            "description": {
+              "en": "What are the signs and symptoms that are being reported?"
+            }
+          },
+          "list": []
+        },
+        "cause_known": {
+          "position": 7,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "cause_known"
+            },
+            "short": {
+              "en": "Is the cause of the event known?"
+            },
+            "description": {
+              "en": "Is the cause of the event known?"
+            }
+          },
+          "list": []
+        },
+        "cause": {
+          "position": 8,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "cause"
+            },
+            "short": {
+              "en": "What is the cause?"
+            },
+            "description": {
+              "en": "What is the cause?"
+            }
+          },
+          "list": []
+        },
+        "lab_results_known": {
+          "position": 9,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "lab_results_known"
+            },
+            "short": {
+              "en": "Are laboratory results known?"
+            },
+            "description": {
+              "en": "Are laboratory results known?"
+            }
+          },
+          "list": []
+        },
+        "collected_lab_samples": {
+          "position": 10,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "collected_lab_samples"
+            },
+            "short": {
+              "en": "Have laboratory samples been collected?"
+            },
+            "description": {
+              "en": "Have laboratory samples been collected?"
+            }
+          },
+          "list": []
+        },
+        "no_people_exposed": {
+          "position": 11,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "no_people_exposed"
+            },
+            "short": {
+              "en": "Number of people exposed "
+            },
+            "description": {
+              "en": "Number of people exposed "
+            }
+          },
+          "list": []
+        },
+        "no_human_cases": {
+          "position": 12,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "no_human_cases"
+            },
+            "short": {
+              "en": "Number of human cases "
+            },
+            "description": {
+              "en": "Number of human cases "
+            }
+          },
+          "list": []
+        },
+        "no_human_cases_hospitalized": {
+          "position": 13,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "no_human_cases_hospitalized"
+            },
+            "short": {
+              "en": "Number of human cases hospitalized"
+            },
+            "description": {
+              "en": "Number of human cases hospitalized"
+            }
+          },
+          "list": []
+        },
+        "no_human_deaths": {
+          "position": 14,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "no_human_deaths"
+            },
+            "short": {
+              "en": "Number of human deaths"
+            },
+            "description": {
+              "en": "Number of human deaths"
+            }
+          },
+          "list": []
+        },
+        "no_animals_exposed": {
+          "position": 15,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "no_animals_exposed"
+            },
+            "short": {
+              "en": "Number of animals exposed"
+            },
+            "description": {
+              "en": "Number of animals exposed"
+            }
+          },
+          "list": []
+        },
+        "no_sick_animals": {
+          "position": 16,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "no_sick_animals"
+            },
+            "short": {
+              "en": "Number of sick animals"
+            },
+            "description": {
+              "en": "Number of sick animals"
+            }
+          },
+          "list": []
+        },
+        "no_dead_animals": {
+          "position": 17,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "no_dead_animals"
+            },
+            "short": {
+              "en": "Number of dead animals"
+            },
+            "description": {
+              "en": "Number of dead animals"
+            }
+          },
+          "list": []
+        },
+        "new_cases_initial_area": {
+          "position": 18,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "new_cases_initial_area"
+            },
+            "short": {
+              "en": "Are new cases still being reported from the initial area?"
+            },
+            "description": {
+              "en": "Are new cases still being reported from the initial area?"
+            }
+          },
+          "list": []
+        },
+        "new_cases_new_areas": {
+          "position": 19,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "new_cases_new_areas"
+            },
+            "short": {
+              "en": "Are new cases being reported from new areas?"
+            },
+            "description": {
+              "en": "Are new cases being reported from new areas?"
+            }
+          },
+          "list": []
+        },
+        "setting_promotes_spread": {
+          "position": 20,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "setting_promotes_spread"
+            },
+            "short": {
+              "en": "Does the event setting promote spread?"
+            },
+            "description": {
+              "en": "Does the event setting promote spread?"
+            }
+          },
+          "list": []
+        },
+        "additional_info": {
+          "position": 21,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "additional_info"
+            },
+            "short": {
+              "en": "Please provide any additional information on the event"
+            },
+            "description": {
+              "en": "Please provide any additional information on the event"
+            }
+          },
+          "list": []
+        },
+        "event_measures": {
+          "position": 22,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "event_measures"
+            },
+            "short": {
+              "en": "Event measures"
+            },
+            "description": {
+              "en": "Event measures"
+            }
+          },
+          "list": []
+        },
+        "human_attack_rate": {
+          "position": 23,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "human_attack_rate"
+            },
+            "short": {
+              "en": "Attack rate (human)"
+            },
+            "description": {
+              "en": "Attack rate (human)"
+            }
+          },
+          "list": []
+        },
+        "human_hospitalization_rate": {
+          "position": 24,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "human_hospitalization_rate"
+            },
+            "short": {
+              "en": "Hospitalization rate (human)"
+            },
+            "description": {
+              "en": "Hospitalization rate (human)"
+            }
+          },
+          "list": []
+        },
+        "human_case_fatality_rate": {
+          "position": 25,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "human_case_fatality_rate"
+            },
+            "short": {
+              "en": "Case fatality rate (CFR) (human)"
+            },
+            "description": {
+              "en": "Case fatality rate (CFR) (human)"
+            }
+          },
+          "list": []
+        },
+        "animal_attack_rate": {
+          "position": 26,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "animal_attack_rate"
+            },
+            "short": {
+              "en": "Attack rates (animals)"
+            },
+            "description": {
+              "en": "Attack rates (animals)"
+            }
+          },
+          "list": []
+        },
+        "animal_case_fatality_rate": {
+          "position": 27,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "animal_case_fatality_rate"
+            },
+            "short": {
+              "en": "Case fatality rate (CFR) (animal)"
+            },
+            "description": {
+              "en": "Case fatality rate (CFR) (animal)"
+            }
+          },
+          "list": []
+        },
+        "event_risk_classificaiton": {
+          "position": 28,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "event_risk_classificaiton"
+            },
+            "short": {
+              "en": "How would you classify the risk of the event? (consider diagnosis, setting and measures)"
+            },
+            "description": {
+              "en": "How would you classify the risk of the event? (consider diagnosis, setting and measures)"
+            }
+          },
+          "list": []
+        },
+        "response_recommedations": {
+          "position": 29,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "response_recommedations"
+            },
+            "short": {
+              "en": "What are the recommended response activities ?"
+            },
+            "description": {
+              "en": "What are the recommended response activities ?"
+            }
+          },
+          "list": []
+        },
+        "response_start_date": {
+          "position": 30,
+          "type": "string",
+          "labels": {
+            "tiny": {
+              "en": "response_start_date"
+            },
+            "short": {
+              "en": "When did the response start?"
+            },
+            "description": {
+              "en": "When did the response start?"
+            }
+          },
+          "list": []
+        }
+      },
+      "facility_reference": "rc_code",
+      "use_sentinel": true
     }
+  },
+  "registrations": [
+    {
+      "form": "1",
+      "events": [
+        {
+          "name": "on_create",
+          "trigger": "add_patient",
+          "params": "",
+          "bool_expr": ""
+        },
+        {
+          "name": "on_create",
+          "trigger": "assign_schedule",
+          "params": "signal_reminders_to_CHA",
+          "bool_expr": ""
+        }
+      ],
+      "validations": {},
+      "messages": [
+        {
+          "translation_key": "messages.signal.report_accepted",
+          "event_type": "report_accepted",
+          "recipient": "reporting_unit"
+        },
+        {
+          "translation_key": "messages.signal.notification",
+          "event_type": "report_accepted",
+          "recipient": "parent"
+        }
+      ]
+    },
+    {
+      "form": "2",
+      "events": [
+        {
+          "name": "on_create",
+          "trigger": "add_patient",
+          "params": "",
+          "bool_expr": ""
+        },
+        {
+          "name": "on_create",
+          "trigger": "assign_schedule",
+          "params": "signal_reminders_to_CHA",
+          "bool_expr": ""
+        }
+      ],
+      "validations": {},
+      "messages": [
+        {
+          "translation_key": "messages.signal.report_accepted",
+          "event_type": "report_accepted",
+          "recipient": "reporting_unit"
+        },
+        {
+          "translation_key": "messages.signal.notification",
+          "event_type": "report_accepted",
+          "recipient": "parent"
+        }
+      ]
+    },
+    {
+      "form": "3",
+      "events": [
+        {
+          "name": "on_create",
+          "trigger": "add_patient",
+          "params": "",
+          "bool_expr": ""
+        },
+        {
+          "name": "on_create",
+          "trigger": "assign_schedule",
+          "params": "signal_reminders_to_CHA",
+          "bool_expr": ""
+        }
+      ],
+      "validations": {},
+      "messages": [
+        {
+          "translation_key": "messages.signal.report_accepted",
+          "event_type": "report_accepted",
+          "recipient": "reporting_unit"
+        },
+        {
+          "translation_key": "messages.signal.notification",
+          "event_type": "report_accepted",
+          "recipient": "parent"
+        }
+      ]
+    },
+    {
+      "form": "4",
+      "events": [
+        {
+          "name": "on_create",
+          "trigger": "add_patient",
+          "params": "",
+          "bool_expr": ""
+        },
+        {
+          "name": "on_create",
+          "trigger": "assign_schedule",
+          "params": "signal_reminders_to_CHA",
+          "bool_expr": ""
+        }
+      ],
+      "validations": {},
+      "messages": [
+        {
+          "translation_key": "messages.signal.report_accepted",
+          "event_type": "report_accepted",
+          "recipient": "reporting_unit"
+        },
+        {
+          "translation_key": "messages.signal.notification",
+          "event_type": "report_accepted",
+          "recipient": "parent"
+        }
+      ]
+    },
+    {
+      "form": "5",
+      "events": [
+        {
+          "name": "on_create",
+          "trigger": "add_patient",
+          "params": "",
+          "bool_expr": ""
+        },
+        {
+          "name": "on_create",
+          "trigger": "assign_schedule",
+          "params": "signal_reminders_to_CHA",
+          "bool_expr": ""
+        }
+      ],
+      "validations": {},
+      "messages": [
+        {
+          "translation_key": "messages.signal.report_accepted",
+          "event_type": "report_accepted",
+          "recipient": "reporting_unit"
+        },
+        {
+          "translation_key": "messages.signal.notification",
+          "event_type": "report_accepted",
+          "recipient": "parent"
+        }
+      ]
+    },
+    {
+      "form": "6",
+      "events": [
+        {
+          "name": "on_create",
+          "trigger": "add_patient",
+          "params": "",
+          "bool_expr": ""
+        },
+        {
+          "name": "on_create",
+          "trigger": "assign_schedule",
+          "params": "signal_reminders_to_CHA",
+          "bool_expr": ""
+        }
+      ],
+      "validations": {},
+      "messages": [
+        {
+          "translation_key": "messages.signal.report_accepted",
+          "event_type": "report_accepted",
+          "recipient": "reporting_unit"
+        },
+        {
+          "translation_key": "messages.signal.notification",
+          "event_type": "report_accepted",
+          "recipient": "parent"
+        }
+      ]
+    },
+    {
+      "form": "7",
+      "events": [
+        {
+          "name": "on_create",
+          "trigger": "add_patient",
+          "params": "",
+          "bool_expr": ""
+        },
+        {
+          "name": "on_create",
+          "trigger": "assign_schedule",
+          "params": "signal_reminders_to_CHA",
+          "bool_expr": ""
+        }
+      ],
+      "validations": {},
+      "messages": [
+        {
+          "translation_key": "messages.signal.report_accepted",
+          "event_type": "report_accepted",
+          "recipient": "reporting_unit"
+        },
+        {
+          "translation_key": "messages.signal.notification",
+          "event_type": "report_accepted",
+          "recipient": "parent"
+        }
+      ]
+    },
+    {
+      "form": "8",
+      "events": [
+        {
+          "name": "on_create",
+          "trigger": "add_patient",
+          "params": "",
+          "bool_expr": ""
+        },
+        {
+          "name": "on_create",
+          "trigger": "assign_schedule",
+          "params": "covid_signal_reminders_to_CHA",
+          "bool_expr": ""
+        }
+      ],
+      "validations": {},
+      "messages": [
+        {
+          "translation_key": "messages.covid.signal.report_accepted",
+          "event_type": "report_accepted",
+          "recipient": "reporting_unit"
+        },
+        {
+          "translation_key": "messages.covid.signal.notification",
+          "event_type": "report_accepted",
+          "recipient": "parent"
+        }
+      ]
+    },
+    {
+      "form": "CHA_SIGNAL_REPORTING",
+      "events": [
+        {
+          "name": "on_create",
+          "trigger": "add_patient",
+          "params": "",
+          "bool_expr": ""
+        },
+        {
+          "name": "on_create",
+          "trigger": "assign_schedule",
+          "params": "self_reported_signal_reminders_to_CHA",
+          "bool_expr": "doc.fields.signal_type && doc.fields.signal_type != '8'"
+        },
+        {
+          "name": "on_create",
+          "trigger": "assign_schedule",
+          "params": "covid_self_reported_signal_reminders_to_CHA",
+          "bool_expr": "doc.fields.signal_type && doc.fields.signal_type == '8'"
+        }
+      ],
+      "validations": {},
+      "messages": [
+        {
+          "translation_key": "messages.cha.signal.report_accepted",
+          "event_type": "report_accepted",
+          "recipient": "reporting_unit"
+        }
+      ]
+    },
+    {
+      "form": "CHA_SIGNAL_VERIFICATION",
+      "events": [
+        {
+          "name": "on_create",
+          "trigger": "clear_schedule",
+          "params": "signal_reminders_to_CHA",
+          "bool_expr": ""
+        },
+        {
+          "name": "on_create",
+          "trigger": "clear_schedule",
+          "params": "self_reported_signal_reminders_to_CHA",
+          "bool_expr": ""
+        },
+        {
+          "name": "on_create",
+          "trigger": "clear_schedule",
+          "params": "covid_signal_reminders_to_CHA",
+          "bool_expr": ""
+        },
+        {
+          "name": "on_create",
+          "trigger": "clear_schedule",
+          "params": "covid_self_reported_signal_reminders_to_CHA",
+          "bool_expr": ""
+        },
+        {
+          "name": "on_create",
+          "trigger": "assign_schedule",
+          "params": "signal_verification_notification_to_scdsc",
+          "bool_expr": "(doc.fields.among_cebs_signals && doc.fields.among_cebs_signals === 'Yes') && (doc.fields.signal_duplicate && doc.fields.signal_duplicate === 'No') && (doc.fields.threat_exists && doc.fields.threat_exists === 'Yes') && (!doc.fields.referred_to_animal_health || (doc.fields.referred_to_animal_health && doc.fields.referred_to_animal_health === 'No'))"
+        },
+        {
+          "name": "on_create",
+          "trigger": "assign_schedule",
+          "params": "signal_verification_animal_notification_to_scdsc",
+          "bool_expr": "(doc.fields.among_cebs_signals && doc.fields.among_cebs_signals === 'Yes') && (doc.fields.signal_duplicate && doc.fields.signal_duplicate === 'No') && (doc.fields.threat_exists && doc.fields.threat_exists === 'Yes') && (doc.fields.referred_to_animal_health && doc.fields.referred_to_animal_health === 'Yes')"
+        },
+        {
+          "name": "on_create",
+          "trigger": "assign_schedule",
+          "params": "signal_reminders_to_scdsc",
+          "bool_expr": "(doc.fields.among_cebs_signals && doc.fields.among_cebs_signals === 'Yes') && (doc.fields.signal_duplicate && doc.fields.signal_duplicate === 'No') && (doc.fields.threat_exists && doc.fields.threat_exists === 'Yes')"
+        }
+      ],
+      "validations": {
+        "join_responses": true,
+        "list": [
+          {
+            "property": "patient_id",
+            "rule": "unique('form', 'patient_id')",
+            "translation_key": "messages.signal.verification.validation.unique",
+            "recipient": "reporting_unit"
+          }
+        ]
+      },
+      "messages": [
+        {
+          "translation_key": "messages.signal.verification.report_accepted",
+          "event_type": "report_accepted",
+          "recipient": "reporting_unit"
+        },
+        {
+          "translation_key": "messages.generic.registration_not_found",
+          "event_type": "registration_not_found",
+          "recipient": "reporting_unit"
+        }
+      ]
+    },
+    {
+      "form": "SCDSC_INVESTIGATION",
+      "events": [
+        {
+          "name": "on_create",
+          "trigger": "clear_schedule",
+          "params": "signal_reminders_to_scdsc",
+          "bool_expr": ""
+        }
+      ],
+      "validations": {
+        "join_responses": true,
+        "list": [
+          {
+            "property": "patient_id",
+            "rule": "unique('form', 'patient_id')",
+            "translation_key": "messages.signal.investigation.validation.unique"
+          },
+          {
+            "property": "patient_id",
+            "rule": "exists('CHA_SIGNAL_VERIFICATION', 'patient_id')",
+            "translation_key": "messages.signal.investigation.validation.verification_exists"
+          }
+        ]
+      },
+      "messages": [
+        {
+          "translation_key": "messages.signal.investigation.report_accepted",
+          "event_type": "report_accepted",
+          "recipient": "reporting_unit"
+        },
+        {
+          "translation_key": "messages.generic.registration_not_found",
+          "event_type": "registration_not_found",
+          "recipient": "reporting_unit"
+        }
+      ]
+    }
+  ],
+  "schedules": [
+    {
+      "name": "signal_reminders_to_CHA",
+      "summary": "",
+      "description": "",
+      "start_from": "reported_date",
+      "messages": [
+        {
+          "translation_key": "messages.schedule.signal.reminders.1",
+          "group": 1,
+          "offset": "8 hours",
+          "send_time": "",
+          "recipient": "parent"
+        },
+        {
+          "translation_key": "messages.schedule.signal.reminders.1",
+          "group": 1,
+          "offset": "16 hours",
+          "send_time": "",
+          "recipient": "parent"
+        },
+        {
+          "translation_key": "messages.schedule.signal.reminders.1",
+          "group": 1,
+          "offset": "24 hours",
+          "send_time": "",
+          "recipient": "parent"
+        },
+        {
+          "translation_key": "messages.schedule.signal.reminders.2",
+          "group": 1,
+          "offset": "24 hours",
+          "send_time": "",
+          "recipient": "grandparent"
+        }
+      ]
+    },
+    {
+      "name": "self_reported_signal_reminders_to_CHA",
+      "summary": "",
+      "description": "",
+      "start_from": "reported_date",
+      "messages": [
+        {
+          "translation_key": "messages.schedule.signal.reminders.1",
+          "group": 1,
+          "offset": "8 hours",
+          "send_time": "",
+          "recipient": "parent"
+        },
+        {
+          "translation_key": "messages.schedule.signal.reminders.1",
+          "group": 1,
+          "offset": "16 hours",
+          "send_time": "",
+          "recipient": "parent"
+        },
+        {
+          "translation_key": "messages.schedule.signal.reminders.1",
+          "group": 1,
+          "offset": "24 hours",
+          "send_time": "",
+          "recipient": "parent"
+        },
+        {
+          "translation_key": "messages.schedule.signal.self.reported.reminders.2",
+          "group": 1,
+          "offset": "24 hours",
+          "send_time": "",
+          "recipient": "grandparent"
+        }
+      ]
+    },
+    {
+      "name": "signal_reminders_to_scdsc",
+      "summary": "",
+      "description": "",
+      "start_from": "reported_date",
+      "messages": [
+        {
+          "translation_key": "messages.signal.verification.reminders.1",
+          "group": 2,
+          "offset": "8 hours",
+          "send_time": "",
+          "recipient": "grandparent"
+        },
+        {
+          "translation_key": "messages.signal.verification.reminders.1",
+          "group": 2,
+          "offset": "16 hours",
+          "send_time": "",
+          "recipient": "grandparent"
+        },
+        {
+          "translation_key": "messages.signal.verification.reminders.1",
+          "group": 2,
+          "offset": "24 hours",
+          "send_time": "",
+          "recipient": "grandparent"
+        }
+      ]
+    },
+    {
+      "name": "signal_verification_notification_to_scdsc",
+      "summary": "",
+      "description": "",
+      "start_from": "reported_date",
+      "messages": [
+        {
+          "translation_key": "messages.signal.verification.notification",
+          "group": 3,
+          "offset": "30 seconds",
+          "send_time": "",
+          "recipient": "grandparent"
+        }
+      ]
+    },
+    {
+      "name": "signal_verification_animal_notification_to_scdsc",
+      "summary": "",
+      "description": "",
+      "start_from": "reported_date",
+      "messages": [
+        {
+          "translation_key": "messages.signal.verification.animal.notification",
+          "group": 3,
+          "offset": "30 seconds",
+          "send_time": "",
+          "recipient": "grandparent"
+        }
+      ]
+    },
+    {
+      "name": "covid_signal_reminders_to_CHA",
+      "summary": "",
+      "description": "",
+      "start_from": "reported_date",
+      "messages": [
+        {
+          "translation_key": "messages.schedule.signal.reminders.1",
+          "group": 1,
+          "offset": "4 hours",
+          "send_time": "",
+          "recipient": "parent"
+        },
+        {
+          "translation_key": "messages.schedule.signal.reminders.1",
+          "group": 1,
+          "offset": "8 hours",
+          "send_time": "",
+          "recipient": "parent"
+        },
+        {
+          "translation_key": "messages.schedule.signal.reminders.1",
+          "group": 1,
+          "offset": "12 hours",
+          "send_time": "",
+          "recipient": "parent"
+        },
+        {
+          "translation_key": "messages.covid.schedule.signal.reminders.2",
+          "group": 1,
+          "offset": "12 hours",
+          "send_time": "",
+          "recipient": "grandparent"
+        }
+      ]
+    },
+    {
+      "name": "covid_self_reported_signal_reminders_to_CHA",
+      "summary": "",
+      "description": "",
+      "start_from": "reported_date",
+      "messages": [
+        {
+          "translation_key": "messages.schedule.signal.reminders.1",
+          "group": 1,
+          "offset": "4 hours",
+          "send_time": "",
+          "recipient": "parent"
+        },
+        {
+          "translation_key": "messages.schedule.signal.reminders.1",
+          "group": 1,
+          "offset": "8 hours",
+          "send_time": "",
+          "recipient": "parent"
+        },
+        {
+          "translation_key": "messages.schedule.signal.reminders.1",
+          "group": 1,
+          "offset": "12 hours",
+          "send_time": "",
+          "recipient": "parent"
+        },
+        {
+          "translation_key": "messages.covid.schedule.signal.self.reported.reminders.2",
+          "group": 1,
+          "offset": "12 hours",
+          "send_time": "",
+          "recipient": "grandparent"
+        }
+      ]
+    }
+  ],
+  "sms": {
+    "outgoing_service": "medic-gateway"
   }
 }
