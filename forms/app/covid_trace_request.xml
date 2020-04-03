@@ -20,11 +20,11 @@
           <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/church:label">
             <value>Church name</value>
           </text>
-          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/contact_location:label">
-            <value>Where the contact took place</value>
-          </text>
           <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/flight_details:label">
             <value>Flight details (if relevant)</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/n_contact_location:label">
+            <value>Where the contact took place</value>
           </text>
           <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/other_names:label">
             <value>Other names</value>
@@ -154,11 +154,11 @@
           <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/church:label">
             <value>Church name</value>
           </text>
-          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/contact_location:label">
-            <value>Where the contact took place</value>
-          </text>
           <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/flight_details:label">
             <value>Flight details (if relevant)</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/n_contact_location:label">
+            <value>Where the contact took place</value>
           </text>
           <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/other_names:label">
             <value>Other names</value>
@@ -274,7 +274,7 @@
         </translation>
       </itext>
       <instance>
-        <covid_trace_request delimiter="#" id="covid_trace_request" prefix="J1!covid_trace_request!" version="2020-04-02_12-24">
+        <covid_trace_request delimiter="#" id="covid_trace_request" prefix="J1!covid_trace_request!" version="2020-04-03_10-05">
           <inputs tag="hidden">
             <source>user</source>
             <source_id/>
@@ -310,7 +310,6 @@
               </parent>
             </contact>
           </inputs>
-          <needs_signoff/>
           <patient_id/>
           <patient_uuid tag="hidden"/>
           <outbreak_case_id/>
@@ -338,7 +337,7 @@
                 <age_in_years/>
                 <phone/>
                 <flight_details/>
-                <contact_location/>
+                <n_contact_location tag="hidden"/>
                 <address/>
                 <town/>
                 <village/>
@@ -390,7 +389,6 @@
       <bind nodeset="/covid_trace_request/inputs/contact/parent/parent/parent/_id" type="string"/>
       <bind nodeset="/covid_trace_request/inputs/contact/parent/parent/contact/chw_name" type="string"/>
       <bind nodeset="/covid_trace_request/inputs/contact/parent/parent/contact/phone" type="string"/>
-      <bind calculate="if(selected(../trace_attempt, 'stop'), 'true', 'false')" nodeset="/covid_trace_request/needs_signoff" type="string"/>
       <bind calculate="../inputs/contact/patient_id" nodeset="/covid_trace_request/patient_id" type="string"/>
       <bind calculate="../inputs/contact/_id" nodeset="/covid_trace_request/patient_uuid" type="string"/>
       <bind calculate="../inputs/contact/case_id" nodeset="/covid_trace_request/outbreak_case_id" type="string"/>
@@ -415,7 +413,7 @@
       <bind nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/age_in_years" type="int"/>
       <bind nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/phone" type="tel"/>
       <bind nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/flight_details" type="string"/>
-      <bind nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/contact_location" type="string"/>
+      <bind nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/n_contact_location" readonly="true()" type="string"/>
       <bind nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/address" type="string"/>
       <bind nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/town" type="string"/>
       <bind nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/village" type="string"/>
@@ -521,8 +519,8 @@
             <input ref="/covid_trace_request/contacts/contact_repeat/contact_profile/flight_details">
               <label ref="jr:itext('/covid_trace_request/contacts/contact_repeat/contact_profile/flight_details:label')"/>
             </input>
-            <input ref="/covid_trace_request/contacts/contact_repeat/contact_profile/contact_location">
-              <label ref="jr:itext('/covid_trace_request/contacts/contact_repeat/contact_profile/contact_location:label')"/>
+            <input ref="/covid_trace_request/contacts/contact_repeat/contact_profile/n_contact_location">
+              <label ref="jr:itext('/covid_trace_request/contacts/contact_repeat/contact_profile/n_contact_location:label')"/>
             </input>
             <input ref="/covid_trace_request/contacts/contact_repeat/contact_profile/address">
               <label ref="jr:itext('/covid_trace_request/contacts/contact_repeat/contact_profile/address:label')"/>
