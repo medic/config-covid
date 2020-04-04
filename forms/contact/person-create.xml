@@ -29,6 +29,12 @@
           <text id="/data/inputs/user/name:label">
             <value>Name of the logged in user</value>
           </text>
+          <text id="/data/person/address:label">
+            <value>Address</value>
+          </text>
+          <text id="/data/person/case_id:label">
+            <value>Outbreak Case ID</value>
+          </text>
           <text id="/data/person/ephemeral_dob/age_label:label">
             <value>**Please enter date of birth**</value>
           </text>
@@ -73,6 +79,9 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
           <text id="/data/person/notes:label">
             <value>Notes</value>
           </text>
+          <text id="/data/person/other_names:label">
+            <value>Other names</value>
+          </text>
           <text id="/data/person/parent:label">
             <value>Parent ID</value>
           </text>
@@ -112,6 +121,9 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
           <text id="/data/person/role/patient:label">
             <value>Patient</value>
           </text>
+          <text id="/data/person/role/patient_zero:label">
+            <value>Patient Zero</value>
+          </text>
           <text id="/data/person/role/traveler:label">
             <value>Traveler</value>
           </text>
@@ -141,6 +153,12 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
           </text>
           <text id="/data/person/short_name:label">
             <value>Short name</value>
+          </text>
+          <text id="/data/person/surname:label">
+            <value>Surname</value>
+          </text>
+          <text id="/data/person/town:label">
+            <value>Town</value>
           </text>
           <text id="/data/person/traveler/destination_address:label">
             <value>Address</value>
@@ -975,6 +993,12 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
           <text id="/data/inputs:label">
             <value>-</value>
           </text>
+          <text id="/data/person/address:label">
+            <value>Address</value>
+          </text>
+          <text id="/data/person/case_id:label">
+            <value>Outbreak Case ID</value>
+          </text>
           <text id="/data/person/ephemeral_dob/age_label:label">
             <value>Veuillez entrer votre date de naissance</value>
           </text>
@@ -1019,6 +1043,9 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
           <text id="/data/person/notes:label">
             <value>Notes</value>
           </text>
+          <text id="/data/person/other_names:label">
+            <value>Other names</value>
+          </text>
           <text id="/data/person/parent:label">
             <value>ID Parent</value>
           </text>
@@ -1058,6 +1085,9 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
           <text id="/data/person/role/patient:label">
             <value>Patient</value>
           </text>
+          <text id="/data/person/role/patient_zero:label">
+            <value>Patient Zero</value>
+          </text>
           <text id="/data/person/role/traveler:label">
             <value>Voyageur</value>
           </text>
@@ -1087,6 +1117,12 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
           </text>
           <text id="/data/person/short_name:label">
             <value>Nom court</value>
+          </text>
+          <text id="/data/person/surname:label">
+            <value>Surname</value>
+          </text>
+          <text id="/data/person/town:label">
+            <value>Town</value>
           </text>
           <text id="/data/person/traveler/destination_address:label">
             <value>Adresse</value>
@@ -1880,7 +1916,7 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
         </translation>
       </itext>
       <instance>
-        <data delimiter="#" id="contact:person:create" prefix="J1!contact:person:create!" version="2020-03-28 12-23">
+        <data delimiter="#" id="contact:person:create" prefix="J1!contact:person:create!" version="2020-04-03 0-43">
           <inputs>
             <meta>
               <location>
@@ -1899,6 +1935,8 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
           <person>
             <parent>PARENT</parent>
             <type>person</type>
+            <surname/>
+            <other_names/>
             <name/>
             <short_name/>
             <date_of_birth/>
@@ -1927,8 +1965,11 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
               <dob_debug/>
             </ephemeral_dob>
             <sex/>
+            <case_id/>
             <phone/>
             <phone_alternate/>
+            <address/>
+            <town/>
             <role_other/>
             <external_id/>
             <notes/>
@@ -1961,7 +2002,9 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
       <bind calculate="jr:choice-name( /data/init/type_selector ,' /data/init/type_selector ')" nodeset="/data/init/type_label" type="string"/>
       <bind nodeset="/data/person/parent" type="string"/>
       <bind nodeset="/data/person/type" type="string"/>
-      <bind nodeset="/data/person/name" required="true()" type="string"/>
+      <bind nodeset="/data/person/surname" type="string"/>
+      <bind nodeset="/data/person/other_names" type="string"/>
+      <bind calculate="concat(../other_names, ' ', ../surname)" nodeset="/data/person/name" required="true()" type="string"/>
       <bind constraint="string-length(.) &lt;= 10" jr:constraintMsg="jr:itext('/data/person/short_name:jr:constraintMsg')" nodeset="/data/person/short_name" required="false()" type="string"/>
       <bind calculate="../ephemeral_dob/dob_iso" nodeset="/data/person/date_of_birth" required="true()" type="string"/>
       <bind calculate="../ephemeral_dob/dob_method" nodeset="/data/person/date_of_birth_method" type="string"/>
@@ -1988,8 +2031,11 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
       <bind calculate="format-date-time(../dob_raw,&quot;%Y-%m-%d&quot;)" nodeset="/data/person/ephemeral_dob/dob_iso" type="string"/>
       <bind nodeset="/data/person/ephemeral_dob/dob_debug" readonly="true()" relevant="false()" type="string"/>
       <bind nodeset="/data/person/sex" required="true()" type="select1"/>
+      <bind nodeset="/data/person/case_id" relevant="selected(../role, 'patient_zero')" type="string"/>
       <bind constraint="true()" jr:constraintMsg="jr:itext('/data/person/phone:jr:constraintMsg')" nodeset="/data/person/phone" type="tel"/>
       <bind constraint="true()" jr:constraintMsg="jr:itext('/data/person/phone_alternate:jr:constraintMsg')" nodeset="/data/person/phone_alternate" type="tel"/>
+      <bind nodeset="/data/person/address" relevant="selected(../role, 'patient_zero')" type="string"/>
+      <bind nodeset="/data/person/town" relevant="selected(../role, 'patient_zero')" type="string"/>
       <bind nodeset="/data/person/role_other" relevant="selected(  /data/person/role ,'other')" required="true()" type="string"/>
       <bind nodeset="/data/person/external_id" type="string"/>
       <bind nodeset="/data/person/notes" type="string"/>
@@ -2036,8 +2082,11 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
       </select1>
     </group>
     <group ref="/data/person">
-      <input ref="/data/person/name">
-        <label ref="jr:itext('/data/person/name:label')"/>
+      <input ref="/data/person/surname">
+        <label ref="jr:itext('/data/person/surname:label')"/>
+      </input>
+      <input ref="/data/person/other_names">
+        <label ref="jr:itext('/data/person/other_names:label')"/>
       </input>
       <input ref="/data/person/short_name">
         <label ref="jr:itext('/data/person/short_name:label')"/>
@@ -2065,6 +2114,10 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
         <item>
           <label ref="jr:itext('/data/person/role/patient:label')"/>
           <value>patient</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/role/patient_zero:label')"/>
+          <value>patient_zero</value>
         </item>
         <item>
           <label ref="jr:itext('/data/person/role/chw_rdt:label')"/>
@@ -3143,11 +3196,20 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
           <value>male</value>
         </item>
       </select1>
+      <input ref="/data/person/case_id">
+        <label ref="jr:itext('/data/person/case_id:label')"/>
+      </input>
       <input ref="/data/person/phone">
         <label ref="jr:itext('/data/person/phone:label')"/>
       </input>
       <input ref="/data/person/phone_alternate">
         <label ref="jr:itext('/data/person/phone_alternate:label')"/>
+      </input>
+      <input ref="/data/person/address">
+        <label ref="jr:itext('/data/person/address:label')"/>
+      </input>
+      <input ref="/data/person/town">
+        <label ref="jr:itext('/data/person/town:label')"/>
       </input>
       <input ref="/data/person/role_other">
         <label ref="jr:itext('/data/person/role_other:label')"/>

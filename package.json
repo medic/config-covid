@@ -6,7 +6,7 @@
     "test": "test"
   },
   "scripts": {
-    "eslint": "node ../../node_modules/eslint/bin/eslint.js *.json test/**/*.js",
+    "eslint": "node node_modules/eslint/bin/eslint.js *.json test/**/*.js",
     "test": "npm run eslint && npm run test-unit",
     "test-forms": "npm run eslint && mocha --reporter spec test/forms/**/*.spec.js --timeout 10000",
     "test-tasks": "npm run eslint && mocha --reporter progress test/tasks/*.spec.js --timeout 10000",
@@ -20,9 +20,10 @@
     "chai-exclude": "^1.0.8",
     "chai-like": "^1.1.1",
     "chai-things": "^0.2.0",
+    "eslint": "^6.8.0",
     "eslint-plugin-json": "^2.0.1",
     "medic-conf": "^3.1.0",
-    "medic-conf-test-harness": "^0.1.19",
+    "medic-conf-test-harness": "^0.1.22",
     "mocha": "^5.1.1",
     "sinon": "^7.3.2"
   },
