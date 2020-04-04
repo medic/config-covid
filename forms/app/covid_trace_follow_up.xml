@@ -5,8 +5,50 @@
     <model>
       <itext>
         <translation lang="en">
-          <text id="/covid_trace_follow_up/contact_patient_zero:label">
+          <text id="/covid_trace_follow_up/contact_info/contact_patient_zero:label">
             <value>Patient Zero</value>
+          </text>
+          <text id="/covid_trace_follow_up/contact_info/n_address:label">
+            <value>Address: **<output value=" /covid_trace_follow_up/inputs/contact/address "/>**</value>
+          </text>
+          <text id="/covid_trace_follow_up/contact_info/n_age_in_years:label">
+            <value>Age: **<output value=" /covid_trace_follow_up/inputs/contact/age_in_years "/> years**</value>
+          </text>
+          <text id="/covid_trace_follow_up/contact_info/n_chief_name:label">
+            <value>Name of the chief of the village: **<output value=" /covid_trace_follow_up/inputs/contact/chief_name "/>**</value>
+          </text>
+          <text id="/covid_trace_follow_up/contact_info/n_chief_phone:label">
+            <value>Phone of the chief: **<output value=" /covid_trace_follow_up/inputs/contact/chief_phone "/>**</value>
+          </text>
+          <text id="/covid_trace_follow_up/contact_info/n_church:label">
+            <value>Church name: **<output value=" /covid_trace_follow_up/inputs/contact/church "/>**</value>
+          </text>
+          <text id="/covid_trace_follow_up/contact_info/n_contact_location:label">
+            <value>Where the contact took place:</value>
+          </text>
+          <text id="/covid_trace_follow_up/contact_info/n_flight_details:label">
+            <value>Flight details: **<output value=" /covid_trace_follow_up/inputs/contact/flight_details "/>**</value>
+          </text>
+          <text id="/covid_trace_follow_up/contact_info/n_other_names:label">
+            <value>Other names: **<output value=" /covid_trace_follow_up/inputs/contact/other_names "/>**</value>
+          </text>
+          <text id="/covid_trace_follow_up/contact_info/n_phone:label">
+            <value>Phone: **<output value=" /covid_trace_follow_up/inputs/contact/phone "/>**</value>
+          </text>
+          <text id="/covid_trace_follow_up/contact_info/n_sex:label">
+            <value>Sex: **<output value=" /covid_trace_follow_up/trace/sex_label "/>**</value>
+          </text>
+          <text id="/covid_trace_follow_up/contact_info/n_surname:label">
+            <value>Surname: **<output value=" /covid_trace_follow_up/inputs/contact/surname "/>**</value>
+          </text>
+          <text id="/covid_trace_follow_up/contact_info/n_town:label">
+            <value>Town: **<output value=" /covid_trace_follow_up/inputs/contact/town "/>**</value>
+          </text>
+          <text id="/covid_trace_follow_up/contact_info/n_village:label">
+            <value>Village name: **<output value=" /covid_trace_follow_up/inputs/contact/village "/>**</value>
+          </text>
+          <text id="/covid_trace_follow_up/contact_info:label">
+            <value>Contact information</value>
           </text>
           <text id="/covid_trace_follow_up/inputs/contact/_id:label">
             <value>_id</value>
@@ -64,45 +106,6 @@
           </text>
           <text id="/covid_trace_follow_up/inputs:label">
             <value>Patient</value>
-          </text>
-          <text id="/covid_trace_follow_up/n_address:label">
-            <value>Address: **<output value=" /covid_trace_follow_up/inputs/contact/address "/>**</value>
-          </text>
-          <text id="/covid_trace_follow_up/n_age_in_years:label">
-            <value>Age: **<output value=" /covid_trace_follow_up/inputs/contact/age_in_years "/> years**</value>
-          </text>
-          <text id="/covid_trace_follow_up/n_chief_name:label">
-            <value>Name of the chief of the village: **<output value=" /covid_trace_follow_up/inputs/contact/chief_name "/>**</value>
-          </text>
-          <text id="/covid_trace_follow_up/n_chief_phone:label">
-            <value>Phone of the chief: **<output value=" /covid_trace_follow_up/inputs/contact/chief_phone "/>**</value>
-          </text>
-          <text id="/covid_trace_follow_up/n_church:label">
-            <value>Church name: **<output value=" /covid_trace_follow_up/inputs/contact/church "/>**</value>
-          </text>
-          <text id="/covid_trace_follow_up/n_contact_location:label">
-            <value>Where the contact took place:</value>
-          </text>
-          <text id="/covid_trace_follow_up/n_flight_details:label">
-            <value>Flight details: **<output value=" /covid_trace_follow_up/inputs/contact/flight_details "/>**</value>
-          </text>
-          <text id="/covid_trace_follow_up/n_other_names:label">
-            <value>Other names: **<output value=" /covid_trace_follow_up/inputs/contact/other_names "/>**</value>
-          </text>
-          <text id="/covid_trace_follow_up/n_phone:label">
-            <value>Phone: **<output value=" /covid_trace_follow_up/inputs/contact/phone "/>**</value>
-          </text>
-          <text id="/covid_trace_follow_up/n_sex:label">
-            <value>Sex: **<output value=" /covid_trace_follow_up/sex_label "/>**</value>
-          </text>
-          <text id="/covid_trace_follow_up/n_surname:label">
-            <value>Surname: **<output value=" /covid_trace_follow_up/inputs/contact/surname "/>**</value>
-          </text>
-          <text id="/covid_trace_follow_up/n_town:label">
-            <value>Town: **<output value=" /covid_trace_follow_up/inputs/contact/town "/>**</value>
-          </text>
-          <text id="/covid_trace_follow_up/n_village:label">
-            <value>Village name: **<output value=" /covid_trace_follow_up/inputs/contact/village "/>**</value>
           </text>
           <text id="/covid_trace_follow_up/patient_id:jr:requiredMsg">
             <value>This field is required</value>
@@ -110,40 +113,85 @@
           <text id="/covid_trace_follow_up/patient_id:label">
             <value>Patient ID</value>
           </text>
-          <text id="/covid_trace_follow_up/sex_label_translator/female:label">
-            <value>Female</value>
-          </text>
-          <text id="/covid_trace_follow_up/sex_label_translator/male:label">
-            <value>Male</value>
-          </text>
-          <text id="/covid_trace_follow_up/stop_details:label">
-            <value>Provide more details on the investigation</value>
-          </text>
-          <text id="/covid_trace_follow_up/symptom/no:label">
-            <value>No</value>
-          </text>
-          <text id="/covid_trace_follow_up/symptom/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/covid_trace_follow_up/symptom:label">
-            <value>Does the patient have covid symptoms ?</value>
-          </text>
-          <text id="/covid_trace_follow_up/trace_result/contacted:label">
+          <text id="/covid_trace_follow_up/trace/result/contacted:label">
             <value>Contacted</value>
           </text>
-          <text id="/covid_trace_follow_up/trace_result/stop:label">
+          <text id="/covid_trace_follow_up/trace/result/stop:label">
             <value>Stop tracing this contact</value>
           </text>
-          <text id="/covid_trace_follow_up/trace_result/try_again:label">
+          <text id="/covid_trace_follow_up/trace/result/try_again:label">
             <value>Couldn't contact but will try again</value>
           </text>
-          <text id="/covid_trace_follow_up/trace_result:label">
+          <text id="/covid_trace_follow_up/trace/result:label">
             <value>Was the trace attempt successful or do you want to stop tracing this contact ?</value>
+          </text>
+          <text id="/covid_trace_follow_up/trace/sex_label_translator/female:label">
+            <value>Female</value>
+          </text>
+          <text id="/covid_trace_follow_up/trace/sex_label_translator/male:label">
+            <value>Male</value>
+          </text>
+          <text id="/covid_trace_follow_up/trace/stop_details:label">
+            <value>Provide more details on the investigation</value>
+          </text>
+          <text id="/covid_trace_follow_up/trace/symptom/no:label">
+            <value>No</value>
+          </text>
+          <text id="/covid_trace_follow_up/trace/symptom/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/covid_trace_follow_up/trace/symptom:label">
+            <value>Does the patient have covid symptoms ?</value>
+          </text>
+          <text id="/covid_trace_follow_up/trace:label">
+            <value>Trace Attempt</value>
           </text>
         </translation>
         <translation lang="fr">
-          <text id="/covid_trace_follow_up/contact_patient_zero:label">
+          <text id="/covid_trace_follow_up/contact_info/contact_patient_zero:label">
             <value>Patient Zero</value>
+          </text>
+          <text id="/covid_trace_follow_up/contact_info/n_address:label">
+            <value>Address: **<output value=" /covid_trace_follow_up/inputs/contact/address "/>**</value>
+          </text>
+          <text id="/covid_trace_follow_up/contact_info/n_age_in_years:label">
+            <value>Age: **<output value=" /covid_trace_follow_up/inputs/contact/age_in_years "/> years**</value>
+          </text>
+          <text id="/covid_trace_follow_up/contact_info/n_chief_name:label">
+            <value>Name of the chief of the village: **<output value=" /covid_trace_follow_up/inputs/contact/chief_name "/>**</value>
+          </text>
+          <text id="/covid_trace_follow_up/contact_info/n_chief_phone:label">
+            <value>Phone of the chief: **<output value=" /covid_trace_follow_up/inputs/contact/chief_phone "/>**</value>
+          </text>
+          <text id="/covid_trace_follow_up/contact_info/n_church:label">
+            <value>Church name: **<output value=" /covid_trace_follow_up/inputs/contact/church "/>**</value>
+          </text>
+          <text id="/covid_trace_follow_up/contact_info/n_contact_location:label">
+            <value>Where the contact took place:</value>
+          </text>
+          <text id="/covid_trace_follow_up/contact_info/n_flight_details:label">
+            <value>Flight details: **<output value=" /covid_trace_follow_up/inputs/contact/flight_details "/>**</value>
+          </text>
+          <text id="/covid_trace_follow_up/contact_info/n_other_names:label">
+            <value>Other names: **<output value=" /covid_trace_follow_up/inputs/contact/other_names "/>**</value>
+          </text>
+          <text id="/covid_trace_follow_up/contact_info/n_phone:label">
+            <value>Phone: **<output value=" /covid_trace_follow_up/inputs/contact/phone "/>**</value>
+          </text>
+          <text id="/covid_trace_follow_up/contact_info/n_sex:label">
+            <value>Sex: **<output value=" /covid_trace_follow_up/trace/sex_label "/>**</value>
+          </text>
+          <text id="/covid_trace_follow_up/contact_info/n_surname:label">
+            <value>Surname: **<output value=" /covid_trace_follow_up/inputs/contact/surname "/>**</value>
+          </text>
+          <text id="/covid_trace_follow_up/contact_info/n_town:label">
+            <value>Town: **<output value=" /covid_trace_follow_up/inputs/contact/town "/>**</value>
+          </text>
+          <text id="/covid_trace_follow_up/contact_info/n_village:label">
+            <value>Village name: **<output value=" /covid_trace_follow_up/inputs/contact/village "/>**</value>
+          </text>
+          <text id="/covid_trace_follow_up/contact_info:label">
+            <value>Contact information</value>
           </text>
           <text id="/covid_trace_follow_up/inputs/contact/_id:label">
             <value>_id</value>
@@ -202,85 +250,49 @@
           <text id="/covid_trace_follow_up/inputs:label">
             <value>Patient</value>
           </text>
-          <text id="/covid_trace_follow_up/n_address:label">
-            <value>Address: **<output value=" /covid_trace_follow_up/inputs/contact/address "/>**</value>
-          </text>
-          <text id="/covid_trace_follow_up/n_age_in_years:label">
-            <value>Age: **<output value=" /covid_trace_follow_up/inputs/contact/age_in_years "/> years**</value>
-          </text>
-          <text id="/covid_trace_follow_up/n_chief_name:label">
-            <value>Name of the chief of the village: **<output value=" /covid_trace_follow_up/inputs/contact/chief_name "/>**</value>
-          </text>
-          <text id="/covid_trace_follow_up/n_chief_phone:label">
-            <value>Phone of the chief: **<output value=" /covid_trace_follow_up/inputs/contact/chief_phone "/>**</value>
-          </text>
-          <text id="/covid_trace_follow_up/n_church:label">
-            <value>Church name: **<output value=" /covid_trace_follow_up/inputs/contact/church "/>**</value>
-          </text>
-          <text id="/covid_trace_follow_up/n_contact_location:label">
-            <value>Where the contact took place:</value>
-          </text>
-          <text id="/covid_trace_follow_up/n_flight_details:label">
-            <value>Flight details: **<output value=" /covid_trace_follow_up/inputs/contact/flight_details "/>**</value>
-          </text>
-          <text id="/covid_trace_follow_up/n_other_names:label">
-            <value>Other names: **<output value=" /covid_trace_follow_up/inputs/contact/other_names "/>**</value>
-          </text>
-          <text id="/covid_trace_follow_up/n_phone:label">
-            <value>Phone: **<output value=" /covid_trace_follow_up/inputs/contact/phone "/>**</value>
-          </text>
-          <text id="/covid_trace_follow_up/n_sex:label">
-            <value>Sex: **<output value=" /covid_trace_follow_up/sex_label "/>**</value>
-          </text>
-          <text id="/covid_trace_follow_up/n_surname:label">
-            <value>Surname: **<output value=" /covid_trace_follow_up/inputs/contact/surname "/>**</value>
-          </text>
-          <text id="/covid_trace_follow_up/n_town:label">
-            <value>Town: **<output value=" /covid_trace_follow_up/inputs/contact/town "/>**</value>
-          </text>
-          <text id="/covid_trace_follow_up/n_village:label">
-            <value>Village name: **<output value=" /covid_trace_follow_up/inputs/contact/village "/>**</value>
-          </text>
           <text id="/covid_trace_follow_up/patient_id:jr:requiredMsg">
             <value>Ce champs est obligatoire</value>
           </text>
           <text id="/covid_trace_follow_up/patient_id:label">
             <value>Patient ID</value>
           </text>
-          <text id="/covid_trace_follow_up/sex_label_translator/female:label">
+          <text id="/covid_trace_follow_up/trace/result/contacted:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_trace_follow_up/trace/result/stop:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_trace_follow_up/trace/result/try_again:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_trace_follow_up/trace/result:label">
+            <value>Was the trace attempt successful or do you want to stop tracing this contact ?</value>
+          </text>
+          <text id="/covid_trace_follow_up/trace/sex_label_translator/female:label">
             <value>Femme</value>
           </text>
-          <text id="/covid_trace_follow_up/sex_label_translator/male:label">
+          <text id="/covid_trace_follow_up/trace/sex_label_translator/male:label">
             <value>Homme</value>
           </text>
-          <text id="/covid_trace_follow_up/stop_details:label">
+          <text id="/covid_trace_follow_up/trace/stop_details:label">
             <value>Provide more details on the investigation</value>
           </text>
-          <text id="/covid_trace_follow_up/symptom/no:label">
+          <text id="/covid_trace_follow_up/trace/symptom/no:label">
             <value>Non</value>
           </text>
-          <text id="/covid_trace_follow_up/symptom/yes:label">
+          <text id="/covid_trace_follow_up/trace/symptom/yes:label">
             <value>Oui</value>
           </text>
-          <text id="/covid_trace_follow_up/symptom:label">
+          <text id="/covid_trace_follow_up/trace/symptom:label">
             <value>Does the patient have covid symptoms ?</value>
           </text>
-          <text id="/covid_trace_follow_up/trace_result/contacted:label">
-            <value>-</value>
-          </text>
-          <text id="/covid_trace_follow_up/trace_result/stop:label">
-            <value>-</value>
-          </text>
-          <text id="/covid_trace_follow_up/trace_result/try_again:label">
-            <value>-</value>
-          </text>
-          <text id="/covid_trace_follow_up/trace_result:label">
-            <value>Was the trace attempt successful or do you want to stop tracing this contact ?</value>
+          <text id="/covid_trace_follow_up/trace:label">
+            <value>Trace Attempt</value>
           </text>
         </translation>
       </itext>
       <instance>
-        <covid_trace_follow_up delimiter="#" id="covid_trace_follow_up" prefix="J1!covid_trace_follow_up!" version="2020-04-03_10-06">
+        <covid_trace_follow_up delimiter="#" id="covid_trace_follow_up" prefix="J1!covid_trace_follow_up!" version="2020-04-04_12-29">
           <inputs tag="hidden">
             <source>user</source>
             <source_id/>
@@ -304,25 +316,29 @@
           </inputs>
           <needs_signoff/>
           <patient_id/>
-          <n_surname tag="hidden"/>
-          <n_other_names tag="hidden"/>
-          <n_sex tag="hidden"/>
-          <n_age_in_years tag="hidden"/>
-          <n_phone tag="hidden"/>
-          <n_flight_details tag="hidden"/>
-          <n_contact_location tag="hidden"/>
-          <n_address tag="hidden"/>
-          <n_town tag="hidden"/>
-          <n_village tag="hidden"/>
-          <n_chief_name tag="hidden"/>
-          <n_chief_phone tag="hidden"/>
-          <n_church tag="hidden"/>
-          <contact_patient_zero/>
-          <trace_result/>
-          <symptom/>
-          <stop_details/>
-          <sex_label_translator tag="hidden"/>
-          <sex_label tag="hidden"/>
+          <contact_info>
+            <n_surname tag="hidden"/>
+            <n_other_names tag="hidden"/>
+            <n_sex tag="hidden"/>
+            <n_age_in_years tag="hidden"/>
+            <n_phone tag="hidden"/>
+            <n_flight_details tag="hidden"/>
+            <n_contact_location tag="hidden"/>
+            <n_address tag="hidden"/>
+            <n_town tag="hidden"/>
+            <n_village tag="hidden"/>
+            <n_chief_name tag="hidden"/>
+            <n_chief_phone tag="hidden"/>
+            <n_church tag="hidden"/>
+            <contact_patient_zero/>
+          </contact_info>
+          <trace>
+            <result/>
+            <symptom/>
+            <stop_details/>
+            <sex_label_translator tag="hidden"/>
+            <sex_label tag="hidden"/>
+          </trace>
           <meta tag="hidden">
             <instanceID/>
           </meta>
@@ -346,31 +362,31 @@
       <bind nodeset="/covid_trace_follow_up/inputs/contact/chief_phone" type="string"/>
       <bind nodeset="/covid_trace_follow_up/inputs/contact/church" type="string"/>
       <bind nodeset="/covid_trace_follow_up/inputs/contact/patient_zero" type="string"/>
-      <bind calculate="if(selected(../trace_result, 'stop'), 'true', 'false')" nodeset="/covid_trace_follow_up/needs_signoff" type="string"/>
+      <bind calculate="if(selected(../trace/result, 'stop'), 'true', 'false')" nodeset="/covid_trace_follow_up/needs_signoff" type="string"/>
       <bind calculate="../inputs/contact/_id" jr:requiredMsg="jr:itext('/covid_trace_follow_up/patient_id:jr:requiredMsg')" nodeset="/covid_trace_follow_up/patient_id" required="true()" type="string"/>
-      <bind nodeset="/covid_trace_follow_up/n_surname" readonly="true()" type="string"/>
-      <bind nodeset="/covid_trace_follow_up/n_other_names" readonly="true()" type="string"/>
-      <bind nodeset="/covid_trace_follow_up/n_sex" readonly="true()" type="string"/>
-      <bind nodeset="/covid_trace_follow_up/n_age_in_years" readonly="true()" type="string"/>
-      <bind nodeset="/covid_trace_follow_up/n_phone" readonly="true()" type="string"/>
-      <bind nodeset="/covid_trace_follow_up/n_flight_details" readonly="true()" type="string"/>
-      <bind nodeset="/covid_trace_follow_up/n_contact_location" readonly="true()" type="string"/>
-      <bind nodeset="/covid_trace_follow_up/n_address" readonly="true()" type="string"/>
-      <bind nodeset="/covid_trace_follow_up/n_town" readonly="true()" type="string"/>
-      <bind nodeset="/covid_trace_follow_up/n_village" readonly="true()" type="string"/>
-      <bind nodeset="/covid_trace_follow_up/n_chief_name" readonly="true()" type="string"/>
-      <bind nodeset="/covid_trace_follow_up/n_chief_phone" readonly="true()" type="string"/>
-      <bind nodeset="/covid_trace_follow_up/n_church" readonly="true()" type="string"/>
-      <bind calculate="../inputs/contact/patient_zero" nodeset="/covid_trace_follow_up/contact_patient_zero" readonly="true()" type="db:person"/>
-      <bind nodeset="/covid_trace_follow_up/trace_result" type="select1"/>
-      <bind nodeset="/covid_trace_follow_up/symptom" type="select1"/>
-      <bind nodeset="/covid_trace_follow_up/stop_details" relevant="selected(../trace_result, 'stop')" type="string"/>
-      <bind calculate=" /covid_trace_follow_up/inputs/contact/sex " nodeset="/covid_trace_follow_up/sex_label_translator" type="select1"/>
-      <bind calculate="jr:choice-name( /covid_trace_follow_up/sex_label_translator ,' /covid_trace_follow_up/sex_label_translator ')" nodeset="/covid_trace_follow_up/sex_label" type="string"/>
+      <bind nodeset="/covid_trace_follow_up/contact_info/n_surname" readonly="true()" type="string"/>
+      <bind nodeset="/covid_trace_follow_up/contact_info/n_other_names" readonly="true()" type="string"/>
+      <bind nodeset="/covid_trace_follow_up/contact_info/n_sex" readonly="true()" type="string"/>
+      <bind nodeset="/covid_trace_follow_up/contact_info/n_age_in_years" readonly="true()" type="string"/>
+      <bind nodeset="/covid_trace_follow_up/contact_info/n_phone" readonly="true()" type="string"/>
+      <bind nodeset="/covid_trace_follow_up/contact_info/n_flight_details" readonly="true()" type="string"/>
+      <bind nodeset="/covid_trace_follow_up/contact_info/n_contact_location" readonly="true()" type="string"/>
+      <bind nodeset="/covid_trace_follow_up/contact_info/n_address" readonly="true()" type="string"/>
+      <bind nodeset="/covid_trace_follow_up/contact_info/n_town" readonly="true()" type="string"/>
+      <bind nodeset="/covid_trace_follow_up/contact_info/n_village" readonly="true()" type="string"/>
+      <bind nodeset="/covid_trace_follow_up/contact_info/n_chief_name" readonly="true()" type="string"/>
+      <bind nodeset="/covid_trace_follow_up/contact_info/n_chief_phone" readonly="true()" type="string"/>
+      <bind nodeset="/covid_trace_follow_up/contact_info/n_church" readonly="true()" type="string"/>
+      <bind calculate="../../inputs/contact/patient_zero" nodeset="/covid_trace_follow_up/contact_info/contact_patient_zero" readonly="true()" type="db:person"/>
+      <bind nodeset="/covid_trace_follow_up/trace/result" type="select1"/>
+      <bind nodeset="/covid_trace_follow_up/trace/symptom" type="select1"/>
+      <bind nodeset="/covid_trace_follow_up/trace/stop_details" relevant="selected(../result, 'stop')" type="string"/>
+      <bind calculate=" /covid_trace_follow_up/inputs/contact/sex " nodeset="/covid_trace_follow_up/trace/sex_label_translator" type="select1"/>
+      <bind calculate="jr:choice-name( /covid_trace_follow_up/trace/sex_label_translator ,' /covid_trace_follow_up/trace/sex_label_translator ')" nodeset="/covid_trace_follow_up/trace/sex_label" type="string"/>
       <bind calculate="concat('uuid:', uuid())" nodeset="/covid_trace_follow_up/meta/instanceID" readonly="true()" type="string"/>
     </model>
   </h:head>
-  <h:body>
+  <h:body class="pages">
     <group appearance="field-list" ref="/covid_trace_follow_up/inputs">
       <label ref="jr:itext('/covid_trace_follow_up/inputs:label')"/>
       <input appearance="hidden" ref="/covid_trace_follow_up/inputs/source">
@@ -389,86 +405,92 @@
         </input>
       </group>
     </group>
-    <input ref="/covid_trace_follow_up/n_surname">
-      <label ref="jr:itext('/covid_trace_follow_up/n_surname:label')"/>
-    </input>
-    <input ref="/covid_trace_follow_up/n_other_names">
-      <label ref="jr:itext('/covid_trace_follow_up/n_other_names:label')"/>
-    </input>
-    <input ref="/covid_trace_follow_up/n_sex">
-      <label ref="jr:itext('/covid_trace_follow_up/n_sex:label')"/>
-    </input>
-    <input ref="/covid_trace_follow_up/n_age_in_years">
-      <label ref="jr:itext('/covid_trace_follow_up/n_age_in_years:label')"/>
-    </input>
-    <input ref="/covid_trace_follow_up/n_phone">
-      <label ref="jr:itext('/covid_trace_follow_up/n_phone:label')"/>
-    </input>
-    <input ref="/covid_trace_follow_up/n_flight_details">
-      <label ref="jr:itext('/covid_trace_follow_up/n_flight_details:label')"/>
-    </input>
-    <input ref="/covid_trace_follow_up/n_contact_location">
-      <label ref="jr:itext('/covid_trace_follow_up/n_contact_location:label')"/>
-    </input>
-    <input ref="/covid_trace_follow_up/n_address">
-      <label ref="jr:itext('/covid_trace_follow_up/n_address:label')"/>
-    </input>
-    <input ref="/covid_trace_follow_up/n_town">
-      <label ref="jr:itext('/covid_trace_follow_up/n_town:label')"/>
-    </input>
-    <input ref="/covid_trace_follow_up/n_village">
-      <label ref="jr:itext('/covid_trace_follow_up/n_village:label')"/>
-    </input>
-    <input ref="/covid_trace_follow_up/n_chief_name">
-      <label ref="jr:itext('/covid_trace_follow_up/n_chief_name:label')"/>
-    </input>
-    <input ref="/covid_trace_follow_up/n_chief_phone">
-      <label ref="jr:itext('/covid_trace_follow_up/n_chief_phone:label')"/>
-    </input>
-    <input ref="/covid_trace_follow_up/n_church">
-      <label ref="jr:itext('/covid_trace_follow_up/n_church:label')"/>
-    </input>
-    <input appearance="db-object bind-id-only" ref="/covid_trace_follow_up/contact_patient_zero">
-      <label ref="jr:itext('/covid_trace_follow_up/contact_patient_zero:label')"/>
-    </input>
-    <select1 ref="/covid_trace_follow_up/trace_result">
-      <label ref="jr:itext('/covid_trace_follow_up/trace_result:label')"/>
-      <item>
-        <label ref="jr:itext('/covid_trace_follow_up/trace_result/contacted:label')"/>
-        <value>contacted</value>
-      </item>
-      <item>
-        <label ref="jr:itext('/covid_trace_follow_up/trace_result/try_again:label')"/>
-        <value>try_again</value>
-      </item>
-      <item>
-        <label ref="jr:itext('/covid_trace_follow_up/trace_result/stop:label')"/>
-        <value>stop</value>
-      </item>
-    </select1>
-    <select1 ref="/covid_trace_follow_up/symptom">
-      <label ref="jr:itext('/covid_trace_follow_up/symptom:label')"/>
-      <item>
-        <label ref="jr:itext('/covid_trace_follow_up/symptom/yes:label')"/>
-        <value>yes</value>
-      </item>
-      <item>
-        <label ref="jr:itext('/covid_trace_follow_up/symptom/no:label')"/>
-        <value>no</value>
-      </item>
-    </select1>
-    <input appearance="multiline" ref="/covid_trace_follow_up/stop_details">
-      <label ref="jr:itext('/covid_trace_follow_up/stop_details:label')"/>
-    </input>
-    <select1 appearance="hidden" ref="/covid_trace_follow_up/sex_label_translator">
-      <item>
-        <label ref="jr:itext('/covid_trace_follow_up/sex_label_translator/female:label')"/>
-        <value>female</value>
-      </item>
-      <item>
-        <label ref="jr:itext('/covid_trace_follow_up/sex_label_translator/male:label')"/>
-        <value>male</value>
-      </item>
-    </select1>
+    <group appearance="field-list" ref="/covid_trace_follow_up/contact_info">
+      <label ref="jr:itext('/covid_trace_follow_up/contact_info:label')"/>
+      <input ref="/covid_trace_follow_up/contact_info/n_surname">
+        <label ref="jr:itext('/covid_trace_follow_up/contact_info/n_surname:label')"/>
+      </input>
+      <input ref="/covid_trace_follow_up/contact_info/n_other_names">
+        <label ref="jr:itext('/covid_trace_follow_up/contact_info/n_other_names:label')"/>
+      </input>
+      <input ref="/covid_trace_follow_up/contact_info/n_sex">
+        <label ref="jr:itext('/covid_trace_follow_up/contact_info/n_sex:label')"/>
+      </input>
+      <input ref="/covid_trace_follow_up/contact_info/n_age_in_years">
+        <label ref="jr:itext('/covid_trace_follow_up/contact_info/n_age_in_years:label')"/>
+      </input>
+      <input ref="/covid_trace_follow_up/contact_info/n_phone">
+        <label ref="jr:itext('/covid_trace_follow_up/contact_info/n_phone:label')"/>
+      </input>
+      <input ref="/covid_trace_follow_up/contact_info/n_flight_details">
+        <label ref="jr:itext('/covid_trace_follow_up/contact_info/n_flight_details:label')"/>
+      </input>
+      <input ref="/covid_trace_follow_up/contact_info/n_contact_location">
+        <label ref="jr:itext('/covid_trace_follow_up/contact_info/n_contact_location:label')"/>
+      </input>
+      <input ref="/covid_trace_follow_up/contact_info/n_address">
+        <label ref="jr:itext('/covid_trace_follow_up/contact_info/n_address:label')"/>
+      </input>
+      <input ref="/covid_trace_follow_up/contact_info/n_town">
+        <label ref="jr:itext('/covid_trace_follow_up/contact_info/n_town:label')"/>
+      </input>
+      <input ref="/covid_trace_follow_up/contact_info/n_village">
+        <label ref="jr:itext('/covid_trace_follow_up/contact_info/n_village:label')"/>
+      </input>
+      <input ref="/covid_trace_follow_up/contact_info/n_chief_name">
+        <label ref="jr:itext('/covid_trace_follow_up/contact_info/n_chief_name:label')"/>
+      </input>
+      <input ref="/covid_trace_follow_up/contact_info/n_chief_phone">
+        <label ref="jr:itext('/covid_trace_follow_up/contact_info/n_chief_phone:label')"/>
+      </input>
+      <input ref="/covid_trace_follow_up/contact_info/n_church">
+        <label ref="jr:itext('/covid_trace_follow_up/contact_info/n_church:label')"/>
+      </input>
+      <input appearance="db-object bind-id-only" ref="/covid_trace_follow_up/contact_info/contact_patient_zero">
+        <label ref="jr:itext('/covid_trace_follow_up/contact_info/contact_patient_zero:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_trace_follow_up/trace">
+      <label ref="jr:itext('/covid_trace_follow_up/trace:label')"/>
+      <select1 ref="/covid_trace_follow_up/trace/result">
+        <label ref="jr:itext('/covid_trace_follow_up/trace/result:label')"/>
+        <item>
+          <label ref="jr:itext('/covid_trace_follow_up/trace/result/contacted:label')"/>
+          <value>contacted</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/covid_trace_follow_up/trace/result/try_again:label')"/>
+          <value>try_again</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/covid_trace_follow_up/trace/result/stop:label')"/>
+          <value>stop</value>
+        </item>
+      </select1>
+      <select1 ref="/covid_trace_follow_up/trace/symptom">
+        <label ref="jr:itext('/covid_trace_follow_up/trace/symptom:label')"/>
+        <item>
+          <label ref="jr:itext('/covid_trace_follow_up/trace/symptom/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/covid_trace_follow_up/trace/symptom/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input appearance="multiline" ref="/covid_trace_follow_up/trace/stop_details">
+        <label ref="jr:itext('/covid_trace_follow_up/trace/stop_details:label')"/>
+      </input>
+      <select1 appearance="hidden" ref="/covid_trace_follow_up/trace/sex_label_translator">
+        <item>
+          <label ref="jr:itext('/covid_trace_follow_up/trace/sex_label_translator/female:label')"/>
+          <value>female</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/covid_trace_follow_up/trace/sex_label_translator/male:label')"/>
+          <value>male</value>
+        </item>
+      </select1>
+    </group>
   </h:body>
 </h:html>

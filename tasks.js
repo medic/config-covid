@@ -11,17 +11,17 @@ module.exports = [{
   resolvedIf: function (c, r, event) {
     const startTime = Utils.addDate(event.dueDate(c, r), -event.start);
     const endTime = Utils.addDate(event.dueDate(c, r), event.end + 1);
-    
+
     const reportsAfterRdt = c.reports.filter(report => report.reported_date >= this.mostRecentRdt.reported_date);
     return Utils.isFormSubmittedInWindow(reportsAfterRdt, 'covid_rdt_followup', startTime, endTime);
   },
   events: [{
     start: 1,
     end: 3,
-    dueDate: function() {
+    dueDate: function () {
       return Utils.addDate(new Date(this.mostRecentRdt.reported_date), 1);
     },
-  }], 
+  }],
   actions: [{
     type: 'contacts',
     form: 'covid_rdt_followup',
@@ -40,7 +40,8 @@ module.exports = [{
   },
   resolvedIf: function (contact) {
     this.mostRecentTraceFollowUp = Utils.getMostRecentReport(contact.reports, 'covid_trace_follow_up');
-    return this.mostRecentTraceFollowUp && Utils.getField(this.mostRecentTraceFollowUp, 'trace_result') === 'stop';
+    return this.mostRecentTraceFollowUp &&
+      ['contacted', 'stop'].includes(Utils.getField(this.mostRecentTraceFollowUp, 'trace.result'));
   },
   events: [{
     days: 0,

@@ -5,6 +5,27 @@
     <model>
       <itext>
         <translation lang="en">
+          <text id="/covid_trace_request/contact_info/n_address:label">
+            <value>Address: <output value=" /covid_trace_request/contact_address "/></value>
+          </text>
+          <text id="/covid_trace_request/contact_info/n_case_id:label">
+            <value>Outbreak Case ID: <output value=" /covid_trace_request/outbreak_case_id "/></value>
+          </text>
+          <text id="/covid_trace_request/contact_info/n_other_names:label">
+            <value>Other Names: <output value=" /covid_trace_request/contact_other_names "/></value>
+          </text>
+          <text id="/covid_trace_request/contact_info/n_phone:label">
+            <value>Phone: <output value=" /covid_trace_request/contact_phone "/></value>
+          </text>
+          <text id="/covid_trace_request/contact_info/n_surname:label">
+            <value>Surname: <output value=" /covid_trace_request/contact_surname "/></value>
+          </text>
+          <text id="/covid_trace_request/contact_info/n_town:label">
+            <value>Town: <output value=" /covid_trace_request/contact_town "/></value>
+          </text>
+          <text id="/covid_trace_request/contact_info:label">
+            <value>Contact information</value>
+          </text>
           <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/address:label">
             <value>Address</value>
           </text>
@@ -62,8 +83,8 @@
           <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/village:label">
             <value>Village name</value>
           </text>
-          <text id="/covid_trace_request/contacts:label">
-            <value>Add contacts to be traced</value>
+          <text id="/covid_trace_request/contacts/n_contacts:label">
+            <value>Add the contacts to be traced</value>
           </text>
           <text id="/covid_trace_request/inputs/contact/_id:label">
             <value>_id</value>
@@ -119,26 +140,29 @@
           <text id="/covid_trace_request/inputs:label">
             <value>Patient</value>
           </text>
-          <text id="/covid_trace_request/n_address:label">
-            <value>Address: <output value=" /covid_trace_request/contact_address "/></value>
-          </text>
-          <text id="/covid_trace_request/n_case_id:label">
-            <value>Outbreak Case ID: <output value=" /covid_trace_request/outbreak_case_id "/></value>
-          </text>
-          <text id="/covid_trace_request/n_other_names:label">
-            <value>Other Names: <output value=" /covid_trace_request/contact_other_names "/></value>
-          </text>
-          <text id="/covid_trace_request/n_phone:label">
-            <value>Phone: <output value=" /covid_trace_request/contact_phone "/></value>
-          </text>
-          <text id="/covid_trace_request/n_surname:label">
-            <value>Surname: <output value=" /covid_trace_request/contact_surname "/></value>
-          </text>
-          <text id="/covid_trace_request/n_town:label">
-            <value>Town: <output value=" /covid_trace_request/contact_town "/></value>
-          </text>
         </translation>
         <translation lang="fr">
+          <text id="/covid_trace_request/contact_info/n_address:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_trace_request/contact_info/n_case_id:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_trace_request/contact_info/n_other_names:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_trace_request/contact_info/n_phone:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_trace_request/contact_info/n_surname:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_trace_request/contact_info/n_town:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_trace_request/contact_info:label">
+            <value>Contact information</value>
+          </text>
           <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/address:label">
             <value>Address</value>
           </text>
@@ -196,8 +220,8 @@
           <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/village:label">
             <value>Village name</value>
           </text>
-          <text id="/covid_trace_request/contacts:label">
-            <value>Add contacts to be traced</value>
+          <text id="/covid_trace_request/contacts/n_contacts:label">
+            <value>Add the contacts to be traced</value>
           </text>
           <text id="/covid_trace_request/inputs/contact/_id:label">
             <value>_id</value>
@@ -253,28 +277,10 @@
           <text id="/covid_trace_request/inputs:label">
             <value>Patient</value>
           </text>
-          <text id="/covid_trace_request/n_address:label">
-            <value>-</value>
-          </text>
-          <text id="/covid_trace_request/n_case_id:label">
-            <value>-</value>
-          </text>
-          <text id="/covid_trace_request/n_other_names:label">
-            <value>-</value>
-          </text>
-          <text id="/covid_trace_request/n_phone:label">
-            <value>-</value>
-          </text>
-          <text id="/covid_trace_request/n_surname:label">
-            <value>-</value>
-          </text>
-          <text id="/covid_trace_request/n_town:label">
-            <value>-</value>
-          </text>
         </translation>
       </itext>
       <instance>
-        <covid_trace_request delimiter="#" id="covid_trace_request" prefix="J1!covid_trace_request!" version="2020-04-03_10-05">
+        <covid_trace_request delimiter="#" id="covid_trace_request" prefix="J1!covid_trace_request!" version="2020-04-04_12-23">
           <inputs tag="hidden">
             <source>user</source>
             <source_id/>
@@ -318,16 +324,19 @@
           <contact_phone/>
           <contact_address/>
           <contact_town/>
-          <household_id/>
-          <area_id/>
-          <facility_id/>
-          <n_case_id tag="hidden"/>
-          <n_surname tag="hidden"/>
-          <n_other_names tag="hidden"/>
-          <n_phone tag="hidden"/>
-          <n_address tag="hidden"/>
-          <n_town tag="hidden"/>
+          <household_id tag="hidden"/>
+          <area_id tag="hidden"/>
+          <facility_id tag="hidden"/>
+          <contact_info tag="hidden">
+            <n_case_id/>
+            <n_surname/>
+            <n_other_names/>
+            <n_phone/>
+            <n_address/>
+            <n_town/>
+          </contact_info>
           <contacts>
+            <n_contacts tag="hidden"/>
             <contact_repeat jr:template="">
               <contact_profile db-doc="true">
                 <surname/>
@@ -356,6 +365,7 @@
                   </parent>
                 </parent>
                 <type tag="hidden"/>
+                <role/>
                 <created_by_doc db-doc-ref="/covid_trace_request" tag="hidden"/>
               </contact_profile>
               <contact_doc db-doc-ref=" /covid_trace_request/contacts/contact_repeat/contact_profile " tag="hidden"/>
@@ -400,12 +410,13 @@
       <bind calculate="../inputs/contact/parent/_id" nodeset="/covid_trace_request/household_id" type="string"/>
       <bind calculate="../inputs/contact/parent/parent/_id" nodeset="/covid_trace_request/area_id" type="string"/>
       <bind calculate="../inputs/contact/parent/parent/parent/_id" nodeset="/covid_trace_request/facility_id" type="string"/>
-      <bind nodeset="/covid_trace_request/n_case_id" readonly="true()" type="string"/>
-      <bind nodeset="/covid_trace_request/n_surname" readonly="true()" type="string"/>
-      <bind nodeset="/covid_trace_request/n_other_names" readonly="true()" type="string"/>
-      <bind nodeset="/covid_trace_request/n_phone" readonly="true()" type="string"/>
-      <bind nodeset="/covid_trace_request/n_address" readonly="true()" type="string"/>
-      <bind nodeset="/covid_trace_request/n_town" readonly="true()" type="string"/>
+      <bind nodeset="/covid_trace_request/contact_info/n_case_id" readonly="true()" type="string"/>
+      <bind nodeset="/covid_trace_request/contact_info/n_surname" readonly="true()" type="string"/>
+      <bind nodeset="/covid_trace_request/contact_info/n_other_names" readonly="true()" type="string"/>
+      <bind nodeset="/covid_trace_request/contact_info/n_phone" readonly="true()" type="string"/>
+      <bind nodeset="/covid_trace_request/contact_info/n_address" readonly="true()" type="string"/>
+      <bind nodeset="/covid_trace_request/contact_info/n_town" readonly="true()" type="string"/>
+      <bind nodeset="/covid_trace_request/contacts/n_contacts" readonly="true()" type="string"/>
       <bind nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/surname" type="string"/>
       <bind nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/other_names" type="string"/>
       <bind calculate="concat(../other_names, ' ', ../surname)" nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/name" type="string"/>
@@ -426,12 +437,13 @@
       <bind calculate=" /covid_trace_request/area_id " nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/parent/parent/_id" type="string"/>
       <bind calculate=" /covid_trace_request/facility_id " nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/parent/parent/parent/_id" type="string"/>
       <bind calculate="&quot;person&quot;" nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/type" type="string"/>
+      <bind calculate="&quot;contact_n&quot;" nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/role" type="string"/>
       <bind calculate="." nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/created_by_doc" type="string"/>
       <bind calculate=" /covid_trace_request/contacts/contact_repeat/contact_profile " nodeset="/covid_trace_request/contacts/contact_repeat/contact_doc" type="string"/>
       <bind calculate="concat('uuid:', uuid())" nodeset="/covid_trace_request/meta/instanceID" readonly="true()" type="string"/>
     </model>
   </h:head>
-  <h:body>
+  <h:body class="pages">
     <group appearance="field-list" ref="/covid_trace_request/inputs">
       <label ref="jr:itext('/covid_trace_request/inputs:label')"/>
       <input appearance="hidden" ref="/covid_trace_request/inputs/source">
@@ -469,26 +481,31 @@
         </group>
       </group>
     </group>
-    <input ref="/covid_trace_request/n_case_id">
-      <label ref="jr:itext('/covid_trace_request/n_case_id:label')"/>
-    </input>
-    <input ref="/covid_trace_request/n_surname">
-      <label ref="jr:itext('/covid_trace_request/n_surname:label')"/>
-    </input>
-    <input ref="/covid_trace_request/n_other_names">
-      <label ref="jr:itext('/covid_trace_request/n_other_names:label')"/>
-    </input>
-    <input ref="/covid_trace_request/n_phone">
-      <label ref="jr:itext('/covid_trace_request/n_phone:label')"/>
-    </input>
-    <input ref="/covid_trace_request/n_address">
-      <label ref="jr:itext('/covid_trace_request/n_address:label')"/>
-    </input>
-    <input ref="/covid_trace_request/n_town">
-      <label ref="jr:itext('/covid_trace_request/n_town:label')"/>
-    </input>
-    <group ref="/covid_trace_request/contacts">
-      <label ref="jr:itext('/covid_trace_request/contacts:label')"/>
+    <group appearance="field-list" ref="/covid_trace_request/contact_info">
+      <label ref="jr:itext('/covid_trace_request/contact_info:label')"/>
+      <input ref="/covid_trace_request/contact_info/n_case_id">
+        <label ref="jr:itext('/covid_trace_request/contact_info/n_case_id:label')"/>
+      </input>
+      <input ref="/covid_trace_request/contact_info/n_surname">
+        <label ref="jr:itext('/covid_trace_request/contact_info/n_surname:label')"/>
+      </input>
+      <input ref="/covid_trace_request/contact_info/n_other_names">
+        <label ref="jr:itext('/covid_trace_request/contact_info/n_other_names:label')"/>
+      </input>
+      <input ref="/covid_trace_request/contact_info/n_phone">
+        <label ref="jr:itext('/covid_trace_request/contact_info/n_phone:label')"/>
+      </input>
+      <input ref="/covid_trace_request/contact_info/n_address">
+        <label ref="jr:itext('/covid_trace_request/contact_info/n_address:label')"/>
+      </input>
+      <input ref="/covid_trace_request/contact_info/n_town">
+        <label ref="jr:itext('/covid_trace_request/contact_info/n_town:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_trace_request/contacts">
+      <input ref="/covid_trace_request/contacts/n_contacts">
+        <label ref="jr:itext('/covid_trace_request/contacts/n_contacts:label')"/>
+      </input>
       <group ref="/covid_trace_request/contacts/contact_repeat">
         <label ref="jr:itext('/covid_trace_request/contacts/contact_repeat:label')"/>
         <repeat nodeset="/covid_trace_request/contacts/contact_repeat">
