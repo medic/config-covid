@@ -1,0 +1,18 @@
+{
+  "title": [
+    {
+      "locale": "en",
+      "content": "SCDSC Investigation"
+    },
+    {
+      "locale": "fr",
+      "content": "SCDSC Investigation"
+    }
+  ],
+  "context": {
+    "place": false,
+    "person": true,
+    "expression": "!contact || (contact.type === 'person' && user.parent.type === 'health_center' && user.role === 'chw')"
+  },
+  "icon": "icon-on"
+}

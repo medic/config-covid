@@ -1,0 +1,520 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>SCDSC Investigation</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/scdsc_investigation/patient_id:label">
+            <value>Signal ID</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/additional_info:label">
+            <value>Please provide any additional information on the event</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/cause:label">
+            <value>What is the cause?</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/cause_known:label">
+            <value>Is the cause of the event known?</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/collected_lab_samples:label">
+            <value>Have laboratory samples been collected?</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/event_risk_classificaiton:label">
+            <value>How would you classify the risk of the event?</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/event_start_date:label">
+            <value>When did the event start?</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/group_event_measures/event_measures:label">
+            <value>Event measures</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/group_event_measures/n_animal_attack_rate:label">
+            <value>Attack rates (animals): 
+<output value=" /scdsc_investigation/scdsc_investigation/group_event_measures/animal_attack_rate "/> %</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/group_event_measures/n_animal_case_fatality_rate:label">
+            <value>Case fatality rate (CFR) (animal):
+<output value=" /scdsc_investigation/scdsc_investigation/group_event_measures/animal_case_fatality_rate "/> %</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/group_event_measures/n_human_attack_rate:label">
+            <value>Attack rate (human):
+<output value=" /scdsc_investigation/scdsc_investigation/group_event_measures/human_attack_rate "/> %</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/group_event_measures/n_human_case_fatality_rate:label">
+            <value>Case fatality rate (CFR) (human):
+<output value=" /scdsc_investigation/scdsc_investigation/group_event_measures/human_case_fatality_rate "/> %</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/group_event_measures/n_human_hospitalization_rate:label">
+            <value>Hospitalization rate (human):
+<output value=" /scdsc_investigation/scdsc_investigation/group_event_measures/human_hospitalization_rate "/> %</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/investigation_start_date:label">
+            <value>When did the investigation by Sub county begin/start?</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/lab_results_known:label">
+            <value>Are laboratory results known?</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/new_cases_initial_area:label">
+            <value>Are new cases still being reported from the initial area?</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/new_cases_new_areas:label">
+            <value>Are new cases being reported from new areas?</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/no_animals_exposed:label">
+            <value>Number of animals exposed</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/no_dead_animals:label">
+            <value>Number of dead animals</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/no_human_cases:label">
+            <value>Number of human cases</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/no_human_cases_hospitalized:label">
+            <value>Number of human cases hospitalized</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/no_human_deaths:label">
+            <value>Number of human deaths</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/no_people_exposed:label">
+            <value>Number of people exposed</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/no_sick_animals:label">
+            <value>Number of sick animals</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/response_recommedations:label">
+            <value>What are the recommended response activities ?</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/response_start_date:label">
+            <value>When did response start</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/scdc_informed_date:label">
+            <value>When was the SCDSC informed?</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/setting_promotes_spread:label">
+            <value>Does the event setting promote spread?</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/signs_symptoms:label">
+            <value>What are the signs and symptoms that are being reported?</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation:label">
+            <value>SCDSC investigation</value>
+          </text>
+          <text id="/scdsc_investigation/signal_id:label">
+            <value>Signal ID</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="/scdsc_investigation/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/additional_info:label">
+            <value>-</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/cause:label">
+            <value>-</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/cause_known:label">
+            <value>-</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/collected_lab_samples:label">
+            <value>-</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/event_risk_classificaiton:label">
+            <value>-</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/event_start_date:label">
+            <value>-</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/group_event_measures/animal_attack_rate:label">
+            <value>-</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/group_event_measures/animal_case_fatality_rate:label">
+            <value>-</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/group_event_measures/event_measures:label">
+            <value>-</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/group_event_measures/human_attack_rate:label">
+            <value>-</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/group_event_measures/human_case_fatality_rate:label">
+            <value>-</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/group_event_measures/human_hospitalization_rate:label">
+            <value>-</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/group_event_measures/n_animal_attack_rate:label">
+            <value>-</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/group_event_measures/n_animal_case_fatality_rate:label">
+            <value>-</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/group_event_measures/n_human_attack_rate:label">
+            <value>-</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/group_event_measures/n_human_case_fatality_rate:label">
+            <value>-</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/group_event_measures/n_human_hospitalization_rate:label">
+            <value>-</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/investigation_start_date:label">
+            <value>-</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/lab_results_known:label">
+            <value>-</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/new_cases_initial_area:label">
+            <value>-</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/new_cases_new_areas:label">
+            <value>-</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/no_animals_exposed:label">
+            <value>-</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/no_dead_animals:label">
+            <value>-</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/no_human_cases:label">
+            <value>-</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/no_human_cases_hospitalized:label">
+            <value>-</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/no_human_deaths:label">
+            <value>-</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/no_people_exposed:label">
+            <value>-</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/no_sick_animals:label">
+            <value>-</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/response_recommedations:label">
+            <value>-</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/response_start_date:label">
+            <value>-</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/scdc_informed_date:label">
+            <value>-</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/setting_promotes_spread:label">
+            <value>-</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation/signs_symptoms:label">
+            <value>-</value>
+          </text>
+          <text id="/scdsc_investigation/scdsc_investigation:label">
+            <value>-</value>
+          </text>
+          <text id="/scdsc_investigation/signal_id:label">
+            <value>-</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <scdsc_investigation delimiter="#" id="scdsc_investigation" prefix="J1!scdsc_investigation!" version="2019-09-05">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <id_signal/>
+          </inputs>
+          <patient_id/>
+          <signal_id/>
+          <scdsc_investigation>
+            <scdc_informed_date/>
+            <investigation_start_date/>
+            <event_start_date/>
+            <signs_symptoms/>
+            <cause_known/>
+            <cause/>
+            <lab_results_known/>
+            <collected_lab_samples/>
+            <no_people_exposed/>
+            <no_human_cases/>
+            <no_human_cases_hospitalized/>
+            <no_human_deaths/>
+            <no_animals_exposed/>
+            <no_sick_animals/>
+            <no_dead_animals/>
+            <new_cases_initial_area/>
+            <new_cases_new_areas/>
+            <setting_promotes_spread/>
+            <additional_info/>
+            <group_event_measures>
+              <event_measures/>
+              <human_attack_rate/>
+              <n_human_attack_rate/>
+              <human_hospitalization_rate/>
+              <n_human_hospitalization_rate/>
+              <human_case_fatality_rate/>
+              <n_human_case_fatality_rate/>
+              <animal_attack_rate/>
+              <n_animal_attack_rate/>
+              <animal_case_fatality_rate/>
+              <n_animal_case_fatality_rate/>
+            </group_event_measures>
+            <event_risk_classificaiton/>
+            <response_recommedations/>
+            <response_start_date/>
+          </scdsc_investigation>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </scdsc_investigation>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/scdsc_investigation/inputs" relevant="0"/>
+      <bind nodeset="/scdsc_investigation/inputs/id_signal" type="string"/>
+      <bind calculate=" /scdsc_investigation/inputs/id_signal " nodeset="/scdsc_investigation/patient_id" type="string"/>
+      <bind calculate=" /scdsc_investigation/inputs/id_signal " constraint="regex(.,'^[0-9]{5,13}$')" jr:constraintMsg="The signal ID should be a 5 to 13 digit number. Kindly enter a valid signal ID." nodeset="/scdsc_investigation/signal_id" required="true()" type="string"/>
+      <bind jr:constraintMsg="Kindly select a date that is not be in the future and not more than 3 months ago." nodeset="/scdsc_investigation/scdsc_investigation/scdc_informed_date" required="true()" type="date"/>
+      <bind jr:constraintMsg="Kindly select a date that is not be in the future and not more than 3 months ago." nodeset="/scdsc_investigation/scdsc_investigation/investigation_start_date" required="true()" type="date"/>
+      <bind jr:constraintMsg="Kindly select a date that is not be in the future and not more than 3 months ago." nodeset="/scdsc_investigation/scdsc_investigation/event_start_date" required="true()" type="dateTime"/>
+      <bind nodeset="/scdsc_investigation/scdsc_investigation/signs_symptoms" required="true()" type="string"/>
+      <bind nodeset="/scdsc_investigation/scdsc_investigation/cause_known" required="true()" type="select1"/>
+      <bind nodeset="/scdsc_investigation/scdsc_investigation/cause" relevant=" /scdsc_investigation/scdsc_investigation/cause_known  = 'yes'" required="true()" type="string"/>
+      <bind nodeset="/scdsc_investigation/scdsc_investigation/lab_results_known" relevant=" /scdsc_investigation/scdsc_investigation/cause_known  = 'yes'" required="true()" type="select1"/>
+      <bind nodeset="/scdsc_investigation/scdsc_investigation/collected_lab_samples" relevant=" /scdsc_investigation/scdsc_investigation/cause_known  = 'no' or  /scdsc_investigation/scdsc_investigation/lab_results_known  = 'no'" required="true()" type="select1"/>
+      <bind nodeset="/scdsc_investigation/scdsc_investigation/no_people_exposed" required="true()" type="int"/>
+      <bind constraint=". &lt;=  /scdsc_investigation/scdsc_investigation/no_people_exposed " jr:constraintMsg="Number of human cases cannot be more than number of people exposed." nodeset="/scdsc_investigation/scdsc_investigation/no_human_cases" required="true()" type="int"/>
+      <bind constraint=". &lt;=  /scdsc_investigation/scdsc_investigation/no_human_cases " jr:constraintMsg="Number of human cases hospitalized cannot be more than number of human cases." nodeset="/scdsc_investigation/scdsc_investigation/no_human_cases_hospitalized" required="true()" type="int"/>
+      <bind constraint=". &lt;=  /scdsc_investigation/scdsc_investigation/no_human_cases " jr:constraintMsg="Number of human deaths cannot be more than number of human cases." nodeset="/scdsc_investigation/scdsc_investigation/no_human_deaths" required="true()" type="int"/>
+      <bind nodeset="/scdsc_investigation/scdsc_investigation/no_animals_exposed" required="true()" type="int"/>
+      <bind constraint=". &lt;=  /scdsc_investigation/scdsc_investigation/no_animals_exposed " jr:constraintMsg="Number of sick animals cannot be more than number of animals exposed." nodeset="/scdsc_investigation/scdsc_investigation/no_sick_animals" required="true()" type="int"/>
+      <bind constraint=". &lt;=  /scdsc_investigation/scdsc_investigation/no_sick_animals " jr:constraintMsg="Number of dead animals cannot be more than number of sick animals." nodeset="/scdsc_investigation/scdsc_investigation/no_dead_animals" required="true()" type="int"/>
+      <bind nodeset="/scdsc_investigation/scdsc_investigation/new_cases_initial_area" required="true()" type="select1"/>
+      <bind nodeset="/scdsc_investigation/scdsc_investigation/new_cases_new_areas" required="true()" type="select1"/>
+      <bind nodeset="/scdsc_investigation/scdsc_investigation/setting_promotes_spread" required="true()" type="select1"/>
+      <bind nodeset="/scdsc_investigation/scdsc_investigation/additional_info" required="false()" type="string"/>
+      <bind nodeset="/scdsc_investigation/scdsc_investigation/group_event_measures/event_measures" readonly="true()" type="string"/>
+      <bind calculate="if( /scdsc_investigation/scdsc_investigation/no_human_cases  = 0 or  /scdsc_investigation/scdsc_investigation/no_people_exposed  = 0, 0, round(( /scdsc_investigation/scdsc_investigation/no_human_cases  div  /scdsc_investigation/scdsc_investigation/no_people_exposed ) * 100, 2))" nodeset="/scdsc_investigation/scdsc_investigation/group_event_measures/human_attack_rate" relevant=" /scdsc_investigation/scdsc_investigation/no_people_exposed  &gt; 0" type="string"/>
+      <bind nodeset="/scdsc_investigation/scdsc_investigation/group_event_measures/n_human_attack_rate" readonly="true()" relevant=" /scdsc_investigation/scdsc_investigation/no_people_exposed  &gt; 0" type="string"/>
+      <bind calculate="if( /scdsc_investigation/scdsc_investigation/no_human_cases_hospitalized  = 0 or  /scdsc_investigation/scdsc_investigation/no_human_cases  = 0, 0, round(( /scdsc_investigation/scdsc_investigation/no_human_cases_hospitalized  div  /scdsc_investigation/scdsc_investigation/no_human_cases ) * 100, 2))" nodeset="/scdsc_investigation/scdsc_investigation/group_event_measures/human_hospitalization_rate" relevant=" /scdsc_investigation/scdsc_investigation/no_people_exposed  &gt; 0" type="string"/>
+      <bind nodeset="/scdsc_investigation/scdsc_investigation/group_event_measures/n_human_hospitalization_rate" readonly="true()" relevant=" /scdsc_investigation/scdsc_investigation/no_people_exposed  &gt; 0" type="string"/>
+      <bind calculate="if( /scdsc_investigation/scdsc_investigation/no_human_deaths  = 0 or  /scdsc_investigation/scdsc_investigation/no_human_cases  = 0, 0, round(( /scdsc_investigation/scdsc_investigation/no_human_deaths  div  /scdsc_investigation/scdsc_investigation/no_human_cases ) * 100, 2))" nodeset="/scdsc_investigation/scdsc_investigation/group_event_measures/human_case_fatality_rate" relevant=" /scdsc_investigation/scdsc_investigation/no_people_exposed  &gt; 0" type="string"/>
+      <bind nodeset="/scdsc_investigation/scdsc_investigation/group_event_measures/n_human_case_fatality_rate" readonly="true()" relevant=" /scdsc_investigation/scdsc_investigation/no_people_exposed  &gt; 0" type="string"/>
+      <bind calculate="if( /scdsc_investigation/scdsc_investigation/no_sick_animals  = 0 or  /scdsc_investigation/scdsc_investigation/no_animals_exposed  = 0, 0, round(( /scdsc_investigation/scdsc_investigation/no_sick_animals  div  /scdsc_investigation/scdsc_investigation/no_animals_exposed ) * 100, 2))" nodeset="/scdsc_investigation/scdsc_investigation/group_event_measures/animal_attack_rate" relevant=" /scdsc_investigation/scdsc_investigation/no_animals_exposed  &gt; 0" type="string"/>
+      <bind nodeset="/scdsc_investigation/scdsc_investigation/group_event_measures/n_animal_attack_rate" readonly="true()" relevant=" /scdsc_investigation/scdsc_investigation/no_animals_exposed  &gt; 0" type="string"/>
+      <bind calculate="if( /scdsc_investigation/scdsc_investigation/no_dead_animals  = 0 or  /scdsc_investigation/scdsc_investigation/no_sick_animals  = 0, 0, round(( /scdsc_investigation/scdsc_investigation/no_dead_animals  div  /scdsc_investigation/scdsc_investigation/no_sick_animals ) * 100, 2))" nodeset="/scdsc_investigation/scdsc_investigation/group_event_measures/animal_case_fatality_rate" relevant=" /scdsc_investigation/scdsc_investigation/no_animals_exposed  &gt; 0" type="string"/>
+      <bind nodeset="/scdsc_investigation/scdsc_investigation/group_event_measures/n_animal_case_fatality_rate" readonly="true()" relevant=" /scdsc_investigation/scdsc_investigation/no_animals_exposed  &gt; 0" type="string"/>
+      <bind nodeset="/scdsc_investigation/scdsc_investigation/event_risk_classificaiton" required="true()" type="select1"/>
+      <bind nodeset="/scdsc_investigation/scdsc_investigation/response_recommedations" required="true()" type="select"/>
+      <bind jr:constraintMsg="Kindly select a date that is not be in the future and not more than 3 months ago." nodeset="/scdsc_investigation/scdsc_investigation/response_start_date" required="true()" type="date"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/scdsc_investigation/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/scdsc_investigation/inputs">
+      <input appearance="hidden" ref="/scdsc_investigation/inputs/id_signal"/>
+    </group>
+    <group appearance="field-list" ref="/scdsc_investigation/scdsc_investigation">
+      <label ref="jr:itext('/scdsc_investigation/scdsc_investigation:label')"/>
+      <input appearance="no-calendar" ref="/scdsc_investigation/scdsc_investigation/scdc_informed_date">
+        <label ref="jr:itext('/scdsc_investigation/scdsc_investigation/scdc_informed_date:label')"/>
+      </input>
+      <input appearance="no-calendar" ref="/scdsc_investigation/scdsc_investigation/investigation_start_date">
+        <label ref="jr:itext('/scdsc_investigation/scdsc_investigation/investigation_start_date:label')"/>
+      </input>
+      <input appearance="no-calendar" ref="/scdsc_investigation/scdsc_investigation/event_start_date">
+        <label ref="jr:itext('/scdsc_investigation/scdsc_investigation/event_start_date:label')"/>
+      </input>
+      <input ref="/scdsc_investigation/scdsc_investigation/signs_symptoms">
+        <label ref="jr:itext('/scdsc_investigation/scdsc_investigation/signs_symptoms:label')"/>
+      </input>
+      <select1 ref="/scdsc_investigation/scdsc_investigation/cause_known">
+        <label ref="jr:itext('/scdsc_investigation/scdsc_investigation/cause_known:label')"/>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/scdsc_investigation/scdsc_investigation/cause">
+        <label ref="jr:itext('/scdsc_investigation/scdsc_investigation/cause:label')"/>
+      </input>
+      <select1 ref="/scdsc_investigation/scdsc_investigation/lab_results_known">
+        <label ref="jr:itext('/scdsc_investigation/scdsc_investigation/lab_results_known:label')"/>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/scdsc_investigation/scdsc_investigation/collected_lab_samples">
+        <label ref="jr:itext('/scdsc_investigation/scdsc_investigation/collected_lab_samples:label')"/>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+        <item>
+          <label>Not applicable</label>
+          <value>not_applicable</value>
+        </item>
+      </select1>
+      <input ref="/scdsc_investigation/scdsc_investigation/no_people_exposed">
+        <label ref="jr:itext('/scdsc_investigation/scdsc_investigation/no_people_exposed:label')"/>
+      </input>
+      <input ref="/scdsc_investigation/scdsc_investigation/no_human_cases">
+        <label ref="jr:itext('/scdsc_investigation/scdsc_investigation/no_human_cases:label')"/>
+      </input>
+      <input ref="/scdsc_investigation/scdsc_investigation/no_human_cases_hospitalized">
+        <label ref="jr:itext('/scdsc_investigation/scdsc_investigation/no_human_cases_hospitalized:label')"/>
+      </input>
+      <input ref="/scdsc_investigation/scdsc_investigation/no_human_deaths">
+        <label ref="jr:itext('/scdsc_investigation/scdsc_investigation/no_human_deaths:label')"/>
+      </input>
+      <input ref="/scdsc_investigation/scdsc_investigation/no_animals_exposed">
+        <label ref="jr:itext('/scdsc_investigation/scdsc_investigation/no_animals_exposed:label')"/>
+      </input>
+      <input ref="/scdsc_investigation/scdsc_investigation/no_sick_animals">
+        <label ref="jr:itext('/scdsc_investigation/scdsc_investigation/no_sick_animals:label')"/>
+      </input>
+      <input ref="/scdsc_investigation/scdsc_investigation/no_dead_animals">
+        <label ref="jr:itext('/scdsc_investigation/scdsc_investigation/no_dead_animals:label')"/>
+      </input>
+      <select1 ref="/scdsc_investigation/scdsc_investigation/new_cases_initial_area">
+        <label ref="jr:itext('/scdsc_investigation/scdsc_investigation/new_cases_initial_area:label')"/>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+        <item>
+          <label>Not applicable</label>
+          <value>not_applicable</value>
+        </item>
+      </select1>
+      <select1 ref="/scdsc_investigation/scdsc_investigation/new_cases_new_areas">
+        <label ref="jr:itext('/scdsc_investigation/scdsc_investigation/new_cases_new_areas:label')"/>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+        <item>
+          <label>Not applicable</label>
+          <value>not_applicable</value>
+        </item>
+      </select1>
+      <select1 ref="/scdsc_investigation/scdsc_investigation/setting_promotes_spread">
+        <label ref="jr:itext('/scdsc_investigation/scdsc_investigation/setting_promotes_spread:label')"/>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+        <item>
+          <label>Not applicable</label>
+          <value>not_applicable</value>
+        </item>
+      </select1>
+      <input ref="/scdsc_investigation/scdsc_investigation/additional_info">
+        <label ref="jr:itext('/scdsc_investigation/scdsc_investigation/additional_info:label')"/>
+      </input>
+      <group appearance="field-list" ref="/scdsc_investigation/scdsc_investigation/group_event_measures">
+        <input ref="/scdsc_investigation/scdsc_investigation/group_event_measures/event_measures">
+          <label ref="jr:itext('/scdsc_investigation/scdsc_investigation/group_event_measures/event_measures:label')"/>
+        </input>
+        <input ref="/scdsc_investigation/scdsc_investigation/group_event_measures/n_human_attack_rate">
+          <label ref="jr:itext('/scdsc_investigation/scdsc_investigation/group_event_measures/n_human_attack_rate:label')"/>
+        </input>
+        <input ref="/scdsc_investigation/scdsc_investigation/group_event_measures/n_human_hospitalization_rate">
+          <label ref="jr:itext('/scdsc_investigation/scdsc_investigation/group_event_measures/n_human_hospitalization_rate:label')"/>
+        </input>
+        <input ref="/scdsc_investigation/scdsc_investigation/group_event_measures/n_human_case_fatality_rate">
+          <label ref="jr:itext('/scdsc_investigation/scdsc_investigation/group_event_measures/n_human_case_fatality_rate:label')"/>
+        </input>
+        <input ref="/scdsc_investigation/scdsc_investigation/group_event_measures/n_animal_attack_rate">
+          <label ref="jr:itext('/scdsc_investigation/scdsc_investigation/group_event_measures/n_animal_attack_rate:label')"/>
+        </input>
+        <input ref="/scdsc_investigation/scdsc_investigation/group_event_measures/n_animal_case_fatality_rate">
+          <label ref="jr:itext('/scdsc_investigation/scdsc_investigation/group_event_measures/n_animal_case_fatality_rate:label')"/>
+        </input>
+      </group>
+      <select1 ref="/scdsc_investigation/scdsc_investigation/event_risk_classificaiton">
+        <label ref="jr:itext('/scdsc_investigation/scdsc_investigation/event_risk_classificaiton:label')"/>
+        <hint>(consider diagnosis, setting and measures)</hint>
+        <item>
+          <label>Very High Risk</label>
+          <value>very_high</value>
+        </item>
+        <item>
+          <label>High Risk</label>
+          <value>high</value>
+        </item>
+        <item>
+          <label>Moderate Risk</label>
+          <value>moderate</value>
+        </item>
+        <item>
+          <label>Low Risk</label>
+          <value>low</value>
+        </item>
+        <item>
+          <label>Very Low Risk</label>
+          <value>very_low</value>
+        </item>
+      </select1>
+      <select ref="/scdsc_investigation/scdsc_investigation/response_recommedations">
+        <label ref="jr:itext('/scdsc_investigation/scdsc_investigation/response_recommedations:label')"/>
+        <hint>(Tick all that apply)</hint>
+        <item>
+          <label>Escalate response to county level</label>
+          <value>escalate_to_county</value>
+        </item>
+        <item>
+          <label>Deploy Sub County RRT</label>
+          <value>deploy_sub_county_rrt</value>
+        </item>
+        <item>
+          <label>Advanced investigation</label>
+          <value>advance_investigation</value>
+        </item>
+        <item>
+          <label>Enhanced surveillance</label>
+          <value>enhanced_surveillance</value>
+        </item>
+        <item>
+          <label>Monitor</label>
+          <value>monitor</value>
+        </item>
+        <item>
+          <label>Discard</label>
+          <value>discard</value>
+        </item>
+      </select>
+      <input appearance="no-calendar" ref="/scdsc_investigation/scdsc_investigation/response_start_date">
+        <label ref="jr:itext('/scdsc_investigation/scdsc_investigation/response_start_date:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>
