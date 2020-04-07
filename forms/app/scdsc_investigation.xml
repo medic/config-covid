@@ -9,19 +9,19 @@
             <value>Signal ID</value>
           </text>
           <text id="/scdsc_investigation/scdsc_investigation/cause:label">
-            <value>What was the cause of public health event?</value>
+            <value>Provide a brief description of this COVID-19 event.</value>
           </text>
           <text id="/scdsc_investigation/scdsc_investigation/contact_covid_case:hint">
             <value>-</value>
           </text>
           <text id="/scdsc_investigation/scdsc_investigation/contact_covid_case:label">
-            <value>Have you been in contact with a confirmed or probable covid_19 case in the last 14 days prior to the symptoms onset</value>
+            <value>Has the patient been in contact with a confirmed or probable COVID-19 case in the last 14 days prior to the symptoms onset?</value>
           </text>
-          <text id="/scdsc_investigation/scdsc_investigation/event_risk_classificaiton:label">
+          <text id="/scdsc_investigation/scdsc_investigation/event_risk_classification:label">
             <value>Risk classification</value>
           </text>
           <text id="/scdsc_investigation/scdsc_investigation/labs_sample:label">
-            <value>Did you collect any laboratory samples?</value>
+            <value>Have any laboratory samples been collected?</value>
           </text>
           <text id="/scdsc_investigation/scdsc_investigation/no_human_cases_hospitalized:label">
             <value>Number of cases hospitalized</value>
@@ -30,31 +30,31 @@
             <value>Number of deaths</value>
           </text>
           <text id="/scdsc_investigation/scdsc_investigation/no_people_exposed:label">
-            <value>Number of people exposed</value>
+            <value>How many people did the patient come in contact with since the onset of symptoms?</value>
           </text>
           <text id="/scdsc_investigation/scdsc_investigation/no_suspected_cases:label">
             <value>Number of suspected cases</value>
           </text>
           <text id="/scdsc_investigation/scdsc_investigation/phone_number:label">
-            <value>Phone number of the person</value>
+            <value>Phone number of the patient</value>
           </text>
-          <text id="/scdsc_investigation/scdsc_investigation/response_recommedations:label">
+          <text id="/scdsc_investigation/scdsc_investigation/response_recommendations:label">
             <value>Recommended response</value>
           </text>
           <text id="/scdsc_investigation/scdsc_investigation/signal_id_reminder:label">
             <value>Signal ID : <output value=" /scdsc_investigation/inputs/id_signal "/></value>
           </text>
           <text id="/scdsc_investigation/scdsc_investigation/signal_investigated:label">
-            <value>Was the public health event investigated by Sub district?</value>
+            <value>Was the COVID-19 event investigated?</value>
           </text>
           <text id="/scdsc_investigation/scdsc_investigation/signs_others:label">
             <value>Specify other</value>
           </text>
           <text id="/scdsc_investigation/scdsc_investigation/signs_reported:label">
-            <value>What are the signs and symptoms reported?</value>
+            <value>Select the signs and symptoms reported by the patient</value>
           </text>
           <text id="/scdsc_investigation/scdsc_investigation/travel_history:label">
-            <value>A history of travel to a foreign country during the 14 days prior to the symptoms?</value>
+            <value>Did the patient have a history of travel to a foreign country during the 14 days prior to symptom onset?</value>
           </text>
           <text id="/scdsc_investigation/scdsc_investigation:label">
             <value>Investigation</value>
@@ -75,7 +75,7 @@
             <value>Investigation of status is overdue</value>
           </text>
           <text id="/scdsc_investigation/summary/s_followup_note_2:label">
-            <value>Thank you for completing the investigation for signal <output value=" /scdsc_investigation/signal_id "/>. No further follow up is needed for investigation</value>
+            <value>Thank you for completing the investigation for Signal ID <output value=" /scdsc_investigation/signal_id "/>. No further follow up is needed.</value>
           </text>
           <text id="/scdsc_investigation/summary/s_investigation:label">
             <value>Investigation Summary</value>
@@ -90,7 +90,7 @@
             <value>Number of cases hospitalized: <output value=" /scdsc_investigation/scdsc_investigation/no_human_cases_hospitalized "/></value>
           </text>
           <text id="/scdsc_investigation/summary/s_investigation_risk:label">
-            <value>Risk classification: <output value=" /scdsc_investigation/scdsc_investigation/event_risk_classificaiton "/></value>
+            <value>Risk classification: <output value=" /scdsc_investigation/scdsc_investigation/event_risk_classification "/></value>
           </text>
           <text id="/scdsc_investigation/summary/s_investigation_suspected:label">
             <value>Number of suspected cases: <output value=" /scdsc_investigation/scdsc_investigation/no_suspected_cases "/></value>
@@ -109,7 +109,7 @@
           <text id="/scdsc_investigation/scdsc_investigation/contact_covid_case:label">
             <value>-</value>
           </text>
-          <text id="/scdsc_investigation/scdsc_investigation/event_risk_classificaiton:label">
+          <text id="/scdsc_investigation/scdsc_investigation/event_risk_classification:label">
             <value>-</value>
           </text>
           <text id="/scdsc_investigation/scdsc_investigation/labs_sample:label">
@@ -130,7 +130,7 @@
           <text id="/scdsc_investigation/scdsc_investigation/phone_number:label">
             <value>-</value>
           </text>
-          <text id="/scdsc_investigation/scdsc_investigation/response_recommedations:label">
+          <text id="/scdsc_investigation/scdsc_investigation/response_recommendations:label">
             <value>-</value>
           </text>
           <text id="/scdsc_investigation/scdsc_investigation/signal_id_reminder:label">
@@ -218,8 +218,8 @@
             <no_suspected_cases/>
             <no_human_cases_hospitalized/>
             <no_human_deaths/>
-            <event_risk_classificaiton/>
-            <response_recommedations/>
+            <event_risk_classification/>
+            <response_recommendations/>
           </scdsc_investigation>
           <summary>
             <s_details/>
@@ -258,8 +258,8 @@
       <bind nodeset="/scdsc_investigation/scdsc_investigation/no_suspected_cases" relevant=" /scdsc_investigation/scdsc_investigation/signal_investigated  = 'yes'" required="true()" type="int"/>
       <bind nodeset="/scdsc_investigation/scdsc_investigation/no_human_cases_hospitalized" relevant=" /scdsc_investigation/scdsc_investigation/signal_investigated  = 'yes'" required="true()" type="int"/>
       <bind nodeset="/scdsc_investigation/scdsc_investigation/no_human_deaths" relevant=" /scdsc_investigation/scdsc_investigation/signal_investigated  = 'yes'" required="true()" type="int"/>
-      <bind nodeset="/scdsc_investigation/scdsc_investigation/event_risk_classificaiton" relevant=" /scdsc_investigation/scdsc_investigation/signal_investigated  = 'yes'" required="true()" type="string"/>
-      <bind nodeset="/scdsc_investigation/scdsc_investigation/response_recommedations" relevant=" /scdsc_investigation/scdsc_investigation/signal_investigated  = 'yes'" required="true()" type="string"/>
+      <bind nodeset="/scdsc_investigation/scdsc_investigation/event_risk_classification" relevant=" /scdsc_investigation/scdsc_investigation/signal_investigated  = 'yes'" required="true()" type="select1"/>
+      <bind nodeset="/scdsc_investigation/scdsc_investigation/response_recommendations" relevant=" /scdsc_investigation/scdsc_investigation/signal_investigated  = 'yes'" required="true()" type="select1"/>
       <bind nodeset="/scdsc_investigation/summary/s_details" readonly="true()" type="string"/>
       <bind nodeset="/scdsc_investigation/summary/s_details_signal_id_start" readonly="true()" type="string"/>
       <bind nodeset="/scdsc_investigation/summary/s_investigation" readonly="true()" relevant=" /scdsc_investigation/scdsc_investigation/signal_investigated  = 'yes'" type="string"/>
@@ -299,7 +299,7 @@
       </input>
       <select ref="/scdsc_investigation/scdsc_investigation/signs_reported">
         <label ref="jr:itext('/scdsc_investigation/scdsc_investigation/signs_reported:label')"/>
-        <hint>select all that apply</hint>
+        <hint>Select all that apply</hint>
         <item>
           <label>Fever</label>
           <value>fever</value>
@@ -309,7 +309,7 @@
           <value>cough</value>
         </item>
         <item>
-          <label>Difficult in breathing</label>
+          <label>Difficulty breathing</label>
           <value>breathing</value>
         </item>
         <item>
@@ -373,12 +373,56 @@
       <input ref="/scdsc_investigation/scdsc_investigation/no_human_deaths">
         <label ref="jr:itext('/scdsc_investigation/scdsc_investigation/no_human_deaths:label')"/>
       </input>
-      <input ref="/scdsc_investigation/scdsc_investigation/event_risk_classificaiton">
-        <label ref="jr:itext('/scdsc_investigation/scdsc_investigation/event_risk_classificaiton:label')"/>
-      </input>
-      <input ref="/scdsc_investigation/scdsc_investigation/response_recommedations">
-        <label ref="jr:itext('/scdsc_investigation/scdsc_investigation/response_recommedations:label')"/>
-      </input>
+      <select1 ref="/scdsc_investigation/scdsc_investigation/event_risk_classification">
+        <label ref="jr:itext('/scdsc_investigation/scdsc_investigation/event_risk_classification:label')"/>
+        <item>
+          <label>Very high risk</label>
+          <value>very_high</value>
+        </item>
+        <item>
+          <label>High risk</label>
+          <value>high</value>
+        </item>
+        <item>
+          <label>Moderate risk</label>
+          <value>moderate</value>
+        </item>
+        <item>
+          <label>Low risk</label>
+          <value>low</value>
+        </item>
+        <item>
+          <label>Very low risk</label>
+          <value>very_low</value>
+        </item>
+      </select1>
+      <select1 ref="/scdsc_investigation/scdsc_investigation/response_recommendations">
+        <label ref="jr:itext('/scdsc_investigation/scdsc_investigation/response_recommendations:label')"/>
+        <item>
+          <label>Escalate response to county level</label>
+          <value>escalate_to_county</value>
+        </item>
+        <item>
+          <label>Deploy RRT</label>
+          <value>deploy_rrt</value>
+        </item>
+        <item>
+          <label>Advanced investigation</label>
+          <value>advanced_investigation</value>
+        </item>
+        <item>
+          <label>Enhanced surveillance</label>
+          <value>enhanced_surveillance</value>
+        </item>
+        <item>
+          <label>Monitor</label>
+          <value>monitor</value>
+        </item>
+        <item>
+          <label>Discard</label>
+          <value>discard</value>
+        </item>
+      </select1>
     </group>
     <group appearance="field-list summary" ref="/scdsc_investigation/summary">
       <input appearance="h1 yellow" ref="/scdsc_investigation/summary/s_details">
