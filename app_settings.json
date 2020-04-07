@@ -78,6 +78,14 @@
     "chw": {
       "name": "usertype.chw",
       "offline": true
+    },
+    "covid_tracer": {
+      "name": "usertype.covid_tracer",
+      "offline": true
+    },
+    "covid_data_entry": {
+      "name": "usertype.covid_data_entry",
+      "offline": true
     }
   },
   "permissions": {
@@ -96,19 +104,25 @@
     "can_create_people": [
       "program_officer",
       "chw_supervisor",
-      "chw"
+      "chw",
+      "covid_tracer",
+      "covid_data_entry"
     ],
     "can_create_places": [
       "program_officer",
       "chw_supervisor",
-      "chw"
+      "chw",
+      "covid_tracer",
+      "covid_data_entry"
     ],
     "can_create_records": [
       "data_entry",
       "gateway",
       "program_officer",
       "chw_supervisor",
-      "chw"
+      "chw",
+      "covid_tracer",
+      "covid_data_entry"
     ],
     "can_create_users": [
       "program_officer"
@@ -116,7 +130,9 @@
     "can_delete_contacts": [
       "program_officer",
       "chw_supervisor",
-      "chw"
+      "chw",
+      "covid_tracer",
+      "covid_data_entry"
     ],
     "can_delete_messages": [
       "program_officer",
@@ -135,7 +151,9 @@
       "gateway",
       "program_officer",
       "chw_supervisor",
-      "chw"
+      "chw",
+      "covid_tracer",
+      "covid_data_entry"
     ],
     "can_edit_profile": [
       "program_officer",
@@ -169,12 +187,16 @@
     "can_update_places": [
       "program_officer",
       "chw_supervisor",
-      "chw"
+      "chw",
+      "covid_tracer",
+      "covid_data_entry"
     ],
     "can_update_reports": [
       "program_officer",
       "chw_supervisor",
-      "chw"
+      "chw",
+      "covid_tracer",
+      "covid_data_entry"
     ],
     "can_update_users": [
       "program_officer"
@@ -186,7 +208,9 @@
     "can_verify_reports": [
       "program_officer",
       "chw_supervisor",
-      "chw"
+      "chw",
+      "covid_tracer",
+      "covid_data_entry"
     ],
     "can_view_analytics": [
       "analytics",
@@ -202,33 +226,45 @@
     "can_view_call_action": [
       "program_officer",
       "chw_supervisor",
-      "chw"
+      "chw",
+      "covid_tracer",
+      "covid_data_entry"
     ],
     "can_view_contacts": [
       "program_officer",
       "chw_supervisor",
-      "chw"
+      "chw",
+      "covid_tracer",
+      "covid_data_entry"
     ],
     "can_view_contacts_tab": [
       "program_officer",
       "chw_supervisor",
-      "chw"
+      "chw",
+      "covid_tracer",
+      "covid_data_entry"
     ],
     "can_view_last_visited_date": [],
     "can_view_message_action": [
       "program_officer",
       "chw_supervisor",
-      "chw"
+      "chw",
+      "covid_tracer",
+      "covid_data_entry"
     ],
     "can_view_messages": [
       "program_officer",
       "chw_supervisor",
-      "chw"
+      "chw",
+      "covid_tracer",
+      "covid_data_entry"
     ],
     "can_view_messages_tab": [
       "program_officer",
       "chw_supervisor",
-      "chw"
+      "chw",
+      "covid_tracer",
+      "covid_data_entry"
     ],
     "can_view_outgoing_messages": [
       "program_officer"
@@ -236,20 +272,28 @@
     "can_view_reports": [
       "program_officer",
       "chw_supervisor",
-      "chw"
+      "chw",
+      "covid_tracer",
+      "covid_data_entry"
     ],
     "can_view_reports_tab": [
       "program_officer",
       "chw_supervisor",
-      "chw"
+      "chw",
+      "covid_tracer",
+      "covid_data_entry"
     ],
     "can_view_tasks": [
       "chw_supervisor",
-      "chw"
+      "chw",
+      "covid_tracer",
+      "covid_data_entry"
     ],
     "can_view_tasks_tab": [
       "chw_supervisor",
-      "chw"
+      "chw",
+      "covid_tracer",
+      "covid_data_entry"
     ],
     "can_view_unallocated_data_records": [
       "gateway",
