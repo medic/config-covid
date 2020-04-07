@@ -37,7 +37,7 @@ module.exports = [
   {
     name: 'cha-signal-verification',
     icon: 'icon-healthcare',
-    title: 'Cha verification',
+    title: 'task.cha_verification.title',
     appliesTo: 'contacts',
     appliesToType: undefined,
     appliesIf: function (c) {
@@ -69,7 +69,7 @@ module.exports = [
         content.id_signal = report.patient_id;
         //content.chw_id = contact._id;
         //content.patient_id = contact._id;
-        contact.contact.name = 'event ' + ' ' +contact.contact.patient_id;
+        contact.contact.name = 'Signal ID: ' + ' ' +contact.contact.patient_id;
 
       },
     }],
@@ -79,7 +79,7 @@ module.exports = [
   {
     name: 'scdsc-investigation',
     icon: 'icon-healthcare',
-    title: 'Scdsc investigation',
+    title: 'task.scdsc_investigation.title',
     appliesTo: 'contacts',
     appliesToType: undefined,
     appliesIf: function (c) {
@@ -108,7 +108,7 @@ module.exports = [
       modifyContent: function (content,contact) {
         const report = this.mostRecentChaVerification;
         content.id_signal = report.fields.patient_id;
-        contact.contact.name = 'event ' + ' ' +contact.contact.patient_id;
+        contact.contact.name = 'Signal ID: ' + ' ' +contact.contact.patient_id;
       },
     }],
   },
