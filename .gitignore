@@ -7,3 +7,5 @@ backups/**/*
 /.idea/
 /node_modules/
 /scripts/
+~$**
+

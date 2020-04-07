@@ -1,0 +1,279 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>CHA Signal Verification</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/cha_signal_verification/patient_id:label">
+            <value>Signal ID</value>
+          </text>
+          <text id="/cha_signal_verification/signal_id:jr:constraintMsg">
+            <value>The signal ID should be a 5 to 13 digit number. Kindly enter a valid signal ID.</value>
+          </text>
+          <text id="/cha_signal_verification/signal_id:label">
+            <value>Signal ID</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/additional_details:label">
+            <value>Please, provide any additional information about the signal</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/definition_health_threat:label">
+            <value>Does the signal meet the definition of a public health threat?</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/no_people_dead:label">
+            <value>Number of people reported dead</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/no_people_ill:label">
+            <value>Number of people reported ill</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/signal_desc:hint">
+            <value>What happened/Is happening?</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/signal_desc:label">
+            <value>Signal Description</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/signal_id_reminder:label">
+            <value>Signal ID : <output value=" /cha_signal_verification/inputs/id_signal "/></value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/signal_start_date:hint">
+            <value>Verified by CHW Supervisor</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/signal_start_date:jr:constraintMsg">
+            <value>Kindly select a date that is not in the future</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/signal_start_date:label">
+            <value>When did the health threat start?</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/signal_type:label">
+            <value>Confirm Signal Definition
+8-Any person presenting with hotness of the body or cough or difficulty in breathing having history of travel from outside the country OR lived with or visited somebody known to have Coronavirus disease.</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/source:label">
+            <value>Source of the signal information</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/source_specify:label">
+            <value>Specify</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/threat_exists:label">
+            <value>Does the public health threat exist?</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/verification_date:jr:constraintMsg">
+            <value>Kindly select a date that is not in the future</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/verification_date:label">
+            <value>Date when the public health threat was verified</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification:label">
+            <value>Signal Triage &amp; Verification</value>
+          </text>
+          <text id="/cha_signal_verification/summary/s_details:label">
+            <value>Signal Details</value>
+          </text>
+          <text id="/cha_signal_verification/summary/s_details_signal_id_start:label">
+            <value>&lt;h4 style=&quot;text-align:center;&quot;&gt;Signal ID: <output value=" /cha_signal_verification/inputs/id_signal "/>&lt;/h4&gt; &lt;h4 style=&quot;text-align:center;&quot;&gt;Start Date: <output value=" /cha_signal_verification/signal_verification/signal_start_date "/>&lt;/h4&gt;</value>
+          </text>
+          <text id="/cha_signal_verification/summary/s_followup:label">
+            <value>Follow Up Tasks</value>
+          </text>
+          <text id="/cha_signal_verification/summary/s_followup_note:label">
+            <value>Follow up as needed</value>
+          </text>
+          <text id="/cha_signal_verification/summary/s_investigation:label">
+            <value>Investigation Summary</value>
+          </text>
+          <text id="/cha_signal_verification/summary/s_investigation_dead:label">
+            <value>Number of people reported dead: <output value=" /cha_signal_verification/signal_verification/no_people_dead "/></value>
+          </text>
+          <text id="/cha_signal_verification/summary/s_investigation_ill:label">
+            <value>Number of people reported ill: <output value=" /cha_signal_verification/signal_verification/no_people_ill "/></value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <cha_signal_verification delimiter="#" id="cha_signal_verification" prefix="J1!cha_signal_verification!" version="2020-04-01">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <id_signal/>
+          </inputs>
+          <patient_id/>
+          <signal_id/>
+          <signal_verification>
+            <signal_id_reminder/>
+            <signal_desc/>
+            <signal_type/>
+            <signal_start_date/>
+            <no_people_ill/>
+            <no_people_dead/>
+            <additional_details/>
+            <source/>
+            <source_specify/>
+            <definition_health_threat/>
+            <threat_exists/>
+            <verification_date/>
+          </signal_verification>
+          <summary>
+            <s_details/>
+            <s_details_signal_id_start/>
+            <s_investigation/>
+            <s_investigation_ill/>
+            <s_investigation_dead/>
+            <s_followup/>
+            <s_followup_note/>
+          </summary>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </cha_signal_verification>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/cha_signal_verification/inputs" relevant="0"/>
+      <bind nodeset="/cha_signal_verification/inputs/id_signal" type="string"/>
+      <bind calculate=" /cha_signal_verification/inputs/id_signal " nodeset="/cha_signal_verification/patient_id" type="string"/>
+      <bind calculate=" /cha_signal_verification/inputs/id_signal " jr:constraintMsg="jr:itext('/cha_signal_verification/signal_id:jr:constraintMsg')" nodeset="/cha_signal_verification/signal_id" required="true()" type="string"/>
+      <bind nodeset="/cha_signal_verification/signal_verification/signal_id_reminder" readonly="true()" type="string"/>
+      <bind nodeset="/cha_signal_verification/signal_verification/signal_desc" required="true()" type="string"/>
+      <bind nodeset="/cha_signal_verification/signal_verification/signal_type" required="true()" type="select1"/>
+      <bind constraint=". &lt; date-time(decimal-date-time(today()))" jr:constraintMsg="jr:itext('/cha_signal_verification/signal_verification/signal_start_date:jr:constraintMsg')" nodeset="/cha_signal_verification/signal_verification/signal_start_date" required="true()" type="date"/>
+      <bind nodeset="/cha_signal_verification/signal_verification/no_people_ill" required="true()" type="int"/>
+      <bind nodeset="/cha_signal_verification/signal_verification/no_people_dead" required="true()" type="int"/>
+      <bind nodeset="/cha_signal_verification/signal_verification/additional_details" required="false()" type="string"/>
+      <bind nodeset="/cha_signal_verification/signal_verification/source" required="true()" type="select1"/>
+      <bind nodeset="/cha_signal_verification/signal_verification/source_specify" relevant=" /cha_signal_verification/signal_verification/source  = 'other_member'" type="string"/>
+      <bind nodeset="/cha_signal_verification/signal_verification/definition_health_threat" type="select1"/>
+      <bind nodeset="/cha_signal_verification/signal_verification/threat_exists" relevant=" /cha_signal_verification/signal_verification/definition_health_threat  = 'yes'" required="true()" type="select1"/>
+      <bind constraint=". &lt; date-time(decimal-date-time(today()))" jr:constraintMsg="jr:itext('/cha_signal_verification/signal_verification/verification_date:jr:constraintMsg')" nodeset="/cha_signal_verification/signal_verification/verification_date" relevant=" /cha_signal_verification/signal_verification/definition_health_threat  = 'yes'" required="true()" type="date"/>
+      <bind nodeset="/cha_signal_verification/summary/s_details" readonly="true()" type="string"/>
+      <bind nodeset="/cha_signal_verification/summary/s_details_signal_id_start" readonly="true()" type="string"/>
+      <bind nodeset="/cha_signal_verification/summary/s_investigation" readonly="true()" type="string"/>
+      <bind nodeset="/cha_signal_verification/summary/s_investigation_ill" readonly="true()" type="string"/>
+      <bind nodeset="/cha_signal_verification/summary/s_investigation_dead" readonly="true()" type="string"/>
+      <bind nodeset="/cha_signal_verification/summary/s_followup" readonly="true()" type="string"/>
+      <bind nodeset="/cha_signal_verification/summary/s_followup_note" readonly="true()" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/cha_signal_verification/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/cha_signal_verification/inputs">
+      <input appearance="hidden" ref="/cha_signal_verification/inputs/id_signal"/>
+    </group>
+    <group appearance="field-list" ref="/cha_signal_verification/signal_verification">
+      <label ref="jr:itext('/cha_signal_verification/signal_verification:label')"/>
+      <input ref="/cha_signal_verification/signal_verification/signal_id_reminder">
+        <label ref="jr:itext('/cha_signal_verification/signal_verification/signal_id_reminder:label')"/>
+      </input>
+      <input ref="/cha_signal_verification/signal_verification/signal_desc">
+        <label ref="jr:itext('/cha_signal_verification/signal_verification/signal_desc:label')"/>
+        <hint ref="jr:itext('/cha_signal_verification/signal_verification/signal_desc:hint')"/>
+      </input>
+      <select1 ref="/cha_signal_verification/signal_verification/signal_type">
+        <label ref="jr:itext('/cha_signal_verification/signal_verification/signal_type:label')"/>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/cha_signal_verification/signal_verification/signal_start_date">
+        <label ref="jr:itext('/cha_signal_verification/signal_verification/signal_start_date:label')"/>
+        <hint ref="jr:itext('/cha_signal_verification/signal_verification/signal_start_date:hint')"/>
+      </input>
+      <input ref="/cha_signal_verification/signal_verification/no_people_ill">
+        <label ref="jr:itext('/cha_signal_verification/signal_verification/no_people_ill:label')"/>
+      </input>
+      <input ref="/cha_signal_verification/signal_verification/no_people_dead">
+        <label ref="jr:itext('/cha_signal_verification/signal_verification/no_people_dead:label')"/>
+      </input>
+      <input ref="/cha_signal_verification/signal_verification/additional_details">
+        <label ref="jr:itext('/cha_signal_verification/signal_verification/additional_details:label')"/>
+      </input>
+      <select1 ref="/cha_signal_verification/signal_verification/source">
+        <label ref="jr:itext('/cha_signal_verification/signal_verification/source:label')"/>
+        <item>
+          <label>Self</label>
+          <value>self</value>
+        </item>
+        <item>
+          <label>Chief</label>
+          <value>chief</value>
+        </item>
+        <item>
+          <label>Teacher</label>
+          <value>teacher</value>
+        </item>
+        <item>
+          <label>Pastor</label>
+          <value>pastor</value>
+        </item>
+        <item>
+          <label>Village elder</label>
+          <value>village_elder</value>
+        </item>
+        <item>
+          <label>Other community member</label>
+          <value>other_member</value>
+        </item>
+      </select1>
+      <input ref="/cha_signal_verification/signal_verification/source_specify">
+        <label ref="jr:itext('/cha_signal_verification/signal_verification/source_specify:label')"/>
+      </input>
+      <select1 ref="/cha_signal_verification/signal_verification/definition_health_threat">
+        <label ref="jr:itext('/cha_signal_verification/signal_verification/definition_health_threat:label')"/>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <select1 ref="/cha_signal_verification/signal_verification/threat_exists">
+        <label ref="jr:itext('/cha_signal_verification/signal_verification/threat_exists:label')"/>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/cha_signal_verification/signal_verification/verification_date">
+        <label ref="jr:itext('/cha_signal_verification/signal_verification/verification_date:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list summary" ref="/cha_signal_verification/summary">
+      <input appearance="h1 yellow" ref="/cha_signal_verification/summary/s_details">
+        <label ref="jr:itext('/cha_signal_verification/summary/s_details:label')"/>
+      </input>
+      <input ref="/cha_signal_verification/summary/s_details_signal_id_start">
+        <label ref="jr:itext('/cha_signal_verification/summary/s_details_signal_id_start:label')"/>
+      </input>
+      <input appearance="h1 blue" ref="/cha_signal_verification/summary/s_investigation">
+        <label ref="jr:itext('/cha_signal_verification/summary/s_investigation:label')"/>
+      </input>
+      <input ref="/cha_signal_verification/summary/s_investigation_ill">
+        <label ref="jr:itext('/cha_signal_verification/summary/s_investigation_ill:label')"/>
+      </input>
+      <input ref="/cha_signal_verification/summary/s_investigation_dead">
+        <label ref="jr:itext('/cha_signal_verification/summary/s_investigation_dead:label')"/>
+      </input>
+      <input appearance="h1 blue" ref="/cha_signal_verification/summary/s_followup">
+        <label ref="jr:itext('/cha_signal_verification/summary/s_followup:label')"/>
+      </input>
+      <input ref="/cha_signal_verification/summary/s_followup_note">
+        <label ref="jr:itext('/cha_signal_verification/summary/s_followup_note:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

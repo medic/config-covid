@@ -88,6 +88,9 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
           <text id="/data/person/phone_alternate:label">
             <value>Alternate Phone Number</value>
           </text>
+          <text id="/data/person/role/cha:label">
+            <value>Cha</value>
+          </text>
           <text id="/data/person/role/chw:label">
             <value>CHW</value>
           </text>
@@ -100,17 +103,14 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
           <text id="/data/person/role/inputter:label">
             <value>Airport inputter</value>
           </text>
-          <text id="/data/person/role/manager:label">
-            <value>Facility Manager</value>
-          </text>
-          <text id="/data/person/role/nurse:label">
-            <value>Nurse</value>
-          </text>
           <text id="/data/person/role/other:label">
             <value>Other</value>
           </text>
           <text id="/data/person/role/patient:label">
             <value>Patient</value>
+          </text>
+          <text id="/data/person/role/scdsc:label">
+            <value>Scdsc</value>
           </text>
           <text id="/data/person/role/traveler:label">
             <value>Traveler</value>
@@ -1034,6 +1034,9 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
           <text id="/data/person/phone_alternate:label">
             <value>Numéro de téléphone secondaire</value>
           </text>
+          <text id="/data/person/role/cha:label">
+            <value>Cha</value>
+          </text>
           <text id="/data/person/role/chw:label">
             <value>ASC</value>
           </text>
@@ -1046,17 +1049,14 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
           <text id="/data/person/role/inputter:label">
             <value>Enregistreur</value>
           </text>
-          <text id="/data/person/role/manager:label">
-            <value>Personnel médical</value>
-          </text>
-          <text id="/data/person/role/nurse:label">
-            <value>Infirmier</value>
-          </text>
           <text id="/data/person/role/other:label">
             <value>Autre</value>
           </text>
           <text id="/data/person/role/patient:label">
             <value>Patient</value>
+          </text>
+          <text id="/data/person/role/scdsc:label">
+            <value>Scdsc</value>
           </text>
           <text id="/data/person/role/traveler:label">
             <value>Voyageur</value>
@@ -1880,7 +1880,7 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
         </translation>
       </itext>
       <instance>
-        <data delimiter="#" id="contact:person:create" prefix="J1!contact:person:create!" version="2020-03-28 12-23">
+        <data delimiter="#" id="contact:person:create" prefix="J1!contact:person:create!" version="2020-04-02 15-53">
           <inputs>
             <meta>
               <location>
@@ -2055,24 +2055,24 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
           <value>chw_supervisor</value>
         </item>
         <item>
-          <label ref="jr:itext('/data/person/role/nurse:label')"/>
-          <value>nurse</value>
+          <label ref="jr:itext('/data/person/role/cha:label')"/>
+          <value>cha</value>
         </item>
         <item>
-          <label ref="jr:itext('/data/person/role/manager:label')"/>
-          <value>manager</value>
+          <label ref="jr:itext('/data/person/role/scdsc:label')"/>
+          <value>scdsc</value>
         </item>
         <item>
           <label ref="jr:itext('/data/person/role/patient:label')"/>
           <value>patient</value>
         </item>
         <item>
-          <label ref="jr:itext('/data/person/role/chw_rdt:label')"/>
-          <value>chw_rdt</value>
-        </item>
-        <item>
           <label ref="jr:itext('/data/person/role/other:label')"/>
           <value>other</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/role/chw_rdt:label')"/>
+          <value>chw_rdt</value>
         </item>
         <item>
           <label ref="jr:itext('/data/person/role/traveler:label')"/>
