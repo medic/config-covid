@@ -112,4 +112,38 @@ module.exports = [
       },
     }],
   },
+
+  // Symptomatic contact follow up
+  {
+    name: 'symptomatic_contact_follow_up',
+    icon: 'icon-healthcare',
+    title: 'task.symptomatic_contact_follow_up.title',
+    appliesTo: 'contacts',
+    appliesToType: undefined,
+    appliesIf: function (contact) {
+      this.mostRecentQuarantineFollowUp = Utils.getMostRecentReport(contact.reports, 'QUARANTINE_FOLLOW_UP');
+
+      return !!this.mostRecentQuarantineFollowUp &&
+        this.mostRecentQuarantineFollowUp.fields.symptoms_check === 'true';
+    },
+    resolvedIf: function (c, r, event) {
+      const startTime = Utils.addDate(event.dueDate(c, r), -event.start);
+      const endTime = Utils.addDate(event.dueDate(c, r), event.end + 1);
+
+      const reportsAfterQuarantineFollowUp = c.reports.filter(report => report.reported_date >= this.mostRecentQuarantineFollowUp.reported_date);
+      return Utils.isFormSubmittedInWindow(reportsAfterChaVerification, 'locator', startTime, endTime);
+    },
+    events: [{
+      start: 1,
+      end: 3,
+      dueDate: function() {
+        return Utils.addDate(new Date(this.mostRecentQuarantineFollowUp.reported_date), 1);
+      },
+    }],
+    actions: [{
+      type: 'report',
+      form: 'patient_screening',
+      label: 'Patient screening',
+    }],
+  },
 ];
