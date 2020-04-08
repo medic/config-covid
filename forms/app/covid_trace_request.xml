@@ -29,9 +29,6 @@
           <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/address:label">
             <value>Address</value>
           </text>
-          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/age_in_years:label">
-            <value>Age in years</value>
-          </text>
           <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/chief_name:label">
             <value>Name of the chief of the village</value>
           </text>
@@ -40,6 +37,35 @@
           </text>
           <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/church:label">
             <value>Church name</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/age_label:label">
+            <value>**Please enter date of birth**</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/age_months:jr:constraintMsg">
+            <value>Months must between 0 and 11</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/age_months:label">
+            <value>Months</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/age_years:jr:constraintMsg">
+            <value>Age must be between 0 and 130</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/age_years:label">
+            <value>Years</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_calendar:hint">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_calendar:jr:constraintMsg">
+            <value>Date must be before today</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_calendar:label">
+            <value>Age</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_method/approx:label">
+            <value>Date of birth unknown</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_method:label">
           </text>
           <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/flight_details:label">
             <value>Flight details (if relevant)</value>
@@ -99,19 +125,16 @@
             <value>Name</value>
           </text>
           <text id="/covid_trace_request/inputs/contact/parent/_id:label">
-            <value>Household ID</value>
+            <value>Data Entry ID</value>
           </text>
           <text id="/covid_trace_request/inputs/contact/parent/parent/_id:label">
-            <value>Area ID</value>
+            <value>HF ID</value>
           </text>
           <text id="/covid_trace_request/inputs/contact/parent/parent/contact/chw_name:label">
             <value>CHW name</value>
           </text>
           <text id="/covid_trace_request/inputs/contact/parent/parent/contact/phone:label">
             <value>CHW phone</value>
-          </text>
-          <text id="/covid_trace_request/inputs/contact/parent/parent/parent/_id:label">
-            <value>Health Facility ID</value>
           </text>
           <text id="/covid_trace_request/inputs/contact/sex:label">
             <value>Sex</value>
@@ -166,9 +189,6 @@
           <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/address:label">
             <value>Address</value>
           </text>
-          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/age_in_years:label">
-            <value>Age in years</value>
-          </text>
           <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/chief_name:label">
             <value>Name of the chief of the village</value>
           </text>
@@ -177,6 +197,35 @@
           </text>
           <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/church:label">
             <value>Church name</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/age_label:label">
+            <value>Veuillez entrer votre date de naissance</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/age_months:jr:constraintMsg">
+            <value>-</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/age_months:label">
+            <value>Mois</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/age_years:jr:constraintMsg">
+            <value>-</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/age_years:label">
+            <value>Ans</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_calendar:hint">
+            <value>-</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_calendar:jr:constraintMsg">
+            <value>-</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_calendar:label">
+            <value>Âge</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_method/approx:label">
+            <value>Date de naissance inconnue</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_method:label">
           </text>
           <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/flight_details:label">
             <value>Flight details (if relevant)</value>
@@ -236,19 +285,16 @@
             <value>Name</value>
           </text>
           <text id="/covid_trace_request/inputs/contact/parent/_id:label">
-            <value>Household ID</value>
+            <value>Data Entry ID</value>
           </text>
           <text id="/covid_trace_request/inputs/contact/parent/parent/_id:label">
-            <value>Area ID</value>
+            <value>HF ID</value>
           </text>
           <text id="/covid_trace_request/inputs/contact/parent/parent/contact/chw_name:label">
             <value>CHW name</value>
           </text>
           <text id="/covid_trace_request/inputs/contact/parent/parent/contact/phone:label">
             <value>CHW phone</value>
-          </text>
-          <text id="/covid_trace_request/inputs/contact/parent/parent/parent/_id:label">
-            <value>Health Facility ID</value>
           </text>
           <text id="/covid_trace_request/inputs/contact/sex:label">
             <value>Sex</value>
@@ -280,7 +326,7 @@
         </translation>
       </itext>
       <instance>
-        <covid_trace_request delimiter="#" id="covid_trace_request" prefix="J1!covid_trace_request!" version="2020-04-04_12-23">
+        <covid_trace_request delimiter="#" id="covid_trace_request" prefix="J1!covid_trace_request!" version="2020-04-07_22-44">
           <inputs tag="hidden">
             <source>user</source>
             <source_id/>
@@ -305,9 +351,6 @@
                 <_id/>
                 <parent>
                   <_id/>
-                  <parent>
-                    <_id/>
-                  </parent>
                   <contact>
                     <chw_name/>
                     <phone/>
@@ -324,9 +367,8 @@
           <contact_phone/>
           <contact_address/>
           <contact_town/>
-          <household_id tag="hidden"/>
-          <area_id tag="hidden"/>
-          <facility_id tag="hidden"/>
+          <de_id tag="hidden"/>
+          <hf_id tag="hidden"/>
           <contact_info tag="hidden">
             <n_case_id/>
             <n_surname/>
@@ -343,7 +385,20 @@
                 <other_names/>
                 <name/>
                 <sex/>
-                <age_in_years/>
+                <date_of_birth/>
+                <date_of_birth_method/>
+                <ephemeral_dob>
+                  <dob_calendar/>
+                  <age_label/>
+                  <age_years/>
+                  <age_months/>
+                  <dob_method/>
+                  <ephemeral_months/>
+                  <ephemeral_years/>
+                  <dob_approx/>
+                  <dob_raw/>
+                  <dob_iso/>
+                </ephemeral_dob>
                 <phone/>
                 <flight_details/>
                 <n_contact_location tag="hidden"/>
@@ -396,7 +451,6 @@
       <bind nodeset="/covid_trace_request/inputs/contact/town" type="string"/>
       <bind nodeset="/covid_trace_request/inputs/contact/parent/_id" type="string"/>
       <bind nodeset="/covid_trace_request/inputs/contact/parent/parent/_id" type="string"/>
-      <bind nodeset="/covid_trace_request/inputs/contact/parent/parent/parent/_id" type="string"/>
       <bind nodeset="/covid_trace_request/inputs/contact/parent/parent/contact/chw_name" type="string"/>
       <bind nodeset="/covid_trace_request/inputs/contact/parent/parent/contact/phone" type="string"/>
       <bind calculate="../inputs/contact/patient_id" nodeset="/covid_trace_request/patient_id" type="string"/>
@@ -407,9 +461,8 @@
       <bind calculate="../inputs/contact/phone" nodeset="/covid_trace_request/contact_phone" type="string"/>
       <bind calculate="../inputs/contact/address" nodeset="/covid_trace_request/contact_address" type="string"/>
       <bind calculate="../inputs/contact/town" nodeset="/covid_trace_request/contact_town" type="string"/>
-      <bind calculate="../inputs/contact/parent/_id" nodeset="/covid_trace_request/household_id" type="string"/>
-      <bind calculate="../inputs/contact/parent/parent/_id" nodeset="/covid_trace_request/area_id" type="string"/>
-      <bind calculate="../inputs/contact/parent/parent/parent/_id" nodeset="/covid_trace_request/facility_id" type="string"/>
+      <bind calculate="../inputs/contact/parent/_id" nodeset="/covid_trace_request/de_id" type="string"/>
+      <bind calculate="../inputs/contact/parent/parent/_id" nodeset="/covid_trace_request/hf_id" type="string"/>
       <bind nodeset="/covid_trace_request/contact_info/n_case_id" readonly="true()" type="string"/>
       <bind nodeset="/covid_trace_request/contact_info/n_surname" readonly="true()" type="string"/>
       <bind nodeset="/covid_trace_request/contact_info/n_other_names" readonly="true()" type="string"/>
@@ -421,7 +474,20 @@
       <bind nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/other_names" type="string"/>
       <bind calculate="concat(../other_names, ' ', ../surname)" nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/name" type="string"/>
       <bind nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/sex" type="select1"/>
-      <bind nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/age_in_years" type="int"/>
+      <bind calculate="../ephemeral_dob/dob_iso" nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/date_of_birth" required="true()" type="string"/>
+      <bind calculate="../ephemeral_dob/dob_method" nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/date_of_birth_method" type="string"/>
+      <bind constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" jr:constraintMsg="jr:itext('/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_calendar:jr:constraintMsg')" nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_calendar" relevant="not(selected(../dob_method,'approx'))" required="true()" type="date"/>
+      <bind nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/age_label" readonly="true()" relevant="selected(../dob_method,'approx')" type="string"/>
+      <bind constraint=". &gt;= 0 and . &lt;= 130" jr:constraintMsg="jr:itext('/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/age_years:jr:constraintMsg')" nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/age_years" relevant="selected(../dob_method,'approx')" required="true()" type="int"/>
+      <bind constraint=". &gt;= 0 and . &lt;= 11" jr:constraintMsg="jr:itext('/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/age_months:jr:constraintMsg')" nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/age_months" relevant="selected(../dob_method,'approx')" type="int"/>
+      <bind nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_method" type="select"/>
+      <bind calculate="if(format-date-time(today(),&quot;%m&quot;) - ../age_months &lt; 0, format-date-time(today(),&quot;%m&quot;) - ../age_months + 12, format-date-time(today(),&quot;%m&quot;) - ../age_months)" nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/ephemeral_months" type="string"/>
+      <bind calculate="if(format-date-time(today(),&quot;%m&quot;) - ../age_months &lt; 0, format-date-time(today(),&quot;%Y&quot;) - ../age_years - 1, format-date-time(today(),&quot;%Y&quot;) -../age_years)" nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/ephemeral_years" type="string"/>
+      <bind calculate="concat(string( /covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/ephemeral_years ),'-',if( /covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/ephemeral_months &lt;10, concat('0',string( /covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/ephemeral_months )),  /covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/ephemeral_months ),'-',string(format-date-time(today(), &quot;%d&quot;)))" nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_approx" type="string"/>
+      <bind calculate="if(not(selected(  /covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_method ,'approx')), 
+ /covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_calendar ,
+ /covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_approx )" nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_raw" type="string"/>
+      <bind calculate="format-date-time(../dob_raw,&quot;%Y-%m-%d&quot;)" nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_iso" type="string"/>
       <bind nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/phone" type="tel"/>
       <bind nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/flight_details" type="string"/>
       <bind nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/n_contact_location" readonly="true()" type="string"/>
@@ -434,8 +500,8 @@
       <bind calculate=" /covid_trace_request/patient_uuid " nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/patient_zero" type="string"/>
       <bind nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/tracer_area" type="db:clinic"/>
       <bind calculate=" /covid_trace_request/contacts/contact_repeat/contact_profile/tracer_area " nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/parent/_id" type="string"/>
-      <bind calculate=" /covid_trace_request/area_id " nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/parent/parent/_id" type="string"/>
-      <bind calculate=" /covid_trace_request/facility_id " nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/parent/parent/parent/_id" type="string"/>
+      <bind calculate=" /covid_trace_request/de_id " nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/parent/parent/_id" type="string"/>
+      <bind calculate=" /covid_trace_request/hf_id " nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/parent/parent/parent/_id" type="string"/>
       <bind calculate="&quot;person&quot;" nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/type" type="string"/>
       <bind calculate="&quot;contact_n&quot;" nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/role" type="string"/>
       <bind calculate="." nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/created_by_doc" type="string"/>
@@ -471,11 +537,6 @@
             <input appearance="hidden" ref="/covid_trace_request/inputs/contact/parent/parent/_id">
               <label ref="jr:itext('/covid_trace_request/inputs/contact/parent/parent/_id:label')"/>
             </input>
-            <group ref="/covid_trace_request/inputs/contact/parent/parent/parent">
-              <input appearance="hidden" ref="/covid_trace_request/inputs/contact/parent/parent/parent/_id">
-                <label ref="jr:itext('/covid_trace_request/inputs/contact/parent/parent/parent/_id:label')"/>
-              </input>
-            </group>
             <group ref="/covid_trace_request/inputs/contact/parent/parent/contact"/>
           </group>
         </group>
@@ -527,9 +588,28 @@
                 <value>male</value>
               </item>
             </select1>
-            <input ref="/covid_trace_request/contacts/contact_repeat/contact_profile/age_in_years">
-              <label ref="jr:itext('/covid_trace_request/contacts/contact_repeat/contact_profile/age_in_years:label')"/>
-            </input>
+            <group ref="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob">
+              <input ref="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_calendar">
+                <label ref="jr:itext('/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_calendar:label')"/>
+                <hint ref="jr:itext('/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_calendar:hint')"/>
+              </input>
+              <input ref="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/age_label">
+                <label ref="jr:itext('/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/age_label:label')"/>
+              </input>
+              <input ref="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/age_years">
+                <label ref="jr:itext('/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/age_years:label')"/>
+              </input>
+              <input ref="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/age_months">
+                <label ref="jr:itext('/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/age_months:label')"/>
+              </input>
+              <select appearance="horizontal" ref="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_method">
+                <label ref="jr:itext('/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_method:label')"/>
+                <item>
+                  <label ref="jr:itext('/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_method/approx:label')"/>
+                  <value>approx</value>
+                </item>
+              </select>
+            </group>
             <input ref="/covid_trace_request/contacts/contact_repeat/contact_profile/phone">
               <label ref="jr:itext('/covid_trace_request/contacts/contact_repeat/contact_profile/phone:label')"/>
             </input>

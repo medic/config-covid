@@ -12,7 +12,7 @@
   "context": {
       "place": false,
       "person": true,
-      "expression": "contact.role === 'contact_n'"
+      "expression": "contact.role === 'contact_n' && user.role === 'tracer'"
   },
   "icon": "icon-healthcare"
 }

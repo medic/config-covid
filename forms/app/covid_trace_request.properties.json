@@ -10,9 +10,9 @@
     }
   ],
   "context": {
-      "place": false,
-      "person": true,
-      "expression": "contact.role  === 'patient_zero' || true"
+    "place": false,
+    "person": true,
+    "expression": "user.role === 'data_entry' && contact.role  === 'patient_zero'"
   },
   "icon": "icon-healthcare"
 }
