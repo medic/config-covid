@@ -121,23 +121,23 @@ module.exports = [
     appliesTo: 'contacts',
     appliesToType: undefined,
     appliesIf: function (contact) {
-      this.mostRecentQuarantineFollowUp = Utils.getMostRecentReport(contact.reports, 'QUARANTINE_FOLLOW_UP');
+      this.mostRecentSymptomsCheck = Utils.getMostRecentReport(contact.reports, 'symptoms_check');
 
-      return !!this.mostRecentQuarantineFollowUp &&
-        this.mostRecentQuarantineFollowUp.fields.symptoms_check === 'true';
+      return !!this.mostRecentSymptomsCheck &&
+        this.mostRecentSymptomsCheck.fields.symptoms_check === 'true';
     },
     resolvedIf: function (c, r, event) {
       const startTime = Utils.addDate(event.dueDate(c, r), -event.start);
       const endTime = Utils.addDate(event.dueDate(c, r), event.end + 1);
 
-      const reportsAfterQuarantineFollowUp = c.reports.filter(report => report.reported_date >= this.mostRecentQuarantineFollowUp.reported_date);
+      const reportsAfterQuarantineFollowUp = c.reports.filter(report => report.reported_date >= this.mostRecentSymptomsCheck.reported_date);
       return Utils.isFormSubmittedInWindow(reportsAfterChaVerification, 'locator', startTime, endTime);
     },
     events: [{
       start: 1,
       end: 3,
       dueDate: function() {
-        return Utils.addDate(new Date(this.mostRecentQuarantineFollowUp.reported_date), 1);
+        return Utils.addDate(new Date(this.mostRecentSymptomsCheck.reported_date), 1);
       },
     }],
     actions: [{
