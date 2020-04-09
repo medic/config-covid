@@ -12,7 +12,7 @@
   "context": {
     "place": false,
     "person": true,
-    "expression": "user.role === 'data_entry' && contact.role  === 'patient_zero'"
+    "expression": "user.role === 'data_entry' && contact.role  === 'patient_zero' && contact.parent.parent.parent"
   },
   "icon": "icon-healthcare"
 }

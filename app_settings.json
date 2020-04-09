@@ -625,7 +625,7 @@
   "replication_depth": [
     {
       "role": "covid_data_entry",
-      "depth": 1
+      "depth": 3
     }
   ]
 }
