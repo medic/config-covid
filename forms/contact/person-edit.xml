@@ -50,6 +50,12 @@
           <text id="/data/inputs/user/name:label">
             <value>Name of the logged in user</value>
           </text>
+          <text id="/data/person/address:label">
+            <value>Address</value>
+          </text>
+          <text id="/data/person/case_id:label">
+            <value>Outbreak Case ID</value>
+          </text>
           <text id="/data/person/date_of_birth:label">
             <value>Date of Birth</value>
           </text>
@@ -115,9 +121,6 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
           <text id="/data/person/phone_alternate:label">
             <value>Alternate Phone Number</value>
           </text>
-          <text id="/data/person/role/cha:label">
-            <value>Cha</value>
-          </text>
           <text id="/data/person/role/chw:label">
             <value>CHW</value>
           </text>
@@ -130,14 +133,20 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
           <text id="/data/person/role/inputter:label">
             <value>Airport inputter</value>
           </text>
+          <text id="/data/person/role/manager:label">
+            <value>Facility Manager</value>
+          </text>
+          <text id="/data/person/role/nurse:label">
+            <value>Nurse</value>
+          </text>
           <text id="/data/person/role/other:label">
             <value>Other</value>
           </text>
           <text id="/data/person/role/patient:label">
             <value>Patient</value>
           </text>
-          <text id="/data/person/role/scdsc:label">
-            <value>Scdsc</value>
+          <text id="/data/person/role/patient_zero:label">
+            <value>Patient Zero</value>
           </text>
           <text id="/data/person/role/traveler:label">
             <value>Traveler</value>
@@ -168,6 +177,9 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
           </text>
           <text id="/data/person/short_name:label">
             <value>Short name</value>
+          </text>
+          <text id="/data/person/town:label">
+            <value>Town</value>
           </text>
           <text id="/data/person/traveler/destination_address:label">
             <value>Address</value>
@@ -1023,6 +1035,12 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
           <text id="/data/person/_id:label">
             <value>ID Parent</value>
           </text>
+          <text id="/data/person/address:label">
+            <value>Address</value>
+          </text>
+          <text id="/data/person/case_id:label">
+            <value>Outbreak Case ID</value>
+          </text>
           <text id="/data/person/date_of_birth:label">
             <value>-</value>
           </text>
@@ -1094,9 +1112,6 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
           <text id="/data/person/phone_alternate:label">
             <value>Numéro de téléphone secondaire</value>
           </text>
-          <text id="/data/person/role/cha:label">
-            <value>Cha</value>
-          </text>
           <text id="/data/person/role/chw:label">
             <value>ASC</value>
           </text>
@@ -1109,14 +1124,20 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
           <text id="/data/person/role/inputter:label">
             <value>Enregistreur</value>
           </text>
+          <text id="/data/person/role/manager:label">
+            <value>Personnel médical</value>
+          </text>
+          <text id="/data/person/role/nurse:label">
+            <value>Infirmier</value>
+          </text>
           <text id="/data/person/role/other:label">
             <value>Autre</value>
           </text>
           <text id="/data/person/role/patient:label">
             <value>Patient</value>
           </text>
-          <text id="/data/person/role/scdsc:label">
-            <value>Scdsc</value>
+          <text id="/data/person/role/patient_zero:label">
+            <value>Patient Zero</value>
           </text>
           <text id="/data/person/role/traveler:label">
             <value>Voyageur</value>
@@ -1147,6 +1168,9 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
           </text>
           <text id="/data/person/short_name:label">
             <value>Nom court</value>
+          </text>
+          <text id="/data/person/town:label">
+            <value>Town</value>
           </text>
           <text id="/data/person/traveler/destination_address:label">
             <value>Adresse</value>
@@ -1943,7 +1967,7 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
         </translation>
       </itext>
       <instance>
-        <data delimiter="#" id="contact:person:edit" prefix="J1!contact:person:edit!" version="2020-04-02 15-53">
+        <data delimiter="#" id="contact:person:edit" prefix="J1!contact:person:edit!" version="2020-04-03 0-43">
           <inputs>
             <meta>
               <location>
@@ -1990,8 +2014,11 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
               <dob_iso/>
               <dob_debug/>
             </ephemeral_dob>
+            <case_id/>
             <phone/>
             <phone_alternate/>
+            <address/>
+            <town/>
             <sex/>
             <role_other/>
             <external_id/>
@@ -2067,8 +2094,11 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
 ../dob_approx)" nodeset="/data/person/ephemeral_dob/dob_raw" type="string"/>
       <bind calculate="format-date-time(../dob_raw,&quot;%Y-%m-%d&quot;)" nodeset="/data/person/ephemeral_dob/dob_iso" type="string"/>
       <bind nodeset="/data/person/ephemeral_dob/dob_debug" readonly="true()" relevant="false()" type="string"/>
+      <bind nodeset="/data/person/case_id" relevant="selected(../role, 'patient_zero')" type="string"/>
       <bind constraint="true()" jr:constraintMsg="jr:itext('/data/person/phone:jr:constraintMsg')" nodeset="/data/person/phone" type="tel"/>
       <bind constraint="true()" jr:constraintMsg="jr:itext('/data/person/phone_alternate:jr:constraintMsg')" nodeset="/data/person/phone_alternate" type="tel"/>
+      <bind nodeset="/data/person/address" relevant="selected(../role, 'patient_zero')" type="string"/>
+      <bind nodeset="/data/person/town" relevant="selected(../role, 'patient_zero')" type="string"/>
       <bind nodeset="/data/person/sex" type="select1"/>
       <bind nodeset="/data/person/role_other" relevant="selected(  /data/person/role ,'other')" required="true()" type="string"/>
       <bind nodeset="/data/person/external_id" type="string"/>
@@ -2162,16 +2192,20 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
           <value>chw_supervisor</value>
         </item>
         <item>
-          <label ref="jr:itext('/data/person/role/cha:label')"/>
-          <value>cha</value>
+          <label ref="jr:itext('/data/person/role/nurse:label')"/>
+          <value>nurse</value>
         </item>
         <item>
-          <label ref="jr:itext('/data/person/role/scdsc:label')"/>
-          <value>scdsc</value>
+          <label ref="jr:itext('/data/person/role/manager:label')"/>
+          <value>manager</value>
         </item>
         <item>
           <label ref="jr:itext('/data/person/role/patient:label')"/>
           <value>patient</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/role/patient_zero:label')"/>
+          <value>patient_zero</value>
         </item>
         <item>
           <label ref="jr:itext('/data/person/role/other:label')"/>
@@ -3239,11 +3273,20 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
           <label ref="jr:itext('/data/person/ephemeral_dob/dob_debug:label')"/>
         </input>
       </group>
+      <input ref="/data/person/case_id">
+        <label ref="jr:itext('/data/person/case_id:label')"/>
+      </input>
       <input ref="/data/person/phone">
         <label ref="jr:itext('/data/person/phone:label')"/>
       </input>
       <input ref="/data/person/phone_alternate">
         <label ref="jr:itext('/data/person/phone_alternate:label')"/>
+      </input>
+      <input ref="/data/person/address">
+        <label ref="jr:itext('/data/person/address:label')"/>
+      </input>
+      <input ref="/data/person/town">
+        <label ref="jr:itext('/data/person/town:label')"/>
       </input>
       <select1 appearance="horizontal" ref="/data/person/sex">
         <label ref="jr:itext('/data/person/sex:label')"/>

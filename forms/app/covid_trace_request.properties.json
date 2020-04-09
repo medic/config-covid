@@ -1,0 +1,18 @@
+{
+  "title": [
+    {
+      "locale": "en",
+      "content": "Trace Request form"
+    },
+    {
+      "locale": "fr",
+      "content": "Trace Request form"
+    }
+  ],
+  "context": {
+    "place": false,
+    "person": true,
+    "expression": "user.role === 'data_entry' && contact.role  === 'patient_zero' && contact.parent.parent.parent"
+  },
+  "icon": "icon-healthcare"
+}
