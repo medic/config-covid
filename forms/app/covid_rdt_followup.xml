@@ -112,7 +112,7 @@
         </translation>
       </itext>
       <instance>
-        <covid_rdt_followup delimiter="#" id="covid_rdt_followup" prefix="J1!covid_rdt_followup!" version="2020-03-28 17-26">
+        <covid_rdt_followup delimiter="#" id="covid_rdt_followup" prefix="J1!covid_rdt_followup!" version="2020-03-27 17-58">
           <inputs tag="hidden">
             <source>user</source>
             <source_id/>

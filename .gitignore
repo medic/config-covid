@@ -6,3 +6,6 @@ backups/**/*
 /.hashes/
 /.idea/
 /node_modules/
+/scripts/
+~$**
+
