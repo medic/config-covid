@@ -723,6 +723,53 @@
       },
       "use_sentinel": true
     },
+    "QUARANTINE_FOLLOW_UP": {
+      "meta": {
+        "code": "QUARANTINE_FOLLOW_UP",
+        "icon": "icon-follow-up",
+        "translation_key": "form.quarantine_follow_up.title"
+      },
+      "fields": {
+        "patient_id": {
+          "labels": {
+            "short": {
+              "translation_key": "patient_id"
+            },
+            "tiny": {
+              "en": "ID"
+            }
+          },
+          "position": 0,
+          "flags": {
+            "input_digits_only": true
+          },
+          "length": [
+            5,
+            13
+          ],
+          "type": "string",
+          "required": true
+        },
+        "symptoms_check": {
+          "labels": {
+            "short": {
+              "translation_key": "symptoms_check"
+            },
+            "tiny": {
+              "en": "sym_check"
+            }
+          },
+          "position": 1,
+          "length": [
+            0,
+            2
+          ],
+          "type": "string",
+          "required": false
+        }
+      },
+      "use_sentinel": true
+    }
     "CHA_SIGNAL_VERIFICATION": {
       "meta": {
         "label": {
