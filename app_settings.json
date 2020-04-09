@@ -533,6 +533,27 @@
         "extra.chw._id": "doc.parent.parent.contact._id",
         "extra.chw.name": "doc.parent.parent.contact.name"
       }
+    },
+    "textit-self-quarantine": {
+      "relevant_to": "doc.type === 'data_record' && doc.tasks && doc.form === 'covid_trace_follow_up' && doc.fields.trace.symptom === 'no'",
+      "destination": {
+        "base_url": "https://textit.in",
+        "auth": {
+          "type": "header",
+          "name": "Authorization",
+          "value_key": "textit.in"
+        },
+        "path": "['/api/v2/contacts.json?urn=tel:' + doc.phone]"
+      },
+      "mapping": {
+        "groups": {
+          "expr": "'21052849-d169-4d70-a906-135071b27da0'"
+        },
+        "extra.self_quarantine_enrollment": {
+          "expr": "new Date(doc.reported_date).getDate()+'-'+ (new Date(doc.reported_date).getMonth()+1) +'-' + new Date(doc.reported_date).getFullYear()+ ' ' + new Date(doc.reported_date).getHours() + ':' +  new Date(doc.reported_date).getMinutes()",
+          "optional": false
+        }
+      }
     }
   },
   "forms": {
