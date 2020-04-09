@@ -748,7 +748,7 @@
         }
       },
       "use_sentinel": true
-    }
+    },
     "CHA_SIGNAL_VERIFICATION": {
       "meta": {
         "label": {
