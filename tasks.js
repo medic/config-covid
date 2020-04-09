@@ -40,7 +40,7 @@ module.exports = [
   appliesTo: 'contacts',
   appliesToType: ['person'],
   appliesIf: function (contact) {
-    return user.role === 'tracer' && !!contact.contact.patient_zero;
+    return  !!contact.contact.patient_zero; //&& user.role === 'tracer' ;
   },
   resolvedIf: function (contact) {
     this.mostRecentTraceFollowUp = Utils.getMostRecentReport(contact.reports, 'covid_trace_follow_up');
