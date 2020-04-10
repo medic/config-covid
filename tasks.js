@@ -169,4 +169,32 @@ module.exports = [
       label: 'task.symptomatic_contact_follow_up.title',
     }],
   },
+   //Symptoms check
+  {
+    name: 'symptoms_check',
+    icon: 'icon-healthcare',
+    title: 'task.symptoms_check.title',
+    appliesTo: 'contacts',
+    appliesToType: ['person'],
+    appliesIf: function (contact) {
+        this.mostRecentQuarantine_follow_up= Utils.getMostRecentReport(contact.reports, 'QUARANTINE_FOLLOW_UP');
+        return !!this.mostRecentQuarantine_follow_up && (Utils.getField(this.mostRecentQuarantine_follow_up, 'symptoms_check') === true || Utils.getField(this.mostRecentQuarantine_follow_up, 'symptoms_check')==='2');
+      },
+    resolvedIf: function (contact) {
+      this.mostRecentSymCheck = Utils.getMostRecentReport(contact.reports, 'symptoms_check');
+      return !!this.mostRecentSymCheck && Utils.getField(this.mostRecentSymCheck, 'symptom_check.symptom') === 'yes';
+      },
+    events: [{
+      dueDate: function() {
+        return Utils.addDate(new Date(this.mostRecentQuarantine_follow_up.reported_date), 1);
+      },
+      start: 1,
+      end: 3
+    }],
+    actions: [{
+      type: 'report',
+      form: 'symptoms_check',
+      label: 'task.symptoms_check.title',
+    }],
+  }
 ];
