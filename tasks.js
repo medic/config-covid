@@ -124,14 +124,14 @@ module.exports = [
       this.mostRecentSymptomsCheck = Utils.getMostRecentReport(contact.reports, 'symptoms_check');
 
       return !!this.mostRecentSymptomsCheck &&
-        this.mostRecentSymptomsCheck.fields.symptoms_check === 'true';
+          (this.mostRecentSymptomsCheck.fields.symptoms_check === 'true' || this.mostRecentSymptomsCheck.fields.symptoms_check === '2');
     },
     resolvedIf: function (c, r, event) {
       const startTime = Utils.addDate(event.dueDate(c, r), -event.start);
       const endTime = Utils.addDate(event.dueDate(c, r), event.end + 1);
 
       const reportsAfterQuarantineFollowUp = c.reports.filter(report => report.reported_date >= this.mostRecentSymptomsCheck.reported_date);
-      return Utils.isFormSubmittedInWindow(reportsAfterChaVerification, 'locator', startTime, endTime);
+      return Utils.isFormSubmittedInWindow(reportsAfterQuarantineFollowUp, 'symptomatic_contact_follow_up', startTime, endTime);
     },
     events: [{
       start: 1,
@@ -142,8 +142,8 @@ module.exports = [
     }],
     actions: [{
       type: 'report',
-      form: 'patient_screening',
-      label: 'Patient screening',
+      form: 'symptomatic_contact_follow_up',
+      label: 'task.symptomatic_contact_follow_up.title',
     }],
   },
 ];
