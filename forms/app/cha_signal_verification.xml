@@ -38,17 +38,53 @@
           <text id="/cha_signal_verification/signal_verification/signal_start_date:label">
             <value>Start date of the event</value>
           </text>
+          <text id="/cha_signal_verification/signal_verification/signal_type/no:label">
+            <value>No</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/signal_type/yes:label">
+            <value>Yes</value>
+          </text>
           <text id="/cha_signal_verification/signal_verification/signal_type:hint">
             <value>Any person presenting with hotness of the body or cough or difficulty in breathing having a history of travel from outside the country OR lived with or visited somebody known to have COVID-19</value>
           </text>
           <text id="/cha_signal_verification/signal_verification/signal_type:label">
             <value>Does the reported event meet the signal definition for COVID-19?</value>
           </text>
+          <text id="/cha_signal_verification/signal_verification/source/chief:label">
+            <value>Chief</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/source/chw:label">
+            <value>CHW</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/source/nurse:label">
+            <value>Nurse</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/source/other_member:label">
+            <value>Other community member</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/source/pastor:label">
+            <value>Pastor</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/source/self:label">
+            <value>Self</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/source/teacher:label">
+            <value>Teacher</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/source/village_elder:label">
+            <value>Village elder</value>
+          </text>
           <text id="/cha_signal_verification/signal_verification/source:label">
             <value>Source of the signal information</value>
           </text>
           <text id="/cha_signal_verification/signal_verification/source_specify:label">
             <value>Specify</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/threat_exists/no:label">
+            <value>No</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/threat_exists/yes:label">
+            <value>Yes</value>
           </text>
           <text id="/cha_signal_verification/signal_verification/threat_exists:label">
             <value>Does the public health threat exist?</value>
@@ -82,6 +118,122 @@
           </text>
           <text id="/cha_signal_verification/summary/s_investigation_ill:label">
             <value>Number of people reported with symptoms: <output value=" /cha_signal_verification/signal_verification/no_people_symptoms "/></value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="/cha_signal_verification/patient_id:label">
+            <value>ID signal</value>
+          </text>
+          <text id="/cha_signal_verification/signal_id:jr:constraintMsg">
+            <value>L'Identifiant du signal doit être composé de 5 à 13 chiffres. Veuillez saisir un numéro de signal valide.</value>
+          </text>
+          <text id="/cha_signal_verification/signal_id:label">
+            <value>ID signal</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/additional_details:label">
+            <value>Veuillez fournir des informations supplémentaires sur le signal</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/no_people_dead:label">
+            <value>Nombre de personnes déclarées décédées</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/no_people_symptoms:label">
+            <value>Nombre de personnes ayant déclaré des symptômes</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/signal_desc:hint">
+            <value>Qu'est ce qui s'est passé / Que se passe-t-il?</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/signal_desc:label">
+            <value>Description du Signal</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/signal_id_reminder:label">
+            <value>ID du signal: <output value=" /cha_signal_verification/inputs/id_signal "/></value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/signal_start_date:jr:constraintMsg">
+            <value>Veuillez sélectionner une date qui n'est pas dans le futur.</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/signal_start_date:label">
+            <value>Date de début de l'événement</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/signal_type/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/signal_type/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/signal_type:hint">
+            <value>Toute personne présentant une fièvre, une toux ou une difficulté à respirer et ayant eu des antécédents de voyage à l'étranger OU ayant vécu ou rendu visite à une personne connue pour être atteinte du COVID-19.</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/signal_type:label">
+            <value>Est-ce l'événement rapporté répond à la définition du signal pour le COVID 19?</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/source/chief:label">
+            <value>Chef</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/source/chw:label">
+            <value>ASC</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/source/nurse:label">
+            <value>Infirmier</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/source/other_member:label">
+            <value>Autre membre de la communauté</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/source/pastor:label">
+            <value>Pasteur</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/source/self:label">
+            <value>Soi-même</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/source/teacher:label">
+            <value>Enseignant</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/source/village_elder:label">
+            <value>Ancien du village</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/source:label">
+            <value>Source des informations du signal</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/source_specify:label">
+            <value>Spécifier</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/threat_exists/no:label">
+            <value>Non</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/threat_exists/yes:label">
+            <value>Oui</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/threat_exists:label">
+            <value>Est-ce que la menace pour la santé publique existe?</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/verification_date:jr:constraintMsg">
+            <value>Veuillez sélectionner une date qui n'est pas dans le futur.</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification/verification_date:label">
+            <value>Date de vérification du signal</value>
+          </text>
+          <text id="/cha_signal_verification/signal_verification:label">
+            <value>Vérification du signal</value>
+          </text>
+          <text id="/cha_signal_verification/summary/s_details:label">
+            <value>Détails du signal</value>
+          </text>
+          <text id="/cha_signal_verification/summary/s_details_signal_id_start:label">
+            <value>&lt;h4 style = &quot;text-align: center;&quot;&gt; ID de signal: <output value=" /cha_signal_verification/signal_id "/> &lt;/ h4&gt; &lt;h4 style = &quot;text-align: center;&quot;&gt; Date de début de l'événement: <output value=" /cha_signal_verification/signal_verification/signal_start_date "/> &lt;/ h4&gt;</value>
+          </text>
+          <text id="/cha_signal_verification/summary/s_followup:label">
+            <value>Tâches de suivi</value>
+          </text>
+          <text id="/cha_signal_verification/summary/s_followup_note:label">
+            <value>Assurer le suivi si nécessaire</value>
+          </text>
+          <text id="/cha_signal_verification/summary/s_investigation:label">
+            <value>Résumé des enquêtes</value>
+          </text>
+          <text id="/cha_signal_verification/summary/s_investigation_dead:label">
+            <value>Nombre de personnes déclarées décédées: <output value=" /cha_signal_verification/signal_verification/no_people_dead "/></value>
+          </text>
+          <text id="/cha_signal_verification/summary/s_investigation_ill:label">
+            <value>Nombre de personnes ayant déclaré des symptômes: <output value=" /cha_signal_verification/signal_verification/no_people_symptoms "/></value>
           </text>
         </translation>
       </itext>
@@ -170,11 +322,11 @@
         <label ref="jr:itext('/cha_signal_verification/signal_verification/signal_type:label')"/>
         <hint ref="jr:itext('/cha_signal_verification/signal_verification/signal_type:hint')"/>
         <item>
-          <label>Yes</label>
+          <label ref="jr:itext('/cha_signal_verification/signal_verification/signal_type/yes:label')"/>
           <value>yes</value>
         </item>
         <item>
-          <label>No</label>
+          <label ref="jr:itext('/cha_signal_verification/signal_verification/signal_type/no:label')"/>
           <value>no</value>
         </item>
       </select1>
@@ -193,35 +345,35 @@
       <select1 ref="/cha_signal_verification/signal_verification/source">
         <label ref="jr:itext('/cha_signal_verification/signal_verification/source:label')"/>
         <item>
-          <label>Self</label>
+          <label ref="jr:itext('/cha_signal_verification/signal_verification/source/self:label')"/>
           <value>self</value>
         </item>
         <item>
-          <label>Chief</label>
+          <label ref="jr:itext('/cha_signal_verification/signal_verification/source/chief:label')"/>
           <value>chief</value>
         </item>
         <item>
-          <label>Teacher</label>
+          <label ref="jr:itext('/cha_signal_verification/signal_verification/source/teacher:label')"/>
           <value>teacher</value>
         </item>
         <item>
-          <label>Pastor</label>
+          <label ref="jr:itext('/cha_signal_verification/signal_verification/source/pastor:label')"/>
           <value>pastor</value>
         </item>
         <item>
-          <label>Village elder</label>
+          <label ref="jr:itext('/cha_signal_verification/signal_verification/source/village_elder:label')"/>
           <value>village_elder</value>
         </item>
         <item>
-          <label>CHW</label>
+          <label ref="jr:itext('/cha_signal_verification/signal_verification/source/chw:label')"/>
           <value>chw</value>
         </item>
         <item>
-          <label>Nurse</label>
+          <label ref="jr:itext('/cha_signal_verification/signal_verification/source/nurse:label')"/>
           <value>nurse</value>
         </item>
         <item>
-          <label>Other community member</label>
+          <label ref="jr:itext('/cha_signal_verification/signal_verification/source/other_member:label')"/>
           <value>other_member</value>
         </item>
       </select1>
@@ -231,11 +383,11 @@
       <select1 ref="/cha_signal_verification/signal_verification/threat_exists">
         <label ref="jr:itext('/cha_signal_verification/signal_verification/threat_exists:label')"/>
         <item>
-          <label>Yes</label>
+          <label ref="jr:itext('/cha_signal_verification/signal_verification/threat_exists/yes:label')"/>
           <value>yes</value>
         </item>
         <item>
-          <label>No</label>
+          <label ref="jr:itext('/cha_signal_verification/signal_verification/threat_exists/no:label')"/>
           <value>no</value>
         </item>
       </select1>

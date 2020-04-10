@@ -2,16 +2,16 @@
   "title": [
     {
       "locale": "en",
-      "content": "COVID-19 Followup"
+      "content": "Symptomatic contact follow-up"
     },
     {
       "locale": "fr",
-      "content": "Suivi du Covid 19"
+      "content": "Symptomatic contact follow-up"
     }
   ],
   "context": {
       "place": false,
-      "person": true,
+      "person": false,
       "expression": "false"
   },
   "icon": "icon-healthcare"

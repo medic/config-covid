@@ -33,6 +33,31 @@ module.exports = [
     }],
   },
 
+{
+  name: 'trace_follow_up',
+  icon: 'icon-healthcare',
+  title: 'task.trace_follow_up.title',
+  appliesTo: 'contacts',
+  appliesToType: ['person'],
+  appliesIf: function (contact) {
+    return  !!contact.contact.patient_zero; //&& user.role === 'tracer' ;
+  },
+  resolvedIf: function (contact) {
+    this.mostRecentTraceFollowUp = Utils.getMostRecentReport(contact.reports, 'covid_trace_follow_up');
+    return this.mostRecentTraceFollowUp &&
+      ['contacted', 'stop'].includes(Utils.getField(this.mostRecentTraceFollowUp, 'trace.result'));
+  },
+  events: [{
+    days: 0,
+    start: 0,
+    end: 30
+  }],
+  actions: [{
+    type: 'report',
+    form: 'covid_trace_follow_up',
+    label: 'task.trace_follow_up.title',
+  }],
+},
   // Cha verification
   {
     name: 'cha-signal-verification',
@@ -122,9 +147,7 @@ module.exports = [
     appliesToType: undefined,
     appliesIf: function (contact) {
       this.mostRecentSymptomsCheck = Utils.getMostRecentReport(contact.reports, 'symptoms_check');
-
-      return !!this.mostRecentSymptomsCheck &&
-          (this.mostRecentSymptomsCheck.fields.symptoms_check === 'true' || this.mostRecentSymptomsCheck.fields.symptoms_check === '2');
+      return !!this.mostRecentSymptomsCheck && Utils.getField(this.mostRecentSymptomsCheck, 'symptoms_followup_call.symptoms_check') === true; //&& user.role === 'tracer';
     },
     resolvedIf: function (c, r, event) {
       const startTime = Utils.addDate(event.dueDate(c, r), -event.start);
