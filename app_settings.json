@@ -531,7 +531,7 @@
         "extra.name": "doc.fields.inputs.contact.surname"
       }
     },
-    "textit-tracers": {
+    "textit-save-tracers-contact": {
       "relevant_to": "doc.type === 'person' && doc.phone && doc.role ==='tracer'",
       "destination": {
         "base_url": "https://textit.in",
@@ -562,7 +562,7 @@
         "extra.chw.name": "doc.parent.parent.contact.name"
       }
     },
-    "textit-contact-n": {
+    "textit-tracer_assignement": {
       "relevant_to": "doc.type === 'person' && doc.role ==='contact_n'",
       "destination": {
         "base_url": "https://textit.in",
@@ -582,6 +582,29 @@
           "optional": false
         },
         "extra.area": "doc.parent._id",
+        "extra.patient_name": "doc.name"
+      }
+    },
+    "textit-contact-notification": {
+      "relevant_to": "doc.type === 'person' && doc.phone && doc.role ==='contact_n'",
+      "destination": {
+        "base_url": "https://textit.in",
+        "auth": {
+          "type": "header",
+          "name": "Authorization",
+          "value_key": "textit.in"
+        },
+        "path": "/api/v2/flow_starts.json"
+      },
+      "mapping": {
+        "flow": {
+          "expr": "'9969e04d-6520-4c97-9919-558d8c632361'"
+        },
+        "urns": {
+          "expr": "[ 'tel:' + doc.phone ]",
+          "optional": false
+        },
+
         "extra.patient_name": "doc.name"
       }
     }
