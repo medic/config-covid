@@ -292,7 +292,7 @@
         </translation>
       </itext>
       <instance>
-        <covid_trace_follow_up delimiter="#" id="covid_trace_follow_up" prefix="J1!covid_trace_follow_up!" version="2020-04-04_12-29">
+        <covid_trace_follow_up delimiter="#" id="covid_trace_follow_up" prefix="J1!covid_trace_follow_up!" version="2020-04-12 12-22">
           <inputs tag="hidden">
             <source>user</source>
             <source_id/>
@@ -446,7 +446,7 @@
       <input ref="/covid_trace_follow_up/contact_info/n_church">
         <label ref="jr:itext('/covid_trace_follow_up/contact_info/n_church:label')"/>
       </input>
-      <input appearance="db-object bind-id-only" ref="/covid_trace_follow_up/contact_info/contact_patient_zero">
+      <input appearance="db-object bind-id-only hidden" ref="/covid_trace_follow_up/contact_info/contact_patient_zero">
         <label ref="jr:itext('/covid_trace_follow_up/contact_info/contact_patient_zero:label')"/>
       </input>
     </group>

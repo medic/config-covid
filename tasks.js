@@ -1,6 +1,11 @@
 
 module.exports = [
-  // Covid Rdt Followup
+  /****
+   Use case :  RDT screening
+   1. Followup after positive RDT
+   ****/
+
+  // 1. Positive Rdt follow-up
   {
     name: 'covid-rdt-followup',
     icon: 'icon-healthcare',
@@ -33,32 +38,13 @@ module.exports = [
     }],
   },
 
-{
-  name: 'trace_follow_up',
-  icon: 'icon-healthcare',
-  title: 'task.trace_follow_up.title',
-  appliesTo: 'contacts',
-  appliesToType: ['person'],
-  appliesIf: function (contact) {
-    return  !!contact.contact.patient_zero; //&& user.role === 'tracer' ;
-  },
-  resolvedIf: function (contact) {
-    this.mostRecentTraceFollowUp = Utils.getMostRecentReport(contact.reports, 'covid_trace_follow_up');
-    return this.mostRecentTraceFollowUp &&
-      ['contacted', 'stop'].includes(Utils.getField(this.mostRecentTraceFollowUp, 'trace.result'));
-  },
-  events: [{
-    days: 0,
-    start: 0,
-    end: 30
-  }],
-  actions: [{
-    type: 'report',
-    form: 'covid_trace_follow_up',
-    label: 'task.trace_follow_up.title',
-  }],
-},
-  // Cha verification
+  /****
+   Use case :  C-EBS
+   1. Supervisor Verification after signal 8
+   2. Investigation of Sub - district after Verified signal 8
+   ****/
+
+  // 1. Cha verification
   {
     name: 'cha-signal-verification',
     icon: 'icon-healthcare',
@@ -100,7 +86,7 @@ module.exports = [
     }],
   },
 
-  // Scdsc investigation
+  // 2. Scdsc investigation
   {
     name: 'scdsc-investigation',
     icon: 'icon-healthcare',
@@ -138,7 +124,70 @@ module.exports = [
     }],
   },
 
-  // Symptomatic contact follow up
+  /****
+   Use case :  Contact Tracing
+   1. Followup with a contact after tracer assignement
+   1. Checking the contact after they reported a symptom
+   1. Taking over a contact after they are confirmed as symptomatic
+   ****/
+
+  // 1. Trace Follow-up
+  {
+    name: 'trace_follow_up',
+    icon: 'icon-healthcare',
+    title: 'task.trace_follow_up.title',
+    appliesTo: 'contacts',
+    appliesToType: ['person'],
+    appliesIf: function (contact) {
+      return  !!contact.contact.patient_zero && user.role === 'tracer' ;
+    },
+    resolvedIf: function (contact) {
+      this.mostRecentTraceFollowUp = Utils.getMostRecentReport(contact.reports, 'covid_trace_follow_up');
+      return this.mostRecentTraceFollowUp &&
+          ['contacted', 'stop'].includes(Utils.getField(this.mostRecentTraceFollowUp, 'trace.result'));
+    },
+    events: [{
+      days: 0,
+      start: 0,
+      end: 30
+    }],
+    actions: [{
+      type: 'report',
+      form: 'covid_trace_follow_up',
+      label: 'task.trace_follow_up.title',
+    }],
+  },
+
+  // 2. Symptoms check
+  {
+    name: 'symptoms_check',
+    icon: 'icon-healthcare',
+    title: 'task.symptoms_check.title',
+    appliesTo: 'contacts',
+    appliesToType: ['person'],
+    appliesIf: function (contact) {
+      this.mostRecentQuarantine_follow_up= Utils.getMostRecentReport(contact.reports, 'QUARANTINE_FOLLOW_UP');
+      return !!this.mostRecentQuarantine_follow_up && (Utils.getField(this.mostRecentQuarantine_follow_up, 'symptoms_check') === true || Utils.getField(this.mostRecentQuarantine_follow_up, 'symptoms_check')==='1');
+    },
+    resolvedIf: function (contact) {
+      this.mostRecentSymCheck = Utils.getMostRecentReport(contact.reports, 'symptoms_check');
+      return !!this.mostRecentSymCheck && Utils.getField(this.mostRecentSymCheck, 'symptom_check.symptom') === 'yes';
+    },
+    events: [{
+      dueDate: function() {
+        return Utils.addDate(new Date(this.mostRecentQuarantine_follow_up.reported_date), 1);
+      },
+      start: 1,
+      end: 3
+    }],
+    actions: [{
+      type: 'report',
+      form: 'symptoms_check',
+      label: 'task.symptoms_check.title',
+    }],
+  },
+
+  // 3. Symptomatic contact follow up
   {
     name: 'symptomatic_contact_follow_up',
     icon: 'icon-healthcare',
@@ -147,7 +196,7 @@ module.exports = [
     appliesToType: undefined,
     appliesIf: function (contact) {
       this.mostRecentSymptomsCheck = Utils.getMostRecentReport(contact.reports, 'symptoms_check');
-      return !!this.mostRecentSymptomsCheck && Utils.getField(this.mostRecentSymptomsCheck, 'symptoms_followup_call.symptoms_check') === true; //&& user.role === 'tracer';
+      return !!this.mostRecentSymptomsCheck && Utils.getField(this.mostRecentSymptomsCheck, 'symptom_check.symptom') === 'yes' && user.role === 'data_entry';
     },
     resolvedIf: function (c, r, event) {
       const startTime = Utils.addDate(event.dueDate(c, r), -event.start);
@@ -167,34 +216,6 @@ module.exports = [
       type: 'report',
       form: 'symptomatic_contact_follow_up',
       label: 'task.symptomatic_contact_follow_up.title',
-    }],
-  },
-   //Symptoms check
-  {
-    name: 'symptoms_check',
-    icon: 'icon-healthcare',
-    title: 'task.symptoms_check.title',
-    appliesTo: 'contacts',
-    appliesToType: ['person'],
-    appliesIf: function (contact) {
-        this.mostRecentQuarantine_follow_up= Utils.getMostRecentReport(contact.reports, 'QUARANTINE_FOLLOW_UP');
-        return !!this.mostRecentQuarantine_follow_up && (Utils.getField(this.mostRecentQuarantine_follow_up, 'symptoms_check') === true || Utils.getField(this.mostRecentQuarantine_follow_up, 'symptoms_check')==='2');
-      },
-    resolvedIf: function (contact) {
-      this.mostRecentSymCheck = Utils.getMostRecentReport(contact.reports, 'symptoms_check');
-      return !!this.mostRecentSymCheck && Utils.getField(this.mostRecentSymCheck, 'symptom_check.symptom') === 'yes';
-      },
-    events: [{
-      dueDate: function() {
-        return Utils.addDate(new Date(this.mostRecentQuarantine_follow_up.reported_date), 1);
-      },
-      start: 1,
-      end: 3
-    }],
-    actions: [{
-      type: 'report',
-      form: 'symptoms_check',
-      label: 'task.symptoms_check.title',
     }],
   }
 ];
