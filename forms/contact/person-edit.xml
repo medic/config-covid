@@ -133,6 +133,9 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
           <text id="/data/person/role/contact_n:label">
             <value>Covid contact</value>
           </text>
+          <text id="/data/person/role/covid_patient:label">
+            <value>Patient with COVID-19</value>
+          </text>
           <text id="/data/person/role/data_entry:label">
             <value>Data entry</value>
           </text>
@@ -144,9 +147,6 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
           </text>
           <text id="/data/person/role/patient:label">
             <value>Patient</value>
-          </text>
-          <text id="/data/person/role/patient_zero:label">
-            <value>Patient Zero</value>
           </text>
           <text id="/data/person/role/tracer:label">
             <value>Tracer</value>
@@ -1127,6 +1127,9 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
           <text id="/data/person/role/contact_n:label">
             <value>Covid contact</value>
           </text>
+          <text id="/data/person/role/covid_patient:label">
+            <value>Patient with covid-19</value>
+          </text>
           <text id="/data/person/role/data_entry:label">
             <value>Data entry</value>
           </text>
@@ -1138,9 +1141,6 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
           </text>
           <text id="/data/person/role/patient:label">
             <value>Patient</value>
-          </text>
-          <text id="/data/person/role/patient_zero:label">
-            <value>Patient Zero</value>
           </text>
           <text id="/data/person/role/tracer:label">
             <value>Tracer</value>
@@ -1973,7 +1973,7 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
         </translation>
       </itext>
       <instance>
-        <data delimiter="#" id="contact:person:edit" prefix="J1!contact:person:edit!" version="2020-04-10 7-48">
+        <data delimiter="#" id="contact:person:edit" prefix="J1!contact:person:edit!" version="2020-04-16 13-57">
           <inputs>
             <meta>
               <location>
@@ -2100,11 +2100,11 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
 ../dob_approx)" nodeset="/data/person/ephemeral_dob/dob_raw" type="string"/>
       <bind calculate="format-date-time(../dob_raw,&quot;%Y-%m-%d&quot;)" nodeset="/data/person/ephemeral_dob/dob_iso" type="string"/>
       <bind nodeset="/data/person/ephemeral_dob/dob_debug" readonly="true()" relevant="false()" type="string"/>
-      <bind nodeset="/data/person/case_id" relevant="selected(../role, 'patient_zero')" type="string"/>
+      <bind nodeset="/data/person/case_id" relevant="selected(../role, 'covid_patient')" type="string"/>
       <bind constraint="true()" jr:constraintMsg="jr:itext('/data/person/phone:jr:constraintMsg')" nodeset="/data/person/phone" type="tel"/>
       <bind constraint="true()" jr:constraintMsg="jr:itext('/data/person/phone_alternate:jr:constraintMsg')" nodeset="/data/person/phone_alternate" type="tel"/>
-      <bind nodeset="/data/person/address" relevant="selected(../role, 'patient_zero')" type="string"/>
-      <bind nodeset="/data/person/town" relevant="selected(../role, 'patient_zero')" type="string"/>
+      <bind nodeset="/data/person/address" relevant="selected(../role, 'covid_patient')" type="string"/>
+      <bind nodeset="/data/person/town" relevant="selected(../role, 'covid_patient')" type="string"/>
       <bind nodeset="/data/person/sex" type="select1"/>
       <bind nodeset="/data/person/role_other" relevant="selected(  /data/person/role ,'other')" required="true()" type="string"/>
       <bind nodeset="/data/person/external_id" type="string"/>
@@ -2210,8 +2210,8 @@ DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
           <value>patient</value>
         </item>
         <item>
-          <label ref="jr:itext('/data/person/role/patient_zero:label')"/>
-          <value>patient_zero</value>
+          <label ref="jr:itext('/data/person/role/covid_patient:label')"/>
+          <value>covid_patient</value>
         </item>
         <item>
           <label ref="jr:itext('/data/person/role/other:label')"/>

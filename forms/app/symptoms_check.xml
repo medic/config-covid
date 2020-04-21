@@ -11,11 +11,11 @@
           <text id="/symptoms_check/inputs/contact/age_in_years:label">
             <value>Age in years</value>
           </text>
+          <text id="/symptoms_check/inputs/contact/covid_patient:label">
+            <value>Patient with covid-19 UUID</value>
+          </text>
           <text id="/symptoms_check/inputs/contact/other_names:label">
             <value>Other names</value>
-          </text>
-          <text id="/symptoms_check/inputs/contact/patient_zero:label">
-            <value>Patient Zero UUID</value>
           </text>
           <text id="/symptoms_check/inputs/contact/phone:label">
             <value>Phone No</value>
@@ -82,11 +82,11 @@
           <text id="/symptoms_check/inputs/contact/age_in_years:label">
             <value>Age in years</value>
           </text>
+          <text id="/symptoms_check/inputs/contact/covid_patient:label">
+            <value>Patient with covid-19 UUID</value>
+          </text>
           <text id="/symptoms_check/inputs/contact/other_names:label">
             <value>Other names</value>
-          </text>
-          <text id="/symptoms_check/inputs/contact/patient_zero:label">
-            <value>Patient Zero UUID</value>
           </text>
           <text id="/symptoms_check/inputs/contact/phone:label">
             <value>Phone No</value>
@@ -148,7 +148,7 @@
         </translation>
       </itext>
       <instance>
-        <symptoms_check delimiter="#" id="symptoms_check" prefix="J1!symptoms_check!" version="2020-04-12 12-56">
+        <symptoms_check delimiter="#" id="symptoms_check" prefix="J1!symptoms_check!" version="2020-04-15 21-48">
           <inputs tag="hidden">
             <source>user</source>
             <source_id/>
@@ -160,7 +160,7 @@
               <sex/>
               <age_in_years/>
               <phone/>
-              <patient_zero/>
+              <covid_patient/>
             </contact>
           </inputs>
           <patient_id/>
@@ -186,7 +186,7 @@
       <bind nodeset="/symptoms_check/inputs/contact/sex" type="string"/>
       <bind nodeset="/symptoms_check/inputs/contact/age_in_years" type="string"/>
       <bind nodeset="/symptoms_check/inputs/contact/phone" type="tel"/>
-      <bind nodeset="/symptoms_check/inputs/contact/patient_zero" type="string"/>
+      <bind nodeset="/symptoms_check/inputs/contact/covid_patient" type="string"/>
       <bind calculate="../inputs/contact/_id" jr:requiredMsg="jr:itext('/symptoms_check/patient_id:jr:requiredMsg')" nodeset="/symptoms_check/patient_id" required="true()" type="string"/>
       <bind nodeset="/symptoms_check/symptom_check/result" type="select1"/>
       <bind nodeset="/symptoms_check/symptom_check/symptom" relevant="selected(../result, 'yes')" type="select1"/>
@@ -226,8 +226,8 @@
         <input ref="/symptoms_check/inputs/contact/phone">
           <label ref="jr:itext('/symptoms_check/inputs/contact/phone:label')"/>
         </input>
-        <input ref="/symptoms_check/inputs/contact/patient_zero">
-          <label ref="jr:itext('/symptoms_check/inputs/contact/patient_zero:label')"/>
+        <input ref="/symptoms_check/inputs/contact/covid_patient">
+          <label ref="jr:itext('/symptoms_check/inputs/contact/covid_patient:label')"/>
         </input>
       </group>
     </group>
