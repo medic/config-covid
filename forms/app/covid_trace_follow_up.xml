@@ -310,7 +310,7 @@
         </translation>
       </itext>
       <instance>
-        <covid_trace_follow_up delimiter="#" id="covid_trace_follow_up" prefix="J1!covid_trace_follow_up!" version="2020-04-16 13-52">
+        <covid_trace_follow_up delimiter="#" id="covid_trace_follow_up" prefix="J1!covid_trace_follow_up!" version="2020-04-21 20-28">
           <inputs tag="hidden">
             <source>user</source>
             <source_id/>
@@ -385,7 +385,7 @@
       <bind nodeset="/covid_trace_follow_up/contact_info/n_surname" readonly="true()" relevant=" /covid_trace_follow_up/inputs/contact/surname !=''" type="string"/>
       <bind nodeset="/covid_trace_follow_up/contact_info/n_other_names" readonly="true()" relevant=" /covid_trace_follow_up/inputs/contact/other_names !=''" type="string"/>
       <bind nodeset="/covid_trace_follow_up/contact_info/n_sex" readonly="true()" relevant=" /covid_trace_follow_up/trace/sex_label !=''" type="string"/>
-      <bind nodeset="/covid_trace_follow_up/contact_info/n_age_in_years" readonly="true()" relevant=" /covid_trace_follow_up/inputs/contact/age_in_years  years!=''" type="string"/>
+      <bind nodeset="/covid_trace_follow_up/contact_info/n_age_in_years" readonly="true()" relevant=" /covid_trace_follow_up/inputs/contact/age_in_years !=''" type="string"/>
       <bind nodeset="/covid_trace_follow_up/contact_info/n_phone" readonly="true()" relevant=" /covid_trace_follow_up/inputs/contact/phone !=''" type="string"/>
       <bind nodeset="/covid_trace_follow_up/contact_info/n_flight_details" readonly="true()" relevant=" /covid_trace_follow_up/inputs/contact/flight_details !=''" type="string"/>
       <bind nodeset="/covid_trace_follow_up/contact_info/n_address" readonly="true()" relevant=" /covid_trace_follow_up/inputs/contact/address !=''" type="string"/>
