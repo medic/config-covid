@@ -174,10 +174,8 @@ module.exports = [
       return !!this.mostRecentSymCheck && Utils.getField(this.mostRecentSymCheck, 'symptom_check.symptom') === 'yes';
     },
     events: [{
-      dueDate: function() {
-        return Utils.addDate(new Date(this.mostRecentQuarantine_follow_up.reported_date), 1);
-      },
-      start: 1,
+      days: 0,
+      start: 0,
       end: 3
     }],
     actions: [{
