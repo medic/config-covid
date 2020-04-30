@@ -11,7 +11,7 @@
   ],
   "context": {
     "place": false,
-    "person": true,
+    "person": false,
     "expression": "!contact || (contact.type === 'person' && user.parent.type === 'health_center' && user.role === 'chw')"
   },
   "icon": "icon-on"

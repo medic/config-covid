@@ -53,6 +53,9 @@
           <text id="/symptoms_check/patient_id:label">
             <value>Patient ID</value>
           </text>
+          <text id="/symptoms_check/summary/r_refer:label">
+            <value>Referrals&lt;I class="fa fa-hospital-o"&gt;&lt;/i&gt;</value>
+          </text>
           <text id="/symptoms_check/summary/r_submit_note:label">
             <value>&lt;h4 style="text-align:center;"&gt;Click the Submit button at the bottom of the form.&lt;/h4&gt;</value>
           </text>
@@ -60,7 +63,7 @@
             <value>(Please note you can only report one signal at a time)</value>
           </text>
           <text id="/symptoms_check/summary/r_summary_details:label">
-            <value>&lt;h2 style=&quot;text-align:center;margin-bottom:0px;&quot;&gt; Inform the care team to take over <output value=" /symptoms_check/inputs/contact/other_names "/>&lt;/h2&gt;</value>
+            <value>&lt;h2 style=&quot;text-align:center;margin-bottom:0px;&quot;&gt; Please refer <output value=" /symptoms_check/inputs/contact/other_names "/> to the Care Team&lt;/h2&gt;</value>
           </text>
           <text id="/symptoms_check/summary:label">
             <value>Summary</value>
@@ -72,7 +75,7 @@
             <value>Yes</value>
           </text>
           <text id="/symptoms_check/symptom_check/result:label">
-            <value>Have you called the patient to check his symptoms report ?</value>
+            <value>Have you called the patient?</value>
           </text>
           <text id="/symptoms_check/symptom_check/symptom/no:label">
             <value>No</value>
@@ -81,10 +84,10 @@
             <value>Yes</value>
           </text>
           <text id="/symptoms_check/symptom_check/symptom:label">
-            <value>Does the patient have any covid symptom</value>
+            <value>Is the <output value=" /symptoms_check/inputs/contact/other_names "/> experiencing COVID-19 symptoms?</value>
           </text>
           <text id="/symptoms_check/symptom_check:label">
-            <value>Symptom check</value>
+            <value>Symptom Confirmation</value>
           </text>
         </translation>
         <translation lang="fr">
@@ -136,6 +139,9 @@
           <text id="/symptoms_check/patient_id:label">
             <value>Patient ID</value>
           </text>
+          <text id="/symptoms_check/summary/r_refer:label">
+            <value>-</value>
+          </text>
           <text id="/symptoms_check/summary/r_submit_note:label">
             <value>-</value>
           </text>
@@ -172,7 +178,7 @@
         </translation>
       </itext>
       <instance>
-        <symptoms_check delimiter="#" id="symptoms_check" prefix="J1!symptoms_check!" version="2020-04-10  14-48">
+        <symptoms_check delimiter="#" id="symptoms_check" prefix="J1!symptoms_check!" version="2020-04-22 16-03">
           <inputs tag="hidden">
             <source>user</source>
             <source_id/>
@@ -197,6 +203,7 @@
           </symptom_check>
           <summary>
             <r_submit_note/>
+            <r_refer/>
             <r_summary_details/>
           </summary>
           <meta tag="hidden">
@@ -220,6 +227,7 @@
       <bind nodeset="/symptoms_check/symptom_check/result" type="select1"/>
       <bind nodeset="/symptoms_check/symptom_check/symptom" relevant="selected(../result, 'yes')" type="select1"/>
       <bind nodeset="/symptoms_check/summary/r_submit_note" readonly="true()" type="string"/>
+      <bind nodeset="/symptoms_check/summary/r_refer" readonly="true()" type="string"/>
       <bind calculate="(Please note you can only report one signal at a time)" nodeset="/symptoms_check/summary/r_summary_details" readonly="true()" relevant="selected(../result, 'yes')" type="string"/>
       <bind calculate="concat('uuid:', uuid())" nodeset="/symptoms_check/meta/instanceID" readonly="true()" type="string"/>
     </model>
@@ -278,6 +286,9 @@
       <label ref="jr:itext('/symptoms_check/summary:label')"/>
       <input ref="/symptoms_check/summary/r_submit_note">
         <label ref="jr:itext('/symptoms_check/summary/r_submit_note:label')"/>
+      </input>
+      <input appearance="h1 red" ref="/symptoms_check/summary/r_refer">
+        <label ref="jr:itext('/symptoms_check/summary/r_refer:label')"/>
       </input>
       <input ref="/symptoms_check/summary/r_summary_details">
         <label ref="jr:itext('/symptoms_check/summary/r_summary_details:label')"/>
