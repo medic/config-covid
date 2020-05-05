@@ -1,0 +1,382 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>covid_education</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/covid_education/hand_washing_pt_one/hand_washing_overview_soap:label">
+            <value>Washing hands regularly is very important to protect yourself and others.</value>
+          </text>
+          <text id="/covid_education/hand_washing_pt_one/hand_washing_with_soap:label">
+            <value>Wash hands with soap under clean running water for 20 seconds, rubbing your hands together for 20 seconds.</value>
+          </text>
+          <text id="/covid_education/hand_washing_pt_one/hand_washing_with_soap_picture:label">
+            <value form="image">jr://images/handwashing_options.png</value>
+          </text>
+          <text id="/covid_education/hand_washing_pt_one:label">
+            <value>Hand Washing With Soap</value>
+          </text>
+          <text id="/covid_education/hand_washing_pt_two/hand_washing_overview_sanitize:label">
+            <value>If you do not have soap and water, use a hand sanitizer with at least 60% alcohol, rubbing your hands together for 20 seconds.</value>
+          </text>
+          <text id="/covid_education/hand_washing_pt_two/hand_washing_with_sanitizer_picture:label">
+            <value form="image">jr://images/handsanitizer.png</value>
+          </text>
+          <text id="/covid_education/hand_washing_pt_two:label">
+            <value>Hand Washing With Sanitizer</value>
+          </text>
+          <text id="/covid_education/household/sanitize_phone_picture:label">
+            <value form="image">jr://images/sanitize_phone.png</value>
+          </text>
+          <text id="/covid_education/household/sneezing_coughing_overview:label">
+            <value>Regularly clean surfaces you touched with household disinfectants.</value>
+          </text>
+          <text id="/covid_education/household:label">
+            <value>Household</value>
+          </text>
+          <text id="/covid_education/introduction/introduction:label">
+            <value>To avoid infection of yourself and others with COVID-19, it is important to practice the following hygiene measures.</value>
+          </text>
+          <text id="/covid_education/introduction:label">
+            <value>Introduction</value>
+          </text>
+          <text id="/covid_education/isolate/isolate_if_exposed:label">
+            <value>If you returned from an area where COVID-19 is spreading, stay at home for 14 days and avoid contact with others</value>
+          </text>
+          <text id="/covid_education/isolate/isolate_if_exposed_picture:label">
+            <value form="image">jr://images/stay_home_if_unwell.png</value>
+          </text>
+          <text id="/covid_education/isolate:label">
+            <value>Self-Quarantine</value>
+          </text>
+          <text id="/covid_education/learning_quiz/hand_washing_q/both_soap_and_water_or_hand_saniter:label">
+            <value>Both soap and water OR hand sanitizer</value>
+          </text>
+          <text id="/covid_education/learning_quiz/hand_washing_q/hand_sanitizer:label">
+            <value>Hand sanitizer</value>
+          </text>
+          <text id="/covid_education/learning_quiz/hand_washing_q/soap_and_water:label">
+            <value>Soap and water</value>
+          </text>
+          <text id="/covid_education/learning_quiz/hand_washing_q2/at_least_10_seconds:label">
+            <value>At least 10 seconds</value>
+          </text>
+          <text id="/covid_education/learning_quiz/hand_washing_q2/at_least_20_seconds:label">
+            <value>At least 20 seconds</value>
+          </text>
+          <text id="/covid_education/learning_quiz/hand_washing_q2:label">
+            <value>How long should you wash your hands to help prevent the spread of COVID-19?</value>
+          </text>
+          <text id="/covid_education/learning_quiz/hand_washing_q:label">
+            <value>Which of the following practices can help prevent the spread of COVID-19?</value>
+          </text>
+          <text id="/covid_education/learning_quiz/household_q/a_disinfectant:label">
+            <value>A disinfectant</value>
+          </text>
+          <text id="/covid_education/learning_quiz/household_q/water_only:label">
+            <value>Water only</value>
+          </text>
+          <text id="/covid_education/learning_quiz/household_q:label">
+            <value>What should you use to clean surfaces you have touched to help prevent the spread of COVID19?</value>
+          </text>
+          <text id="/covid_education/learning_quiz/sneezing_coughing_q/cough_into_your_elbow_or_tissue:label">
+            <value>Cough into your elbow or tissue</value>
+          </text>
+          <text id="/covid_education/learning_quiz/sneezing_coughing_q/cough_into_your_hand:label">
+            <value>Cough into your hand</value>
+          </text>
+          <text id="/covid_education/learning_quiz/sneezing_coughing_q:label">
+            <value>What is the best way to cover your cough?</value>
+          </text>
+          <text id="/covid_education/learning_quiz/social_distancing_q/at_least_1_meter:label">
+            <value>At least 1 meter</value>
+          </text>
+          <text id="/covid_education/learning_quiz/social_distancing_q/at_least_2_meters:label">
+            <value>At least 2 meters</value>
+          </text>
+          <text id="/covid_education/learning_quiz/social_distancing_q:label">
+            <value>What is the minimum physical distance needed to prevent the spread of COVID-19?</value>
+          </text>
+          <text id="/covid_education/learning_quiz:label">
+            <value>Household</value>
+          </text>
+          <text id="/covid_education/sneezing_coughing/blownose_sneeze_combine_picture:label">
+            <value form="image">jr://images/blownose_sneeze_combine.png</value>
+          </text>
+          <text id="/covid_education/sneezing_coughing/sneezing_coughing_overview:label">
+            <value>Do not cough near others. Always cough or sneeze into a tissue or your bent elbow. If you cough in your hands, wash your hands after with soap and water.</value>
+          </text>
+          <text id="/covid_education/sneezing_coughing:label">
+            <value>Sneezing / Coughing</value>
+          </text>
+          <text id="/covid_education/social_distancing/stay_back:label">
+            <value>Stay 2 meters away from others, to not come in contact with infected droplets. Do not shake hands or hug. If you are greeting others, wave instead.</value>
+          </text>
+          <text id="/covid_education/social_distancing/stay_back_picture:label">
+            <value form="image">jr://images/social_distancing.png</value>
+          </text>
+          <text id="/covid_education/social_distancing:label">
+            <value>Physical Distancing</value>
+          </text>
+          <text id="/covid_education/summary/failed:label">
+            <value>You answered some questions incorrectly, please resubmit the form and review:</value>
+          </text>
+          <text id="/covid_education/summary/hand_washing_sug2:label">
+            <value>- Handwashing (and the required time to be effective at it)</value>
+          </text>
+          <text id="/covid_education/summary/hand_washing_sug:label">
+            <value>- Handwashing (and it's ability to prevent COVID)</value>
+          </text>
+          <text id="/covid_education/summary/household_sug:label">
+            <value>- Household</value>
+          </text>
+          <text id="/covid_education/summary/passed:label">
+            <value>You have passed the module, congratulations!</value>
+          </text>
+          <text id="/covid_education/summary/sneezing_coughing_sug:label">
+            <value>- Sneezing/Coughing</value>
+          </text>
+          <text id="/covid_education/summary/social_distancing_sug:label">
+            <value>- Social Distancing</value>
+          </text>
+          <text id="/covid_education/summary:label">
+            <value>Summary</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <covid_education delimiter="#" id="covid_education" prefix="J1!covid_education!" version="2020-04-29 21:43:07">
+          <introduction>
+            <introduction/>
+          </introduction>
+          <isolate>
+            <isolate_if_exposed/>
+            <isolate_if_exposed_picture/>
+          </isolate>
+          <social_distancing>
+            <stay_back/>
+            <stay_back_picture/>
+          </social_distancing>
+          <hand_washing_pt_one>
+            <hand_washing_overview_soap/>
+            <hand_washing_with_soap/>
+            <hand_washing_with_soap_picture/>
+          </hand_washing_pt_one>
+          <hand_washing_pt_two>
+            <hand_washing_overview_sanitize/>
+            <hand_washing_with_sanitizer_picture/>
+          </hand_washing_pt_two>
+          <sneezing_coughing>
+            <sneezing_coughing_overview/>
+            <blownose_sneeze_combine_picture/>
+          </sneezing_coughing>
+          <household>
+            <sneezing_coughing_overview/>
+            <sanitize_phone_picture/>
+          </household>
+          <learning_quiz>
+            <hand_washing_q/>
+            <hand_washing_q2/>
+            <sneezing_coughing_q/>
+            <household_q/>
+            <social_distancing_q/>
+            <answers_correct/>
+          </learning_quiz>
+          <summary>
+            <passed/>
+            <failed/>
+            <hand_washing_sug/>
+            <hand_washing_sug2/>
+            <sneezing_coughing_sug/>
+            <household_sug/>
+            <social_distancing_sug/>
+          </summary>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </covid_education>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/covid_education/introduction/introduction" readonly="true()" required="false()" type="string"/>
+      <bind nodeset="/covid_education/isolate/isolate_if_exposed" readonly="true()" required="false()" type="string"/>
+      <bind nodeset="/covid_education/isolate/isolate_if_exposed_picture" readonly="true()" type="string"/>
+      <bind nodeset="/covid_education/social_distancing/stay_back" readonly="true()" required="false()" type="string"/>
+      <bind nodeset="/covid_education/social_distancing/stay_back_picture" readonly="true()" type="string"/>
+      <bind nodeset="/covid_education/hand_washing_pt_one/hand_washing_overview_soap" readonly="true()" required="false()" type="string"/>
+      <bind nodeset="/covid_education/hand_washing_pt_one/hand_washing_with_soap" readonly="true()" required="false()" type="string"/>
+      <bind nodeset="/covid_education/hand_washing_pt_one/hand_washing_with_soap_picture" readonly="true()" type="string"/>
+      <bind nodeset="/covid_education/hand_washing_pt_two/hand_washing_overview_sanitize" readonly="true()" required="false()" type="string"/>
+      <bind nodeset="/covid_education/hand_washing_pt_two/hand_washing_with_sanitizer_picture" readonly="true()" type="string"/>
+      <bind nodeset="/covid_education/sneezing_coughing/sneezing_coughing_overview" readonly="true()" required="false()" type="string"/>
+      <bind nodeset="/covid_education/sneezing_coughing/blownose_sneeze_combine_picture" readonly="true()" type="string"/>
+      <bind nodeset="/covid_education/household/sneezing_coughing_overview" readonly="true()" required="false()" type="string"/>
+      <bind nodeset="/covid_education/household/sanitize_phone_picture" readonly="true()" type="string"/>
+      <bind nodeset="/covid_education/learning_quiz/hand_washing_q" required="true()" type="select1"/>
+      <bind nodeset="/covid_education/learning_quiz/hand_washing_q2" required="true()" type="select1"/>
+      <bind nodeset="/covid_education/learning_quiz/sneezing_coughing_q" required="true()" type="select1"/>
+      <bind nodeset="/covid_education/learning_quiz/household_q" required="true()" type="select1"/>
+      <bind nodeset="/covid_education/learning_quiz/social_distancing_q" required="true()" type="select1"/>
+      <bind calculate="if( /covid_education/learning_quiz/hand_washing_q  = 'both_soap_and_water_or_hand_saniter' and  /covid_education/learning_quiz/hand_washing_q2  = 'at_least_20_seconds' and  /covid_education/learning_quiz/sneezing_coughing_q  = 'cough_into_your_elbow_or_tissue' and  /covid_education/learning_quiz/household_q  = 'a_disinfectant' and  /covid_education/learning_quiz/social_distancing_q  = 'at_least_2_meters', 'yes', 'no')" nodeset="/covid_education/learning_quiz/answers_correct" type="string"/>
+      <bind nodeset="/covid_education/summary/passed" readonly="true()" relevant=" /covid_education/learning_quiz/answers_correct  = 'yes'" type="string"/>
+      <bind nodeset="/covid_education/summary/failed" readonly="true()" relevant=" /covid_education/learning_quiz/answers_correct  = 'no'" type="string"/>
+      <bind nodeset="/covid_education/summary/hand_washing_sug" readonly="true()" relevant=" /covid_education/learning_quiz/hand_washing_q  != 'both_soap_and_water_or_hand_saniter'" type="string"/>
+      <bind nodeset="/covid_education/summary/hand_washing_sug2" readonly="true()" relevant=" /covid_education/learning_quiz/hand_washing_q2  != 'at_least_20_seconds'" type="string"/>
+      <bind nodeset="/covid_education/summary/sneezing_coughing_sug" readonly="true()" relevant=" /covid_education/learning_quiz/sneezing_coughing_q  != 'cough_into_your_elbow_or_tissue'" type="string"/>
+      <bind nodeset="/covid_education/summary/household_sug" readonly="true()" relevant=" /covid_education/learning_quiz/household_q  != 'a_disinfectant'" type="string"/>
+      <bind nodeset="/covid_education/summary/social_distancing_sug" readonly="true()" relevant=" /covid_education/learning_quiz/social_distancing_q  != 'at_least_2_meters'" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/covid_education/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/covid_education/introduction">
+      <label ref="jr:itext('/covid_education/introduction:label')"/>
+      <input ref="/covid_education/introduction/introduction">
+        <label ref="jr:itext('/covid_education/introduction/introduction:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_education/isolate">
+      <label ref="jr:itext('/covid_education/isolate:label')"/>
+      <input ref="/covid_education/isolate/isolate_if_exposed">
+        <label ref="jr:itext('/covid_education/isolate/isolate_if_exposed:label')"/>
+      </input>
+      <input ref="/covid_education/isolate/isolate_if_exposed_picture">
+        <label ref="jr:itext('/covid_education/isolate/isolate_if_exposed_picture:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_education/social_distancing">
+      <label ref="jr:itext('/covid_education/social_distancing:label')"/>
+      <input ref="/covid_education/social_distancing/stay_back">
+        <label ref="jr:itext('/covid_education/social_distancing/stay_back:label')"/>
+      </input>
+      <input ref="/covid_education/social_distancing/stay_back_picture">
+        <label ref="jr:itext('/covid_education/social_distancing/stay_back_picture:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_education/hand_washing_pt_one">
+      <label ref="jr:itext('/covid_education/hand_washing_pt_one:label')"/>
+      <input ref="/covid_education/hand_washing_pt_one/hand_washing_overview_soap">
+        <label ref="jr:itext('/covid_education/hand_washing_pt_one/hand_washing_overview_soap:label')"/>
+      </input>
+      <input ref="/covid_education/hand_washing_pt_one/hand_washing_with_soap">
+        <label ref="jr:itext('/covid_education/hand_washing_pt_one/hand_washing_with_soap:label')"/>
+      </input>
+      <input ref="/covid_education/hand_washing_pt_one/hand_washing_with_soap_picture">
+        <label ref="jr:itext('/covid_education/hand_washing_pt_one/hand_washing_with_soap_picture:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_education/hand_washing_pt_two">
+      <label ref="jr:itext('/covid_education/hand_washing_pt_two:label')"/>
+      <input ref="/covid_education/hand_washing_pt_two/hand_washing_overview_sanitize">
+        <label ref="jr:itext('/covid_education/hand_washing_pt_two/hand_washing_overview_sanitize:label')"/>
+      </input>
+      <input ref="/covid_education/hand_washing_pt_two/hand_washing_with_sanitizer_picture">
+        <label ref="jr:itext('/covid_education/hand_washing_pt_two/hand_washing_with_sanitizer_picture:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_education/sneezing_coughing">
+      <label ref="jr:itext('/covid_education/sneezing_coughing:label')"/>
+      <input ref="/covid_education/sneezing_coughing/sneezing_coughing_overview">
+        <label ref="jr:itext('/covid_education/sneezing_coughing/sneezing_coughing_overview:label')"/>
+      </input>
+      <input ref="/covid_education/sneezing_coughing/blownose_sneeze_combine_picture">
+        <label ref="jr:itext('/covid_education/sneezing_coughing/blownose_sneeze_combine_picture:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_education/household">
+      <label ref="jr:itext('/covid_education/household:label')"/>
+      <input ref="/covid_education/household/sneezing_coughing_overview">
+        <label ref="jr:itext('/covid_education/household/sneezing_coughing_overview:label')"/>
+      </input>
+      <input ref="/covid_education/household/sanitize_phone_picture">
+        <label ref="jr:itext('/covid_education/household/sanitize_phone_picture:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_education/learning_quiz">
+      <label ref="jr:itext('/covid_education/learning_quiz:label')"/>
+      <select1 ref="/covid_education/learning_quiz/hand_washing_q">
+        <label ref="jr:itext('/covid_education/learning_quiz/hand_washing_q:label')"/>
+        <item>
+          <label ref="jr:itext('/covid_education/learning_quiz/hand_washing_q/soap_and_water:label')"/>
+          <value>soap_and_water</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/covid_education/learning_quiz/hand_washing_q/hand_sanitizer:label')"/>
+          <value>hand_sanitizer</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/covid_education/learning_quiz/hand_washing_q/both_soap_and_water_or_hand_saniter:label')"/>
+          <value>both_soap_and_water_or_hand_saniter</value>
+        </item>
+      </select1>
+      <select1 ref="/covid_education/learning_quiz/hand_washing_q2">
+        <label ref="jr:itext('/covid_education/learning_quiz/hand_washing_q2:label')"/>
+        <item>
+          <label ref="jr:itext('/covid_education/learning_quiz/hand_washing_q2/at_least_10_seconds:label')"/>
+          <value>at_least_10_seconds</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/covid_education/learning_quiz/hand_washing_q2/at_least_20_seconds:label')"/>
+          <value>at_least_20_seconds</value>
+        </item>
+      </select1>
+      <select1 ref="/covid_education/learning_quiz/sneezing_coughing_q">
+        <label ref="jr:itext('/covid_education/learning_quiz/sneezing_coughing_q:label')"/>
+        <item>
+          <label ref="jr:itext('/covid_education/learning_quiz/sneezing_coughing_q/cough_into_your_elbow_or_tissue:label')"/>
+          <value>cough_into_your_elbow_or_tissue</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/covid_education/learning_quiz/sneezing_coughing_q/cough_into_your_hand:label')"/>
+          <value>cough_into_your_hand</value>
+        </item>
+      </select1>
+      <select1 ref="/covid_education/learning_quiz/household_q">
+        <label ref="jr:itext('/covid_education/learning_quiz/household_q:label')"/>
+        <item>
+          <label ref="jr:itext('/covid_education/learning_quiz/household_q/water_only:label')"/>
+          <value>water_only</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/covid_education/learning_quiz/household_q/a_disinfectant:label')"/>
+          <value>a_disinfectant</value>
+        </item>
+      </select1>
+      <select1 ref="/covid_education/learning_quiz/social_distancing_q">
+        <label ref="jr:itext('/covid_education/learning_quiz/social_distancing_q:label')"/>
+        <item>
+          <label ref="jr:itext('/covid_education/learning_quiz/social_distancing_q/at_least_1_meter:label')"/>
+          <value>at_least_1_meter</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/covid_education/learning_quiz/social_distancing_q/at_least_2_meters:label')"/>
+          <value>at_least_2_meters</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/covid_education/summary">
+      <label ref="jr:itext('/covid_education/summary:label')"/>
+      <input ref="/covid_education/summary/passed">
+        <label ref="jr:itext('/covid_education/summary/passed:label')"/>
+      </input>
+      <input ref="/covid_education/summary/failed">
+        <label ref="jr:itext('/covid_education/summary/failed:label')"/>
+      </input>
+      <input ref="/covid_education/summary/hand_washing_sug">
+        <label ref="jr:itext('/covid_education/summary/hand_washing_sug:label')"/>
+      </input>
+      <input ref="/covid_education/summary/hand_washing_sug2">
+        <label ref="jr:itext('/covid_education/summary/hand_washing_sug2:label')"/>
+      </input>
+      <input ref="/covid_education/summary/sneezing_coughing_sug">
+        <label ref="jr:itext('/covid_education/summary/sneezing_coughing_sug:label')"/>
+      </input>
+      <input ref="/covid_education/summary/household_sug">
+        <label ref="jr:itext('/covid_education/summary/household_sug:label')"/>
+      </input>
+      <input ref="/covid_education/summary/social_distancing_sug">
+        <label ref="jr:itext('/covid_education/summary/social_distancing_sug:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>
