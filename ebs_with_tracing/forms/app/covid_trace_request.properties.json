@@ -1,0 +1,18 @@
+{
+  "title": [
+    {
+      "locale": "en",
+      "content": "Trace Request"
+    },
+    {
+      "locale": "fr",
+      "content": "Trace Request"
+    }
+  ],
+  "context": {
+    "place": false,
+    "person": true,
+    "expression": "user.role === 'data_entry' && contact.role  === 'covid_patient'"
+  },
+  "icon": "icon-healthcare"
+}

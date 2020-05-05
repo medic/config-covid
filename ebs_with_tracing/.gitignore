@@ -1,0 +1,11 @@
+.vscode/*
+gdrive.secrets.json
+backups/**/*
+**/.~lock.*
+/._revs/
+/.hashes/
+/.idea/
+/node_modules/
+/scripts/
+~$**
+
