@@ -1,0 +1,18 @@
+{
+  "title": [
+    {
+      "locale": "en",
+      "content": "Trace follow-up"
+    },
+    {
+      "locale": "fr",
+      "content": "Trace follow-up"
+    }
+  ],
+  "context": {
+      "place": false,
+      "person": true,
+      "expression": "contact.role === 'contact_n' && user.role === 'tracer'"
+  },
+  "icon": "icon-healthcare"
+}
