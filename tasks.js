@@ -1,11 +1,59 @@
-
 module.exports = [
-  /****
-   Use case :  RDT screening
-   1. Followup after positive RDT
-   ****/
 
-  // 1. Positive Rdt follow-up
+  {
+    title: 'EBS training evaluation',
+    name: 'ebs-training',
+    appliesTo: 'contacts',
+    appliesToType: ['person'],
+    appliesIf: c => c.contact.role === 'chw',
+    actions: [{
+      form: 'ebs_assessment_training'
+    }],
+    events: [{
+      start: new Date('2020-05-30') - new Date(),
+      end: 5,
+      dueDate: function () {
+        return new Date('2020-05-30');
+      },         
+      // days: 14
+    }],
+    resolvedIf: function (c) {
+      return c.reports.some(report => report.form === 'ebs_assessment_training' && Utils.getField(report, 'assessment_passed') === 'yes'); 
+    }
+  },
+
+  {
+    title: 'Update summary',
+    name: 'protocol-summary',
+    appliesTo: 'contacts',
+    appliesToType: ['person'],
+    appliesIf: c => c.contact.role === 'chw',
+    actions: [{
+      form: 'update_summary'
+    }],
+    events: [{
+      start: new Date('2020-05-18') - new Date(),
+      end: 5,
+      dueDate: function () {
+        return new Date('2020-05-18');
+      },      
+    // days: 14
+    }],
+    resolvedIf: function(c) {
+      return c.reports.some((report) => report.form === 'update_summary');
+      // Utils.isFormSubmittedInWindow(
+      //   c.reports, 'update_summary',
+      //   Utils.addDate(dueDate, event.start * -1).getTime(),
+      //   Utils.addDate(dueDate, event.end).getTime()
+      // );
+    }
+  },
+    /****
+     Use case :  RDT screening
+     1. Followup after positive RDT
+     ****/
+
+    // 1. Positive Rdt follow-up
   {
     name: 'covid-rdt-followup',
     icon: 'icon-healthcare',
@@ -27,7 +75,7 @@ module.exports = [
     events: [{
       start: 1,
       end: 3,
-      dueDate: function() {
+      dueDate: function () {
         return Utils.addDate(new Date(this.mostRecentRdt.reported_date), 1);
       },
     }],
@@ -54,7 +102,7 @@ module.exports = [
     appliesIf: function (c) {
       const isCha = user.parent && user.parent.type === 'health_center';
       this.mostRecent8 = Utils.getMostRecentReport(c.reports, '8');
-      return isCha && this.mostRecent8 ;
+      return isCha && this.mostRecent8;
     },
     resolvedIf: function (c, r, event) {
       const startTime = Utils.addDate(event.dueDate(c, r), -event.start);
@@ -66,7 +114,7 @@ module.exports = [
     events: [{
       start: 1,
       end: 3,
-      dueDate: function() {
+      dueDate: function () {
         return Utils.addDate(new Date(this.mostRecent8.reported_date), 1);
       },
     }],
@@ -74,13 +122,13 @@ module.exports = [
       type: 'report',
       form: 'cha_signal_verification',
       label: 'Cha verification',
-      modifyContent: function (content,contact) {
+      modifyContent: function (content, contact) {
         console.log(JSON.stringify(contact));
         const report = this.mostRecent8;
         content.id_signal = report.patient_id;
         //content.chw_id = contact._id;
         //content.patient_id = contact._id;
-        contact.contact.name = 'Signal ID: ' + ' ' +contact.contact.patient_id;
+        contact.contact.name = 'Signal ID: ' + ' ' + contact.contact.patient_id;
 
       },
     }],
@@ -96,7 +144,7 @@ module.exports = [
     appliesIf: function (c) {
       const isScdsc = user.parent && user.parent.type === 'district_hospital';
       this.mostRecentChaVerification = Utils.getMostRecentReport(c.reports, 'cha_signal_verification');
-      return isScdsc && this.mostRecentChaVerification ;
+      return isScdsc && this.mostRecentChaVerification;
     },
     resolvedIf: function (c, r, event) {
       const startTime = Utils.addDate(event.dueDate(c, r), -event.start);
@@ -108,7 +156,7 @@ module.exports = [
     events: [{
       start: 1,
       end: 3,
-      dueDate: function() {
+      dueDate: function () {
         return Utils.addDate(new Date(this.mostRecentChaVerification.reported_date), 1);
       },
     }],
@@ -116,10 +164,10 @@ module.exports = [
       type: 'report',
       form: 'scdsc_investigation',
       label: 'Scdsc investigation',
-      modifyContent: function (content,contact) {
+      modifyContent: function (content, contact) {
         const report = this.mostRecentChaVerification;
         content.id_signal = report.fields.patient_id;
-        contact.contact.name = 'Signal ID: ' + ' ' +contact.contact.patient_id;
+        contact.contact.name = 'Signal ID: ' + ' ' + contact.contact.patient_id;
       },
     }],
   },
@@ -139,12 +187,12 @@ module.exports = [
     appliesTo: 'contacts',
     appliesToType: ['person'],
     appliesIf: function (contact) {
-      return  !!contact.contact.covid_patient && user.role === 'tracer' ;
+      return !!contact.contact.covid_patient && user.role === 'tracer';
     },
     resolvedIf: function (contact) {
       this.mostRecentTraceFollowUp = Utils.getMostRecentReport(contact.reports, 'covid_trace_follow_up');
       return this.mostRecentTraceFollowUp &&
-          ['contacted', 'stop'].includes(Utils.getField(this.mostRecentTraceFollowUp, 'trace.result'));
+        ['contacted', 'stop'].includes(Utils.getField(this.mostRecentTraceFollowUp, 'trace.result'));
     },
     events: [{
       days: 0,
@@ -166,8 +214,8 @@ module.exports = [
     appliesTo: 'contacts',
     appliesToType: ['person'],
     appliesIf: function (contact) {
-      this.mostRecentQuarantine_follow_up= Utils.getMostRecentReport(contact.reports, 'QUARANTINE_FOLLOW_UP');
-      return !!this.mostRecentQuarantine_follow_up && (Utils.getField(this.mostRecentQuarantine_follow_up, 'symptoms_check') === true || Utils.getField(this.mostRecentQuarantine_follow_up, 'symptoms_check')==='1');
+      this.mostRecentQuarantine_follow_up = Utils.getMostRecentReport(contact.reports, 'QUARANTINE_FOLLOW_UP');
+      return !!this.mostRecentQuarantine_follow_up && (Utils.getField(this.mostRecentQuarantine_follow_up, 'symptoms_check') === true || Utils.getField(this.mostRecentQuarantine_follow_up, 'symptoms_check') === '1');
     },
     resolvedIf: function (contact) {
       this.mostRecentSymCheck = Utils.getMostRecentReport(contact.reports, 'symptoms_check');
@@ -206,7 +254,7 @@ module.exports = [
     events: [{
       start: 1,
       end: 3,
-      dueDate: function() {
+      dueDate: function () {
         return Utils.addDate(new Date(this.mostRecentSymptomsCheck.reported_date), 1);
       },
     }],

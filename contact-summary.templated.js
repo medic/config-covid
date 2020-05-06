@@ -10,6 +10,8 @@ const getField = (report, fieldPath) => [...(fieldPath || '').split('.')]
     }, report);
 
 const isTraveler = () => { return getField(thisContact, 'role') === 'traveler'; };
+const isCHW = () => { return getField(thisContact, 'role') === 'chw'; };
+
 
 const isReportValid = function (report) {
   if (report.form && report.fields && report.reported_date) { return true; }
@@ -20,11 +22,18 @@ const hasReport = function (form) {
   return allReports && allReports.some((report) => report.form === form);
 };
 
+const hasCompletedModuleTraining = function (form) {
+  return allReports && allReports.some(report => report.form === form && report.fields.assessment_passed === 'yes');
+};
+
 const context = {
   isPassenger: isTraveler(),
   hasDeclarationForm: hasReport('declaration'),
   hasLocatorForm: hasReport('locator'),
   hasQuarantineForm: hasReport('quarantine'),
+  isCHW: isCHW(),
+  hasCompletedEBSTraining: hasCompletedModuleTraining('ebs_assessment_training'),
+  hasGoneThroughUpdate: hasReport('update_summary')
 };
 
 const fields = [
@@ -45,6 +54,38 @@ const fields = [
 ];
 
 const cards = [
+
+  {
+    label: 'contact.profile.training',
+    appliesToType: 'person',
+    appliesIf: isCHW,
+    fields: function () {
+      let fields = [];
+      if (!hasReport('update_summary')) {
+        fields.push(
+          { label : 'contact.profile.training.protocol_summary', value: 'No', width: 6 }
+        );
+      }
+      else {
+        fields.push(
+          { label : 'contact.profile.training.protocol_summary', value: 'Yes', width: 6 }
+        );
+      }
+      if (!hasCompletedModuleTraining('ebs_assessment_training')) {
+        fields.push(
+          { label : 'contact.profile.training.ebs_training', value: 'No', width: 6 }
+        );
+      }
+      else {
+        fields.push(
+          { label : 'contact.profile.training.ebs_training', value: 'Yes', width: 6 }
+        );
+      }
+
+      return fields;
+    }
+  },
+
   {
     label: 'contact.profile.referral',
     appliesToType: 'person',
