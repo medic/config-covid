@@ -1,0 +1,635 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>covid_rumors</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/covid_rumors/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/covid_rumors/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/covid_rumors/inputs/source_visit_date:label">
+            <value>Visit Date</value>
+          </text>
+          <text id="/covid_rumors/introduction/introduction:label">
+            <value>Detecting and responding to rumours is an important measure to prevent the spread of the COVID-19 disease.</value>
+          </text>
+          <text id="/covid_rumors/introduction:label">
+            <value>COVID-19 and Rumours</value>
+          </text>
+          <text id="/covid_rumors/our_responsibility/our_responsibility:label">
+            <value>Health workers have a responsibility to help stop Covid-19 rumors and spread accurate health information.</value>
+          </text>
+          <text id="/covid_rumors/our_responsibility:label">
+            <value>Our Responsibility</value>
+          </text>
+          <text id="/covid_rumors/prevention_a/prevention_a_correct:label">
+            <value>Correct Answer: False</value>
+          </text>
+          <text id="/covid_rumors/prevention_a/prevention_a_explination:label">
+            <value>You shouldn't use strong disinfectant to clean your body. Washing your hands thoroughly with soap and water or rubbing an alcohol-based sanitizer on them will stop the virus spreading. Using stronger chemicals on your skin can be dangerous. Never drink disinfectant or hand sanitizer as this can do serious damage.</value>
+          </text>
+          <text id="/covid_rumors/prevention_a/prevention_correct:label">
+            <value>&lt;span style="color:green"&gt;You Answered: False&lt;/span&gt;</value>
+          </text>
+          <text id="/covid_rumors/prevention_a/prevention_wrong:label">
+            <value>&lt;span style="color:red"&gt;You Answered: True&lt;/span&gt;</value>
+          </text>
+          <text id="/covid_rumors/prevention_a:label">
+            <value>Quiz - Prevention</value>
+          </text>
+          <text id="/covid_rumors/prevention_qq/prevention_q/false:label">
+            <value>False</value>
+          </text>
+          <text id="/covid_rumors/prevention_qq/prevention_q/true:label">
+            <value>True</value>
+          </text>
+          <text id="/covid_rumors/prevention_qq/prevention_q:label">
+            <value>Using a strong disinfectant (like bleach) to clean hands and body protects you from COVID-19</value>
+          </text>
+          <text id="/covid_rumors/prevention_qq:label">
+            <value>Quiz - Prevention</value>
+          </text>
+          <text id="/covid_rumors/quiz_start/quiz_start:label">
+            <value>We're going to ask a few questions. Some are true, some are false. Let's try a quiz.</value>
+          </text>
+          <text id="/covid_rumors/quiz_start:label">
+            <value>Quiz Start</value>
+          </text>
+          <text id="/covid_rumors/reliable_sources/reliable_sources:label">
+            <value>Stay 2 meters away from others, to not come in contact with infected droplets. Do not shake hands or hug. If you are greeting others, wave instead.</value>
+          </text>
+          <text id="/covid_rumors/reliable_sources:label">
+            <value>Reliable Sources</value>
+          </text>
+          <text id="/covid_rumors/summary/summary:label">
+            <value>Remember, as health workers we have a responsibility to report myths and rumors - and to ask questions if we are not sure.</value>
+          </text>
+          <text id="/covid_rumors/summary/user_myth_q:label">
+            <value>Do you have any myths to report or questions to ask?</value>
+          </text>
+          <text id="/covid_rumors/summary:label">
+            <value>Summary</value>
+          </text>
+          <text id="/covid_rumors/treatment2_a/treatment2_a_correct:label">
+            <value>Correct Answer: False</value>
+          </text>
+          <text id="/covid_rumors/treatment2_a/treatment2_a_explination:label">
+            <value>This is not true. Maize meal does not decrease chances of getting sick with COVID-19 or dying from the disease. Because this is a new virus, there are still no proven medicines that fight the virus. It can be dangerous to take medicines that are unproven against a disease.</value>
+          </text>
+          <text id="/covid_rumors/treatment2_a/treatment2_correct:label">
+            <value>&lt;span style="color:green"&gt;You Answered: False&lt;/span&gt;</value>
+          </text>
+          <text id="/covid_rumors/treatment2_a/treatment2_wrong:label">
+            <value>&lt;span style="color:red"&gt;You Answered: True&lt;/span&gt;</value>
+          </text>
+          <text id="/covid_rumors/treatment2_a:label">
+            <value>Quiz - Treatment</value>
+          </text>
+          <text id="/covid_rumors/treatment2_qq/treatment2_q/false:label">
+            <value>False</value>
+          </text>
+          <text id="/covid_rumors/treatment2_qq/treatment2_q/true:label">
+            <value>True</value>
+          </text>
+          <text id="/covid_rumors/treatment2_qq/treatment2_q:label">
+            <value>Maize meal will decrease your chance of dying from COVID</value>
+          </text>
+          <text id="/covid_rumors/treatment2_qq:label">
+            <value>Quiz - Treatment</value>
+          </text>
+          <text id="/covid_rumors/treatment3_a/treatment3_a_correct:label">
+            <value>Correct Answer: False</value>
+          </text>
+          <text id="/covid_rumors/treatment3_a/treatment3_a_explination:label">
+            <value>This is not true. COVID-19 is different to malaria; it is caused by a virus whereas malaria is caused by a parasite. This means the way the coronavirus enters your body and attacks your cells is completely different to the malaria parasite, and the treatments are also different. The coronavirus that causes COVID-19 is a new virus and so far there are no proven medicines that specifically treat it. You may have heard that an old medicine used to treat malaria is being tested to see if it works against the coronavirus, but it has not yet been proven to work. In the meantime, if you take the wrong medicine for the coronavirus, it can cause serious harm to your health.</value>
+          </text>
+          <text id="/covid_rumors/treatment3_a/treatment3_correct:label">
+            <value>&lt;span style="color:green"&gt;You Answered: False&lt;/span&gt;</value>
+          </text>
+          <text id="/covid_rumors/treatment3_a/treatment3_wrong:label">
+            <value>&lt;span style="color:red"&gt;You Answered: True&lt;/span&gt;</value>
+          </text>
+          <text id="/covid_rumors/treatment3_a:label">
+            <value>Quiz - Treatment</value>
+          </text>
+          <text id="/covid_rumors/treatment3_qq/treatment3_q/false:label">
+            <value>False</value>
+          </text>
+          <text id="/covid_rumors/treatment3_qq/treatment3_q/true:label">
+            <value>True</value>
+          </text>
+          <text id="/covid_rumors/treatment3_qq/treatment3_q:label">
+            <value>COVID is like Maleria</value>
+          </text>
+          <text id="/covid_rumors/treatment3_qq:label">
+            <value>Quiz - Treatment</value>
+          </text>
+          <text id="/covid_rumors/treatment_a/treatment_a_correct:label">
+            <value>Correct Answer: True</value>
+          </text>
+          <text id="/covid_rumors/treatment_a/treatment_a_explination:label">
+            <value>This is true. There is no vaccine to treat or prevent the new coronavirus, and there are no proven medicines that specifically treat the new coronavirus.</value>
+          </text>
+          <text id="/covid_rumors/treatment_a/treatment_correct:label">
+            <value>&lt;span style="color:green"&gt;You Answered: True&lt;/span&gt;</value>
+          </text>
+          <text id="/covid_rumors/treatment_a/treatment_wrong:label">
+            <value>&lt;span style="color:red"&gt;You Answered: False&lt;/span&gt;</value>
+          </text>
+          <text id="/covid_rumors/treatment_a:label">
+            <value>Quiz - Treatment</value>
+          </text>
+          <text id="/covid_rumors/treatment_qq/treatment_q/false:label">
+            <value>False</value>
+          </text>
+          <text id="/covid_rumors/treatment_qq/treatment_q/true:label">
+            <value>True</value>
+          </text>
+          <text id="/covid_rumors/treatment_qq/treatment_q:label">
+            <value>There is not a vaccine for COVID</value>
+          </text>
+          <text id="/covid_rumors/treatment_qq:label">
+            <value>Quiz - Treatment</value>
+          </text>
+          <text id="/covid_rumors/what_to_do/p1:label">
+            <value>- Inform public officials of circulating rumours</value>
+          </text>
+          <text id="/covid_rumors/what_to_do/p2:label">
+            <value>- Share analyzed information with the national/state rumour management team.</value>
+          </text>
+          <text id="/covid_rumors/what_to_do/p3:label">
+            <value>- Draft message to counter the rumour</value>
+          </text>
+          <text id="/covid_rumors/what_to_do/p4:label">
+            <value>- Secure approval from the Ministry of Health for the draft message to counter the rumour</value>
+          </text>
+          <text id="/covid_rumors/what_to_do/p5:label">
+            <value>- Decide appropriate channels to disseminate approved message like radio and social media</value>
+          </text>
+          <text id="/covid_rumors/what_to_do/p6:label">
+            <value>- Disseminate approved message to the audience via appropriate and approved channels</value>
+          </text>
+          <text id="/covid_rumors/what_to_do/p7:label">
+            <value>- Partner with community leaders and groups to address rumours</value>
+          </text>
+          <text id="/covid_rumors/what_to_do/what_to_do_header:label">
+            <value>After rumours have been detected the next step is to to respond to rumours in a timely manner:</value>
+          </text>
+          <text id="/covid_rumors/what_to_do:label">
+            <value>What To Do If You Hear A Rumour</value>
+          </text>
+          <text id="/covid_rumors/whos_at_risk2_a/whos_at_risk2_a_correct:label">
+            <value>Correct Answer: True</value>
+          </text>
+          <text id="/covid_rumors/whos_at_risk2_a/whos_at_risk2_a_explination:label">
+            <value>COVID-19 can survive temperatures higher than 25C. You can catch it no matter how sunny and warm it is. So, whatever the weather you should follow the official advice to protect yourself from the virus. Getting out into the sunshine, if you can, is still a good idea as this helps your body produce vitamin D which is important for your immune system.</value>
+          </text>
+          <text id="/covid_rumors/whos_at_risk2_a/whos_at_risk2_correct:label">
+            <value>&lt;span style="color:green"&gt;You Answered: True&lt;/span&gt;</value>
+          </text>
+          <text id="/covid_rumors/whos_at_risk2_a/whos_at_risk2_wrong:label">
+            <value>&lt;span style="color:red"&gt;You Answered: False&lt;/span&gt;</value>
+          </text>
+          <text id="/covid_rumors/whos_at_risk2_a:label">
+            <value>Quiz - Who's At Risk</value>
+          </text>
+          <text id="/covid_rumors/whos_at_risk2_qq/whos_at_risk2_q/false:label">
+            <value>False</value>
+          </text>
+          <text id="/covid_rumors/whos_at_risk2_qq/whos_at_risk2_q/true:label">
+            <value>True</value>
+          </text>
+          <text id="/covid_rumors/whos_at_risk2_qq/whos_at_risk2_q:label">
+            <value>The coronavirus can survive in Africa's warm climate</value>
+          </text>
+          <text id="/covid_rumors/whos_at_risk2_qq:label">
+            <value>Quiz - Who's At Risk</value>
+          </text>
+          <text id="/covid_rumors/whos_at_risk_a/whos_at_risk_a_correct:label">
+            <value>Correct Answer: False</value>
+          </text>
+          <text id="/covid_rumors/whos_at_risk_a/whos_at_risk_a_explination:label">
+            <value>Here's why this information is wrong. Children and teenagers are at risk of infection with the new coronavirus. Children and teenagers can get very sick with the infection and die from it. Early on in the pandemic there were reports of few infections among children, but since then we have seen that young children up to teenagers can get sick and die from COVID-19. It's important that children follow the same safety guidelines as adults. These include regular hand washing, good cough hygiene, and sheltering in place.</value>
+          </text>
+          <text id="/covid_rumors/whos_at_risk_a/whos_at_risk_right:label">
+            <value>&lt;span style="color:green"&gt;You Answered: False&lt;/span&gt;</value>
+          </text>
+          <text id="/covid_rumors/whos_at_risk_a/whos_at_risk_wrong:label">
+            <value>&lt;span style="color:red"&gt;You Answered: True&lt;/span&gt;</value>
+          </text>
+          <text id="/covid_rumors/whos_at_risk_a:label">
+            <value>Quiz - Who's At Risk</value>
+          </text>
+          <text id="/covid_rumors/whos_at_risk_qq/whos_at_risk_q/false:label">
+            <value>False</value>
+          </text>
+          <text id="/covid_rumors/whos_at_risk_qq/whos_at_risk_q/true:label">
+            <value>True</value>
+          </text>
+          <text id="/covid_rumors/whos_at_risk_qq/whos_at_risk_q:label">
+            <value>Coronavirus does not attack people at a young age.</value>
+          </text>
+          <text id="/covid_rumors/whos_at_risk_qq:label">
+            <value>Quiz - Who's At Risk</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <covid_rumors delimiter="#" id="covid_rumors" prefix="J1!covid_rumors!" version="2020-05-11 16:20:40">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <source_visit_date/>
+          </inputs>
+          <patient_id tag="hidden"/>
+          <introduction>
+            <introduction/>
+          </introduction>
+          <our_responsibility>
+            <our_responsibility/>
+          </our_responsibility>
+          <reliable_sources>
+            <reliable_sources/>
+          </reliable_sources>
+          <what_to_do>
+            <what_to_do_header/>
+            <p1/>
+            <p2/>
+            <p3/>
+            <p4/>
+            <p5/>
+            <p6/>
+            <p7/>
+          </what_to_do>
+          <quiz_start>
+            <quiz_start/>
+          </quiz_start>
+          <whos_at_risk_qq>
+            <whos_at_risk_q/>
+          </whos_at_risk_qq>
+          <whos_at_risk_a>
+            <whos_at_risk_a_correct/>
+            <whos_at_risk_right/>
+            <whos_at_risk_wrong/>
+            <whos_at_risk_a_explination/>
+          </whos_at_risk_a>
+          <treatment_qq>
+            <treatment_q/>
+          </treatment_qq>
+          <treatment_a>
+            <treatment_a_correct/>
+            <treatment_correct/>
+            <treatment_wrong/>
+            <treatment_a_explination/>
+          </treatment_a>
+          <treatment2_qq>
+            <treatment2_q/>
+          </treatment2_qq>
+          <treatment2_a>
+            <treatment2_a_correct/>
+            <treatment2_correct/>
+            <treatment2_wrong/>
+            <treatment2_a_explination/>
+          </treatment2_a>
+          <treatment3_qq>
+            <treatment3_q/>
+          </treatment3_qq>
+          <treatment3_a>
+            <treatment3_a_correct/>
+            <treatment3_correct/>
+            <treatment3_wrong/>
+            <treatment3_a_explination/>
+          </treatment3_a>
+          <whos_at_risk2_qq>
+            <whos_at_risk2_q/>
+          </whos_at_risk2_qq>
+          <whos_at_risk2_a>
+            <whos_at_risk2_a_correct/>
+            <whos_at_risk2_correct/>
+            <whos_at_risk2_wrong/>
+            <whos_at_risk2_a_explination/>
+          </whos_at_risk2_a>
+          <prevention_qq>
+            <prevention_q/>
+          </prevention_qq>
+          <prevention_a>
+            <prevention_a_correct/>
+            <prevention_correct/>
+            <prevention_wrong/>
+            <prevention_a_explination/>
+          </prevention_a>
+          <summary>
+            <summary/>
+            <user_myth_q/>
+            <user_myth/>
+          </summary>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </covid_rumors>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/covid_rumors/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/covid_rumors/inputs/source" type="string"/>
+      <bind nodeset="/covid_rumors/inputs/source_id" type="string"/>
+      <bind nodeset="/covid_rumors/inputs/source_visit_date" type="string"/>
+      <bind calculate="../inputs/source_id" nodeset="/covid_rumors/patient_id" type="string"/>
+      <bind nodeset="/covid_rumors/introduction/introduction" readonly="true()" required="false()" type="string"/>
+      <bind nodeset="/covid_rumors/our_responsibility/our_responsibility" readonly="true()" required="false()" type="string"/>
+      <bind nodeset="/covid_rumors/reliable_sources/reliable_sources" readonly="true()" required="false()" type="string"/>
+      <bind nodeset="/covid_rumors/what_to_do/what_to_do_header" readonly="true()" required="false()" type="string"/>
+      <bind nodeset="/covid_rumors/what_to_do/p1" readonly="true()" type="string"/>
+      <bind nodeset="/covid_rumors/what_to_do/p2" readonly="true()" type="string"/>
+      <bind nodeset="/covid_rumors/what_to_do/p3" readonly="true()" type="string"/>
+      <bind nodeset="/covid_rumors/what_to_do/p4" readonly="true()" type="string"/>
+      <bind nodeset="/covid_rumors/what_to_do/p5" readonly="true()" type="string"/>
+      <bind nodeset="/covid_rumors/what_to_do/p6" readonly="true()" type="string"/>
+      <bind nodeset="/covid_rumors/what_to_do/p7" readonly="true()" type="string"/>
+      <bind nodeset="/covid_rumors/quiz_start/quiz_start" readonly="true()" required="false()" type="string"/>
+      <bind nodeset="/covid_rumors/whos_at_risk_qq/whos_at_risk_q" required="true()" type="select1"/>
+      <bind nodeset="/covid_rumors/whos_at_risk_a/whos_at_risk_a_correct" readonly="true()" required="false()" type="string"/>
+      <bind nodeset="/covid_rumors/whos_at_risk_a/whos_at_risk_right" readonly="true()" relevant=" /covid_rumors/whos_at_risk_qq/whos_at_risk_q  = 'false'" type="string"/>
+      <bind nodeset="/covid_rumors/whos_at_risk_a/whos_at_risk_wrong" readonly="true()" relevant=" /covid_rumors/whos_at_risk_qq/whos_at_risk_q  = 'true'" type="string"/>
+      <bind nodeset="/covid_rumors/whos_at_risk_a/whos_at_risk_a_explination" readonly="true()" type="string"/>
+      <bind nodeset="/covid_rumors/treatment_qq/treatment_q" required="true()" type="select1"/>
+      <bind nodeset="/covid_rumors/treatment_a/treatment_a_correct" readonly="true()" required="false()" type="string"/>
+      <bind nodeset="/covid_rumors/treatment_a/treatment_correct" readonly="true()" relevant=" /covid_rumors/treatment_qq/treatment_q  = 'true'" type="string"/>
+      <bind nodeset="/covid_rumors/treatment_a/treatment_wrong" readonly="true()" relevant=" /covid_rumors/treatment_qq/treatment_q  = 'false'" type="string"/>
+      <bind nodeset="/covid_rumors/treatment_a/treatment_a_explination" readonly="true()" type="string"/>
+      <bind nodeset="/covid_rumors/treatment2_qq/treatment2_q" required="true()" type="select1"/>
+      <bind nodeset="/covid_rumors/treatment2_a/treatment2_a_correct" readonly="true()" required="false()" type="string"/>
+      <bind nodeset="/covid_rumors/treatment2_a/treatment2_correct" readonly="true()" relevant=" /covid_rumors/treatment2_qq/treatment2_q  = 'false'" type="string"/>
+      <bind nodeset="/covid_rumors/treatment2_a/treatment2_wrong" readonly="true()" relevant=" /covid_rumors/treatment2_qq/treatment2_q  = 'true'" type="string"/>
+      <bind nodeset="/covid_rumors/treatment2_a/treatment2_a_explination" readonly="true()" type="string"/>
+      <bind nodeset="/covid_rumors/treatment3_qq/treatment3_q" required="true()" type="select1"/>
+      <bind nodeset="/covid_rumors/treatment3_a/treatment3_a_correct" readonly="true()" required="false()" type="string"/>
+      <bind nodeset="/covid_rumors/treatment3_a/treatment3_correct" readonly="true()" relevant=" /covid_rumors/treatment3_qq/treatment3_q  = 'false'" type="string"/>
+      <bind nodeset="/covid_rumors/treatment3_a/treatment3_wrong" readonly="true()" relevant=" /covid_rumors/treatment3_qq/treatment3_q  = 'true'" type="string"/>
+      <bind nodeset="/covid_rumors/treatment3_a/treatment3_a_explination" readonly="true()" type="string"/>
+      <bind nodeset="/covid_rumors/whos_at_risk2_qq/whos_at_risk2_q" required="true()" type="select1"/>
+      <bind nodeset="/covid_rumors/whos_at_risk2_a/whos_at_risk2_a_correct" readonly="true()" required="false()" type="string"/>
+      <bind nodeset="/covid_rumors/whos_at_risk2_a/whos_at_risk2_correct" readonly="true()" relevant=" /covid_rumors/whos_at_risk2_qq/whos_at_risk2_q  = 'true'" type="string"/>
+      <bind nodeset="/covid_rumors/whos_at_risk2_a/whos_at_risk2_wrong" readonly="true()" relevant=" /covid_rumors/whos_at_risk2_qq/whos_at_risk2_q  = 'false'" type="string"/>
+      <bind nodeset="/covid_rumors/whos_at_risk2_a/whos_at_risk2_a_explination" readonly="true()" type="string"/>
+      <bind nodeset="/covid_rumors/prevention_qq/prevention_q" required="true()" type="select1"/>
+      <bind nodeset="/covid_rumors/prevention_a/prevention_a_correct" readonly="true()" required="false()" type="string"/>
+      <bind nodeset="/covid_rumors/prevention_a/prevention_correct" readonly="true()" relevant=" /covid_rumors/prevention_qq/prevention_q  = 'false'" type="string"/>
+      <bind nodeset="/covid_rumors/prevention_a/prevention_wrong" readonly="true()" relevant=" /covid_rumors/prevention_qq/prevention_q  = 'true'" type="string"/>
+      <bind nodeset="/covid_rumors/prevention_a/prevention_a_explination" readonly="true()" type="string"/>
+      <bind nodeset="/covid_rumors/summary/summary" readonly="true()" required="false()" type="string"/>
+      <bind nodeset="/covid_rumors/summary/user_myth_q" readonly="true()" type="string"/>
+      <bind nodeset="/covid_rumors/summary/user_myth" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/covid_rumors/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/covid_rumors/inputs"/>
+    <group appearance="field-list" ref="/covid_rumors/introduction">
+      <label ref="jr:itext('/covid_rumors/introduction:label')"/>
+      <input ref="/covid_rumors/introduction/introduction">
+        <label ref="jr:itext('/covid_rumors/introduction/introduction:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_rumors/our_responsibility">
+      <label ref="jr:itext('/covid_rumors/our_responsibility:label')"/>
+      <input ref="/covid_rumors/our_responsibility/our_responsibility">
+        <label ref="jr:itext('/covid_rumors/our_responsibility/our_responsibility:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_rumors/reliable_sources">
+      <label ref="jr:itext('/covid_rumors/reliable_sources:label')"/>
+      <input ref="/covid_rumors/reliable_sources/reliable_sources">
+        <label ref="jr:itext('/covid_rumors/reliable_sources/reliable_sources:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_rumors/what_to_do">
+      <label ref="jr:itext('/covid_rumors/what_to_do:label')"/>
+      <input ref="/covid_rumors/what_to_do/what_to_do_header">
+        <label ref="jr:itext('/covid_rumors/what_to_do/what_to_do_header:label')"/>
+      </input>
+      <input ref="/covid_rumors/what_to_do/p1">
+        <label ref="jr:itext('/covid_rumors/what_to_do/p1:label')"/>
+      </input>
+      <input ref="/covid_rumors/what_to_do/p2">
+        <label ref="jr:itext('/covid_rumors/what_to_do/p2:label')"/>
+      </input>
+      <input ref="/covid_rumors/what_to_do/p3">
+        <label ref="jr:itext('/covid_rumors/what_to_do/p3:label')"/>
+      </input>
+      <input ref="/covid_rumors/what_to_do/p4">
+        <label ref="jr:itext('/covid_rumors/what_to_do/p4:label')"/>
+      </input>
+      <input ref="/covid_rumors/what_to_do/p5">
+        <label ref="jr:itext('/covid_rumors/what_to_do/p5:label')"/>
+      </input>
+      <input ref="/covid_rumors/what_to_do/p6">
+        <label ref="jr:itext('/covid_rumors/what_to_do/p6:label')"/>
+      </input>
+      <input ref="/covid_rumors/what_to_do/p7">
+        <label ref="jr:itext('/covid_rumors/what_to_do/p7:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_rumors/quiz_start">
+      <label ref="jr:itext('/covid_rumors/quiz_start:label')"/>
+      <input ref="/covid_rumors/quiz_start/quiz_start">
+        <label ref="jr:itext('/covid_rumors/quiz_start/quiz_start:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_rumors/whos_at_risk_qq">
+      <label ref="jr:itext('/covid_rumors/whos_at_risk_qq:label')"/>
+      <select1 ref="/covid_rumors/whos_at_risk_qq/whos_at_risk_q">
+        <label ref="jr:itext('/covid_rumors/whos_at_risk_qq/whos_at_risk_q:label')"/>
+        <item>
+          <label ref="jr:itext('/covid_rumors/whos_at_risk_qq/whos_at_risk_q/true:label')"/>
+          <value>true</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/covid_rumors/whos_at_risk_qq/whos_at_risk_q/false:label')"/>
+          <value>false</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/covid_rumors/whos_at_risk_a">
+      <label ref="jr:itext('/covid_rumors/whos_at_risk_a:label')"/>
+      <input ref="/covid_rumors/whos_at_risk_a/whos_at_risk_a_correct">
+        <label ref="jr:itext('/covid_rumors/whos_at_risk_a/whos_at_risk_a_correct:label')"/>
+      </input>
+      <input ref="/covid_rumors/whos_at_risk_a/whos_at_risk_right">
+        <label ref="jr:itext('/covid_rumors/whos_at_risk_a/whos_at_risk_right:label')"/>
+      </input>
+      <input ref="/covid_rumors/whos_at_risk_a/whos_at_risk_wrong">
+        <label ref="jr:itext('/covid_rumors/whos_at_risk_a/whos_at_risk_wrong:label')"/>
+      </input>
+      <input ref="/covid_rumors/whos_at_risk_a/whos_at_risk_a_explination">
+        <label ref="jr:itext('/covid_rumors/whos_at_risk_a/whos_at_risk_a_explination:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_rumors/treatment_qq">
+      <label ref="jr:itext('/covid_rumors/treatment_qq:label')"/>
+      <select1 ref="/covid_rumors/treatment_qq/treatment_q">
+        <label ref="jr:itext('/covid_rumors/treatment_qq/treatment_q:label')"/>
+        <item>
+          <label ref="jr:itext('/covid_rumors/treatment_qq/treatment_q/true:label')"/>
+          <value>true</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/covid_rumors/treatment_qq/treatment_q/false:label')"/>
+          <value>false</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/covid_rumors/treatment_a">
+      <label ref="jr:itext('/covid_rumors/treatment_a:label')"/>
+      <input ref="/covid_rumors/treatment_a/treatment_a_correct">
+        <label ref="jr:itext('/covid_rumors/treatment_a/treatment_a_correct:label')"/>
+      </input>
+      <input ref="/covid_rumors/treatment_a/treatment_correct">
+        <label ref="jr:itext('/covid_rumors/treatment_a/treatment_correct:label')"/>
+      </input>
+      <input ref="/covid_rumors/treatment_a/treatment_wrong">
+        <label ref="jr:itext('/covid_rumors/treatment_a/treatment_wrong:label')"/>
+      </input>
+      <input ref="/covid_rumors/treatment_a/treatment_a_explination">
+        <label ref="jr:itext('/covid_rumors/treatment_a/treatment_a_explination:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_rumors/treatment2_qq">
+      <label ref="jr:itext('/covid_rumors/treatment2_qq:label')"/>
+      <select1 ref="/covid_rumors/treatment2_qq/treatment2_q">
+        <label ref="jr:itext('/covid_rumors/treatment2_qq/treatment2_q:label')"/>
+        <item>
+          <label ref="jr:itext('/covid_rumors/treatment2_qq/treatment2_q/true:label')"/>
+          <value>true</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/covid_rumors/treatment2_qq/treatment2_q/false:label')"/>
+          <value>false</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/covid_rumors/treatment2_a">
+      <label ref="jr:itext('/covid_rumors/treatment2_a:label')"/>
+      <input ref="/covid_rumors/treatment2_a/treatment2_a_correct">
+        <label ref="jr:itext('/covid_rumors/treatment2_a/treatment2_a_correct:label')"/>
+      </input>
+      <input ref="/covid_rumors/treatment2_a/treatment2_correct">
+        <label ref="jr:itext('/covid_rumors/treatment2_a/treatment2_correct:label')"/>
+      </input>
+      <input ref="/covid_rumors/treatment2_a/treatment2_wrong">
+        <label ref="jr:itext('/covid_rumors/treatment2_a/treatment2_wrong:label')"/>
+      </input>
+      <input ref="/covid_rumors/treatment2_a/treatment2_a_explination">
+        <label ref="jr:itext('/covid_rumors/treatment2_a/treatment2_a_explination:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_rumors/treatment3_qq">
+      <label ref="jr:itext('/covid_rumors/treatment3_qq:label')"/>
+      <select1 ref="/covid_rumors/treatment3_qq/treatment3_q">
+        <label ref="jr:itext('/covid_rumors/treatment3_qq/treatment3_q:label')"/>
+        <item>
+          <label ref="jr:itext('/covid_rumors/treatment3_qq/treatment3_q/true:label')"/>
+          <value>true</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/covid_rumors/treatment3_qq/treatment3_q/false:label')"/>
+          <value>false</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/covid_rumors/treatment3_a">
+      <label ref="jr:itext('/covid_rumors/treatment3_a:label')"/>
+      <input ref="/covid_rumors/treatment3_a/treatment3_a_correct">
+        <label ref="jr:itext('/covid_rumors/treatment3_a/treatment3_a_correct:label')"/>
+      </input>
+      <input ref="/covid_rumors/treatment3_a/treatment3_correct">
+        <label ref="jr:itext('/covid_rumors/treatment3_a/treatment3_correct:label')"/>
+      </input>
+      <input ref="/covid_rumors/treatment3_a/treatment3_wrong">
+        <label ref="jr:itext('/covid_rumors/treatment3_a/treatment3_wrong:label')"/>
+      </input>
+      <input ref="/covid_rumors/treatment3_a/treatment3_a_explination">
+        <label ref="jr:itext('/covid_rumors/treatment3_a/treatment3_a_explination:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_rumors/whos_at_risk2_qq">
+      <label ref="jr:itext('/covid_rumors/whos_at_risk2_qq:label')"/>
+      <select1 ref="/covid_rumors/whos_at_risk2_qq/whos_at_risk2_q">
+        <label ref="jr:itext('/covid_rumors/whos_at_risk2_qq/whos_at_risk2_q:label')"/>
+        <item>
+          <label ref="jr:itext('/covid_rumors/whos_at_risk2_qq/whos_at_risk2_q/true:label')"/>
+          <value>true</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/covid_rumors/whos_at_risk2_qq/whos_at_risk2_q/false:label')"/>
+          <value>false</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/covid_rumors/whos_at_risk2_a">
+      <label ref="jr:itext('/covid_rumors/whos_at_risk2_a:label')"/>
+      <input ref="/covid_rumors/whos_at_risk2_a/whos_at_risk2_a_correct">
+        <label ref="jr:itext('/covid_rumors/whos_at_risk2_a/whos_at_risk2_a_correct:label')"/>
+      </input>
+      <input ref="/covid_rumors/whos_at_risk2_a/whos_at_risk2_correct">
+        <label ref="jr:itext('/covid_rumors/whos_at_risk2_a/whos_at_risk2_correct:label')"/>
+      </input>
+      <input ref="/covid_rumors/whos_at_risk2_a/whos_at_risk2_wrong">
+        <label ref="jr:itext('/covid_rumors/whos_at_risk2_a/whos_at_risk2_wrong:label')"/>
+      </input>
+      <input ref="/covid_rumors/whos_at_risk2_a/whos_at_risk2_a_explination">
+        <label ref="jr:itext('/covid_rumors/whos_at_risk2_a/whos_at_risk2_a_explination:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_rumors/prevention_qq">
+      <label ref="jr:itext('/covid_rumors/prevention_qq:label')"/>
+      <select1 ref="/covid_rumors/prevention_qq/prevention_q">
+        <label ref="jr:itext('/covid_rumors/prevention_qq/prevention_q:label')"/>
+        <item>
+          <label ref="jr:itext('/covid_rumors/prevention_qq/prevention_q/true:label')"/>
+          <value>true</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/covid_rumors/prevention_qq/prevention_q/false:label')"/>
+          <value>false</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/covid_rumors/prevention_a">
+      <label ref="jr:itext('/covid_rumors/prevention_a:label')"/>
+      <input ref="/covid_rumors/prevention_a/prevention_a_correct">
+        <label ref="jr:itext('/covid_rumors/prevention_a/prevention_a_correct:label')"/>
+      </input>
+      <input ref="/covid_rumors/prevention_a/prevention_correct">
+        <label ref="jr:itext('/covid_rumors/prevention_a/prevention_correct:label')"/>
+      </input>
+      <input ref="/covid_rumors/prevention_a/prevention_wrong">
+        <label ref="jr:itext('/covid_rumors/prevention_a/prevention_wrong:label')"/>
+      </input>
+      <input ref="/covid_rumors/prevention_a/prevention_a_explination">
+        <label ref="jr:itext('/covid_rumors/prevention_a/prevention_a_explination:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_rumors/summary">
+      <label ref="jr:itext('/covid_rumors/summary:label')"/>
+      <input ref="/covid_rumors/summary/summary">
+        <label ref="jr:itext('/covid_rumors/summary/summary:label')"/>
+      </input>
+      <input ref="/covid_rumors/summary/user_myth_q">
+        <label ref="jr:itext('/covid_rumors/summary/user_myth_q:label')"/>
+      </input>
+      <input ref="/covid_rumors/summary/user_myth"/>
+    </group>
+  </h:body>
+</h:html>
