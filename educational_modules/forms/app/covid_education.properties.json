@@ -2,7 +2,7 @@
     "icon": "icon-healthcare",
     "title": "COVID Education",
     "context": {
-        "person": false,
+        "person": true,
         "place": false
     }
 }
