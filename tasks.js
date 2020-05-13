@@ -1,5 +1,12 @@
 module.exports = [
 
+
+  /****
+   Use case :  Remote On-boarding (with definite due dates)
+   1. EBS training evaluation
+   2. Protocol update summary
+   3. Adapted workflow
+   ****/
   {
     title: 'EBS training evaluation',
     name: 'ebs-training',
@@ -14,8 +21,7 @@ module.exports = [
       end: 5,
       dueDate: function () {
         return new Date('2020-05-30');
-      },         
-      // days: 14
+      },
     }],
     resolvedIf: function (c) {
       return c.reports.some(report => report.form === 'ebs_assessment_training' && Utils.getField(report, 'assessment_passed') === 'yes'); 
@@ -36,16 +42,31 @@ module.exports = [
       end: 5,
       dueDate: function () {
         return new Date('2020-05-18');
-      },      
-    // days: 14
+      },
     }],
     resolvedIf: function(c) {
       return c.reports.some((report) => report.form === 'update_summary');
-      // Utils.isFormSubmittedInWindow(
-      //   c.reports, 'update_summary',
-      //   Utils.addDate(dueDate, event.start * -1).getTime(),
-      //   Utils.addDate(dueDate, event.end).getTime()
-      // );
+    }
+  },
+
+  {
+    title: 'Adapted Workflow',
+    name: 'adapted-workflow',
+    appliesTo: 'contacts',
+    appliesToType: ['person'],
+    appliesIf: c => c.contact.role === 'chw',
+    actions: [{
+      form: 'adapted_workflow'
+    }],
+    events: [{
+      start: new Date('2020-05-18') - new Date(),
+      end: 5,
+      dueDate: function () {
+        return new Date('2020-05-18');
+      },
+    }],
+    resolvedIf: function(c) {
+      return c.reports.some((report) => report.form === 'adapted_workflow');
     }
   },
     /****

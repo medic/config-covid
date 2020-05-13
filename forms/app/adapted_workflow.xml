@@ -1,0 +1,347 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Adapted Workflow</h:title>
+    <model>
+      <itext>
+        <translation lang="fr">
+          <text id="/adapted_workflow/danger_signs/malnutrition:jr:requiredMsg">
+            <value>-</value>
+          </text>
+          <text id="/adapted_workflow/danger_signs/malnutrition/yes:label">
+            <value>-</value>
+          </text>
+          <text id="/adapted_workflow/module_review/symptom_1:label">
+            <value>-</value>
+          </text>
+          <text id="/adapted_workflow/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/adapted_workflow/care_protocol/no_ppe_note:label">
+            <value>-</value>
+          </text>
+          <text id="/adapted_workflow/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/adapted_workflow/module_review/symptom_2:label">
+            <value>-</value>
+          </text>
+          <text id="/adapted_workflow/follow_up_details:label">
+            <value>-</value>
+          </text>
+          <text id="/adapted_workflow/follow_up_details/follow_up_method/with_ppe:label">
+            <value>-</value>
+          </text>
+          <text id="/adapted_workflow/inputs/user:label">
+            <value>User</value>
+          </text>
+          <text id="/adapted_workflow/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/adapted_workflow/module_review/refer_to_facility:label">
+            <value>-</value>
+          </text>
+          <text id="/adapted_workflow/care_protocol:label">
+            <value>-</value>
+          </text>
+          <text id="/adapted_workflow/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/adapted_workflow/inputs/contact/_id:label">
+            <value>_id</value>
+          </text>
+          <text id="/adapted_workflow/module_review/signs_and_symptoms_head:label">
+            <value>-</value>
+          </text>
+          <text id="/adapted_workflow/follow_up_details/follow_up_method/by_phone:label">
+            <value>-</value>
+          </text>
+          <text id="/adapted_workflow/module_review/malnourished:label">
+            <value>-</value>
+          </text>
+          <text id="/adapted_workflow/danger_signs:label">
+            <value>-</value>
+          </text>
+          <text id="/adapted_workflow/module_review:label">
+            <value>-</value>
+          </text>
+          <text id="/adapted_workflow/care_protocol/care_notes:label">
+            <value>-</value>
+          </text>
+          <text id="/adapted_workflow/module_review/submit:label">
+            <value>-</value>
+          </text>
+          <text id="/adapted_workflow/follow_up_details/follow_up_method/without_ppe:label">
+            <value>-</value>
+          </text>
+          <text id="/adapted_workflow/follow_up_details/follow_up_method:label">
+            <value>-</value>
+          </text>
+          <text id="/adapted_workflow/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/adapted_workflow/danger_signs/malnutrition/no:label">
+            <value>-</value>
+          </text>
+          <text id="/adapted_workflow/module_review/follow_up_header:label">
+            <value>-</value>
+          </text>
+          <text id="/adapted_workflow/module_review/follow_up_note:label">
+            <value>-</value>
+          </text>
+          <text id="/adapted_workflow/danger_signs/malnutrition:label">
+            <value>-</value>
+          </text>
+          <text id="/adapted_workflow/care_protocol/distancing_note:label">
+            <value>-</value>
+          </text>
+        </translation>
+        <translation lang="en">
+          <text id="/adapted_workflow/danger_signs/malnutrition:jr:requiredMsg">
+            <value>This is a required field</value>
+          </text>
+          <text id="/adapted_workflow/danger_signs/malnutrition/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/adapted_workflow/module_review/symptom_1:label">
+            <value>Symptom 1</value>
+          </text>
+          <text id="/adapted_workflow/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/adapted_workflow/care_protocol/no_ppe_note:label">
+            <value>When assessing your patients in person without PPE please do not enter the house.</value>
+          </text>
+          <text id="/adapted_workflow/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/adapted_workflow/module_review/symptom_2:label">
+            <value>Symptom 2</value>
+          </text>
+          <text id="/adapted_workflow/follow_up_details:label">
+            <value>Follow up</value>
+          </text>
+          <text id="/adapted_workflow/follow_up_details/follow_up_method/with_ppe:label">
+            <value>In person with PPE</value>
+          </text>
+          <text id="/adapted_workflow/inputs/user:label">
+            <value>User</value>
+          </text>
+          <text id="/adapted_workflow/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/adapted_workflow/module_review/refer_to_facility:label">
+            <value>Refer urgently to a health facility&lt;i class="fa fa-warning"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/adapted_workflow/care_protocol:label">
+            <value>Care protocol</value>
+          </text>
+          <text id="/adapted_workflow/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/adapted_workflow/inputs/contact/_id:label">
+            <value>_id</value>
+          </text>
+          <text id="/adapted_workflow/module_review/signs_and_symptoms_head:label">
+            <value>Signs and symptoms</value>
+          </text>
+          <text id="/adapted_workflow/follow_up_details/follow_up_method/by_phone:label">
+            <value>By phone</value>
+          </text>
+          <text id="/adapted_workflow/module_review/malnourished:label">
+            <value>Appears malnourished</value>
+          </text>
+          <text id="/adapted_workflow/danger_signs:label">
+            <value>Danger signs</value>
+          </text>
+          <text id="/adapted_workflow/care_protocol/care_notes:label">
+            <value>**Your well-being and safety is important**</value>
+          </text>
+          <text id="/adapted_workflow/module_review/submit:label">
+            <value>&lt;h4 style="text-align:center;"&gt;Be sure to click the Submit button to complete this action.&lt;/h4&gt;</value>
+          </text>
+          <text id="/adapted_workflow/follow_up_details/follow_up_method/without_ppe:label">
+            <value>In person  without PPE</value>
+          </text>
+          <text id="/adapted_workflow/follow_up_details/follow_up_method:label">
+            <value>How are you following up?</value>
+          </text>
+          <text id="/adapted_workflow/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/adapted_workflow/danger_signs/malnutrition/no:label">
+            <value>No</value>
+          </text>
+          <text id="/adapted_workflow/module_review/follow_up_header:label">
+            <value>Follow up</value>
+          </text>
+          <text id="/adapted_workflow/module_review/follow_up_note:label">
+            <value>Follow up with the child in 3 days to ensure the child went to the nearest health facility for treatment.</value>
+          </text>
+          <text id="/adapted_workflow/danger_signs/malnutrition:label">
+            <value>Appears malnourished</value>
+          </text>
+          <text id="/adapted_workflow/care_protocol/distancing_note:label">
+            <value>Ensure a safe distance of 2 metres and follow no touch protocols.</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <adapted_workflow delimiter="#" id="adapted_workflow" prefix="J1!adapted_workflow!" version="2020-05-11  10-52">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <user/>
+            <contact>
+              <_id/>
+            </contact>
+          </inputs>
+          <patient_id/>
+          <follow_up_details>
+            <follow_up_method/>
+          </follow_up_details>
+          <care_protocol>
+            <care_notes/>
+            <no_ppe_note/>
+            <distancing_note/>
+          </care_protocol>
+          <danger_signs>
+            <malnutrition/>
+          </danger_signs>
+          <module_review>
+            <submit/>
+            <signs_and_symptoms_head/>
+            <symptom_1/>
+            <symptom_2/>
+            <malnourished/>
+            <refer_to_facility/>
+            <follow_up_header/>
+            <follow_up_note/>
+          </module_review>
+          <meta>
+            <instanceID/>
+          </meta>
+        </adapted_workflow>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/adapted_workflow/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/adapted_workflow/inputs/source" type="string"/>
+      <bind nodeset="/adapted_workflow/inputs/source_id" type="string"/>
+      <bind nodeset="/adapted_workflow/inputs/contact/_id" type="db:person"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/adapted_workflow/patient_id" type="string"/>
+      <bind nodeset="/adapted_workflow/follow_up_details/follow_up_method" required="true()" type="select1"/>
+      <bind nodeset="/adapted_workflow/care_protocol/care_notes" readonly="true()" type="string"/>
+      <bind nodeset="/adapted_workflow/care_protocol/no_ppe_note" readonly="true()" type="string"/>
+      <bind nodeset="/adapted_workflow/care_protocol/distancing_note" readonly="true()" type="string"/>
+      <bind jr:requiredMsg="jr:itext('/adapted_workflow/danger_signs/malnutrition:jr:requiredMsg')" nodeset="/adapted_workflow/danger_signs/malnutrition" required="true()" type="select1"/>
+      <bind nodeset="/adapted_workflow/module_review/submit" readonly="true()" type="string"/>
+      <bind nodeset="/adapted_workflow/module_review/signs_and_symptoms_head" readonly="true()" type="string"/>
+      <bind nodeset="/adapted_workflow/module_review/symptom_1" readonly="true()" type="string"/>
+      <bind nodeset="/adapted_workflow/module_review/symptom_2" readonly="true()" type="string"/>
+      <bind nodeset="/adapted_workflow/module_review/malnourished" readonly="true()" relevant="selected( /adapted_workflow/danger_signs/malnutrition , 'yes')" type="string"/>
+      <bind nodeset="/adapted_workflow/module_review/refer_to_facility" readonly="true()" type="string"/>
+      <bind nodeset="/adapted_workflow/module_review/follow_up_header" readonly="true()" type="string"/>
+      <bind nodeset="/adapted_workflow/module_review/follow_up_note" readonly="true()" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/adapted_workflow/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/adapted_workflow/inputs">
+      <label ref="jr:itext('/adapted_workflow/inputs:label')"/>
+      <input appearance="hidden" ref="/adapted_workflow/inputs/source">
+        <label ref="jr:itext('/adapted_workflow/inputs/source:label')"/>
+      </input>
+      <input appearance="hidden" ref="/adapted_workflow/inputs/source_id">
+        <label ref="jr:itext('/adapted_workflow/inputs/source_id:label')"/>
+      </input>
+      <group ref="/adapted_workflow/inputs/user">
+        <label ref="jr:itext('/adapted_workflow/inputs/user:label')"/>
+      </group>
+      <group ref="/adapted_workflow/inputs/contact">
+        <label ref="jr:itext('/adapted_workflow/inputs/contact:label')"/>
+        <input appearance="hidden" ref="/adapted_workflow/inputs/contact/_id">
+          <label ref="jr:itext('/adapted_workflow/inputs/contact/_id:label')"/>
+        </input>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/adapted_workflow/follow_up_details">
+      <label ref="jr:itext('/adapted_workflow/follow_up_details:label')"/>
+      <select1 ref="/adapted_workflow/follow_up_details/follow_up_method">
+        <label ref="jr:itext('/adapted_workflow/follow_up_details/follow_up_method:label')"/>
+        <item>
+          <label ref="jr:itext('/adapted_workflow/follow_up_details/follow_up_method/with_ppe:label')"/>
+          <value>with_ppe</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/adapted_workflow/follow_up_details/follow_up_method/without_ppe:label')"/>
+          <value>without_ppe</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/adapted_workflow/follow_up_details/follow_up_method/by_phone:label')"/>
+          <value>by_phone</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/adapted_workflow/care_protocol">
+      <label ref="jr:itext('/adapted_workflow/care_protocol:label')"/>
+      <input ref="/adapted_workflow/care_protocol/care_notes">
+        <label ref="jr:itext('/adapted_workflow/care_protocol/care_notes:label')"/>
+      </input>
+      <input ref="/adapted_workflow/care_protocol/no_ppe_note">
+        <label ref="jr:itext('/adapted_workflow/care_protocol/no_ppe_note:label')"/>
+      </input>
+      <input ref="/adapted_workflow/care_protocol/distancing_note">
+        <label ref="jr:itext('/adapted_workflow/care_protocol/distancing_note:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/adapted_workflow/danger_signs">
+      <label ref="jr:itext('/adapted_workflow/danger_signs:label')"/>
+      <select1 ref="/adapted_workflow/danger_signs/malnutrition">
+        <label ref="jr:itext('/adapted_workflow/danger_signs/malnutrition:label')"/>
+        <item>
+          <label ref="jr:itext('/adapted_workflow/danger_signs/malnutrition/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/adapted_workflow/danger_signs/malnutrition/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list summary" ref="/adapted_workflow/module_review">
+      <label ref="jr:itext('/adapted_workflow/module_review:label')"/>
+      <input ref="/adapted_workflow/module_review/submit">
+        <label ref="jr:itext('/adapted_workflow/module_review/submit:label')"/>
+      </input>
+      <input appearance="h1 yellow" ref="/adapted_workflow/module_review/signs_and_symptoms_head">
+        <label ref="jr:itext('/adapted_workflow/module_review/signs_and_symptoms_head:label')"/>
+      </input>
+      <input appearance="li" ref="/adapted_workflow/module_review/symptom_1">
+        <label ref="jr:itext('/adapted_workflow/module_review/symptom_1:label')"/>
+      </input>
+      <input appearance="li" ref="/adapted_workflow/module_review/symptom_2">
+        <label ref="jr:itext('/adapted_workflow/module_review/symptom_2:label')"/>
+      </input>
+      <input appearance="li" ref="/adapted_workflow/module_review/malnourished">
+        <label ref="jr:itext('/adapted_workflow/module_review/malnourished:label')"/>
+      </input>
+      <input appearance="h1 red" ref="/adapted_workflow/module_review/refer_to_facility">
+        <label ref="jr:itext('/adapted_workflow/module_review/refer_to_facility:label')"/>
+      </input>
+      <input appearance="h1 green" ref="/adapted_workflow/module_review/follow_up_header">
+        <label ref="jr:itext('/adapted_workflow/module_review/follow_up_header:label')"/>
+      </input>
+      <input ref="/adapted_workflow/module_review/follow_up_note">
+        <label ref="jr:itext('/adapted_workflow/module_review/follow_up_note:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

@@ -100,13 +100,10 @@
           <text id="/update_summary_context/inputs:label">
             <value>Patient</value>
           </text>
-          <text id="/update_summary_context/summary:label">
-            <value>Summary</value>
-          </text>
         </translation>
       </itext>
       <instance>
-        <update_summary_context delimiter="#" id="update_summary_context" prefix="J1!update_summary_context!" version="2020-05-04  17-16">
+        <update_summary_context delimiter="#" id="update_summary_context" prefix="J1!update_summary_context!" version="2020-05-11  10-35">
           <inputs>
             <meta>
               <location>

@@ -82,9 +82,6 @@
           <text id="/update_summary/update_summary/partner_protocol:label">
             <value>**[Partner]'s protocols**</value>
           </text>
-          <text id="/update_summary/summary:label">
-            <value>Summary</value>
-          </text>
           <text id="/update_summary/inputs/contact:label">
             <value>Contact</value>
           </text>
@@ -106,7 +103,7 @@
         </translation>
       </itext>
       <instance>
-        <update_summary delimiter="#" id="update_summary" prefix="J1!update_summary!" version="2020-05-03  20-57">
+        <update_summary delimiter="#" id="update_summary" prefix="J1!update_summary!" version="2020-05-11  10-34">
           <inputs>
             <meta>
               <location>
