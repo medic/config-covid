@@ -1,13 +1,10 @@
-CREATE OR REPLACE VIEW chtview_signal_investigation AS
+CREATE OR REPLACE VIEW ebsview_signal_investigation AS
 (
     SELECT
         doc ->> '_id' AS uuid,
         doc ->> 'form' AS form,
         doc #>> '{contact,_id}' AS reported_by,
         doc #>> '{contact,parent,_id}' AS reported_by_parent,
-        doc #>> '{geolocation,latitude}' AS latitude,
-        doc #>> '{geolocation,longitude}' AS longitude,
-        to_timestamp((NULLIF(couchdb.doc ->> 'reported_date'::text, ''::text)::bigint / 1000)::double precision) AS reported,
         (doc #>> '{fields,signal_id}')::int AS signal_id,
         (doc #>> '{fields, scdsc_investigation, signal_investigated}')::text AS signal_investigated,
         (doc #>> '{fields, scdsc_investigation, cause}')::text AS cause,
@@ -40,9 +37,14 @@ CREATE OR REPLACE VIEW chtview_signal_investigation AS
         (doc #>> '{fields, scdsc_investigation, no_human_cases_hospitalized}')::int AS num_human_cases_hospitalized,
         (doc #>> '{fields, scdsc_investigation, no_human_deaths}')::int AS num_human_deaths,
         (doc #>> '{fields, scdsc_investigation, event_risk_classification}')::text AS event_risk_classification,
-        (doc #>> '{fields, scdsc_investigation, response_recommendations}')::text AS response_recommendations
+        (doc #>> '{fields, scdsc_investigation, response_recommendations}')::text AS response_recommendations,
+        doc #>> '{geolocation,latitude}' AS latitude,
+        doc #>> '{geolocation,longitude}' AS longitude,
+        to_timestamp((NULLIF(couchdb.doc ->> 'reported_date'::text, ''::text)::bigint / 1000)::double precision) AS reported
     FROM
         couchdb
     WHERE
         doc ->> 'form' = 'scdsc_investigation'
 );
+
+ALTER VIEW ebsview_signal_investigation OWNER TO full_access;
