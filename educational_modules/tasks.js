@@ -1,13 +1,8 @@
 const isCovidEducationValid = (report) => {
-  //if(${hand_washing_q} = ‘both_soap_and_water_or_hand_saniter’ and ${hand_washing_q2} = ‘at_least_20_seconds’ and ${sneezing_coughing_q} = ‘cough_into_your_elbow_or_tissue’ and ${household_q} = ‘a_disinfectant’ and ${social_distancing_q} = ‘at_least_2_meters’, ‘yes’, ‘no’) 
   if (!report) {
     return false;
   }
-  console.log(Utils.getField(report, 'learning_quiz'));
   const results = Utils.getField(report, 'learning_quiz');
-  console.log(results.hand_washing_q);
-  console.log(results.hand_washing_q2);
-  console.log(results.sneezing_coughing_q);
   if (results.hand_washing_q !== 'both_soap_and_water_or_hand_saniter') {
     return false;
   } else if (results.hand_washing_q2 !== 'at_least_20_seconds') {
@@ -20,8 +15,6 @@ const isCovidEducationValid = (report) => {
     return false;
   }
   return true;
-
-
 };
 
 
@@ -239,7 +232,7 @@ module.exports = [
     events: [{
       days: 1,
       start: 0,
-      end: 14
+      end: 100
     }],
     actions: [{
       type: 'report',
@@ -263,7 +256,7 @@ module.exports = [
     events: [{
       days: 1,
       start: 0,
-      end: 14
+      end: 100
     }],
     actions: [{
       type: 'report',
