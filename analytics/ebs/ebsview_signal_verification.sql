@@ -5,7 +5,7 @@ CREATE OR REPLACE VIEW ebsview_signal_verification AS
         doc ->> 'form' AS form,
         doc #>> '{contact,_id}' AS reported_by,
         doc #>> '{contact,parent,_id}' AS reported_by_parent,
-        (doc #>> '{fields,signal_id}')::int AS signal_id,
+        (doc #>> '{fields,signal_id}')::text AS signal_id,
         (doc #>> '{fields, signal_verification, signal_desc}')::text AS signal_desc,
         (doc #>> '{fields, signal_verification, signal_type}')::text AS signal_confirmation,
         (doc #>> '{fields, signal_verification, signal_start_date}')::date as signal_start_date,

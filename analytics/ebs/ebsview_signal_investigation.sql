@@ -5,7 +5,7 @@ CREATE OR REPLACE VIEW ebsview_signal_investigation AS
         doc ->> 'form' AS form,
         doc #>> '{contact,_id}' AS reported_by,
         doc #>> '{contact,parent,_id}' AS reported_by_parent,
-        (doc #>> '{fields,signal_id}')::int AS signal_id,
+        (doc #>> '{fields,signal_id}')::text AS signal_id,
         (doc #>> '{fields, scdsc_investigation, signal_investigated}')::text AS signal_investigated,
         (doc #>> '{fields, scdsc_investigation, cause}')::text AS cause,
         CASE
