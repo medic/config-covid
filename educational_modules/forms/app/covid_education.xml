@@ -138,13 +138,13 @@
             <value>&lt;span style="color:green"&gt;- Handwashing (and the required time to be effective at it)&lt;/span&gt;</value>
           </text>
           <text id="/covid_education/summary/hand_washing_pass:label">
-            <value>&lt;span style="color:green"&gt;- Handwashing (and it's ability to prevent COVID)&lt;/span&gt;</value>
+            <value>&lt;span style="color:green"&gt;- Handwashing (and its ability to prevent COVID)&lt;/span&gt;</value>
           </text>
           <text id="/covid_education/summary/hand_washing_sug2:label">
             <value>&lt;span style="color:red"&gt;- Handwashing (and the required time to be effective at it)&lt;/span&gt;</value>
           </text>
           <text id="/covid_education/summary/hand_washing_sug:label">
-            <value>&lt;span style="color:red"&gt;- Handwashing (and it's ability to prevent COVID)&lt;/span&gt;</value>
+            <value>&lt;span style="color:red"&gt;- Handwashing (and its ability to prevent COVID)&lt;/span&gt;</value>
           </text>
           <text id="/covid_education/summary/household_pass:label">
             <value>&lt;span style="color:green"&gt;- Household&lt;/span&gt;</value>
@@ -156,7 +156,7 @@
             <value>You have passed the module, congratulations!</value>
           </text>
           <text id="/covid_education/summary/sneezing_coughing_pass:label">
-            <value>&lt;span style="color:green"&gt;- Sneezing/Coughing&lt;/span&gt;</value>
+            <value>&lt;span style="color:green"&gt;- Sneezing/Coughing &lt;/span&gt;</value>
           </text>
           <text id="/covid_education/summary/sneezing_coughing_sug:label">
             <value>&lt;span style="color:red"&gt;- Sneezing/Coughing&lt;/span&gt;</value>
@@ -165,7 +165,7 @@
             <value>&lt;span style="color:green"&gt;- Social Distancing&lt;/span&gt;</value>
           </text>
           <text id="/covid_education/summary/social_distancing_sug:label">
-            <value>&lt;span style="color:red"&gt;- Social Distancing&lt;/span&gt;</value>
+            <value>&lt;span style="color:red"&gt;- Social Distancing &lt;/span&gt;</value>
           </text>
           <text id="/covid_education/summary:label">
             <value>Summary</value>
@@ -173,7 +173,7 @@
         </translation>
       </itext>
       <instance>
-        <covid_education delimiter="#" id="covid_education" prefix="J1!covid_education!" version="2020-05-10 20:47:00">
+        <covid_education delimiter="#" id="covid_education" prefix="J1!covid_education!" version="2020-05-17 22:47:20">
           <inputs>
             <meta>
               <location>

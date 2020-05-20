@@ -33,7 +33,7 @@
             <value>You shouldn't use strong disinfectant to clean your body. Washing your hands thoroughly with soap and water or rubbing an alcohol-based sanitizer on them will stop the virus spreading. Using stronger chemicals on your skin can be dangerous. Never drink disinfectant or hand sanitizer as this can do serious damage.</value>
           </text>
           <text id="/covid_rumors/prevention_a/prevention_correct:label">
-            <value>&lt;span style="color:green"&gt;You Answered: False&lt;/span&gt;</value>
+            <value>&lt;span style="color:green"&gt;You Answered: False &lt;/span&gt;</value>
           </text>
           <text id="/covid_rumors/prevention_a/prevention_wrong:label">
             <value>&lt;span style="color:red"&gt;You Answered: True&lt;/span&gt;</value>
@@ -60,7 +60,7 @@
             <value>Quiz Start</value>
           </text>
           <text id="/covid_rumors/reliable_sources/reliable_sources:label">
-            <value>Stay 2 meters away from others, to not come in contact with infected droplets. Do not shake hands or hug. If you are greeting others, wave instead.</value>
+            <value>To obtain reliable sources of information, please check with your supervisor. Obtain input from WHO and partner organizations. Always compare information you are hearing to a known reliable source.</value>
           </text>
           <text id="/covid_rumors/reliable_sources:label">
             <value>Reliable Sources</value>
@@ -68,7 +68,7 @@
           <text id="/covid_rumors/summary/summary:label">
             <value>Remember, as health workers we have a responsibility to report myths and rumors - and to ask questions if we are not sure.</value>
           </text>
-          <text id="/covid_rumors/summary/user_myth_q:label">
+          <text id="/covid_rumors/summary/user_myth:label">
             <value>Do you have any myths to report or questions to ask?</value>
           </text>
           <text id="/covid_rumors/summary:label">
@@ -123,7 +123,7 @@
             <value>True</value>
           </text>
           <text id="/covid_rumors/treatment3_qq/treatment3_q:label">
-            <value>COVID is like Maleria</value>
+            <value>COVID is like Malaria</value>
           </text>
           <text id="/covid_rumors/treatment3_qq:label">
             <value>Quiz - Treatment</value>
@@ -239,7 +239,7 @@
         </translation>
       </itext>
       <instance>
-        <covid_rumors delimiter="#" id="covid_rumors" prefix="J1!covid_rumors!" version="2020-05-11 16:20:40">
+        <covid_rumors delimiter="#" id="covid_rumors" prefix="J1!covid_rumors!" version="2020-05-17 22:46:53">
           <inputs>
             <meta>
               <location>
@@ -332,7 +332,6 @@
           </prevention_a>
           <summary>
             <summary/>
-            <user_myth_q/>
             <user_myth/>
           </summary>
           <meta tag="hidden">
@@ -389,7 +388,6 @@
       <bind nodeset="/covid_rumors/prevention_a/prevention_wrong" readonly="true()" relevant=" /covid_rumors/prevention_qq/prevention_q  = 'true'" type="string"/>
       <bind nodeset="/covid_rumors/prevention_a/prevention_a_explination" readonly="true()" type="string"/>
       <bind nodeset="/covid_rumors/summary/summary" readonly="true()" required="false()" type="string"/>
-      <bind nodeset="/covid_rumors/summary/user_myth_q" readonly="true()" type="string"/>
       <bind nodeset="/covid_rumors/summary/user_myth" type="string"/>
       <bind calculate="concat('uuid:', uuid())" nodeset="/covid_rumors/meta/instanceID" readonly="true()" type="string"/>
     </model>
@@ -626,10 +624,9 @@
       <input ref="/covid_rumors/summary/summary">
         <label ref="jr:itext('/covid_rumors/summary/summary:label')"/>
       </input>
-      <input ref="/covid_rumors/summary/user_myth_q">
-        <label ref="jr:itext('/covid_rumors/summary/user_myth_q:label')"/>
+      <input ref="/covid_rumors/summary/user_myth">
+        <label ref="jr:itext('/covid_rumors/summary/user_myth:label')"/>
       </input>
-      <input ref="/covid_rumors/summary/user_myth"/>
     </group>
   </h:body>
 </h:html>
