@@ -17,6 +17,17 @@ const isCovidEducationValid = (report) => {
   return true;
 };
 
+const isCovidCareValid = (report) => {
+  if (!report) {
+    return false;
+  }
+  const results = Utils.getField(report, 'results');
+  if (results.correct === 'true') {
+    return true;
+  }
+  return false;
+};
+
 
 module.exports = [
   // Covid Rdt Followup
@@ -219,7 +230,7 @@ module.exports = [
   {
     name: 'covid_education_module_1',
     icon: 'icon-healthcare',
-    title: 'COVID Modules: Education (1/2)',
+    title: 'COVID Modules: Education (1/3)',
     appliesTo: 'contacts',
     appliesToType: ['person'],
     appliesIf: function (contact) {
@@ -237,13 +248,13 @@ module.exports = [
     actions: [{
       type: 'report',
       form: 'covid_education',
-      label: 'COVID Modules: Education (1/2)',
+      label: 'COVID Modules: Education (1/3)',
     }],
   },
   {
     name: 'covid_education_module_2',
     icon: 'icon-healthcare',
-    title: 'COVID Modules: Myths (2/2)',
+    title: 'COVID Modules: Myths (2/3)',
     appliesTo: 'contacts',
     appliesToType: ['person'],
     appliesIf: function (contact) {
@@ -261,7 +272,31 @@ module.exports = [
     actions: [{
       type: 'report',
       form: 'covid_rumors',
-      label: 'COVID Modules: Myths (2/2)',
+      label: 'COVID Modules: Myths (2/3)',
+    }],
+  },
+  {
+    name: 'covid_education_module_3',
+    icon: 'icon-healthcare',
+    title: 'COVID Modules: Care (3/3)',
+    appliesTo: 'contacts',
+    appliesToType: ['person'],
+    appliesIf: function (contact) {
+        return contact.contact.role === 'chw' && Utils.getMostRecentReport(contact.reports, 'covid_rumors');
+    },
+    resolvedIf: function (contact) {
+        this.mostRecentCovidEducation1 = isCovidCareValid(Utils.getMostRecentReport(contact.reports, 'covid_care'));
+        return !!this.mostRecentCovidEducation1;
+    },
+    events: [{
+      days: 1,
+      start: 0,
+      end: 100
+    }],
+    actions: [{
+      type: 'report',
+      form: 'covid_care',
+      label: 'COVID Modules: Myths (3/3)',
     }],
   }
 ];

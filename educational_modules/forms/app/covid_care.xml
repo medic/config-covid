@@ -1,0 +1,1010 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>covid_care</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/covid_care/household_contacts/generated_note_name_109:label">
+            <value>COVID is very infectious. Because everyone can spread the disease - but does not always have symptoms - it is important to isolate patients, and tell their family members to avoid contact with other people if they have been exposed.</value>
+          </text>
+          <text id="/covid_care/household_contacts:label">
+            <value>Advice for household contacts</value>
+          </text>
+          <text id="/covid_care/identify_symptoms/generated_note_name_46:label">
+            <value>When speaking with your patient by phone or in person, you should assess these symptoms. If the patient shows any symptoms, refer them to the nearest Clinic or Health Center and contact your supervisor about diagnostic testing.</value>
+          </text>
+          <text id="/covid_care/identify_symptoms:label">
+            <value>Identifying COVID-19 Symptoms</value>
+          </text>
+          <text id="/covid_care/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/covid_care/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/covid_care/inputs/source_visit_date:label">
+            <value>Visit Date</value>
+          </text>
+          <text id="/covid_care/introduction/generated_note_name_20:label">
+            <value>Community health workers play an important role in recognizing covid-19, educating others on how to care for a covid patient, and reducing stigma. After this module you will:</value>
+          </text>
+          <text id="/covid_care/introduction/generated_note_name_21:label">
+            <value>&lt;ul&gt;&lt;li&gt;1. Know how to minimize stigma associated with COVID infection&lt;/li&gt;&lt;li&gt;2. Know how to assess and risk stratify patients with suspected COVID&lt;/li&gt;3. Know how suspected COVID positive patients can limit contact with others&lt;li&gt;4. Know key messages to advise on reintegration into the household/society&lt;/li&gt;&lt;/ul&gt;</value>
+          </text>
+          <text id="/covid_care/introduction:label">
+            <value>Introduction</value>
+          </text>
+          <text id="/covid_care/learning_quiz:label">
+            <value>Learning quiz</value>
+          </text>
+          <text id="/covid_care/notable_symptoms/generated_note_name_50:label">
+            <value>&lt;ul&gt;&lt;li&gt;- Fever&lt;/li&gt;&lt;li&gt;- Difficulty breathing&lt;/li&gt;&lt;li&gt;- Bluish lips or face&lt;/li&gt;&lt;li&gt;- Ability to drink fluids&lt;/li&gt;&lt;li&gt;- Cough &lt;/li&gt;&lt;li&gt;- Confusion or change in mental status&lt;/li&gt;&lt;li&gt;- Persistent pain or pressure in the chest&lt;/li&gt;&lt;li&gt;- Severe dehydration&lt;/li&gt;&lt;li&gt;- Inability to wake up or to stay awake&lt;/li&gt;&lt;li&gt;- Sore throat&lt;/li&gt;&lt;li&gt;- Nausea or diarrhea&lt;/li&gt;&lt;li&gt;- Loss of smell&lt;/li&gt;&lt;/ul&gt;</value>
+          </text>
+          <text id="/covid_care/notable_symptoms:label">
+            <value>Notable COVID-19 Symptoms</value>
+          </text>
+          <text id="/covid_care/patient_assessment/generated_note_name_31:label">
+            <value>Stay 2 meters away from others, to not come in contact with infected droplets. Do not shake hands or hug. If you are greeting others, wave instead.</value>
+          </text>
+          <text id="/covid_care/patient_assessment/generated_note_name_32:label">
+            <value>In person, evaluate the patient's symptoms from a distance.</value>
+          </text>
+          <text id="/covid_care/patient_assessment/generated_note_name_33:label">
+            <value>Always wear a mask or face covering, and wash your hands afterward.</value>
+          </text>
+          <text id="/covid_care/patient_assessment/generated_note_name_34:label">
+            <value form="image">jr://images/MM_Slide_5_CHW_270.png</value>
+          </text>
+          <text id="/covid_care/patient_assessment:label">
+            <value>How to safely and effectively assess a patient</value>
+          </text>
+          <text id="/covid_care/primary_caretaker/generated_note_name_105:label">
+            <value>&lt;ul&gt;&lt;li&gt;- Is not someone who is at higher risk for severe illness from COVID-19&lt;/li&gt;&lt;li&gt;- Monitors patient for severe symptoms such as shortness of breath, dehydration, and changing mental status&lt;/li&gt;&lt;li&gt;- Wears face coverings before entering the patient's room and when caring for the patient&lt;/li&gt;&lt;li&gt;-Washes hands after any contact with the patient or surfaces they have used&lt;/li&gt;&lt;/ul&gt;</value>
+          </text>
+          <text id="/covid_care/primary_caretaker:label">
+            <value>There should be one primary caretaker who:</value>
+          </text>
+          <text id="/covid_care/q_1/covid_symptoms/breathing:label">
+            <value>Difficulty breathing</value>
+          </text>
+          <text id="/covid_care/q_1/covid_symptoms/confusion:label">
+            <value>Confusion or change in mental status</value>
+          </text>
+          <text id="/covid_care/q_1/covid_symptoms/fever:label">
+            <value>Fever</value>
+          </text>
+          <text id="/covid_care/q_1/covid_symptoms/itchy_skin:label">
+            <value>Itchy skin</value>
+          </text>
+          <text id="/covid_care/q_1/covid_symptoms/sneezing:label">
+            <value>Sneezing</value>
+          </text>
+          <text id="/covid_care/q_1/covid_symptoms:label">
+            <value>Which possible symptoms of COVID-19 should you always ask about? (Select all that apply)</value>
+          </text>
+          <text id="/covid_care/q_1:label">
+            <value>Recognize presenting symptoms</value>
+          </text>
+          <text id="/covid_care/q_2/referral/acetaminophen:label">
+            <value>Advise patient to take acetaminophen</value>
+          </text>
+          <text id="/covid_care/q_2/referral/cough_medicine:label">
+            <value>Provide cough medication</value>
+          </text>
+          <text id="/covid_care/q_2/referral/oral_rehydration:label">
+            <value>Provide oral rehydration therapy</value>
+          </text>
+          <text id="/covid_care/q_2/referral/refer:label">
+            <value>Refer to local health center for emergency help</value>
+          </text>
+          <text id="/covid_care/q_2/referral/stay_home:label">
+            <value>Tell patient to stay at home and lie down</value>
+          </text>
+          <text id="/covid_care/q_2/referral:label">
+            <value>A patient has fast breathing, difficulty speaking, and bluish lips, or has a fever, is confused and cannot stay awake. What should you do next?</value>
+          </text>
+          <text id="/covid_care/q_2:label">
+            <value>Recognize when patient requires referral for emergency help</value>
+          </text>
+          <text id="/covid_care/q_3/ppe/hands_and_feet:label">
+            <value>Hands and feet</value>
+          </text>
+          <text id="/covid_care/q_3/ppe/hands_and_hair:label">
+            <value>Hands and hair</value>
+          </text>
+          <text id="/covid_care/q_3/ppe/nose_and_ears:label">
+            <value>Nose and ears</value>
+          </text>
+          <text id="/covid_care/q_3/ppe/nose_and_mouth:label">
+            <value>Nose and mouth</value>
+          </text>
+          <text id="/covid_care/q_3/ppe:label">
+            <value>When caring for a suspected COVID-19 patient, what are the two most important parts of your body to cover?</value>
+          </text>
+          <text id="/covid_care/q_3:label">
+            <value>Information on personal protective equipment (1/2)</value>
+          </text>
+          <text id="/covid_care/q_4/ppe_2/drink_water:label">
+            <value>Drink water</value>
+          </text>
+          <text id="/covid_care/q_4/ppe_2/tempurature:label">
+            <value>Take your temperature</value>
+          </text>
+          <text id="/covid_care/q_4/ppe_2/wash_hands:label">
+            <value>Wash your hands</value>
+          </text>
+          <text id="/covid_care/q_4/ppe_2/wipe_mouth_nose:label">
+            <value>Wipe your mouth and nose</value>
+          </text>
+          <text id="/covid_care/q_4/ppe_2:label">
+            <value>What should you always do immediately after being in the same room as a COVID-19 patient?</value>
+          </text>
+          <text id="/covid_care/q_4:label">
+            <value>Information on personal protective equipment (2/2)</value>
+          </text>
+          <text id="/covid_care/q_5/reintegration/24_hours:label">
+            <value>One day (24 hours)</value>
+          </text>
+          <text id="/covid_care/q_5/reintegration/48_hours:label">
+            <value>Two days (48 hours)</value>
+          </text>
+          <text id="/covid_care/q_5/reintegration/72_hours:label">
+            <value>Three days (72 hours)</value>
+          </text>
+          <text id="/covid_care/q_5/reintegration:label">
+            <value>Patients are safe to leave the house once it has been at least 10 days since symptoms first appeared AND symptoms have improved AND they have had NO FEVER for at least...</value>
+          </text>
+          <text id="/covid_care/q_5:label">
+            <value>Know key messages to advise on reintegration into the household/society</value>
+          </text>
+          <text id="/covid_care/q_6/stigma/anyone_can_get_covid:label">
+            <value>Anyone can get COVID-19</value>
+          </text>
+          <text id="/covid_care/q_6/stigma/do_not_recover:label">
+            <value>Most people do not recover from COVID-19</value>
+          </text>
+          <text id="/covid_care/q_6/stigma/stigma_against_covid:label">
+            <value>Stigma against COVID-19 causes people to seek health care</value>
+          </text>
+          <text id="/covid_care/q_6/stigma:label">
+            <value>Which of the following is true about COVID-19?</value>
+          </text>
+          <text id="/covid_care/q_6:label">
+            <value>Know how to address and minimize stigma associated with COVID infection</value>
+          </text>
+          <text id="/covid_care/referral_summary/generated_note_name_54:label">
+            <value>If your patient has any of the following symptoms, they should be referred for clinical assessment and care:</value>
+          </text>
+          <text id="/covid_care/referral_summary/generated_note_name_55:label">
+            <value>&lt;ul&gt;&lt;li&gt;- Fast breathing&lt;/li&gt;&lt;li&gt;- Indrawing of chest &lt;/li&gt;&lt;li&gt;- Pale or bluish color to lips/mouth &lt;/li&gt;&lt;li&gt;- Difficulty speaking &lt;/li&gt;&lt;/ul&gt;</value>
+          </text>
+          <text id="/covid_care/referral_summary/generated_note_name_56:label">
+            <value form="image">jr://images/respiratorydistress_exhale_270.png</value>
+          </text>
+          <text id="/covid_care/referral_summary:label">
+            <value>Referral</value>
+          </text>
+          <text id="/covid_care/rejoining_community/generated_note_name_113:label">
+            <value>It is important to inform COVID-19 patients of the requirements to rejoin the community and safely interact with family after COVID:</value>
+          </text>
+          <text id="/covid_care/rejoining_community/generated_note_name_114:label">
+            <value>&lt;ul&gt;&lt;li&gt;- They should not have had fever for at least 72 hours (assess this without the use of paracetamol or ibuprofen)&lt;/li&gt;&lt;li&gt;- AND other symptoms should have improved&lt;/li&gt;&lt;li&gt;- AND at least 10 days should have passed since their symptoms first appeared&lt;/li&gt;&lt;/ul&gt;</value>
+          </text>
+          <text id="/covid_care/rejoining_community:label">
+            <value>Rejoining The Community After Covid</value>
+          </text>
+          <text id="/covid_care/results:label">
+            <value>Know key messages to advise on reintegration into the household/society</value>
+          </text>
+          <text id="/covid_care/stigmatization_risks/generated_note_name_25:label">
+            <value>Stigmatization causes more risk when patients:</value>
+          </text>
+          <text id="/covid_care/stigmatization_risks/generated_note_name_26:label">
+            <value>&lt;ul&gt;&lt;li&gt;- Hide their illness, to avoid being discriminated&lt;/li&gt;&lt;li&gt;- Don't seek help or health care immediately&lt;/li&gt;- Don't adopt healthy behaviors&lt;li&gt;&lt;/ul&gt;</value>
+          </text>
+          <text id="/covid_care/stigmatization_risks/generated_note_name_27:label">
+            <value>Remember that anyone can get COVID. Stigmatizing people can aggravate health problems, increase transmission and make it more difficult to control the outbreak.</value>
+          </text>
+          <text id="/covid_care/stigmatization_risks:label">
+            <value>Risks of stigmatization during the pandemic</value>
+          </text>
+          <text id="/covid_care/summary/confidence/0:label">
+            <value>Not confident at all</value>
+          </text>
+          <text id="/covid_care/summary/confidence/1:label">
+            <value>A bit confident</value>
+          </text>
+          <text id="/covid_care/summary/confidence/2:label">
+            <value>Somewhat confident</value>
+          </text>
+          <text id="/covid_care/summary/confidence/3:label">
+            <value>Very confident</value>
+          </text>
+          <text id="/covid_care/summary/confidence/4:label">
+            <value>Extremely confident</value>
+          </text>
+          <text id="/covid_care/summary/confidence:label">
+            <value>How confident do you feel in your mastery of this content?</value>
+          </text>
+          <text id="/covid_care/summary/correct_answers:label">
+            <value>&lt;b&gt;You have answered these questions correctly &lt;/b&gt;</value>
+          </text>
+          <text id="/covid_care/summary/failed_answers:label">
+            <value>&lt;b&gt;You answered some questions incorrectly, please resubmit the form and review: &lt;/b&gt;</value>
+          </text>
+          <text id="/covid_care/summary/feedback:label">
+            <value>Do you have any questions or feedback on this topic (optional)</value>
+          </text>
+          <text id="/covid_care/summary/generated_note_name_155:label">
+            <value>Great job, you have completed COVID Care! We would love to hear your feedback</value>
+          </text>
+          <text id="/covid_care/summary/generated_note_name_161:label">
+            <value>&lt;span style="color:red"&gt;- Recognize presenting symptoms &lt;/span&gt;</value>
+          </text>
+          <text id="/covid_care/summary/generated_note_name_162:label">
+            <value>&lt;span style="color:red"&gt;- Recognize when patient requires referral for emergency help &lt;/span&gt;</value>
+          </text>
+          <text id="/covid_care/summary/generated_note_name_163:label">
+            <value>&lt;span style="color:red"&gt;- Information on personal protective equipment (1/2) &lt;/span&gt;</value>
+          </text>
+          <text id="/covid_care/summary/generated_note_name_164:label">
+            <value>&lt;span style="color:red"&gt;- Information on personal protective equipment (2/2) &lt;/span&gt;</value>
+          </text>
+          <text id="/covid_care/summary/generated_note_name_165:label">
+            <value>&lt;span style="color:red"&gt;- Know key messages to advise on reintegration into the household/society &lt;/span&gt;</value>
+          </text>
+          <text id="/covid_care/summary/generated_note_name_166:label">
+            <value>&lt;span style="color:red"&gt;- Know how to address and minimize stigma associated with COVID infection &lt;/span&gt;</value>
+          </text>
+          <text id="/covid_care/summary/generated_note_name_168:label">
+            <value>&lt;span style="color:green"&gt;- Recognize presenting symptoms &lt;/span&gt;</value>
+          </text>
+          <text id="/covid_care/summary/generated_note_name_169:label">
+            <value>&lt;span style="color:green"&gt;- Recognize when patient requires referral for emergency help &lt;/span&gt;</value>
+          </text>
+          <text id="/covid_care/summary/generated_note_name_170:label">
+            <value>&lt;span style="color:green"&gt;- Information on personal protective equipment (1/2) &lt;/span&gt;</value>
+          </text>
+          <text id="/covid_care/summary/generated_note_name_171:label">
+            <value>&lt;span style="color:green"&gt;- Information on personal protective equipment (2/2) &lt;/span&gt;</value>
+          </text>
+          <text id="/covid_care/summary/generated_note_name_172:label">
+            <value>&lt;span style="color:green"&gt;- Know key messages to advise on reintegration into the household/society &lt;/span&gt;</value>
+          </text>
+          <text id="/covid_care/summary/generated_note_name_173:label">
+            <value>&lt;span style="color:green"&gt;- Know how to address and minimize stigma associated with COVID infection &lt;/span&gt;</value>
+          </text>
+          <text id="/covid_care/summary/tasks/no:label">
+            <value>No</value>
+          </text>
+          <text id="/covid_care/summary/tasks/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/covid_care/summary/tasks:label">
+            <value>Will you be able to effectively perform on these tasks?</value>
+          </text>
+          <text id="/covid_care/summary:label">
+            <value>Summary</value>
+          </text>
+          <text id="/covid_care/suspected_covid/generated_note_name_60:label">
+            <value>A patient or suspected COVID-19 patient should…</value>
+          </text>
+          <text id="/covid_care/suspected_covid/generated_note_name_61:label">
+            <value>&lt;ul&gt;&lt;li&gt;1. Wear a face mask around other people&lt;/li&gt;&lt;li&gt;2. Stay home and self isolate&lt;/li&gt;&lt;li&gt;3. Cough into a tissue and throw it away, and wash their hands&lt;/li&gt;&lt;li&gt;4. Rest and drink plenty of water (non-alcoholic liquids)&lt;/li&gt;&lt;li&gt;5. Minimize contact with household members&lt;/li&gt;&lt;li&gt;6. Use their own dishes, silverware, towels, bed, and electronics&lt;/li&gt;&lt;li&gt;7. Avoid having visitors&lt;/li&gt;&lt;li&gt;8. Clean touched surfaces with a disinfectant, especially bathrooms&lt;/li&gt;&lt;/ul&gt;</value>
+          </text>
+          <text id="/covid_care/suspected_covid:label">
+            <value>COVID-19 Suspected Patient Overview</value>
+          </text>
+          <text id="/covid_care/suspected_covid_eight/generated_note_name_100:label">
+            <value>8. Clean all surfaces, especially those shared, with a disinfectant after use</value>
+          </text>
+          <text id="/covid_care/suspected_covid_eight/generated_note_name_101:label">
+            <value form="image">jr://images/MM_slide20_270.png</value>
+          </text>
+          <text id="/covid_care/suspected_covid_eight:label">
+            <value>COVID-19 Suspected Patient Step 8/8</value>
+          </text>
+          <text id="/covid_care/suspected_covid_five/generated_note_name_85:label">
+            <value>5. Minimize contact with other household members</value>
+          </text>
+          <text id="/covid_care/suspected_covid_five/generated_note_name_86:label">
+            <value form="image">jr://images/MM_Slide_15_Minimise_contact_270.png</value>
+          </text>
+          <text id="/covid_care/suspected_covid_five:label">
+            <value>COVID-19 Suspected Patient Step 5/8</value>
+          </text>
+          <text id="/covid_care/suspected_covid_four/generated_note_name_80:label">
+            <value>4, Rest well and drink plenty of clear, non-alcoholic liquids</value>
+          </text>
+          <text id="/covid_care/suspected_covid_four/generated_note_name_81:label">
+            <value form="image">jr://images/MM_slide16_270.png</value>
+          </text>
+          <text id="/covid_care/suspected_covid_four:label">
+            <value>COVID-19 Suspected Patient Step 4/8</value>
+          </text>
+          <text id="/covid_care/suspected_covid_one/generated_note_name_65:label">
+            <value>1. Wear a cloth face covering when they are around other people</value>
+          </text>
+          <text id="/covid_care/suspected_covid_one/generated_note_name_66:label">
+            <value form="image">jr://images/MM_slide13_270.png</value>
+          </text>
+          <text id="/covid_care/suspected_covid_one:label">
+            <value>COVID-19 Suspected Patient Step 1/8</value>
+          </text>
+          <text id="/covid_care/suspected_covid_seven/generated_note_name_95:label">
+            <value>7. Avoid having visitors</value>
+          </text>
+          <text id="/covid_care/suspected_covid_seven/generated_note_name_96:label">
+            <value form="image">jr://images/MM_Slide_17_Avoid_visitors_270.png</value>
+          </text>
+          <text id="/covid_care/suspected_covid_seven:label">
+            <value>COVID-19 Suspected Patient Step 7/8</value>
+          </text>
+          <text id="/covid_care/suspected_covid_six/generated_note_name_90:label">
+            <value>6. Use their own separate dishes, silverware, towels, bed, and electronics</value>
+          </text>
+          <text id="/covid_care/suspected_covid_six/generated_note_name_91:label">
+            <value form="image">jr://images/MM_Slide_16_Separate_items_270.png</value>
+          </text>
+          <text id="/covid_care/suspected_covid_six:label">
+            <value>COVID-19 Suspected Patient Step 6/8</value>
+          </text>
+          <text id="/covid_care/suspected_covid_three/generated_note_name_75:label">
+            <value>3, Cough into a tissue and throw it away and wash your hands</value>
+          </text>
+          <text id="/covid_care/suspected_covid_three/generated_note_name_76:label">
+            <value form="image">jr://images/MM_slide15_270.png</value>
+          </text>
+          <text id="/covid_care/suspected_covid_three:label">
+            <value>COVID-19 Suspected Patient Step 3/8</value>
+          </text>
+          <text id="/covid_care/suspected_covid_two/generated_note_name_70:label">
+            <value>2. Stay home and self-isolate by not leaving the house as much as possible</value>
+          </text>
+          <text id="/covid_care/suspected_covid_two/generated_note_name_71:label">
+            <value form="image">jr://images/MM_slide14_270.png</value>
+          </text>
+          <text id="/covid_care/suspected_covid_two:label">
+            <value>COVID-19 Suspected Patient Step 2/8</value>
+          </text>
+          <text id="/covid_care/use_of_ppe/generated_note_name_42:label">
+            <value>&lt;ul&gt;&lt;li&gt;- Cover the nose and mouth with a face mask.&lt;/li&gt;&lt;li&gt;- Cover the eyes with protective glasses or a face shield.&lt;/li&gt;&lt;li&gt;- Wear a protective garment. &lt;/li&gt;&lt;li&gt;- When removing PPE, the outside of the garments cannot touch your face or skin. &lt;/li&gt;&lt;li&gt;- Wash your hands before and after wearing PPE.&lt;/li&gt;&lt;li&gt;- If your patient needs to be transferred to medical care, they should wear a facemask to protect others. &lt;/li&gt;&lt;/ul&gt;</value>
+          </text>
+          <text id="/covid_care/use_of_ppe:label">
+            <value>Effectively use &amp; safe disposal of PPE</value>
+          </text>
+          <text id="/covid_care/what_is_ppe/generated_note_name_38:label">
+            <value>PPE includes face masks, gloves, eye glasses or face shields, and protective garments. These items can protect one from being infected by virus-containing droplets.</value>
+          </text>
+          <text id="/covid_care/what_is_ppe:label">
+            <value>What is Personal Protective Equipment (PPE) &amp; why is it important?</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <covid_care delimiter="#" id="covid_care" prefix="J1!covid_care!" version="2020-05-21 15:12:48">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <source_visit_date/>
+          </inputs>
+          <patient_id tag="hidden"/>
+          <introduction>
+            <generated_note_name_20/>
+            <generated_note_name_21/>
+          </introduction>
+          <stigmatization_risks>
+            <generated_note_name_25/>
+            <generated_note_name_26/>
+            <generated_note_name_27/>
+          </stigmatization_risks>
+          <patient_assessment>
+            <generated_note_name_31/>
+            <generated_note_name_32/>
+            <generated_note_name_33/>
+            <generated_note_name_34/>
+          </patient_assessment>
+          <what_is_ppe>
+            <generated_note_name_38/>
+          </what_is_ppe>
+          <use_of_ppe>
+            <generated_note_name_42/>
+          </use_of_ppe>
+          <identify_symptoms>
+            <generated_note_name_46/>
+          </identify_symptoms>
+          <notable_symptoms>
+            <generated_note_name_50/>
+          </notable_symptoms>
+          <referral_summary>
+            <generated_note_name_54/>
+            <generated_note_name_55/>
+            <generated_note_name_56/>
+          </referral_summary>
+          <suspected_covid>
+            <generated_note_name_60/>
+            <generated_note_name_61/>
+          </suspected_covid>
+          <suspected_covid_one>
+            <generated_note_name_65/>
+            <generated_note_name_66/>
+          </suspected_covid_one>
+          <suspected_covid_two>
+            <generated_note_name_70/>
+            <generated_note_name_71/>
+          </suspected_covid_two>
+          <suspected_covid_three>
+            <generated_note_name_75/>
+            <generated_note_name_76/>
+          </suspected_covid_three>
+          <suspected_covid_four>
+            <generated_note_name_80/>
+            <generated_note_name_81/>
+          </suspected_covid_four>
+          <suspected_covid_five>
+            <generated_note_name_85/>
+            <generated_note_name_86/>
+          </suspected_covid_five>
+          <suspected_covid_six>
+            <generated_note_name_90/>
+            <generated_note_name_91/>
+          </suspected_covid_six>
+          <suspected_covid_seven>
+            <generated_note_name_95/>
+            <generated_note_name_96/>
+          </suspected_covid_seven>
+          <suspected_covid_eight>
+            <generated_note_name_100/>
+            <generated_note_name_101/>
+          </suspected_covid_eight>
+          <primary_caretaker>
+            <generated_note_name_105/>
+          </primary_caretaker>
+          <household_contacts>
+            <generated_note_name_109/>
+          </household_contacts>
+          <rejoining_community>
+            <generated_note_name_113/>
+            <generated_note_name_114/>
+          </rejoining_community>
+          <learning_quiz/>
+          <q_1>
+            <covid_symptoms/>
+          </q_1>
+          <q_2>
+            <referral/>
+          </q_2>
+          <q_3>
+            <ppe/>
+          </q_3>
+          <q_4>
+            <ppe_2/>
+          </q_4>
+          <q_5>
+            <reintegration/>
+          </q_5>
+          <q_6>
+            <stigma/>
+          </q_6>
+          <results>
+            <q_1_results/>
+            <q_2_results/>
+            <q_3_results/>
+            <q_4_results/>
+            <q_5_results/>
+            <q_6_results/>
+            <correct/>
+          </results>
+          <summary>
+            <generated_note_name_155/>
+            <confidence/>
+            <tasks/>
+            <feedback/>
+            <failed_answers/>
+            <generated_note_name_161/>
+            <generated_note_name_162/>
+            <generated_note_name_163/>
+            <generated_note_name_164/>
+            <generated_note_name_165/>
+            <generated_note_name_166/>
+            <correct_answers/>
+            <generated_note_name_168/>
+            <generated_note_name_169/>
+            <generated_note_name_170/>
+            <generated_note_name_171/>
+            <generated_note_name_172/>
+            <generated_note_name_173/>
+          </summary>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </covid_care>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/covid_care/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/covid_care/inputs/source" type="string"/>
+      <bind nodeset="/covid_care/inputs/source_id" type="string"/>
+      <bind nodeset="/covid_care/inputs/source_visit_date" type="string"/>
+      <bind calculate="../inputs/source_id" nodeset="/covid_care/patient_id" type="string"/>
+      <bind nodeset="/covid_care/introduction/generated_note_name_20" readonly="true()" type="string"/>
+      <bind nodeset="/covid_care/introduction/generated_note_name_21" readonly="true()" type="string"/>
+      <bind nodeset="/covid_care/stigmatization_risks/generated_note_name_25" readonly="true()" type="string"/>
+      <bind nodeset="/covid_care/stigmatization_risks/generated_note_name_26" readonly="true()" type="string"/>
+      <bind nodeset="/covid_care/stigmatization_risks/generated_note_name_27" readonly="true()" type="string"/>
+      <bind nodeset="/covid_care/patient_assessment/generated_note_name_31" readonly="true()" required="false()" type="string"/>
+      <bind nodeset="/covid_care/patient_assessment/generated_note_name_32" readonly="true()" type="string"/>
+      <bind nodeset="/covid_care/patient_assessment/generated_note_name_33" readonly="true()" type="string"/>
+      <bind nodeset="/covid_care/patient_assessment/generated_note_name_34" readonly="true()" type="string"/>
+      <bind nodeset="/covid_care/what_is_ppe/generated_note_name_38" readonly="true()" required="false()" type="string"/>
+      <bind nodeset="/covid_care/use_of_ppe/generated_note_name_42" readonly="true()" type="string"/>
+      <bind nodeset="/covid_care/identify_symptoms/generated_note_name_46" readonly="true()" type="string"/>
+      <bind nodeset="/covid_care/notable_symptoms/generated_note_name_50" readonly="true()" type="string"/>
+      <bind nodeset="/covid_care/referral_summary/generated_note_name_54" readonly="true()" type="string"/>
+      <bind nodeset="/covid_care/referral_summary/generated_note_name_55" readonly="true()" type="string"/>
+      <bind nodeset="/covid_care/referral_summary/generated_note_name_56" readonly="true()" type="string"/>
+      <bind nodeset="/covid_care/suspected_covid/generated_note_name_60" readonly="true()" type="string"/>
+      <bind nodeset="/covid_care/suspected_covid/generated_note_name_61" readonly="true()" type="string"/>
+      <bind nodeset="/covid_care/suspected_covid_one/generated_note_name_65" readonly="true()" type="string"/>
+      <bind nodeset="/covid_care/suspected_covid_one/generated_note_name_66" readonly="true()" type="string"/>
+      <bind nodeset="/covid_care/suspected_covid_two/generated_note_name_70" readonly="true()" type="string"/>
+      <bind nodeset="/covid_care/suspected_covid_two/generated_note_name_71" readonly="true()" type="string"/>
+      <bind nodeset="/covid_care/suspected_covid_three/generated_note_name_75" readonly="true()" type="string"/>
+      <bind nodeset="/covid_care/suspected_covid_three/generated_note_name_76" readonly="true()" type="string"/>
+      <bind nodeset="/covid_care/suspected_covid_four/generated_note_name_80" readonly="true()" type="string"/>
+      <bind nodeset="/covid_care/suspected_covid_four/generated_note_name_81" readonly="true()" type="string"/>
+      <bind nodeset="/covid_care/suspected_covid_five/generated_note_name_85" readonly="true()" type="string"/>
+      <bind nodeset="/covid_care/suspected_covid_five/generated_note_name_86" readonly="true()" type="string"/>
+      <bind nodeset="/covid_care/suspected_covid_six/generated_note_name_90" readonly="true()" type="string"/>
+      <bind nodeset="/covid_care/suspected_covid_six/generated_note_name_91" readonly="true()" type="string"/>
+      <bind nodeset="/covid_care/suspected_covid_seven/generated_note_name_95" readonly="true()" type="string"/>
+      <bind nodeset="/covid_care/suspected_covid_seven/generated_note_name_96" readonly="true()" type="string"/>
+      <bind nodeset="/covid_care/suspected_covid_eight/generated_note_name_100" readonly="true()" type="string"/>
+      <bind nodeset="/covid_care/suspected_covid_eight/generated_note_name_101" readonly="true()" type="string"/>
+      <bind nodeset="/covid_care/primary_caretaker/generated_note_name_105" readonly="true()" type="string"/>
+      <bind nodeset="/covid_care/household_contacts/generated_note_name_109" readonly="true()" type="string"/>
+      <bind nodeset="/covid_care/rejoining_community/generated_note_name_113" readonly="true()" required="true()" type="string"/>
+      <bind nodeset="/covid_care/rejoining_community/generated_note_name_114" readonly="true()" type="string"/>
+      <bind nodeset="/covid_care/q_1/covid_symptoms" required="true()" type="select"/>
+      <bind nodeset="/covid_care/q_2/referral" required="true()" type="select1"/>
+      <bind nodeset="/covid_care/q_3/ppe" required="true()" type="select1"/>
+      <bind nodeset="/covid_care/q_4/ppe_2" required="true()" type="select1"/>
+      <bind nodeset="/covid_care/q_5/reintegration" required="true()" type="select1"/>
+      <bind nodeset="/covid_care/q_6/stigma" required="true()" type="select1"/>
+      <bind calculate="if( /covid_care/q_1/covid_symptoms  = 'fever breathing confusion', 'correct', 'incorrect')" nodeset="/covid_care/results/q_1_results" type="string"/>
+      <bind calculate="if( /covid_care/q_2/referral  = 'refer', 'correct', 'incorrect')" nodeset="/covid_care/results/q_2_results" type="string"/>
+      <bind calculate="if( /covid_care/q_3/ppe  = 'nose_and_mouth', 'correct', 'incorrect')" nodeset="/covid_care/results/q_3_results" type="string"/>
+      <bind calculate="if( /covid_care/q_4/ppe_2  = 'wash_hands', 'correct', 'incorrect')" nodeset="/covid_care/results/q_4_results" type="string"/>
+      <bind calculate="if( /covid_care/q_5/reintegration  = '72_hours', 'correct', 'incorrect')" nodeset="/covid_care/results/q_5_results" type="string"/>
+      <bind calculate="if( /covid_care/q_6/stigma  = 'anyone_can_get_covid', 'correct', 'incorrect')" nodeset="/covid_care/results/q_6_results" type="string"/>
+      <bind calculate="if( /covid_care/results/q_1_results  = 'correct' and  /covid_care/results/q_2_results  = 'correct' and  /covid_care/results/q_3_results  = 'correct' and  /covid_care/results/q_4_results  = 'correct' and  /covid_care/results/q_5_results  = 'correct' and  /covid_care/results/q_6_results  = 'correct', 'true', 'false')" nodeset="/covid_care/results/correct" type="string"/>
+      <bind nodeset="/covid_care/summary/generated_note_name_155" readonly="true()" relevant=" /covid_care/results/correct  = 'true'" type="string"/>
+      <bind nodeset="/covid_care/summary/confidence" relevant=" /covid_care/results/correct  = 'true'" required="true()" type="select1"/>
+      <bind nodeset="/covid_care/summary/tasks" relevant=" /covid_care/results/correct  = 'true'" required="true()" type="select1"/>
+      <bind nodeset="/covid_care/summary/feedback" relevant=" /covid_care/results/correct  = 'true'" required="false()" type="string"/>
+      <bind nodeset="/covid_care/summary/failed_answers" readonly="true()" relevant=" /covid_care/results/correct  = 'false'" type="string"/>
+      <bind nodeset="/covid_care/summary/generated_note_name_161" readonly="true()" relevant=" /covid_care/results/q_1_results  = 'incorrect'" type="string"/>
+      <bind nodeset="/covid_care/summary/generated_note_name_162" readonly="true()" relevant=" /covid_care/results/q_2_results  = 'incorrect'" type="string"/>
+      <bind nodeset="/covid_care/summary/generated_note_name_163" readonly="true()" relevant=" /covid_care/results/q_3_results  = 'incorrect'" type="string"/>
+      <bind nodeset="/covid_care/summary/generated_note_name_164" readonly="true()" relevant=" /covid_care/results/q_4_results  = 'incorrect'" type="string"/>
+      <bind nodeset="/covid_care/summary/generated_note_name_165" readonly="true()" relevant=" /covid_care/results/q_5_results  = 'incorrect'" type="string"/>
+      <bind nodeset="/covid_care/summary/generated_note_name_166" readonly="true()" relevant=" /covid_care/results/q_6_results  = 'incorrect'" type="string"/>
+      <bind nodeset="/covid_care/summary/correct_answers" readonly="true()" relevant=" /covid_care/results/correct  = 'false'" type="string"/>
+      <bind nodeset="/covid_care/summary/generated_note_name_168" readonly="true()" relevant=" /covid_care/results/q_1_results  = 'correct' and  /covid_care/results/correct  = 'false'" type="string"/>
+      <bind nodeset="/covid_care/summary/generated_note_name_169" readonly="true()" relevant=" /covid_care/results/q_2_results  = 'correct' and  /covid_care/results/correct  = 'false'" type="string"/>
+      <bind nodeset="/covid_care/summary/generated_note_name_170" readonly="true()" relevant=" /covid_care/results/q_3_results  = 'correct' and  /covid_care/results/correct  = 'false'" type="string"/>
+      <bind nodeset="/covid_care/summary/generated_note_name_171" readonly="true()" relevant=" /covid_care/results/q_4_results  = 'correct' and  /covid_care/results/correct  = 'false'" type="string"/>
+      <bind nodeset="/covid_care/summary/generated_note_name_172" readonly="true()" relevant=" /covid_care/results/q_5_results  = 'correct' and  /covid_care/results/correct  = 'false'" type="string"/>
+      <bind nodeset="/covid_care/summary/generated_note_name_173" readonly="true()" relevant=" /covid_care/results/q_6_results  = 'correct' and  /covid_care/results/correct  = 'false'" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/covid_care/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/covid_care/inputs"/>
+    <group appearance="field-list" ref="/covid_care/introduction">
+      <label ref="jr:itext('/covid_care/introduction:label')"/>
+      <input ref="/covid_care/introduction/generated_note_name_20">
+        <label ref="jr:itext('/covid_care/introduction/generated_note_name_20:label')"/>
+      </input>
+      <input ref="/covid_care/introduction/generated_note_name_21">
+        <label ref="jr:itext('/covid_care/introduction/generated_note_name_21:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_care/stigmatization_risks">
+      <label ref="jr:itext('/covid_care/stigmatization_risks:label')"/>
+      <input ref="/covid_care/stigmatization_risks/generated_note_name_25">
+        <label ref="jr:itext('/covid_care/stigmatization_risks/generated_note_name_25:label')"/>
+      </input>
+      <input ref="/covid_care/stigmatization_risks/generated_note_name_26">
+        <label ref="jr:itext('/covid_care/stigmatization_risks/generated_note_name_26:label')"/>
+      </input>
+      <input ref="/covid_care/stigmatization_risks/generated_note_name_27">
+        <label ref="jr:itext('/covid_care/stigmatization_risks/generated_note_name_27:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_care/patient_assessment">
+      <label ref="jr:itext('/covid_care/patient_assessment:label')"/>
+      <input ref="/covid_care/patient_assessment/generated_note_name_31">
+        <label ref="jr:itext('/covid_care/patient_assessment/generated_note_name_31:label')"/>
+      </input>
+      <input ref="/covid_care/patient_assessment/generated_note_name_32">
+        <label ref="jr:itext('/covid_care/patient_assessment/generated_note_name_32:label')"/>
+      </input>
+      <input ref="/covid_care/patient_assessment/generated_note_name_33">
+        <label ref="jr:itext('/covid_care/patient_assessment/generated_note_name_33:label')"/>
+      </input>
+      <input ref="/covid_care/patient_assessment/generated_note_name_34">
+        <label ref="jr:itext('/covid_care/patient_assessment/generated_note_name_34:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_care/what_is_ppe">
+      <label ref="jr:itext('/covid_care/what_is_ppe:label')"/>
+      <input ref="/covid_care/what_is_ppe/generated_note_name_38">
+        <label ref="jr:itext('/covid_care/what_is_ppe/generated_note_name_38:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_care/use_of_ppe">
+      <label ref="jr:itext('/covid_care/use_of_ppe:label')"/>
+      <input ref="/covid_care/use_of_ppe/generated_note_name_42">
+        <label ref="jr:itext('/covid_care/use_of_ppe/generated_note_name_42:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_care/identify_symptoms">
+      <label ref="jr:itext('/covid_care/identify_symptoms:label')"/>
+      <input ref="/covid_care/identify_symptoms/generated_note_name_46">
+        <label ref="jr:itext('/covid_care/identify_symptoms/generated_note_name_46:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_care/notable_symptoms">
+      <label ref="jr:itext('/covid_care/notable_symptoms:label')"/>
+      <input ref="/covid_care/notable_symptoms/generated_note_name_50">
+        <label ref="jr:itext('/covid_care/notable_symptoms/generated_note_name_50:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_care/referral_summary">
+      <label ref="jr:itext('/covid_care/referral_summary:label')"/>
+      <input ref="/covid_care/referral_summary/generated_note_name_54">
+        <label ref="jr:itext('/covid_care/referral_summary/generated_note_name_54:label')"/>
+      </input>
+      <input ref="/covid_care/referral_summary/generated_note_name_55">
+        <label ref="jr:itext('/covid_care/referral_summary/generated_note_name_55:label')"/>
+      </input>
+      <input ref="/covid_care/referral_summary/generated_note_name_56">
+        <label ref="jr:itext('/covid_care/referral_summary/generated_note_name_56:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_care/suspected_covid">
+      <label ref="jr:itext('/covid_care/suspected_covid:label')"/>
+      <input ref="/covid_care/suspected_covid/generated_note_name_60">
+        <label ref="jr:itext('/covid_care/suspected_covid/generated_note_name_60:label')"/>
+      </input>
+      <input ref="/covid_care/suspected_covid/generated_note_name_61">
+        <label ref="jr:itext('/covid_care/suspected_covid/generated_note_name_61:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_care/suspected_covid_one">
+      <label ref="jr:itext('/covid_care/suspected_covid_one:label')"/>
+      <input ref="/covid_care/suspected_covid_one/generated_note_name_65">
+        <label ref="jr:itext('/covid_care/suspected_covid_one/generated_note_name_65:label')"/>
+      </input>
+      <input ref="/covid_care/suspected_covid_one/generated_note_name_66">
+        <label ref="jr:itext('/covid_care/suspected_covid_one/generated_note_name_66:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_care/suspected_covid_two">
+      <label ref="jr:itext('/covid_care/suspected_covid_two:label')"/>
+      <input ref="/covid_care/suspected_covid_two/generated_note_name_70">
+        <label ref="jr:itext('/covid_care/suspected_covid_two/generated_note_name_70:label')"/>
+      </input>
+      <input ref="/covid_care/suspected_covid_two/generated_note_name_71">
+        <label ref="jr:itext('/covid_care/suspected_covid_two/generated_note_name_71:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_care/suspected_covid_three">
+      <label ref="jr:itext('/covid_care/suspected_covid_three:label')"/>
+      <input ref="/covid_care/suspected_covid_three/generated_note_name_75">
+        <label ref="jr:itext('/covid_care/suspected_covid_three/generated_note_name_75:label')"/>
+      </input>
+      <input ref="/covid_care/suspected_covid_three/generated_note_name_76">
+        <label ref="jr:itext('/covid_care/suspected_covid_three/generated_note_name_76:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_care/suspected_covid_four">
+      <label ref="jr:itext('/covid_care/suspected_covid_four:label')"/>
+      <input ref="/covid_care/suspected_covid_four/generated_note_name_80">
+        <label ref="jr:itext('/covid_care/suspected_covid_four/generated_note_name_80:label')"/>
+      </input>
+      <input ref="/covid_care/suspected_covid_four/generated_note_name_81">
+        <label ref="jr:itext('/covid_care/suspected_covid_four/generated_note_name_81:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_care/suspected_covid_five">
+      <label ref="jr:itext('/covid_care/suspected_covid_five:label')"/>
+      <input ref="/covid_care/suspected_covid_five/generated_note_name_85">
+        <label ref="jr:itext('/covid_care/suspected_covid_five/generated_note_name_85:label')"/>
+      </input>
+      <input ref="/covid_care/suspected_covid_five/generated_note_name_86">
+        <label ref="jr:itext('/covid_care/suspected_covid_five/generated_note_name_86:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_care/suspected_covid_six">
+      <label ref="jr:itext('/covid_care/suspected_covid_six:label')"/>
+      <input ref="/covid_care/suspected_covid_six/generated_note_name_90">
+        <label ref="jr:itext('/covid_care/suspected_covid_six/generated_note_name_90:label')"/>
+      </input>
+      <input ref="/covid_care/suspected_covid_six/generated_note_name_91">
+        <label ref="jr:itext('/covid_care/suspected_covid_six/generated_note_name_91:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_care/suspected_covid_seven">
+      <label ref="jr:itext('/covid_care/suspected_covid_seven:label')"/>
+      <input ref="/covid_care/suspected_covid_seven/generated_note_name_95">
+        <label ref="jr:itext('/covid_care/suspected_covid_seven/generated_note_name_95:label')"/>
+      </input>
+      <input ref="/covid_care/suspected_covid_seven/generated_note_name_96">
+        <label ref="jr:itext('/covid_care/suspected_covid_seven/generated_note_name_96:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_care/suspected_covid_eight">
+      <label ref="jr:itext('/covid_care/suspected_covid_eight:label')"/>
+      <input ref="/covid_care/suspected_covid_eight/generated_note_name_100">
+        <label ref="jr:itext('/covid_care/suspected_covid_eight/generated_note_name_100:label')"/>
+      </input>
+      <input ref="/covid_care/suspected_covid_eight/generated_note_name_101">
+        <label ref="jr:itext('/covid_care/suspected_covid_eight/generated_note_name_101:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_care/primary_caretaker">
+      <label ref="jr:itext('/covid_care/primary_caretaker:label')"/>
+      <input ref="/covid_care/primary_caretaker/generated_note_name_105">
+        <label ref="jr:itext('/covid_care/primary_caretaker/generated_note_name_105:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_care/household_contacts">
+      <label ref="jr:itext('/covid_care/household_contacts:label')"/>
+      <input ref="/covid_care/household_contacts/generated_note_name_109">
+        <label ref="jr:itext('/covid_care/household_contacts/generated_note_name_109:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_care/rejoining_community">
+      <label ref="jr:itext('/covid_care/rejoining_community:label')"/>
+      <input ref="/covid_care/rejoining_community/generated_note_name_113">
+        <label ref="jr:itext('/covid_care/rejoining_community/generated_note_name_113:label')"/>
+      </input>
+      <input ref="/covid_care/rejoining_community/generated_note_name_114">
+        <label ref="jr:itext('/covid_care/rejoining_community/generated_note_name_114:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_care/learning_quiz">
+      <label ref="jr:itext('/covid_care/learning_quiz:label')"/>
+    </group>
+    <group appearance="field-list" ref="/covid_care/q_1">
+      <label ref="jr:itext('/covid_care/q_1:label')"/>
+      <select ref="/covid_care/q_1/covid_symptoms">
+        <label ref="jr:itext('/covid_care/q_1/covid_symptoms:label')"/>
+        <item>
+          <label ref="jr:itext('/covid_care/q_1/covid_symptoms/fever:label')"/>
+          <value>fever</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/covid_care/q_1/covid_symptoms/breathing:label')"/>
+          <value>breathing</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/covid_care/q_1/covid_symptoms/confusion:label')"/>
+          <value>confusion</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/covid_care/q_1/covid_symptoms/itchy_skin:label')"/>
+          <value>itchy_skin</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/covid_care/q_1/covid_symptoms/sneezing:label')"/>
+          <value>sneezing</value>
+        </item>
+      </select>
+    </group>
+    <group appearance="field-list" ref="/covid_care/q_2">
+      <label ref="jr:itext('/covid_care/q_2:label')"/>
+      <select1 ref="/covid_care/q_2/referral">
+        <label ref="jr:itext('/covid_care/q_2/referral:label')"/>
+        <item>
+          <label ref="jr:itext('/covid_care/q_2/referral/stay_home:label')"/>
+          <value>stay_home</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/covid_care/q_2/referral/oral_rehydration:label')"/>
+          <value>oral_rehydration</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/covid_care/q_2/referral/cough_medicine:label')"/>
+          <value>cough_medicine</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/covid_care/q_2/referral/acetaminophen:label')"/>
+          <value>acetaminophen</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/covid_care/q_2/referral/refer:label')"/>
+          <value>refer</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/covid_care/q_3">
+      <label ref="jr:itext('/covid_care/q_3:label')"/>
+      <select1 ref="/covid_care/q_3/ppe">
+        <label ref="jr:itext('/covid_care/q_3/ppe:label')"/>
+        <item>
+          <label ref="jr:itext('/covid_care/q_3/ppe/nose_and_mouth:label')"/>
+          <value>nose_and_mouth</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/covid_care/q_3/ppe/nose_and_ears:label')"/>
+          <value>nose_and_ears</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/covid_care/q_3/ppe/hands_and_feet:label')"/>
+          <value>hands_and_feet</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/covid_care/q_3/ppe/hands_and_hair:label')"/>
+          <value>hands_and_hair</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/covid_care/q_4">
+      <label ref="jr:itext('/covid_care/q_4:label')"/>
+      <select1 ref="/covid_care/q_4/ppe_2">
+        <label ref="jr:itext('/covid_care/q_4/ppe_2:label')"/>
+        <item>
+          <label ref="jr:itext('/covid_care/q_4/ppe_2/tempurature:label')"/>
+          <value>tempurature</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/covid_care/q_4/ppe_2/wash_hands:label')"/>
+          <value>wash_hands</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/covid_care/q_4/ppe_2/wipe_mouth_nose:label')"/>
+          <value>wipe_mouth_nose</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/covid_care/q_4/ppe_2/drink_water:label')"/>
+          <value>drink_water</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/covid_care/q_5">
+      <label ref="jr:itext('/covid_care/q_5:label')"/>
+      <select1 ref="/covid_care/q_5/reintegration">
+        <label ref="jr:itext('/covid_care/q_5/reintegration:label')"/>
+        <item>
+          <label ref="jr:itext('/covid_care/q_5/reintegration/24_hours:label')"/>
+          <value>24_hours</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/covid_care/q_5/reintegration/48_hours:label')"/>
+          <value>48_hours</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/covid_care/q_5/reintegration/72_hours:label')"/>
+          <value>72_hours</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/covid_care/q_6">
+      <label ref="jr:itext('/covid_care/q_6:label')"/>
+      <select1 ref="/covid_care/q_6/stigma">
+        <label ref="jr:itext('/covid_care/q_6/stigma:label')"/>
+        <item>
+          <label ref="jr:itext('/covid_care/q_6/stigma/do_not_recover:label')"/>
+          <value>do_not_recover</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/covid_care/q_6/stigma/stigma_against_covid:label')"/>
+          <value>stigma_against_covid</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/covid_care/q_6/stigma/anyone_can_get_covid:label')"/>
+          <value>anyone_can_get_covid</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list" ref="/covid_care/results">
+      <label ref="jr:itext('/covid_care/results:label')"/>
+    </group>
+    <group appearance="field-list" ref="/covid_care/summary">
+      <label ref="jr:itext('/covid_care/summary:label')"/>
+      <input ref="/covid_care/summary/generated_note_name_155">
+        <label ref="jr:itext('/covid_care/summary/generated_note_name_155:label')"/>
+      </input>
+      <select1 ref="/covid_care/summary/confidence">
+        <label ref="jr:itext('/covid_care/summary/confidence:label')"/>
+        <item>
+          <label ref="jr:itext('/covid_care/summary/confidence/4:label')"/>
+          <value>4</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/covid_care/summary/confidence/3:label')"/>
+          <value>3</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/covid_care/summary/confidence/2:label')"/>
+          <value>2</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/covid_care/summary/confidence/1:label')"/>
+          <value>1</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/covid_care/summary/confidence/0:label')"/>
+          <value>0</value>
+        </item>
+      </select1>
+      <select1 ref="/covid_care/summary/tasks">
+        <label ref="jr:itext('/covid_care/summary/tasks:label')"/>
+        <item>
+          <label ref="jr:itext('/covid_care/summary/tasks/yes:label')"/>
+          <value>yes</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/covid_care/summary/tasks/no:label')"/>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/covid_care/summary/feedback">
+        <label ref="jr:itext('/covid_care/summary/feedback:label')"/>
+      </input>
+      <input ref="/covid_care/summary/failed_answers">
+        <label ref="jr:itext('/covid_care/summary/failed_answers:label')"/>
+      </input>
+      <input ref="/covid_care/summary/generated_note_name_161">
+        <label ref="jr:itext('/covid_care/summary/generated_note_name_161:label')"/>
+      </input>
+      <input ref="/covid_care/summary/generated_note_name_162">
+        <label ref="jr:itext('/covid_care/summary/generated_note_name_162:label')"/>
+      </input>
+      <input ref="/covid_care/summary/generated_note_name_163">
+        <label ref="jr:itext('/covid_care/summary/generated_note_name_163:label')"/>
+      </input>
+      <input ref="/covid_care/summary/generated_note_name_164">
+        <label ref="jr:itext('/covid_care/summary/generated_note_name_164:label')"/>
+      </input>
+      <input ref="/covid_care/summary/generated_note_name_165">
+        <label ref="jr:itext('/covid_care/summary/generated_note_name_165:label')"/>
+      </input>
+      <input ref="/covid_care/summary/generated_note_name_166">
+        <label ref="jr:itext('/covid_care/summary/generated_note_name_166:label')"/>
+      </input>
+      <input ref="/covid_care/summary/correct_answers">
+        <label ref="jr:itext('/covid_care/summary/correct_answers:label')"/>
+      </input>
+      <input ref="/covid_care/summary/generated_note_name_168">
+        <label ref="jr:itext('/covid_care/summary/generated_note_name_168:label')"/>
+      </input>
+      <input ref="/covid_care/summary/generated_note_name_169">
+        <label ref="jr:itext('/covid_care/summary/generated_note_name_169:label')"/>
+      </input>
+      <input ref="/covid_care/summary/generated_note_name_170">
+        <label ref="jr:itext('/covid_care/summary/generated_note_name_170:label')"/>
+      </input>
+      <input ref="/covid_care/summary/generated_note_name_171">
+        <label ref="jr:itext('/covid_care/summary/generated_note_name_171:label')"/>
+      </input>
+      <input ref="/covid_care/summary/generated_note_name_172">
+        <label ref="jr:itext('/covid_care/summary/generated_note_name_172:label')"/>
+      </input>
+      <input ref="/covid_care/summary/generated_note_name_173">
+        <label ref="jr:itext('/covid_care/summary/generated_note_name_173:label')"/>
+      </input>
+    </group>
+  </h:body>
+</h:html>

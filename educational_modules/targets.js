@@ -39,6 +39,17 @@ const isCovidEducationValid = (report) => {
     return true; 
   };
 
+  const isCovidCareValid = (report) => {
+    if (!report) {
+      return false;
+    }
+    const results = Utils.getField(report, 'results');
+    if (results.correct === 'true') {
+      return true;
+    }
+    return false;
+  };
+
 module.exports = [
 
     {
@@ -192,11 +203,11 @@ module.exports = [
         id: 'covid-learning-modules-completed',
         type: 'count',
         icon: 'icon-hospital',
-        goal: 2,
+        goal: 3,
         translation_key: 'Training Modules',
         context:'user.role === "chw"',
         appliesTo: 'reports',
-        appliesToType: ['covid_education', 'covid_rumors'],
+        appliesToType: ['covid_education', 'covid_rumors', 'covid_care'],
         appliesIf: function (contact, report) {
              if(!isCHW(contact)) {
                  return false;
@@ -204,7 +215,9 @@ module.exports = [
                  return isCovidEducationValid(report);
              } else if (report.form === 'covid_rumors') {
                  return true;
-             }
+             } else if (report.form === 'covid_care') {
+                return isCovidCareValid(report);
+            }
             return false;
         },
         date: 'now',
