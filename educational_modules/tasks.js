@@ -1,32 +1,16 @@
 const isCovidEducationValid = (report) => {
-  if (!report) {
+    if (report) {
+      const results = Utils.getField(report, 'learning_quiz');
+      return results.hand_washing_q ===  'both_soap_and_water_or_hand_saniter' 
+        && results.hand_washing_q2 === 'at_least_20_seconds'
+        && results.sneezing_coughing_q === 'cough_into_your_elbow_or_tissue'
+        && results.household_q === 'a_disinfectant'
+        && results.social_distancing_q === 'at_least_2_meters';
+    }
     return false;
-  }
-  const results = Utils.getField(report, 'learning_quiz');
-  if (results.hand_washing_q !== 'both_soap_and_water_or_hand_saniter') {
-    return false;
-  } else if (results.hand_washing_q2 !== 'at_least_20_seconds') {
-    return false;
-  } else if (results.sneezing_coughing_q !== 'cough_into_your_elbow_or_tissue') {
-    return false;
-  } else if (results.household_q !== 'a_disinfectant'){
-    return false;
-  } else if (results.social_distancing_q !== 'at_least_2_meters') {
-    return false;
-  }
-  return true;
 };
 
-const isCovidCareValid = (report) => {
-  if (!report) {
-    return false;
-  }
-  const results = Utils.getField(report, 'results');
-  if (results.correct === 'true') {
-    return true;
-  }
-  return false;
-};
+const isCovidCareValid = (report) => (report && Utils.getField(report, 'results').correct === 'true');
 
 
 module.exports = [
@@ -261,8 +245,7 @@ module.exports = [
         return contact.contact.role === 'chw' && isCovidEducationValid(Utils.getMostRecentReport(contact.reports, 'covid_education'));
     },
     resolvedIf: function (contact) {
-        this.mostRecentCovidEducation1 = Utils.getMostRecentReport(contact.reports, 'covid_rumors');
-        return !!this.mostRecentCovidEducation1;
+        return Utils.getMostRecentReport(contact.reports, 'covid_rumors');
     },
     events: [{
       days: 1,
@@ -285,8 +268,7 @@ module.exports = [
         return contact.contact.role === 'chw' && Utils.getMostRecentReport(contact.reports, 'covid_rumors');
     },
     resolvedIf: function (contact) {
-        this.mostRecentCovidEducation1 = isCovidCareValid(Utils.getMostRecentReport(contact.reports, 'covid_care'));
-        return !!this.mostRecentCovidEducation1;
+        return !!isCovidCareValid(Utils.getMostRecentReport(contact.reports, 'covid_care'));
     },
     events: [{
       days: 1,
