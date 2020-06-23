@@ -1,3 +1,17 @@
+const isCovidEducationValid = (report) => {
+    if (report) {
+      const results = Utils.getField(report, 'learning_quiz');
+      return results.hand_washing_q ===  'both_soap_and_water_or_hand_saniter' 
+        && results.hand_washing_q2 === 'at_least_20_seconds'
+        && results.sneezing_coughing_q === 'cough_into_your_elbow_or_tissue'
+        && results.household_q === 'a_disinfectant'
+        && results.social_distancing_q === 'at_least_2_meters';
+    }
+    return false;
+};
+
+const isCovidCareValid = (report) => (report && Utils.getField(report, 'results').correct === 'true');
+
 
 module.exports = [
   // Covid Rdt Followup
@@ -195,6 +209,76 @@ module.exports = [
       type: 'report',
       form: 'symptoms_check',
       label: 'task.symptoms_check.title',
+    }],
+  },
+  {
+    name: 'covid_education_module_1',
+    icon: 'icon-healthcare',
+    title: 'COVID Modules: Education (1/3)',
+    appliesTo: 'contacts',
+    appliesToType: ['person'],
+    appliesIf: function (contact) {
+        return contact.contact.role === 'chw';
+    },
+    resolvedIf: function (contact) {
+        const mostRecentCovidEducation = Utils.getMostRecentReport(contact.reports, 'covid_education');
+        return mostRecentCovidEducation && isCovidEducationValid(mostRecentCovidEducation);
+    },
+    events: [{
+      days: 1,
+      start: 0,
+      end: 100
+    }],
+    actions: [{
+      type: 'report',
+      form: 'covid_education',
+      label: 'COVID Modules: Education (1/3)',
+    }],
+  },
+  {
+    name: 'covid_education_module_2',
+    icon: 'icon-healthcare',
+    title: 'COVID Modules: Myths (2/3)',
+    appliesTo: 'contacts',
+    appliesToType: ['person'],
+    appliesIf: function (contact) {
+        return contact.contact.role === 'chw' && isCovidEducationValid(Utils.getMostRecentReport(contact.reports, 'covid_education'));
+    },
+    resolvedIf: function (contact) {
+        return Utils.getMostRecentReport(contact.reports, 'covid_rumors');
+    },
+    events: [{
+      days: 1,
+      start: 0,
+      end: 100
+    }],
+    actions: [{
+      type: 'report',
+      form: 'covid_rumors',
+      label: 'COVID Modules: Myths (2/3)',
+    }],
+  },
+  {
+    name: 'covid_education_module_3',
+    icon: 'icon-healthcare',
+    title: 'COVID Modules: Care (3/3)',
+    appliesTo: 'contacts',
+    appliesToType: ['person'],
+    appliesIf: function (contact) {
+        return contact.contact.role === 'chw' && Utils.getMostRecentReport(contact.reports, 'covid_rumors');
+    },
+    resolvedIf: function (contact) {
+        return !!isCovidCareValid(Utils.getMostRecentReport(contact.reports, 'covid_care'));
+    },
+    events: [{
+      days: 1,
+      start: 0,
+      end: 100
+    }],
+    actions: [{
+      type: 'report',
+      form: 'covid_care',
+      label: 'COVID Modules: Myths (3/3)',
     }],
   }
 ];

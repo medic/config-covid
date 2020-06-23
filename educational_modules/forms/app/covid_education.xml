@@ -35,8 +35,17 @@
           <text id="/covid_education/household:label">
             <value>Household</value>
           </text>
+          <text id="/covid_education/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/covid_education/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/covid_education/inputs/source_visit_date:label">
+            <value>Visit Date</value>
+          </text>
           <text id="/covid_education/introduction/introduction:label">
-            <value>To avoid infection of yourself and others with COVID-19, it is important to practice the following hygiene measures.</value>
+            <value>To avoid infection of yourself and others with COVID-19, it is important to practice the following hygiene measures</value>
           </text>
           <text id="/covid_education/introduction:label">
             <value>Introduction</value>
@@ -119,26 +128,44 @@
           <text id="/covid_education/social_distancing:label">
             <value>Physical Distancing</value>
           </text>
+          <text id="/covid_education/summary/correct:label">
+            <value>You have answered these questions correctly</value>
+          </text>
           <text id="/covid_education/summary/failed:label">
             <value>You answered some questions incorrectly, please resubmit the form and review:</value>
           </text>
+          <text id="/covid_education/summary/hand_washing_pass2:label">
+            <value>&lt;span style="color:green"&gt;- Handwashing (and the required time to be effective at it)&lt;/span&gt;</value>
+          </text>
+          <text id="/covid_education/summary/hand_washing_pass:label">
+            <value>&lt;span style="color:green"&gt;- Handwashing (and its ability to prevent COVID)&lt;/span&gt;</value>
+          </text>
           <text id="/covid_education/summary/hand_washing_sug2:label">
-            <value>- Handwashing (and the required time to be effective at it)</value>
+            <value>&lt;span style="color:red"&gt;- Handwashing (and the required time to be effective at it)&lt;/span&gt;</value>
           </text>
           <text id="/covid_education/summary/hand_washing_sug:label">
-            <value>- Handwashing (and it's ability to prevent COVID)</value>
+            <value>&lt;span style="color:red"&gt;- Handwashing (and its ability to prevent COVID)&lt;/span&gt;</value>
+          </text>
+          <text id="/covid_education/summary/household_pass:label">
+            <value>&lt;span style="color:green"&gt;- Household&lt;/span&gt;</value>
           </text>
           <text id="/covid_education/summary/household_sug:label">
-            <value>- Household</value>
+            <value>&lt;span style="color:red"&gt;- Household&lt;/span&gt;</value>
           </text>
           <text id="/covid_education/summary/passed:label">
             <value>You have passed the module, congratulations!</value>
           </text>
+          <text id="/covid_education/summary/sneezing_coughing_pass:label">
+            <value>&lt;span style="color:green"&gt;- Sneezing/Coughing &lt;/span&gt;</value>
+          </text>
           <text id="/covid_education/summary/sneezing_coughing_sug:label">
-            <value>- Sneezing/Coughing</value>
+            <value>&lt;span style="color:red"&gt;- Sneezing/Coughing&lt;/span&gt;</value>
+          </text>
+          <text id="/covid_education/summary/social_distancing_passed:label">
+            <value>&lt;span style="color:green"&gt;- Social Distancing&lt;/span&gt;</value>
           </text>
           <text id="/covid_education/summary/social_distancing_sug:label">
-            <value>- Social Distancing</value>
+            <value>&lt;span style="color:red"&gt;- Social Distancing &lt;/span&gt;</value>
           </text>
           <text id="/covid_education/summary:label">
             <value>Summary</value>
@@ -146,7 +173,21 @@
         </translation>
       </itext>
       <instance>
-        <covid_education delimiter="#" id="covid_education" prefix="J1!covid_education!" version="2020-04-29 21:43:07">
+        <covid_education delimiter="#" id="covid_education" prefix="J1!covid_education!" version="2020-05-17 22:47:20">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source>user</source>
+            <source_id/>
+            <source_visit_date/>
+          </inputs>
+          <patient_id tag="hidden"/>
           <introduction>
             <introduction/>
           </introduction>
@@ -191,6 +232,12 @@
             <sneezing_coughing_sug/>
             <household_sug/>
             <social_distancing_sug/>
+            <correct/>
+            <hand_washing_pass/>
+            <hand_washing_pass2/>
+            <sneezing_coughing_pass/>
+            <household_pass/>
+            <social_distancing_passed/>
           </summary>
           <meta tag="hidden">
             <instanceID/>
@@ -198,6 +245,11 @@
         </covid_education>
       </instance>
       <instance id="contact-summary"/>
+      <bind nodeset="/covid_education/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/covid_education/inputs/source" type="string"/>
+      <bind nodeset="/covid_education/inputs/source_id" type="string"/>
+      <bind nodeset="/covid_education/inputs/source_visit_date" type="string"/>
+      <bind calculate="../inputs/source_id" nodeset="/covid_education/patient_id" type="string"/>
       <bind nodeset="/covid_education/introduction/introduction" readonly="true()" required="false()" type="string"/>
       <bind nodeset="/covid_education/isolate/isolate_if_exposed" readonly="true()" required="false()" type="string"/>
       <bind nodeset="/covid_education/isolate/isolate_if_exposed_picture" readonly="true()" type="string"/>
@@ -225,10 +277,17 @@
       <bind nodeset="/covid_education/summary/sneezing_coughing_sug" readonly="true()" relevant=" /covid_education/learning_quiz/sneezing_coughing_q  != 'cough_into_your_elbow_or_tissue'" type="string"/>
       <bind nodeset="/covid_education/summary/household_sug" readonly="true()" relevant=" /covid_education/learning_quiz/household_q  != 'a_disinfectant'" type="string"/>
       <bind nodeset="/covid_education/summary/social_distancing_sug" readonly="true()" relevant=" /covid_education/learning_quiz/social_distancing_q  != 'at_least_2_meters'" type="string"/>
+      <bind nodeset="/covid_education/summary/correct" readonly="true()" type="string"/>
+      <bind nodeset="/covid_education/summary/hand_washing_pass" readonly="true()" relevant=" /covid_education/learning_quiz/hand_washing_q  = 'both_soap_and_water_or_hand_saniter'" type="string"/>
+      <bind nodeset="/covid_education/summary/hand_washing_pass2" readonly="true()" relevant=" /covid_education/learning_quiz/hand_washing_q2  = 'at_least_20_seconds'" type="string"/>
+      <bind nodeset="/covid_education/summary/sneezing_coughing_pass" readonly="true()" relevant=" /covid_education/learning_quiz/sneezing_coughing_q  = 'cough_into_your_elbow_or_tissue'" type="string"/>
+      <bind nodeset="/covid_education/summary/household_pass" readonly="true()" relevant=" /covid_education/learning_quiz/household_q  = 'a_disinfectant'" type="string"/>
+      <bind nodeset="/covid_education/summary/social_distancing_passed" readonly="true()" relevant=" /covid_education/learning_quiz/social_distancing_q  = 'at_least_2_meters'" type="string"/>
       <bind calculate="concat('uuid:', uuid())" nodeset="/covid_education/meta/instanceID" readonly="true()" type="string"/>
     </model>
   </h:head>
   <h:body class="pages">
+    <group appearance="field-list" ref="/covid_education/inputs"/>
     <group appearance="field-list" ref="/covid_education/introduction">
       <label ref="jr:itext('/covid_education/introduction:label')"/>
       <input ref="/covid_education/introduction/introduction">
@@ -376,6 +435,24 @@
       </input>
       <input ref="/covid_education/summary/social_distancing_sug">
         <label ref="jr:itext('/covid_education/summary/social_distancing_sug:label')"/>
+      </input>
+      <input ref="/covid_education/summary/correct">
+        <label ref="jr:itext('/covid_education/summary/correct:label')"/>
+      </input>
+      <input ref="/covid_education/summary/hand_washing_pass">
+        <label ref="jr:itext('/covid_education/summary/hand_washing_pass:label')"/>
+      </input>
+      <input ref="/covid_education/summary/hand_washing_pass2">
+        <label ref="jr:itext('/covid_education/summary/hand_washing_pass2:label')"/>
+      </input>
+      <input ref="/covid_education/summary/sneezing_coughing_pass">
+        <label ref="jr:itext('/covid_education/summary/sneezing_coughing_pass:label')"/>
+      </input>
+      <input ref="/covid_education/summary/household_pass">
+        <label ref="jr:itext('/covid_education/summary/household_pass:label')"/>
+      </input>
+      <input ref="/covid_education/summary/social_distancing_passed">
+        <label ref="jr:itext('/covid_education/summary/social_distancing_passed:label')"/>
       </input>
     </group>
   </h:body>

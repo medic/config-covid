@@ -6,6 +6,7 @@ const getField = (report, fieldPath) => [...(fieldPath || '').split('.')]
     }, report);
 
 const isTraveler = (contact) => { return getField(contact.contact, 'role') === 'traveler'; };
+const isCHW = (contact) => { return getField(contact.contact, 'role') === 'chw'; };
 
 const isToday = (someDate) => {
     const today = new Date();
@@ -18,6 +19,20 @@ const isDeclarationForm = (report) => { return report.form === 'declaration'; };
 const isLocatorForm = (report) => { return report.form === 'locator'; };
 const isQuarantineForm = (report) => { return report.form === 'quarantine'; };
 const isReferralForm = (report) => { return report.form === 'referral'; };
+
+const isCovidEducationValid = (report) => {
+    if (report) {
+        const results = Utils.getField(report, 'learning_quiz');
+        return results.hand_washing_q ===  'both_soap_and_water_or_hand_saniter' 
+                && results.hand_washing_q2 === 'at_least_20_seconds'
+                && results.sneezing_coughing_q === 'cough_into_your_elbow_or_tissue'
+                && results.household_q === 'a_disinfectant'
+                && results.social_distancing_q === 'at_least_2_meters';
+    }
+    return false;
+};
+
+const isCovidCareValid = (report) => (report && Utils.getField(report, 'results').correct === 'true');
 
 module.exports = [
 
@@ -167,6 +182,29 @@ module.exports = [
             return isTraveler(contact) && contact.reports.some((report) => { return isReferralForm(report); });
         },
         date: 'reported'
+    },
+    {
+        id: 'covid-learning-modules-completed',
+        type: 'count',
+        icon: 'icon-hospital',
+        goal: 3,
+        translation_key: 'Training Modules',
+        context:'user.role === "chw"',
+        appliesTo: 'reports',
+        appliesToType: ['covid_education', 'covid_rumors', 'covid_care'],
+        appliesIf: function (contact, report) {
+            let validReport = false; 
+            if (report.form === 'covid_education') {
+                validReport = isCovidEducationValid(report);
+            } else if (report.form === 'covid_rumors') {
+                validReport = true;
+            } else if (report.form === 'covid_care') {
+                validReport = isCovidCareValid(report);
+            }
+            return isCHW(contact) && validReport;
+        },
+        date: 'now',
+	idType: 'report'
     }
 
 ];

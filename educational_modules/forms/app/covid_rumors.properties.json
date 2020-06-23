@@ -1,6 +1,6 @@
 {
     "icon": "icon-healthcare",
-    "title": "COVID Education",
+    "title": "COVID Rumors",
     "context": {
         "person": true,
         "place": false
