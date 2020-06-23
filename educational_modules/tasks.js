@@ -221,8 +221,8 @@ module.exports = [
         return contact.contact.role === 'chw';
     },
     resolvedIf: function (contact) {
-        this.mostRecentCovidEducation1 = Utils.getMostRecentReport(contact.reports, 'covid_education');
-        return !!this.mostRecentCovidEducation1 && isCovidEducationValid(this.mostRecentCovidEducation1);
+        const mostRecentCovidEducation = Utils.getMostRecentReport(contact.reports, 'covid_education');
+        return mostRecentCovidEducation && isCovidEducationValid(mostRecentCovidEducation);
     },
     events: [{
       days: 1,
