@@ -9,10 +9,10 @@ CREATE OR REPLACE VIEW superset_signal_view AS
 		invest.labs_sample,
 		invest.signal_investigated
 	FROM
-	    ebsview_signal_report AS sig
+		ebsview_signal_report AS sig
 		LEFT JOIN ebsview_signal_verification AS verif ON (sig.signal_id = verif.signal_id)
 		LEFT JOIN ebsview_signal_investigation AS invest ON (sig.signal_id = invest.signal_id)
 );
 
-REASSIGN OWNED BY michael to full_access;
-GRANT SELECT ON superset_signal_view TO superset_dev_db ;
+ALTER VIEW superset_signal_view OWNER TO full_access;
+GRANT SELECT ON superset_signal_view TO superset_dev_db;
