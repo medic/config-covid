@@ -27,7 +27,7 @@ CREATE OR REPLACE VIEW ebsview_signal_investigation AS
         CASE
             WHEN (doc #>> '{fields, scdsc_investigation, signs_reported}') LIKE '%other%' THEN 'yes'
             ELSE 'no'
-        END AS signs_reported_other, -- Confirm
+        END AS signs_reported_other,
         (doc #>> '{fields, scdsc_investigation, signs_other}')::text AS signs_other,
         (doc #>> '{fields, scdsc_investigation, travel_history}')::text AS travel_history,
         (doc #>> '{fields, scdsc_investigation, contact_covid_case}')::text AS contact_covid_case,
@@ -48,3 +48,5 @@ CREATE OR REPLACE VIEW ebsview_signal_investigation AS
 );
 
 ALTER VIEW ebsview_signal_investigation OWNER TO full_access;
+GRANT SELECT ON ebsview_signal_investigation TO superset_dev_db;
+

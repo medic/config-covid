@@ -15,3 +15,4 @@ CREATE OR REPLACE VIEW ebsview_signal_report AS
 );
 
 ALTER VIEW ebsview_signal_report OWNER TO full_access;
+GRANT SELECT ON ebsview_signal_report TO superset_dev_db;

@@ -26,3 +26,4 @@ CREATE OR REPLACE VIEW ebsview_signal_verification AS
 );
 
 ALTER VIEW ebsview_signal_verification OWNER TO full_access;
+GRANT SELECT ON ebsview_signal_verification TO superset_dev_db;
