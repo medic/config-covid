@@ -10,6 +10,7 @@ CREATE TABLE ebs_signal (
 
 ALTER TABLE ebs_signal OWNER TO full_access;
 GRANT SELECT ON ebs_signal TO superset_dev_db;
+ALTER TABLE ebs_signal ADD COLUMN facility text;
 
 CREATE TABLE ebs_verification (
 	uuid text,
