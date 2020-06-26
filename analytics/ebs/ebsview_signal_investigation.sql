@@ -49,3 +49,4 @@ CREATE OR REPLACE VIEW ebsview_signal_investigation AS
 
 ALTER VIEW ebsview_signal_investigation OWNER TO full_access;
 GRANT SELECT ON ebsview_signal_investigation TO superset_dev_db;
+

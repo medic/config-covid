@@ -1,6 +1,6 @@
 {
     "icon": "icon-healthcare",
-    "title": "COVID Education",
+    "title": "COVID Care",
     "context": {
         "person": true,
         "place": false
