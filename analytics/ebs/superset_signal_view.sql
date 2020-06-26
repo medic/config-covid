@@ -3,6 +3,7 @@ CREATE OR REPLACE VIEW superset_signal_view AS
 	SELECT
 		sig.signal_id,
 		sig.reported AS signal_reported,
+		sig.facility,
 		verif.reported AS verification_reported,
 		verif.threat_exists,
 		invest.reported AS investigation_reported,

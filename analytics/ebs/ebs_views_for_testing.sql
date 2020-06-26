@@ -1,5 +1,5 @@
 CREATE OR REPLACE VIEW ebsview_signal_investigation AS
-{
+(
 	SELECT
 		uuid,
 		form,
@@ -28,7 +28,7 @@ CREATE OR REPLACE VIEW ebsview_signal_investigation AS
 		reported::timestamp with time zone
 	FROM
 		ebs_investigation
-};
+);
 
 ALTER VIEW ebsview_signal_investigation OWNER TO full_access;
 GRANT SELECT ON ebsview_signal_investigation TO superset_dev_db;
@@ -37,7 +37,7 @@ GRANT SELECT ON ebsview_signal_investigation TO superset_dev_db;
 --------------------------------------------------------
 
 CREATE OR REPLACE VIEW ebsview_signal_report AS
-{
+(
 	SELECT
 		uuid,
 		form,
@@ -45,10 +45,11 @@ CREATE OR REPLACE VIEW ebsview_signal_report AS
 		reported_by_parent,
 		signal_id,
 		signal_code,
+		facility,
 		reported::timestamp with time zone
 	FROM
 		ebs_signal
-};
+);
 
 ALTER VIEW ebsview_signal_report OWNER TO full_access;
 GRANT SELECT ON ebsview_signal_report TO superset_dev_db;
@@ -57,7 +58,7 @@ GRANT SELECT ON ebsview_signal_report TO superset_dev_db;
 --------------------------------------------------------
 
 CREATE OR REPLACE VIEW ebsview_signal_verification AS
-{
+(
 	SELECT
 		uuid,
 		form,
@@ -79,7 +80,7 @@ CREATE OR REPLACE VIEW ebsview_signal_verification AS
 		reported::timestamp with time zone
 	FROM
 		ebs_verification
-};
+);
 
 ALTER VIEW ebsview_signal_verification OWNER TO full_access;
 GRANT SELECT ON ebsview_signal_verification TO superset_dev_db;
