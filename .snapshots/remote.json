@@ -1,0 +1,71 @@
+{
+  "messages-en": {
+    "cht-covid.dev.medicmobile.org/medic": "fFtWQYENjc99G8/HMyTn3w==",
+    "3470df88.ngrok.io/medic": "MAni+yhe5EPAe/q0E5Fsdg==",
+    "2bc6c82d.ngrok.io/medic": "bwVMX0lmA4//wwcaWI7Jpw==",
+    "7b632fe30987.ngrok.io/medic": "4WDbgQVDKQpOwUrtBx+M0A==",
+    "a0de59162463.ngrok.io/medic": "fFtWQYENjc99G8/HMyTn3w=="
+  },
+  "messages-fr": {
+    "cht-covid.dev.medicmobile.org/medic": "tebKrx/f+ZNbuDfN/dO5aA==",
+    "3470df88.ngrok.io/medic": "fjdQN6PXU+kWQEGoDs2W3A==",
+    "2bc6c82d.ngrok.io/medic": "fjdQN6PXU+kWQEGoDs2W3A==",
+    "7b632fe30987.ngrok.io/medic": "fjdQN6PXU+kWQEGoDs2W3A==",
+    "a0de59162463.ngrok.io/medic": "fjdQN6PXU+kWQEGoDs2W3A=="
+  },
+  "form:ebs_assessment_training": {
+    "cht-covid.dev.medicmobile.org/medic": "kKvjT187OiYQf2lVhhN/2A==",
+    "21a2c4d0.ngrok.io/medic": "PfPhoziTo90+/fQ/Baj5DA==",
+    "d490d31d.ngrok.io/medic": "5PFntgFLq0CTkEg6V92Rfw==",
+    "bb310258.ngrok.io/medic": "+yu6Hvg4qo2Szm84NRyfgg==",
+    "a0de59162463.ngrok.io/medic": "Ip7hkhr8dB3srGdfFpdJNg==",
+    "7302e39dbbcd.ngrok.io/medic": "Uytqv8q4RYccy7uFflDc+Q=="
+  },
+  "form:ebs_assessment_training_context": {
+    "cht-covid.dev.medicmobile.org/medic": "Wi0kVhwSTIhSFkjM8FQRMQ==",
+    "21a2c4d0.ngrok.io/medic": "WK/kTIkUeRjrATcQm2Oc9g==",
+    "d490d31d.ngrok.io/medic": "A/IbANh/R6zviKBIFPwldQ=="
+  },
+  "form:update_summary": {
+    "cht-covid.dev.medicmobile.org/medic": "qaW/EJzWgKiV8spkk5Jr+g==",
+    "d490d31d.ngrok.io/medic": "qaW/EJzWgKiV8spkk5Jr+g=="
+  },
+  "form:update_summary_context": {
+    "cht-covid.dev.medicmobile.org/medic": "XpTZkP7ObE9HQIWxi+aP5g==",
+    "d490d31d.ngrok.io/medic": "XpTZkP7ObE9HQIWxi+aP5g=="
+  },
+  "form:adapted_workflow": {
+    "d490d31d.ngrok.io/medic": "cqr8huSvuk9xRrjigmtIbg==",
+    "cht-covid.dev.medicmobile.org/medic": "cqr8huSvuk9xRrjigmtIbg=="
+  },
+  "form:covid_behaviour_change": {
+    "7b632fe30987.ngrok.io/medic": "tLT+YwcujyPzh+gLe83FMA==",
+    "a0de59162463.ngrok.io/medic": "EAnBEW0eV5j1LxUSHQ/xMg==",
+    "cht-covid.dev.medicmobile.org/medic": "EAnBEW0eV5j1LxUSHQ/xMg=="
+  },
+  "form:covid_behaviour_change_context": {
+    "7b632fe30987.ngrok.io/medic": "aZXFs/RL6C+k7ISnXZn9mw==",
+    "cht-covid.dev.medicmobile.org/medic": "aZXFs/RL6C+k7ISnXZn9mw=="
+  },
+  "form:covid_rumors": {
+    "a0de59162463.ngrok.io/medic": "0CMkOO7sJ4/Z70fCCUF7Vw==",
+    "cht-covid.dev.medicmobile.org/medic": "KNL0gFOxQ5JY6p7VXU/w/g==",
+    "8216131f37ca.ngrok.io/medic": "7l+PiyelQqOHbJSrmSaV1w==",
+    "e39c79925dc7.ngrok.io/medic": "Ne4vOKywi6Yv08ioeo6qXw==",
+    "493d3988d6a2.ngrok.io/medic": "gmpziKmvaKkBwbVdG8vuSg=="
+  },
+  "form:covid_rumors_context": {
+    "a0de59162463.ngrok.io/medic": "3ErSI/Owtzndo5QDZmi9oQ==",
+    "cht-covid.dev.medicmobile.org/medic": "3ErSI/Owtzndo5QDZmi9oQ==",
+    "7302e39dbbcd.ngrok.io/medic": "Bf5mojCBK+zKg/uaxY6KKw=="
+  },
+  "form:send:sms:or:email:in:form": {
+    "7302e39dbbcd.ngrok.io/medic": "9T8movuQpDr3NQkY7u152Q=="
+  },
+  "form:cha_module_one": {
+    "cht-covid.dev.medicmobile.org/medic": "fv8JthsPkP+QY6IfDUdbMQ=="
+  },
+  "resources": {
+    "cht-covid.dev.medicmobile.org/medic": "OvA4Uv+UwdJQVHwHW54Qmg=="
+  }
+}

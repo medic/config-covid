@@ -1,6 +1,4 @@
 module.exports = [
-
-
   /****
    Use case :  Remote On-boarding (with definite due dates)
    1. EBS training evaluation
@@ -8,7 +6,7 @@ module.exports = [
    3. Adapted workflow
    ****/
   {
-    title: 'EBS training evaluation',
+    title: 'Covid Education',
     name: 'ebs-training',
     appliesTo: 'contacts',
     appliesToType: ['person'],
@@ -17,14 +15,83 @@ module.exports = [
       form: 'ebs_assessment_training'
     }],
     events: [{
-      start: new Date('2020-05-30') - new Date(),
+      start: 200,
       end: 5,
       dueDate: function () {
-        return new Date('2020-05-30');
+        return new Date('2020-10-30');
       },
     }],
     resolvedIf: function (c) {
-      return c.reports.some(report => report.form === 'ebs_assessment_training' && Utils.getField(report, 'assessment_passed') === 'yes'); 
+      return c.reports.some(report => report.form === 'ebs_assessment_training' &&
+       Utils.getField(report, 'assessment_passed') === 'yes'); 
+    }
+  },
+
+  {
+    title: 'Covid Misinformation',
+    name: 'covid-myths',
+    appliesTo: 'contacts',
+    appliesToType: ['person'],
+    appliesIf: c => c.contact.role === 'chw',
+    actions: [{
+      form: 'covid_rumors'
+    }],
+    events: [{
+      start: 200,
+      end: 5,
+      dueDate: function () {
+        return new Date('2020-10-30');
+      },
+    }],
+    resolvedIf: function (c) {
+      return c.reports.some(report => report.form === 'covid_rumors' &&
+       Utils.getField(report, 'assessment_passed') === 'yes'); 
+    }
+  },
+
+  {
+    title: 'Covid Care',
+    name: 'behaviour-change',
+    appliesTo: 'contacts',
+    appliesToType: ['person'],
+    appliesIf: c => c.contact.role === 'chw',
+    actions: [{
+      form: 'covid_behaviour_change'
+    }],
+    events: [{
+      start: 200,
+      end: 5,
+      dueDate: function () {
+        return new Date('2020-10-30');
+      },
+    }],
+    resolvedIf: function (c) {
+      return c.reports.some(report => report.form === 'covid_behaviour_change' &&
+       Utils.getField(report, 'assessment_passed') === 'yes'); 
+    }
+  },
+
+  {
+    title: 'Community Health Academy',
+    name: 'cha-module-one',
+    // contactLabel: 'Covid-19',
+    icon:'icon-cha',
+    appliesTo: 'contacts',
+    appliesToType: ['person'],
+    appliesIf: c => c.contact.role === 'chw',
+    actions: [{
+      form: 'cha_module_one'
+    }],
+    events: [{
+      start: 200,
+      end: 5,
+      dueDate: function () {
+        return new Date('2020-10-30');
+      },
+    }],
+    resolvedIf: function (c) {
+      return c.reports.some(report => report.form === 'cha_module_one' &&
+           Utils.getField(report, 'assessment_passed') === 'yes');
     }
   },
 
@@ -38,10 +105,10 @@ module.exports = [
       form: 'update_summary'
     }],
     events: [{
-      start: new Date('2020-05-18') - new Date(),
+      start: 200,
       end: 5,
       dueDate: function () {
-        return new Date('2020-05-18');
+        return new Date('2020-10-30');
       },
     }],
     resolvedIf: function(c) {
@@ -59,10 +126,10 @@ module.exports = [
       form: 'adapted_workflow'
     }],
     events: [{
-      start: new Date('2020-05-18') - new Date(),
+      start: 200,
       end: 5,
       dueDate: function () {
-        return new Date('2020-05-18');
+        return new Date('2020-10-30');
       },
     }],
     resolvedIf: function(c) {

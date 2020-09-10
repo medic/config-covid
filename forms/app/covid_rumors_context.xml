@@ -1,0 +1,333 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>COVID-19 Education: Behaviour Change</h:title>
+    <model>
+      <instance>
+        <covid_rumors_context delimiter="#" id="covid_rumors_context" prefix="J1!covid_rumors_context!" version="2020-07-20 18:37:10">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source/>
+            <source_id/>
+            <user/>
+            <contact>
+              <_id/>
+              <phone/>
+            </contact>
+          </inputs>
+          <patient_id/>
+          <patient_phone/>
+          <rumours_intro>
+            <intro_note/>
+            <send_message/>
+          </rumours_intro>
+          <responsibility>
+            <chw_responsibility/>
+          </responsibility>
+          <heard_rumours>
+            <detected_rumours/>
+            <inform_officials/>
+            <Share_analyzed_info/>
+            <draft_message/>
+            <secure_approval/>
+            <decide_channels/>
+            <deisseminate_message/>
+            <partner_with_community/>
+          </heard_rumours>
+          <learning_quiz>
+            <quick_quiz/>
+            <young_people_q/>
+            <young_people_q_score/>
+            <no_vaccine_q/>
+            <no_vaccine_q_score/>
+            <maize_meal_q/>
+            <maize_meal_q_score/>
+            <malaria_q/>
+            <malaria_q_score/>
+            <corona_africa_q/>
+            <corona_africa_q_score/>
+            <disinfectant_q/>
+            <disinfectant_q_score/>
+          </learning_quiz>
+          <assessment_score/>
+          <assessment_passed/>
+          <summary>
+            <submit/>
+            <result/>
+            <success_1/>
+            <success_confidence/>
+            <effective_performance/>
+            <feedback/>
+            <fail_1/>
+            <fail_2/>
+            <Fail_3/>
+            <fail_assistance/>
+          </summary>
+          <meta>
+            <instanceID/>
+          </meta>
+        </covid_rumors_context>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/covid_rumors_context/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/covid_rumors_context/inputs/source" type="string"/>
+      <bind nodeset="/covid_rumors_context/inputs/source_id" type="string"/>
+      <bind nodeset="/covid_rumors_context/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/covid_rumors_context/inputs/contact/phone" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/covid_rumors_context/patient_id" type="string"/>
+      <bind calculate="../inputs/contact/phone" nodeset="/covid_rumors_context/patient_phone" type="string"/>
+      <bind nodeset="/covid_rumors_context/rumours_intro/intro_note" readonly="true()" type="string"/>
+      <bind nodeset="/covid_rumors_context/rumours_intro/send_message" readonly="true()" type="string"/>
+      <bind nodeset="/covid_rumors_context/responsibility/chw_responsibility" readonly="true()" type="string"/>
+      <bind nodeset="/covid_rumors_context/heard_rumours/detected_rumours" readonly="true()" type="string"/>
+      <bind nodeset="/covid_rumors_context/heard_rumours/inform_officials" readonly="true()" type="string"/>
+      <bind nodeset="/covid_rumors_context/heard_rumours/Share_analyzed_info" readonly="true()" type="string"/>
+      <bind nodeset="/covid_rumors_context/heard_rumours/draft_message" readonly="true()" type="string"/>
+      <bind nodeset="/covid_rumors_context/heard_rumours/secure_approval" readonly="true()" type="string"/>
+      <bind nodeset="/covid_rumors_context/heard_rumours/decide_channels" readonly="true()" type="string"/>
+      <bind nodeset="/covid_rumors_context/heard_rumours/deisseminate_message" readonly="true()" type="string"/>
+      <bind nodeset="/covid_rumors_context/heard_rumours/partner_with_community" readonly="true()" type="string"/>
+      <bind nodeset="/covid_rumors_context/learning_quiz/quick_quiz" readonly="true()" type="string"/>
+      <bind nodeset="/covid_rumors_context/learning_quiz/young_people_q" required="true()" type="select1"/>
+      <bind calculate="if( /covid_rumors_context/learning_quiz/young_people_q  = 'false', 1, 0)" nodeset="/covid_rumors_context/learning_quiz/young_people_q_score" type="string"/>
+      <bind nodeset="/covid_rumors_context/learning_quiz/no_vaccine_q" required="true()" type="select1"/>
+      <bind calculate="if( /covid_rumors_context/learning_quiz/no_vaccine_q  = 'true', 1, 0)" nodeset="/covid_rumors_context/learning_quiz/no_vaccine_q_score" type="string"/>
+      <bind nodeset="/covid_rumors_context/learning_quiz/maize_meal_q" required="true()" type="select1"/>
+      <bind calculate="if( /covid_rumors_context/learning_quiz/maize_meal_q  = 'false' , 1, 0)" nodeset="/covid_rumors_context/learning_quiz/maize_meal_q_score" type="string"/>
+      <bind nodeset="/covid_rumors_context/learning_quiz/malaria_q" required="true()" type="select1"/>
+      <bind calculate="if(  /covid_rumors_context/learning_quiz/malaria_q  = 'false', 1, 0)" nodeset="/covid_rumors_context/learning_quiz/malaria_q_score" type="string"/>
+      <bind nodeset="/covid_rumors_context/learning_quiz/corona_africa_q" required="true()" type="select1"/>
+      <bind calculate="if( /covid_rumors_context/learning_quiz/corona_africa_q  = 'true', 1, 0)" nodeset="/covid_rumors_context/learning_quiz/corona_africa_q_score" type="string"/>
+      <bind nodeset="/covid_rumors_context/learning_quiz/disinfectant_q" required="true()" type="select1"/>
+      <bind calculate="if( /covid_rumors_context/learning_quiz/disinfectant_q  = 'false', 1, 0)" nodeset="/covid_rumors_context/learning_quiz/disinfectant_q_score" type="string"/>
+      <bind calculate="int( /covid_rumors_context/learning_quiz/young_people_q_score ) + int( /covid_rumors_context/learning_quiz/no_vaccine_q_score ) + int( /covid_rumors_context/learning_quiz/maize_meal_q_score ) + int( /covid_rumors_context/learning_quiz/malaria_q_score ) + int( /covid_rumors_context/learning_quiz/corona_africa_q_score ) + int( /covid_rumors_context/learning_quiz/disinfectant_q_score )" nodeset="/covid_rumors_context/assessment_score" type="string"/>
+      <bind calculate="if( /covid_rumors_context/assessment_score  = 6, 'yes', 'no')" nodeset="/covid_rumors_context/assessment_passed" type="string"/>
+      <bind nodeset="/covid_rumors_context/summary/submit" readonly="true()" type="string"/>
+      <bind nodeset="/covid_rumors_context/summary/result" readonly="true()" type="string"/>
+      <bind nodeset="/covid_rumors_context/summary/success_1" readonly="true()" relevant=" /covid_rumors_context/assessment_passed  = 'yes'" type="string"/>
+      <bind nodeset="/covid_rumors_context/summary/success_confidence" relevant=" /covid_rumors_context/assessment_passed  = 'yes'" required="true()" type="select1"/>
+      <bind nodeset="/covid_rumors_context/summary/effective_performance" relevant=" /covid_rumors_context/assessment_passed  = 'yes'" required="true()" type="select1"/>
+      <bind nodeset="/covid_rumors_context/summary/feedback" relevant=" /covid_rumors_context/assessment_passed  = 'yes'" type="string"/>
+      <bind nodeset="/covid_rumors_context/summary/fail_1" readonly="true()" relevant=" /covid_rumors_context/assessment_passed  = 'no'" type="string"/>
+      <bind nodeset="/covid_rumors_context/summary/fail_2" readonly="true()" relevant=" /covid_rumors_context/assessment_passed  = 'no'" type="string"/>
+      <bind nodeset="/covid_rumors_context/summary/Fail_3" readonly="true()" relevant=" /covid_rumors_context/assessment_passed  = 'no'" type="string"/>
+      <bind nodeset="/covid_rumors_context/summary/fail_assistance" relevant=" /covid_rumors_context/assessment_passed  = 'no'" type="select1"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/covid_rumors_context/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/covid_rumors_context/inputs">
+      <label>Patient</label>
+      <input appearance="hidden" ref="/covid_rumors_context/inputs/source">
+        <label>Source</label>
+      </input>
+      <input appearance="hidden" ref="/covid_rumors_context/inputs/source_id">
+        <label>Source ID</label>
+      </input>
+      <group ref="/covid_rumors_context/inputs/user">
+        <label>User</label>
+      </group>
+      <group ref="/covid_rumors_context/inputs/contact">
+        <label>Contact</label>
+        <input appearance="hidden" ref="/covid_rumors_context/inputs/contact/_id">
+          <label>_id</label>
+        </input>
+        <input appearance="hidden" ref="/covid_rumors_context/inputs/contact/phone">
+          <label>phone</label>
+        </input>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/covid_rumors_context/rumours_intro">
+      <label>COVID-19 and Rumours</label>
+      <input ref="/covid_rumors_context/rumours_intro/intro_note">
+        <label>Detecting and responding to rumours is an important measure to prevent the spread of COVID-19</label>
+      </input>
+      <input appearance="ex:android.intent.action.SENDTO(uri_data=concat('smsto:', /covid_rumors_context/patient_phone ), sms_body= /covid_rumors_context/rumours_intro/intro_note )" ref="/covid_rumors_context/rumours_intro/send_message">
+        <label>Click to send sms</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_rumors_context/responsibility">
+      <label>Our Responsibility</label>
+      <input ref="/covid_rumors_context/responsibility/chw_responsibility">
+        <label>Health workers have a responsibility to help stop COVID-19 rumours and spread accurate health information</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_rumors_context/heard_rumours">
+      <label>What to do if you hear a rumour</label>
+      <input ref="/covid_rumors_context/heard_rumours/detected_rumours">
+        <label>After rumours have been detected, the next step is to respond to rumours in a timely manner:</label>
+      </input>
+      <input ref="/covid_rumors_context/heard_rumours/inform_officials">
+        <label>&lt;li style="margin-left:3%;list-style-type:circle"&gt;Inform public officials of circulating rumours&lt;/li&gt;</label>
+      </input>
+      <input ref="/covid_rumors_context/heard_rumours/Share_analyzed_info">
+        <label>&lt;li style="margin-left:3%;list-style-type:circle"&gt;Share analyzed information with the national/state rumour management team&lt;/li&gt;</label>
+      </input>
+      <input ref="/covid_rumors_context/heard_rumours/draft_message">
+        <label>&lt;li style="margin-left:3%;list-style-type:circle"&gt;Draft message to counter the rumour&lt;/li&gt;</label>
+      </input>
+      <input ref="/covid_rumors_context/heard_rumours/secure_approval">
+        <label>&lt;li style="margin-left:3%;list-style-type:circle"&gt;Secure approval from the Ministry of Health for the draft message to counter the rumour&lt;/li&gt;</label>
+      </input>
+      <input ref="/covid_rumors_context/heard_rumours/decide_channels">
+        <label>&lt;li style="margin-left:3%;list-style-type:circle"&gt;Decide appropriate channels to disseminate approved message like radio and social media&lt;/li&gt;</label>
+      </input>
+      <input ref="/covid_rumors_context/heard_rumours/deisseminate_message">
+        <label>&lt;li style="margin-left:3%;list-style-type:circle"&gt;Disseminate approved message to the audience via appropriate and approved channels&lt;/li&gt;</label>
+      </input>
+      <input ref="/covid_rumors_context/heard_rumours/partner_with_community">
+        <label>&lt;li style="margin-left:3%;list-style-type:circle"&gt;Partner with community leaders and groups to address rumours&lt;/li&gt;</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_rumors_context/learning_quiz">
+      <label>Covid Rumours Assessment</label>
+      <input ref="/covid_rumors_context/learning_quiz/quick_quiz">
+        <label>Answer the following questions with a true or false</label>
+      </input>
+      <select1 ref="/covid_rumors_context/learning_quiz/young_people_q">
+        <label>Coronavirus does not attack people at a young age</label>
+        <item>
+          <label>True</label>
+          <value>true</value>
+        </item>
+        <item>
+          <label>False</label>
+          <value>false</value>
+        </item>
+      </select1>
+      <select1 ref="/covid_rumors_context/learning_quiz/no_vaccine_q">
+        <label>There is not a vaccine for COVID-19</label>
+        <item>
+          <label>True</label>
+          <value>true</value>
+        </item>
+        <item>
+          <label>False</label>
+          <value>false</value>
+        </item>
+      </select1>
+      <select1 ref="/covid_rumors_context/learning_quiz/maize_meal_q">
+        <label>Maize meal will decrease your chance of dying from COVID-19</label>
+        <item>
+          <label>True</label>
+          <value>true</value>
+        </item>
+        <item>
+          <label>False</label>
+          <value>false</value>
+        </item>
+      </select1>
+      <select1 ref="/covid_rumors_context/learning_quiz/malaria_q">
+        <label>COVID-19 is like malaria</label>
+        <item>
+          <label>True</label>
+          <value>true</value>
+        </item>
+        <item>
+          <label>False</label>
+          <value>false</value>
+        </item>
+      </select1>
+      <select1 ref="/covid_rumors_context/learning_quiz/corona_africa_q">
+        <label>The coronavirus can survive in Africa's warm climate</label>
+        <item>
+          <label>True</label>
+          <value>true</value>
+        </item>
+        <item>
+          <label>False</label>
+          <value>false</value>
+        </item>
+      </select1>
+      <select1 ref="/covid_rumors_context/learning_quiz/disinfectant_q">
+        <label>Using a strong disinfectant (like bleach) to clean hands and body protects you from COVID-19</label>
+        <item>
+          <label>True</label>
+          <value>true</value>
+        </item>
+        <item>
+          <label>False</label>
+          <value>false</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list summary" ref="/covid_rumors_context/summary">
+      <label></label>
+      <input ref="/covid_rumors_context/summary/submit">
+        <label>&lt;h4 style="text-align:center;"&gt;Be sure you Submit to complete this action.&lt;/h4&gt;</label>
+      </input>
+      <input appearance="h1 green" ref="/covid_rumors_context/summary/result">
+        <label>Thank you</label>
+      </input>
+      <input ref="/covid_rumors_context/summary/success_1">
+        <label>You have answered all the questions correctly! You may review this content on your profile page.</label>
+      </input>
+      <select1 ref="/covid_rumors_context/summary/success_confidence">
+        <label>How confident do you feel in your mastery of this content?</label>
+        <item>
+          <label>Extremely confident</label>
+          <value>extreme</value>
+        </item>
+        <item>
+          <label>Very confident</label>
+          <value>very</value>
+        </item>
+        <item>
+          <label>Somewhat confident</label>
+          <value>somewhat</value>
+        </item>
+        <item>
+          <label>A little confident</label>
+          <value>a_little</value>
+        </item>
+        <item>
+          <label>Not confident at all</label>
+          <value>no_confidence</value>
+        </item>
+      </select1>
+      <select1 ref="/covid_rumors_context/summary/effective_performance">
+        <label>Will you be able to effectively perform the task?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/covid_rumors_context/summary/feedback">
+        <label>Do you have any other questions or feedback on this topic? (Optional)</label>
+        <hint>Your supervisor will follow up</hint>
+      </input>
+      <input ref="/covid_rumors_context/summary/fail_1">
+        <label>Good start but you only answered <output value=" /covid_rumors_context/assessment_score "/> out of the 6 questions correctly.</label>
+      </input>
+      <input ref="/covid_rumors_context/summary/fail_2">
+        <label>We'll generate another task for you to go through the workflow again.</label>
+      </input>
+      <input ref="/covid_rumors_context/summary/Fail_3">
+        <label>Thank you for your persistence, educating ourselves and our communities is the best way to stop covid.</label>
+      </input>
+      <select1 ref="/covid_rumors_context/summary/fail_assistance">
+        <label>Do you need assistance with this topic?</label>
+        <hint>Optional</hint>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+  </h:body>
+</h:html>

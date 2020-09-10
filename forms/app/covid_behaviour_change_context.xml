@@ -1,0 +1,844 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>COVID-19 Education: Behaviour Change</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/covid_behaviour_change_context/hydrate/hydrate_image:label">
+            <value form="image">jr://images/hydrate.png</value>
+          </text>
+          <text id="/covid_behaviour_change_context/little_contact/little_contact_image:label">
+            <value form="image">jr://images/minimize_contact.png</value>
+          </text>
+          <text id="/covid_behaviour_change_context/self_isolate/self_isolate_image:label">
+            <value form="image">jr://images/self_isolate.png</value>
+          </text>
+          <text id="/covid_behaviour_change_context/clean_all_surfaces/clean_surfaces_image:label">
+            <value form="image">jr://images/clean_surfaces.png</value>
+          </text>
+          <text id="/covid_behaviour_change_context/clinical_assessment_referral/breathing_difficulty_image:label">
+            <value form="image">jr://images/breathing_difficulty.svg</value>
+          </text>
+          <text id="/covid_behaviour_change_context/tissue_cough/tissue_cough_image:label">
+            <value form="image">jr://images/cough_into_tissue.png</value>
+          </text>
+          <text id="/covid_behaviour_change_context/no_visitors/no_visitors_image:label">
+            <value form="image">jr://images/avoid_visitors.png</value>
+          </text>
+          <text id="/covid_behaviour_change_context/cover_face/cover_face_image:label">
+            <value form="image">jr://images/face_covering.png</value>
+          </text>
+          <text id="/covid_behaviour_change_context/separate_items/separate_items_image:label">
+            <value form="image">jr://images/separate_things.png</value>
+          </text>
+          <text id="/covid_behaviour_change_context/assess_patient/patient_assessment_image:label">
+            <value form="image">jr://images/covid_patient_assessment.png</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <covid_behaviour_change_context delimiter="#" id="covid_behaviour_change_context" prefix="J1!covid_behaviour_change_context!" version="2020-06-10 21:02:40">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source/>
+            <source_id/>
+            <user/>
+            <contact>
+              <_id/>
+            </contact>
+          </inputs>
+          <patient_id/>
+          <ebs_intro>
+            <intro_note/>
+            <minimize_stigma/>
+            <patient_assessment/>
+            <recognize_symptoms/>
+            <recognize_referral/>
+            <prevention/>
+            <protective_equipment/>
+            <limit_contact/>
+            <reintegration_advice/>
+          </ebs_intro>
+          <stigmatization>
+            <stigma_question/>
+            <stigma_definition/>
+            <stigmatization_risks/>
+            <stigma_risks/>
+            <hide_illness/>
+            <no_help_sought/>
+            <unhealthy_behaviours/>
+            <risk_note/>
+          </stigmatization>
+          <assess_patient>
+            <by_phone/>
+            <distance/>
+            <ppe/>
+            <patient_assessment_image/>
+          </assess_patient>
+          <personal_protective_equipment>
+            <what_is_ppe/>
+            <ppe_components/>
+            <ppe_use_and_disposal/>
+            <cover_nose_mouth/>
+            <cover_eyes/>
+            <protective_garment/>
+            <ppe_removal/>
+            <wash_hands/>
+            <patient_facemask/>
+          </personal_protective_equipment>
+          <clinical_assessment>
+            <identify_symptoms/>
+            <notable_symptoms/>
+            <fever/>
+            <breathing/>
+            <blue_lips/>
+            <fluids/>
+            <cough/>
+            <confusion/>
+            <chest_pains/>
+            <dehydration/>
+            <cant_stay_awake/>
+            <sore_throat/>
+            <nausea/>
+            <smell/>
+          </clinical_assessment>
+          <clinical_assessment_referral>
+            <clinical_assessment_and_care/>
+            <fast_breathing/>
+            <indrawing_chest/>
+            <pale_lips/>
+            <difficulty_speaking/>
+            <breathing_difficulty_image/>
+          </clinical_assessment_referral>
+          <suspect_or_patient_guide>
+            <facemask/>
+            <isolate/>
+            <cough_into_tissue/>
+            <rest/>
+            <minimize_contact/>
+            <use_own_things/>
+            <avoid_visitors/>
+            <clean_surfaces/>
+          </suspect_or_patient_guide>
+          <cover_face>
+            <cover_face_note/>
+            <cover_face_image/>
+          </cover_face>
+          <self_isolate>
+            <self_isolate_note/>
+            <self_isolate_image/>
+          </self_isolate>
+          <tissue_cough>
+            <tissue_cough_note/>
+            <tissue_cough_image/>
+          </tissue_cough>
+          <hydrate>
+            <hydrate_note/>
+            <hydrate_image/>
+          </hydrate>
+          <little_contact>
+            <little_contact_note/>
+            <little_contact_image/>
+          </little_contact>
+          <separate_items>
+            <separate_items_note/>
+            <separate_items_image/>
+          </separate_items>
+          <no_visitors>
+            <no_visitors_note/>
+            <no_visitors_image/>
+          </no_visitors>
+          <clean_all_surfaces>
+            <clean_surfaces_note/>
+            <clean_surfaces_image/>
+          </clean_all_surfaces>
+          <primary_caretaker>
+            <primary_caretaker_note/>
+            <not_at_risk/>
+            <monitor_patient/>
+            <wear_face_covering/>
+            <wash_hands/>
+          </primary_caretaker>
+          <household_contacts>
+            <household_advice/>
+          </household_contacts>
+          <rejoining_community>
+            <rejoining_note/>
+            <no_fever/>
+            <improved_symptoms/>
+            <ten_days_since_first_symptoms/>
+          </rejoining_community>
+          <learning_quiz>
+            <possible_symptoms_q/>
+            <possible_symptoms_q_score/>
+            <patient_referral_q/>
+            <patient_referral_q_score/>
+            <parts_to_cover_q/>
+            <parts_to_cover_q_score/>
+            <contact_precaution_q/>
+            <contact_precaution_q_score/>
+            <reintegration_q/>
+            <reintegration_q_score/>
+            <minimize_stigma_q/>
+            <minimize_stigma_q_score/>
+          </learning_quiz>
+          <assessment_score/>
+          <assessment_passed/>
+          <summary>
+            <submit/>
+            <result/>
+            <success_1/>
+            <success_confidence/>
+            <effective_performance/>
+            <feedback/>
+            <fail_1/>
+            <fail_2/>
+            <Fail_3/>
+            <fail_assistance/>
+          </summary>
+          <meta>
+            <instanceID/>
+          </meta>
+        </covid_behaviour_change_context>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/covid_behaviour_change_context/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/covid_behaviour_change_context/inputs/source" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/inputs/source_id" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/inputs/contact/_id" type="db:person"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/covid_behaviour_change_context/patient_id" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/ebs_intro/intro_note" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/ebs_intro/minimize_stigma" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/ebs_intro/patient_assessment" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/ebs_intro/recognize_symptoms" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/ebs_intro/recognize_referral" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/ebs_intro/prevention" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/ebs_intro/protective_equipment" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/ebs_intro/limit_contact" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/ebs_intro/reintegration_advice" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/stigmatization/stigma_question" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/stigmatization/stigma_definition" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/stigmatization/stigmatization_risks" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/stigmatization/stigma_risks" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/stigmatization/hide_illness" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/stigmatization/no_help_sought" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/stigmatization/unhealthy_behaviours" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/stigmatization/risk_note" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/assess_patient/by_phone" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/assess_patient/distance" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/assess_patient/ppe" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/assess_patient/patient_assessment_image" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/personal_protective_equipment/what_is_ppe" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/personal_protective_equipment/ppe_components" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/personal_protective_equipment/ppe_use_and_disposal" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/personal_protective_equipment/cover_nose_mouth" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/personal_protective_equipment/cover_eyes" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/personal_protective_equipment/protective_garment" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/personal_protective_equipment/ppe_removal" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/personal_protective_equipment/wash_hands" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/personal_protective_equipment/patient_facemask" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/clinical_assessment/identify_symptoms" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/clinical_assessment/notable_symptoms" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/clinical_assessment/fever" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/clinical_assessment/breathing" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/clinical_assessment/blue_lips" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/clinical_assessment/fluids" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/clinical_assessment/cough" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/clinical_assessment/confusion" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/clinical_assessment/chest_pains" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/clinical_assessment/dehydration" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/clinical_assessment/cant_stay_awake" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/clinical_assessment/sore_throat" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/clinical_assessment/nausea" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/clinical_assessment/smell" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/clinical_assessment_referral/clinical_assessment_and_care" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/clinical_assessment_referral/fast_breathing" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/clinical_assessment_referral/indrawing_chest" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/clinical_assessment_referral/pale_lips" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/clinical_assessment_referral/difficulty_speaking" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/clinical_assessment_referral/breathing_difficulty_image" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/suspect_or_patient_guide/facemask" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/suspect_or_patient_guide/isolate" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/suspect_or_patient_guide/cough_into_tissue" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/suspect_or_patient_guide/rest" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/suspect_or_patient_guide/minimize_contact" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/suspect_or_patient_guide/use_own_things" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/suspect_or_patient_guide/avoid_visitors" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/suspect_or_patient_guide/clean_surfaces" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/cover_face/cover_face_note" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/cover_face/cover_face_image" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/self_isolate/self_isolate_note" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/self_isolate/self_isolate_image" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/tissue_cough/tissue_cough_note" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/tissue_cough/tissue_cough_image" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/hydrate/hydrate_note" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/hydrate/hydrate_image" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/little_contact/little_contact_note" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/little_contact/little_contact_image" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/separate_items/separate_items_note" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/separate_items/separate_items_image" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/no_visitors/no_visitors_note" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/no_visitors/no_visitors_image" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/clean_all_surfaces/clean_surfaces_note" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/clean_all_surfaces/clean_surfaces_image" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/primary_caretaker/primary_caretaker_note" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/primary_caretaker/not_at_risk" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/primary_caretaker/monitor_patient" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/primary_caretaker/wear_face_covering" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/primary_caretaker/wash_hands" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/household_contacts/household_advice" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/rejoining_community/rejoining_note" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/rejoining_community/no_fever" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/rejoining_community/improved_symptoms" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/rejoining_community/ten_days_since_first_symptoms" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/learning_quiz/possible_symptoms_q" required="true()" type="select"/>
+      <bind calculate="if( /covid_behaviour_change_context/learning_quiz/possible_symptoms_q  = 'fever difficulty_breathing confusion', 1, 0)" nodeset="/covid_behaviour_change_context/learning_quiz/possible_symptoms_q_score" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/learning_quiz/patient_referral_q" required="true()" type="select1"/>
+      <bind calculate="if( /covid_behaviour_change_context/learning_quiz/patient_referral_q  = 'refer', 1, 0)" nodeset="/covid_behaviour_change_context/learning_quiz/patient_referral_q_score" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/learning_quiz/parts_to_cover_q" required="true()" type="select1"/>
+      <bind calculate="if( /covid_behaviour_change_context/learning_quiz/parts_to_cover_q  = 'nose_mouth' , 1, 0)" nodeset="/covid_behaviour_change_context/learning_quiz/parts_to_cover_q_score" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/learning_quiz/contact_precaution_q" required="true()" type="select1"/>
+      <bind calculate="if(  /covid_behaviour_change_context/learning_quiz/contact_precaution_q  = 'wash_hands', 1, 0)" nodeset="/covid_behaviour_change_context/learning_quiz/contact_precaution_q_score" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/learning_quiz/reintegration_q" required="true()" type="select1"/>
+      <bind calculate="if( /covid_behaviour_change_context/learning_quiz/reintegration_q  = '72h', 1, 0)" nodeset="/covid_behaviour_change_context/learning_quiz/reintegration_q_score" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/learning_quiz/minimize_stigma_q" required="true()" type="select1"/>
+      <bind calculate="if( /covid_behaviour_change_context/learning_quiz/minimize_stigma_q  = 'anyone_can_gerrit', 1, 0)" nodeset="/covid_behaviour_change_context/learning_quiz/minimize_stigma_q_score" type="string"/>
+      <bind calculate="int( /covid_behaviour_change_context/learning_quiz/possible_symptoms_q_score ) + int( /covid_behaviour_change_context/learning_quiz/patient_referral_q_score ) + int( /covid_behaviour_change_context/learning_quiz/parts_to_cover_q_score ) + int( /covid_behaviour_change_context/learning_quiz/contact_precaution_q_score ) + int( /covid_behaviour_change_context/learning_quiz/reintegration_q_score ) + int( /covid_behaviour_change_context/learning_quiz/minimize_stigma_q_score )" nodeset="/covid_behaviour_change_context/assessment_score" type="string"/>
+      <bind calculate="if( /covid_behaviour_change_context/assessment_score  = 6, 'yes', 'no')" nodeset="/covid_behaviour_change_context/assessment_passed" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/summary/submit" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/summary/result" readonly="true()" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/summary/success_1" readonly="true()" relevant=" /covid_behaviour_change_context/assessment_passed  = 'yes'" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/summary/success_confidence" relevant=" /covid_behaviour_change_context/assessment_passed  = 'yes'" required="true()" type="select1"/>
+      <bind nodeset="/covid_behaviour_change_context/summary/effective_performance" relevant=" /covid_behaviour_change_context/assessment_passed  = 'yes'" required="true()" type="select1"/>
+      <bind nodeset="/covid_behaviour_change_context/summary/feedback" relevant=" /covid_behaviour_change_context/assessment_passed  = 'yes'" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/summary/fail_1" readonly="true()" relevant=" /covid_behaviour_change_context/assessment_passed  = 'no'" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/summary/fail_2" readonly="true()" relevant=" /covid_behaviour_change_context/assessment_passed  = 'no'" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/summary/Fail_3" readonly="true()" relevant=" /covid_behaviour_change_context/assessment_passed  = 'no'" type="string"/>
+      <bind nodeset="/covid_behaviour_change_context/summary/fail_assistance" relevant=" /covid_behaviour_change_context/assessment_passed  = 'no'" type="select1"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/covid_behaviour_change_context/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/covid_behaviour_change_context/inputs">
+      <label>Patient</label>
+      <input appearance="hidden" ref="/covid_behaviour_change_context/inputs/source">
+        <label>Source</label>
+      </input>
+      <input appearance="hidden" ref="/covid_behaviour_change_context/inputs/source_id">
+        <label>Source ID</label>
+      </input>
+      <group ref="/covid_behaviour_change_context/inputs/user">
+        <label>User</label>
+      </group>
+      <group ref="/covid_behaviour_change_context/inputs/contact">
+        <label>Contact</label>
+        <input appearance="hidden" ref="/covid_behaviour_change_context/inputs/contact/_id">
+          <label>_id</label>
+        </input>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/covid_behaviour_change_context/ebs_intro">
+      <label>Learning Objectives</label>
+      <input ref="/covid_behaviour_change_context/ebs_intro/intro_note">
+        <label>**Community health workers play an important role in recognizing covid-19, educationg others on how to care for a covid patient and reducing stigma. After this module you will:**</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/ebs_intro/minimize_stigma">
+        <label>1. Know how to minimize stigma associated with COVID infection</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/ebs_intro/patient_assessment">
+        <label>2. Know how to assess and risk stratify patients with suspected COVID</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/ebs_intro/recognize_symptoms">
+        <label>&lt;li style="margin-left:10%;list-style-type:circle"&gt;Recognize presenting symtpoms&lt;/li&gt;</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/ebs_intro/recognize_referral">
+        <label>&lt;li style="margin-left:10%;list-style-type:circle"&gt;Recognize when patient requires referral for emergency help&lt;/li&gt;</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/ebs_intro/prevention">
+        <label>&lt;li style="margin-left:10%;list-style-type:circle"&gt;Advise on key prevention strategies&lt;/li&gt;</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/ebs_intro/protective_equipment">
+        <label>&lt;li style="margin-left:10%;list-style-type:circle"&gt;Information on personal protective equipment&lt;/li&gt;</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/ebs_intro/limit_contact">
+        <label>3. Know how suspected COVID positive patients can limit contact with others</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/ebs_intro/reintegration_advice">
+        <label>4. Know key messages to advise on reintegration into the household/society</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_behaviour_change_context/stigmatization">
+      <label>Stigmatization</label>
+      <input ref="/covid_behaviour_change_context/stigmatization/stigma_question">
+        <label>**What is stigmatization?**</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/stigmatization/stigma_definition">
+        <label>Stigma occurs when people develop negative associations towards a specific population. As a result, people can be labeled, stereotyped, separated and/or discriminated against.</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/stigmatization/stigmatization_risks">
+        <label>**Risks of stigmatization during the pandemic**</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/stigmatization/stigma_risks">
+        <label>Stigmatization causes more risk when patients:</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/stigmatization/hide_illness">
+        <label>&lt;li style="margin-left:10%;list-style-type:circle"&gt;Hide their illness to avoid being discriminated&lt;/li&gt;</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/stigmatization/no_help_sought">
+        <label>&lt;li style="margin-left:10%;list-style-type:circle"&gt;Don't seek help or healthcare immediately&lt;/li&gt;</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/stigmatization/unhealthy_behaviours">
+        <label>&lt;li style="margin-left:10%;list-style-type:circle"&gt;Don't adopt healthy behaviours&lt;/li&gt;</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/stigmatization/risk_note">
+        <label>Remember that anyone can get COVID. Stigmatizing people can aggravate health problems, increase transmissions and make it more difficult to control the outbreak.</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_behaviour_change_context/assess_patient">
+      <label>How to safely and effectively assess a patient</label>
+      <input ref="/covid_behaviour_change_context/assess_patient/by_phone">
+        <label>It is better to assess and advise a patient by phone, because the virus is easily transmissible.</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/assess_patient/distance">
+        <label>In person, evaluate the patient's symptoms from a distance</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/assess_patient/ppe">
+        <label>Always wear a mask or face covering, and wash your hands afterwards</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/assess_patient/patient_assessment_image">
+        <label ref="jr:itext('/covid_behaviour_change_context/assess_patient/patient_assessment_image:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_behaviour_change_context/personal_protective_equipment">
+      <label>Personal Protective Equipment</label>
+      <input ref="/covid_behaviour_change_context/personal_protective_equipment/what_is_ppe">
+        <label>**What is Personal Protective Equipment (PPE) and why is it important?**</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/personal_protective_equipment/ppe_components">
+        <label>PPE includes face masks, gloves, eye glasses or face shields, and protective garments. These items can protect one from being infected by virus-containing droplets</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/personal_protective_equipment/ppe_use_and_disposal">
+        <label>**Effective use and safe disposal of PPE**</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/personal_protective_equipment/cover_nose_mouth">
+        <label>&lt;li style="margin-left:10%;list-style-type:circle"&gt;Cover your nose and mouth with a face mask&lt;/li&gt;</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/personal_protective_equipment/cover_eyes">
+        <label>&lt;li style="margin-left:10%;list-style-type:circle"&gt;Cover your eyes with protective glasses or a face shield&lt;/li&gt;</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/personal_protective_equipment/protective_garment">
+        <label>&lt;li style="margin-left:10%;list-style-type:circle"&gt;Wear a protective garment&lt;/li&gt;</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/personal_protective_equipment/ppe_removal">
+        <label>&lt;li style="margin-left:10%;list-style-type:circle"&gt;When removing the PPE, ensure the outer part of your garments do not touch your face or skin&lt;/li&gt;</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/personal_protective_equipment/wash_hands">
+        <label>&lt;li style="margin-left:10%;list-style-type:circle"&gt;Wash your hands before and after wearing PPE&lt;/li&gt;</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/personal_protective_equipment/patient_facemask">
+        <label>&lt;li style="margin-left:10%;list-style-type:circle"&gt;If your patient needs to be transferred to medical care, they should wear a facemask to protect others&lt;/li&gt;</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_behaviour_change_context/clinical_assessment">
+      <label>Clininal Assessment and Next Steps for Patients</label>
+      <input ref="/covid_behaviour_change_context/clinical_assessment/identify_symptoms">
+        <label>When speaking with your patient by phone or in person, you should assess these symptoms. If the patient shows any symptoms, refer them to the nearest clinic or health center and contact your supervisor about diagnostic testing</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/clinical_assessment/notable_symptoms">
+        <label>Notable COVID-19 symptoms include:</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/clinical_assessment/fever">
+        <label>&lt;li style="margin-left:10%;list-style-type:circle"&gt;Fever&lt;/li&gt;</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/clinical_assessment/breathing">
+        <label>&lt;li style="margin-left:10%;list-style-type:circle"&gt;Difficulty breathing or respiratory problems&lt;/li&gt;</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/clinical_assessment/blue_lips">
+        <label>&lt;li style="margin-left:10%;list-style-type:circle"&gt;Bluish lips or face&lt;/li&gt;</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/clinical_assessment/fluids">
+        <label>&lt;li style="margin-left:10%;list-style-type:circle"&gt;Ability to drink fluids&lt;/li&gt;</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/clinical_assessment/cough">
+        <label>&lt;li style="margin-left:10%;list-style-type:circle"&gt;Cough&lt;/li&gt;</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/clinical_assessment/confusion">
+        <label>&lt;li style="margin-left:10%;list-style-type:circle"&gt;Confusion or change in mental status&lt;/li&gt;</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/clinical_assessment/chest_pains">
+        <label>&lt;li style="margin-left:10%;list-style-type:circle"&gt;Persistent pain or pressure in the chest&lt;/li&gt;</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/clinical_assessment/dehydration">
+        <label>&lt;li style="margin-left:10%;list-style-type:circle"&gt;Severe dehydration&lt;/li&gt;</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/clinical_assessment/cant_stay_awake">
+        <label>&lt;li style="margin-left:10%;list-style-type:circle"&gt;Inability to wake up or stay awake&lt;/li&gt;</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/clinical_assessment/sore_throat">
+        <label>&lt;li style="margin-left:10%;list-style-type:circle"&gt;Sore throat&lt;/li&gt;</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/clinical_assessment/nausea">
+        <label>&lt;li style="margin-left:10%;list-style-type:circle"&gt;Nausea or diarrhoea&lt;/li&gt;</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/clinical_assessment/smell">
+        <label>&lt;li style="margin-left:10%;list-style-type:circle"&gt;Loss of smell&lt;/li&gt;</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_behaviour_change_context/clinical_assessment_referral">
+      <label>Clinical Assessment Referral</label>
+      <input ref="/covid_behaviour_change_context/clinical_assessment_referral/clinical_assessment_and_care">
+        <label>If your patient has any of the following symptoms, they should be referred for clinical assessment and care:</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/clinical_assessment_referral/fast_breathing">
+        <label>&lt;li style="margin-left:10%;list-style-type:circle"&gt;Fast breathing&lt;/li&gt;</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/clinical_assessment_referral/indrawing_chest">
+        <label>&lt;li style="margin-left:10%;list-style-type:circle"&gt;Indrawing of chest&lt;/li&gt;</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/clinical_assessment_referral/pale_lips">
+        <label>&lt;li style="margin-left:10%;list-style-type:circle"&gt;Pale or bluish color to lips or mouth&lt;/li&gt;</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/clinical_assessment_referral/difficulty_speaking">
+        <label>&lt;li style="margin-left:10%;list-style-type:circle"&gt;Difficulty speaking&lt;/li&gt;</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/clinical_assessment_referral/breathing_difficulty_image">
+        <label ref="jr:itext('/covid_behaviour_change_context/clinical_assessment_referral/breathing_difficulty_image:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_behaviour_change_context/suspect_or_patient_guide">
+      <label>A patient or suspected COVID-19 patient should…</label>
+      <input ref="/covid_behaviour_change_context/suspect_or_patient_guide/facemask">
+        <label>&lt;li style="margin-left:10%;list-style-type:circle"&gt;Wear a face mask around other people&lt;/li&gt;</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/suspect_or_patient_guide/isolate">
+        <label>&lt;li style="margin-left:10%;list-style-type:circle"&gt;Stay home and self isolate&lt;/li&gt;</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/suspect_or_patient_guide/cough_into_tissue">
+        <label>&lt;li style="margin-left:10%;list-style-type:circle"&gt;Cough into a tissue and throw it away, and wash their hands&lt;/li&gt;</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/suspect_or_patient_guide/rest">
+        <label>&lt;li style="margin-left:10%;list-style-type:circle"&gt;Rest and drink plenty of water or non-alcoholic liquids&lt;/li&gt;</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/suspect_or_patient_guide/minimize_contact">
+        <label>&lt;li style="margin-left:10%;list-style-type:circle"&gt;Minimize contact with household members&lt;/li&gt;</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/suspect_or_patient_guide/use_own_things">
+        <label>&lt;li style="margin-left:10%;list-style-type:circle"&gt;Use their own dishes, silverware, towels, bed and electronics&lt;/li&gt;</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/suspect_or_patient_guide/avoid_visitors">
+        <label>&lt;li style="margin-left:10%;list-style-type:circle"&gt;Avoid having visitors&lt;/li&gt;</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/suspect_or_patient_guide/clean_surfaces">
+        <label>&lt;li style="margin-left:10%;list-style-type:circle"&gt;Clean touched surfaces with a disinfectant, especially bathrooms&lt;/li&gt;</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_behaviour_change_context/cover_face">
+      <label>Cover the face</label>
+      <input ref="/covid_behaviour_change_context/cover_face/cover_face_note">
+        <label>1) Wear a cloth face covering when they are around other people</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/cover_face/cover_face_image">
+        <label ref="jr:itext('/covid_behaviour_change_context/cover_face/cover_face_image:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_behaviour_change_context/self_isolate">
+      <label>Self isolate</label>
+      <input ref="/covid_behaviour_change_context/self_isolate/self_isolate_note">
+        <label>2) Stay home and self-isolate by not leaving the house as much as possible</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/self_isolate/self_isolate_image">
+        <label ref="jr:itext('/covid_behaviour_change_context/self_isolate/self_isolate_image:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_behaviour_change_context/tissue_cough">
+      <label>Cough into tissue</label>
+      <input ref="/covid_behaviour_change_context/tissue_cough/tissue_cough_note">
+        <label>3) Cough into a tissue and throw it away and wash your hands</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/tissue_cough/tissue_cough_image">
+        <label ref="jr:itext('/covid_behaviour_change_context/tissue_cough/tissue_cough_image:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_behaviour_change_context/hydrate">
+      <label>Rest and hydrate</label>
+      <input ref="/covid_behaviour_change_context/hydrate/hydrate_note">
+        <label>4) Rest well and drink plenty of clear, non-alcoholic liquids</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/hydrate/hydrate_image">
+        <label ref="jr:itext('/covid_behaviour_change_context/hydrate/hydrate_image:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_behaviour_change_context/little_contact">
+      <label>Minimize Contact</label>
+      <input ref="/covid_behaviour_change_context/little_contact/little_contact_note">
+        <label>5) Minimize contact with other household members</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/little_contact/little_contact_image">
+        <label ref="jr:itext('/covid_behaviour_change_context/little_contact/little_contact_image:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_behaviour_change_context/separate_items">
+      <label>Use separate items</label>
+      <input ref="/covid_behaviour_change_context/separate_items/separate_items_note">
+        <label>6) Use their own separate dishes, silverware, towels, bed and electronics</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/separate_items/separate_items_image">
+        <label ref="jr:itext('/covid_behaviour_change_context/separate_items/separate_items_image:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_behaviour_change_context/no_visitors">
+      <label>Avoid visitors</label>
+      <input ref="/covid_behaviour_change_context/no_visitors/no_visitors_note">
+        <label>7) Avoid having visitors</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/no_visitors/no_visitors_image">
+        <label ref="jr:itext('/covid_behaviour_change_context/no_visitors/no_visitors_image:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_behaviour_change_context/clean_all_surfaces">
+      <label>Clean and disinfect all surfaces</label>
+      <input ref="/covid_behaviour_change_context/clean_all_surfaces/clean_surfaces_note">
+        <label>8) Clean all surfaces, especially those shared, with a disinfectant after use</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/clean_all_surfaces/clean_surfaces_image">
+        <label ref="jr:itext('/covid_behaviour_change_context/clean_all_surfaces/clean_surfaces_image:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_behaviour_change_context/primary_caretaker">
+      <label>Primary Caretaker</label>
+      <input ref="/covid_behaviour_change_context/primary_caretaker/primary_caretaker_note">
+        <label>**There should be one primary caretaker who:**</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/primary_caretaker/not_at_risk">
+        <label>&lt;li style="margin-left:10%;list-style-type:circle"&gt;Is not someone who is at higher risk for severe illness from COVID-19&lt;l/i&gt;</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/primary_caretaker/monitor_patient">
+        <label>&lt;li style="margin-left:10%;list-style-type:circle"&gt;Monitors patient for severe symptoms such as shortness of breath, dehydration, and changing mental status&lt;/li&gt;</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/primary_caretaker/wear_face_covering">
+        <label>&lt;li style="margin-left:10%;list-style-type:circle"&gt;Wears face coverings before entering the patient's room and when caring for the patient&lt;/li&gt;</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/primary_caretaker/wash_hands">
+        <label>&lt;li style="margin-left:10%;list-style-type:circle"&gt;Washes hands after any contact with the patient or surfaces they have used&lt;/li&gt;</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_behaviour_change_context/household_contacts">
+      <label>Advice for household contacts</label>
+      <input ref="/covid_behaviour_change_context/household_contacts/household_advice">
+        <label>COVID is very infectious because everyone can spread the disease – but does not always have symptoms. It is important to isolate patients, and tell their family members to avoid contact with other people if they have been exposed.</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_behaviour_change_context/rejoining_community">
+      <label>Rejoining the community after COVID</label>
+      <input ref="/covid_behaviour_change_context/rejoining_community/rejoining_note">
+        <label>It is important to COVID-19 patients of the requirements to rejoin the community and safely interact with family after COVID:</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/rejoining_community/no_fever">
+        <label>&lt;li style="margin-left:10%;list-style-type:circle"&gt;They should not have had fever for at least 72 hours (assess this without the use of paracetamol or ibuprofen)&lt;/li&gt;</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/rejoining_community/improved_symptoms">
+        <label>&lt;li style="margin-left:10%;list-style-type:circle"&gt;AND other symptoms should have improved&lt;/li&gt;</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/rejoining_community/ten_days_since_first_symptoms">
+        <label>&lt;li style="margin-left:10%;list-style-type:circle"&gt;AND at least 10 days should have passed since their symptoms first appeared&lt;/li&gt;</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_behaviour_change_context/learning_quiz">
+      <label>Covid Assessment</label>
+      <select ref="/covid_behaviour_change_context/learning_quiz/possible_symptoms_q">
+        <label>Which possible symptoms of COVID-19 should you always ask about?</label>
+        <hint>Select all that apply</hint>
+        <item>
+          <label>Fever</label>
+          <value>fever</value>
+        </item>
+        <item>
+          <label>Difficulty breathing</label>
+          <value>difficulty_breathing</value>
+        </item>
+        <item>
+          <label>Confusion or change in mental status</label>
+          <value>confusion</value>
+        </item>
+        <item>
+          <label>Itchy skin</label>
+          <value>itchy_skin</value>
+        </item>
+        <item>
+          <label>Sneezing</label>
+          <value>sneezing</value>
+        </item>
+      </select>
+      <select1 ref="/covid_behaviour_change_context/learning_quiz/patient_referral_q">
+        <label>A patient has fast breathing, difficulty speaking, and bluish lips, or has a fever, is confused and cannot stay awake. What should you do next?</label>
+        <item>
+          <label>Tell patient to stay at home and lie down</label>
+          <value>stay_home</value>
+        </item>
+        <item>
+          <label>Provide oral rehydration therapy</label>
+          <value>oral_rehydration</value>
+        </item>
+        <item>
+          <label>Provide cough medication</label>
+          <value>cough_medication</value>
+        </item>
+        <item>
+          <label>Advise patient to take acetaminophen</label>
+          <value>acetaminophen</value>
+        </item>
+        <item>
+          <label>Refer to local health center for emergency help</label>
+          <value>refer</value>
+        </item>
+      </select1>
+      <select1 ref="/covid_behaviour_change_context/learning_quiz/parts_to_cover_q">
+        <label>When caring for a suspected COVID-19 patient, what are the two most important parts of your body to cover?</label>
+        <item>
+          <label>Nose and mouth</label>
+          <value>nose_mouth</value>
+        </item>
+        <item>
+          <label>Nose and ears</label>
+          <value>nose_ears</value>
+        </item>
+        <item>
+          <label>Hands and feet</label>
+          <value>hands_feet</value>
+        </item>
+        <item>
+          <label>Hands and hair</label>
+          <value>hands_hair</value>
+        </item>
+      </select1>
+      <select1 ref="/covid_behaviour_change_context/learning_quiz/contact_precaution_q">
+        <label>What should you do immediately after being in the same room as a COVID-19 patient?</label>
+        <item>
+          <label>Take your temperature</label>
+          <value>temperature</value>
+        </item>
+        <item>
+          <label>Wash your hands</label>
+          <value>wash_hands</value>
+        </item>
+        <item>
+          <label>Wipe your mouth and nose</label>
+          <value>wipe_mouth_and_nose</value>
+        </item>
+        <item>
+          <label>Drink water</label>
+          <value>drink_water</value>
+        </item>
+      </select1>
+      <select1 ref="/covid_behaviour_change_context/learning_quiz/reintegration_q">
+        <label>Patients are dafe to leave the house once it has been at least 10 days since symptoms first appeared AND symptoms have improved AND they have had NO FEVER for at least…</label>
+        <item>
+          <label>24 hours</label>
+          <value>24h</value>
+        </item>
+        <item>
+          <label>48 hours</label>
+          <value>48h</value>
+        </item>
+        <item>
+          <label>72 hours</label>
+          <value>72h</value>
+        </item>
+      </select1>
+      <select1 ref="/covid_behaviour_change_context/learning_quiz/minimize_stigma_q">
+        <label>Which one of the following is true about COVID-19?</label>
+        <item>
+          <label>Most people do not recover from COVID-19</label>
+          <value>dont_recover</value>
+        </item>
+        <item>
+          <label>Stigma against COVID-19 causes people to seek health care</label>
+          <value>seek_health_care</value>
+        </item>
+        <item>
+          <label>Anyone can get COVID-19</label>
+          <value>anyone_can_gerrit</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list summary" ref="/covid_behaviour_change_context/summary">
+      <label></label>
+      <input ref="/covid_behaviour_change_context/summary/submit">
+        <label>&lt;h4 style="text-align:center;"&gt;Be sure you Submit to complete this action.&lt;/h4&gt;</label>
+      </input>
+      <input appearance="h1 green" ref="/covid_behaviour_change_context/summary/result">
+        <label>Thank you</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/summary/success_1">
+        <label>You have answered all the questions correctly! You may review this content on your profile page.</label>
+      </input>
+      <select1 ref="/covid_behaviour_change_context/summary/success_confidence">
+        <label>How confident do you feel in your mastery of this content?</label>
+        <item>
+          <label>Extremely confident</label>
+          <value>extreme</value>
+        </item>
+        <item>
+          <label>Very confident</label>
+          <value>very</value>
+        </item>
+        <item>
+          <label>Somewhat confident</label>
+          <value>somewhat</value>
+        </item>
+        <item>
+          <label>A little confident</label>
+          <value>a_little</value>
+        </item>
+        <item>
+          <label>Not confident at all</label>
+          <value>no_confidence</value>
+        </item>
+      </select1>
+      <select1 ref="/covid_behaviour_change_context/summary/effective_performance">
+        <label>Will you be able to effectively perform the task?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/covid_behaviour_change_context/summary/feedback">
+        <label>Do you have any other questions or feedback on this topic? (Optional)</label>
+        <hint>Your supervisor will follow up</hint>
+      </input>
+      <input ref="/covid_behaviour_change_context/summary/fail_1">
+        <label>Good start but you only answered <output value=" /covid_behaviour_change_context/assessment_score "/> out of the 6 questions correctly.</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/summary/fail_2">
+        <label>We'll generate another task for you to go through the workflow again.</label>
+      </input>
+      <input ref="/covid_behaviour_change_context/summary/Fail_3">
+        <label>Thank you for your persistence, educating ourselves and our communities is the best way to stop covid.</label>
+      </input>
+      <select1 ref="/covid_behaviour_change_context/summary/fail_assistance">
+        <label>Do you need assistance with this topic?</label>
+        <hint>Optional</hint>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+    </group>
+  </h:body>
+</h:html>

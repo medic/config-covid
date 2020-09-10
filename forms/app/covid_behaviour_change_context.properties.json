@@ -1,0 +1,9 @@
+{
+    "icon": "icon-person",
+    "title": "Covid Education: Behaviour change",
+    "context": {
+        "person": true,
+        "place": false,
+        "expression": "!contact || (contact.type === 'person' && summary.hasCompletedBehaviourChangeTraining && user.parent.type === 'health_center' && user.role === 'chw' && contact.role === 'chw')"
+    }
+}

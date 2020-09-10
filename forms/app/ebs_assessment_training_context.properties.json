@@ -1,9 +1,9 @@
 {
     "icon": "icon-person",
-    "title": "EBS Training",
+    "title": "Training",
     "context": {
         "person": true,
         "place": false,
-        "expression": "!contact || (contact.type === 'person' && user.parent.type === 'health_center' && user.role === 'chw' && contact.role === 'chw' && summary.hasCompletedEBSTraining)"
+        "expression": "!contact || (contact.type === 'person' && summary.hasCompletedEBSTraining && user.parent.type === 'health_center' && user.role === 'chw' && contact.role === 'chw')"
     }
 }

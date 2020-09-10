@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <h:head>
-    <h:title>EBS Training</h:title>
+    <h:title>Training</h:title>
     <model>
       <itext>
         <translation lang="en">
@@ -26,7 +26,7 @@
         </translation>
       </itext>
       <instance>
-        <ebs_assessment_training delimiter="#" id="ebs_assessment_training" prefix="J1!ebs_assessment_training!" version="2020-05-12 15:53:17">
+        <ebs_assessment_training delimiter="#" id="ebs_assessment_training" prefix="J1!ebs_assessment_training!" version="2020-07-20 20:13:35">
           <inputs>
             <meta>
               <location>
@@ -41,12 +41,21 @@
             <user/>
             <contact>
               <_id/>
+              <phone/>
             </contact>
           </inputs>
           <patient_id/>
+          <patient_phone/>
           <ebs_intro>
             <thanking_note/>
+            <send_message/>
             <covid_introduction/>
+            <learning_objectives/>
+            <hand_hygiene/>
+            <infected_secretions/>
+            <household_hygiene/>
+            <distancing/>
+            <reporting_cases/>
           </ebs_intro>
           <isolate>
             <isolate_if_exposed/>
@@ -91,16 +100,13 @@
             <submit/>
             <result/>
             <success_1/>
-            <success_2/>
+            <success_confidence/>
+            <effective_performance/>
+            <feedback/>
             <fail_1/>
             <fail_2/>
-            <fail_3/>
-            <hand_wash_sug/>
-            <hand_wash_duration_sug/>
-            <sneeze_cough_sug/>
-            <household_sug/>
-            <social_distance_sug/>
-            <fail_4/>
+            <Fail_3/>
+            <fail_assistance/>
           </summary>
           <meta>
             <instanceID/>
@@ -112,9 +118,18 @@
       <bind nodeset="/ebs_assessment_training/inputs/source" type="string"/>
       <bind nodeset="/ebs_assessment_training/inputs/source_id" type="string"/>
       <bind nodeset="/ebs_assessment_training/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/ebs_assessment_training/inputs/contact/phone" type="string"/>
       <bind calculate="../inputs/contact/_id" nodeset="/ebs_assessment_training/patient_id" type="string"/>
+      <bind calculate="../inputs/contact/phone" nodeset="/ebs_assessment_training/patient_phone" type="string"/>
       <bind nodeset="/ebs_assessment_training/ebs_intro/thanking_note" readonly="true()" type="string"/>
+      <bind nodeset="/ebs_assessment_training/ebs_intro/send_message" readonly="true()" type="string"/>
       <bind nodeset="/ebs_assessment_training/ebs_intro/covid_introduction" readonly="true()" type="string"/>
+      <bind nodeset="/ebs_assessment_training/ebs_intro/learning_objectives" readonly="true()" type="string"/>
+      <bind nodeset="/ebs_assessment_training/ebs_intro/hand_hygiene" readonly="true()" type="string"/>
+      <bind nodeset="/ebs_assessment_training/ebs_intro/infected_secretions" readonly="true()" type="string"/>
+      <bind nodeset="/ebs_assessment_training/ebs_intro/household_hygiene" readonly="true()" type="string"/>
+      <bind nodeset="/ebs_assessment_training/ebs_intro/distancing" readonly="true()" type="string"/>
+      <bind nodeset="/ebs_assessment_training/ebs_intro/reporting_cases" readonly="true()" type="string"/>
       <bind nodeset="/ebs_assessment_training/isolate/isolate_if_exposed" readonly="true()" type="string"/>
       <bind nodeset="/ebs_assessment_training/isolate/isolate_image" readonly="true()" type="string"/>
       <bind nodeset="/ebs_assessment_training/social_distancing/social_distance" readonly="true()" type="string"/>
@@ -143,16 +158,13 @@
       <bind nodeset="/ebs_assessment_training/summary/submit" readonly="true()" type="string"/>
       <bind nodeset="/ebs_assessment_training/summary/result" readonly="true()" type="string"/>
       <bind nodeset="/ebs_assessment_training/summary/success_1" readonly="true()" relevant=" /ebs_assessment_training/assessment_passed  = 'yes'" type="string"/>
-      <bind nodeset="/ebs_assessment_training/summary/success_2" readonly="true()" relevant=" /ebs_assessment_training/assessment_passed  = 'yes'" type="string"/>
+      <bind nodeset="/ebs_assessment_training/summary/success_confidence" relevant=" /ebs_assessment_training/assessment_passed  = 'yes'" required="true()" type="select1"/>
+      <bind nodeset="/ebs_assessment_training/summary/effective_performance" relevant=" /ebs_assessment_training/assessment_passed  = 'yes'" required="true()" type="select1"/>
+      <bind nodeset="/ebs_assessment_training/summary/feedback" relevant=" /ebs_assessment_training/assessment_passed  = 'yes'" type="string"/>
       <bind nodeset="/ebs_assessment_training/summary/fail_1" readonly="true()" relevant=" /ebs_assessment_training/assessment_passed  = 'no'" type="string"/>
       <bind nodeset="/ebs_assessment_training/summary/fail_2" readonly="true()" relevant=" /ebs_assessment_training/assessment_passed  = 'no'" type="string"/>
-      <bind nodeset="/ebs_assessment_training/summary/fail_3" readonly="true()" relevant=" /ebs_assessment_training/assessment_passed  = 'no'" type="string"/>
-      <bind nodeset="/ebs_assessment_training/summary/hand_wash_sug" readonly="true()" relevant=" /ebs_assessment_training/learning_quiz/hand_washing_q  != 'both_soap_and_water_or_hand_saniter'" type="string"/>
-      <bind nodeset="/ebs_assessment_training/summary/hand_wash_duration_sug" readonly="true()" relevant=" /ebs_assessment_training/learning_quiz/hand_wash_duration_q  != 'at_least_20_seconds'" type="string"/>
-      <bind nodeset="/ebs_assessment_training/summary/sneeze_cough_sug" readonly="true()" relevant=" /ebs_assessment_training/learning_quiz/sneezing_coughing_q  != 'cough_into_your_elbow_or_tissue'" type="string"/>
-      <bind nodeset="/ebs_assessment_training/summary/household_sug" readonly="true()" relevant=" /ebs_assessment_training/learning_quiz/household_q  != 'a_disinfectant'" type="string"/>
-      <bind nodeset="/ebs_assessment_training/summary/social_distance_sug" readonly="true()" relevant=" /ebs_assessment_training/learning_quiz/social_distancing_q  != 'at_least_2_meters'" type="string"/>
-      <bind nodeset="/ebs_assessment_training/summary/fail_4" readonly="true()" relevant=" /ebs_assessment_training/assessment_passed  = 'no'" type="string"/>
+      <bind nodeset="/ebs_assessment_training/summary/Fail_3" readonly="true()" relevant=" /ebs_assessment_training/assessment_passed  = 'no'" type="string"/>
+      <bind nodeset="/ebs_assessment_training/summary/fail_assistance" relevant=" /ebs_assessment_training/assessment_passed  = 'no'" type="select1"/>
       <bind calculate="concat('uuid:', uuid())" nodeset="/ebs_assessment_training/meta/instanceID" readonly="true()" type="string"/>
     </model>
   </h:head>
@@ -173,15 +185,39 @@
         <input appearance="hidden" ref="/ebs_assessment_training/inputs/contact/_id">
           <label>_id</label>
         </input>
+        <input appearance="hidden" ref="/ebs_assessment_training/inputs/contact/phone">
+          <label>Phone</label>
+        </input>
       </group>
     </group>
     <group appearance="field-list" ref="/ebs_assessment_training/ebs_intro">
-      <label>Event-Based Surveillance</label>
+      <label>Covid-19 Education</label>
       <input ref="/ebs_assessment_training/ebs_intro/thanking_note">
         <label>**Thank you for serving your community with event-based surveillance**</label>
       </input>
+      <input intent="ex:android.intent.action.SENDTO(uri_data='smsto:12345678', sms_body= /ebs_assessment_training/ebs_intro/thanking_note )" ref="/ebs_assessment_training/ebs_intro/send_message">
+        <label>Click to send sms note</label>
+      </input>
       <input ref="/ebs_assessment_training/ebs_intro/covid_introduction">
         <label>To avoid infection of yourself and others with COVID-19, it is important to practice the following hygiene measures:</label>
+      </input>
+      <input ref="/ebs_assessment_training/ebs_intro/learning_objectives">
+        <label>**Learning Objectives**</label>
+      </input>
+      <input ref="/ebs_assessment_training/ebs_intro/hand_hygiene">
+        <label>1. Know effective hand hygiene practices</label>
+      </input>
+      <input ref="/ebs_assessment_training/ebs_intro/infected_secretions">
+        <label>2. Know the correct way to handle infected secretions from the nose, eyes and mouth</label>
+      </input>
+      <input ref="/ebs_assessment_training/ebs_intro/household_hygiene">
+        <label>3. Know good household hygiene practices</label>
+      </input>
+      <input ref="/ebs_assessment_training/ebs_intro/distancing">
+        <label>4. Know when to self-distance and self-quarantine</label>
+      </input>
+      <input ref="/ebs_assessment_training/ebs_intro/reporting_cases">
+        <label>5. Know when to report a patient with suspected infection to the local health authorities</label>
       </input>
     </group>
     <group appearance="field-list" ref="/ebs_assessment_training/isolate">
@@ -308,14 +344,49 @@
       <input ref="/ebs_assessment_training/summary/submit">
         <label>&lt;h4 style="text-align:center;"&gt;Be sure you Submit to complete this action.&lt;/h4&gt;</label>
       </input>
-      <input appearance="h1 blue" ref="/ebs_assessment_training/summary/result">
-        <label>Results</label>
+      <input appearance="h1 green" ref="/ebs_assessment_training/summary/result">
+        <label>Thank you</label>
       </input>
       <input ref="/ebs_assessment_training/summary/success_1">
-        <label>Great job! You have answered all the questions correctly. Your EBS training is complete!</label>
+        <label>You have answered all the questions correctly! You may review this content on your profile page.</label>
       </input>
-      <input ref="/ebs_assessment_training/summary/success_2">
-        <label>You may now start reporting on households using EBS.</label>
+      <select1 ref="/ebs_assessment_training/summary/success_confidence">
+        <label>How confident do you feel in your mastery of this content?</label>
+        <item>
+          <label>Extremely confident</label>
+          <value>extreme</value>
+        </item>
+        <item>
+          <label>Very confident</label>
+          <value>very</value>
+        </item>
+        <item>
+          <label>Somewhat confident</label>
+          <value>somewhat</value>
+        </item>
+        <item>
+          <label>A little confident</label>
+          <value>a_little</value>
+        </item>
+        <item>
+          <label>Not confident at all</label>
+          <value>no_confidence</value>
+        </item>
+      </select1>
+      <select1 ref="/ebs_assessment_training/summary/effective_performance">
+        <label>Will you be able to effectively perform the task?</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/ebs_assessment_training/summary/feedback">
+        <label>Do you have any other questions or feedback on this topic? (Optional)</label>
+        <hint>Your supervisor will follow up</hint>
       </input>
       <input ref="/ebs_assessment_training/summary/fail_1">
         <label>Good start but you only answered <output value=" /ebs_assessment_training/assessment_score "/> out of the 5 questions correctly.</label>
@@ -323,27 +394,21 @@
       <input ref="/ebs_assessment_training/summary/fail_2">
         <label>We'll generate another task for you to go through the workflow again.</label>
       </input>
-      <input ref="/ebs_assessment_training/summary/fail_3">
-        <label>Please review the following and resubmit:</label>
+      <input ref="/ebs_assessment_training/summary/Fail_3">
+        <label>Thank you for your persistence, educating ourselves and our communities is the best way to stop covid.</label>
       </input>
-      <input appearance="li" ref="/ebs_assessment_training/summary/hand_wash_sug">
-        <label>Handwashing (and its ability to prevent covid)</label>
-      </input>
-      <input appearance="li" ref="/ebs_assessment_training/summary/hand_wash_duration_sug">
-        <label>Handwashing (and required duration for effectiveness)</label>
-      </input>
-      <input appearance="li" ref="/ebs_assessment_training/summary/sneeze_cough_sug">
-        <label>Sneezing / Coughing</label>
-      </input>
-      <input appearance="li" ref="/ebs_assessment_training/summary/household_sug">
-        <label>Houshold</label>
-      </input>
-      <input appearance="li" ref="/ebs_assessment_training/summary/social_distance_sug">
-        <label>Social Distancing</label>
-      </input>
-      <input ref="/ebs_assessment_training/summary/fail_4">
-        <label>Educating ourselves and the community is the best way to stop covid.</label>
-      </input>
+      <select1 ref="/ebs_assessment_training/summary/fail_assistance">
+        <label>Do you need assistance with this topic?</label>
+        <hint>Optional</hint>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
     </group>
   </h:body>
 </h:html>

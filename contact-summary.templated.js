@@ -32,8 +32,11 @@ const context = {
   hasLocatorForm: hasReport('locator'),
   hasQuarantineForm: hasReport('quarantine'),
   isCHW: isCHW(),
-  hasCompletedEBSTraining: hasCompletedModuleTraining('ebs_assessment_training'),
-  hasGoneThroughUpdate: hasReport('update_summary')
+  // hasCompletedEBSTraining: hasCompletedModuleTraining('ebs_assessment_training'),
+  // hasCompletedBehaviourChangeTraining: hasCompletedModuleTraining('covid_behaviour_change'),
+  // hasCompletedCovidRumorsTraining: hasCompletedModuleTraining('covid_rumors'),
+  hasCompletedModuleOne: hasCompletedModuleTraining('cha_module_one'),
+  // hasGoneThroughUpdate: hasReport('update_summary')
 };
 
 const fields = [
@@ -61,28 +64,22 @@ const cards = [
     appliesIf: isCHW,
     fields: function () {
       let fields = [];
-      if (!hasReport('update_summary')) {
-        fields.push(
-          { label : 'contact.profile.training.protocol_summary', value: 'No', width: 6 }
-        );
-      }
-      else {
-        fields.push(
-          { label : 'contact.profile.training.protocol_summary', value: 'Yes', width: 6 }
-        );
-      }
-      if (!hasCompletedModuleTraining('ebs_assessment_training')) {
-        fields.push(
-          { label : 'contact.profile.training.ebs_training', value: 'No', width: 6 }
-        );
-      }
-      else {
-        fields.push(
-          { label : 'contact.profile.training.ebs_training', value: 'Yes', width: 6 }
-        );
-      }
+      const completedUpdateSummary = hasReport('update_summary') ? 'Yes' : 'No',
+        completedEBS = hasCompletedModuleTraining('ebs_assessment_training') ? 'Yes' : 'No',
+        completedBehaviour = hasCompletedModuleTraining('covid_behaviour_change') ? 'Yes' : 'No',
+        completedCovidRumors = hasCompletedModuleTraining('covid_rumors') ? 'Yes' : 'No';
 
-      return fields;
+      const completedModuleOne = hasCompletedModuleTraining('cha_module_one') ? 'Complete' : 'Incomplete';
+
+      fields.push(
+          { label : 'contact.profile.training.protocol_summary', value: completedUpdateSummary, width: 6 },
+          { label : 'contact.profile.training.ebs_training', value: completedEBS, width: 6 },
+          { label : 'contact.profile.training.behaviour_change', value: completedBehaviour, width: 6},
+          { label : 'contact.profile.training.covid_rumors', value: completedCovidRumors, width: 6},
+          { label : 'CHA Module One', value: completedModuleOne, width: 6, icon: 'icon-cha'}
+
+        ); 
+      return fields; 
     }
   },
 

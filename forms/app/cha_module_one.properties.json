@@ -1,0 +1,8 @@
+{
+    "icon": "icon-person",
+    "context": {
+        "person": false,
+        "place": false,
+        "expression": "!contact || (contact.type === 'person' && user.parent.type === 'health_center' && user.role === 'chw' && contact.role === 'chw')"
+    }
+}

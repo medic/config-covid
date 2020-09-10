@@ -187,7 +187,8 @@ module.exports = [
     },
     date: 'now',
     emitCustom: (emit, original, contact) => {
-      const assessmentModules = ['ebs_assessment_training','update_summary'];
+      // const assessmentModules = ['ebs_assessment_training','covid_behaviour_change','covid_rumors'];
+      const assessmentModules = ['cha_module_one'];
       
       for(let eligibleModule of assessmentModules){
           emit(Object.assign({}, original, {
@@ -195,7 +196,9 @@ module.exports = [
             pass: false
         }));
       }
-      const validReports = contact.reports.filter(report => report.fields.inputs.source === 'task' && ((report.form === 'ebs_assessment_training' && report.fields.assessment_passed === 'yes') || (report.form === 'update_summary')));
+      // const validReports = contact.reports.filter(report => report.fields.inputs.source === 'task' && ((report.form === 'ebs_assessment_training' || report.form === 'covid_behaviour_change' || report.form === 'covid_rumors') && report.fields.assessment_passed === 'yes'));
+
+      const validReports = contact.reports.filter(report => report.fields.inputs.source === 'task' && ((report.form === 'cha_module_one') && report.fields.assessment_passed === 'yes'));
 
       for (let report of validReports) {
           const instance = Object.assign({}, original, {
