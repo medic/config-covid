@@ -5,115 +5,62 @@
     <model>
       <itext>
         <translation lang="en">
-          <text id="/symptoms_check/contact_info/contact_patient_zero:label">
-            <value>Patient Zero</value>
-          </text>
-          <text id="/symptoms_check/contact_info:label">
-            <value>Contact information</value>
-          </text>
-          <text id="/symptoms_check/inputs/contact/_id:label">
-            <value>_id</value>
-          </text>
-          <text id="/symptoms_check/inputs/contact/age_in_years:label">
-            <value>Age in years</value>
-          </text>
-          <text id="/symptoms_check/inputs/contact/other_names:label">
-            <value>Other names</value>
-          </text>
-          <text id="/symptoms_check/inputs/contact/patient_zero:label">
-            <value>Patient Zero UUID</value>
-          </text>
-          <text id="/symptoms_check/inputs/contact/phone:label">
-            <value>Phone No</value>
-          </text>
-          <text id="/symptoms_check/inputs/contact/sex:label">
-            <value>Sex</value>
-          </text>
-          <text id="/symptoms_check/inputs/contact/surname:label">
-            <value>Surname</value>
-          </text>
-          <text id="/symptoms_check/inputs/contact:label">
-            <value>Contact</value>
-          </text>
-          <text id="/symptoms_check/inputs/source:label">
-            <value>Source</value>
-          </text>
-          <text id="/symptoms_check/inputs/source_id:label">
-            <value>Source ID</value>
-          </text>
           <text id="/symptoms_check/inputs/user:label">
             <value>User</value>
-          </text>
-          <text id="/symptoms_check/inputs:label">
-            <value>Patient</value>
-          </text>
-          <text id="/symptoms_check/patient_id:jr:requiredMsg">
-            <value>This field is required</value>
-          </text>
-          <text id="/symptoms_check/patient_id:label">
-            <value>Patient ID</value>
-          </text>
-          <text id="/symptoms_check/summary/r_refer:label">
-            <value>Referrals&lt;I class="fa fa-hospital-o"&gt;&lt;/i&gt;</value>
-          </text>
-          <text id="/symptoms_check/summary/r_submit_note:label">
-            <value>&lt;h4 style="text-align:center;"&gt;Click the Submit button at the bottom of the form.&lt;/h4&gt;</value>
-          </text>
-          <text id="/symptoms_check/summary/r_summary_details:hint">
-            <value>(Please note you can only report one signal at a time)</value>
           </text>
           <text id="/symptoms_check/summary/r_summary_details:label">
             <value>&lt;h2 style=&quot;text-align:center;margin-bottom:0px;&quot;&gt; Please refer <output value=" /symptoms_check/inputs/contact/other_names "/> to the Care Team&lt;/h2&gt;</value>
           </text>
-          <text id="/symptoms_check/summary:label">
-            <value>Summary</value>
-          </text>
-          <text id="/symptoms_check/symptom_check/result/no:label">
-            <value>No</value>
-          </text>
           <text id="/symptoms_check/symptom_check/result/yes:label">
             <value>Yes</value>
-          </text>
-          <text id="/symptoms_check/symptom_check/result:label">
-            <value>Have you called the patient?</value>
-          </text>
-          <text id="/symptoms_check/symptom_check/symptom/no:label">
-            <value>No</value>
-          </text>
-          <text id="/symptoms_check/symptom_check/symptom/yes:label">
-            <value>Yes</value>
-          </text>
-          <text id="/symptoms_check/symptom_check/symptom:label">
-            <value>Is the <output value=" /symptoms_check/inputs/contact/other_names "/> experiencing COVID-19 symptoms?</value>
-          </text>
-          <text id="/symptoms_check/symptom_check:label">
-            <value>Symptom Confirmation</value>
-          </text>
-        </translation>
-        <translation lang="fr">
-          <text id="/symptoms_check/contact_info/contact_patient_zero:label">
-            <value>Patient Zero</value>
           </text>
           <text id="/symptoms_check/contact_info:label">
             <value>Contact information</value>
           </text>
-          <text id="/symptoms_check/inputs/contact/_id:label">
-            <value>_id</value>
+          <text id="/symptoms_check/summary:label">
+            <value>Summary</value>
           </text>
-          <text id="/symptoms_check/inputs/contact/age_in_years:label">
-            <value>Age in years</value>
-          </text>
-          <text id="/symptoms_check/inputs/contact/other_names:label">
-            <value>Other names</value>
+          <text id="/symptoms_check/inputs/contact/sex:label">
+            <value>Sex</value>
           </text>
           <text id="/symptoms_check/inputs/contact/patient_zero:label">
             <value>Patient Zero UUID</value>
           </text>
+          <text id="/symptoms_check/inputs/contact/age_in_years:label">
+            <value>Age in years</value>
+          </text>
+          <text id="/symptoms_check/inputs/contact/_id:label">
+            <value>_id</value>
+          </text>
+          <text id="/symptoms_check/patient_id:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/symptoms_check/symptom_check/symptom:label">
+            <value>Is the <output value=" /symptoms_check/inputs/contact/other_names "/> experiencing COVID-19 symptoms?</value>
+          </text>
           <text id="/symptoms_check/inputs/contact/phone:label">
             <value>Phone No</value>
           </text>
-          <text id="/symptoms_check/inputs/contact/sex:label">
-            <value>Sex</value>
+          <text id="/symptoms_check/summary/r_submit_note:label">
+            <value>&lt;h4 style="text-align:center;"&gt;Click the Submit button at the bottom of the form.&lt;/h4&gt;</value>
+          </text>
+          <text id="/symptoms_check/symptom_check/result/no:label">
+            <value>No</value>
+          </text>
+          <text id="/symptoms_check/summary/r_refer:label">
+            <value>Referrals&lt;I class="fa fa-hospital-o"&gt;&lt;/i&gt;</value>
+          </text>
+          <text id="/symptoms_check/symptom_check/symptom/yes:label">
+            <value>Yes</value>
+          </text>
+          <text id="/symptoms_check/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/symptoms_check/symptom_check:label">
+            <value>Symptom Confirmation</value>
+          </text>
+          <text id="/symptoms_check/symptom_check/result:label">
+            <value>Have you called the patient?</value>
           </text>
           <text id="/symptoms_check/inputs/contact/surname:label">
             <value>Surname</value>
@@ -121,65 +68,40 @@
           <text id="/symptoms_check/inputs/contact:label">
             <value>Contact</value>
           </text>
-          <text id="/symptoms_check/inputs/source:label">
-            <value>Source</value>
-          </text>
           <text id="/symptoms_check/inputs/source_id:label">
             <value>Source ID</value>
           </text>
-          <text id="/symptoms_check/inputs/user:label">
-            <value>User</value>
+          <text id="/symptoms_check/symptom_check/symptom/no:label">
+            <value>No</value>
+          </text>
+          <text id="/symptoms_check/contact_info/contact_patient_zero:label">
+            <value>Patient Zero</value>
+          </text>
+          <text id="/symptoms_check/inputs/contact/other_names:label">
+            <value>Other names</value>
           </text>
           <text id="/symptoms_check/inputs:label">
             <value>Patient</value>
           </text>
-          <text id="/symptoms_check/patient_id:jr:requiredMsg">
-            <value>Ce champs est obligatoire</value>
-          </text>
           <text id="/symptoms_check/patient_id:label">
             <value>Patient ID</value>
           </text>
-          <text id="/symptoms_check/summary/r_refer:label">
-            <value>-</value>
-          </text>
-          <text id="/symptoms_check/summary/r_submit_note:label">
-            <value>-</value>
-          </text>
           <text id="/symptoms_check/summary/r_summary_details:hint">
-            <value>-</value>
-          </text>
-          <text id="/symptoms_check/summary/r_summary_details:label">
-            <value>-</value>
-          </text>
-          <text id="/symptoms_check/summary:label">
-            <value>Summary</value>
-          </text>
-          <text id="/symptoms_check/symptom_check/result/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/symptoms_check/symptom_check/result/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/symptoms_check/symptom_check/result:label">
-            <value>Avez-vous appelé le patient pour vérifier son rapport de symptômes?</value>
-          </text>
-          <text id="/symptoms_check/symptom_check/symptom/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/symptoms_check/symptom_check/symptom/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/symptoms_check/symptom_check/symptom:label">
-            <value>Le patient présente-t-il des symptômes de convoitise?</value>
-          </text>
-          <text id="/symptoms_check/symptom_check:label">
-            <value>Symptom check</value>
+            <value>(Please note you can only report one signal at a time)</value>
           </text>
         </translation>
       </itext>
       <instance>
-        <symptoms_check delimiter="#" id="symptoms_check" prefix="J1!symptoms_check!" version="2020-04-22 16-03">
-          <inputs tag="hidden">
+        <symptoms_check delimiter="#" id="symptoms_check" prefix="J1!symptoms_check!" version="2020-08-19 22-22">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
             <source>user</source>
             <source_id/>
             <user/>
@@ -206,7 +128,7 @@
             <r_refer/>
             <r_summary_details/>
           </summary>
-          <meta tag="hidden">
+          <meta>
             <instanceID/>
           </meta>
         </symptoms_check>

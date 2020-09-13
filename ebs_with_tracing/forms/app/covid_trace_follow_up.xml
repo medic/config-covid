@@ -5,313 +5,172 @@
     <model>
       <itext>
         <translation lang="en">
-          <text id="/covid_trace_follow_up/contact_info/contact_covid_patient:label">
-            <value>Patient with covid-19</value>
-          </text>
-          <text id="/covid_trace_follow_up/contact_info/n_address:label">
-            <value>Address: **<output value=" /covid_trace_follow_up/inputs/contact/address "/>**</value>
-          </text>
-          <text id="/covid_trace_follow_up/contact_info/n_age_in_years:label">
-            <value>Age: **<output value=" /covid_trace_follow_up/inputs/contact/age_in_years "/> years**</value>
-          </text>
-          <text id="/covid_trace_follow_up/contact_info/n_chief_name:label">
-            <value>Name of the chief of the village: **<output value=" /covid_trace_follow_up/inputs/contact/chief_name "/>**</value>
-          </text>
-          <text id="/covid_trace_follow_up/contact_info/n_chief_phone:label">
-            <value>Phone of the chief: **<output value=" /covid_trace_follow_up/inputs/contact/chief_phone "/>**</value>
-          </text>
-          <text id="/covid_trace_follow_up/contact_info/n_church:label">
-            <value>Church name: **<output value=" /covid_trace_follow_up/inputs/contact/church "/>**</value>
-          </text>
-          <text id="/covid_trace_follow_up/contact_info/n_flight_details:label">
-            <value>Flight details: **<output value=" /covid_trace_follow_up/inputs/contact/flight_details "/>**</value>
-          </text>
-          <text id="/covid_trace_follow_up/contact_info/n_other_names:label">
-            <value>Other names: **<output value=" /covid_trace_follow_up/inputs/contact/other_names "/>**</value>
-          </text>
-          <text id="/covid_trace_follow_up/contact_info/n_phone:label">
-            <value>Phone: **<output value=" /covid_trace_follow_up/inputs/contact/phone "/>**</value>
-          </text>
-          <text id="/covid_trace_follow_up/contact_info/n_sex:label">
-            <value>Sex: **<output value=" /covid_trace_follow_up/trace/sex_label "/>**</value>
-          </text>
           <text id="/covid_trace_follow_up/contact_info/n_surname:label">
             <value>Surname: **<output value=" /covid_trace_follow_up/inputs/contact/surname "/>**</value>
           </text>
-          <text id="/covid_trace_follow_up/contact_info/n_town:label">
-            <value>Town: **<output value=" /covid_trace_follow_up/inputs/contact/town "/>**</value>
-          </text>
-          <text id="/covid_trace_follow_up/contact_info/n_village:label">
-            <value>Village name: **<output value=" /covid_trace_follow_up/inputs/contact/village "/>**</value>
-          </text>
-          <text id="/covid_trace_follow_up/contact_info:label">
-            <value>Contact information</value>
-          </text>
-          <text id="/covid_trace_follow_up/inputs/contact/_id:label">
-            <value>_id</value>
-          </text>
-          <text id="/covid_trace_follow_up/inputs/contact/address:label">
-            <value>Address</value>
-          </text>
-          <text id="/covid_trace_follow_up/inputs/contact/age_in_years:label">
-            <value>Age in years</value>
-          </text>
-          <text id="/covid_trace_follow_up/inputs/contact/chief_name:label">
-            <value>Name of the chief of the village</value>
-          </text>
-          <text id="/covid_trace_follow_up/inputs/contact/chief_phone:label">
-            <value>Phone of the chief</value>
-          </text>
-          <text id="/covid_trace_follow_up/inputs/contact/church:label">
-            <value>Church name</value>
-          </text>
-          <text id="/covid_trace_follow_up/inputs/contact/covid_patient:label">
-            <value>Patient with covid-19 UUID</value>
-          </text>
-          <text id="/covid_trace_follow_up/inputs/contact/flight_details:label">
-            <value>Flight details (if relevant)</value>
-          </text>
-          <text id="/covid_trace_follow_up/inputs/contact/other_names:label">
-            <value>Other names</value>
-          </text>
-          <text id="/covid_trace_follow_up/inputs/contact/phone:label">
-            <value>Phone No</value>
-          </text>
-          <text id="/covid_trace_follow_up/inputs/contact/sex:label">
-            <value>Sex</value>
-          </text>
-          <text id="/covid_trace_follow_up/inputs/contact/surname:label">
-            <value>Surname</value>
-          </text>
-          <text id="/covid_trace_follow_up/inputs/contact/town:label">
-            <value>Town</value>
-          </text>
-          <text id="/covid_trace_follow_up/inputs/contact/village:label">
-            <value>Village name</value>
-          </text>
-          <text id="/covid_trace_follow_up/inputs/contact:label">
-            <value>Contact</value>
-          </text>
-          <text id="/covid_trace_follow_up/inputs/source:label">
-            <value>Source</value>
-          </text>
-          <text id="/covid_trace_follow_up/inputs/source_id:label">
-            <value>Source ID</value>
-          </text>
-          <text id="/covid_trace_follow_up/inputs/user:label">
-            <value>User</value>
-          </text>
-          <text id="/covid_trace_follow_up/inputs:label">
-            <value>Patient</value>
-          </text>
-          <text id="/covid_trace_follow_up/patient_id:jr:requiredMsg">
-            <value>This field is required</value>
-          </text>
-          <text id="/covid_trace_follow_up/patient_id:label">
-            <value>Patient ID</value>
-          </text>
-          <text id="/covid_trace_follow_up/trace/result/contacted:label">
-            <value>Contacted</value>
-          </text>
-          <text id="/covid_trace_follow_up/trace/result/stop:label">
-            <value>Stop tracing this contact</value>
-          </text>
-          <text id="/covid_trace_follow_up/trace/result/try_again:label">
-            <value>Couldn't contact but will try again</value>
-          </text>
-          <text id="/covid_trace_follow_up/trace/result:label">
-            <value>Was the trace attempt successful or do you want to stop tracing this contact ?</value>
-          </text>
-          <text id="/covid_trace_follow_up/trace/sex_label_translator/female:label">
-            <value>Female</value>
-          </text>
-          <text id="/covid_trace_follow_up/trace/sex_label_translator/male:label">
-            <value>Male</value>
-          </text>
-          <text id="/covid_trace_follow_up/trace/stop_details:label">
-            <value>Provide more details on the investigation</value>
+          <text id="/covid_trace_follow_up/trace:label">
+            <value>Trace Attempt</value>
           </text>
           <text id="/covid_trace_follow_up/trace/stop_tracing/contacted_but_not_available:label">
             <value>The contact refused to be traced</value>
           </text>
-          <text id="/covid_trace_follow_up/trace/stop_tracing/other:label">
-            <value>Other</value>
+          <text id="/covid_trace_follow_up/inputs/source:label">
+            <value>Source</value>
           </text>
-          <text id="/covid_trace_follow_up/trace/stop_tracing/unable_to_contact:label">
-            <value>The contact is unavailable or unreachable</value>
-          </text>
-          <text id="/covid_trace_follow_up/trace/stop_tracing:label">
-            <value>Why do you want to stop tracing this contact ?</value>
-          </text>
-          <text id="/covid_trace_follow_up/trace/symptom/no:label">
-            <value>No</value>
+          <text id="/covid_trace_follow_up/contact_info/n_sex:label">
+            <value>Sex: **<output value=" /covid_trace_follow_up/trace/sex_label "/>**</value>
           </text>
           <text id="/covid_trace_follow_up/trace/symptom/yes:label">
             <value>Yes</value>
           </text>
-          <text id="/covid_trace_follow_up/trace/symptom:label">
-            <value>Does the patient have covid symptoms ?</value>
+          <text id="/covid_trace_follow_up/inputs/contact/chief_name:label">
+            <value>Name of the chief of the village</value>
           </text>
-          <text id="/covid_trace_follow_up/trace:label">
-            <value>Trace Attempt</value>
-          </text>
-        </translation>
-        <translation lang="fr">
-          <text id="/covid_trace_follow_up/contact_info/contact_covid_patient:label">
-            <value>Patient with covid-19</value>
-          </text>
-          <text id="/covid_trace_follow_up/contact_info/n_address:label">
-            <value>Address: **<output value=" /covid_trace_follow_up/inputs/contact/address "/>**</value>
-          </text>
-          <text id="/covid_trace_follow_up/contact_info/n_age_in_years:label">
-            <value>Age: **<output value=" /covid_trace_follow_up/inputs/contact/age_in_years "/> years**</value>
-          </text>
-          <text id="/covid_trace_follow_up/contact_info/n_chief_name:label">
-            <value>Name of the chief of the village: **<output value=" /covid_trace_follow_up/inputs/contact/chief_name "/>**</value>
-          </text>
-          <text id="/covid_trace_follow_up/contact_info/n_chief_phone:label">
-            <value>Phone of the chief: **<output value=" /covid_trace_follow_up/inputs/contact/chief_phone "/>**</value>
-          </text>
-          <text id="/covid_trace_follow_up/contact_info/n_church:label">
-            <value>Church name: **<output value=" /covid_trace_follow_up/inputs/contact/church "/>**</value>
-          </text>
-          <text id="/covid_trace_follow_up/contact_info/n_flight_details:label">
-            <value>Flight details: **<output value=" /covid_trace_follow_up/inputs/contact/flight_details "/>**</value>
+          <text id="/covid_trace_follow_up/trace/result/try_again:label">
+            <value>Couldn't contact but will try again</value>
           </text>
           <text id="/covid_trace_follow_up/contact_info/n_other_names:label">
             <value>Other names: **<output value=" /covid_trace_follow_up/inputs/contact/other_names "/>**</value>
           </text>
-          <text id="/covid_trace_follow_up/contact_info/n_phone:label">
-            <value>Phone: **<output value=" /covid_trace_follow_up/inputs/contact/phone "/>**</value>
+          <text id="/covid_trace_follow_up/trace/result/stop:label">
+            <value>Stop tracing this contact</value>
           </text>
-          <text id="/covid_trace_follow_up/contact_info/n_sex:label">
-            <value>Sex: **<output value=" /covid_trace_follow_up/trace/sex_label "/>**</value>
-          </text>
-          <text id="/covid_trace_follow_up/contact_info/n_surname:label">
-            <value>Surname: **<output value=" /covid_trace_follow_up/inputs/contact/surname "/>**</value>
+          <text id="/covid_trace_follow_up/contact_info/n_address:label">
+            <value>Address: **<output value=" /covid_trace_follow_up/inputs/contact/address "/>**</value>
           </text>
           <text id="/covid_trace_follow_up/contact_info/n_town:label">
             <value>Town: **<output value=" /covid_trace_follow_up/inputs/contact/town "/>**</value>
           </text>
-          <text id="/covid_trace_follow_up/contact_info/n_village:label">
-            <value>Village name: **<output value=" /covid_trace_follow_up/inputs/contact/village "/>**</value>
-          </text>
-          <text id="/covid_trace_follow_up/contact_info:label">
-            <value>Contact information</value>
-          </text>
-          <text id="/covid_trace_follow_up/inputs/contact/_id:label">
-            <value>_id</value>
-          </text>
-          <text id="/covid_trace_follow_up/inputs/contact/address:label">
-            <value>Address</value>
-          </text>
-          <text id="/covid_trace_follow_up/inputs/contact/age_in_years:label">
-            <value>Age in years</value>
-          </text>
-          <text id="/covid_trace_follow_up/inputs/contact/chief_name:label">
-            <value>Name of the chief of the village</value>
-          </text>
-          <text id="/covid_trace_follow_up/inputs/contact/chief_phone:label">
-            <value>Phone of the chief</value>
-          </text>
-          <text id="/covid_trace_follow_up/inputs/contact/church:label">
-            <value>Church name</value>
-          </text>
-          <text id="/covid_trace_follow_up/inputs/contact/covid_patient:label">
-            <value>Patient with covid-19 UUID</value>
-          </text>
-          <text id="/covid_trace_follow_up/inputs/contact/flight_details:label">
-            <value>Flight details (if relevant)</value>
-          </text>
-          <text id="/covid_trace_follow_up/inputs/contact/other_names:label">
-            <value>Other names</value>
-          </text>
-          <text id="/covid_trace_follow_up/inputs/contact/phone:label">
-            <value>Phone No</value>
-          </text>
-          <text id="/covid_trace_follow_up/inputs/contact/sex:label">
-            <value>Sex</value>
-          </text>
-          <text id="/covid_trace_follow_up/inputs/contact/surname:label">
-            <value>Surname</value>
-          </text>
-          <text id="/covid_trace_follow_up/inputs/contact/town:label">
-            <value>Town</value>
-          </text>
           <text id="/covid_trace_follow_up/inputs/contact/village:label">
             <value>Village name</value>
-          </text>
-          <text id="/covid_trace_follow_up/inputs/contact:label">
-            <value>Contact</value>
-          </text>
-          <text id="/covid_trace_follow_up/inputs/source:label">
-            <value>Source</value>
-          </text>
-          <text id="/covid_trace_follow_up/inputs/source_id:label">
-            <value>Source ID</value>
-          </text>
-          <text id="/covid_trace_follow_up/inputs/user:label">
-            <value>User</value>
           </text>
           <text id="/covid_trace_follow_up/inputs:label">
             <value>Patient</value>
           </text>
-          <text id="/covid_trace_follow_up/patient_id:jr:requiredMsg">
-            <value>Ce champs est obligatoire</value>
+          <text id="/covid_trace_follow_up/inputs/contact:label">
+            <value>Contact</value>
           </text>
-          <text id="/covid_trace_follow_up/patient_id:label">
-            <value>Patient ID</value>
+          <text id="/covid_trace_follow_up/inputs/contact/sex:label">
+            <value>Sex</value>
           </text>
-          <text id="/covid_trace_follow_up/trace/result/contacted:label">
-            <value>-</value>
+          <text id="/covid_trace_follow_up/inputs/contact/other_names:label">
+            <value>Other names</value>
           </text>
-          <text id="/covid_trace_follow_up/trace/result/stop:label">
-            <value>-</value>
-          </text>
-          <text id="/covid_trace_follow_up/trace/result/try_again:label">
-            <value>-</value>
-          </text>
-          <text id="/covid_trace_follow_up/trace/result:label">
-            <value>Was the trace attempt successful or do you want to stop tracing this contact ?</value>
-          </text>
-          <text id="/covid_trace_follow_up/trace/sex_label_translator/female:label">
-            <value>Femme</value>
-          </text>
-          <text id="/covid_trace_follow_up/trace/sex_label_translator/male:label">
-            <value>Homme</value>
-          </text>
-          <text id="/covid_trace_follow_up/trace/stop_details:label">
-            <value>Provide more details on the investigation</value>
-          </text>
-          <text id="/covid_trace_follow_up/trace/stop_tracing/contacted_but_not_available:label">
-            <value>The contact refused to be traced</value>
+          <text id="/covid_trace_follow_up/contact_info/n_flight_details:label">
+            <value>Flight details: **<output value=" /covid_trace_follow_up/inputs/contact/flight_details "/>**</value>
           </text>
           <text id="/covid_trace_follow_up/trace/stop_tracing/other:label">
             <value>Other</value>
           </text>
-          <text id="/covid_trace_follow_up/trace/stop_tracing/unable_to_contact:label">
-            <value>The contact is unavailable or unreachable</value>
+          <text id="/covid_trace_follow_up/contact_info/n_church:label">
+            <value>Church name: **<output value=" /covid_trace_follow_up/inputs/contact/church "/>**</value>
           </text>
-          <text id="/covid_trace_follow_up/trace/stop_tracing:label">
-            <value>Why do you want to stop tracing this contact ?</value>
+          <text id="/covid_trace_follow_up/trace/result:label">
+            <value>Was the trace attempt successful or do you want to stop tracing this contact ?</value>
+          </text>
+          <text id="/covid_trace_follow_up/inputs/contact/covid_patient:label">
+            <value>Patient with covid-19 UUID</value>
+          </text>
+          <text id="/covid_trace_follow_up/trace/sex_label_translator/female:label">
+            <value>Female</value>
+          </text>
+          <text id="/covid_trace_follow_up/contact_info/n_age_in_years:label">
+            <value>Age: **<output value=" /covid_trace_follow_up/inputs/contact/age_in_years "/> years**</value>
+          </text>
+          <text id="/covid_trace_follow_up/trace/result/contacted:label">
+            <value>Contacted</value>
+          </text>
+          <text id="/covid_trace_follow_up/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/covid_trace_follow_up/inputs/user:label">
+            <value>User</value>
+          </text>
+          <text id="/covid_trace_follow_up/trace/sex_label_translator/male:label">
+            <value>Male</value>
+          </text>
+          <text id="/covid_trace_follow_up/inputs/contact/_id:label">
+            <value>_id</value>
+          </text>
+          <text id="/covid_trace_follow_up/patient_id:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/covid_trace_follow_up/inputs/contact/address:label">
+            <value>Address</value>
           </text>
           <text id="/covid_trace_follow_up/trace/symptom/no:label">
-            <value>Non</value>
+            <value>No</value>
           </text>
-          <text id="/covid_trace_follow_up/trace/symptom/yes:label">
-            <value>Oui</value>
+          <text id="/covid_trace_follow_up/trace/stop_details:label">
+            <value>Provide more details on the investigation</value>
           </text>
           <text id="/covid_trace_follow_up/trace/symptom:label">
             <value>Does the patient have covid symptoms ?</value>
           </text>
-          <text id="/covid_trace_follow_up/trace:label">
-            <value>Trace Attempt</value>
+          <text id="/covid_trace_follow_up/trace/stop_tracing:label">
+            <value>Why do you want to stop tracing this contact ?</value>
+          </text>
+          <text id="/covid_trace_follow_up/contact_info/n_phone:label">
+            <value>Phone: **<output value=" /covid_trace_follow_up/inputs/contact/phone "/>**</value>
+          </text>
+          <text id="/covid_trace_follow_up/inputs/contact/chief_phone:label">
+            <value>Phone of the chief</value>
+          </text>
+          <text id="/covid_trace_follow_up/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/covid_trace_follow_up/inputs/contact/surname:label">
+            <value>Surname</value>
+          </text>
+          <text id="/covid_trace_follow_up/trace/sex_label_translator:label">
+            <value></value>
+          </text>
+          <text id="/covid_trace_follow_up/contact_info/n_village:label">
+            <value>Village name: **<output value=" /covid_trace_follow_up/inputs/contact/village "/>**</value>
+          </text>
+          <text id="/covid_trace_follow_up/trace/stop_tracing/unable_to_contact:label">
+            <value>The contact is unavailable or unreachable</value>
+          </text>
+          <text id="/covid_trace_follow_up/inputs/contact/town:label">
+            <value>Town</value>
+          </text>
+          <text id="/covid_trace_follow_up/contact_info:label">
+            <value>Contact information</value>
+          </text>
+          <text id="/covid_trace_follow_up/inputs/contact/age_in_years:label">
+            <value>Age in years</value>
+          </text>
+          <text id="/covid_trace_follow_up/inputs/contact/flight_details:label">
+            <value>Flight details (if relevant)</value>
+          </text>
+          <text id="/covid_trace_follow_up/contact_info/contact_covid_patient:label">
+            <value>Patient with covid-19</value>
+          </text>
+          <text id="/covid_trace_follow_up/contact_info/n_chief_phone:label">
+            <value>Phone of the chief: **<output value=" /covid_trace_follow_up/inputs/contact/chief_phone "/>**</value>
+          </text>
+          <text id="/covid_trace_follow_up/inputs/contact/church:label">
+            <value>Church name</value>
+          </text>
+          <text id="/covid_trace_follow_up/contact_info/n_chief_name:label">
+            <value>Name of the chief of the village: **<output value=" /covid_trace_follow_up/inputs/contact/chief_name "/>**</value>
+          </text>
+          <text id="/covid_trace_follow_up/inputs/contact/phone:label">
+            <value>Phone No</value>
           </text>
         </translation>
       </itext>
       <instance>
-        <covid_trace_follow_up delimiter="#" id="covid_trace_follow_up" prefix="J1!covid_trace_follow_up!" version="2020-04-21 20-28">
-          <inputs tag="hidden">
+        <covid_trace_follow_up delimiter="#" id="covid_trace_follow_up" prefix="J1!covid_trace_follow_up!" version="2020-08-19 21-51">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
             <source>user</source>
             <source_id/>
             <user/>
@@ -335,18 +194,18 @@
           <needs_signoff/>
           <patient_id/>
           <contact_info>
-            <n_surname tag="hidden"/>
-            <n_other_names tag="hidden"/>
-            <n_sex tag="hidden"/>
-            <n_age_in_years tag="hidden"/>
-            <n_phone tag="hidden"/>
-            <n_flight_details tag="hidden"/>
-            <n_address tag="hidden"/>
-            <n_town tag="hidden"/>
-            <n_village tag="hidden"/>
-            <n_chief_name tag="hidden"/>
-            <n_chief_phone tag="hidden"/>
-            <n_church tag="hidden"/>
+            <n_surname/>
+            <n_other_names/>
+            <n_sex/>
+            <n_age_in_years/>
+            <n_phone/>
+            <n_flight_details/>
+            <n_address/>
+            <n_town/>
+            <n_village/>
+            <n_chief_name/>
+            <n_chief_phone/>
+            <n_church/>
             <contact_covid_patient/>
           </contact_info>
           <trace>
@@ -354,10 +213,10 @@
             <symptom/>
             <stop_tracing/>
             <stop_details/>
-            <sex_label_translator tag="hidden"/>
-            <sex_label tag="hidden"/>
+            <sex_label_translator/>
+            <sex_label/>
           </trace>
-          <meta tag="hidden">
+          <meta>
             <instanceID/>
           </meta>
         </covid_trace_follow_up>
@@ -512,6 +371,7 @@
         <label ref="jr:itext('/covid_trace_follow_up/trace/stop_details:label')"/>
       </input>
       <select1 appearance="hidden" ref="/covid_trace_follow_up/trace/sex_label_translator">
+        <label ref="jr:itext('/covid_trace_follow_up/trace/sex_label_translator:label')"/>
         <item>
           <label ref="jr:itext('/covid_trace_follow_up/trace/sex_label_translator/female:label')"/>
           <value>female</value>

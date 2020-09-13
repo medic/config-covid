@@ -5,228 +5,216 @@
     <model>
       <itext>
         <translation lang="en">
+          <text id="/referral/temp_clinical:jr:constraintMsg">
+            <value>Please check the temperature or the unit.</value>
+          </text>
+          <text id="/referral/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/referral/patient_uuid:label">
+            <value></value>
+          </text>
+          <text id="/referral/referred_to/parirenyatwa:label">
+            <value>Parirenyatwa Hospital</value>
+          </text>
+          <text id="/referral/temp_clinical_unit/celsius:label">
+            <value>°C</value>
+          </text>
+          <text id="/referral/temp_infra_unit/celsius:label">
+            <value>°C</value>
+          </text>
+          <text id="/referral/temp_clinical:label">
+            <value>Value</value>
+          </text>
+          <text id="/referral/patient_name:label">
+            <value></value>
+          </text>
+          <text id="/referral/referred_to/harare_hospital:label">
+            <value>Harare Hospital</value>
+          </text>
+          <text id="/referral/inputs/contact/traveler:label">
+            <value></value>
+          </text>
+          <text id="/referral/temp_clinical_unit:label">
+            <value>Unit</value>
+          </text>
+          <text id="/referral/inputs:label">
+            <value></value>
+          </text>
+          <text id="/referral/patient_id:label">
+            <value></value>
+          </text>
+          <text id="/referral/inputs/contact/traveler/nationality:label">
+            <value>Nationality</value>
+          </text>
+          <text id="/referral/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/referral/referred_to/wilkings:label">
+            <value>Wilkings Clinic</value>
+          </text>
+          <text id="/referral/temp_infra:label">
+            <value>Value</value>
+          </text>
+          <text id="/referral/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/referral/inputs/contact/traveler/last_name:label">
+            <value>Last Name</value>
+          </text>
+          <text id="/referral/temp_clinical_unit/fahrenheit:label">
+            <value>°F</value>
+          </text>
+          <text id="/referral/temp_infra_unit/fahrenheit:label">
+            <value>°F</value>
+          </text>
+          <text id="/referral/refer_other:label">
+            <value>Please specify</value>
+          </text>
+          <text id="/referral/temp_infra_note:label">
+            <value>**Temperature measured by infrared thermometer**</value>
+          </text>
+          <text id="/referral/notes:label">
+            <value>Notes</value>
+          </text>
           <text id="/referral/inputs/contact/_id:label">
             <value>What is the passenger's name?</value>
           </text>
           <text id="/referral/inputs/contact/form_date:label">
             <value>Date in the form</value>
           </text>
-          <text id="/referral/inputs/contact/name:label">
-            <value>Name</value>
+          <text id="/referral/temp_clinical_note:label">
+            <value>**Temperature measured by clinical thermometer**</value>
           </text>
-          <text id="/referral/inputs/contact/patient_id:label">
-            <value>Patient ID</value>
+          <text id="/referral/inputs/contact:label">
+            <value></value>
           </text>
           <text id="/referral/inputs/contact/traveler/first_name:label">
             <value>First Name</value>
           </text>
-          <text id="/referral/inputs/contact/traveler/last_name:label">
-            <value>Last Name</value>
-          </text>
-          <text id="/referral/inputs/contact/traveler/nationality:label">
-            <value>Nationality</value>
-          </text>
-          <text id="/referral/inputs/contact/traveler/nationality_other:label">
-            <value>Other Nationality</value>
+          <text id="/referral/temp_infra_unit:label">
+            <value>Unit</value>
           </text>
           <text id="/referral/inputs/source:label">
             <value>Source</value>
           </text>
-          <text id="/referral/inputs/source_id:label">
-            <value>Source ID</value>
+          <text id="/referral/temp_infra:jr:constraintMsg">
+            <value>Please check the temperature or the unit.</value>
           </text>
-          <text id="/referral/notes:label">
-            <value>Notes</value>
-          </text>
-          <text id="/referral/refer_other:label">
-            <value>Please specify</value>
-          </text>
-          <text id="/referral/referred_to/army:label">
-            <value>Army Hospital</value>
-          </text>
-          <text id="/referral/referred_to/bir:label">
-            <value>Bir Hospital</value>
-          </text>
-          <text id="/referral/referred_to/civil:label">
-            <value>Civil Hospital</value>
-          </text>
-          <text id="/referral/referred_to/kirtipur:label">
-            <value>Kirtipur Hospital</value>
-          </text>
-          <text id="/referral/referred_to/other:label">
-            <value>Other</value>
-          </text>
-          <text id="/referral/referred_to/patan:label">
-            <value>Patan Hospital</value>
-          </text>
-          <text id="/referral/referred_to/police:label">
-            <value>Police Hospital</value>
-          </text>
-          <text id="/referral/referred_to/teku:label">
-            <value>Teku Hospital</value>
+          <text id="/referral/inputs/contact/traveler/nationality_other:label">
+            <value>Other Nationality</value>
           </text>
           <text id="/referral/referred_to:label">
             <value>Patient referred to</value>
           </text>
+        </translation>
+        <translation lang="sh">
           <text id="/referral/temp_clinical:jr:constraintMsg">
-            <value>Please check the temperature or the unit.</value>
+            <value>-</value>
           </text>
-          <text id="/referral/temp_clinical:label">
-            <value>Value</value>
+          <text id="/referral/inputs/source_id:label">
+            <value>-</value>
           </text>
-          <text id="/referral/temp_clinical_note:label">
-            <value>**Temperature measured by clinical thermometer**</value>
+          <text id="/referral/patient_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/referral/referred_to/parirenyatwa:label">
+            <value>-</value>
           </text>
           <text id="/referral/temp_clinical_unit/celsius:label">
-            <value>°C</value>
-          </text>
-          <text id="/referral/temp_clinical_unit/fahrenheit:label">
-            <value>°F</value>
-          </text>
-          <text id="/referral/temp_clinical_unit:label">
-            <value>Unit</value>
-          </text>
-          <text id="/referral/temp_infra:jr:constraintMsg">
-            <value>Please check the temperature or the unit.</value>
-          </text>
-          <text id="/referral/temp_infra:label">
-            <value>Value</value>
-          </text>
-          <text id="/referral/temp_infra_note:label">
-            <value>**Temperature measured by infrared thermometer**</value>
+            <value>-</value>
           </text>
           <text id="/referral/temp_infra_unit/celsius:label">
-            <value>°C</value>
+            <value>-</value>
           </text>
-          <text id="/referral/temp_infra_unit/fahrenheit:label">
-            <value>°F</value>
+          <text id="/referral/temp_clinical:label">
+            <value>Valeur</value>
+          </text>
+          <text id="/referral/patient_name:label">
+            <value>-</value>
+          </text>
+          <text id="/referral/referred_to/harare_hospital:label">
+            <value>-</value>
+          </text>
+          <text id="/referral/inputs/contact/traveler:label">
+            <value>-</value>
+          </text>
+          <text id="/referral/temp_clinical_unit:label">
+            <value>Unité</value>
+          </text>
+          <text id="/referral/inputs:label">
+            <value>-</value>
+          </text>
+          <text id="/referral/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/referral/inputs/contact/traveler/nationality:label">
+            <value>-</value>
+          </text>
+          <text id="/referral/inputs/contact/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/referral/referred_to/wilkings:label">
+            <value>-</value>
           </text>
           <text id="/referral/temp_infra_unit:label">
-            <value>Unit</value>
+            <value>Unité</value>
           </text>
-        </translation>
-        <translation lang="fr">
+          <text id="/referral/inputs/contact/name:label">
+            <value>-</value>
+          </text>
+          <text id="/referral/inputs/contact/traveler/last_name:label">
+            <value>-</value>
+          </text>
+          <text id="/referral/temp_clinical_unit/fahrenheit:label">
+            <value>-</value>
+          </text>
+          <text id="/referral/temp_infra_unit/fahrenheit:label">
+            <value>-</value>
+          </text>
+          <text id="/referral/refer_other:label">
+            <value>Veuillez préciser</value>
+          </text>
+          <text id="/referral/temp_infra_note:label">
+            <value>** Température mesurée par un thermomètre à infrarouge **</value>
+          </text>
+          <text id="/referral/notes:label">
+            <value>Remarques</value>
+          </text>
           <text id="/referral/inputs/contact/_id:label">
             <value>-</value>
           </text>
           <text id="/referral/inputs/contact/form_date:label">
             <value>-</value>
           </text>
-          <text id="/referral/inputs/contact/name:label">
-            <value>-</value>
+          <text id="/referral/temp_clinical_note:label">
+            <value>** La température mesurée par un thermomètre clinique **</value>
           </text>
-          <text id="/referral/inputs/contact/patient_id:label">
+          <text id="/referral/inputs/contact:label">
             <value>-</value>
           </text>
           <text id="/referral/inputs/contact/traveler/first_name:label">
             <value>-</value>
           </text>
-          <text id="/referral/inputs/contact/traveler/last_name:label">
+          <text id="/referral/temp_infra:label">
+            <value>Valeur</value>
+          </text>
+          <text id="/referral/inputs/source:label">
             <value>-</value>
           </text>
-          <text id="/referral/inputs/contact/traveler/nationality:label">
+          <text id="/referral/temp_infra:jr:constraintMsg">
             <value>-</value>
           </text>
           <text id="/referral/inputs/contact/traveler/nationality_other:label">
             <value>-</value>
           </text>
-          <text id="/referral/inputs/contact/traveler:label">
-            <value>-</value>
-          </text>
-          <text id="/referral/inputs/contact:label">
-            <value>-</value>
-          </text>
-          <text id="/referral/inputs/source:label">
-            <value>-</value>
-          </text>
-          <text id="/referral/inputs/source_id:label">
-            <value>-</value>
-          </text>
-          <text id="/referral/inputs:label">
-            <value>-</value>
-          </text>
-          <text id="/referral/notes:label">
-            <value>Remarques</value>
-          </text>
-          <text id="/referral/patient_id:label">
-            <value>-</value>
-          </text>
-          <text id="/referral/patient_name:label">
-            <value>-</value>
-          </text>
-          <text id="/referral/patient_uuid:label">
-            <value>-</value>
-          </text>
-          <text id="/referral/refer_other:label">
-            <value>Veuillez préciser</value>
-          </text>
-          <text id="/referral/referred_to/army:label">
-            <value>Hôpital armée</value>
-          </text>
-          <text id="/referral/referred_to/bir:label">
-            <value>Bir Hospital</value>
-          </text>
-          <text id="/referral/referred_to/civil:label">
-            <value>Hôpital civil</value>
-          </text>
-          <text id="/referral/referred_to/kirtipur:label">
-            <value>Kirtipur Hôpital</value>
-          </text>
-          <text id="/referral/referred_to/other:label">
-            <value>Autre</value>
-          </text>
-          <text id="/referral/referred_to/patan:label">
-            <value>Hôpital Patan</value>
-          </text>
-          <text id="/referral/referred_to/police:label">
-            <value>Hôpital de la police</value>
-          </text>
-          <text id="/referral/referred_to/teku:label">
-            <value>teku Hôpital</value>
-          </text>
           <text id="/referral/referred_to:label">
             <value>Patient référé</value>
-          </text>
-          <text id="/referral/temp_clinical:jr:constraintMsg">
-            <value>-</value>
-          </text>
-          <text id="/referral/temp_clinical:label">
-            <value>Valeur</value>
-          </text>
-          <text id="/referral/temp_clinical_note:label">
-            <value>** La température mesurée par un thermomètre clinique **</value>
-          </text>
-          <text id="/referral/temp_clinical_unit/celsius:label">
-            <value>° C</value>
-          </text>
-          <text id="/referral/temp_clinical_unit/fahrenheit:label">
-            <value>° F</value>
-          </text>
-          <text id="/referral/temp_clinical_unit:label">
-            <value>Unité</value>
-          </text>
-          <text id="/referral/temp_infra:jr:constraintMsg">
-            <value>-</value>
-          </text>
-          <text id="/referral/temp_infra:label">
-            <value>Valeur</value>
-          </text>
-          <text id="/referral/temp_infra_note:label">
-            <value>** Température mesurée par un thermomètre à infrarouge **</value>
-          </text>
-          <text id="/referral/temp_infra_unit/celsius:label">
-            <value>° C</value>
-          </text>
-          <text id="/referral/temp_infra_unit/fahrenheit:label">
-            <value>° F</value>
-          </text>
-          <text id="/referral/temp_infra_unit:label">
-            <value>Unité</value>
           </text>
         </translation>
       </itext>
       <instance>
-        <referral delimiter="#" id="referral" prefix="J1!referral!" version="2020-03-28 12:19:13">
+        <referral delimiter="#" id="referral" prefix="J1!referral!" version="2020-08-22 15:52:23">
           <inputs>
             <meta>
               <location>
@@ -263,7 +251,7 @@
           <referred_to/>
           <refer_other/>
           <notes/>
-          <meta tag="hidden">
+          <meta>
             <instanceID/>
           </meta>
         </referral>
@@ -297,11 +285,15 @@
   </h:head>
   <h:body>
     <group appearance="field-list" ref="/referral/inputs">
+      <label ref="jr:itext('/referral/inputs:label')"/>
       <group ref="/referral/inputs/contact">
+        <label ref="jr:itext('/referral/inputs/contact:label')"/>
         <input appearance="db-object" ref="/referral/inputs/contact/_id">
           <label ref="jr:itext('/referral/inputs/contact/_id:label')"/>
         </input>
-        <group ref="/referral/inputs/contact/traveler"/>
+        <group ref="/referral/inputs/contact/traveler">
+          <label ref="jr:itext('/referral/inputs/contact/traveler:label')"/>
+        </group>
       </group>
     </group>
     <input ref="/referral/temp_infra_note">
@@ -341,36 +333,16 @@
     <select1 ref="/referral/referred_to">
       <label ref="jr:itext('/referral/referred_to:label')"/>
       <item>
-        <label ref="jr:itext('/referral/referred_to/teku:label')"/>
-        <value>teku</value>
+        <label ref="jr:itext('/referral/referred_to/parirenyatwa:label')"/>
+        <value>parirenyatwa</value>
       </item>
       <item>
-        <label ref="jr:itext('/referral/referred_to/patan:label')"/>
-        <value>patan</value>
+        <label ref="jr:itext('/referral/referred_to/harare_hospital:label')"/>
+        <value>harare_hospital</value>
       </item>
       <item>
-        <label ref="jr:itext('/referral/referred_to/police:label')"/>
-        <value>police</value>
-      </item>
-      <item>
-        <label ref="jr:itext('/referral/referred_to/army:label')"/>
-        <value>army</value>
-      </item>
-      <item>
-        <label ref="jr:itext('/referral/referred_to/kirtipur:label')"/>
-        <value>kirtipur</value>
-      </item>
-      <item>
-        <label ref="jr:itext('/referral/referred_to/bir:label')"/>
-        <value>bir</value>
-      </item>
-      <item>
-        <label ref="jr:itext('/referral/referred_to/civil:label')"/>
-        <value>civil</value>
-      </item>
-      <item>
-        <label ref="jr:itext('/referral/referred_to/other:label')"/>
-        <value>other</value>
+        <label ref="jr:itext('/referral/referred_to/wilkings:label')"/>
+        <value>wilkings</value>
       </item>
     </select1>
     <input ref="/referral/refer_other">

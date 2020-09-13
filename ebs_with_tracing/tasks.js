@@ -52,7 +52,7 @@ module.exports = [
     appliesTo: 'contacts',
     appliesToType: undefined,
     appliesIf: function (c) {
-      const isCha = user.parent && user.parent.type === 'health_center';
+      const isCha = user.parent && (user.parent.type === 'health_center' || user.parent.type === 'district_hospital' );
       this.mostRecent8 = Utils.getMostRecentReport(c.reports, '8');
       return isCha && this.mostRecent8 ;
     },
@@ -137,9 +137,9 @@ module.exports = [
     icon: 'icon-healthcare',
     title: 'task.trace_follow_up.title',
     appliesTo: 'contacts',
-    appliesToType: ['person'],
+    appliesToType: [' '],
     appliesIf: function (contact) {
-      return  !!contact.contact.covid_patient && user.role === 'tracer' ;
+      return  !!contact.contact.covid_patient && (user.role === 'covid_tracer' || user.role === 'chw_supervisor' ) ;
     },
     resolvedIf: function (contact) {
       this.mostRecentTraceFollowUp = Utils.getMostRecentReport(contact.reports, 'covid_trace_follow_up');

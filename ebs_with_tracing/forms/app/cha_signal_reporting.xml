@@ -4,80 +4,89 @@
     <h:title>CHA Signal Reporting</h:title>
     <model>
       <itext>
-        <translation lang="en">
-          <text id="/cha_signal_reporting/inputs/contact/_id:label">
-            <value>_id</value>
-          </text>
-          <text id="/cha_signal_reporting/inputs/contact/date_of_birth:label">
-            <value>Date of birth</value>
-          </text>
-          <text id="/cha_signal_reporting/inputs/contact/external_id:label">
-            <value>Muso ID</value>
-          </text>
-          <text id="/cha_signal_reporting/inputs/contact/name:label">
-            <value>Name</value>
-          </text>
-          <text id="/cha_signal_reporting/inputs/contact/sex:label">
-            <value>Sex</value>
-          </text>
-          <text id="/cha_signal_reporting/inputs/contact:label">
-            <value>Contact</value>
-          </text>
-          <text id="/cha_signal_reporting/inputs/source:label">
-            <value>Source</value>
-          </text>
-          <text id="/cha_signal_reporting/inputs/source_id:label">
-            <value>Source ID</value>
-          </text>
-          <text id="/cha_signal_reporting/inputs/user:label">
-            <value>User</value>
-          </text>
+        <translation lang="fr">
           <text id="/cha_signal_reporting/inputs:label">
-            <value>Patient</value>
+            <value>-</value>
           </text>
-          <text id="/cha_signal_reporting/signal_type/1:label">
-            <value>1. Two or more people sick with similar signs and symptoms in a community within a week</value>
-          </text>
-          <text id="/cha_signal_reporting/signal_type/2:label">
-            <value>2. Any death in the community due to unknown causes</value>
-          </text>
-          <text id="/cha_signal_reporting/signal_type/3:label">
-            <value>3. Any child less than 15 years with a sudden onset of weakness of the limb/s not due to injury</value>
-          </text>
-          <text id="/cha_signal_reporting/signal_type/4:label">
-            <value>4. Any person 5 years of age or more with lots of watery diarrhea and dehydration in the same day</value>
+          <text id="/cha_signal_reporting/inputs/contact/_id:label">
+            <value>-</value>
           </text>
           <text id="/cha_signal_reporting/signal_type/5:label">
-            <value>5. Increased sickness including abortions and/or deaths of animals (wild or domestic and poultry/birds or fish)</value>
+            <value>-</value>
+          </text>
+          <text id="/cha_signal_reporting/inputs/source:label">
+            <value>-</value>
           </text>
           <text id="/cha_signal_reporting/signal_type/6:label">
-            <value>6. Any person who has been bitten by a sick looking animals including dogs</value>
+            <value>-</value>
           </text>
-          <text id="/cha_signal_reporting/signal_type/7:label">
-            <value>7. Any event that causes public health anxiety/concern</value>
+          <text id="/cha_signal_reporting/inputs/contact/name:label">
+            <value>-</value>
           </text>
-          <text id="/cha_signal_reporting/signal_type/8:label">
-            <value>8. Any person with a history of travel or contact (visited, lived with, attended a function with, travelled with or provided care for) with a person who has travelled from any country with a widespread transmission of COVID-19 AND Any person who reports/presenting with a severe cough, breathing problem, burning throat or hotness of the body which has not responded to therapy.</value>
+          <text id="/cha_signal_reporting/inputs/contact/date_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/cha_signal_reporting/inputs/contact/sex:label">
+            <value>-</value>
           </text>
           <text id="/cha_signal_reporting/signal_type:hint">
             <value>(Please note you can only report one signal at a time)</value>
           </text>
+          <text id="/cha_signal_reporting/signal_type/4:label">
+            <value>-</value>
+          </text>
+          <text id="/cha_signal_reporting/inputs/user:label">
+            <value>-</value>
+          </text>
+          <text id="/cha_signal_reporting/signal_type/7:label">
+            <value>-</value>
+          </text>
+          <text id="/cha_signal_reporting/inputs/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/cha_signal_reporting/signal_type/3:label">
+            <value>-</value>
+          </text>
+          <text id="/cha_signal_reporting/signal_type/1:label">
+            <value>-</value>
+          </text>
+          <text id="/cha_signal_reporting/inputs/contact/external_id:label">
+            <value>-</value>
+          </text>
+          <text id="/cha_signal_reporting/signal_type/2:label">
+            <value>-</value>
+          </text>
           <text id="/cha_signal_reporting/signal_type:label">
-            <value>What type of signal are you reporting?</value>
+            <value>-</value>
           </text>
           <text id="/cha_signal_reporting/signal_type_desc:label">
-            <value>Signal Description</value>
+            <value>-</value>
+          </text>
+          <text id="/cha_signal_reporting/signal_type/8:label">
+            <value>-</value>
+          </text>
+          <text id="/cha_signal_reporting/inputs/source_id:label">
+            <value>-</value>
           </text>
         </translation>
-        <translation lang="fr">
+        <translation lang="en">
+          <text id="/cha_signal_reporting/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/cha_signal_reporting/signal_type/5:label">
+            <value>5. Increased sickness including abortions and/or deaths of animals (wild or domestic and poultry/birds or fish)</value>
+          </text>
+          <text id="/cha_signal_reporting/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/cha_signal_reporting/signal_type/6:label">
+            <value>6. Any person who has been bitten by a sick looking animals including dogs</value>
+          </text>
           <text id="/cha_signal_reporting/inputs/contact/_id:label">
             <value>_id</value>
           </text>
           <text id="/cha_signal_reporting/inputs/contact/date_of_birth:label">
             <value>Date of birth</value>
-          </text>
-          <text id="/cha_signal_reporting/inputs/contact/external_id:label">
-            <value>Muso ID</value>
           </text>
           <text id="/cha_signal_reporting/inputs/contact/name:label">
             <value>Name</value>
@@ -85,50 +94,41 @@
           <text id="/cha_signal_reporting/inputs/contact/sex:label">
             <value>Sex</value>
           </text>
-          <text id="/cha_signal_reporting/inputs/contact:label">
-            <value>Contact</value>
-          </text>
-          <text id="/cha_signal_reporting/inputs/source:label">
-            <value>Source</value>
-          </text>
-          <text id="/cha_signal_reporting/inputs/source_id:label">
-            <value>Source ID</value>
-          </text>
-          <text id="/cha_signal_reporting/inputs/user:label">
-            <value>User</value>
-          </text>
-          <text id="/cha_signal_reporting/inputs:label">
-            <value>Patient</value>
-          </text>
-          <text id="/cha_signal_reporting/signal_type/1:label">
-            <value>1. Two or more people sick with similar signs and symptoms in a community within a week</value>
-          </text>
-          <text id="/cha_signal_reporting/signal_type/2:label">
-            <value>2. Any death in the community due to unknown causes</value>
-          </text>
-          <text id="/cha_signal_reporting/signal_type/3:label">
-            <value>3. Any child less than 15 years with a sudden onset of weakness of the limb/s not due to injury</value>
+          <text id="/cha_signal_reporting/signal_type:hint">
+            <value>(Please note you can only report one signal at a time)</value>
           </text>
           <text id="/cha_signal_reporting/signal_type/4:label">
             <value>4. Any person 5 years of age or more with lots of watery diarrhea and dehydration in the same day</value>
           </text>
-          <text id="/cha_signal_reporting/signal_type/5:label">
-            <value>5. Increased sickness including abortions and/or deaths of animals (wild or domestic and poultry/birds or fish)</value>
-          </text>
-          <text id="/cha_signal_reporting/signal_type/6:label">
-            <value>6. Any person who has been bitten by a sick looking animals including dogs</value>
+          <text id="/cha_signal_reporting/inputs/user:label">
+            <value>User</value>
           </text>
           <text id="/cha_signal_reporting/signal_type/7:label">
             <value>7. Any event that causes public health anxiety/concern</value>
           </text>
-          <text id="/cha_signal_reporting/signal_type/8:label">
-            <value>8. Any person with a history of travel or contact (visited, lived with, attended a function with, travelled with or provided care for) with a person who has travelled from any country with a widespread transmission of COVID-19 AND Any person who reports/presenting with a severe cough, breathing problem, burning throat or hotness of the body which has not responded to therapy.</value>
+          <text id="/cha_signal_reporting/inputs/source_id:label">
+            <value>Source ID</value>
           </text>
-          <text id="/cha_signal_reporting/signal_type:hint">
-            <value>(Please note you can only report one signal at a time)</value>
+          <text id="/cha_signal_reporting/signal_type/3:label">
+            <value>3. Any child less than 15 years with a sudden onset of weakness of the limb/s not due to injury</value>
+          </text>
+          <text id="/cha_signal_reporting/inputs/contact/external_id:label">
+            <value>LGH ID</value>
+          </text>
+          <text id="/cha_signal_reporting/signal_type/2:label">
+            <value>2. Any death in the community due to unknown causes</value>
           </text>
           <text id="/cha_signal_reporting/signal_type:label">
             <value>What type of signal are you reporting?</value>
+          </text>
+          <text id="/cha_signal_reporting/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/cha_signal_reporting/signal_type/8:label">
+            <value>8. Any person with a history of travel or contact (visited, lived with, attended a function with, travelled with or provided care for) with a person who has travelled from any country with a widespread transmission of COVID-19 AND Any person who reports/presenting with a severe cough, breathing problem, burning throat or hotness of the body which has not responded to therapy.</value>
+          </text>
+          <text id="/cha_signal_reporting/signal_type/1:label">
+            <value>1. Two or more people sick with similar signs and symptoms in a community within a week</value>
           </text>
           <text id="/cha_signal_reporting/signal_type_desc:label">
             <value>Signal Description</value>
@@ -137,7 +137,15 @@
       </itext>
       <instance>
         <cha_signal_reporting delimiter="#" id="cha_signal_reporting" prefix="J1!cha_signal_reporting!" version="2020-04-01">
-          <inputs tag="hidden">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
             <source>user</source>
             <source_id/>
             <user/>
@@ -151,7 +159,7 @@
           </inputs>
           <signal_type/>
           <signal_type_desc/>
-          <meta tag="hidden">
+          <meta>
             <instanceID/>
           </meta>
         </cha_signal_reporting>

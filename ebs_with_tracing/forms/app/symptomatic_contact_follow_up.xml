@@ -5,115 +5,70 @@
     <model>
       <itext>
         <translation lang="en">
-          <text id="/symptomatic_contact_follow_up/followup_group/followup/no:label">
-            <value>No</value>
+          <text id="/symptomatic_contact_follow_up/inputs/user:label">
+            <value>User</value>
+          </text>
+          <text id="/symptomatic_contact_follow_up/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/symptomatic_contact_follow_up/inputs/contact/date_of_birth:label">
+            <value>Date of birth</value>
+          </text>
+          <text id="/symptomatic_contact_follow_up/followup_group/followup:label">
+            <value>Have you called the patient and received an update on the situation?</value>
           </text>
           <text id="/symptomatic_contact_follow_up/followup_group/followup/yes:label">
             <value>Yes</value>
           </text>
-          <text id="/symptomatic_contact_follow_up/followup_group/followup:jr:constraintMsg">
-            <value>You must receive an update on the patient's situation to complete this task</value>
+          <text id="/symptomatic_contact_follow_up/inputs/source:label">
+            <value>Source</value>
           </text>
-          <text id="/symptomatic_contact_follow_up/followup_group/followup:label">
-            <value>Have you called the patient and received an update on the situation?</value>
+          <text id="/symptomatic_contact_follow_up/inputs:label">
+            <value>Patient</value>
           </text>
-          <text id="/symptomatic_contact_follow_up/followup_group:label">
-            <value>Follow-up after symptomatic patient</value>
+          <text id="/symptomatic_contact_follow_up/inputs/contact/external_id:label">
+            <value>LGH ID</value>
+          </text>
+          <text id="/symptomatic_contact_follow_up/patient_id:label">
+            <value>Patient ID</value>
           </text>
           <text id="/symptomatic_contact_follow_up/inputs/contact/_id:label">
             <value>_id</value>
           </text>
-          <text id="/symptomatic_contact_follow_up/inputs/contact/date_of_birth:label">
-            <value>Date of birth</value>
-          </text>
-          <text id="/symptomatic_contact_follow_up/inputs/contact/external_id:label">
-            <value>Muso ID</value>
-          </text>
-          <text id="/symptomatic_contact_follow_up/inputs/contact/name:label">
-            <value>Name</value>
-          </text>
-          <text id="/symptomatic_contact_follow_up/inputs/contact/sex:label">
-            <value>Sex</value>
-          </text>
-          <text id="/symptomatic_contact_follow_up/inputs/contact:label">
-            <value>Contact</value>
-          </text>
-          <text id="/symptomatic_contact_follow_up/inputs/source:label">
-            <value>Source</value>
-          </text>
-          <text id="/symptomatic_contact_follow_up/inputs/source_id:label">
-            <value>Source ID</value>
-          </text>
-          <text id="/symptomatic_contact_follow_up/inputs/user:label">
-            <value>User</value>
-          </text>
-          <text id="/symptomatic_contact_follow_up/inputs:label">
-            <value>Patient</value>
+          <text id="/symptomatic_contact_follow_up/followup_group/followup/no:label">
+            <value>No</value>
           </text>
           <text id="/symptomatic_contact_follow_up/patient_id:jr:requiredMsg">
             <value>This field is required</value>
           </text>
-          <text id="/symptomatic_contact_follow_up/patient_id:label">
-            <value>Patient ID</value>
-          </text>
-        </translation>
-        <translation lang="fr">
-          <text id="/symptomatic_contact_follow_up/followup_group/followup/no:label">
-            <value>Non</value>
-          </text>
-          <text id="/symptomatic_contact_follow_up/followup_group/followup/yes:label">
-            <value>Oui</value>
-          </text>
-          <text id="/symptomatic_contact_follow_up/followup_group/followup:jr:constraintMsg">
-            <value>Vous devez recevoir une mise à jour sur la situation du patient pour accomplir cette tâche</value>
-          </text>
-          <text id="/symptomatic_contact_follow_up/followup_group/followup:label">
-            <value>Have you called the patient and received an update on the situation?</value>
-          </text>
-          <text id="/symptomatic_contact_follow_up/followup_group:label">
-            <value>Follow-up after symptomatic patient</value>
-          </text>
-          <text id="/symptomatic_contact_follow_up/inputs/contact/_id:label">
-            <value>_id</value>
-          </text>
-          <text id="/symptomatic_contact_follow_up/inputs/contact/date_of_birth:label">
-            <value>Date of birth</value>
-          </text>
-          <text id="/symptomatic_contact_follow_up/inputs/contact/external_id:label">
-            <value>Muso ID</value>
-          </text>
-          <text id="/symptomatic_contact_follow_up/inputs/contact/name:label">
-            <value>Name</value>
-          </text>
-          <text id="/symptomatic_contact_follow_up/inputs/contact/sex:label">
-            <value>Sex</value>
+          <text id="/symptomatic_contact_follow_up/inputs/source_id:label">
+            <value>Source ID</value>
           </text>
           <text id="/symptomatic_contact_follow_up/inputs/contact:label">
             <value>Contact</value>
           </text>
-          <text id="/symptomatic_contact_follow_up/inputs/source:label">
-            <value>Source</value>
+          <text id="/symptomatic_contact_follow_up/followup_group/followup:jr:constraintMsg">
+            <value>You must receive an update on the patient's situation to complete this task</value>
           </text>
-          <text id="/symptomatic_contact_follow_up/inputs/source_id:label">
-            <value>Source ID</value>
+          <text id="/symptomatic_contact_follow_up/followup_group:label">
+            <value>Follow-up after symptomatic patient</value>
           </text>
-          <text id="/symptomatic_contact_follow_up/inputs/user:label">
-            <value>User</value>
-          </text>
-          <text id="/symptomatic_contact_follow_up/inputs:label">
-            <value>Patient</value>
-          </text>
-          <text id="/symptomatic_contact_follow_up/patient_id:jr:requiredMsg">
-            <value>-</value>
-          </text>
-          <text id="/symptomatic_contact_follow_up/patient_id:label">
-            <value>Patient ID</value>
+          <text id="/symptomatic_contact_follow_up/inputs/contact/name:label">
+            <value>Name</value>
           </text>
         </translation>
       </itext>
       <instance>
-        <symptomatic_contact_follow_up delimiter="#" id="symptomatic_contact_follow_up" prefix="J1!symptomatic_contact_follow_up!" version="2020-04-10 5-26">
-          <inputs tag="hidden">
+        <symptomatic_contact_follow_up delimiter="#" id="symptomatic_contact_follow_up" prefix="J1!symptomatic_contact_follow_up!" version="2020-08-19 22-20">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
             <source>user</source>
             <source_id/>
             <user/>
@@ -125,11 +80,11 @@
               <external_id/>
             </contact>
           </inputs>
-          <patient_id tag="hidden"/>
-          <followup_group tag="hidden">
+          <patient_id/>
+          <followup_group>
             <followup/>
           </followup_group>
-          <meta tag="hidden">
+          <meta>
             <instanceID/>
           </meta>
         </symptomatic_contact_follow_up>

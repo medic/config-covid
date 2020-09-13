@@ -5,398 +5,242 @@
     <model>
       <itext>
         <translation lang="en">
-          <text id="/quarantine/accomodation/district:label">
-            <value>District</value>
-          </text>
-          <text id="/quarantine/accomodation/hotel_name:label">
-            <value>Specify Hotel name</value>
-          </text>
-          <text id="/quarantine/accomodation/house:label">
-            <value>House no.</value>
-          </text>
-          <text id="/quarantine/accomodation/landline:label">
-            <value>Landline</value>
-          </text>
-          <text id="/quarantine/accomodation/mobile:label">
-            <value>Mobile no.</value>
-          </text>
-          <text id="/quarantine/accomodation/municipality:label">
-            <value>Municipality</value>
-          </text>
-          <text id="/quarantine/accomodation/other_name:label">
-            <value>Specify other place of stay</value>
-          </text>
-          <text id="/quarantine/accomodation/province/1:label">
-            <value>Province 1</value>
+          <text id="static_instance-districts-44">
+            <value>Umguza</value>
           </text>
           <text id="/quarantine/accomodation/province/2:label">
-            <value>Province 2</value>
-          </text>
-          <text id="/quarantine/accomodation/province/3:label">
-            <value>Bagmati</value>
-          </text>
-          <text id="/quarantine/accomodation/province/4:label">
-            <value>Gandaki</value>
-          </text>
-          <text id="/quarantine/accomodation/province/5:label">
-            <value>Province 5</value>
-          </text>
-          <text id="/quarantine/accomodation/province/6:label">
-            <value>Karnali</value>
-          </text>
-          <text id="/quarantine/accomodation/province/7:label">
-            <value>Sudur Pashchim</value>
-          </text>
-          <text id="/quarantine/accomodation/province:label">
-            <value>Province</value>
-          </text>
-          <text id="/quarantine/accomodation/room_share_repeat/mob_no:label">
-            <value>Mobile no.</value>
-          </text>
-          <text id="/quarantine/accomodation/room_share_repeat/name:label">
-            <value>Name</value>
-          </text>
-          <text id="/quarantine/accomodation/room_share_repeat:label">
-            <value>Share room with</value>
-          </text>
-          <text id="/quarantine/accomodation/staying_at/home:label">
-            <value>Personal Home</value>
-          </text>
-          <text id="/quarantine/accomodation/staying_at/hotel:label">
-            <value>Hotel</value>
-          </text>
-          <text id="/quarantine/accomodation/staying_at/other:label">
-            <value>Other places</value>
-          </text>
-          <text id="/quarantine/accomodation/staying_at:label">
-            <value>Please indicate your accomodation.</value>
-          </text>
-          <text id="/quarantine/accomodation/ward:label">
-            <value>Ward no.</value>
-          </text>
-          <text id="/quarantine/accomodation:label">
-            <value>3. Accomodation</value>
-          </text>
-          <text id="/quarantine/filled_at:label">
-            <value>Filled at</value>
-          </text>
-          <text id="/quarantine/flight_info/airline:label">
-            <value>Name of the airlines</value>
-          </text>
-          <text id="/quarantine/flight_info/arrival_date:label">
-            <value>Date of Arrival in Nepal</value>
-          </text>
-          <text id="/quarantine/flight_info/flight:label">
-            <value>Flight No.</value>
-          </text>
-          <text id="/quarantine/flight_info/seat:label">
-            <value>Seat No.</value>
-          </text>
-          <text id="/quarantine/flight_info/visit_repeat:label">
-            <value>Countries/places visited in the last 14 days</value>
-          </text>
-          <text id="/quarantine/flight_info:label">
-            <value>2. Travel History</value>
-          </text>
-          <text id="/quarantine/inputs/contact/_id:label">
-            <value>What is the passenger's name?</value>
-          </text>
-          <text id="/quarantine/inputs/contact/form_date:label">
-            <value>Date in the form</value>
-          </text>
-          <text id="/quarantine/inputs/contact/name:label">
-            <value>Name</value>
-          </text>
-          <text id="/quarantine/inputs/contact/patient_id:label">
-            <value>Patient ID</value>
-          </text>
-          <text id="/quarantine/inputs/contact/traveler/first_name:label">
-            <value>First Name</value>
-          </text>
-          <text id="/quarantine/inputs/contact/traveler/last_name:label">
-            <value>Last Name</value>
-          </text>
-          <text id="/quarantine/inputs/contact/traveler/nationality:label">
-            <value>Nationality</value>
-          </text>
-          <text id="/quarantine/inputs/contact/traveler/nationality_other:label">
-            <value>Other Nationality</value>
-          </text>
-          <text id="/quarantine/inputs/source:label">
-            <value>Source</value>
-          </text>
-          <text id="/quarantine/inputs/source_id:label">
-            <value>Source ID</value>
-          </text>
-          <text id="/quarantine/local_contact/room_share_repeat/mob_no:label">
-            <value>Mobile no.</value>
-          </text>
-          <text id="/quarantine/local_contact/room_share_repeat/name:label">
-            <value>Name</value>
-          </text>
-          <text id="/quarantine/local_contact/room_share_repeat/relation:label">
-            <value>Relationship with the Contact Persons</value>
-          </text>
-          <text id="/quarantine/local_contact:label">
-            <value>Local contact persons</value>
-          </text>
-          <text id="/quarantine/work_details/address:label">
-            <value>Office Address</value>
-          </text>
-          <text id="/quarantine/work_details/district:label">
-            <value>District</value>
-          </text>
-          <text id="/quarantine/work_details/email:label">
-            <value>E-mail</value>
-          </text>
-          <text id="/quarantine/work_details/office:label">
-            <value>Office</value>
-          </text>
-          <text id="/quarantine/work_details/phone:label">
-            <value>Phone</value>
-          </text>
-          <text id="/quarantine/work_details/supervisor_name:label">
-            <value>Supervisor Name</value>
+            <value>Bulawayo</value>
           </text>
           <text id="/quarantine/work_details:label">
             <value>Working details</value>
           </text>
-          <text id="static_instance-districts-0">
-            <value>Bhojpur</value>
+          <text id="/quarantine/inputs/contact/form_date:label">
+            <value>Date in the form</value>
           </text>
-          <text id="static_instance-districts-1">
-            <value>Dhankuta</value>
+          <text id="/quarantine/accomodation/province/5:label">
+            <value>Midlands</value>
+          </text>
+          <text id="/quarantine/work_details/district:label">
+            <value>District</value>
+          </text>
+          <text id="/quarantine/accomodation/house:label">
+            <value>House no.</value>
+          </text>
+          <text id="/quarantine/local_contact/room_share_repeat/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/quarantine/accomodation/ward:label">
+            <value>Ward no.</value>
+          </text>
+          <text id="/quarantine/work_details/email:label">
+            <value>E-mail</value>
+          </text>
+          <text id="/quarantine/accomodation/province/1:label">
+            <value>Harare</value>
+          </text>
+          <text id="static_instance-wards-2">
+            <value>Chimoyo A</value>
+          </text>
+          <text id="static_instance-wards-3">
+            <value>Chimoyo B</value>
+          </text>
+          <text id="static_instance-wards-0">
+            <value>Charehwa A</value>
+          </text>
+          <text id="static_instance-wards-1">
+            <value>Charehwa B</value>
+          </text>
+          <text id="static_instance-wards-6">
+            <value>Chiwore</value>
+          </text>
+          <text id="static_instance-wards-7">
+            <value>Gumbure</value>
+          </text>
+          <text id="static_instance-wards-4">
+            <value>Chimoyo C</value>
+          </text>
+          <text id="/quarantine/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="static_instance-provinces-4">
+            <value>Midlands</value>
+          </text>
+          <text id="static_instance-provinces-5">
+            <value>Masvingo</value>
+          </text>
+          <text id="static_instance-provinces-6">
+            <value>Manicaland</value>
+          </text>
+          <text id="/quarantine/patient_uuid:label">
+            <value></value>
+          </text>
+          <text id="static_instance-provinces-0">
+            <value>Harare</value>
+          </text>
+          <text id="static_instance-provinces-1">
+            <value>Bulawayo</value>
+          </text>
+          <text id="static_instance-provinces-2">
+            <value>Matebeleland South</value>
+          </text>
+          <text id="static_instance-provinces-3">
+            <value>Matebeleland North</value>
           </text>
           <text id="static_instance-districts-10">
-            <value>Sunsari</value>
+            <value>Mbire</value>
           </text>
           <text id="static_instance-districts-11">
-            <value>Taplejung</value>
+            <value>Mount Darwin</value>
           </text>
           <text id="static_instance-districts-12">
-            <value>Terhathum</value>
+            <value>Muzarabani</value>
           </text>
           <text id="static_instance-districts-13">
-            <value>Udayapur</value>
+            <value>Rushinga</value>
           </text>
           <text id="static_instance-districts-14">
-            <value>Saptari</value>
+            <value>Shamva</value>
           </text>
           <text id="static_instance-districts-15">
-            <value>Siraha</value>
+            <value>Chikomba</value>
           </text>
           <text id="static_instance-districts-16">
-            <value>Dhanusa</value>
+            <value>Goromonzi</value>
           </text>
           <text id="static_instance-districts-17">
-            <value>Mahottari</value>
+            <value>Marondera</value>
           </text>
           <text id="static_instance-districts-18">
-            <value>Sarlahi</value>
+            <value>Mudzi</value>
           </text>
           <text id="static_instance-districts-19">
-            <value>Bara</value>
+            <value>Murehwa</value>
           </text>
-          <text id="static_instance-districts-2">
-            <value>Ilam</value>
+          <text id="static_instance-yes_no-1">
+            <value>No</value>
           </text>
-          <text id="static_instance-districts-20">
-            <value>Parsa</value>
+          <text id="static_instance-yes_no-0">
+            <value>Yes</value>
           </text>
-          <text id="static_instance-districts-21">
-            <value>Rautahat</value>
+          <text id="/quarantine/accomodation/staying_at/hotel:label">
+            <value>Hotel</value>
           </text>
-          <text id="static_instance-districts-22">
-            <value>Sindhuli</value>
+          <text id="static_instance-provinces-7">
+            <value>Mashonaland West</value>
           </text>
-          <text id="static_instance-districts-23">
-            <value>Ramechhap</value>
+          <text id="/quarantine/inputs/contact/_id:label">
+            <value>What is the passenger's name?</value>
           </text>
-          <text id="static_instance-districts-24">
-            <value>Dolakha</value>
+          <text id="/quarantine/patient_id:label">
+            <value></value>
           </text>
-          <text id="static_instance-districts-25">
-            <value>Bhaktapur</value>
+          <text id="/quarantine/inputs/contact/traveler:label">
+            <value></value>
           </text>
-          <text id="static_instance-districts-26">
-            <value>Dhading</value>
+          <text id="/quarantine/accomodation/province/10:label">
+            <value>Mashonaland Central</value>
           </text>
-          <text id="static_instance-districts-27">
-            <value>Kathmandu</value>
+          <text id="/quarantine/flight_info/visit_repeat:label">
+            <value>Countries/places visited in the last 14 days</value>
           </text>
-          <text id="static_instance-districts-28">
-            <value>Kavrepalanchok</value>
+          <text id="/quarantine/accomodation/room_share_repeat/name:label">
+            <value>Name</value>
           </text>
-          <text id="static_instance-districts-29">
-            <value>Lalitpur</value>
+          <text id="/quarantine/accomodation/landline:label">
+            <value>Landline</value>
           </text>
-          <text id="static_instance-districts-3">
-            <value>Jhapa</value>
+          <text id="/quarantine/inputs/contact/traveler/first_name:label">
+            <value>First Name</value>
           </text>
-          <text id="static_instance-districts-30">
-            <value>Nuwakot</value>
+          <text id="/quarantine/flight_info/flight:label">
+            <value>Flight No.</value>
           </text>
-          <text id="static_instance-districts-31">
-            <value>Rasuwa</value>
+          <text id="/quarantine/accomodation/room_share_repeat:label">
+            <value>Share room with</value>
           </text>
-          <text id="static_instance-districts-32">
-            <value>Sindhupalchok</value>
+          <text id="/quarantine/accomodation/district:label">
+            <value>District</value>
           </text>
-          <text id="static_instance-districts-33">
-            <value>Chitwan</value>
+          <text id="/quarantine/filled_at:label">
+            <value>Filled at</value>
           </text>
-          <text id="static_instance-districts-34">
-            <value>Makwanpur</value>
+          <text id="/quarantine/accomodation/hotel_name:label">
+            <value>Specify Hotel name</value>
           </text>
-          <text id="static_instance-districts-35">
-            <value>Baglung</value>
+          <text id="static_instance-wards-15">
+            <value>Mbudzi B</value>
           </text>
-          <text id="static_instance-districts-36">
-            <value>Gorkha</value>
+          <text id="static_instance-wards-25">
+            <value>Muzarabani District</value>
           </text>
-          <text id="static_instance-districts-37">
-            <value>Kaski</value>
+          <text id="/quarantine/flight_info/seat:label">
+            <value>Seat No.</value>
           </text>
-          <text id="static_instance-districts-38">
-            <value>Lamjung</value>
+          <text id="static_instance-wards-21">
+            <value>Nyamuganhu</value>
           </text>
-          <text id="static_instance-districts-39">
-            <value>Manang</value>
+          <text id="static_instance-wards-20">
+            <value>Nyamhanza B</value>
           </text>
-          <text id="static_instance-districts-4">
-            <value>Khotang</value>
+          <text id="static_instance-wards-23">
+            <value>Nyamutsahuni</value>
           </text>
-          <text id="static_instance-districts-40">
-            <value>Mustang</value>
+          <text id="static_instance-wards-22">
+            <value>Nyamukapa</value>
           </text>
-          <text id="static_instance-districts-41">
-            <value>Myagdi</value>
-          </text>
-          <text id="static_instance-districts-42">
-            <value>Nawalpur</value>
-          </text>
-          <text id="static_instance-districts-43">
-            <value>Parbat</value>
-          </text>
-          <text id="static_instance-districts-44">
-            <value>Syangja</value>
-          </text>
-          <text id="static_instance-districts-45">
-            <value>Tanahun</value>
-          </text>
-          <text id="static_instance-districts-46">
-            <value>Kapilvastu</value>
+          <text id="/quarantine/work_details/office:label">
+            <value>Office</value>
           </text>
           <text id="static_instance-districts-47">
-            <value>Parasi</value>
+            <value>Gwanda</value>
           </text>
-          <text id="static_instance-districts-48">
-            <value>Rupandehi</value>
+          <text id="static_instance-districts-38">
+            <value>Binga</value>
           </text>
-          <text id="static_instance-districts-49">
-            <value>Arghakhanchi</value>
+          <text id="static_instance-districts-39">
+            <value>Bubi</value>
           </text>
-          <text id="static_instance-districts-5">
-            <value>Morang</value>
+          <text id="static_instance-districts-36">
+            <value>Mwenezi</value>
           </text>
-          <text id="static_instance-districts-50">
-            <value>Gulmi</value>
+          <text id="static_instance-districts-37">
+            <value>Zaka</value>
           </text>
-          <text id="static_instance-districts-51">
-            <value>Palpa</value>
+          <text id="static_instance-districts-34">
+            <value>Gutu</value>
           </text>
-          <text id="static_instance-districts-52">
-            <value>Dang</value>
+          <text id="static_instance-districts-35">
+            <value>Masvingo</value>
           </text>
-          <text id="static_instance-districts-53">
-            <value>Pyuthan</value>
+          <text id="static_instance-districts-32">
+            <value>Chiredzi</value>
           </text>
-          <text id="static_instance-districts-54">
-            <value>Rolpa</value>
+          <text id="static_instance-districts-33">
+            <value>Chivi</value>
           </text>
-          <text id="static_instance-districts-55">
-            <value>Rukum East</value>
+          <text id="static_instance-districts-30">
+            <value>Zvimba</value>
           </text>
-          <text id="static_instance-districts-56">
-            <value>Banke</value>
+          <text id="static_instance-districts-31">
+            <value>Bikita</value>
           </text>
-          <text id="static_instance-districts-57">
-            <value>Bardiya</value>
+          <text id="/quarantine/accomodation/staying_at/home:label">
+            <value>Personal Home</value>
           </text>
-          <text id="static_instance-districts-58">
-            <value>Rukum West</value>
+          <text id="/quarantine/accomodation/mobile:label">
+            <value>Mobile no.</value>
           </text>
-          <text id="static_instance-districts-59">
-            <value>Salyan</value>
-          </text>
-          <text id="static_instance-districts-6">
-            <value>Okhaldhunga</value>
-          </text>
-          <text id="static_instance-districts-60">
-            <value>Dolpa</value>
-          </text>
-          <text id="static_instance-districts-61">
-            <value>Humla</value>
-          </text>
-          <text id="static_instance-districts-62">
-            <value>Jumla</value>
-          </text>
-          <text id="static_instance-districts-63">
-            <value>Kalikot</value>
-          </text>
-          <text id="static_instance-districts-64">
-            <value>Mugu</value>
-          </text>
-          <text id="static_instance-districts-65">
-            <value>Surkhet</value>
-          </text>
-          <text id="static_instance-districts-66">
-            <value>Dailekh</value>
-          </text>
-          <text id="static_instance-districts-67">
-            <value>Jajarkot</value>
-          </text>
-          <text id="static_instance-districts-68">
-            <value>Kailali</value>
-          </text>
-          <text id="static_instance-districts-69">
-            <value>Achham</value>
-          </text>
-          <text id="static_instance-districts-7">
-            <value>Panchthar</value>
-          </text>
-          <text id="static_instance-districts-70">
-            <value>Doti</value>
-          </text>
-          <text id="static_instance-districts-71">
-            <value>Bajhang</value>
-          </text>
-          <text id="static_instance-districts-72">
-            <value>Bajura</value>
-          </text>
-          <text id="static_instance-districts-73">
-            <value>Kanchanpur</value>
-          </text>
-          <text id="static_instance-districts-74">
-            <value>Dadeldhura</value>
-          </text>
-          <text id="static_instance-districts-75">
-            <value>Baitadi</value>
-          </text>
-          <text id="static_instance-districts-76">
-            <value>Darchula</value>
-          </text>
-          <text id="static_instance-districts-8">
-            <value>Sankhuwasabha</value>
+          <text id="/quarantine/inputs/contact/patient_id:label">
+            <value>Patient ID</value>
           </text>
           <text id="static_instance-districts-9">
-            <value>Solukhumbu</value>
+            <value>Mazowe</value>
           </text>
-          <text id="static_instance-male_female-0">
-            <value>Male</value>
+          <text id="/quarantine/accomodation/province/4:label">
+            <value>Matebeleland North</value>
           </text>
-          <text id="static_instance-male_female-1">
-            <value>Female</value>
+          <text id="static_instance-places-2">
+            <value>Other places</value>
           </text>
           <text id="static_instance-places-0">
             <value>Hotel</value>
@@ -404,495 +248,265 @@
           <text id="static_instance-places-1">
             <value>Personal Home</value>
           </text>
-          <text id="static_instance-places-2">
-            <value>Other places</value>
+          <text id="/quarantine/accomodation/staying_at:label">
+            <value>Please indicate your accomodation.</value>
           </text>
-          <text id="static_instance-provinces-0">
-            <value>Province 1</value>
+          <text id="/quarantine/local_contact:label">
+            <value>Local contact persons</value>
           </text>
-          <text id="static_instance-provinces-1">
-            <value>Province 2</value>
+          <text id="/quarantine/inputs/contact/traveler/nationality_other:label">
+            <value>Other Nationality</value>
           </text>
-          <text id="static_instance-provinces-2">
-            <value>Bagmati</value>
+          <text id="static_instance-districts-2">
+            <value>Chipinge District</value>
           </text>
-          <text id="static_instance-provinces-3">
-            <value>Gandaki</value>
+          <text id="static_instance-male_female-1">
+            <value>Female</value>
           </text>
-          <text id="static_instance-provinces-4">
-            <value>Province 5</value>
+          <text id="static_instance-male_female-0">
+            <value>Male</value>
           </text>
-          <text id="static_instance-provinces-5">
-            <value>Karnali</value>
+          <text id="/quarantine/inputs/contact/traveler/last_name:label">
+            <value>Last Name</value>
           </text>
-          <text id="static_instance-provinces-6">
-            <value>Sudur Pashchim</value>
+          <text id="static_instance-districts-3">
+            <value>Makoni District</value>
           </text>
-          <text id="static_instance-yes_no-0">
-            <value>Yes</value>
+          <text id="static_instance-districts-29">
+            <value>Sanyati</value>
           </text>
-          <text id="static_instance-yes_no-1">
-            <value>No</value>
+          <text id="static_instance-districts-28">
+            <value>Mhondoro-Ngezi</value>
           </text>
-        </translation>
-        <translation lang="fr">
-          <text id="/quarantine/accomodation/district:label">
-            <value>District</value>
+          <text id="static_instance-districts-21">
+            <value>Seke</value>
           </text>
-          <text id="/quarantine/accomodation/hotel_name:label">
-            <value>Précisez le nom Hôtel</value>
+          <text id="static_instance-districts-20">
+            <value>Mutoko</value>
           </text>
-          <text id="/quarantine/accomodation/house:label">
-            <value>Numéro du domicile</value>
+          <text id="static_instance-districts-23">
+            <value>Wedza (Hwedza)</value>
           </text>
-          <text id="/quarantine/accomodation/landline:label">
-            <value>téléphone fixe</value>
+          <text id="/quarantine/local_contact/room_share_repeat:label">
+            <value></value>
           </text>
-          <text id="/quarantine/accomodation/mobile:label">
-            <value>Numéro mobile</value>
+          <text id="static_instance-districts-25">
+            <value>Hurungwe</value>
           </text>
-          <text id="/quarantine/accomodation/municipality:label">
-            <value>Municipalité</value>
+          <text id="static_instance-districts-24">
+            <value>Chegutu</value>
           </text>
-          <text id="/quarantine/accomodation/other_name:label">
-            <value>Spécifiez un autre lieu de séjour</value>
+          <text id="static_instance-districts-27">
+            <value>Makonde</value>
           </text>
-          <text id="/quarantine/accomodation/province/1:label">
-            <value>Province 1</value>
+          <text id="static_instance-districts-26">
+            <value>Kariba</value>
           </text>
-          <text id="/quarantine/accomodation/province/2:label">
-            <value>Province 2</value>
+          <text id="/quarantine/inputs:label">
+            <value></value>
           </text>
-          <text id="/quarantine/accomodation/province/3:label">
-            <value>Bagmati</value>
+          <text id="/quarantine/work_details/phone:label">
+            <value>Phone</value>
           </text>
-          <text id="/quarantine/accomodation/province/4:label">
-            <value>Gandaki</value>
+          <text id="/quarantine/flight_info/visit_repeat/visited_place:label">
+            <value></value>
           </text>
-          <text id="/quarantine/accomodation/province/5:label">
-            <value>Province 5</value>
+          <text id="/quarantine/patient_name:label">
+            <value></value>
           </text>
-          <text id="/quarantine/accomodation/province/6:label">
-            <value>Karnali</value>
+          <text id="static_instance-districts-22">
+            <value>UMP (Uzumba-Maramba-Pfungwe)</value>
+          </text>
+          <text id="static_instance-districts-58">
+            <value>Shurugwi</value>
+          </text>
+          <text id="static_instance-districts-59">
+            <value>Zvishavane</value>
+          </text>
+          <text id="static_instance-districts-54">
+            <value>Gokwe South</value>
+          </text>
+          <text id="static_instance-districts-55">
+            <value>Gweru</value>
+          </text>
+          <text id="static_instance-districts-56">
+            <value>Kwekwe</value>
+          </text>
+          <text id="static_instance-districts-57">
+            <value>Mberengwa</value>
+          </text>
+          <text id="static_instance-districts-50">
+            <value>Matobo</value>
+          </text>
+          <text id="static_instance-districts-51">
+            <value>Umzingwane</value>
+          </text>
+          <text id="static_instance-districts-52">
+            <value>Chirumhanzu</value>
+          </text>
+          <text id="static_instance-districts-53">
+            <value>Gokwe North</value>
           </text>
           <text id="/quarantine/accomodation/province/7:label">
-            <value>Sudur Pashchim</value>
+            <value>Manicaland</value>
+          </text>
+          <text id="/quarantine/accomodation/staying_at/other:label">
+            <value>Other places</value>
+          </text>
+          <text id="static_instance-wards-24">
+            <value>Nyamuzizi</value>
+          </text>
+          <text id="/quarantine/work_details/supervisor_name:label">
+            <value>Supervisor Name</value>
+          </text>
+          <text id="static_instance-wards-5">
+            <value>Chindenga</value>
+          </text>
+          <text id="/quarantine/work_details/address:label">
+            <value>Office Address</value>
+          </text>
+          <text id="/quarantine/accomodation:label">
+            <value>3. Accomodation</value>
+          </text>
+          <text id="/quarantine/inputs/contact/traveler/nationality:label">
+            <value>Nationality</value>
+          </text>
+          <text id="/quarantine/accomodation/province/3:label">
+            <value>Matebeleland South</value>
+          </text>
+          <text id="static_instance-provinces-8">
+            <value>Mashonaland East</value>
+          </text>
+          <text id="static_instance-provinces-9">
+            <value>Mashonaland Central</value>
+          </text>
+          <text id="static_instance-districts-49">
+            <value>Mangwe</value>
+          </text>
+          <text id="/quarantine/local_contact/room_share_repeat/relation:label">
+            <value>Relationship with the Contact Persons</value>
+          </text>
+          <text id="static_instance-districts-8">
+            <value>Guruve</value>
           </text>
           <text id="/quarantine/accomodation/province:label">
             <value>Province</value>
           </text>
-          <text id="/quarantine/accomodation/room_share_repeat/mob_no:label">
-            <value>Numéro mobile</value>
-          </text>
-          <text id="/quarantine/accomodation/room_share_repeat/name:label">
-            <value>Nom</value>
-          </text>
-          <text id="/quarantine/accomodation/room_share_repeat:label">
-            <value>Chambre partagée avec</value>
-          </text>
-          <text id="/quarantine/accomodation/staying_at/home:label">
-            <value>Domicile</value>
-          </text>
-          <text id="/quarantine/accomodation/staying_at/hotel:label">
-            <value>Hôtel</value>
-          </text>
-          <text id="/quarantine/accomodation/staying_at/other:label">
-            <value>Autres lieux</value>
-          </text>
-          <text id="/quarantine/accomodation/staying_at:label">
-            <value>S'il vous plaît indiquer votre logement.</value>
-          </text>
-          <text id="/quarantine/accomodation/ward:label">
-            <value>Ward pas.</value>
-          </text>
-          <text id="/quarantine/accomodation:label">
-            <value>3. Hébergement</value>
-          </text>
-          <text id="/quarantine/filled_at:label">
-            <value>Rempli à</value>
-          </text>
-          <text id="/quarantine/flight_info/airline:label">
-            <value>Nom des compagnies aériennes</value>
-          </text>
-          <text id="/quarantine/flight_info/arrival_date:label">
-            <value>Date d'arrivée au Népal</value>
-          </text>
-          <text id="/quarantine/flight_info/flight:label">
-            <value>Numéro de vol.</value>
-          </text>
-          <text id="/quarantine/flight_info/seat:label">
-            <value>N ° de siège</value>
-          </text>
-          <text id="/quarantine/flight_info/visit_repeat/visited_place:label">
-            <value>PAS DE LABEL</value>
-          </text>
-          <text id="/quarantine/flight_info/visit_repeat:label">
-            <value>Pays / lieux visités au cours des 14 derniers jours</value>
-          </text>
-          <text id="/quarantine/flight_info:label">
-            <value>2. Historique du voyage</value>
-          </text>
-          <text id="/quarantine/inputs/contact/_id:label">
-            <value>-</value>
-          </text>
-          <text id="/quarantine/inputs/contact/form_date:label">
-            <value>-</value>
-          </text>
-          <text id="/quarantine/inputs/contact/name:label">
-            <value>-</value>
-          </text>
-          <text id="/quarantine/inputs/contact/patient_id:label">
-            <value>-</value>
-          </text>
-          <text id="/quarantine/inputs/contact/traveler/first_name:label">
-            <value>-</value>
-          </text>
-          <text id="/quarantine/inputs/contact/traveler/last_name:label">
-            <value>-</value>
-          </text>
-          <text id="/quarantine/inputs/contact/traveler/nationality:label">
-            <value>-</value>
-          </text>
-          <text id="/quarantine/inputs/contact/traveler/nationality_other:label">
-            <value>-</value>
-          </text>
-          <text id="/quarantine/inputs/contact/traveler:label">
-            <value>-</value>
-          </text>
-          <text id="/quarantine/inputs/contact:label">
-            <value>-</value>
-          </text>
-          <text id="/quarantine/inputs/source:label">
-            <value>-</value>
-          </text>
-          <text id="/quarantine/inputs/source_id:label">
-            <value>-</value>
-          </text>
-          <text id="/quarantine/inputs:label">
-            <value>-</value>
-          </text>
-          <text id="/quarantine/local_contact/room_share_repeat/mob_no:label">
-            <value>Numéro mobile</value>
-          </text>
-          <text id="/quarantine/local_contact/room_share_repeat/name:label">
-            <value>Nom</value>
-          </text>
-          <text id="/quarantine/local_contact/room_share_repeat/relation:label">
-            <value>Relation avec les contacts locaux</value>
-          </text>
-          <text id="/quarantine/local_contact/room_share_repeat:label">
-            <value>PAS DE LABEL</value>
-          </text>
-          <text id="/quarantine/local_contact:label">
-            <value>contacts locaux</value>
-          </text>
-          <text id="/quarantine/patient_id:label">
-            <value>-</value>
-          </text>
-          <text id="/quarantine/patient_name:label">
-            <value>-</value>
-          </text>
-          <text id="/quarantine/patient_uuid:label">
-            <value>-</value>
-          </text>
-          <text id="/quarantine/work_details/address:label">
-            <value>Adresse de bureau</value>
-          </text>
-          <text id="/quarantine/work_details/district:label">
-            <value>District</value>
-          </text>
-          <text id="/quarantine/work_details/email:label">
-            <value>Email</value>
-          </text>
-          <text id="/quarantine/work_details/office:label">
-            <value>Bureau</value>
-          </text>
-          <text id="/quarantine/work_details/phone:label">
-            <value>Téléphone</value>
-          </text>
-          <text id="/quarantine/work_details/supervisor_name:label">
-            <value>Nom du superviseur</value>
-          </text>
-          <text id="/quarantine/work_details:label">
-            <value>Détails sur l'emploi</value>
-          </text>
-          <text id="static_instance-districts-0">
-            <value>Bhojpur</value>
-          </text>
-          <text id="static_instance-districts-1">
-            <value>Dhankuta</value>
-          </text>
-          <text id="static_instance-districts-10">
-            <value>Sunsari</value>
-          </text>
-          <text id="static_instance-districts-11">
-            <value>Taplejung</value>
-          </text>
-          <text id="static_instance-districts-12">
-            <value>Terhathum</value>
-          </text>
-          <text id="static_instance-districts-13">
-            <value>Udayapur</value>
-          </text>
-          <text id="static_instance-districts-14">
-            <value>Saptari</value>
-          </text>
-          <text id="static_instance-districts-15">
-            <value>Siraha</value>
-          </text>
-          <text id="static_instance-districts-16">
-            <value>Dhanusa</value>
-          </text>
-          <text id="static_instance-districts-17">
-            <value>Mahottari</value>
-          </text>
-          <text id="static_instance-districts-18">
-            <value>Sarlahi</value>
-          </text>
-          <text id="static_instance-districts-19">
-            <value>Bara</value>
-          </text>
-          <text id="static_instance-districts-2">
-            <value>Ilam</value>
-          </text>
-          <text id="static_instance-districts-20">
-            <value>Parsa</value>
-          </text>
-          <text id="static_instance-districts-21">
-            <value>Rautahat</value>
-          </text>
-          <text id="static_instance-districts-22">
-            <value>Sindhuli</value>
-          </text>
-          <text id="static_instance-districts-23">
-            <value>Ramechhap</value>
-          </text>
-          <text id="static_instance-districts-24">
-            <value>Dolakha</value>
-          </text>
-          <text id="static_instance-districts-25">
-            <value>Bhaktapur</value>
-          </text>
-          <text id="static_instance-districts-26">
-            <value>Dhading</value>
-          </text>
-          <text id="static_instance-districts-27">
-            <value>Kathmandu</value>
-          </text>
-          <text id="static_instance-districts-28">
-            <value>Kavrepalanchok</value>
-          </text>
-          <text id="static_instance-districts-29">
-            <value>Lalitpur</value>
-          </text>
-          <text id="static_instance-districts-3">
-            <value>Jhapa</value>
-          </text>
-          <text id="static_instance-districts-30">
-            <value>Nuwakot</value>
-          </text>
-          <text id="static_instance-districts-31">
-            <value>Rasuwa</value>
-          </text>
-          <text id="static_instance-districts-32">
-            <value>Sindhupalchok</value>
-          </text>
-          <text id="static_instance-districts-33">
-            <value>Chitwan</value>
-          </text>
-          <text id="static_instance-districts-34">
-            <value>Makwanpur</value>
-          </text>
-          <text id="static_instance-districts-35">
-            <value>Baglung</value>
-          </text>
-          <text id="static_instance-districts-36">
-            <value>Gorkha</value>
-          </text>
-          <text id="static_instance-districts-37">
-            <value>Kaski</value>
-          </text>
-          <text id="static_instance-districts-38">
-            <value>Lamjung</value>
-          </text>
-          <text id="static_instance-districts-39">
-            <value>Manang</value>
-          </text>
-          <text id="static_instance-districts-4">
-            <value>Khotang</value>
-          </text>
-          <text id="static_instance-districts-40">
-            <value>Mustang</value>
-          </text>
-          <text id="static_instance-districts-41">
-            <value>Myagdi</value>
-          </text>
-          <text id="static_instance-districts-42">
-            <value>Nawalpur</value>
+          <text id="static_instance-districts-45">
+            <value>Beitbridge</value>
+          </text>
+          <text id="/quarantine/accomodation/other_name:label">
+            <value>Specify other place of stay</value>
           </text>
           <text id="static_instance-districts-43">
-            <value>Parbat</value>
+            <value>Tsholotsho</value>
           </text>
-          <text id="static_instance-districts-44">
-            <value>Syangja</value>
+          <text id="static_instance-districts-42">
+            <value>Nkayi</value>
           </text>
-          <text id="static_instance-districts-45">
-            <value>Tanahun</value>
+          <text id="static_instance-districts-41">
+            <value>Lupane</value>
           </text>
-          <text id="static_instance-districts-46">
-            <value>Kapilvastu</value>
+          <text id="static_instance-districts-40">
+            <value>Hwange</value>
           </text>
-          <text id="static_instance-districts-47">
-            <value>Parasi</value>
+          <text id="/quarantine/accomodation/province/8:label">
+            <value>Mashonaland West</value>
           </text>
-          <text id="static_instance-districts-48">
-            <value>Rupandehi</value>
+          <text id="static_instance-wards-8">
+            <value>Kabasa A</value>
           </text>
-          <text id="static_instance-districts-49">
-            <value>Arghakhanchi</value>
+          <text id="/quarantine/flight_info/arrival_date:label">
+            <value>Date of Arrival in Nepal</value>
           </text>
-          <text id="static_instance-districts-5">
-            <value>Morang</value>
+          <text id="/quarantine/accomodation/municipality:label">
+            <value>Municipality</value>
           </text>
-          <text id="static_instance-districts-50">
-            <value>Gulmi</value>
+          <text id="/quarantine/inputs/source_id:label">
+            <value>Source ID</value>
           </text>
-          <text id="static_instance-districts-51">
-            <value>Palpa</value>
+          <text id="/quarantine/accomodation/room_share_repeat/mob_no:label">
+            <value>Mobile no.</value>
           </text>
-          <text id="static_instance-districts-52">
-            <value>Dang</value>
+          <text id="static_instance-wards-14">
+            <value>Mbudzi A</value>
           </text>
-          <text id="static_instance-districts-53">
-            <value>Pyuthan</value>
+          <text id="/quarantine/inputs/contact:label">
+            <value></value>
           </text>
-          <text id="static_instance-districts-54">
-            <value>Rolpa</value>
+          <text id="static_instance-wards-16">
+            <value>Mutoko Centre</value>
           </text>
-          <text id="static_instance-districts-55">
-            <value>Rukum East</value>
+          <text id="static_instance-wards-17">
+            <value>Nyahondo</value>
           </text>
-          <text id="static_instance-districts-56">
-            <value>Banke</value>
+          <text id="static_instance-wards-10">
+            <value>Kawere</value>
           </text>
-          <text id="static_instance-districts-57">
-            <value>Bardiya</value>
+          <text id="static_instance-wards-11">
+            <value>Marira</value>
           </text>
-          <text id="static_instance-districts-58">
-            <value>Rukum West</value>
+          <text id="static_instance-wards-12">
+            <value>Matedza</value>
           </text>
-          <text id="static_instance-districts-59">
-            <value>Salyan</value>
+          <text id="static_instance-wards-13">
+            <value>Mawanga</value>
           </text>
           <text id="static_instance-districts-6">
-            <value>Okhaldhunga</value>
-          </text>
-          <text id="static_instance-districts-60">
-            <value>Dolpa</value>
-          </text>
-          <text id="static_instance-districts-61">
-            <value>Humla</value>
-          </text>
-          <text id="static_instance-districts-62">
-            <value>Jumla</value>
-          </text>
-          <text id="static_instance-districts-63">
-            <value>Kalikot</value>
-          </text>
-          <text id="static_instance-districts-64">
-            <value>Mugu</value>
-          </text>
-          <text id="static_instance-districts-65">
-            <value>Surkhet</value>
-          </text>
-          <text id="static_instance-districts-66">
-            <value>Dailekh</value>
-          </text>
-          <text id="static_instance-districts-67">
-            <value>Jajarkot</value>
-          </text>
-          <text id="static_instance-districts-68">
-            <value>Kailali</value>
-          </text>
-          <text id="static_instance-districts-69">
-            <value>Achham</value>
+            <value>Nyanga District</value>
           </text>
           <text id="static_instance-districts-7">
-            <value>Panchthar</value>
+            <value>Bindura</value>
           </text>
-          <text id="static_instance-districts-70">
-            <value>Doti</value>
+          <text id="static_instance-districts-4">
+            <value>Mutare District</value>
           </text>
-          <text id="static_instance-districts-71">
-            <value>Bajhang</value>
+          <text id="static_instance-districts-5">
+            <value>Mutasa District</value>
           </text>
-          <text id="static_instance-districts-72">
-            <value>Bajura</value>
+          <text id="static_instance-wards-18">
+            <value>Nyahunure</value>
           </text>
-          <text id="static_instance-districts-73">
-            <value>Kanchanpur</value>
+          <text id="static_instance-wards-19">
+            <value>Nyamhanza A</value>
           </text>
-          <text id="static_instance-districts-74">
-            <value>Dadeldhura</value>
+          <text id="static_instance-districts-0">
+            <value>Buhera District</value>
           </text>
-          <text id="static_instance-districts-75">
-            <value>Baitadi</value>
+          <text id="static_instance-districts-1">
+            <value>Chimanimani District</value>
           </text>
-          <text id="static_instance-districts-76">
-            <value>Darchula</value>
+          <text id="/quarantine/flight_info:label">
+            <value>2. Travel History</value>
           </text>
-          <text id="static_instance-districts-8">
-            <value>Sankhuwasabha</value>
+          <text id="/quarantine/accomodation/province/6:label">
+            <value>Masvingo</value>
           </text>
-          <text id="static_instance-districts-9">
-            <value>Solukhumbu</value>
+          <text id="/quarantine/accomodation/province/9:label">
+            <value>Mashonaland East</value>
           </text>
-          <text id="static_instance-male_female-0">
-            <value>Masculin</value>
+          <text id="static_instance-districts-48">
+            <value>Insiza</value>
           </text>
-          <text id="static_instance-male_female-1">
-            <value>Féminin</value>
+          <text id="/quarantine/local_contact/room_share_repeat/mob_no:label">
+            <value>Mobile no.</value>
           </text>
-          <text id="static_instance-places-0">
-            <value>Hôtel</value>
+          <text id="static_instance-wards-9">
+            <value>Kabasa B</value>
           </text>
-          <text id="static_instance-places-1">
-            <value>Domicile</value>
+          <text id="static_instance-districts-46">
+            <value>Bulilima</value>
           </text>
-          <text id="static_instance-places-2">
-            <value>Autres lieux</value>
+          <text id="/quarantine/inputs/source:label">
+            <value>Source</value>
           </text>
-          <text id="static_instance-provinces-0">
-            <value>Province 1</value>
-          </text>
-          <text id="static_instance-provinces-1">
-            <value>Province 2</value>
-          </text>
-          <text id="static_instance-provinces-2">
-            <value>Bagmati</value>
-          </text>
-          <text id="static_instance-provinces-3">
-            <value>Gandaki</value>
-          </text>
-          <text id="static_instance-provinces-4">
-            <value>Province 5</value>
-          </text>
-          <text id="static_instance-provinces-5">
-            <value>Karnali</value>
-          </text>
-          <text id="static_instance-provinces-6">
-            <value>Sudur Pashchim</value>
-          </text>
-          <text id="static_instance-yes_no-0">
-            <value>Oui</value>
-          </text>
-          <text id="static_instance-yes_no-1">
-            <value>Non</value>
+          <text id="/quarantine/flight_info/airline:label">
+            <value>Name of the airlines</value>
           </text>
         </translation>
       </itext>
       <instance>
-        <quarantine delimiter="#" id="quarantine" prefix="J1!quarantine!" version="2020-03-28 12:18:06">
+        <quarantine delimiter="#" id="quarantine" prefix="J1!quarantine!" version="2020-08-19 22:15:17">
           <inputs>
             <meta>
               <location>
@@ -961,401 +575,12 @@
             <address/>
             <district/>
           </work_details>
-          <meta tag="hidden">
+          <meta>
             <instanceID/>
           </meta>
         </quarantine>
       </instance>
       <instance id="contact-summary"/>
-      <instance id="districts">
-        <root>
-          <item>
-            <itextId>static_instance-districts-0</itextId>
-            <province>1</province>
-            <name>bhojpur</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-1</itextId>
-            <province>1</province>
-            <name>dhankuta</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-2</itextId>
-            <province>1</province>
-            <name>ilam</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-3</itextId>
-            <province>1</province>
-            <name>jhapa</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-4</itextId>
-            <province>1</province>
-            <name>khotang</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-5</itextId>
-            <province>1</province>
-            <name>morang</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-6</itextId>
-            <province>1</province>
-            <name>okhaldhunga</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-7</itextId>
-            <province>1</province>
-            <name>panchthar</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-8</itextId>
-            <province>1</province>
-            <name>sankhuwasabha</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-9</itextId>
-            <province>1</province>
-            <name>solukhumbu</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-10</itextId>
-            <province>1</province>
-            <name>sunsari</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-11</itextId>
-            <province>1</province>
-            <name>taplejung</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-12</itextId>
-            <province>1</province>
-            <name>terhathum</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-13</itextId>
-            <province>1</province>
-            <name>udayapur</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-14</itextId>
-            <province>2</province>
-            <name>saptari</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-15</itextId>
-            <province>2</province>
-            <name>siraha</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-16</itextId>
-            <province>2</province>
-            <name>dhanusa</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-17</itextId>
-            <province>2</province>
-            <name>mahottari</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-18</itextId>
-            <province>2</province>
-            <name>sarlahi</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-19</itextId>
-            <province>2</province>
-            <name>bara</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-20</itextId>
-            <province>2</province>
-            <name>parsa</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-21</itextId>
-            <province>2</province>
-            <name>rautahat</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-22</itextId>
-            <province>3</province>
-            <name>sindhuli</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-23</itextId>
-            <province>3</province>
-            <name>ramechhap</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-24</itextId>
-            <province>3</province>
-            <name>dolakha</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-25</itextId>
-            <province>3</province>
-            <name>bhaktapur</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-26</itextId>
-            <province>3</province>
-            <name>dhading</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-27</itextId>
-            <province>3</province>
-            <name>kathmandu</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-28</itextId>
-            <province>3</province>
-            <name>kavrepalanchok</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-29</itextId>
-            <province>3</province>
-            <name>lalitpur</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-30</itextId>
-            <province>3</province>
-            <name>nuwakot</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-31</itextId>
-            <province>3</province>
-            <name>rasuwa</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-32</itextId>
-            <province>3</province>
-            <name>sindhupalchok</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-33</itextId>
-            <province>3</province>
-            <name>chitwan</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-34</itextId>
-            <province>3</province>
-            <name>makwanpur</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-35</itextId>
-            <province>4</province>
-            <name>baglung</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-36</itextId>
-            <province>4</province>
-            <name>gorkha</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-37</itextId>
-            <province>4</province>
-            <name>kaski</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-38</itextId>
-            <province>4</province>
-            <name>lamjung</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-39</itextId>
-            <province>4</province>
-            <name>manang</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-40</itextId>
-            <province>4</province>
-            <name>mustang</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-41</itextId>
-            <province>4</province>
-            <name>myagdi</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-42</itextId>
-            <province>4</province>
-            <name>nawalpur</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-43</itextId>
-            <province>4</province>
-            <name>parbat</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-44</itextId>
-            <province>4</province>
-            <name>syangja</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-45</itextId>
-            <province>4</province>
-            <name>tanahun</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-46</itextId>
-            <province>5</province>
-            <name>kapilvastu</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-47</itextId>
-            <province>5</province>
-            <name>parasi</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-48</itextId>
-            <province>5</province>
-            <name>rupandehi</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-49</itextId>
-            <province>5</province>
-            <name>arghakhanchi</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-50</itextId>
-            <province>5</province>
-            <name>gulmi</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-51</itextId>
-            <province>5</province>
-            <name>palpa</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-52</itextId>
-            <province>5</province>
-            <name>dang</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-53</itextId>
-            <province>5</province>
-            <name>pyuthan</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-54</itextId>
-            <province>5</province>
-            <name>rolpa</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-55</itextId>
-            <province>5</province>
-            <name>rukum_e</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-56</itextId>
-            <province>5</province>
-            <name>banke</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-57</itextId>
-            <province>5</province>
-            <name>bardiya</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-58</itextId>
-            <province>6</province>
-            <name>rukum_w</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-59</itextId>
-            <province>6</province>
-            <name>salyan</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-60</itextId>
-            <province>6</province>
-            <name>dolpa</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-61</itextId>
-            <province>6</province>
-            <name>humla</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-62</itextId>
-            <province>6</province>
-            <name>jumla</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-63</itextId>
-            <province>6</province>
-            <name>kalikot</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-64</itextId>
-            <province>6</province>
-            <name>mugu</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-65</itextId>
-            <province>6</province>
-            <name>surkhet</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-66</itextId>
-            <province>6</province>
-            <name>dailekh</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-67</itextId>
-            <province>6</province>
-            <name>jajarkot</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-68</itextId>
-            <province>7</province>
-            <name>kailali</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-69</itextId>
-            <province>7</province>
-            <name>achham</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-70</itextId>
-            <province>7</province>
-            <name>doti</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-71</itextId>
-            <province>7</province>
-            <name>bajhang</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-72</itextId>
-            <province>7</province>
-            <name>bajura</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-73</itextId>
-            <province>7</province>
-            <name>kanchanpur</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-74</itextId>
-            <province>7</province>
-            <name>dadeldhura</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-75</itextId>
-            <province>7</province>
-            <name>baitadi</name>
-          </item>
-          <item>
-            <itextId>static_instance-districts-76</itextId>
-            <province>7</province>
-            <name>darchula</name>
-          </item>
-        </root>
-      </instance>
       <instance id="provinces">
         <root>
           <item>
@@ -1386,6 +611,18 @@
             <itextId>static_instance-provinces-6</itextId>
             <name>7</name>
           </item>
+          <item>
+            <itextId>static_instance-provinces-7</itextId>
+            <name>8</name>
+          </item>
+          <item>
+            <itextId>static_instance-provinces-8</itextId>
+            <name>9</name>
+          </item>
+          <item>
+            <itextId>static_instance-provinces-9</itextId>
+            <name>10</name>
+          </item>
         </root>
       </instance>
       <instance id="male_female">
@@ -1413,6 +650,470 @@
           <item>
             <itextId>static_instance-places-2</itextId>
             <name>other</name>
+          </item>
+        </root>
+      </instance>
+      <instance id="wards">
+        <root>
+          <item>
+            <itextId>static_instance-wards-0</itextId>
+            <province>9</province>
+            <name>charehwa_a</name>
+            <district>mutoko</district>
+          </item>
+          <item>
+            <itextId>static_instance-wards-1</itextId>
+            <province>9</province>
+            <name>charehwa_b</name>
+            <district>mutoko</district>
+          </item>
+          <item>
+            <itextId>static_instance-wards-2</itextId>
+            <province>9</province>
+            <name>chimoyo_a</name>
+            <district>mutoko</district>
+          </item>
+          <item>
+            <itextId>static_instance-wards-3</itextId>
+            <province>9</province>
+            <name>chimoyo_b</name>
+            <district>mutoko</district>
+          </item>
+          <item>
+            <itextId>static_instance-wards-4</itextId>
+            <province>9</province>
+            <name>chimoyo_c</name>
+            <district>mutoko</district>
+          </item>
+          <item>
+            <itextId>static_instance-wards-5</itextId>
+            <province>9</province>
+            <name>chindenga</name>
+            <district>mutoko</district>
+          </item>
+          <item>
+            <itextId>static_instance-wards-6</itextId>
+            <province>9</province>
+            <name>chiwore</name>
+            <district>mutoko</district>
+          </item>
+          <item>
+            <itextId>static_instance-wards-7</itextId>
+            <province>9</province>
+            <name>gumbure</name>
+            <district>mutoko</district>
+          </item>
+          <item>
+            <itextId>static_instance-wards-8</itextId>
+            <province>9</province>
+            <name>kabasa_a</name>
+            <district>mutoko</district>
+          </item>
+          <item>
+            <itextId>static_instance-wards-9</itextId>
+            <province>9</province>
+            <name>kabasa_b</name>
+            <district>mutoko</district>
+          </item>
+          <item>
+            <itextId>static_instance-wards-10</itextId>
+            <province>9</province>
+            <name>kawere</name>
+            <district>mutoko</district>
+          </item>
+          <item>
+            <itextId>static_instance-wards-11</itextId>
+            <province>9</province>
+            <name>marira</name>
+            <district>mutoko</district>
+          </item>
+          <item>
+            <itextId>static_instance-wards-12</itextId>
+            <province>9</province>
+            <name>matedza</name>
+            <district>mutoko</district>
+          </item>
+          <item>
+            <itextId>static_instance-wards-13</itextId>
+            <province>9</province>
+            <name>mawanga</name>
+            <district>mutoko</district>
+          </item>
+          <item>
+            <itextId>static_instance-wards-14</itextId>
+            <province>9</province>
+            <name>mbudzi_a</name>
+            <district>mutoko</district>
+          </item>
+          <item>
+            <itextId>static_instance-wards-15</itextId>
+            <province>9</province>
+            <name>mbudzi_b</name>
+            <district>mutoko</district>
+          </item>
+          <item>
+            <itextId>static_instance-wards-16</itextId>
+            <province>9</province>
+            <name>mutoko_centre</name>
+            <district>mutoko</district>
+          </item>
+          <item>
+            <itextId>static_instance-wards-17</itextId>
+            <province>9</province>
+            <name>nyahondo</name>
+            <district>mutoko</district>
+          </item>
+          <item>
+            <itextId>static_instance-wards-18</itextId>
+            <province>9</province>
+            <name>nyahunure</name>
+            <district>mutoko</district>
+          </item>
+          <item>
+            <itextId>static_instance-wards-19</itextId>
+            <province>9</province>
+            <name>nyamhanza_a</name>
+            <district>mutoko</district>
+          </item>
+          <item>
+            <itextId>static_instance-wards-20</itextId>
+            <province>9</province>
+            <name>nyamhanza_b</name>
+            <district>mutoko</district>
+          </item>
+          <item>
+            <itextId>static_instance-wards-21</itextId>
+            <province>9</province>
+            <name>nyamuganhu</name>
+            <district>mutoko</district>
+          </item>
+          <item>
+            <itextId>static_instance-wards-22</itextId>
+            <province>9</province>
+            <name>nyamukapa</name>
+            <district>mutoko</district>
+          </item>
+          <item>
+            <itextId>static_instance-wards-23</itextId>
+            <province>9</province>
+            <name>nyamutsahuni</name>
+            <district>mutoko</district>
+          </item>
+          <item>
+            <itextId>static_instance-wards-24</itextId>
+            <province>9</province>
+            <name>nyamuzizi</name>
+            <district>mutoko</district>
+          </item>
+          <item>
+            <itextId>static_instance-wards-25</itextId>
+            <province>9</province>
+            <name>muzarabani_district</name>
+            <district>mutoko</district>
+          </item>
+        </root>
+      </instance>
+      <instance id="districts">
+        <root>
+          <item>
+            <itextId>static_instance-districts-0</itextId>
+            <province>7</province>
+            <name>buhera</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-1</itextId>
+            <province>7</province>
+            <name>chimanimani</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-2</itextId>
+            <province>7</province>
+            <name>chipinge</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-3</itextId>
+            <province>7</province>
+            <name>makoni</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-4</itextId>
+            <province>7</province>
+            <name>mutare</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-5</itextId>
+            <province>7</province>
+            <name>mutasa</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-6</itextId>
+            <province>7</province>
+            <name>nyanga</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-7</itextId>
+            <province>10</province>
+            <name>bindura</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-8</itextId>
+            <province>10</province>
+            <name>guruve</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-9</itextId>
+            <province>10</province>
+            <name>mazowe</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-10</itextId>
+            <province>10</province>
+            <name>mbire</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-11</itextId>
+            <province>10</province>
+            <name>mount_darwin</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-12</itextId>
+            <province>10</province>
+            <name>muzarabani</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-13</itextId>
+            <province>10</province>
+            <name>rushinga</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-14</itextId>
+            <province>10</province>
+            <name>shamva</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-15</itextId>
+            <province>9</province>
+            <name>chikomba</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-16</itextId>
+            <province>9</province>
+            <name>goromonzi</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-17</itextId>
+            <province>9</province>
+            <name>marondera</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-18</itextId>
+            <province>9</province>
+            <name>mudzi</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-19</itextId>
+            <province>9</province>
+            <name>murehwa</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-20</itextId>
+            <province>9</province>
+            <name>mutoko</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-21</itextId>
+            <province>9</province>
+            <name>seke</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-22</itextId>
+            <province>9</province>
+            <name>ump</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-23</itextId>
+            <province>9</province>
+            <name>wedza</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-24</itextId>
+            <province>8</province>
+            <name>chegutu</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-25</itextId>
+            <province>8</province>
+            <name>hurungwe</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-26</itextId>
+            <province>8</province>
+            <name>kariba</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-27</itextId>
+            <province>8</province>
+            <name>makonde</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-28</itextId>
+            <province>8</province>
+            <name>mhondoro</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-29</itextId>
+            <province>8</province>
+            <name>sanyati</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-30</itextId>
+            <province>8</province>
+            <name>zvimba</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-31</itextId>
+            <province>6</province>
+            <name>bikita</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-32</itextId>
+            <province>6</province>
+            <name>chiredzi</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-33</itextId>
+            <province>6</province>
+            <name>chivi</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-34</itextId>
+            <province>6</province>
+            <name>gutu</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-35</itextId>
+            <province>6</province>
+            <name>masvingo</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-36</itextId>
+            <province>6</province>
+            <name>mwenezi</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-37</itextId>
+            <province>6</province>
+            <name>zaka</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-38</itextId>
+            <province>4</province>
+            <name>binga</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-39</itextId>
+            <province>4</province>
+            <name>bubi</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-40</itextId>
+            <province>4</province>
+            <name>hwange</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-41</itextId>
+            <province>4</province>
+            <name>lupane</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-42</itextId>
+            <province>4</province>
+            <name>nkayi</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-43</itextId>
+            <province>4</province>
+            <name>tsholotsho</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-44</itextId>
+            <province>4</province>
+            <name>umguza</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-45</itextId>
+            <province>3</province>
+            <name>beitbridge</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-46</itextId>
+            <province>3</province>
+            <name>bulilima</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-47</itextId>
+            <province>3</province>
+            <name>gwanda</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-48</itextId>
+            <province>3</province>
+            <name>insiza</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-49</itextId>
+            <province>3</province>
+            <name>mangwe</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-50</itextId>
+            <province>3</province>
+            <name>matobo</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-51</itextId>
+            <province>3</province>
+            <name>umzingwane</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-52</itextId>
+            <province>5</province>
+            <name>chirumhanzu</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-53</itextId>
+            <province>5</province>
+            <name>gokwe_north</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-54</itextId>
+            <province>5</province>
+            <name>gokwe_south</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-55</itextId>
+            <province>5</province>
+            <name>gweru</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-56</itextId>
+            <province>5</province>
+            <name>kwekwe</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-57</itextId>
+            <province>5</province>
+            <name>mberengwa</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-58</itextId>
+            <province>5</province>
+            <name>shurugwi</name>
+          </item>
+          <item>
+            <itextId>static_instance-districts-59</itextId>
+            <province>5</province>
+            <name>zvishavane</name>
           </item>
         </root>
       </instance>
@@ -1474,11 +1175,15 @@
   </h:head>
   <h:body>
     <group appearance="field-list" ref="/quarantine/inputs">
+      <label ref="jr:itext('/quarantine/inputs:label')"/>
       <group ref="/quarantine/inputs/contact">
+        <label ref="jr:itext('/quarantine/inputs/contact:label')"/>
         <input appearance="db-object" ref="/quarantine/inputs/contact/_id">
           <label ref="jr:itext('/quarantine/inputs/contact/_id:label')"/>
         </input>
-        <group ref="/quarantine/inputs/contact/traveler"/>
+        <group ref="/quarantine/inputs/contact/traveler">
+          <label ref="jr:itext('/quarantine/inputs/contact/traveler:label')"/>
+        </group>
       </group>
     </group>
     <input ref="/quarantine/filled_at">
@@ -1559,6 +1264,18 @@
         <item>
           <label ref="jr:itext('/quarantine/accomodation/province/7:label')"/>
           <value>7</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/quarantine/accomodation/province/8:label')"/>
+          <value>8</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/quarantine/accomodation/province/9:label')"/>
+          <value>9</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/quarantine/accomodation/province/10:label')"/>
+          <value>10</value>
         </item>
       </select1>
       <select1 appearance="minimal" ref="/quarantine/accomodation/district">

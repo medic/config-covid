@@ -4,464 +4,469 @@
     <h:title>COVID-19 Assessment</h:title>
     <model>
       <itext>
-        <translation lang="en">
-          <text id="/covid_rdt/cleanup_group/cleanup/clean:label">
-            <value>Clean work surfaces, and plastic materials (pipettors, pens, and timer) with alcohol at the end of the work.</value>
-          </text>
-          <text id="/covid_rdt/cleanup_group/cleanup/dispose:label">
-            <value>Dispose the cassettes, pipettes as biohazard materials.</value>
-          </text>
-          <text id="/covid_rdt/cleanup_group/cleanup:jr:constraintMsg">
-            <value>Please confirm you have completed each cleanup step before proceeding</value>
-          </text>
-          <text id="/covid_rdt/cleanup_group/cleanup:jr:requiredMsg">
-            <value>This field is required</value>
-          </text>
-          <text id="/covid_rdt/cleanup_group/cleanup:label">
-            <value>Now that you've completed the COVID-19 test, please cleanup your work area</value>
-          </text>
-          <text id="/covid_rdt/cleanup_group:label">
-            <value>Test Cleanup</value>
-          </text>
-          <text id="/covid_rdt/disinfect_group/generated_note_name_33:label">
-            <value form="image">jr://images/collect_blood.png</value>
-            <value>Collect blood into capillary tube or sampler (~20-50uL)</value>
-          </text>
-          <text id="/covid_rdt/disinfect_group/generated_note_name_34:label">
-            <value form="image">jr://images/blood_to_well.png</value>
-            <value>Put the blood into the sample well of the cassette</value>
-          </text>
-          <text id="/covid_rdt/disinfect_group/generated_note_name_35:label">
-            <value form="image">jr://images/buffer_to_well.png</value>
-            <value>After the blood has completely entered the sample well, add 2 to 3 drops (70 to 100μl) of buffer solution. Make sure to test on a level surface at room temperature.</value>
-          </text>
-          <text id="/covid_rdt/disinfect_group:label">
-            <value>Executing the test</value>
-          </text>
-          <text id="/covid_rdt/finger_group/finger/disinfect:label">
-            <value>Disinfect the patient's finger, use their middle or ring finger</value>
-          </text>
-          <text id="/covid_rdt/finger_group/finger/flow:label">
-            <value>Apply light pressure, wipe away the first 2-3 drops of blood with alcohol pad, and make sure there is free blood flow</value>
-          </text>
-          <text id="/covid_rdt/finger_group/finger/prick:label">
-            <value>Prick the patient's finger to begin the flow of blood</value>
-          </text>
-          <text id="/covid_rdt/finger_group/finger:jr:constraintMsg">
-            <value>Please confirm each of the test steps before proceeding</value>
-          </text>
-          <text id="/covid_rdt/finger_group/finger:jr:requiredMsg">
-            <value>This field is required</value>
-          </text>
-          <text id="/covid_rdt/finger_group/finger:label">
-            <value>Prick the patient's finger</value>
-          </text>
-          <text id="/covid_rdt/finger_group/generated_note_name_30:label">
-            <value form="image">jr://images/finger.png</value>
-          </text>
-          <text id="/covid_rdt/finger_group:label">
-            <value>Executing the test</value>
-          </text>
-          <text id="/covid_rdt/has_symptoms:jr:requiredMsg">
-            <value>This field is required</value>
-          </text>
-          <text id="/covid_rdt/has_symptoms:label">
-            <value>Has Symptoms</value>
-          </text>
-          <text id="/covid_rdt/inputs/contact/_id:label">
-            <value>_id</value>
-          </text>
-          <text id="/covid_rdt/inputs/contact/date_of_birth:label">
-            <value>Date of birth</value>
-          </text>
-          <text id="/covid_rdt/inputs/contact/external_id:label">
-            <value>Muso ID</value>
-          </text>
-          <text id="/covid_rdt/inputs/contact/name:label">
-            <value>Name</value>
-          </text>
-          <text id="/covid_rdt/inputs/contact/sex:label">
-            <value>Sex</value>
-          </text>
-          <text id="/covid_rdt/inputs/contact:label">
-            <value>Contact</value>
-          </text>
-          <text id="/covid_rdt/inputs/source:label">
-            <value>Source</value>
-          </text>
-          <text id="/covid_rdt/inputs/source_id:label">
-            <value>Source ID</value>
-          </text>
-          <text id="/covid_rdt/inputs/user:label">
-            <value>User</value>
-          </text>
-          <text id="/covid_rdt/inputs:label">
-            <value>Patient</value>
-          </text>
-          <text id="/covid_rdt/interpret_group/generated_note_name_42:label">
-            <value form="image">jr://images/interpretation_guide.png</value>
-          </text>
-          <text id="/covid_rdt/interpret_group/interpretation/c:label">
-            <value>C</value>
-          </text>
-          <text id="/covid_rdt/interpret_group/interpretation/g:label">
-            <value>G</value>
-          </text>
-          <text id="/covid_rdt/interpret_group/interpretation/m:label">
-            <value>M</value>
-          </text>
-          <text id="/covid_rdt/interpret_group/interpretation:label">
-            <value>Which lines appear on your test?</value>
-          </text>
-          <text id="/covid_rdt/interpret_group:label">
-            <value>Interpret COVID-19 Test Result</value>
-          </text>
-          <text id="/covid_rdt/patient_id:jr:requiredMsg">
-            <value>This field is required</value>
-          </text>
-          <text id="/covid_rdt/patient_id:label">
-            <value>Patient ID</value>
-          </text>
-          <text id="/covid_rdt/precautions_group/precautions/disinfect:label">
-            <value>Disinfect your work surface before starting work</value>
-          </text>
-          <text id="/covid_rdt/precautions_group/precautions/ppe:label">
-            <value>Put on protective equipment. This should include a gown, gloves, and surgical mask.</value>
-          </text>
-          <text id="/covid_rdt/precautions_group/precautions/splashes:label">
-            <value>If possible, place an alcohol soaked towel on your work surface to catch splashes</value>
-          </text>
-          <text id="/covid_rdt/precautions_group/precautions:jr:constraintMsg">
-            <value>Please confirm each of the safety precautions before proceeding</value>
-          </text>
-          <text id="/covid_rdt/precautions_group/precautions:jr:requiredMsg">
-            <value>This field is required</value>
-          </text>
-          <text id="/covid_rdt/precautions_group/precautions:label">
-            <value>Please confirm that you have taken the following precautions:</value>
-          </text>
-          <text id="/covid_rdt/precautions_group:label">
-            <value>Precautions</value>
-          </text>
-          <text id="/covid_rdt/preparations_group/preparations/expiry:label">
-            <value>Select a test kit and check the expiration date. Tests should not be used past their expiration date.</value>
-          </text>
-          <text id="/covid_rdt/preparations_group/preparations/open:label">
-            <value>Open the test pouch and prepare to do the test. After opening, tests must be used within one hour.</value>
-          </text>
-          <text id="/covid_rdt/preparations_group/preparations:jr:constraintMsg">
-            <value>Please confirm each of the preparation steps before proceeding</value>
-          </text>
-          <text id="/covid_rdt/preparations_group/preparations:jr:requiredMsg">
-            <value>This field is required</value>
-          </text>
-          <text id="/covid_rdt/preparations_group/preparations:label">
-            <value>Check and prepare the test kit</value>
-          </text>
-          <text id="/covid_rdt/preparations_group:label">
-            <value>Preparation</value>
-          </text>
-          <text id="/covid_rdt/summary-group/invalid_result:label">
-            <value>&lt;b&gt;No conclusion can be determined about your patient&lt;/b&gt;. The RDT test that you used for this assessment was invalid. Please submit this form, but restart a new COVID-19 Assessment with a new RDT test.</value>
-          </text>
-          <text id="/covid_rdt/summary-group/negative_result:label">
-            <value>&lt;b&gt;The test result for your patient is negative.&lt;/b&gt; But this doesn't mean they do not have COVID-19. Since hey were showing symptoms, you should advise the following:
-&lt;ul&gt;&lt;li&gt;Advise your patient to stay home and avoid seeing other people if possible.&lt;/li&gt;&lt;li&gt;Your patient should call or text if symptoms worsen or new symptoms arise.&lt;/li&gt;&lt;li&gt;Follow up with your patient in 24 hours.&lt;/li&gt;&lt;/ul&gt;</value>
-          </text>
-          <text id="/covid_rdt/summary-group/next_followup:label">
-            <value>The next followup is due on : <output value=" /covid_rdt/summary-group/next_visit "/></value>
-          </text>
-          <text id="/covid_rdt/summary-group/no_symptoms:label">
-            <value>This assessment is for patients exhibiting symptoms of COVID-19. Your patient did not have symptoms of COVID-19 and should not be tested.
-&lt;ul&gt;&lt;li&gt;Please advise your patient to stay home and limit contact with others.&lt;/li&gt;&lt;li&gt;Your patient should call or text if symptoms develop&lt;/li&gt;&lt;li&gt;Follow-up with your patient in one week&lt;/li&gt;&lt;/ul&gt;</value>
-          </text>
-          <text id="/covid_rdt/summary-group/positive_result:label">
-            <value>This assessment concluded &lt;b&gt;your patient is positive for COVID-19&lt;/b&gt;, please take these &lt;b&gt;immediate actions&lt;/b&gt;:
-&lt;ul&gt;&lt;li&gt;Accompany the patient to the health facility for clinical test and care.&lt;/li&gt;&lt;li&gt;Keep a safe physical distance from the patient and wear a mask and gloves to protect yourself.&lt;/li&gt;&lt;li&gt;Help the patient keep a safe physical distance (greater than 2 meters) from others while traveling.&lt;/li&gt;&lt;/ul&gt;</value>
-          </text>
-          <text id="/covid_rdt/summary-group/style:label">
-            <value>&amp;lt;style&amp;gt;[name='/covid_rdt/summary-group'] ul { margin: 10px 0 0 25px; list-style: disc; }&amp;lt;/style&amp;gt;</value>
-          </text>
-          <text id="/covid_rdt/summary-group:label">
-            <value>Summary of Assessment Result</value>
-          </text>
-          <text id="/covid_rdt/symptoms_group/generated_note_name_20:label">
-            <value>&amp;lt;style&amp;gt;.pages .loader { display: none; }&amp;lt;/style&amp;gt;</value>
-          </text>
-          <text id="/covid_rdt/symptoms_group/symptoms/breathing:label">
-            <value>Difficulty breathing</value>
-          </text>
-          <text id="/covid_rdt/symptoms_group/symptoms/cough:label">
-            <value>New cough</value>
-          </text>
-          <text id="/covid_rdt/symptoms_group/symptoms/fever:label">
-            <value>Fever</value>
-          </text>
-          <text id="/covid_rdt/symptoms_group/symptoms:label">
-            <value>Is your patient experiencing any of the following symptoms?</value>
-          </text>
-          <text id="/covid_rdt/symptoms_group:label">
-            <value>Patient Assessment for symptomatic contacts</value>
-          </text>
-          <text id="/covid_rdt/test_result:label">
-            <value>Test Result</value>
-          </text>
-          <text id="/covid_rdt/wait_group/evaluation_timer:jr:requiredMsg">
-            <value>This field is required</value>
-          </text>
-          <text id="/covid_rdt/wait_group/evaluation_timer:label">
-            <value>Begin 15 minute timer</value>
-          </text>
-          <text id="/covid_rdt/wait_group/waiting/discard:label">
-            <value>Discard capillary sampler into the trash</value>
-          </text>
-          <text id="/covid_rdt/wait_group/waiting/talk:label">
-            <value>Have a conversation with your patient and their family about regular hand washing, symptom monitoring, and social distancing.</value>
-          </text>
-          <text id="/covid_rdt/wait_group/waiting/wash_hands:label">
-            <value>Wash your hands with 70% alcohol (keep gloves on)</value>
-          </text>
-          <text id="/covid_rdt/wait_group/waiting:jr:constraintMsg">
-            <value>Please confirm these steps before proceeding</value>
-          </text>
-          <text id="/covid_rdt/wait_group/waiting:label">
-            <value>While you're waiting:</value>
-          </text>
-          <text id="/covid_rdt/wait_group:label">
-            <value>Set timer for 15 minutes</value>
-          </text>
-        </translation>
         <translation lang="fr">
-          <text id="/covid_rdt/cleanup_group/cleanup/clean:label">
-            <value>Nettoyez les surfaces de travail et les matières plastiques (tuyauteries, stylos et minuterie) avec de l'alcool à la fin du travail.</value>
-          </text>
-          <text id="/covid_rdt/cleanup_group/cleanup/dispose:label">
-            <value>Jetez les cassettes et les pipettes qui sont du matériel biologique à risque</value>
-          </text>
-          <text id="/covid_rdt/cleanup_group/cleanup:jr:constraintMsg">
-            <value>Veuillez confirmer que vous avez terminé chaque étape du nettoyage avant de poursuivre</value>
-          </text>
-          <text id="/covid_rdt/cleanup_group/cleanup:jr:requiredMsg">
-            <value>Ce champ est obligatoire</value>
-          </text>
-          <text id="/covid_rdt/cleanup_group/cleanup:label">
-            <value>Maintenant que vous avez terminé le test COVID-19, veuillez nettoyer votre zone de travail</value>
-          </text>
-          <text id="/covid_rdt/cleanup_group:label">
-            <value>Nettoyage des tests</value>
-          </text>
-          <text id="/covid_rdt/disinfect_group/generated_note_name_33:label">
-            <value form="image">jr://images/collect_blood_fr.png</value>
-            <value>Prélevez du sang dans un tube capillaire ou un échantillonneur (~20-50uL)</value>
-          </text>
-          <text id="/covid_rdt/disinfect_group/generated_note_name_34:label">
-            <value form="image">jr://images/blood_to_well_fr.png</value>
-            <value>Mettre le sang dans le puits d'échantillonnage de la cassette</value>
-          </text>
-          <text id="/covid_rdt/disinfect_group/generated_note_name_35:label">
-            <value form="image">jr://images/buffer_to_well_fr.png</value>
-            <value>Une fois le sang complètement pénétré dans le puits d'échantillonnage, ajoutez 2 à 3 gouttes (70 à 100μl) de solution tampon. Veillez à effectuer le test sur une surface plane à température ambiante.</value>
-          </text>
-          <text id="/covid_rdt/disinfect_group:label">
-            <value>Exécution du test</value>
-          </text>
-          <text id="/covid_rdt/finger_group/finger/disinfect:label">
-            <value>Désinfectez le doigt du patient, utilisez son majeur ou son annulaire</value>
-          </text>
-          <text id="/covid_rdt/finger_group/finger/flow:label">
-            <value>Appliquez une légère pression, essuyez les 2-3 premières gouttes de sang avec un tampon d'alcool, et assurez-vous qu'il y a libre circulation sanguine</value>
-          </text>
-          <text id="/covid_rdt/finger_group/finger/prick:label">
-            <value>Piquez le doigt du patient pour commencer l'écoulement sanguin</value>
-          </text>
-          <text id="/covid_rdt/finger_group/finger:jr:constraintMsg">
-            <value>Veuillez confirmer chacune des étapes de test avant de poursuivre</value>
-          </text>
-          <text id="/covid_rdt/finger_group/finger:jr:requiredMsg">
-            <value>Ce champ est obligatoire</value>
-          </text>
-          <text id="/covid_rdt/finger_group/finger:label">
-            <value>Piquez le doigt du patient</value>
-          </text>
-          <text id="/covid_rdt/finger_group/generated_note_name_30:label">
-            <value form="image">jr://images/finger_fr.png</value>
-          </text>
-          <text id="/covid_rdt/finger_group:label">
-            <value>Réalisation du test</value>
-          </text>
-          <text id="/covid_rdt/has_symptoms:jr:requiredMsg">
-            <value>Ce champ est obligatoire</value>
-          </text>
-          <text id="/covid_rdt/has_symptoms:label">
-            <value>Has Symptoms</value>
-          </text>
-          <text id="/covid_rdt/inputs/contact/_id:label">
-            <value>_id</value>
-          </text>
-          <text id="/covid_rdt/inputs/contact/date_of_birth:label">
-            <value>Date of birth</value>
-          </text>
-          <text id="/covid_rdt/inputs/contact/external_id:label">
-            <value>Muso ID</value>
-          </text>
-          <text id="/covid_rdt/inputs/contact/name:label">
-            <value>Name</value>
-          </text>
-          <text id="/covid_rdt/inputs/contact/sex:label">
-            <value>Sex</value>
-          </text>
-          <text id="/covid_rdt/inputs/contact:label">
-            <value>Contact</value>
-          </text>
-          <text id="/covid_rdt/inputs/source:label">
-            <value>Source</value>
-          </text>
-          <text id="/covid_rdt/inputs/source_id:label">
-            <value>Source ID</value>
-          </text>
-          <text id="/covid_rdt/inputs/user:label">
-            <value>User</value>
-          </text>
-          <text id="/covid_rdt/inputs:label">
-            <value>Patient</value>
-          </text>
-          <text id="/covid_rdt/interpret_group/generated_note_name_42:label">
-            <value form="image">jr://images/interpretation_guide_fr.png</value>
-          </text>
-          <text id="/covid_rdt/interpret_group/interpretation/c:label">
-            <value>C</value>
-          </text>
-          <text id="/covid_rdt/interpret_group/interpretation/g:label">
-            <value>G</value>
-          </text>
-          <text id="/covid_rdt/interpret_group/interpretation/m:label">
-            <value>M</value>
-          </text>
-          <text id="/covid_rdt/interpret_group/interpretation:label">
-            <value>Quelles lignes apparaissent sur votre test ?</value>
-          </text>
-          <text id="/covid_rdt/interpret_group:label">
-            <value>Interpréter le resultat du test COVID-19</value>
-          </text>
-          <text id="/covid_rdt/patient_id:jr:requiredMsg">
-            <value>Ce champ est obligatoire</value>
-          </text>
-          <text id="/covid_rdt/patient_id:label">
-            <value>Patient ID</value>
-          </text>
-          <text id="/covid_rdt/precautions_group/precautions/disinfect:label">
-            <value>Désinfectez votre zone de travail avant de commencer</value>
+          <text id="/covid_rdt/wait_group:label">
+            <value>-</value>
           </text>
           <text id="/covid_rdt/precautions_group/precautions/ppe:label">
-            <value>Portez un équipement de protection. Cela devrait comprendre une blouse, des gants et un masque chirurgical.</value>
+            <value>-</value>
           </text>
-          <text id="/covid_rdt/precautions_group/precautions/splashes:label">
-            <value>Si possible, placez une serviette imbibée d'alcool sur votre zone de travail pour éliminer les éclaboussures</value>
+          <text id="/covid_rdt/interpret_group/interpretation/c:label">
+            <value>-</value>
           </text>
-          <text id="/covid_rdt/precautions_group/precautions:jr:constraintMsg">
-            <value>Veuillez confirmer chacune des précautions de sécurité avant de poursuivre</value>
-          </text>
-          <text id="/covid_rdt/precautions_group/precautions:jr:requiredMsg">
-            <value>Ce champ est obligatoire</value>
-          </text>
-          <text id="/covid_rdt/precautions_group/precautions:label">
-            <value>Veuillez confirmer que vous avez pris les précautions suivantes :</value>
-          </text>
-          <text id="/covid_rdt/precautions_group:label">
-            <value>Précautions</value>
-          </text>
-          <text id="/covid_rdt/preparations_group/preparations/expiry:label">
-            <value>Sélectionnez un kit de test et vérifiez la date d'expiration. Les tests ne doivent pas être utilisés après leur date d'expiration.</value>
-          </text>
-          <text id="/covid_rdt/preparations_group/preparations/open:label">
-            <value>Ouvrez la pochette d'essai et préparez-vous à faire le test. Après l'ouverture, les tests doivent être utilisés dans l'heure qui suit.</value>
-          </text>
-          <text id="/covid_rdt/preparations_group/preparations:jr:constraintMsg">
-            <value>Veuillez confirmer chacune des étapes de préparation avant de poursuivre</value>
-          </text>
-          <text id="/covid_rdt/preparations_group/preparations:jr:requiredMsg">
-            <value>Ce champ est obligatoire</value>
-          </text>
-          <text id="/covid_rdt/preparations_group/preparations:label">
-            <value>Vérifiez et préparez le kit de test</value>
-          </text>
-          <text id="/covid_rdt/preparations_group:label">
-            <value>Préparation</value>
-          </text>
-          <text id="/covid_rdt/summary-group/invalid_result:label">
-            <value>&lt;b&gt; Aucune conclusion ne peut être tirée au sujet de votre patient&lt;/b&gt;. Le test TDR que vous avez utilisé pour cette évaluation n'était pas valide. Veuillez soumettre ce formulaire, mais recommencez une nouvelle évaluation COVID-19 avec un nouveau test TDR.</value>
-          </text>
-          <text id="/covid_rdt/summary-group/negative_result:label">
-            <value>&lt;b&gt; Le résultat du test de votre patient est négatif. &lt;/b&gt; Mais cela ne signifie pas qu'il n'a pas la COVID-19. Comme il présentait des symptômes, vous devez lui donner les conseils suivants :
-&lt;ul&gt;&lt;li&gt;Conseillez à votre patient de rester à la maison et d'éviter de voir d'autres personnes si possible.&lt;/li&gt;&lt;li&gt;Votre patient doit appeler ou envoyer un SMS si les symptômes s'aggravent ou si de nouveaux symptômes apparaissent.&lt;/li&gt;&lt;li&gt;Faire un suivi de votre patient dans les 24 heures.&lt;/li&gt;&lt;/ul&gt;</value>
-          </text>
-          <text id="/covid_rdt/summary-group/next_followup:label">
-            <value>Le prochain suivi par l'ASC est le: <output value=" /covid_rdt/summary-group/next_visit "/></value>
-          </text>
-          <text id="/covid_rdt/summary-group/no_symptoms:label">
-            <value>Cette évaluation concerne les patients présentant des symptômes de COVID-19. Votre patient ne présentait pas de symptômes de COVID-19 et ne doit pas être testé.
-&lt;ul&gt;&lt;li&gt;Veuillez conseiller à votre patient de rester chez lui et de limiter ses contacts avec les autres.&lt;/li&gt;&lt;li&gt;Votre patient doit appeler ou envoyer un SMS si des symptômes apparaissent&lt;/li&gt;&lt;li&gt;Faire un suivi de votre patient dans une semaine&lt;/li&gt;&lt;/ul&gt;</value>
-          </text>
-          <text id="/covid_rdt/summary-group/positive_result:label">
-            <value>Cette évaluation a conclu que &lt;b&gt;votre patient est positif au COVID-19&lt;/b&gt;, veuillez prendre ces &lt;b&gt;actions immédiates&lt;/b&gt; :
-&lt;ul&gt;&lt;li&gt;Accompagnez le patient à l'établissement de santé pour les tests et les soins cliniques.&lt;/li&gt;&lt;li&gt; Gardez une distance physique de sécurité avec le patient et portez un masque et des gants pour vous protéger.&lt;/li&gt;&lt;li&gt;Aidez le patient à garder une distance physique de sécurité (supérieure à 2 mètres) avec les autres lors de ses déplacements.&lt;/li&gt;&lt;/ul&gt;</value>
-          </text>
-          <text id="/covid_rdt/summary-group/style:label">
-            <value>&amp;lt;style&amp;gt;[name='/covid_rdt/summary-group'] ul { margin: 10px 0 0 25px; list-style: disc; }&amp;lt;/style&amp;gt;</value>
-          </text>
-          <text id="/covid_rdt/summary-group:label">
-            <value>Résumé des résultats de l'évaluation</value>
-          </text>
-          <text id="/covid_rdt/symptoms_group/generated_note_name_20:label">
-            <value>&amp;lt;style&amp;gt;.pages .loader { display: none; }&amp;lt;/style&amp;gt;</value>
+          <text id="/covid_rdt/inputs/contact/date_of_birth:label">
+            <value>-</value>
           </text>
           <text id="/covid_rdt/symptoms_group/symptoms/breathing:label">
-            <value>Difficultés à respirer</value>
-          </text>
-          <text id="/covid_rdt/symptoms_group/symptoms/cough:label">
-            <value>Toux</value>
-          </text>
-          <text id="/covid_rdt/symptoms_group/symptoms/fever:label">
-            <value>Fiévre</value>
-          </text>
-          <text id="/covid_rdt/symptoms_group/symptoms:label">
-            <value>Votre patient présente-t-il l'un des symptômes suivants ?</value>
-          </text>
-          <text id="/covid_rdt/symptoms_group:label">
-            <value>Évaluation des patients pour les contacts symptomatiques</value>
-          </text>
-          <text id="/covid_rdt/test_result:label">
-            <value>Test Result</value>
-          </text>
-          <text id="/covid_rdt/wait_group/evaluation_timer:jr:requiredMsg">
-            <value>Ce champ est obligatoire</value>
-          </text>
-          <text id="/covid_rdt/wait_group/evaluation_timer:label">
-            <value>Démarrer une minuterie de 15 minutes</value>
-          </text>
-          <text id="/covid_rdt/wait_group/waiting/discard:label">
-            <value>Jetez l'échantillonneur capillaire dans la poubelle</value>
-          </text>
-          <text id="/covid_rdt/wait_group/waiting/talk:label">
-            <value>Discutez avec votre patient et sa famille au sujet du lavage régulier des mains, du suivi des symptômes et de la distanciation sociale.</value>
+            <value>-</value>
           </text>
           <text id="/covid_rdt/wait_group/waiting/wash_hands:label">
-            <value>Lavez les mains avec de l'alcool à 70% (gardez vos gants)</value>
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/summary-group/positive_result:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/symptoms_group/symptoms:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/wait_group/waiting/talk:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/precautions_group/precautions:jr:requiredMsg">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/preparations_group/preparations/open:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/inputs/source_id:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/preparations_group/preparations/expiry:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/cleanup_group/cleanup:jr:requiredMsg">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/inputs/user:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/finger_group/finger:jr:requiredMsg">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/has_symptoms:label">
+            <value>-</value>
           </text>
           <text id="/covid_rdt/wait_group/waiting:jr:constraintMsg">
             <value>Veuillez confirmer ces étapes avant de poursuivre</value>
           </text>
           <text id="/covid_rdt/wait_group/waiting:label">
-            <value>En attendant:</value>
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/finger_group/finger/flow:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/wait_group/waiting/discard:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/interpret_group/interpretation/g:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/disinfect_group:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/test_result:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/interpret_group:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/cleanup_group/cleanup/clean:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/patient_id:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/wait_group/evaluation_timer:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/preparations_group/preparations:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/inputs/contact/_id:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/inputs/source:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/preparations_group/preparations:jr:constraintMsg">
+            <value>Veuillez confirmer chacune des étapes de préparation avant de poursuivre</value>
+          </text>
+          <text id="/covid_rdt/has_symptoms:jr:requiredMsg">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/finger_group/generated_note_name_30:label">
+            <value form="image">jr://images/finger_fr.png</value>
+          </text>
+          <text id="/covid_rdt/precautions_group/precautions/disinfect:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/cleanup_group/cleanup/dispose:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/interpret_group/interpretation/m:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/finger_group/finger/prick:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/inputs:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/precautions_group/precautions/splashes:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/precautions_group/precautions:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/disinfect_group/generated_note_name_33:label">
+            <value form="image">jr://images/collect_blood_fr.png</value>
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/summary-group/next_followup:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/cleanup_group/cleanup:jr:constraintMsg">
+            <value>Veuillez confirmer que vous avez terminé chaque étape du nettoyage avant de poursuivre</value>
+          </text>
+          <text id="/covid_rdt/disinfect_group/generated_note_name_34:label">
+            <value form="image">jr://images/blood_to_well_fr.png</value>
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/summary-group/style:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/finger_group/finger:jr:constraintMsg">
+            <value>Veuillez confirmer chacune des étapes de test avant de poursuivre</value>
+          </text>
+          <text id="/covid_rdt/symptoms_group/symptoms/fever:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/precautions_group/precautions:jr:constraintMsg">
+            <value>Veuillez confirmer chacune des précautions de sécurité avant de poursuivre</value>
+          </text>
+          <text id="/covid_rdt/summary-group/invalid_result:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/symptoms_group/generated_note_name_20:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/disinfect_group/generated_note_name_35:label">
+            <value form="image">jr://images/buffer_to_well_fr.png</value>
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/interpret_group/interpretation:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/inputs/contact/name:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/patient_id:jr:requiredMsg">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/inputs/contact/sex:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/inputs/contact/external_id:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/summary-group:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/preparations_group:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/interpret_group/generated_note_name_42:label">
+            <value form="image">jr://images/interpretation_guide_fr.png</value>
+          </text>
+          <text id="/covid_rdt/preparations_group/preparations:jr:requiredMsg">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/cleanup_group:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/finger_group/finger/disinfect:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/cleanup_group/cleanup:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/symptoms_group/symptoms/cough:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/precautions_group:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/inputs/contact:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/summary-group/negative_result:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/wait_group/evaluation_timer:jr:requiredMsg">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/symptoms_group:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/summary-group/no_symptoms:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/finger_group:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_rdt/finger_group/finger:label">
+            <value>-</value>
+          </text>
+        </translation>
+        <translation lang="en">
+          <text id="/covid_rdt/finger_group/generated_note_name_30:label">
+            <value form="image">jr://images/finger.png</value>
+          </text>
+          <text id="/covid_rdt/disinfect_group:label">
+            <value>Executing the test</value>
+          </text>
+          <text id="/covid_rdt/summary-group/next_followup:label">
+            <value>The next followup is due on : <output value=" /covid_rdt/summary-group/next_visit "/></value>
+          </text>
+          <text id="/covid_rdt/cleanup_group:label">
+            <value>Test Cleanup</value>
+          </text>
+          <text id="/covid_rdt/interpret_group/generated_note_name_42:label">
+            <value form="image">jr://images/interpretation_guide.png</value>
+          </text>
+          <text id="/covid_rdt/symptoms_group/symptoms/breathing:label">
+            <value>Difficulty breathing</value>
+          </text>
+          <text id="/covid_rdt/cleanup_group/cleanup:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/covid_rdt/symptoms_group/symptoms/cough:label">
+            <value>New cough</value>
+          </text>
+          <text id="/covid_rdt/summary-group/positive_result:label">
+            <value>This assessment concluded &lt;b&gt;your patient is positive for COVID-19&lt;/b&gt;, please take these &lt;b&gt;immediate actions&lt;/b&gt;:
+&lt;ul&gt;&lt;li&gt;Accompany the patient to the health facility for clinical test and care.&lt;/li&gt;&lt;li&gt;Keep a safe physical distance from the patient and wear a mask and gloves to protect yourself.&lt;/li&gt;&lt;li&gt;Help the patient keep a safe physical distance (greater than 2 meters) from others while traveling.&lt;/li&gt;&lt;/ul&gt;</value>
+          </text>
+          <text id="/covid_rdt/interpret_group/interpretation/c:label">
+            <value>C</value>
+          </text>
+          <text id="/covid_rdt/wait_group/waiting/talk:label">
+            <value>Have a conversation with your patient and their family about regular hand washing, symptom monitoring, and social distancing.</value>
+          </text>
+          <text id="/covid_rdt/precautions_group/precautions:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/covid_rdt/preparations_group/preparations/open:label">
+            <value>Open the test pouch and prepare to do the test. After opening, tests must be used within one hour.</value>
+          </text>
+          <text id="/covid_rdt/wait_group/waiting/wash_hands:label">
+            <value>Wash your hands with 70% alcohol (keep gloves on)</value>
+          </text>
+          <text id="/covid_rdt/cleanup_group/cleanup/dispose:label">
+            <value>Dispose the cassettes, pipettes as biohazard materials.</value>
+          </text>
+          <text id="/covid_rdt/wait_group/evaluation_timer:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/covid_rdt/preparations_group/preparations/expiry:label">
+            <value>Select a test kit and check the expiration date. Tests should not be used past their expiration date.</value>
+          </text>
+          <text id="/covid_rdt/has_symptoms:label">
+            <value>Has Symptoms</value>
+          </text>
+          <text id="/covid_rdt/inputs/user:label">
+            <value>User</value>
+          </text>
+          <text id="/covid_rdt/finger_group/finger:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/covid_rdt/precautions_group/precautions/splashes:label">
+            <value>If possible, place an alcohol soaked towel on your work surface to catch splashes</value>
+          </text>
+          <text id="/covid_rdt/preparations_group/preparations:label">
+            <value>Check and prepare the test kit</value>
+          </text>
+          <text id="/covid_rdt/wait_group/waiting:label">
+            <value>While you're waiting:</value>
+          </text>
+          <text id="/covid_rdt/finger_group/finger/flow:label">
+            <value>Apply light pressure, wipe away the first 2-3 drops of blood with alcohol pad, and make sure there is free blood flow</value>
+          </text>
+          <text id="/covid_rdt/finger_group/finger:jr:constraintMsg">
+            <value>Please confirm each of the test steps before proceeding</value>
+          </text>
+          <text id="/covid_rdt/wait_group/waiting/discard:label">
+            <value>Discard capillary sampler into the trash</value>
+          </text>
+          <text id="/covid_rdt/interpret_group/interpretation/g:label">
+            <value>G</value>
+          </text>
+          <text id="/covid_rdt/summary-group:label">
+            <value>Summary of Assessment Result</value>
+          </text>
+          <text id="/covid_rdt/finger_group/finger/prick:label">
+            <value>Prick the patient's finger to begin the flow of blood</value>
+          </text>
+          <text id="/covid_rdt/test_result:label">
+            <value>Test Result</value>
+          </text>
+          <text id="/covid_rdt/interpret_group:label">
+            <value>Interpret COVID-19 Test Result</value>
+          </text>
+          <text id="/covid_rdt/cleanup_group/cleanup/clean:label">
+            <value>Clean work surfaces, and plastic materials (pipettors, pens, and timer) with alcohol at the end of the work.</value>
+          </text>
+          <text id="/covid_rdt/patient_id:label">
+            <value>Patient ID</value>
+          </text>
+          <text id="/covid_rdt/cleanup_group/cleanup:jr:constraintMsg">
+            <value>Please confirm you have completed each cleanup step before proceeding</value>
+          </text>
+          <text id="/covid_rdt/wait_group/evaluation_timer:label">
+            <value>Begin 15 minute timer</value>
+          </text>
+          <text id="/covid_rdt/symptoms_group/symptoms:label">
+            <value>Is your patient experiencing any of the following symptoms?</value>
+          </text>
+          <text id="/covid_rdt/inputs:label">
+            <value>Patient</value>
+          </text>
+          <text id="/covid_rdt/inputs/contact/external_id:label">
+            <value>LGH ID</value>
+          </text>
+          <text id="/covid_rdt/preparations_group/preparations:jr:constraintMsg">
+            <value>Please confirm each of the preparation steps before proceeding</value>
+          </text>
+          <text id="/covid_rdt/has_symptoms:jr:requiredMsg">
+            <value>This field is required</value>
           </text>
           <text id="/covid_rdt/wait_group:label">
-            <value>Régler la minuterie pour 15 minutes</value>
+            <value>Set timer for 15 minutes</value>
+          </text>
+          <text id="/covid_rdt/cleanup_group/cleanup:label">
+            <value>Now that you've completed the COVID-19 test, please cleanup your work area</value>
+          </text>
+          <text id="/covid_rdt/interpret_group/interpretation/m:label">
+            <value>M</value>
+          </text>
+          <text id="/covid_rdt/precautions_group/precautions/ppe:label">
+            <value>Put on protective equipment. This should include a gown, gloves, and surgical mask.</value>
+          </text>
+          <text id="/covid_rdt/precautions_group/precautions:label">
+            <value>Please confirm that you have taken the following precautions:</value>
+          </text>
+          <text id="/covid_rdt/disinfect_group/generated_note_name_33:label">
+            <value form="image">jr://images/collect_blood.png</value>
+            <value>Collect blood into capillary tube or sampler (~20-50uL)</value>
+          </text>
+          <text id="/covid_rdt/preparations_group:label">
+            <value>Preparation</value>
+          </text>
+          <text id="/covid_rdt/symptoms_group/symptoms/fever:label">
+            <value>Fever</value>
+          </text>
+          <text id="/covid_rdt/disinfect_group/generated_note_name_34:label">
+            <value form="image">jr://images/blood_to_well.png</value>
+            <value>Put the blood into the sample well of the cassette</value>
+          </text>
+          <text id="/covid_rdt/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/covid_rdt/interpret_group/interpretation:label">
+            <value>Which lines appear on your test?</value>
+          </text>
+          <text id="/covid_rdt/precautions_group/precautions/disinfect:label">
+            <value>Disinfect your work surface before starting work</value>
+          </text>
+          <text id="/covid_rdt/finger_group/finger:label">
+            <value>Prick the patient's finger</value>
+          </text>
+          <text id="/covid_rdt/precautions_group/precautions:jr:constraintMsg">
+            <value>Please confirm each of the safety precautions before proceeding</value>
+          </text>
+          <text id="/covid_rdt/summary-group/invalid_result:label">
+            <value>&lt;b&gt;No conclusion can be determined about your patient&lt;/b&gt;. The RDT test that you used for this assessment was invalid. Please submit this form, but restart a new COVID-19 Assessment with a new RDT test.</value>
+          </text>
+          <text id="/covid_rdt/symptoms_group/generated_note_name_20:label">
+            <value>&amp;lt;style&amp;gt;.pages .loader { display: none; }&amp;lt;/style&amp;gt;</value>
+          </text>
+          <text id="/covid_rdt/disinfect_group/generated_note_name_35:label">
+            <value form="image">jr://images/buffer_to_well.png</value>
+            <value>After the blood has completely entered the sample well, add 2 to 3 drops (70 to 100μl) of buffer solution. Make sure to test on a level surface at room temperature.</value>
+          </text>
+          <text id="/covid_rdt/wait_group/waiting:jr:constraintMsg">
+            <value>Please confirm these steps before proceeding</value>
+          </text>
+          <text id="/covid_rdt/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/covid_rdt/patient_id:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/covid_rdt/summary-group/style:label">
+            <value>&amp;lt;style&amp;gt;[name='/covid_rdt/summary-group'] ul { margin: 10px 0 0 25px; list-style: disc; }&amp;lt;/style&amp;gt;</value>
+          </text>
+          <text id="/covid_rdt/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/covid_rdt/inputs/contact/_id:label">
+            <value>_id</value>
+          </text>
+          <text id="/covid_rdt/inputs/contact/date_of_birth:label">
+            <value>Date of birth</value>
+          </text>
+          <text id="/covid_rdt/preparations_group/preparations:jr:requiredMsg">
+            <value>This field is required</value>
+          </text>
+          <text id="/covid_rdt/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/covid_rdt/precautions_group:label">
+            <value>Precautions</value>
+          </text>
+          <text id="/covid_rdt/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/covid_rdt/summary-group/negative_result:label">
+            <value>&lt;b&gt;The test result for your patient is negative.&lt;/b&gt; But this doesn't mean they do not have COVID-19. Since hey were showing symptoms, you should advise the following:
+&lt;ul&gt;&lt;li&gt;Advise your patient to stay home and avoid seeing other people if possible.&lt;/li&gt;&lt;li&gt;Your patient should call or text if symptoms worsen or new symptoms arise.&lt;/li&gt;&lt;li&gt;Follow up with your patient in 24 hours.&lt;/li&gt;&lt;/ul&gt;</value>
+          </text>
+          <text id="/covid_rdt/finger_group/finger/disinfect:label">
+            <value>Disinfect the patient's finger, use their middle or ring finger</value>
+          </text>
+          <text id="/covid_rdt/symptoms_group:label">
+            <value>Patient Assessment for symptomatic contacts</value>
+          </text>
+          <text id="/covid_rdt/summary-group/no_symptoms:label">
+            <value>This assessment is for patients exhibiting symptoms of COVID-19. Your patient did not have symptoms of COVID-19 and should not be tested.
+&lt;ul&gt;&lt;li&gt;Please advise your patient to stay home and limit contact with others.&lt;/li&gt;&lt;li&gt;Your patient should call or text if symptoms develop&lt;/li&gt;&lt;li&gt;Follow-up with your patient in one week&lt;/li&gt;&lt;/ul&gt;</value>
+          </text>
+          <text id="/covid_rdt/finger_group:label">
+            <value>Executing the test</value>
           </text>
         </translation>
       </itext>
       <instance>
-        <covid_rdt delimiter="#" id="covid_rdt" prefix="J1!covid_rdt!" version="2020-04-12 12-56">
-          <inputs tag="hidden">
+        <covid_rdt delimiter="#" id="covid_rdt" prefix="J1!covid_rdt!" version="2020-08-19 21-51">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
             <source>user</source>
             <source_id/>
             <user/>
@@ -473,20 +478,20 @@
               <external_id/>
             </contact>
           </inputs>
-          <patient_id tag="hidden"/>
-          <has_symptoms tag="hidden"/>
-          <test_result tag="hidden"/>
-          <symptoms_group tag="hidden">
+          <patient_id/>
+          <has_symptoms/>
+          <test_result/>
+          <symptoms_group>
             <symptoms/>
             <generated_note_name_20/>
           </symptoms_group>
-          <precautions_group tag="hidden">
+          <precautions_group>
             <precautions/>
           </precautions_group>
-          <preparations_group tag="hidden">
+          <preparations_group>
             <preparations/>
           </preparations_group>
-          <finger_group tag="hidden">
+          <finger_group>
             <finger/>
             <generated_note_name_30/>
           </finger_group>
@@ -495,15 +500,15 @@
             <generated_note_name_34/>
             <generated_note_name_35/>
           </disinfect_group>
-          <wait_group tag="hidden">
+          <wait_group>
             <evaluation_timer>900</evaluation_timer>
             <waiting/>
           </wait_group>
-          <interpret_group tag="hidden">
+          <interpret_group>
             <generated_note_name_42/>
             <interpretation/>
           </interpret_group>
-          <cleanup_group tag="hidden">
+          <cleanup_group>
             <cleanup/>
           </cleanup_group>
           <summary-group>
@@ -515,7 +520,7 @@
             <next_visit/>
             <next_followup/>
           </summary-group>
-          <meta tag="hidden">
+          <meta>
             <instanceID/>
           </meta>
         </covid_rdt>
