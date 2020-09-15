@@ -1,0 +1,3324 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Edit Person</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/data/init/change_parent/false:label">
+            <value>No</value>
+          </text>
+          <text id="/data/init/change_parent/true:label">
+            <value>Yes</value>
+          </text>
+          <text id="/data/init/change_parent:label">
+            <value>Would you like to move them to another place?</value>
+          </text>
+          <text id="/data/init/edited_place_type/clinic:label">
+            <value>Household</value>
+          </text>
+          <text id="/data/init/edited_place_type/district_hospital:label">
+            <value>Health Facility</value>
+          </text>
+          <text id="/data/init/edited_place_type/health_center:label">
+            <value>Area</value>
+          </text>
+          <text id="/data/init/edited_place_type:label">
+            <value>Search for place by</value>
+          </text>
+          <text id="/data/init/id_clinic:label">
+            <value>Select Household</value>
+          </text>
+          <text id="/data/init/id_district_hospital:label">
+            <value>Select Health Facillity</value>
+          </text>
+          <text id="/data/init/id_health_center:label">
+            <value>Select Area</value>
+          </text>
+          <text id="/data/init/note_place:label">
+            <value><output value=" /data/init/person_name "/>&amp;nbsp;currently belongs to **<output value=" /data/init/person_place_name "/>**</value>
+          </text>
+          <text id="/data/init/person_parent:label">
+            <value>Current Place</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>Contact ID of the logged in user</value>
+          </text>
+          <text id="/data/inputs/user/facility_id:label">
+            <value>Place ID of the logged in user</value>
+          </text>
+          <text id="/data/inputs/user/name:label">
+            <value>Name of the logged in user</value>
+          </text>
+          <text id="/data/person/address:label">
+            <value>Address</value>
+          </text>
+          <text id="/data/person/case_id:label">
+            <value>Outbreak Case ID</value>
+          </text>
+          <text id="/data/person/date_of_birth:label">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/data/person/date_of_birth_method:label">
+            <value>Method to select date of birth</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/age_label:label">
+            <value>**Age**</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/age_months:jr:constraintMsg">
+            <value>Months must between 0 and 11</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/age_months:label">
+            <value>Months</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/age_years:jr:constraintMsg">
+            <value>Age must be between 0 and 130</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/age_years:label">
+            <value>Years</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/dob_calendar:hint">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/dob_calendar:jr:constraintMsg">
+            <value>Date must be before today</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/dob_calendar:label">
+            <value>Age</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/dob_debug:label">
+            <value>Months: <output value=" /data/person/ephemeral_dob/ephemeral_months "/>
+Year: <output value=" /data/person/ephemeral_dob/ephemeral_years "/>
+DOB Approx: <output value=" /data/person/ephemeral_dob/dob_approx "/>
+DOB Calendar: <output value=" /data/person/ephemeral_dob/dob_calendar "/>
+DOB ISO: <output value=" /data/person/ephemeral_dob/dob_iso "/></value></text>
+          <text id="/data/person/ephemeral_dob/dob_method/approx:label">
+            <value>Date unknown</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/dob_method:label">
+          </text>
+          <text id="/data/person/external_id:label">
+            <value>External ID</value>
+          </text>
+          <text id="/data/person/name:label">
+            <value>Full name</value>
+          </text>
+          <text id="/data/person/notes:label">
+            <value>Notes</value>
+          </text>
+          <text id="/data/person/parent:label">
+            <value>-</value>
+          </text>
+          <text id="/data/person/phone:jr:constraintMsg">
+            <value>Please enter a valid local number, or use the standard international format, which includes a plus sign (+) and country code. For example: +254712345678</value>
+          </text>
+          <text id="/data/person/phone:label">
+            <value>Phone Number</value>
+          </text>
+          <text id="/data/person/phone_alternate:jr:constraintMsg">
+            <value>Please enter a valid local number, or use the standard international format, which includes a plus sign (+) and country code. For example: +254712345678</value>
+          </text>
+          <text id="/data/person/phone_alternate:label">
+            <value>Alternate Phone Number</value>
+          </text>
+          <text id="/data/person/role/chw:label">
+            <value>CHW</value>
+          </text>
+          <text id="/data/person/role/chw_rdt:label">
+            <value>Rdt CHW</value>
+          </text>
+          <text id="/data/person/role/chw_supervisor:label">
+            <value>CHW Supervisor</value>
+          </text>
+          <text id="/data/person/role/contact_n:label">
+            <value>Covid contact</value>
+          </text>
+          <text id="/data/person/role/covid_patient:label">
+            <value>Patient with COVID-19</value>
+          </text>
+          <text id="/data/person/role/data_entry:label">
+            <value>Data entry</value>
+          </text>
+          <text id="/data/person/role/inputter:label">
+            <value>Airport inputter</value>
+          </text>
+          <text id="/data/person/role/other:label">
+            <value>Other</value>
+          </text>
+          <text id="/data/person/role/patient:label">
+            <value>Patient</value>
+          </text>
+          <text id="/data/person/role/tracer:label">
+            <value>Tracer</value>
+          </text>
+          <text id="/data/person/role/traveler:label">
+            <value>Traveler</value>
+          </text>
+          <text id="/data/person/role:hint">
+            <value>Select the role that best suits this person</value>
+          </text>
+          <text id="/data/person/role:label">
+            <value>Role</value>
+          </text>
+          <text id="/data/person/role_other:label">
+            <value>Specify other</value>
+          </text>
+          <text id="/data/person/sex/female:label">
+            <value>Female</value>
+          </text>
+          <text id="/data/person/sex/male:label">
+            <value>Male</value>
+          </text>
+          <text id="/data/person/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/data/person/short_name:hint">
+            <value>Please enter a short name that is preferred by the person.</value>
+          </text>
+          <text id="/data/person/short_name:jr:constraintMsg">
+            <value>Short name can not be more than 10 characters long.</value>
+          </text>
+          <text id="/data/person/short_name:label">
+            <value>Short name</value>
+          </text>
+          <text id="/data/person/town:label">
+            <value>Town</value>
+          </text>
+          <text id="/data/person/traveler/destination_address:label">
+            <value>Address</value>
+          </text>
+          <text id="/data/person/traveler/email:jr:requiredMsg">
+            <value>If not filled, put a dash sign (-).</value>
+          </text>
+          <text id="/data/person/traveler/email:label">
+            <value>Email address</value>
+          </text>
+          <text id="/data/person/traveler/home_address:label">
+            <value>Home Address</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ad:label">
+            <value>Andorra</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ae:label">
+            <value>United Arab Emirates</value>
+          </text>
+          <text id="/data/person/traveler/nationality/af:label">
+            <value>Afghanistan</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ag:label">
+            <value>Antigua and Barbuda</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ai:label">
+            <value>Anguilla</value>
+          </text>
+          <text id="/data/person/traveler/nationality/al:label">
+            <value>Albania</value>
+          </text>
+          <text id="/data/person/traveler/nationality/am:label">
+            <value>Armenia</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ao:label">
+            <value>Angola</value>
+          </text>
+          <text id="/data/person/traveler/nationality/aq:label">
+            <value>Antarctica</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ar:label">
+            <value>Argentina</value>
+          </text>
+          <text id="/data/person/traveler/nationality/as:label">
+            <value>American Samoa</value>
+          </text>
+          <text id="/data/person/traveler/nationality/at:label">
+            <value>Austria</value>
+          </text>
+          <text id="/data/person/traveler/nationality/au:label">
+            <value>Australia</value>
+          </text>
+          <text id="/data/person/traveler/nationality/aw:label">
+            <value>Aruba</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ax:label">
+            <value>Åland Islands</value>
+          </text>
+          <text id="/data/person/traveler/nationality/az:label">
+            <value>Azerbaijan</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ba:label">
+            <value>Bosnia and Herzegovina</value>
+          </text>
+          <text id="/data/person/traveler/nationality/bb:label">
+            <value>Barbados</value>
+          </text>
+          <text id="/data/person/traveler/nationality/bd:label">
+            <value>Bangladesh</value>
+          </text>
+          <text id="/data/person/traveler/nationality/be:label">
+            <value>Belgium</value>
+          </text>
+          <text id="/data/person/traveler/nationality/bf:label">
+            <value>Burkina Faso</value>
+          </text>
+          <text id="/data/person/traveler/nationality/bg:label">
+            <value>Bulgaria</value>
+          </text>
+          <text id="/data/person/traveler/nationality/bh:label">
+            <value>Bahrain</value>
+          </text>
+          <text id="/data/person/traveler/nationality/bi:label">
+            <value>Burundi</value>
+          </text>
+          <text id="/data/person/traveler/nationality/bj:label">
+            <value>Benin</value>
+          </text>
+          <text id="/data/person/traveler/nationality/bl:label">
+            <value>Saint Barthélemy</value>
+          </text>
+          <text id="/data/person/traveler/nationality/bm:label">
+            <value>Bermuda</value>
+          </text>
+          <text id="/data/person/traveler/nationality/bn:label">
+            <value>Brunei Darussalam</value>
+          </text>
+          <text id="/data/person/traveler/nationality/bo:label">
+            <value>Bolivia, Plurinational State of</value>
+          </text>
+          <text id="/data/person/traveler/nationality/bq:label">
+            <value>Bonaire, Sint Eustatius and Saba</value>
+          </text>
+          <text id="/data/person/traveler/nationality/br:label">
+            <value>Brazil</value>
+          </text>
+          <text id="/data/person/traveler/nationality/bs:label">
+            <value>Bahamas</value>
+          </text>
+          <text id="/data/person/traveler/nationality/bt:label">
+            <value>Bhutan</value>
+          </text>
+          <text id="/data/person/traveler/nationality/bv:label">
+            <value>Bouvet Island</value>
+          </text>
+          <text id="/data/person/traveler/nationality/bw:label">
+            <value>Botswana</value>
+          </text>
+          <text id="/data/person/traveler/nationality/by:label">
+            <value>Belarus</value>
+          </text>
+          <text id="/data/person/traveler/nationality/bz:label">
+            <value>Belize</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ca:label">
+            <value>Canada</value>
+          </text>
+          <text id="/data/person/traveler/nationality/cc:label">
+            <value>Cocos (Keeling) Islands</value>
+          </text>
+          <text id="/data/person/traveler/nationality/cd:label">
+            <value>Congo, the Democratic Republic of the</value>
+          </text>
+          <text id="/data/person/traveler/nationality/cf:label">
+            <value>Central African Republic</value>
+          </text>
+          <text id="/data/person/traveler/nationality/cg:label">
+            <value>Congo</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ch:label">
+            <value>Switzerland</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ci:label">
+            <value>Côte d'Ivoire</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ck:label">
+            <value>Cook Islands</value>
+          </text>
+          <text id="/data/person/traveler/nationality/cl:label">
+            <value>Chile</value>
+          </text>
+          <text id="/data/person/traveler/nationality/cm:label">
+            <value>Cameroon</value>
+          </text>
+          <text id="/data/person/traveler/nationality/cn:label">
+            <value>China</value>
+          </text>
+          <text id="/data/person/traveler/nationality/co:label">
+            <value>Colombia</value>
+          </text>
+          <text id="/data/person/traveler/nationality/cr:label">
+            <value>Costa Rica</value>
+          </text>
+          <text id="/data/person/traveler/nationality/cu:label">
+            <value>Cuba</value>
+          </text>
+          <text id="/data/person/traveler/nationality/cv:label">
+            <value>Cape Verde</value>
+          </text>
+          <text id="/data/person/traveler/nationality/cw:label">
+            <value>Curaçao</value>
+          </text>
+          <text id="/data/person/traveler/nationality/cx:label">
+            <value>Christmas Island</value>
+          </text>
+          <text id="/data/person/traveler/nationality/cy:label">
+            <value>Cyprus</value>
+          </text>
+          <text id="/data/person/traveler/nationality/cz:label">
+            <value>Czech Republic</value>
+          </text>
+          <text id="/data/person/traveler/nationality/de:label">
+            <value>Germany</value>
+          </text>
+          <text id="/data/person/traveler/nationality/dj:label">
+            <value>Djibouti</value>
+          </text>
+          <text id="/data/person/traveler/nationality/dk:label">
+            <value>Denmark</value>
+          </text>
+          <text id="/data/person/traveler/nationality/dm:label">
+            <value>Dominica</value>
+          </text>
+          <text id="/data/person/traveler/nationality/do:label">
+            <value>Dominican Republic</value>
+          </text>
+          <text id="/data/person/traveler/nationality/dz:label">
+            <value>Algeria</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ec:label">
+            <value>Ecuador</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ee:label">
+            <value>Estonia</value>
+          </text>
+          <text id="/data/person/traveler/nationality/eg:label">
+            <value>Egypt</value>
+          </text>
+          <text id="/data/person/traveler/nationality/eh:label">
+            <value>Western Sahara</value>
+          </text>
+          <text id="/data/person/traveler/nationality/er:label">
+            <value>Eritrea</value>
+          </text>
+          <text id="/data/person/traveler/nationality/es:label">
+            <value>Spain</value>
+          </text>
+          <text id="/data/person/traveler/nationality/et:label">
+            <value>Ethiopia</value>
+          </text>
+          <text id="/data/person/traveler/nationality/fi:label">
+            <value>Finland</value>
+          </text>
+          <text id="/data/person/traveler/nationality/fj:label">
+            <value>Fiji</value>
+          </text>
+          <text id="/data/person/traveler/nationality/fk:label">
+            <value>Falkland Islands (Malvinas)</value>
+          </text>
+          <text id="/data/person/traveler/nationality/fm:label">
+            <value>Micronesia, Federated States of</value>
+          </text>
+          <text id="/data/person/traveler/nationality/fo:label">
+            <value>Faroe Islands</value>
+          </text>
+          <text id="/data/person/traveler/nationality/fr:label">
+            <value>France</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ga:label">
+            <value>Gabon</value>
+          </text>
+          <text id="/data/person/traveler/nationality/gb:label">
+            <value>United Kingdom</value>
+          </text>
+          <text id="/data/person/traveler/nationality/gd:label">
+            <value>Grenada</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ge:label">
+            <value>Georgia</value>
+          </text>
+          <text id="/data/person/traveler/nationality/gf:label">
+            <value>French Guiana</value>
+          </text>
+          <text id="/data/person/traveler/nationality/gg:label">
+            <value>Guernsey</value>
+          </text>
+          <text id="/data/person/traveler/nationality/gh:label">
+            <value>Ghana</value>
+          </text>
+          <text id="/data/person/traveler/nationality/gi:label">
+            <value>Gibraltar</value>
+          </text>
+          <text id="/data/person/traveler/nationality/gl:label">
+            <value>Greenland</value>
+          </text>
+          <text id="/data/person/traveler/nationality/gm:label">
+            <value>Gambia</value>
+          </text>
+          <text id="/data/person/traveler/nationality/gn:label">
+            <value>Guinea</value>
+          </text>
+          <text id="/data/person/traveler/nationality/gp:label">
+            <value>Guadeloupe</value>
+          </text>
+          <text id="/data/person/traveler/nationality/gq:label">
+            <value>Equatorial Guinea</value>
+          </text>
+          <text id="/data/person/traveler/nationality/gr:label">
+            <value>Greece</value>
+          </text>
+          <text id="/data/person/traveler/nationality/gs:label">
+            <value>South Georgia and the South Sandwich Islands</value>
+          </text>
+          <text id="/data/person/traveler/nationality/gt:label">
+            <value>Guatemala</value>
+          </text>
+          <text id="/data/person/traveler/nationality/gu:label">
+            <value>Guam</value>
+          </text>
+          <text id="/data/person/traveler/nationality/gw:label">
+            <value>Guinea-Bissau</value>
+          </text>
+          <text id="/data/person/traveler/nationality/gy:label">
+            <value>Guyana</value>
+          </text>
+          <text id="/data/person/traveler/nationality/hk:label">
+            <value>Hong Kong</value>
+          </text>
+          <text id="/data/person/traveler/nationality/hm:label">
+            <value>Heard Island and McDonald Islands</value>
+          </text>
+          <text id="/data/person/traveler/nationality/hn:label">
+            <value>Honduras</value>
+          </text>
+          <text id="/data/person/traveler/nationality/hr:label">
+            <value>Croatia</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ht:label">
+            <value>Haiti</value>
+          </text>
+          <text id="/data/person/traveler/nationality/hu:label">
+            <value>Hungary</value>
+          </text>
+          <text id="/data/person/traveler/nationality/id:label">
+            <value>Indonesia</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ie:label">
+            <value>Ireland</value>
+          </text>
+          <text id="/data/person/traveler/nationality/il:label">
+            <value>Israel</value>
+          </text>
+          <text id="/data/person/traveler/nationality/im:label">
+            <value>Isle of Man</value>
+          </text>
+          <text id="/data/person/traveler/nationality/in:label">
+            <value>India</value>
+          </text>
+          <text id="/data/person/traveler/nationality/io:label">
+            <value>British Indian Ocean Territory</value>
+          </text>
+          <text id="/data/person/traveler/nationality/iq:label">
+            <value>Iraq</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ir:label">
+            <value>Iran, Islamic Republic of</value>
+          </text>
+          <text id="/data/person/traveler/nationality/is:label">
+            <value>Iceland</value>
+          </text>
+          <text id="/data/person/traveler/nationality/it:label">
+            <value>Italy</value>
+          </text>
+          <text id="/data/person/traveler/nationality/je:label">
+            <value>Jersey</value>
+          </text>
+          <text id="/data/person/traveler/nationality/jm:label">
+            <value>Jamaica</value>
+          </text>
+          <text id="/data/person/traveler/nationality/jo:label">
+            <value>Jordan</value>
+          </text>
+          <text id="/data/person/traveler/nationality/jp:label">
+            <value>Japan</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ke:label">
+            <value>Kenya</value>
+          </text>
+          <text id="/data/person/traveler/nationality/kg:label">
+            <value>Kyrgyzstan</value>
+          </text>
+          <text id="/data/person/traveler/nationality/kh:label">
+            <value>Cambodia</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ki:label">
+            <value>Kiribati</value>
+          </text>
+          <text id="/data/person/traveler/nationality/km:label">
+            <value>Comoros</value>
+          </text>
+          <text id="/data/person/traveler/nationality/kn:label">
+            <value>Saint Kitts and Nevis</value>
+          </text>
+          <text id="/data/person/traveler/nationality/kp:label">
+            <value>Korea, Democratic People's Republic of</value>
+          </text>
+          <text id="/data/person/traveler/nationality/kr:label">
+            <value>Korea, Republic of</value>
+          </text>
+          <text id="/data/person/traveler/nationality/kw:label">
+            <value>Kuwait</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ky:label">
+            <value>Cayman Islands</value>
+          </text>
+          <text id="/data/person/traveler/nationality/kz:label">
+            <value>Kazakhstan</value>
+          </text>
+          <text id="/data/person/traveler/nationality/la:label">
+            <value>Lao People's Democratic Republic</value>
+          </text>
+          <text id="/data/person/traveler/nationality/lb:label">
+            <value>Lebanon</value>
+          </text>
+          <text id="/data/person/traveler/nationality/lc:label">
+            <value>Saint Lucia</value>
+          </text>
+          <text id="/data/person/traveler/nationality/li:label">
+            <value>Liechtenstein</value>
+          </text>
+          <text id="/data/person/traveler/nationality/lk:label">
+            <value>Sri Lanka</value>
+          </text>
+          <text id="/data/person/traveler/nationality/lr:label">
+            <value>Liberia</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ls:label">
+            <value>Lesotho</value>
+          </text>
+          <text id="/data/person/traveler/nationality/lt:label">
+            <value>Lithuania</value>
+          </text>
+          <text id="/data/person/traveler/nationality/lu:label">
+            <value>Luxembourg</value>
+          </text>
+          <text id="/data/person/traveler/nationality/lv:label">
+            <value>Latvia</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ly:label">
+            <value>Libya</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ma:label">
+            <value>Morocco</value>
+          </text>
+          <text id="/data/person/traveler/nationality/mc:label">
+            <value>Monaco</value>
+          </text>
+          <text id="/data/person/traveler/nationality/md:label">
+            <value>Moldova, Republic of</value>
+          </text>
+          <text id="/data/person/traveler/nationality/me:label">
+            <value>Montenegro</value>
+          </text>
+          <text id="/data/person/traveler/nationality/mf:label">
+            <value>Saint Martin (French part)</value>
+          </text>
+          <text id="/data/person/traveler/nationality/mg:label">
+            <value>Madagascar</value>
+          </text>
+          <text id="/data/person/traveler/nationality/mh:label">
+            <value>Marshall Islands</value>
+          </text>
+          <text id="/data/person/traveler/nationality/mk:label">
+            <value>Macedonia, the former Yugoslav Republic of</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ml:label">
+            <value>Mali</value>
+          </text>
+          <text id="/data/person/traveler/nationality/mm:label">
+            <value>Myanmar</value>
+          </text>
+          <text id="/data/person/traveler/nationality/mn:label">
+            <value>Mongolia</value>
+          </text>
+          <text id="/data/person/traveler/nationality/mo:label">
+            <value>Macao</value>
+          </text>
+          <text id="/data/person/traveler/nationality/mp:label">
+            <value>Northern Mariana Islands</value>
+          </text>
+          <text id="/data/person/traveler/nationality/mq:label">
+            <value>Martinique</value>
+          </text>
+          <text id="/data/person/traveler/nationality/mr:label">
+            <value>Mauritania</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ms:label">
+            <value>Montserrat</value>
+          </text>
+          <text id="/data/person/traveler/nationality/mt:label">
+            <value>Malta</value>
+          </text>
+          <text id="/data/person/traveler/nationality/mu:label">
+            <value>Mauritius</value>
+          </text>
+          <text id="/data/person/traveler/nationality/mv:label">
+            <value>Maldives</value>
+          </text>
+          <text id="/data/person/traveler/nationality/mw:label">
+            <value>Malawi</value>
+          </text>
+          <text id="/data/person/traveler/nationality/mx:label">
+            <value>Mexico</value>
+          </text>
+          <text id="/data/person/traveler/nationality/my:label">
+            <value>Malaysia</value>
+          </text>
+          <text id="/data/person/traveler/nationality/mz:label">
+            <value>Mozambique</value>
+          </text>
+          <text id="/data/person/traveler/nationality/na:label">
+            <value>Namibia</value>
+          </text>
+          <text id="/data/person/traveler/nationality/nc:label">
+            <value>New Caledonia</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ne:label">
+            <value>Niger</value>
+          </text>
+          <text id="/data/person/traveler/nationality/nf:label">
+            <value>Norfolk Island</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ng:label">
+            <value>Nigeria</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ni:label">
+            <value>Nicaragua</value>
+          </text>
+          <text id="/data/person/traveler/nationality/nl:label">
+            <value>Netherlands</value>
+          </text>
+          <text id="/data/person/traveler/nationality/no:label">
+            <value>Norway</value>
+          </text>
+          <text id="/data/person/traveler/nationality/np:label">
+            <value>Nepal</value>
+          </text>
+          <text id="/data/person/traveler/nationality/nr:label">
+            <value>Nauru</value>
+          </text>
+          <text id="/data/person/traveler/nationality/nu:label">
+            <value>Niue</value>
+          </text>
+          <text id="/data/person/traveler/nationality/nz:label">
+            <value>New Zealand</value>
+          </text>
+          <text id="/data/person/traveler/nationality/om:label">
+            <value>Oman</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ot:label">
+            <value>Other</value>
+          </text>
+          <text id="/data/person/traveler/nationality/pa:label">
+            <value>Panama</value>
+          </text>
+          <text id="/data/person/traveler/nationality/pe:label">
+            <value>Peru</value>
+          </text>
+          <text id="/data/person/traveler/nationality/pf:label">
+            <value>French Polynesia</value>
+          </text>
+          <text id="/data/person/traveler/nationality/pg:label">
+            <value>Papua New Guinea</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ph:label">
+            <value>Philippines</value>
+          </text>
+          <text id="/data/person/traveler/nationality/pk:label">
+            <value>Pakistan</value>
+          </text>
+          <text id="/data/person/traveler/nationality/pl:label">
+            <value>Poland</value>
+          </text>
+          <text id="/data/person/traveler/nationality/pm:label">
+            <value>Saint Pierre and Miquelon</value>
+          </text>
+          <text id="/data/person/traveler/nationality/pn:label">
+            <value>Pitcairn</value>
+          </text>
+          <text id="/data/person/traveler/nationality/pr:label">
+            <value>Puerto Rico</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ps:label">
+            <value>Palestinian Territory, Occupied</value>
+          </text>
+          <text id="/data/person/traveler/nationality/pt:label">
+            <value>Portugal</value>
+          </text>
+          <text id="/data/person/traveler/nationality/pw:label">
+            <value>Palau</value>
+          </text>
+          <text id="/data/person/traveler/nationality/py:label">
+            <value>Paraguay</value>
+          </text>
+          <text id="/data/person/traveler/nationality/qa:label">
+            <value>Qatar</value>
+          </text>
+          <text id="/data/person/traveler/nationality/re:label">
+            <value>Réunion</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ro:label">
+            <value>Romania</value>
+          </text>
+          <text id="/data/person/traveler/nationality/rs:label">
+            <value>Serbia</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ru:label">
+            <value>Russian Federation</value>
+          </text>
+          <text id="/data/person/traveler/nationality/rw:label">
+            <value>Rwanda</value>
+          </text>
+          <text id="/data/person/traveler/nationality/sa:label">
+            <value>Saudi Arabia</value>
+          </text>
+          <text id="/data/person/traveler/nationality/sb:label">
+            <value>Solomon Islands</value>
+          </text>
+          <text id="/data/person/traveler/nationality/sc:label">
+            <value>Seychelles</value>
+          </text>
+          <text id="/data/person/traveler/nationality/sd:label">
+            <value>Sudan</value>
+          </text>
+          <text id="/data/person/traveler/nationality/se:label">
+            <value>Sweden</value>
+          </text>
+          <text id="/data/person/traveler/nationality/sg:label">
+            <value>Singapore</value>
+          </text>
+          <text id="/data/person/traveler/nationality/sh:label">
+            <value>Saint Helena, Ascension and Tristan da Cunha</value>
+          </text>
+          <text id="/data/person/traveler/nationality/si:label">
+            <value>Slovenia</value>
+          </text>
+          <text id="/data/person/traveler/nationality/sj:label">
+            <value>Svalbard and Jan Mayen</value>
+          </text>
+          <text id="/data/person/traveler/nationality/sk:label">
+            <value>Slovakia</value>
+          </text>
+          <text id="/data/person/traveler/nationality/sl:label">
+            <value>Sierra Leone</value>
+          </text>
+          <text id="/data/person/traveler/nationality/sm:label">
+            <value>San Marino</value>
+          </text>
+          <text id="/data/person/traveler/nationality/sn:label">
+            <value>Senegal</value>
+          </text>
+          <text id="/data/person/traveler/nationality/so:label">
+            <value>Somalia</value>
+          </text>
+          <text id="/data/person/traveler/nationality/sr:label">
+            <value>Suriname</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ss:label">
+            <value>South Sudan</value>
+          </text>
+          <text id="/data/person/traveler/nationality/st:label">
+            <value>Sao Tome and Principe</value>
+          </text>
+          <text id="/data/person/traveler/nationality/sv:label">
+            <value>El Salvador</value>
+          </text>
+          <text id="/data/person/traveler/nationality/sx:label">
+            <value>Sint Maarten (Dutch part)</value>
+          </text>
+          <text id="/data/person/traveler/nationality/sy:label">
+            <value>Syrian Arab Republic</value>
+          </text>
+          <text id="/data/person/traveler/nationality/sz:label">
+            <value>Swaziland</value>
+          </text>
+          <text id="/data/person/traveler/nationality/tc:label">
+            <value>Turks and Caicos Islands</value>
+          </text>
+          <text id="/data/person/traveler/nationality/td:label">
+            <value>Chad</value>
+          </text>
+          <text id="/data/person/traveler/nationality/tf:label">
+            <value>French Southern Territories</value>
+          </text>
+          <text id="/data/person/traveler/nationality/tg:label">
+            <value>Togo</value>
+          </text>
+          <text id="/data/person/traveler/nationality/th:label">
+            <value>Thailand</value>
+          </text>
+          <text id="/data/person/traveler/nationality/tj:label">
+            <value>Tajikistan</value>
+          </text>
+          <text id="/data/person/traveler/nationality/tk:label">
+            <value>Tokelau</value>
+          </text>
+          <text id="/data/person/traveler/nationality/tl:label">
+            <value>Timor-Leste</value>
+          </text>
+          <text id="/data/person/traveler/nationality/tm:label">
+            <value>Turkmenistan</value>
+          </text>
+          <text id="/data/person/traveler/nationality/tn:label">
+            <value>Tunisia</value>
+          </text>
+          <text id="/data/person/traveler/nationality/to:label">
+            <value>Tonga</value>
+          </text>
+          <text id="/data/person/traveler/nationality/tr:label">
+            <value>Turkey</value>
+          </text>
+          <text id="/data/person/traveler/nationality/tt:label">
+            <value>Trinidad and Tobago</value>
+          </text>
+          <text id="/data/person/traveler/nationality/tv:label">
+            <value>Tuvalu</value>
+          </text>
+          <text id="/data/person/traveler/nationality/tw:label">
+            <value>Taiwan, Province of China</value>
+          </text>
+          <text id="/data/person/traveler/nationality/tz:label">
+            <value>Tanzania, United Republic of</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ua:label">
+            <value>Ukraine</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ug:label">
+            <value>Uganda</value>
+          </text>
+          <text id="/data/person/traveler/nationality/um:label">
+            <value>United States Minor Outlying Islands</value>
+          </text>
+          <text id="/data/person/traveler/nationality/us:label">
+            <value>United States</value>
+          </text>
+          <text id="/data/person/traveler/nationality/uy:label">
+            <value>Uruguay</value>
+          </text>
+          <text id="/data/person/traveler/nationality/uz:label">
+            <value>Uzbekistan</value>
+          </text>
+          <text id="/data/person/traveler/nationality/va:label">
+            <value>Holy See (Vatican City State)</value>
+          </text>
+          <text id="/data/person/traveler/nationality/vc:label">
+            <value>Saint Vincent and the Grenadines</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ve:label">
+            <value>Venezuela, Bolivarian Republic of</value>
+          </text>
+          <text id="/data/person/traveler/nationality/vg:label">
+            <value>Virgin Islands, British</value>
+          </text>
+          <text id="/data/person/traveler/nationality/vi:label">
+            <value>Virgin Islands, U.S.</value>
+          </text>
+          <text id="/data/person/traveler/nationality/vn:label">
+            <value>Viet Nam</value>
+          </text>
+          <text id="/data/person/traveler/nationality/vu:label">
+            <value>Vanuatu</value>
+          </text>
+          <text id="/data/person/traveler/nationality/wf:label">
+            <value>Wallis and Futuna</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ws:label">
+            <value>Samoa</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ye:label">
+            <value>Yemen</value>
+          </text>
+          <text id="/data/person/traveler/nationality/yt:label">
+            <value>Mayotte</value>
+          </text>
+          <text id="/data/person/traveler/nationality/za:label">
+            <value>South Africa</value>
+          </text>
+          <text id="/data/person/traveler/nationality/zm:label">
+            <value>Zambia</value>
+          </text>
+          <text id="/data/person/traveler/nationality/zw:label">
+            <value>Zimbabwe</value>
+          </text>
+          <text id="/data/person/traveler/nationality:jr:requiredMsg">
+            <value>If not filled, put Other</value>
+          </text>
+          <text id="/data/person/traveler/nationality:label">
+            <value>Nationality</value>
+          </text>
+          <text id="/data/person/traveler/nationality_other:jr:requiredMsg">
+            <value>If not filled, put a dash sign (-).</value>
+          </text>
+          <text id="/data/person/traveler/nationality_other:label">
+            <value>Please specify nationality:</value>
+          </text>
+          <text id="/data/person/traveler/passport:jr:requiredMsg">
+            <value>If not filled, put a dash sign (-).</value>
+          </text>
+          <text id="/data/person/traveler/passport:label">
+            <value>Passport Number</value>
+          </text>
+          <text id="/data/person/traveler/skype:label">
+            <value>Skype ID</value>
+          </text>
+          <text id="/data/person/traveler:label">
+            <value>Traveller Information</value>
+          </text>
+          <text id="/data/person:label">
+            <value>Edit Person</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="/data/init/change_parent/false:label">
+            <value>Non</value>
+          </text>
+          <text id="/data/init/change_parent/true:label">
+            <value>Oui</value>
+          </text>
+          <text id="/data/init/change_parent:label">
+            <value>Voulez vous faire une réaffectation ?</value>
+          </text>
+          <text id="/data/init/edited_place_type/clinic:label">
+            <value>Zone</value>
+          </text>
+          <text id="/data/init/edited_place_type/district_hospital:label">
+            <value>District</value>
+          </text>
+          <text id="/data/init/edited_place_type/health_center:label">
+            <value>Centre de santé</value>
+          </text>
+          <text id="/data/init/edited_place_type:label">
+            <value>Recherche une place par</value>
+          </text>
+          <text id="/data/init/id_clinic:label">
+            <value>Famille</value>
+          </text>
+          <text id="/data/init/id_district_hospital:label">
+            <value>Centre de santé</value>
+          </text>
+          <text id="/data/init/id_health_center:label">
+            <value>Zone</value>
+          </text>
+          <text id="/data/init/name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/init/note_place:label">
+            <value><output value=" /data/init/person_name "/>&amp;nbsp; appartient à **<output value=" /data/init/person_place_name "/>**</value>
+          </text>
+          <text id="/data/init/person_parent:label">
+            <value>Place</value>
+          </text>
+          <text id="/data/init/type:label">
+            <value>-</value>
+          </text>
+          <text id="/data/init:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/contact_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/facility_id:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user/name:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs/user:label">
+            <value>-</value>
+          </text>
+          <text id="/data/inputs:label">
+            <value>-</value>
+          </text>
+          <text id="/data/person/_id:label">
+            <value>ID Parent</value>
+          </text>
+          <text id="/data/person/address:label">
+            <value>Address</value>
+          </text>
+          <text id="/data/person/case_id:label">
+            <value>Outbreak Case ID</value>
+          </text>
+          <text id="/data/person/date_of_birth:label">
+            <value>-</value>
+          </text>
+          <text id="/data/person/date_of_birth_method:label">
+            <value>-</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/age_label:label">
+            <value>Veuillez entrer votre date de naissance</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/age_months:jr:constraintMsg">
+            <value>-</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/age_months:label">
+            <value>Mois</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/age_years:jr:constraintMsg">
+            <value>-</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/age_years:label">
+            <value>Ans</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/dob_calendar:hint">
+            <value>-</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/dob_calendar:jr:constraintMsg">
+            <value>-</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/dob_calendar:label">
+            <value>Âge</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/dob_debug:label">
+            <value>-</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/dob_method/approx:label">
+            <value>Date de naissance inconnue</value>
+          </text>
+          <text id="/data/person/ephemeral_dob/dob_method:label">
+          </text>
+          <text id="/data/person/external_id:label">
+            <value>ID externe</value>
+          </text>
+          <text id="/data/person/meta/created_by:label">
+            <value>-</value>
+          </text>
+          <text id="/data/person/meta/created_by_person_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/data/person/meta/created_by_place_uuid:label">
+            <value>-</value>
+          </text>
+          <text id="/data/person/meta:label">
+            <value>-</value>
+          </text>
+          <text id="/data/person/name:label">
+            <value>Nom complet</value>
+          </text>
+          <text id="/data/person/notes:label">
+            <value>Notes</value>
+          </text>
+          <text id="/data/person/phone:jr:constraintMsg">
+            <value>-</value>
+          </text>
+          <text id="/data/person/phone:label">
+            <value>Numéro de téléphone primaire</value>
+          </text>
+          <text id="/data/person/phone_alternate:jr:constraintMsg">
+            <value>-</value>
+          </text>
+          <text id="/data/person/phone_alternate:label">
+            <value>Numéro de téléphone secondaire</value>
+          </text>
+          <text id="/data/person/role/chw:label">
+            <value>ASC</value>
+          </text>
+          <text id="/data/person/role/chw_rdt:label">
+            <value>ASC Tdr</value>
+          </text>
+          <text id="/data/person/role/chw_supervisor:label">
+            <value>Superviseur ASC</value>
+          </text>
+          <text id="/data/person/role/contact_n:label">
+            <value>Covid contact</value>
+          </text>
+          <text id="/data/person/role/covid_patient:label">
+            <value>Patient with covid-19</value>
+          </text>
+          <text id="/data/person/role/data_entry:label">
+            <value>Data entry</value>
+          </text>
+          <text id="/data/person/role/inputter:label">
+            <value>Enregistreur</value>
+          </text>
+          <text id="/data/person/role/other:label">
+            <value>Autre</value>
+          </text>
+          <text id="/data/person/role/patient:label">
+            <value>Patient</value>
+          </text>
+          <text id="/data/person/role/tracer:label">
+            <value>Tracer</value>
+          </text>
+          <text id="/data/person/role/traveler:label">
+            <value>Voyageur</value>
+          </text>
+          <text id="/data/person/role:hint">
+            <value>-</value>
+          </text>
+          <text id="/data/person/role:label">
+            <value>Rôle</value>
+          </text>
+          <text id="/data/person/role_other:label">
+            <value>Specifiez</value>
+          </text>
+          <text id="/data/person/sex/female:label">
+            <value>Femme</value>
+          </text>
+          <text id="/data/person/sex/male:label">
+            <value>Homme</value>
+          </text>
+          <text id="/data/person/sex:label">
+            <value>Genre</value>
+          </text>
+          <text id="/data/person/short_name:hint">
+            <value>-</value>
+          </text>
+          <text id="/data/person/short_name:jr:constraintMsg">
+            <value>-</value>
+          </text>
+          <text id="/data/person/short_name:label">
+            <value>Nom court</value>
+          </text>
+          <text id="/data/person/town:label">
+            <value>Town</value>
+          </text>
+          <text id="/data/person/traveler/destination_address:label">
+            <value>Adresse</value>
+          </text>
+          <text id="/data/person/traveler/email:jr:requiredMsg">
+            <value>-</value>
+          </text>
+          <text id="/data/person/traveler/email:label">
+            <value>Adresse électronique</value>
+          </text>
+          <text id="/data/person/traveler/home_address:label">
+            <value>Adresse du domicile</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ad:label">
+            <value>Andorre</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ae:label">
+            <value>Emirats Arabes Unis</value>
+          </text>
+          <text id="/data/person/traveler/nationality/af:label">
+            <value>Afghanistan</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ag:label">
+            <value>Antigua-et-Barbuda</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ai:label">
+            <value>Anguilla</value>
+          </text>
+          <text id="/data/person/traveler/nationality/al:label">
+            <value>Albanie</value>
+          </text>
+          <text id="/data/person/traveler/nationality/am:label">
+            <value>Arménie</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ao:label">
+            <value>Angola</value>
+          </text>
+          <text id="/data/person/traveler/nationality/aq:label">
+            <value>Antarctique</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ar:label">
+            <value>Argentine</value>
+          </text>
+          <text id="/data/person/traveler/nationality/as:label">
+            <value>Samoa américaines</value>
+          </text>
+          <text id="/data/person/traveler/nationality/at:label">
+            <value>L'Autriche</value>
+          </text>
+          <text id="/data/person/traveler/nationality/au:label">
+            <value>Australie</value>
+          </text>
+          <text id="/data/person/traveler/nationality/aw:label">
+            <value>Aruba</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ax:label">
+            <value>Iles Aland</value>
+          </text>
+          <text id="/data/person/traveler/nationality/az:label">
+            <value>Azerbaïdjan</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ba:label">
+            <value>Bosnie Herzégovine</value>
+          </text>
+          <text id="/data/person/traveler/nationality/bb:label">
+            <value>Barbade</value>
+          </text>
+          <text id="/data/person/traveler/nationality/bd:label">
+            <value>Bangladesh</value>
+          </text>
+          <text id="/data/person/traveler/nationality/be:label">
+            <value>Belgique</value>
+          </text>
+          <text id="/data/person/traveler/nationality/bf:label">
+            <value>Burkina Faso</value>
+          </text>
+          <text id="/data/person/traveler/nationality/bg:label">
+            <value>Bulgarie</value>
+          </text>
+          <text id="/data/person/traveler/nationality/bh:label">
+            <value>Bahreïn</value>
+          </text>
+          <text id="/data/person/traveler/nationality/bi:label">
+            <value>Burundi</value>
+          </text>
+          <text id="/data/person/traveler/nationality/bj:label">
+            <value>Bénin</value>
+          </text>
+          <text id="/data/person/traveler/nationality/bl:label">
+            <value>Saint Barthélemy</value>
+          </text>
+          <text id="/data/person/traveler/nationality/bm:label">
+            <value>Bermudes</value>
+          </text>
+          <text id="/data/person/traveler/nationality/bn:label">
+            <value>Brunei Darussalam</value>
+          </text>
+          <text id="/data/person/traveler/nationality/bo:label">
+            <value>Bolivie, État plurinational de</value>
+          </text>
+          <text id="/data/person/traveler/nationality/bq:label">
+            <value>Bonaire, Saint-Eustache et Saba</value>
+          </text>
+          <text id="/data/person/traveler/nationality/br:label">
+            <value>Brésil</value>
+          </text>
+          <text id="/data/person/traveler/nationality/bs:label">
+            <value>Bahamas</value>
+          </text>
+          <text id="/data/person/traveler/nationality/bt:label">
+            <value>Bhoutan</value>
+          </text>
+          <text id="/data/person/traveler/nationality/bv:label">
+            <value>Île Bouvet</value>
+          </text>
+          <text id="/data/person/traveler/nationality/bw:label">
+            <value>Botswana</value>
+          </text>
+          <text id="/data/person/traveler/nationality/by:label">
+            <value>Biélorussie</value>
+          </text>
+          <text id="/data/person/traveler/nationality/bz:label">
+            <value>Belize</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ca:label">
+            <value>Canada</value>
+          </text>
+          <text id="/data/person/traveler/nationality/cc:label">
+            <value>Îles Cocos (Keeling)</value>
+          </text>
+          <text id="/data/person/traveler/nationality/cd:label">
+            <value>Congo, la République démocratique du</value>
+          </text>
+          <text id="/data/person/traveler/nationality/cf:label">
+            <value>République centrafricaine</value>
+          </text>
+          <text id="/data/person/traveler/nationality/cg:label">
+            <value>Congo</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ch:label">
+            <value>Suisse</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ci:label">
+            <value>Côte d'Ivoire</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ck:label">
+            <value>les Îles Cook</value>
+          </text>
+          <text id="/data/person/traveler/nationality/cl:label">
+            <value>Chili</value>
+          </text>
+          <text id="/data/person/traveler/nationality/cm:label">
+            <value>Cameroun</value>
+          </text>
+          <text id="/data/person/traveler/nationality/cn:label">
+            <value>Chine</value>
+          </text>
+          <text id="/data/person/traveler/nationality/co:label">
+            <value>Colombie</value>
+          </text>
+          <text id="/data/person/traveler/nationality/cr:label">
+            <value>Costa Rica</value>
+          </text>
+          <text id="/data/person/traveler/nationality/cu:label">
+            <value>Cuba</value>
+          </text>
+          <text id="/data/person/traveler/nationality/cv:label">
+            <value>Cap-Vert</value>
+          </text>
+          <text id="/data/person/traveler/nationality/cw:label">
+            <value>Curacao</value>
+          </text>
+          <text id="/data/person/traveler/nationality/cx:label">
+            <value>L'île de noël</value>
+          </text>
+          <text id="/data/person/traveler/nationality/cy:label">
+            <value>Chypre</value>
+          </text>
+          <text id="/data/person/traveler/nationality/cz:label">
+            <value>République Tchèque</value>
+          </text>
+          <text id="/data/person/traveler/nationality/de:label">
+            <value>Allemagne</value>
+          </text>
+          <text id="/data/person/traveler/nationality/dj:label">
+            <value>Djibouti</value>
+          </text>
+          <text id="/data/person/traveler/nationality/dk:label">
+            <value>Danemark</value>
+          </text>
+          <text id="/data/person/traveler/nationality/dm:label">
+            <value>Dominique</value>
+          </text>
+          <text id="/data/person/traveler/nationality/do:label">
+            <value>République Dominicaine</value>
+          </text>
+          <text id="/data/person/traveler/nationality/dz:label">
+            <value>Algérie</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ec:label">
+            <value>Equateur</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ee:label">
+            <value>Estonie</value>
+          </text>
+          <text id="/data/person/traveler/nationality/eg:label">
+            <value>Egypte</value>
+          </text>
+          <text id="/data/person/traveler/nationality/eh:label">
+            <value>Sahara occidental</value>
+          </text>
+          <text id="/data/person/traveler/nationality/er:label">
+            <value>Érythrée</value>
+          </text>
+          <text id="/data/person/traveler/nationality/es:label">
+            <value>Espagne</value>
+          </text>
+          <text id="/data/person/traveler/nationality/et:label">
+            <value>Ethiopie</value>
+          </text>
+          <text id="/data/person/traveler/nationality/fi:label">
+            <value>Finlande</value>
+          </text>
+          <text id="/data/person/traveler/nationality/fj:label">
+            <value>Fidji</value>
+          </text>
+          <text id="/data/person/traveler/nationality/fk:label">
+            <value>Îles Falkland (Malvinas)</value>
+          </text>
+          <text id="/data/person/traveler/nationality/fm:label">
+            <value>Micronésie, États fédérés de</value>
+          </text>
+          <text id="/data/person/traveler/nationality/fo:label">
+            <value>Îles Féroé</value>
+          </text>
+          <text id="/data/person/traveler/nationality/fr:label">
+            <value>France</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ga:label">
+            <value>Gabon</value>
+          </text>
+          <text id="/data/person/traveler/nationality/gb:label">
+            <value>Royaume-Uni</value>
+          </text>
+          <text id="/data/person/traveler/nationality/gd:label">
+            <value>Grenade</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ge:label">
+            <value>Géorgie</value>
+          </text>
+          <text id="/data/person/traveler/nationality/gf:label">
+            <value>Guyane Française</value>
+          </text>
+          <text id="/data/person/traveler/nationality/gg:label">
+            <value>Guernesey</value>
+          </text>
+          <text id="/data/person/traveler/nationality/gh:label">
+            <value>Ghana</value>
+          </text>
+          <text id="/data/person/traveler/nationality/gi:label">
+            <value>Gibraltar</value>
+          </text>
+          <text id="/data/person/traveler/nationality/gl:label">
+            <value>Groenland</value>
+          </text>
+          <text id="/data/person/traveler/nationality/gm:label">
+            <value>Gambie</value>
+          </text>
+          <text id="/data/person/traveler/nationality/gn:label">
+            <value>Guinée</value>
+          </text>
+          <text id="/data/person/traveler/nationality/gp:label">
+            <value>Guadeloupe</value>
+          </text>
+          <text id="/data/person/traveler/nationality/gq:label">
+            <value>Guinée Équatoriale</value>
+          </text>
+          <text id="/data/person/traveler/nationality/gr:label">
+            <value>Grèce</value>
+          </text>
+          <text id="/data/person/traveler/nationality/gs:label">
+            <value>Géorgie du Sud et les îles Sandwich du Sud</value>
+          </text>
+          <text id="/data/person/traveler/nationality/gt:label">
+            <value>Guatemala</value>
+          </text>
+          <text id="/data/person/traveler/nationality/gu:label">
+            <value>Guam</value>
+          </text>
+          <text id="/data/person/traveler/nationality/gw:label">
+            <value>Guinée-Bissau</value>
+          </text>
+          <text id="/data/person/traveler/nationality/gy:label">
+            <value>Guyane</value>
+          </text>
+          <text id="/data/person/traveler/nationality/hk:label">
+            <value>Hong Kong</value>
+          </text>
+          <text id="/data/person/traveler/nationality/hm:label">
+            <value>Les îles Heard et McDonald</value>
+          </text>
+          <text id="/data/person/traveler/nationality/hn:label">
+            <value>Honduras</value>
+          </text>
+          <text id="/data/person/traveler/nationality/hr:label">
+            <value>Croatie</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ht:label">
+            <value>Haïti</value>
+          </text>
+          <text id="/data/person/traveler/nationality/hu:label">
+            <value>Hongrie</value>
+          </text>
+          <text id="/data/person/traveler/nationality/id:label">
+            <value>Indonésie</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ie:label">
+            <value>Irlande</value>
+          </text>
+          <text id="/data/person/traveler/nationality/il:label">
+            <value>Israël</value>
+          </text>
+          <text id="/data/person/traveler/nationality/im:label">
+            <value>île de Man</value>
+          </text>
+          <text id="/data/person/traveler/nationality/in:label">
+            <value>Inde</value>
+          </text>
+          <text id="/data/person/traveler/nationality/io:label">
+            <value>Territoire britannique de l'océan Indien</value>
+          </text>
+          <text id="/data/person/traveler/nationality/iq:label">
+            <value>Irak</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ir:label">
+            <value>Iran (République islamique d</value>
+          </text>
+          <text id="/data/person/traveler/nationality/is:label">
+            <value>Islande</value>
+          </text>
+          <text id="/data/person/traveler/nationality/it:label">
+            <value>Italie</value>
+          </text>
+          <text id="/data/person/traveler/nationality/je:label">
+            <value>Jersey</value>
+          </text>
+          <text id="/data/person/traveler/nationality/jm:label">
+            <value>Jamaïque</value>
+          </text>
+          <text id="/data/person/traveler/nationality/jo:label">
+            <value>Jordan</value>
+          </text>
+          <text id="/data/person/traveler/nationality/jp:label">
+            <value>Japon</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ke:label">
+            <value>Kenya</value>
+          </text>
+          <text id="/data/person/traveler/nationality/kg:label">
+            <value>Kirghizistan</value>
+          </text>
+          <text id="/data/person/traveler/nationality/kh:label">
+            <value>Cambodge</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ki:label">
+            <value>Kiribati</value>
+          </text>
+          <text id="/data/person/traveler/nationality/km:label">
+            <value>Comores</value>
+          </text>
+          <text id="/data/person/traveler/nationality/kn:label">
+            <value>Saint-Christophe-et-Niévès</value>
+          </text>
+          <text id="/data/person/traveler/nationality/kp:label">
+            <value>République populaire démocratique de Corée</value>
+          </text>
+          <text id="/data/person/traveler/nationality/kr:label">
+            <value>Corée, République de</value>
+          </text>
+          <text id="/data/person/traveler/nationality/kw:label">
+            <value>Koweit</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ky:label">
+            <value>Îles Caïmans</value>
+          </text>
+          <text id="/data/person/traveler/nationality/kz:label">
+            <value>Kazakhstan</value>
+          </text>
+          <text id="/data/person/traveler/nationality/la:label">
+            <value>République démocratique populaire lao</value>
+          </text>
+          <text id="/data/person/traveler/nationality/lb:label">
+            <value>Liban</value>
+          </text>
+          <text id="/data/person/traveler/nationality/lc:label">
+            <value>Sainte-Lucie</value>
+          </text>
+          <text id="/data/person/traveler/nationality/li:label">
+            <value>Liechtenstein</value>
+          </text>
+          <text id="/data/person/traveler/nationality/lk:label">
+            <value>Sri Lanka</value>
+          </text>
+          <text id="/data/person/traveler/nationality/lr:label">
+            <value>Libéria</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ls:label">
+            <value>Lesotho</value>
+          </text>
+          <text id="/data/person/traveler/nationality/lt:label">
+            <value>Lituanie</value>
+          </text>
+          <text id="/data/person/traveler/nationality/lu:label">
+            <value>Luxembourg</value>
+          </text>
+          <text id="/data/person/traveler/nationality/lv:label">
+            <value>Lettonie</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ly:label">
+            <value>Libye</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ma:label">
+            <value>Maroc</value>
+          </text>
+          <text id="/data/person/traveler/nationality/mc:label">
+            <value>Monaco</value>
+          </text>
+          <text id="/data/person/traveler/nationality/md:label">
+            <value>Moldova, République de</value>
+          </text>
+          <text id="/data/person/traveler/nationality/me:label">
+            <value>Monténégro</value>
+          </text>
+          <text id="/data/person/traveler/nationality/mf:label">
+            <value>Saint Martin (partie française)</value>
+          </text>
+          <text id="/data/person/traveler/nationality/mg:label">
+            <value>Madagascar</value>
+          </text>
+          <text id="/data/person/traveler/nationality/mh:label">
+            <value>Iles Marshall</value>
+          </text>
+          <text id="/data/person/traveler/nationality/mk:label">
+            <value>Macédoine, l'ex-République yougoslave de</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ml:label">
+            <value>Mali</value>
+          </text>
+          <text id="/data/person/traveler/nationality/mm:label">
+            <value>Myanmar</value>
+          </text>
+          <text id="/data/person/traveler/nationality/mn:label">
+            <value>Mongolie</value>
+          </text>
+          <text id="/data/person/traveler/nationality/mo:label">
+            <value>Macao</value>
+          </text>
+          <text id="/data/person/traveler/nationality/mp:label">
+            <value>Îles Mariannes du Nord</value>
+          </text>
+          <text id="/data/person/traveler/nationality/mq:label">
+            <value>Martinique</value>
+          </text>
+          <text id="/data/person/traveler/nationality/mr:label">
+            <value>Mauritanie</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ms:label">
+            <value>Montserrat</value>
+          </text>
+          <text id="/data/person/traveler/nationality/mt:label">
+            <value>Malte</value>
+          </text>
+          <text id="/data/person/traveler/nationality/mu:label">
+            <value>Ile Maurice</value>
+          </text>
+          <text id="/data/person/traveler/nationality/mv:label">
+            <value>Maldives</value>
+          </text>
+          <text id="/data/person/traveler/nationality/mw:label">
+            <value>Malawi</value>
+          </text>
+          <text id="/data/person/traveler/nationality/mx:label">
+            <value>Mexique</value>
+          </text>
+          <text id="/data/person/traveler/nationality/my:label">
+            <value>Malaisie</value>
+          </text>
+          <text id="/data/person/traveler/nationality/mz:label">
+            <value>Mozambique</value>
+          </text>
+          <text id="/data/person/traveler/nationality/na:label">
+            <value>Namibie</value>
+          </text>
+          <text id="/data/person/traveler/nationality/nc:label">
+            <value>Nouvelle Calédonie</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ne:label">
+            <value>Niger</value>
+          </text>
+          <text id="/data/person/traveler/nationality/nf:label">
+            <value>l'ile de Norfolk</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ng:label">
+            <value>Nigeria</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ni:label">
+            <value>Nicaragua</value>
+          </text>
+          <text id="/data/person/traveler/nationality/nl:label">
+            <value>Pays-Bas</value>
+          </text>
+          <text id="/data/person/traveler/nationality/no:label">
+            <value>Norvège</value>
+          </text>
+          <text id="/data/person/traveler/nationality/np:label">
+            <value>Népal</value>
+          </text>
+          <text id="/data/person/traveler/nationality/nr:label">
+            <value>Nauru</value>
+          </text>
+          <text id="/data/person/traveler/nationality/nu:label">
+            <value>Niue</value>
+          </text>
+          <text id="/data/person/traveler/nationality/nz:label">
+            <value>Nouvelle-Zélande</value>
+          </text>
+          <text id="/data/person/traveler/nationality/om:label">
+            <value>Oman</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ot:label">
+            <value>Autre</value>
+          </text>
+          <text id="/data/person/traveler/nationality/pa:label">
+            <value>Panama</value>
+          </text>
+          <text id="/data/person/traveler/nationality/pe:label">
+            <value>Pérou</value>
+          </text>
+          <text id="/data/person/traveler/nationality/pf:label">
+            <value>Polynésie française</value>
+          </text>
+          <text id="/data/person/traveler/nationality/pg:label">
+            <value>Papouasie Nouvelle Guinée</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ph:label">
+            <value>Philippines</value>
+          </text>
+          <text id="/data/person/traveler/nationality/pk:label">
+            <value>Pakistan</value>
+          </text>
+          <text id="/data/person/traveler/nationality/pl:label">
+            <value>Pologne</value>
+          </text>
+          <text id="/data/person/traveler/nationality/pm:label">
+            <value>Saint-Pierre-et-Miquelon</value>
+          </text>
+          <text id="/data/person/traveler/nationality/pn:label">
+            <value>Pitcairn</value>
+          </text>
+          <text id="/data/person/traveler/nationality/pr:label">
+            <value>Porto Rico</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ps:label">
+            <value>Territoires palestiniens</value>
+          </text>
+          <text id="/data/person/traveler/nationality/pt:label">
+            <value>le Portugal</value>
+          </text>
+          <text id="/data/person/traveler/nationality/pw:label">
+            <value>Palau</value>
+          </text>
+          <text id="/data/person/traveler/nationality/py:label">
+            <value>Paraguay</value>
+          </text>
+          <text id="/data/person/traveler/nationality/qa:label">
+            <value>Qatar</value>
+          </text>
+          <text id="/data/person/traveler/nationality/re:label">
+            <value>Réunion</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ro:label">
+            <value>Roumanie</value>
+          </text>
+          <text id="/data/person/traveler/nationality/rs:label">
+            <value>Serbie</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ru:label">
+            <value>Fédération Russe</value>
+          </text>
+          <text id="/data/person/traveler/nationality/rw:label">
+            <value>Rwanda</value>
+          </text>
+          <text id="/data/person/traveler/nationality/sa:label">
+            <value>Arabie Saoudite</value>
+          </text>
+          <text id="/data/person/traveler/nationality/sb:label">
+            <value>îles Salomon</value>
+          </text>
+          <text id="/data/person/traveler/nationality/sc:label">
+            <value>les Seychelles</value>
+          </text>
+          <text id="/data/person/traveler/nationality/sd:label">
+            <value>Soudan</value>
+          </text>
+          <text id="/data/person/traveler/nationality/se:label">
+            <value>Suède</value>
+          </text>
+          <text id="/data/person/traveler/nationality/sg:label">
+            <value>Singapour</value>
+          </text>
+          <text id="/data/person/traveler/nationality/sh:label">
+            <value>Sainte-Hélène, Ascension et Tristan da Cunha</value>
+          </text>
+          <text id="/data/person/traveler/nationality/si:label">
+            <value>Slovénie</value>
+          </text>
+          <text id="/data/person/traveler/nationality/sj:label">
+            <value>Spitzberg et Jan Mayen</value>
+          </text>
+          <text id="/data/person/traveler/nationality/sk:label">
+            <value>Slovaquie</value>
+          </text>
+          <text id="/data/person/traveler/nationality/sl:label">
+            <value>Sierra Leone</value>
+          </text>
+          <text id="/data/person/traveler/nationality/sm:label">
+            <value>Saint Marin</value>
+          </text>
+          <text id="/data/person/traveler/nationality/sn:label">
+            <value>Sénégal</value>
+          </text>
+          <text id="/data/person/traveler/nationality/so:label">
+            <value>Somalie</value>
+          </text>
+          <text id="/data/person/traveler/nationality/sr:label">
+            <value>Suriname</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ss:label">
+            <value>Soudan du sud</value>
+          </text>
+          <text id="/data/person/traveler/nationality/st:label">
+            <value>Sao Tomé-et-Principe</value>
+          </text>
+          <text id="/data/person/traveler/nationality/sv:label">
+            <value>Le Salvador</value>
+          </text>
+          <text id="/data/person/traveler/nationality/sx:label">
+            <value>Sint Maarten (partie néerlandaise)</value>
+          </text>
+          <text id="/data/person/traveler/nationality/sy:label">
+            <value>République arabe syrienne</value>
+          </text>
+          <text id="/data/person/traveler/nationality/sz:label">
+            <value>Swaziland</value>
+          </text>
+          <text id="/data/person/traveler/nationality/tc:label">
+            <value>îles Turques-et-Caïques</value>
+          </text>
+          <text id="/data/person/traveler/nationality/td:label">
+            <value>Tchad</value>
+          </text>
+          <text id="/data/person/traveler/nationality/tf:label">
+            <value>Terres australes françaises</value>
+          </text>
+          <text id="/data/person/traveler/nationality/tg:label">
+            <value>Aller</value>
+          </text>
+          <text id="/data/person/traveler/nationality/th:label">
+            <value>Thaïlande</value>
+          </text>
+          <text id="/data/person/traveler/nationality/tj:label">
+            <value>Tadjikistan</value>
+          </text>
+          <text id="/data/person/traveler/nationality/tk:label">
+            <value>Tokelau</value>
+          </text>
+          <text id="/data/person/traveler/nationality/tl:label">
+            <value>Timor-Leste</value>
+          </text>
+          <text id="/data/person/traveler/nationality/tm:label">
+            <value>Turkménistan</value>
+          </text>
+          <text id="/data/person/traveler/nationality/tn:label">
+            <value>Tunisie</value>
+          </text>
+          <text id="/data/person/traveler/nationality/to:label">
+            <value>Tonga</value>
+          </text>
+          <text id="/data/person/traveler/nationality/tr:label">
+            <value>dinde</value>
+          </text>
+          <text id="/data/person/traveler/nationality/tt:label">
+            <value>Trinité-et-Tobago</value>
+          </text>
+          <text id="/data/person/traveler/nationality/tv:label">
+            <value>Tuvalu</value>
+          </text>
+          <text id="/data/person/traveler/nationality/tw:label">
+            <value>Taiwan, Province de Chine</value>
+          </text>
+          <text id="/data/person/traveler/nationality/tz:label">
+            <value>Tanzanie, République-Unie de</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ua:label">
+            <value>Ukraine</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ug:label">
+            <value>Ouganda</value>
+          </text>
+          <text id="/data/person/traveler/nationality/um:label">
+            <value>Îles mineures éloignées des États-Unis</value>
+          </text>
+          <text id="/data/person/traveler/nationality/us:label">
+            <value>États Unis</value>
+          </text>
+          <text id="/data/person/traveler/nationality/uy:label">
+            <value>Uruguay</value>
+          </text>
+          <text id="/data/person/traveler/nationality/uz:label">
+            <value>Ouzbékistan</value>
+          </text>
+          <text id="/data/person/traveler/nationality/va:label">
+            <value>Saint-Siège (Cité du Vatican)</value>
+          </text>
+          <text id="/data/person/traveler/nationality/vc:label">
+            <value>Saint-Vincent-et-les-Grenadines</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ve:label">
+            <value>Venezuela, République bolivarienne du</value>
+          </text>
+          <text id="/data/person/traveler/nationality/vg:label">
+            <value>Îles Vierges britanniques</value>
+          </text>
+          <text id="/data/person/traveler/nationality/vi:label">
+            <value>Îles Vierges américaines,</value>
+          </text>
+          <text id="/data/person/traveler/nationality/vn:label">
+            <value>Viet Nam</value>
+          </text>
+          <text id="/data/person/traveler/nationality/vu:label">
+            <value>Vanuatu</value>
+          </text>
+          <text id="/data/person/traveler/nationality/wf:label">
+            <value>Wallis et Futuna</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ws:label">
+            <value>Samoa</value>
+          </text>
+          <text id="/data/person/traveler/nationality/ye:label">
+            <value>Yémen</value>
+          </text>
+          <text id="/data/person/traveler/nationality/yt:label">
+            <value>Mayotte</value>
+          </text>
+          <text id="/data/person/traveler/nationality/za:label">
+            <value>Afrique du Sud</value>
+          </text>
+          <text id="/data/person/traveler/nationality/zm:label">
+            <value>Zambie</value>
+          </text>
+          <text id="/data/person/traveler/nationality/zw:label">
+            <value>Zimbabwe</value>
+          </text>
+          <text id="/data/person/traveler/nationality:jr:requiredMsg">
+            <value>-</value>
+          </text>
+          <text id="/data/person/traveler/nationality:label">
+            <value>Nationalité</value>
+          </text>
+          <text id="/data/person/traveler/nationality_other:jr:requiredMsg">
+            <value>-</value>
+          </text>
+          <text id="/data/person/traveler/nationality_other:label">
+            <value>Veuillez préciser la nationalité</value>
+          </text>
+          <text id="/data/person/traveler/passport:jr:requiredMsg">
+            <value>-</value>
+          </text>
+          <text id="/data/person/traveler/passport:label">
+            <value>Numéro de passeport</value>
+          </text>
+          <text id="/data/person/traveler/skype:label">
+            <value>ID Skype</value>
+          </text>
+          <text id="/data/person/traveler:label">
+            <value>Informations du voyageur</value>
+          </text>
+          <text id="/data/person/type:label">
+            <value>Type de personne</value>
+          </text>
+          <text id="/data/person:label">
+            <value>Modifier personne</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <data delimiter="#" id="contact:person:edit" prefix="J1!contact:person:edit!" version="2020-04-16 13-57">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <user>
+              <contact_id/>
+              <facility_id/>
+              <name/>
+            </user>
+          </inputs>
+          <person>
+            <parent/>
+            <_id/>
+            <type>person</type>
+            <name/>
+            <short_name/>
+            <date_of_birth/>
+            <date_of_birth_method/>
+            <role/>
+            <traveler>
+              <nationality/>
+              <nationality_other/>
+              <passport/>
+              <home_address/>
+              <destination_address/>
+              <email/>
+              <skype/>
+            </traveler>
+            <ephemeral_dob>
+              <dob_calendar/>
+              <age_label/>
+              <age_years/>
+              <age_months/>
+              <dob_method/>
+              <ephemeral_months/>
+              <ephemeral_years/>
+              <dob_approx/>
+              <dob_raw/>
+              <dob_iso/>
+              <dob_debug/>
+            </ephemeral_dob>
+            <case_id/>
+            <phone/>
+            <phone_alternate/>
+            <address/>
+            <town/>
+            <sex/>
+            <role_other/>
+            <external_id/>
+            <notes/>
+            <meta tag="hidden">
+              <created_by/>
+              <created_by_person_uuid/>
+              <created_by_place_uuid/>
+              <last_edited_by/>
+              <last_edited_by_person_uuid/>
+              <last_edited_by_place_uuid/>
+            </meta>
+          </person>
+          <init>
+            <person_name/>
+            <person_place_name/>
+            <person_parent/>
+            <type/>
+            <name/>
+            <note_place/>
+            <change_parent>false</change_parent>
+            <edited_place_type/>
+            <id_district_hospital/>
+            <id_health_center/>
+            <id_clinic/>
+          </init>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </data>
+      </instance>
+      <bind nodeset="/data/inputs" relevant="false()"/>
+      <bind nodeset="/data/inputs/user/contact_id" type="string"/>
+      <bind nodeset="/data/inputs/user/facility_id" type="string"/>
+      <bind nodeset="/data/inputs/user/name" type="string"/>
+      <bind calculate="../../person/name" nodeset="/data/init/person_name" type="string"/>
+      <bind calculate="../name" nodeset="/data/init/person_place_name" type="string"/>
+      <bind calculate=" /data/person/parent " nodeset="/data/init/person_parent" readonly="true()" type="string"/>
+      <bind nodeset="/data/init/type" type="string"/>
+      <bind nodeset="/data/init/name" type="string"/>
+      <bind nodeset="/data/init/note_place" readonly="true()" type="string"/>
+      <bind nodeset="/data/init/change_parent" required="true()" type="select1"/>
+      <bind nodeset="/data/init/edited_place_type" relevant="selected( /data/init/change_parent , 'true')" required="true()" type="select1"/>
+      <bind nodeset="/data/init/id_district_hospital" relevant="selected( /data/init/change_parent , 'true') and selected( /data/init/edited_place_type , 'district_hospital')" required="true()" type="db:district_hospital"/>
+      <bind nodeset="/data/init/id_health_center" relevant="selected( /data/init/change_parent , 'true') and selected( /data/init/edited_place_type , 'health_center')" required="true()" type="db:health_center"/>
+      <bind nodeset="/data/init/id_clinic" relevant="selected( /data/init/change_parent , 'true') and selected( /data/init/edited_place_type , 'clinic')" required="true()" type="db:clinic"/>
+      <bind calculate="coalesce(coalesce(coalesce( /data/init/id_district_hospital ,  /data/init/id_health_center ),  /data/init/id_clinic ), /data/person/parent )" nodeset="/data/person/parent" type="string"/>
+      <bind nodeset="/data/person/_id" readonly="true()" type="string"/>
+      <bind nodeset="/data/person/type" readonly="true()" type="string"/>
+      <bind nodeset="/data/person/name" required="true()" type="string"/>
+      <bind constraint="string-length(.) &lt;= 10" jr:constraintMsg="jr:itext('/data/person/short_name:jr:constraintMsg')" nodeset="/data/person/short_name" required="false()" type="string"/>
+      <bind calculate="../ephemeral_dob/dob_iso" nodeset="/data/person/date_of_birth" required="true()" type="string"/>
+      <bind calculate="../ephemeral_dob/dob_method" nodeset="/data/person/date_of_birth_method" type="string"/>
+      <bind nodeset="/data/person/role" type="select1"/>
+      <bind nodeset="/data/person/traveler" relevant="selected(../role, 'traveler')"/>
+      <bind jr:requiredMsg="jr:itext('/data/person/traveler/nationality:jr:requiredMsg')" nodeset="/data/person/traveler/nationality" required="true()" type="select1"/>
+      <bind jr:requiredMsg="jr:itext('/data/person/traveler/nationality_other:jr:requiredMsg')" nodeset="/data/person/traveler/nationality_other" relevant="selected(../nationality, 'ot')" required="true()" type="string"/>
+      <bind jr:requiredMsg="jr:itext('/data/person/traveler/passport:jr:requiredMsg')" nodeset="/data/person/traveler/passport" required="true()" type="string"/>
+      <bind nodeset="/data/person/traveler/home_address" type="string"/>
+      <bind nodeset="/data/person/traveler/destination_address" type="string"/>
+      <bind jr:requiredMsg="jr:itext('/data/person/traveler/email:jr:requiredMsg')" nodeset="/data/person/traveler/email" required="true()" type="string"/>
+      <bind nodeset="/data/person/traveler/skype" type="string"/>
+      <bind constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" jr:constraintMsg="jr:itext('/data/person/ephemeral_dob/dob_calendar:jr:constraintMsg')" nodeset="/data/person/ephemeral_dob/dob_calendar" relevant="not(selected(../dob_method,'approx'))" required="true()" type="date"/>
+      <bind nodeset="/data/person/ephemeral_dob/age_label" readonly="true()" relevant="selected(../dob_method,'approx')" type="string"/>
+      <bind constraint=". &gt;= 0 and . &lt;= 130" jr:constraintMsg="jr:itext('/data/person/ephemeral_dob/age_years:jr:constraintMsg')" nodeset="/data/person/ephemeral_dob/age_years" relevant="selected(../dob_method,'approx')" required="true()" type="int"/>
+      <bind constraint=". &gt;= 0 and . &lt;= 11" jr:constraintMsg="jr:itext('/data/person/ephemeral_dob/age_months:jr:constraintMsg')" nodeset="/data/person/ephemeral_dob/age_months" relevant="selected(../dob_method,'approx')" type="int"/>
+      <bind nodeset="/data/person/ephemeral_dob/dob_method" type="select"/>
+      <bind calculate="if(format-date-time(today(),&quot;%m&quot;) - ../age_months &lt; 0, format-date-time(today(),&quot;%m&quot;) - ../age_months + 12, format-date-time(today(),&quot;%m&quot;) - ../age_months)" nodeset="/data/person/ephemeral_dob/ephemeral_months" type="string"/>
+      <bind calculate="if(format-date-time(today(),&quot;%m&quot;) - ../age_months &lt; 0, format-date-time(today(),&quot;%Y&quot;) - ../age_years - 1, format-date-time(today(),&quot;%Y&quot;) -../age_years)" nodeset="/data/person/ephemeral_dob/ephemeral_years" type="string"/>
+      <bind calculate="concat(string( /data/person/ephemeral_dob/ephemeral_years ),'-',if( /data/person/ephemeral_dob/ephemeral_months &lt;10, concat('0',string( /data/person/ephemeral_dob/ephemeral_months )),  /data/person/ephemeral_dob/ephemeral_months ),'-',string(format-date-time(today(), &quot;%d&quot;)))" nodeset="/data/person/ephemeral_dob/dob_approx" type="string"/>
+      <bind calculate="if(not(selected( ../dob_method,'approx')), 
+../dob_calendar,
+../dob_approx)" nodeset="/data/person/ephemeral_dob/dob_raw" type="string"/>
+      <bind calculate="format-date-time(../dob_raw,&quot;%Y-%m-%d&quot;)" nodeset="/data/person/ephemeral_dob/dob_iso" type="string"/>
+      <bind nodeset="/data/person/ephemeral_dob/dob_debug" readonly="true()" relevant="false()" type="string"/>
+      <bind nodeset="/data/person/case_id" relevant="selected(../role, 'covid_patient')" type="string"/>
+      <bind constraint="true()" jr:constraintMsg="jr:itext('/data/person/phone:jr:constraintMsg')" nodeset="/data/person/phone" type="tel"/>
+      <bind constraint="true()" jr:constraintMsg="jr:itext('/data/person/phone_alternate:jr:constraintMsg')" nodeset="/data/person/phone_alternate" type="tel"/>
+      <bind nodeset="/data/person/address" relevant="selected(../role, 'covid_patient')" type="string"/>
+      <bind nodeset="/data/person/town" relevant="selected(../role, 'covid_patient')" type="string"/>
+      <bind nodeset="/data/person/sex" type="select1"/>
+      <bind nodeset="/data/person/role_other" relevant="selected(  /data/person/role ,'other')" required="true()" type="string"/>
+      <bind nodeset="/data/person/external_id" type="string"/>
+      <bind nodeset="/data/person/notes" type="string"/>
+      <bind nodeset="/data/person/meta/created_by" readonly="true()" type="string"/>
+      <bind nodeset="/data/person/meta/created_by_person_uuid" readonly="true()" type="string"/>
+      <bind nodeset="/data/person/meta/created_by_place_uuid" readonly="true()" type="string"/>
+      <bind calculate="../../../inputs/user/name" nodeset="/data/person/meta/last_edited_by" type="string"/>
+      <bind calculate="../../../inputs/user/contact_id" nodeset="/data/person/meta/last_edited_by_person_uuid" type="string"/>
+      <bind calculate="../../../inputs/user/facility_id" nodeset="/data/person/meta/last_edited_by_place_uuid" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/data/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group ref="/data/inputs">
+      <group ref="/data/inputs/user">
+        <input ref="/data/inputs/user/contact_id">
+          <label ref="jr:itext('/data/inputs/user/contact_id:label')"/>
+        </input>
+        <input ref="/data/inputs/user/facility_id">
+          <label ref="jr:itext('/data/inputs/user/facility_id:label')"/>
+        </input>
+        <input ref="/data/inputs/user/name">
+          <label ref="jr:itext('/data/inputs/user/name:label')"/>
+        </input>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/data/init">
+      <input appearance="db-object hidden" ref="/data/init/person_parent">
+        <label ref="jr:itext('/data/init/person_parent:label')"/>
+      </input>
+      <input appearance="hidden" ref="/data/init/type"/>
+      <input appearance="hidden" ref="/data/init/name"/>
+      <input ref="/data/init/note_place">
+        <label ref="jr:itext('/data/init/note_place:label')"/>
+      </input>
+      <select1 appearance="horizontal-compact" ref="/data/init/change_parent">
+        <label ref="jr:itext('/data/init/change_parent:label')"/>
+        <item>
+          <label ref="jr:itext('/data/init/change_parent/true:label')"/>
+          <value>true</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/init/change_parent/false:label')"/>
+          <value>false</value>
+        </item>
+      </select1>
+      <select1 appearance="horizontal-compact" ref="/data/init/edited_place_type">
+        <label ref="jr:itext('/data/init/edited_place_type:label')"/>
+        <item>
+          <label ref="jr:itext('/data/init/edited_place_type/district_hospital:label')"/>
+          <value>district_hospital</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/init/edited_place_type/health_center:label')"/>
+          <value>health_center</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/init/edited_place_type/clinic:label')"/>
+          <value>clinic</value>
+        </item>
+      </select1>
+      <input appearance="db-object bind-id-only" ref="/data/init/id_district_hospital">
+        <label ref="jr:itext('/data/init/id_district_hospital:label')"/>
+      </input>
+      <input appearance="db-object bind-id-only" ref="/data/init/id_health_center">
+        <label ref="jr:itext('/data/init/id_health_center:label')"/>
+      </input>
+      <input appearance="db-object bind-id-only" ref="/data/init/id_clinic">
+        <label ref="jr:itext('/data/init/id_clinic:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/data/person">
+      <label ref="jr:itext('/data/person:label')"/>
+      <input ref="/data/person/name">
+        <label ref="jr:itext('/data/person/name:label')"/>
+      </input>
+      <input ref="/data/person/short_name">
+        <label ref="jr:itext('/data/person/short_name:label')"/>
+        <hint ref="jr:itext('/data/person/short_name:hint')"/>
+      </input>
+      <select1 ref="/data/person/role">
+        <label ref="jr:itext('/data/person/role:label')"/>
+        <hint ref="jr:itext('/data/person/role:hint')"/>
+        <item>
+          <label ref="jr:itext('/data/person/role/chw:label')"/>
+          <value>chw</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/role/chw_supervisor:label')"/>
+          <value>chw_supervisor</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/role/data_entry:label')"/>
+          <value>data_entry</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/role/tracer:label')"/>
+          <value>tracer</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/role/patient:label')"/>
+          <value>patient</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/role/covid_patient:label')"/>
+          <value>covid_patient</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/role/other:label')"/>
+          <value>other</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/role/chw_rdt:label')"/>
+          <value>chw_rdt</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/role/traveler:label')"/>
+          <value>traveler</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/role/inputter:label')"/>
+          <value>inputter</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/role/contact_n:label')"/>
+          <value>contact_n</value>
+        </item>
+      </select1>
+      <group ref="/data/person/traveler">
+        <label ref="jr:itext('/data/person/traveler:label')"/>
+        <select1 appearance="minimal" ref="/data/person/traveler/nationality">
+          <label ref="jr:itext('/data/person/traveler/nationality:label')"/>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/af:label')"/>
+            <value>af</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/ax:label')"/>
+            <value>ax</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/al:label')"/>
+            <value>al</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/dz:label')"/>
+            <value>dz</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/as:label')"/>
+            <value>as</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/ad:label')"/>
+            <value>ad</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/ao:label')"/>
+            <value>ao</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/ai:label')"/>
+            <value>ai</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/aq:label')"/>
+            <value>aq</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/ag:label')"/>
+            <value>ag</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/ar:label')"/>
+            <value>ar</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/am:label')"/>
+            <value>am</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/aw:label')"/>
+            <value>aw</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/au:label')"/>
+            <value>au</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/at:label')"/>
+            <value>at</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/az:label')"/>
+            <value>az</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/bs:label')"/>
+            <value>bs</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/bh:label')"/>
+            <value>bh</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/bd:label')"/>
+            <value>bd</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/bb:label')"/>
+            <value>bb</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/by:label')"/>
+            <value>by</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/be:label')"/>
+            <value>be</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/bz:label')"/>
+            <value>bz</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/bj:label')"/>
+            <value>bj</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/bm:label')"/>
+            <value>bm</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/bt:label')"/>
+            <value>bt</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/bo:label')"/>
+            <value>bo</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/bq:label')"/>
+            <value>bq</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/ba:label')"/>
+            <value>ba</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/bw:label')"/>
+            <value>bw</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/bv:label')"/>
+            <value>bv</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/br:label')"/>
+            <value>br</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/io:label')"/>
+            <value>io</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/bn:label')"/>
+            <value>bn</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/bg:label')"/>
+            <value>bg</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/bf:label')"/>
+            <value>bf</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/bi:label')"/>
+            <value>bi</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/kh:label')"/>
+            <value>kh</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/cm:label')"/>
+            <value>cm</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/ca:label')"/>
+            <value>ca</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/cv:label')"/>
+            <value>cv</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/ky:label')"/>
+            <value>ky</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/cf:label')"/>
+            <value>cf</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/td:label')"/>
+            <value>td</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/cl:label')"/>
+            <value>cl</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/cn:label')"/>
+            <value>cn</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/cx:label')"/>
+            <value>cx</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/cc:label')"/>
+            <value>cc</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/co:label')"/>
+            <value>co</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/km:label')"/>
+            <value>km</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/cg:label')"/>
+            <value>cg</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/cd:label')"/>
+            <value>cd</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/ck:label')"/>
+            <value>ck</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/cr:label')"/>
+            <value>cr</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/ci:label')"/>
+            <value>ci</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/hr:label')"/>
+            <value>hr</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/cu:label')"/>
+            <value>cu</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/cw:label')"/>
+            <value>cw</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/cy:label')"/>
+            <value>cy</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/cz:label')"/>
+            <value>cz</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/dk:label')"/>
+            <value>dk</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/dj:label')"/>
+            <value>dj</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/dm:label')"/>
+            <value>dm</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/do:label')"/>
+            <value>do</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/ec:label')"/>
+            <value>ec</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/eg:label')"/>
+            <value>eg</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/sv:label')"/>
+            <value>sv</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/gq:label')"/>
+            <value>gq</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/er:label')"/>
+            <value>er</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/ee:label')"/>
+            <value>ee</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/et:label')"/>
+            <value>et</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/fk:label')"/>
+            <value>fk</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/fo:label')"/>
+            <value>fo</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/fj:label')"/>
+            <value>fj</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/fi:label')"/>
+            <value>fi</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/fr:label')"/>
+            <value>fr</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/gf:label')"/>
+            <value>gf</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/pf:label')"/>
+            <value>pf</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/tf:label')"/>
+            <value>tf</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/ga:label')"/>
+            <value>ga</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/gm:label')"/>
+            <value>gm</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/ge:label')"/>
+            <value>ge</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/de:label')"/>
+            <value>de</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/gh:label')"/>
+            <value>gh</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/gi:label')"/>
+            <value>gi</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/gr:label')"/>
+            <value>gr</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/gl:label')"/>
+            <value>gl</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/gd:label')"/>
+            <value>gd</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/gp:label')"/>
+            <value>gp</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/gu:label')"/>
+            <value>gu</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/gt:label')"/>
+            <value>gt</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/gg:label')"/>
+            <value>gg</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/gn:label')"/>
+            <value>gn</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/gw:label')"/>
+            <value>gw</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/gy:label')"/>
+            <value>gy</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/ht:label')"/>
+            <value>ht</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/hm:label')"/>
+            <value>hm</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/va:label')"/>
+            <value>va</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/hn:label')"/>
+            <value>hn</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/hk:label')"/>
+            <value>hk</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/hu:label')"/>
+            <value>hu</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/is:label')"/>
+            <value>is</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/in:label')"/>
+            <value>in</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/id:label')"/>
+            <value>id</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/ir:label')"/>
+            <value>ir</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/iq:label')"/>
+            <value>iq</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/ie:label')"/>
+            <value>ie</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/im:label')"/>
+            <value>im</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/il:label')"/>
+            <value>il</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/it:label')"/>
+            <value>it</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/jm:label')"/>
+            <value>jm</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/jp:label')"/>
+            <value>jp</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/je:label')"/>
+            <value>je</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/jo:label')"/>
+            <value>jo</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/kz:label')"/>
+            <value>kz</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/ke:label')"/>
+            <value>ke</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/ki:label')"/>
+            <value>ki</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/kp:label')"/>
+            <value>kp</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/kr:label')"/>
+            <value>kr</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/kw:label')"/>
+            <value>kw</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/kg:label')"/>
+            <value>kg</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/la:label')"/>
+            <value>la</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/lv:label')"/>
+            <value>lv</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/lb:label')"/>
+            <value>lb</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/ls:label')"/>
+            <value>ls</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/lr:label')"/>
+            <value>lr</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/ly:label')"/>
+            <value>ly</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/li:label')"/>
+            <value>li</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/lt:label')"/>
+            <value>lt</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/lu:label')"/>
+            <value>lu</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/mo:label')"/>
+            <value>mo</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/mk:label')"/>
+            <value>mk</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/mg:label')"/>
+            <value>mg</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/mw:label')"/>
+            <value>mw</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/my:label')"/>
+            <value>my</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/mv:label')"/>
+            <value>mv</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/ml:label')"/>
+            <value>ml</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/mt:label')"/>
+            <value>mt</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/mh:label')"/>
+            <value>mh</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/mq:label')"/>
+            <value>mq</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/mr:label')"/>
+            <value>mr</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/mu:label')"/>
+            <value>mu</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/yt:label')"/>
+            <value>yt</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/mx:label')"/>
+            <value>mx</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/fm:label')"/>
+            <value>fm</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/md:label')"/>
+            <value>md</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/mc:label')"/>
+            <value>mc</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/mn:label')"/>
+            <value>mn</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/me:label')"/>
+            <value>me</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/ms:label')"/>
+            <value>ms</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/ma:label')"/>
+            <value>ma</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/mz:label')"/>
+            <value>mz</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/mm:label')"/>
+            <value>mm</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/na:label')"/>
+            <value>na</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/nr:label')"/>
+            <value>nr</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/np:label')"/>
+            <value>np</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/nl:label')"/>
+            <value>nl</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/nc:label')"/>
+            <value>nc</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/nz:label')"/>
+            <value>nz</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/ni:label')"/>
+            <value>ni</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/ne:label')"/>
+            <value>ne</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/ng:label')"/>
+            <value>ng</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/nu:label')"/>
+            <value>nu</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/nf:label')"/>
+            <value>nf</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/mp:label')"/>
+            <value>mp</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/no:label')"/>
+            <value>no</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/om:label')"/>
+            <value>om</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/pk:label')"/>
+            <value>pk</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/pw:label')"/>
+            <value>pw</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/ps:label')"/>
+            <value>ps</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/pa:label')"/>
+            <value>pa</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/pg:label')"/>
+            <value>pg</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/py:label')"/>
+            <value>py</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/pe:label')"/>
+            <value>pe</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/ph:label')"/>
+            <value>ph</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/pn:label')"/>
+            <value>pn</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/pl:label')"/>
+            <value>pl</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/pt:label')"/>
+            <value>pt</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/pr:label')"/>
+            <value>pr</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/qa:label')"/>
+            <value>qa</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/re:label')"/>
+            <value>re</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/ro:label')"/>
+            <value>ro</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/ru:label')"/>
+            <value>ru</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/rw:label')"/>
+            <value>rw</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/bl:label')"/>
+            <value>bl</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/sh:label')"/>
+            <value>sh</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/kn:label')"/>
+            <value>kn</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/lc:label')"/>
+            <value>lc</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/mf:label')"/>
+            <value>mf</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/pm:label')"/>
+            <value>pm</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/vc:label')"/>
+            <value>vc</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/ws:label')"/>
+            <value>ws</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/sm:label')"/>
+            <value>sm</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/st:label')"/>
+            <value>st</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/sa:label')"/>
+            <value>sa</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/sn:label')"/>
+            <value>sn</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/rs:label')"/>
+            <value>rs</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/sc:label')"/>
+            <value>sc</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/sl:label')"/>
+            <value>sl</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/sg:label')"/>
+            <value>sg</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/sx:label')"/>
+            <value>sx</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/sk:label')"/>
+            <value>sk</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/si:label')"/>
+            <value>si</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/sb:label')"/>
+            <value>sb</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/so:label')"/>
+            <value>so</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/za:label')"/>
+            <value>za</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/gs:label')"/>
+            <value>gs</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/ss:label')"/>
+            <value>ss</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/es:label')"/>
+            <value>es</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/lk:label')"/>
+            <value>lk</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/sd:label')"/>
+            <value>sd</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/sr:label')"/>
+            <value>sr</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/sj:label')"/>
+            <value>sj</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/sz:label')"/>
+            <value>sz</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/se:label')"/>
+            <value>se</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/ch:label')"/>
+            <value>ch</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/sy:label')"/>
+            <value>sy</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/tw:label')"/>
+            <value>tw</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/tj:label')"/>
+            <value>tj</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/tz:label')"/>
+            <value>tz</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/th:label')"/>
+            <value>th</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/tl:label')"/>
+            <value>tl</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/tg:label')"/>
+            <value>tg</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/tk:label')"/>
+            <value>tk</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/to:label')"/>
+            <value>to</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/tt:label')"/>
+            <value>tt</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/tn:label')"/>
+            <value>tn</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/tr:label')"/>
+            <value>tr</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/tm:label')"/>
+            <value>tm</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/tc:label')"/>
+            <value>tc</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/tv:label')"/>
+            <value>tv</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/ug:label')"/>
+            <value>ug</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/ua:label')"/>
+            <value>ua</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/ae:label')"/>
+            <value>ae</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/gb:label')"/>
+            <value>gb</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/us:label')"/>
+            <value>us</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/um:label')"/>
+            <value>um</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/uy:label')"/>
+            <value>uy</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/uz:label')"/>
+            <value>uz</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/vu:label')"/>
+            <value>vu</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/ve:label')"/>
+            <value>ve</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/vn:label')"/>
+            <value>vn</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/vg:label')"/>
+            <value>vg</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/vi:label')"/>
+            <value>vi</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/wf:label')"/>
+            <value>wf</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/eh:label')"/>
+            <value>eh</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/ye:label')"/>
+            <value>ye</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/zm:label')"/>
+            <value>zm</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/zw:label')"/>
+            <value>zw</value>
+          </item>
+          <item>
+            <label ref="jr:itext('/data/person/traveler/nationality/ot:label')"/>
+            <value>ot</value>
+          </item>
+        </select1>
+        <input ref="/data/person/traveler/nationality_other">
+          <label ref="jr:itext('/data/person/traveler/nationality_other:label')"/>
+        </input>
+        <input ref="/data/person/traveler/passport">
+          <label ref="jr:itext('/data/person/traveler/passport:label')"/>
+        </input>
+        <input appearance="multiline" ref="/data/person/traveler/home_address">
+          <label ref="jr:itext('/data/person/traveler/home_address:label')"/>
+        </input>
+        <input appearance="multiline" ref="/data/person/traveler/destination_address">
+          <label ref="jr:itext('/data/person/traveler/destination_address:label')"/>
+        </input>
+        <input ref="/data/person/traveler/email">
+          <label ref="jr:itext('/data/person/traveler/email:label')"/>
+        </input>
+        <input ref="/data/person/traveler/skype">
+          <label ref="jr:itext('/data/person/traveler/skype:label')"/>
+        </input>
+      </group>
+      <group ref="/data/person/ephemeral_dob">
+        <input ref="/data/person/ephemeral_dob/dob_calendar">
+          <label ref="jr:itext('/data/person/ephemeral_dob/dob_calendar:label')"/>
+          <hint ref="jr:itext('/data/person/ephemeral_dob/dob_calendar:hint')"/>
+        </input>
+        <input ref="/data/person/ephemeral_dob/age_label">
+          <label ref="jr:itext('/data/person/ephemeral_dob/age_label:label')"/>
+        </input>
+        <input ref="/data/person/ephemeral_dob/age_years">
+          <label ref="jr:itext('/data/person/ephemeral_dob/age_years:label')"/>
+        </input>
+        <input ref="/data/person/ephemeral_dob/age_months">
+          <label ref="jr:itext('/data/person/ephemeral_dob/age_months:label')"/>
+        </input>
+        <select appearance="horizontal" ref="/data/person/ephemeral_dob/dob_method">
+          <label ref="jr:itext('/data/person/ephemeral_dob/dob_method:label')"/>
+          <item>
+            <label ref="jr:itext('/data/person/ephemeral_dob/dob_method/approx:label')"/>
+            <value>approx</value>
+          </item>
+        </select>
+        <input ref="/data/person/ephemeral_dob/dob_debug">
+          <label ref="jr:itext('/data/person/ephemeral_dob/dob_debug:label')"/>
+        </input>
+      </group>
+      <input ref="/data/person/case_id">
+        <label ref="jr:itext('/data/person/case_id:label')"/>
+      </input>
+      <input ref="/data/person/phone">
+        <label ref="jr:itext('/data/person/phone:label')"/>
+      </input>
+      <input ref="/data/person/phone_alternate">
+        <label ref="jr:itext('/data/person/phone_alternate:label')"/>
+      </input>
+      <input ref="/data/person/address">
+        <label ref="jr:itext('/data/person/address:label')"/>
+      </input>
+      <input ref="/data/person/town">
+        <label ref="jr:itext('/data/person/town:label')"/>
+      </input>
+      <select1 appearance="horizontal" ref="/data/person/sex">
+        <label ref="jr:itext('/data/person/sex:label')"/>
+        <item>
+          <label ref="jr:itext('/data/person/sex/female:label')"/>
+          <value>female</value>
+        </item>
+        <item>
+          <label ref="jr:itext('/data/person/sex/male:label')"/>
+          <value>male</value>
+        </item>
+      </select1>
+      <input ref="/data/person/role_other">
+        <label ref="jr:itext('/data/person/role_other:label')"/>
+      </input>
+      <input ref="/data/person/external_id">
+        <label ref="jr:itext('/data/person/external_id:label')"/>
+      </input>
+      <input appearance="multiline" ref="/data/person/notes">
+        <label ref="jr:itext('/data/person/notes:label')"/>
+      </input>
+      <group appearance="hidden" ref="/data/person/meta"/>
+    </group>
+  </h:body>
+</h:html>

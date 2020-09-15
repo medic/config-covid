@@ -1,0 +1,18 @@
+{
+  "title": [
+    {
+      "locale": "en",
+      "content": "COVID-19 Assessment"
+    },
+    {
+      "locale": "fr",
+      "content": "Evaluation COVID-19"
+    }
+  ],
+  "context": {
+      "place": false,
+      "person": true,
+      "expression": "!contact || (contact.type === 'person' && user.parent.type === 'health_center' && user.role === 'chw_rdt')"
+  },
+  "icon": "icon-healthcare"
+}

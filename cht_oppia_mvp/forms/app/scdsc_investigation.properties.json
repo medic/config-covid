@@ -1,0 +1,18 @@
+{
+  "title": [
+    {
+      "locale": "en",
+      "content": "Signal investigation"
+    },
+    {
+      "locale": "fr",
+      "content": "Enquête sur le signal"
+    }
+  ],
+  "context": {
+    "place": false,
+    "person": false,
+    "expression": "!contact || (contact.type === 'person' && user.parent.type === 'health_center')"
+  },
+  "icon": "icon-on"
+}

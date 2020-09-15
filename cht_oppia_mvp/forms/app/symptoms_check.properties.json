@@ -1,0 +1,18 @@
+{
+  "title": [
+    {
+      "locale": "en",
+      "content": "Symptom Follow-Up"
+    },
+    {
+      "locale": "fr",
+      "content": "Symptom Follow-Up"
+    }
+  ],
+  "context": {
+      "place": false,
+      "person": false,
+      "expression": "false"
+  },
+  "icon": "icon-healthcare"
+}

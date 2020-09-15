@@ -1,0 +1,684 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Trace Request form</h:title>
+    <model>
+      <itext>
+        <translation lang="en">
+          <text id="/covid_trace_request/contact_info/n_address:label">
+            <value>Address: **<output value=" /covid_trace_request/contact_address "/>**</value>
+          </text>
+          <text id="/covid_trace_request/contact_info/n_case_id:label">
+            <value>Outbreak Case ID: **<output value=" /covid_trace_request/outbreak_case_id "/>**</value>
+          </text>
+          <text id="/covid_trace_request/contact_info/n_other_names:label">
+            <value>Other Names: **<output value=" /covid_trace_request/contact_other_names "/>**</value>
+          </text>
+          <text id="/covid_trace_request/contact_info/n_phone:label">
+            <value>Phone: **<output value=" /covid_trace_request/contact_phone "/>**</value>
+          </text>
+          <text id="/covid_trace_request/contact_info/n_surname:label">
+            <value>Surname: **<output value=" /covid_trace_request/contact_surname "/>**</value>
+          </text>
+          <text id="/covid_trace_request/contact_info/n_town:label">
+            <value>Town: **<output value=" /covid_trace_request/contact_town "/>**</value>
+          </text>
+          <text id="/covid_trace_request/contact_info:label">
+            <value>Contact information</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/address:label">
+            <value>Address</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/chief_name:label">
+            <value>Name of the chief of the village</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/chief_phone:label">
+            <value>Phone of the chief</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/church:label">
+            <value>Church name</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/age_label:label">
+            <value>**Please enter date of birth**</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/age_months:jr:constraintMsg">
+            <value>Months must between 0 and 11</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/age_months:label">
+            <value>Months</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/age_years:jr:constraintMsg">
+            <value>Age must be between 0 and 130</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/age_years:label">
+            <value>Years</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_calendar:hint">
+            <value>Date of Birth</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_calendar:jr:constraintMsg">
+            <value>Date must be before today</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_calendar:label">
+            <value>Age</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_method/approx:label">
+            <value>Date of birth unknown</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_method:label">
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/flight_details:hint">
+            <value>if relevant</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/flight_details:label">
+            <value>Flight details</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/other_names:label">
+            <value>Short name</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/parent/_id:label">
+            <value>Parent</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/parent/parent/_id:label">
+            <value>Area</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/parent/parent/parent/_id:label">
+            <value>Health Facility ID</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/phone:label">
+            <value>Phone</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/sex/female:label">
+            <value>Female</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/sex/male:label">
+            <value>Male</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/surname:label">
+            <value>Full name</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/town:label">
+            <value>Town</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/tracer/parent/_id:label">
+            <value>Parent</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/tracer/parent/parent/_id:label">
+            <value>Area</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/tracer/parent/parent/parent/_id:label">
+            <value>Health Facility ID</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/tracer/tracer_area:label">
+            <value>Tracer Area</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/village:label">
+            <value>Village name</value>
+          </text>
+          <text id="/covid_trace_request/contacts/n_contacts:label">
+            <value>Add the contacts to be traced</value>
+          </text>
+          <text id="/covid_trace_request/inputs/contact/_id:label">
+            <value>_id</value>
+          </text>
+          <text id="/covid_trace_request/inputs/contact/date_of_birth:label">
+            <value>Date of birth</value>
+          </text>
+          <text id="/covid_trace_request/inputs/contact/external_id:label">
+            <value>External ID</value>
+          </text>
+          <text id="/covid_trace_request/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/covid_trace_request/inputs/contact/parent/_id:label">
+            <value>Patient with covid Place ID</value>
+          </text>
+          <text id="/covid_trace_request/inputs/contact/parent/parent/_id:label">
+            <value>Data Entry ID</value>
+          </text>
+          <text id="/covid_trace_request/inputs/contact/parent/parent/parent/_id:label">
+            <value>District ID</value>
+          </text>
+          <text id="/covid_trace_request/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/covid_trace_request/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/covid_trace_request/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/covid_trace_request/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/covid_trace_request/inputs/user/contact_id:label">
+            <value>Contact ID</value>
+          </text>
+          <text id="/covid_trace_request/inputs/user/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/covid_trace_request/inputs/user/phone:label">
+            <value>Phone</value>
+          </text>
+          <text id="/covid_trace_request/inputs/user:label">
+            <value>User</value>
+          </text>
+          <text id="/covid_trace_request/inputs:label">
+            <value>Patient</value>
+          </text>
+        </translation>
+        <translation lang="fr">
+          <text id="/covid_trace_request/contact_info/n_address:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_trace_request/contact_info/n_case_id:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_trace_request/contact_info/n_other_names:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_trace_request/contact_info/n_phone:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_trace_request/contact_info/n_surname:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_trace_request/contact_info/n_town:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_trace_request/contact_info:label">
+            <value>Contact information</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/address:label">
+            <value>Address</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/chief_name:label">
+            <value>Name of the chief of the village</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/chief_phone:label">
+            <value>Phone of the chief</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/church:label">
+            <value>Church name</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/age_label:label">
+            <value>Veuillez entrer votre date de naissance</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/age_months:jr:constraintMsg">
+            <value>-</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/age_months:label">
+            <value>Mois</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/age_years:jr:constraintMsg">
+            <value>-</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/age_years:label">
+            <value>Ans</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_calendar:hint">
+            <value>-</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_calendar:jr:constraintMsg">
+            <value>-</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_calendar:label">
+            <value>Âge</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_method/approx:label">
+            <value>Date de naissance inconnue</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_method:label">
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/flight_details:hint">
+            <value>-</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/flight_details:label">
+            <value>Flight details</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/other_names:label">
+            <value>Short name</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/parent/_id:label">
+            <value>Parent</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/parent/parent/_id:label">
+            <value>Area</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/parent/parent/parent/_id:label">
+            <value>Health Facility ID</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/phone:label">
+            <value>Phone</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/sex/female:label">
+            <value>Femme</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/sex/male:label">
+            <value>Homme</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/surname:label">
+            <value>Full name</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/town:label">
+            <value>Town</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/tracer/parent/_id:label">
+            <value>Parent</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/tracer/parent/parent/_id:label">
+            <value>Area</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/tracer/parent/parent/parent/_id:label">
+            <value>Health Facility ID</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/tracer/tracer_area:label">
+            <value>Tracer Area</value>
+          </text>
+          <text id="/covid_trace_request/contacts/contact_repeat/contact_profile/village:label">
+            <value>Village name</value>
+          </text>
+          <text id="/covid_trace_request/contacts/n_contacts:label">
+            <value>Add the contacts to be traced</value>
+          </text>
+          <text id="/covid_trace_request/inputs/contact/_id:label">
+            <value>_id</value>
+          </text>
+          <text id="/covid_trace_request/inputs/contact/date_of_birth:label">
+            <value>Date of birth</value>
+          </text>
+          <text id="/covid_trace_request/inputs/contact/external_id:label">
+            <value>External ID</value>
+          </text>
+          <text id="/covid_trace_request/inputs/contact/name:label">
+            <value>Name</value>
+          </text>
+          <text id="/covid_trace_request/inputs/contact/parent/_id:label">
+            <value>Patient with covid Place ID</value>
+          </text>
+          <text id="/covid_trace_request/inputs/contact/parent/parent/_id:label">
+            <value>Data Entry ID</value>
+          </text>
+          <text id="/covid_trace_request/inputs/contact/parent/parent/parent/_id:label">
+            <value>District ID</value>
+          </text>
+          <text id="/covid_trace_request/inputs/contact/sex:label">
+            <value>Sex</value>
+          </text>
+          <text id="/covid_trace_request/inputs/contact:label">
+            <value>Contact</value>
+          </text>
+          <text id="/covid_trace_request/inputs/source:label">
+            <value>Source</value>
+          </text>
+          <text id="/covid_trace_request/inputs/source_id:label">
+            <value>Source ID</value>
+          </text>
+          <text id="/covid_trace_request/inputs/user/contact_id:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_trace_request/inputs/user/name:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_trace_request/inputs/user/phone:label">
+            <value>-</value>
+          </text>
+          <text id="/covid_trace_request/inputs/user:label">
+            <value>User</value>
+          </text>
+          <text id="/covid_trace_request/inputs:label">
+            <value>Patient</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <covid_trace_request delimiter="#" id="covid_trace_request" prefix="J1!covid_trace_request!" version="2020-04-21 20-32">
+          <inputs tag="hidden">
+            <source>user</source>
+            <source_id/>
+            <user>
+              <contact_id/>
+              <name/>
+              <phone/>
+            </user>
+            <contact>
+              <_id/>
+              <name/>
+              <date_of_birth/>
+              <sex/>
+              <external_id/>
+              <case_id/>
+              <surname/>
+              <other_names/>
+              <phone/>
+              <address/>
+              <town/>
+              <parent>
+                <_id/>
+                <parent>
+                  <_id/>
+                  <parent>
+                    <_id/>
+                  </parent>
+                </parent>
+              </parent>
+            </contact>
+          </inputs>
+          <patient_id/>
+          <outbreak_case_id/>
+          <contact_surname/>
+          <contact_other_names/>
+          <contact_phone/>
+          <contact_address/>
+          <contact_town/>
+          <pzp_id tag="hidden"/>
+          <deu_id tag="hidden"/>
+          <district_id/>
+          <contact_info tag="hidden">
+            <n_case_id/>
+            <n_surname/>
+            <n_other_names/>
+            <n_phone/>
+            <n_address/>
+            <n_town/>
+          </contact_info>
+          <contacts>
+            <n_contacts tag="hidden"/>
+            <contact_repeat jr:template="">
+              <contact_profile db-doc="true">
+                <surname/>
+                <other_names/>
+                <name/>
+                <sex/>
+                <date_of_birth/>
+                <date_of_birth_method/>
+                <ephemeral_dob>
+                  <dob_calendar/>
+                  <age_label/>
+                  <age_years/>
+                  <age_months/>
+                  <dob_method/>
+                  <ephemeral_months/>
+                  <ephemeral_years/>
+                  <dob_approx/>
+                  <dob_raw/>
+                  <dob_iso/>
+                </ephemeral_dob>
+                <phone/>
+                <flight_details/>
+                <address/>
+                <town/>
+                <village/>
+                <chief_name/>
+                <chief_phone/>
+                <church/>
+                <covid_patient/>
+                <tracer>
+                  <tracer_area/>
+                  <parent tag="hidden">
+                    <_id/>
+                    <parent tag="hidden">
+                      <_id/>
+                      <parent tag="hidden">
+                        <_id/>
+                      </parent>
+                    </parent>
+                  </parent>
+                </tracer>
+                <parent tag="hidden">
+                  <_id/>
+                  <parent tag="hidden">
+                    <_id/>
+                    <parent tag="hidden">
+                      <_id/>
+                    </parent>
+                  </parent>
+                </parent>
+                <type tag="hidden"/>
+                <role/>
+                <created_by_doc db-doc-ref="/covid_trace_request" tag="hidden"/>
+              </contact_profile>
+              <contact_doc db-doc-ref=" /covid_trace_request/contacts/contact_repeat/contact_profile " tag="hidden"/>
+            </contact_repeat>
+          </contacts>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </covid_trace_request>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/covid_trace_request/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/covid_trace_request/inputs/source" type="string"/>
+      <bind nodeset="/covid_trace_request/inputs/source_id" type="string"/>
+      <bind nodeset="/covid_trace_request/inputs/user/contact_id" type="db:person"/>
+      <bind nodeset="/covid_trace_request/inputs/user/name" type="string"/>
+      <bind nodeset="/covid_trace_request/inputs/user/phone" type="string"/>
+      <bind nodeset="/covid_trace_request/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/covid_trace_request/inputs/contact/name" type="string"/>
+      <bind nodeset="/covid_trace_request/inputs/contact/date_of_birth" type="string"/>
+      <bind nodeset="/covid_trace_request/inputs/contact/sex" type="string"/>
+      <bind nodeset="/covid_trace_request/inputs/contact/external_id" type="string"/>
+      <bind nodeset="/covid_trace_request/inputs/contact/case_id" type="string"/>
+      <bind nodeset="/covid_trace_request/inputs/contact/surname" type="string"/>
+      <bind nodeset="/covid_trace_request/inputs/contact/other_names" type="string"/>
+      <bind nodeset="/covid_trace_request/inputs/contact/phone" type="string"/>
+      <bind nodeset="/covid_trace_request/inputs/contact/address" type="string"/>
+      <bind nodeset="/covid_trace_request/inputs/contact/town" type="string"/>
+      <bind nodeset="/covid_trace_request/inputs/contact/parent/_id" type="string"/>
+      <bind nodeset="/covid_trace_request/inputs/contact/parent/parent/_id" type="string"/>
+      <bind nodeset="/covid_trace_request/inputs/contact/parent/parent/parent/_id" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/covid_trace_request/patient_id" type="string"/>
+      <bind calculate="../inputs/contact/case_id" nodeset="/covid_trace_request/outbreak_case_id" type="string"/>
+      <bind calculate="../inputs/contact/surname" nodeset="/covid_trace_request/contact_surname" type="string"/>
+      <bind calculate="../inputs/contact/other_names" nodeset="/covid_trace_request/contact_other_names" type="string"/>
+      <bind calculate="../inputs/contact/phone" nodeset="/covid_trace_request/contact_phone" type="string"/>
+      <bind calculate="../inputs/contact/address" nodeset="/covid_trace_request/contact_address" type="string"/>
+      <bind calculate="../inputs/contact/town" nodeset="/covid_trace_request/contact_town" type="string"/>
+      <bind calculate="../inputs/contact/parent/_id" nodeset="/covid_trace_request/pzp_id" type="string"/>
+      <bind calculate="../inputs/contact/parent/parent/_id" nodeset="/covid_trace_request/deu_id" type="string"/>
+      <bind calculate="../inputs/contact/parent/parent/parent/_id" nodeset="/covid_trace_request/district_id" type="string"/>
+      <bind nodeset="/covid_trace_request/contact_info/n_case_id" readonly="true()" relevant=" /covid_trace_request/outbreak_case_id !=''" type="string"/>
+      <bind nodeset="/covid_trace_request/contact_info/n_surname" readonly="true()" relevant=" /covid_trace_request/contact_surname !=''" type="string"/>
+      <bind nodeset="/covid_trace_request/contact_info/n_other_names" readonly="true()" relevant=" /covid_trace_request/contact_other_names !=''" type="string"/>
+      <bind nodeset="/covid_trace_request/contact_info/n_phone" readonly="true()" relevant=" /covid_trace_request/contact_phone !=''" type="string"/>
+      <bind nodeset="/covid_trace_request/contact_info/n_address" readonly="true()" relevant=" /covid_trace_request/contact_address !=''" type="string"/>
+      <bind nodeset="/covid_trace_request/contact_info/n_town" readonly="true()" relevant=" /covid_trace_request/contact_town !=''" type="string"/>
+      <bind nodeset="/covid_trace_request/contacts/n_contacts" readonly="true()" type="string"/>
+      <bind nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/surname" required="true()" type="string"/>
+      <bind nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/other_names" type="string"/>
+      <bind calculate="concat(../other_names, ' ', ../surname)" nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/name" type="string"/>
+      <bind nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/sex" type="select1"/>
+      <bind calculate="../ephemeral_dob/dob_iso" nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/date_of_birth" required="true()" type="string"/>
+      <bind calculate="../ephemeral_dob/dob_method" nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/date_of_birth_method" type="string"/>
+      <bind constraint="floor(decimal-date-time(.)) &lt;= floor(decimal-date-time(today()))" jr:constraintMsg="jr:itext('/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_calendar:jr:constraintMsg')" nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_calendar" relevant="not(selected(../dob_method,'approx'))" required="true()" type="date"/>
+      <bind nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/age_label" readonly="true()" relevant="selected(../dob_method,'approx')" type="string"/>
+      <bind constraint=". &gt;= 0 and . &lt;= 130" jr:constraintMsg="jr:itext('/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/age_years:jr:constraintMsg')" nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/age_years" relevant="selected(../dob_method,'approx')" required="true()" type="int"/>
+      <bind constraint=". &gt;= 0 and . &lt;= 11" jr:constraintMsg="jr:itext('/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/age_months:jr:constraintMsg')" nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/age_months" relevant="selected(../dob_method,'approx')" type="int"/>
+      <bind nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_method" type="select"/>
+      <bind calculate="if(format-date-time(today(),&quot;%m&quot;) - ../age_months &lt; 0, format-date-time(today(),&quot;%m&quot;) - ../age_months + 12, format-date-time(today(),&quot;%m&quot;) - ../age_months)" nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/ephemeral_months" type="string"/>
+      <bind calculate="if(format-date-time(today(),&quot;%m&quot;) - ../age_months &lt; 0, format-date-time(today(),&quot;%Y&quot;) - ../age_years - 1, format-date-time(today(),&quot;%Y&quot;) -../age_years)" nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/ephemeral_years" type="string"/>
+      <bind calculate="concat(string( /covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/ephemeral_years ),'-',if( /covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/ephemeral_months &lt;10, concat('0',string( /covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/ephemeral_months )),  /covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/ephemeral_months ),'-',string(format-date-time(today(), &quot;%d&quot;)))" nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_approx" type="string"/>
+      <bind calculate="if(not(selected(  /covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_method ,'approx')), 
+ /covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_calendar ,
+ /covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_approx )" nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_raw" type="string"/>
+      <bind calculate="format-date-time(../dob_raw,&quot;%Y-%m-%d&quot;)" nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_iso" type="string"/>
+      <bind nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/phone" type="string"/>
+      <bind nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/flight_details" type="string"/>
+      <bind nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/address" type="string"/>
+      <bind nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/town" type="string"/>
+      <bind nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/village" type="string"/>
+      <bind nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/chief_name" type="string"/>
+      <bind nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/chief_phone" type="string"/>
+      <bind nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/church" type="string"/>
+      <bind calculate=" /covid_trace_request/patient_id " nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/covid_patient" type="string"/>
+      <bind nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/tracer/tracer_area" type="db:clinic"/>
+      <bind nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/tracer/parent/_id" type="string"/>
+      <bind nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/tracer/parent/parent/_id" type="string"/>
+      <bind nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/tracer/parent/parent/parent/_id" type="string"/>
+      <bind calculate="../../tracer/tracer_area" nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/parent/_id" type="string"/>
+      <bind calculate="../../../tracer/parent/_id" nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/parent/parent/_id" type="string"/>
+      <bind calculate="../../../../tracer/parent/parent/_id" nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/parent/parent/parent/_id" type="string"/>
+      <bind calculate="&quot;person&quot;" nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/type" type="string"/>
+      <bind calculate="&quot;contact_n&quot;" nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/role" type="string"/>
+      <bind calculate="." nodeset="/covid_trace_request/contacts/contact_repeat/contact_profile/created_by_doc" type="string"/>
+      <bind calculate=" /covid_trace_request/contacts/contact_repeat/contact_profile " nodeset="/covid_trace_request/contacts/contact_repeat/contact_doc" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/covid_trace_request/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/covid_trace_request/inputs">
+      <label ref="jr:itext('/covid_trace_request/inputs:label')"/>
+      <input appearance="hidden" ref="/covid_trace_request/inputs/source">
+        <label ref="jr:itext('/covid_trace_request/inputs/source:label')"/>
+      </input>
+      <input appearance="hidden" ref="/covid_trace_request/inputs/source_id">
+        <label ref="jr:itext('/covid_trace_request/inputs/source_id:label')"/>
+      </input>
+      <group ref="/covid_trace_request/inputs/user">
+        <label ref="jr:itext('/covid_trace_request/inputs/user:label')"/>
+        <input appearance="db-object" ref="/covid_trace_request/inputs/user/contact_id">
+          <label ref="jr:itext('/covid_trace_request/inputs/user/contact_id:label')"/>
+        </input>
+      </group>
+      <group ref="/covid_trace_request/inputs/contact">
+        <label ref="jr:itext('/covid_trace_request/inputs/contact:label')"/>
+        <input appearance="hidden" ref="/covid_trace_request/inputs/contact/_id">
+          <label ref="jr:itext('/covid_trace_request/inputs/contact/_id:label')"/>
+        </input>
+        <group ref="/covid_trace_request/inputs/contact/parent">
+          <input appearance="hidden" ref="/covid_trace_request/inputs/contact/parent/_id">
+            <label ref="jr:itext('/covid_trace_request/inputs/contact/parent/_id:label')"/>
+          </input>
+          <group ref="/covid_trace_request/inputs/contact/parent/parent">
+            <input appearance="hidden" ref="/covid_trace_request/inputs/contact/parent/parent/_id">
+              <label ref="jr:itext('/covid_trace_request/inputs/contact/parent/parent/_id:label')"/>
+            </input>
+            <group ref="/covid_trace_request/inputs/contact/parent/parent/parent">
+              <input appearance="hidden" ref="/covid_trace_request/inputs/contact/parent/parent/parent/_id">
+                <label ref="jr:itext('/covid_trace_request/inputs/contact/parent/parent/parent/_id:label')"/>
+              </input>
+            </group>
+          </group>
+        </group>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/covid_trace_request/contact_info">
+      <label ref="jr:itext('/covid_trace_request/contact_info:label')"/>
+      <input ref="/covid_trace_request/contact_info/n_case_id">
+        <label ref="jr:itext('/covid_trace_request/contact_info/n_case_id:label')"/>
+      </input>
+      <input ref="/covid_trace_request/contact_info/n_surname">
+        <label ref="jr:itext('/covid_trace_request/contact_info/n_surname:label')"/>
+      </input>
+      <input ref="/covid_trace_request/contact_info/n_other_names">
+        <label ref="jr:itext('/covid_trace_request/contact_info/n_other_names:label')"/>
+      </input>
+      <input ref="/covid_trace_request/contact_info/n_phone">
+        <label ref="jr:itext('/covid_trace_request/contact_info/n_phone:label')"/>
+      </input>
+      <input ref="/covid_trace_request/contact_info/n_address">
+        <label ref="jr:itext('/covid_trace_request/contact_info/n_address:label')"/>
+      </input>
+      <input ref="/covid_trace_request/contact_info/n_town">
+        <label ref="jr:itext('/covid_trace_request/contact_info/n_town:label')"/>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/covid_trace_request/contacts">
+      <input ref="/covid_trace_request/contacts/n_contacts">
+        <label ref="jr:itext('/covid_trace_request/contacts/n_contacts:label')"/>
+      </input>
+      <group ref="/covid_trace_request/contacts/contact_repeat">
+        <label ref="jr:itext('/covid_trace_request/contacts/contact_repeat:label')"/>
+        <repeat nodeset="/covid_trace_request/contacts/contact_repeat">
+          <group ref="/covid_trace_request/contacts/contact_repeat/contact_profile">
+            <input ref="/covid_trace_request/contacts/contact_repeat/contact_profile/surname">
+              <label ref="jr:itext('/covid_trace_request/contacts/contact_repeat/contact_profile/surname:label')"/>
+            </input>
+            <input ref="/covid_trace_request/contacts/contact_repeat/contact_profile/other_names">
+              <label ref="jr:itext('/covid_trace_request/contacts/contact_repeat/contact_profile/other_names:label')"/>
+            </input>
+            <select1 ref="/covid_trace_request/contacts/contact_repeat/contact_profile/sex">
+              <label ref="jr:itext('/covid_trace_request/contacts/contact_repeat/contact_profile/sex:label')"/>
+              <item>
+                <label ref="jr:itext('/covid_trace_request/contacts/contact_repeat/contact_profile/sex/female:label')"/>
+                <value>female</value>
+              </item>
+              <item>
+                <label ref="jr:itext('/covid_trace_request/contacts/contact_repeat/contact_profile/sex/male:label')"/>
+                <value>male</value>
+              </item>
+            </select1>
+            <group ref="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob">
+              <input ref="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_calendar">
+                <label ref="jr:itext('/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_calendar:label')"/>
+                <hint ref="jr:itext('/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_calendar:hint')"/>
+              </input>
+              <input ref="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/age_label">
+                <label ref="jr:itext('/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/age_label:label')"/>
+              </input>
+              <input ref="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/age_years">
+                <label ref="jr:itext('/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/age_years:label')"/>
+              </input>
+              <input ref="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/age_months">
+                <label ref="jr:itext('/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/age_months:label')"/>
+              </input>
+              <select appearance="horizontal" ref="/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_method">
+                <label ref="jr:itext('/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_method:label')"/>
+                <item>
+                  <label ref="jr:itext('/covid_trace_request/contacts/contact_repeat/contact_profile/ephemeral_dob/dob_method/approx:label')"/>
+                  <value>approx</value>
+                </item>
+              </select>
+            </group>
+            <input ref="/covid_trace_request/contacts/contact_repeat/contact_profile/phone">
+              <label ref="jr:itext('/covid_trace_request/contacts/contact_repeat/contact_profile/phone:label')"/>
+            </input>
+            <input ref="/covid_trace_request/contacts/contact_repeat/contact_profile/flight_details">
+              <label ref="jr:itext('/covid_trace_request/contacts/contact_repeat/contact_profile/flight_details:label')"/>
+              <hint ref="jr:itext('/covid_trace_request/contacts/contact_repeat/contact_profile/flight_details:hint')"/>
+            </input>
+            <input ref="/covid_trace_request/contacts/contact_repeat/contact_profile/address">
+              <label ref="jr:itext('/covid_trace_request/contacts/contact_repeat/contact_profile/address:label')"/>
+            </input>
+            <input ref="/covid_trace_request/contacts/contact_repeat/contact_profile/town">
+              <label ref="jr:itext('/covid_trace_request/contacts/contact_repeat/contact_profile/town:label')"/>
+            </input>
+            <input ref="/covid_trace_request/contacts/contact_repeat/contact_profile/village">
+              <label ref="jr:itext('/covid_trace_request/contacts/contact_repeat/contact_profile/village:label')"/>
+            </input>
+            <input ref="/covid_trace_request/contacts/contact_repeat/contact_profile/chief_name">
+              <label ref="jr:itext('/covid_trace_request/contacts/contact_repeat/contact_profile/chief_name:label')"/>
+            </input>
+            <input ref="/covid_trace_request/contacts/contact_repeat/contact_profile/chief_phone">
+              <label ref="jr:itext('/covid_trace_request/contacts/contact_repeat/contact_profile/chief_phone:label')"/>
+            </input>
+            <input ref="/covid_trace_request/contacts/contact_repeat/contact_profile/church">
+              <label ref="jr:itext('/covid_trace_request/contacts/contact_repeat/contact_profile/church:label')"/>
+            </input>
+            <group ref="/covid_trace_request/contacts/contact_repeat/contact_profile/tracer">
+              <input appearance="db-object" ref="/covid_trace_request/contacts/contact_repeat/contact_profile/tracer/tracer_area">
+                <label ref="jr:itext('/covid_trace_request/contacts/contact_repeat/contact_profile/tracer/tracer_area:label')"/>
+              </input>
+              <group ref="/covid_trace_request/contacts/contact_repeat/contact_profile/tracer/parent">
+                <group ref="/covid_trace_request/contacts/contact_repeat/contact_profile/tracer/parent/parent">
+                  <group ref="/covid_trace_request/contacts/contact_repeat/contact_profile/tracer/parent/parent/parent"/>
+                </group>
+              </group>
+            </group>
+            <group ref="/covid_trace_request/contacts/contact_repeat/contact_profile/parent">
+              <group ref="/covid_trace_request/contacts/contact_repeat/contact_profile/parent/parent">
+                <group ref="/covid_trace_request/contacts/contact_repeat/contact_profile/parent/parent/parent"/>
+              </group>
+            </group>
+          </group>
+        </repeat>
+      </group>
+    </group>
+  </h:body>
+</h:html>
