@@ -478,6 +478,7 @@
     "update_sent_by": false,
     "registration": true,
     "update_clinics": true,
+	"accept_case_reports": false,
     "update_notifications": false,
     "update_scheduled_reports": false,
     "update_sent_forms": false,
@@ -609,16 +610,61 @@
       }
     }
   },
+  "accept_case_reports": [
+        {
+            "form": "CLEAR_COVID_SIGNAL",
+            "validations": {},
+            "silence_type": "signal_reminders_to_CHA",
+            "silence_for": "2 days",
+            "messages": [
+                {
+                    "event_type": "report_accepted",
+                    "bool_expr": "true",
+                    "message": "Case resolved",
+                    "recipient": "parent"
+                }
+            ]
+        }
+    ]
   "forms": {
     "8": {
       "meta": {
         "code": "8",
-        "translation_key": "form.8.title"
+		"icon": "icon-healthcare",
+		"translation_key": "form.8.title",
+		"subject_key": "form.8.subject"
       },
       "fields": {},
       "public_form": false,
       "use_sentinel": true
     },
+	"CLEAR_COVID_SIGNAL": {
+            "meta": {
+                "code": "CLEAR_COVID_SIGNAL",
+                "icon": "icon-healthcare",
+                "translation_key": "form.clear_covid_signal.title",
+                "subject_key": "form.clear_covid_signal.subject"
+            },
+            "fields": {
+                "case_id": {
+                    "position": 1,
+                    "type": "string",
+                    "labels": {
+                        "tiny": {
+                            "en": "id"
+                        },
+                        "short": {
+                            "en": "Case ID"
+                        },
+                        "description": {
+                            "en": "Case ID"
+                        }
+                    },
+                    "list": []
+                },
+            },
+            "use_sentinel": true
+        }
     "COVID_SYMPTOMS": {
       "meta": {
         "code": "COVID_SYMPTOMS",
@@ -720,7 +766,7 @@
       "events": [
         {
           "name": "on_create",
-          "trigger": "add_patient",
+          "trigger": "add_case", 
           "params": "",
           "bool_expr": ""
         },
