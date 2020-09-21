@@ -4,7 +4,7 @@
     <h:title>Community Health Academy</h:title>
     <model>
       <instance>
-        <cha_module_three delimiter="#" id="cha_module_three" prefix="J1!cha_module_three!" version="2020-09-16 01:37:47">
+        <cha_module_three delimiter="#" id="cha_module_three" prefix="J1!cha_module_three!" version="2020-09-17 18:17:06">
           <inputs>
             <meta>
               <location>
@@ -27,6 +27,7 @@
           <training_intro>
             <step_one/>
             <introduction/>
+            <open_oppia_button/>
             <step_two/>
           </training_intro>
           <learning_quiz>
@@ -71,6 +72,7 @@
       <bind calculate="../inputs/contact/phone" nodeset="/cha_module_three/patient_phone" type="string"/>
       <bind nodeset="/cha_module_three/training_intro/step_one" readonly="true()" type="string"/>
       <bind nodeset="/cha_module_three/training_intro/introduction" readonly="true()" type="string"/>
+      <bind nodeset="/cha_module_three/training_intro/open_oppia_button" readonly="true()" type="string"/>
       <bind nodeset="/cha_module_three/training_intro/step_two" readonly="true()" type="string"/>
       <bind nodeset="/cha_module_three/learning_quiz/who_attacked_q" required="true()" type="select1"/>
       <bind calculate="if(selected( /cha_module_three/learning_quiz/who_attacked_q ,'true'), 1, 0)" nodeset="/cha_module_three/learning_quiz/who_attacked_score" type="string"/>
@@ -123,14 +125,19 @@
     <group appearance="field-list" ref="/cha_module_three/training_intro">
       <label>Introduction to COVID-19 course</label>
       <input ref="/cha_module_three/training_intro/step_one">
-        <label>Step 1:
+        <label>**Step 1:**
+
 Open Oppia Mobile to read the course content. Once complete, please return to this task for Step 2.</label>
       </input>
       <input ref="/cha_module_three/training_intro/introduction">
         <label>This third module, **COVID-19 Misinformation**, explains the role of a Community Health Worker in managing misinformation and addressing rumours on COVID-19.</label>
       </input>
+      <input ref="/cha_module_three/training_intro/open_oppia_button">
+        <label>[&lt;span style='background-color: #648af7; color:white; padding: 1em; text-decoration: none;border-radius: 8px; '&gt;Open Oppia Mobile&lt;/span&gt;](https://staging.cha.oppia-mobile.org/view?course=cht-demo)</label>
+      </input>
       <input ref="/cha_module_three/training_intro/step_two">
-        <label>Step 2:
+        <label>**Step 2:**
+
 Complete a short assessment on the course material.</label>
       </input>
     </group>

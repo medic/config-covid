@@ -4,7 +4,7 @@
     <h:title>Community Health Academy</h:title>
     <model>
       <instance>
-        <cha_module_two delimiter="#" id="cha_module_two" prefix="J1!cha_module_two!" version="2020-09-16 01:35:54">
+        <cha_module_two delimiter="#" id="cha_module_two" prefix="J1!cha_module_two!" version="2020-09-17 01:05:37">
           <inputs>
             <meta>
               <location>
@@ -27,6 +27,7 @@
           <training_intro>
             <step_one/>
             <introduction/>
+            <open_oppia_button/>
             <step_two/>
           </training_intro>
           <learning_quiz>
@@ -68,6 +69,7 @@
       <bind calculate="../inputs/contact/phone" nodeset="/cha_module_two/patient_phone" type="string"/>
       <bind nodeset="/cha_module_two/training_intro/step_one" readonly="true()" type="string"/>
       <bind nodeset="/cha_module_two/training_intro/introduction" readonly="true()" type="string"/>
+      <bind nodeset="/cha_module_two/training_intro/open_oppia_button" readonly="true()" type="string"/>
       <bind nodeset="/cha_module_two/training_intro/step_two" readonly="true()" type="string"/>
       <bind nodeset="/cha_module_two/learning_quiz/assessment_note" readonly="true()" type="string"/>
       <bind nodeset="/cha_module_two/learning_quiz/next_steps_q" required="true()" type="select1"/>
@@ -117,14 +119,19 @@
     <group appearance="field-list" ref="/cha_module_two/training_intro">
       <label>COVID-19 Care</label>
       <input ref="/cha_module_two/training_intro/step_one">
-        <label>Step 1:
+        <label>**Step 1:**
+
 Open Oppia Mobile to read the course content. Once complete, please return to this task for Step 2.</label>
       </input>
       <input ref="/cha_module_two/training_intro/introduction">
         <label>This second module, **COVID Care**, explains the role of a Community Health Worker in recognizing and managing COVID-19: and educating others on how to care for a patient with COVID-19.</label>
       </input>
+      <input ref="/cha_module_two/training_intro/open_oppia_button">
+        <label>[&lt;span style='background-color: #648af7; color:white; padding: 1em; text-decoration: none;border-radius: 8px; '&gt;Open Oppia Mobile&lt;/span&gt;](https://demo.oppia-mobile.org/view/)</label>
+      </input>
       <input ref="/cha_module_two/training_intro/step_two">
-        <label>Step 2:
+        <label>**Step 2:**
+
 Complete a short assessment on the course material.</label>
       </input>
     </group>
