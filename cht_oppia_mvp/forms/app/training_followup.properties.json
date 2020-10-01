@@ -1,0 +1,8 @@
+{
+    "icon": "icon-person",
+    "context": {
+        "person": false,
+        "place": false,
+        "expression": "!contact || (contact.type === 'person' && user.parent.type === 'district_hospital' && user.role === 'chw_supervisor' && contact.role === 'chw_supervisor')"
+    }
+}

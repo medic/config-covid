@@ -174,6 +174,7 @@ module.exports = [
     type: 'percent',
     icon: 'icon-calendar',
     goal: 100,
+    context: 'user.role === "chw"',
     translation_key: 'targets.training_completion.title',
     subtitle_translation_key: 'targets.all_time.subtitle',
     appliesTo: 'contacts',
@@ -185,6 +186,7 @@ module.exports = [
     passesIf: function(contact) {
       return contact.reports || !contact.reports;
     },
+    aggregate: true,
     date: 'now',
     emitCustom: (emit, original, contact) => {
       const assessmentModules = ['cha_module_one','cha_module_two','cha_module_three'];

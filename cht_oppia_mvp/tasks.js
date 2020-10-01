@@ -4,6 +4,7 @@ module.exports = [
    1. CHA Module One (Introduction to COVID-19)
    2. CHA Module Two (COVID Care)
    3. CHA Module Three (COVID Misinformation)
+   4. Supervisor follow up task
    ****/
 
    //TODO Update event due dates
@@ -14,16 +15,16 @@ module.exports = [
     icon:'icon-cha',
     appliesTo: 'contacts',
     appliesToType: ['person'],
-    appliesIf: c => c.contact.role === 'chw',
+    appliesIf: c => c.contact.role === 'chw' && user.parent && user.parent.type === 'health_center',
     actions: [{
       form: 'cha_module_one'
     }],
     events: [{
-      start: 200,
-      end: 5,
-      dueDate: function () {
-        return new Date('2020-10-30');
+      dueDate: (event, c) => {
+        return Utils.addDate(new Date(c.contact.reported_date), 0);
       },
+      start: 0,
+      end: 25550
     }],
     resolvedIf: function (c) {
       return c.reports.some(report => report.form === 'cha_module_one' &&
@@ -38,16 +39,16 @@ module.exports = [
     icon:'icon-cha',
     appliesTo: 'contacts',
     appliesToType: ['person'],
-    appliesIf: c => c.contact.role === 'chw',
+    appliesIf: c => c.contact.role === 'chw' && user.parent && user.parent.type === 'health_center',
     actions: [{
       form: 'cha_module_two'
     }],
     events: [{
-      start: 200,
-      end: 5,
-      dueDate: function () {
-        return new Date('2020-10-30');
+      dueDate: (event, c) => {
+        return Utils.addDate(new Date(c.contact.reported_date), 0);
       },
+      start: 0,
+      end: 25550
     }],
     resolvedIf: function (c) {
       return c.reports.some(report => report.form === 'cha_module_two' &&
@@ -62,20 +63,50 @@ module.exports = [
     icon:'icon-cha',
     appliesTo: 'contacts',
     appliesToType: ['person'],
-    appliesIf: c => c.contact.role === 'chw',
+    appliesIf: c => c.contact.role === 'chw' && user.parent && user.parent.type === 'health_center',
     actions: [{
       form: 'cha_module_three'
     }],
     events: [{
-      start: 200,
-      end: 5,
-      dueDate: function () {
-        return new Date('2020-10-30');
+      dueDate: (event, c) => {
+        return Utils.addDate(new Date(c.contact.reported_date), 0);
       },
+      start: 0,
+      end: 25550
     }],
     resolvedIf: function (c) {
       return c.reports.some(report => report.form === 'cha_module_three' &&
            Utils.getField(report, 'assessment_passed') === 'yes');
+    }
+  },
+
+  {
+    title: 'Training Assistance',
+    name: 'training-followup',
+    icon:'icon-cha',
+    appliesTo: 'reports',
+    appliesToType: ['cha_module_one', 'cha_module_two', 'cha_module_three'],
+    appliesIf: (c, r) => {
+      const isSupervisor = user.role === 'chw_supervisor' && user.parent && user.parent.type === 'district_hospital';
+      return isSupervisor && Utils.getField(r,'summary.comments');
+    }, 
+    actions: [{
+      form: 'training_followup',
+      modifyContent: function(content, c, r) {
+        content.assistance_note = Utils.getField(r, 'summary.comments');
+      }
+    }],
+    events: [{
+      start: 6,
+      dueDate: (event, contact,report) => {
+        return Utils.addDate(new Date(report.reported_date), 5);
+      },
+      end: 30
+    }],
+    resolvedIf: function (c, r, event, dueDate) {
+      const startTime = Utils.addDate(dueDate, -event.start).getTime();
+      const endTime = Utils.addDate(dueDate, event.end + 1).getTime();
+      return Utils.isFormSubmittedInWindow(c.reports, 'training_followup', startTime, endTime);
     }
   },
 

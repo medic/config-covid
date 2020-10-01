@@ -4,7 +4,7 @@
     <h:title>Community Health Academy</h:title>
     <model>
       <instance>
-        <cha_module_three delimiter="#" id="cha_module_three" prefix="J1!cha_module_three!" version="2020-09-17 18:17:06">
+        <cha_module_three delimiter="#" id="cha_module_three" prefix="J1!cha_module_three!" version="2020-10-01 14:59:26">
           <inputs>
             <meta>
               <location>
@@ -31,6 +31,7 @@
             <step_two/>
           </training_intro>
           <learning_quiz>
+            <assessment_note/>
             <who_attacked_q/>
             <who_attacked_score/>
             <no_covid_vaccine_q/>
@@ -48,7 +49,7 @@
             <submit/>
             <result/>
             <thank_you_note/>
-            <generated_note_name_38/>
+            <generated_note_name_39/>
             <success_note/>
             <confidence_level/>
             <gauge_mastery/>
@@ -74,14 +75,15 @@
       <bind nodeset="/cha_module_three/training_intro/introduction" readonly="true()" type="string"/>
       <bind nodeset="/cha_module_three/training_intro/open_oppia_button" readonly="true()" type="string"/>
       <bind nodeset="/cha_module_three/training_intro/step_two" readonly="true()" type="string"/>
+      <bind nodeset="/cha_module_three/learning_quiz/assessment_note" readonly="true()" type="string"/>
       <bind nodeset="/cha_module_three/learning_quiz/who_attacked_q" required="true()" type="select1"/>
-      <bind calculate="if(selected( /cha_module_three/learning_quiz/who_attacked_q ,'true'), 1, 0)" nodeset="/cha_module_three/learning_quiz/who_attacked_score" type="string"/>
+      <bind calculate="if(selected( /cha_module_three/learning_quiz/who_attacked_q ,'false'), 1, 0)" nodeset="/cha_module_three/learning_quiz/who_attacked_score" type="string"/>
       <bind nodeset="/cha_module_three/learning_quiz/no_covid_vaccine_q" required="true()" type="select1"/>
       <bind calculate="if(selected( /cha_module_three/learning_quiz/no_covid_vaccine_q ,'true'), 1, 0)" nodeset="/cha_module_three/learning_quiz/no_covid_vaccine_score" type="string"/>
-      <bind nodeset="/cha_module_three/learning_quiz/like_malaria_q" required="true()" type="select"/>
-      <bind calculate="if(selected( /cha_module_three/learning_quiz/like_malaria_q ,'true'), 1, 0)" nodeset="/cha_module_three/learning_quiz/like_malaria_score" type="string"/>
+      <bind nodeset="/cha_module_three/learning_quiz/like_malaria_q" required="true()" type="select1"/>
+      <bind calculate="if(selected( /cha_module_three/learning_quiz/like_malaria_q ,'false'), 1, 0)" nodeset="/cha_module_three/learning_quiz/like_malaria_score" type="string"/>
       <bind nodeset="/cha_module_three/learning_quiz/strong_disinfectant_q" required="true()" type="select1"/>
-      <bind calculate="if(selected( /cha_module_three/learning_quiz/strong_disinfectant_q ,'true'), 1, 0)" nodeset="/cha_module_three/learning_quiz/strong_disinfectant_score" type="string"/>
+      <bind calculate="if(selected( /cha_module_three/learning_quiz/strong_disinfectant_q ,'false'), 1, 0)" nodeset="/cha_module_three/learning_quiz/strong_disinfectant_score" type="string"/>
       <bind nodeset="/cha_module_three/learning_quiz/fight_misinformation_q" required="true()" type="select"/>
       <bind calculate="if(selected( /cha_module_three/learning_quiz/fight_misinformation_q ,'spread_facts') and selected( /cha_module_three/learning_quiz/fight_misinformation_q ,'engage_community_leaders') and not(selected( /cha_module_three/learning_quiz/fight_misinformation_q ,'educate_arrogantly') or selected( /cha_module_three/learning_quiz/fight_misinformation_q ,'discriminate')), 1, 0)" nodeset="/cha_module_three/learning_quiz/fight_misinformation_score" type="string"/>
       <bind calculate="int( /cha_module_three/learning_quiz/who_attacked_score ) + int( /cha_module_three/learning_quiz/no_covid_vaccine_score ) + int( /cha_module_three/learning_quiz/like_malaria_score ) + int( /cha_module_three/learning_quiz/strong_disinfectant_score ) + int( /cha_module_three/learning_quiz/fight_misinformation_score )" nodeset="/cha_module_three/assessment_score" type="string"/>
@@ -89,7 +91,7 @@
       <bind nodeset="/cha_module_three/summary/submit" readonly="true()" type="string"/>
       <bind nodeset="/cha_module_three/summary/result" readonly="true()" type="string"/>
       <bind nodeset="/cha_module_three/summary/thank_you_note" readonly="true()" relevant=" /cha_module_three/assessment_passed  = 'no'" required="true()" type="string"/>
-      <bind nodeset="/cha_module_three/summary/generated_note_name_38" readonly="true()" relevant=" /cha_module_three/assessment_passed  = 'no'" type="string"/>
+      <bind nodeset="/cha_module_three/summary/generated_note_name_39" readonly="true()" relevant=" /cha_module_three/assessment_passed  = 'no'" type="string"/>
       <bind nodeset="/cha_module_three/summary/success_note" readonly="true()" relevant=" /cha_module_three/assessment_passed  = 'yes'" required="true()" type="string"/>
       <bind nodeset="/cha_module_three/summary/confidence_level" readonly="true()" relevant=" /cha_module_three/assessment_passed  = 'yes'" required="true()" type="string"/>
       <bind nodeset="/cha_module_three/summary/gauge_mastery" readonly="true()" relevant=" /cha_module_three/assessment_passed  = 'yes'" required="true()" type="string"/>
@@ -142,8 +144,10 @@ Complete a short assessment on the course material.</label>
       </input>
     </group>
     <group appearance="field-list" ref="/cha_module_three/learning_quiz">
-      <label>Assessment
-We would like to ask you a few questions to understand your knowledge on COVID-19 in regards to this module:</label>
+      <label>Assessment</label>
+      <input ref="/cha_module_three/learning_quiz/assessment_note">
+        <label>**We would like to ask you a few questions to understand your knowledge on COVID-19 in regards to this module:**</label>
+      </input>
       <select1 ref="/cha_module_three/learning_quiz/who_attacked_q">
         <label>1. Coronavirus does not attack people at a young age.</label>
         <item>
@@ -166,9 +170,8 @@ We would like to ask you a few questions to understand your knowledge on COVID-1
           <value>false</value>
         </item>
       </select1>
-      <select ref="/cha_module_three/learning_quiz/like_malaria_q">
+      <select1 ref="/cha_module_three/learning_quiz/like_malaria_q">
         <label>3. COVID is like Malaria</label>
-        <hint>Select all that apply</hint>
         <item>
           <label>True</label>
           <value>true</value>
@@ -177,7 +180,7 @@ We would like to ask you a few questions to understand your knowledge on COVID-1
           <label>False</label>
           <value>false</value>
         </item>
-      </select>
+      </select1>
       <select1 ref="/cha_module_three/learning_quiz/strong_disinfectant_q">
         <label>4. Using a strong disinfectant(like bleach) to clean hands and body protects you from COVID-19</label>
         <item>
@@ -218,11 +221,10 @@ We would like to ask you a few questions to understand your knowledge on COVID-1
         <label>Thank you</label>
       </input>
       <input ref="/cha_module_three/summary/thank_you_note">
-        <label>Good start, but you only answered **scored <output value=" /cha_module_three/assessment_score "/>** out of the 8 questions correctly.
+        <label>Good start, but you only answered **scored <output value=" /cha_module_three/assessment_score "/>** out of the **5** questions correctly.
 This task will not be completed until you answer all the questions correctly</label>
-        <hint>Optional</hint>
       </input>
-      <input ref="/cha_module_three/summary/generated_note_name_38">
+      <input ref="/cha_module_three/summary/generated_note_name_39">
         <label>Do you need additional support on this topic?</label>
       </input>
       <input ref="/cha_module_three/summary/success_note">
