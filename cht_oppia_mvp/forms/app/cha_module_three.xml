@@ -4,7 +4,7 @@
     <h:title>Community Health Academy</h:title>
     <model>
       <instance>
-        <cha_module_three delimiter="#" id="cha_module_three" prefix="J1!cha_module_three!" version="2020-10-01 14:59:26">
+        <cha_module_three delimiter="#" id="cha_module_three" prefix="J1!cha_module_three!" version="2020-10-01 15:59:46">
           <inputs>
             <meta>
               <location>
@@ -228,7 +228,7 @@ This task will not be completed until you answer all the questions correctly</la
         <label>Do you need additional support on this topic?</label>
       </input>
       <input ref="/cha_module_three/summary/success_note">
-        <label>Great job! You have completed Module 3: Misinformation. You can revisit this content at any time in your Oppia app.</label>
+        <label>Great job! You have completed Module 3: Misinformation! You can revisit this content at any time in your Oppia app.</label>
       </input>
       <input ref="/cha_module_three/summary/confidence_level">
         <label>**The following questions are designed to understand your confidence to perform the tasks taught in this lesson.**</label>

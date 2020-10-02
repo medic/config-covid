@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <h:head>
-    <h:title>Community Health Academy</h:title>
+    <h:title>COVID Care</h:title>
     <model>
       <instance>
-        <cha_module_two delimiter="#" id="cha_module_two" prefix="J1!cha_module_two!" version="2020-10-01 15:59:25">
+        <cha_module_two_context delimiter="#" id="cha_module_two_context" prefix="J1!cha_module_two_context!" version="2020-10-02 15:23:37">
           <inputs>
             <meta>
               <location>
@@ -57,90 +57,90 @@
           <meta tag="hidden">
             <instanceID/>
           </meta>
-        </cha_module_two>
+        </cha_module_two_context>
       </instance>
       <instance id="contact-summary"/>
-      <bind nodeset="/cha_module_two/inputs" relevant="./source = 'user'"/>
-      <bind nodeset="/cha_module_two/inputs/source" type="string"/>
-      <bind nodeset="/cha_module_two/inputs/source_id" type="string"/>
-      <bind nodeset="/cha_module_two/inputs/contact/_id" type="db:person"/>
-      <bind nodeset="/cha_module_two/inputs/contact/phone" type="string"/>
-      <bind calculate="../inputs/contact/_id" nodeset="/cha_module_two/patient_id" type="string"/>
-      <bind calculate="../inputs/contact/phone" nodeset="/cha_module_two/patient_phone" type="string"/>
-      <bind nodeset="/cha_module_two/training_intro/step_one" readonly="true()" type="string"/>
-      <bind nodeset="/cha_module_two/training_intro/introduction" readonly="true()" type="string"/>
-      <bind nodeset="/cha_module_two/training_intro/open_oppia_button" readonly="true()" type="string"/>
-      <bind nodeset="/cha_module_two/training_intro/step_two" readonly="true()" type="string"/>
-      <bind nodeset="/cha_module_two/learning_quiz/assessment_note" readonly="true()" type="string"/>
-      <bind nodeset="/cha_module_two/learning_quiz/next_steps_q" required="true()" type="select1"/>
-      <bind calculate="if(selected( /cha_module_two/learning_quiz/next_steps_q ,'refer'), 1, 0)" nodeset="/cha_module_two/learning_quiz/next_steps_score" type="string"/>
-      <bind nodeset="/cha_module_two/learning_quiz/parts_to_cover_q" required="true()" type="select1"/>
-      <bind calculate="if(selected( /cha_module_two/learning_quiz/parts_to_cover_q ,'nose_mouth'), 1, 0)" nodeset="/cha_module_two/learning_quiz/parts_to_cover_score" type="string"/>
-      <bind nodeset="/cha_module_two/learning_quiz/same_room_q" required="true()" type="select1"/>
-      <bind calculate="if(selected( /cha_module_two/learning_quiz/same_room_q ,'wash_hands'), 1, 0)" nodeset="/cha_module_two/learning_quiz/same_room_score" type="string"/>
-      <bind calculate="int( /cha_module_two/learning_quiz/next_steps_score ) + int( /cha_module_two/learning_quiz/parts_to_cover_score ) + int( /cha_module_two/learning_quiz/same_room_score )" nodeset="/cha_module_two/assessment_score" type="string"/>
-      <bind calculate="if( /cha_module_two/assessment_score  = 3, 'yes', 'no')" nodeset="/cha_module_two/assessment_passed" type="string"/>
-      <bind nodeset="/cha_module_two/summary/submit" readonly="true()" type="string"/>
-      <bind nodeset="/cha_module_two/summary/result" readonly="true()" type="string"/>
-      <bind nodeset="/cha_module_two/summary/thank_you_note" readonly="true()" relevant=" /cha_module_two/assessment_passed  = 'no'" required="true()" type="string"/>
-      <bind nodeset="/cha_module_two/summary/generated_note_name_35" readonly="true()" relevant=" /cha_module_two/assessment_passed  = 'no'" type="string"/>
-      <bind nodeset="/cha_module_two/summary/success_note" readonly="true()" relevant=" /cha_module_two/assessment_passed  = 'yes'" required="true()" type="string"/>
-      <bind nodeset="/cha_module_two/summary/confidence_level" readonly="true()" relevant=" /cha_module_two/assessment_passed  = 'yes'" required="true()" type="string"/>
-      <bind nodeset="/cha_module_two/summary/gauge_mastery" readonly="true()" relevant=" /cha_module_two/assessment_passed  = 'yes'" required="true()" type="string"/>
-      <bind nodeset="/cha_module_two/summary/transmission_confidence" relevant=" /cha_module_two/assessment_passed  = 'yes'" required="true()" type="select1"/>
-      <bind nodeset="/cha_module_two/summary/preventive_measures_confidence" relevant=" /cha_module_two/assessment_passed  = 'yes'" required="true()" type="select1"/>
-      <bind nodeset="/cha_module_two/summary/feedback" relevant=" /cha_module_two/assessment_passed  = 'yes'" type="string"/>
-      <bind nodeset="/cha_module_two/summary/comments" type="string"/>
-      <bind calculate="concat('uuid:', uuid())" nodeset="/cha_module_two/meta/instanceID" readonly="true()" type="string"/>
+      <bind nodeset="/cha_module_two_context/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/cha_module_two_context/inputs/source" type="string"/>
+      <bind nodeset="/cha_module_two_context/inputs/source_id" type="string"/>
+      <bind nodeset="/cha_module_two_context/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/cha_module_two_context/inputs/contact/phone" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/cha_module_two_context/patient_id" type="string"/>
+      <bind calculate="../inputs/contact/phone" nodeset="/cha_module_two_context/patient_phone" type="string"/>
+      <bind nodeset="/cha_module_two_context/training_intro/step_one" readonly="true()" type="string"/>
+      <bind nodeset="/cha_module_two_context/training_intro/introduction" readonly="true()" type="string"/>
+      <bind nodeset="/cha_module_two_context/training_intro/open_oppia_button" readonly="true()" type="string"/>
+      <bind nodeset="/cha_module_two_context/training_intro/step_two" readonly="true()" type="string"/>
+      <bind nodeset="/cha_module_two_context/learning_quiz/assessment_note" readonly="true()" type="string"/>
+      <bind nodeset="/cha_module_two_context/learning_quiz/next_steps_q" required="true()" type="select1"/>
+      <bind calculate="if(selected( /cha_module_two_context/learning_quiz/next_steps_q ,'refer'), 1, 0)" nodeset="/cha_module_two_context/learning_quiz/next_steps_score" type="string"/>
+      <bind nodeset="/cha_module_two_context/learning_quiz/parts_to_cover_q" required="true()" type="select1"/>
+      <bind calculate="if(selected( /cha_module_two_context/learning_quiz/parts_to_cover_q ,'nose_mouth'), 1, 0)" nodeset="/cha_module_two_context/learning_quiz/parts_to_cover_score" type="string"/>
+      <bind nodeset="/cha_module_two_context/learning_quiz/same_room_q" required="true()" type="select1"/>
+      <bind calculate="if(selected( /cha_module_two_context/learning_quiz/same_room_q ,'wash_hands'), 1, 0)" nodeset="/cha_module_two_context/learning_quiz/same_room_score" type="string"/>
+      <bind calculate="int( /cha_module_two_context/learning_quiz/next_steps_score ) + int( /cha_module_two_context/learning_quiz/parts_to_cover_score ) + int( /cha_module_two_context/learning_quiz/same_room_score )" nodeset="/cha_module_two_context/assessment_score" type="string"/>
+      <bind calculate="if( /cha_module_two_context/assessment_score  = 3, 'yes', 'no')" nodeset="/cha_module_two_context/assessment_passed" type="string"/>
+      <bind nodeset="/cha_module_two_context/summary/submit" readonly="true()" type="string"/>
+      <bind nodeset="/cha_module_two_context/summary/result" readonly="true()" type="string"/>
+      <bind nodeset="/cha_module_two_context/summary/thank_you_note" readonly="true()" relevant=" /cha_module_two_context/assessment_passed  = 'no'" required="true()" type="string"/>
+      <bind nodeset="/cha_module_two_context/summary/generated_note_name_35" readonly="true()" relevant=" /cha_module_two_context/assessment_passed  = 'no'" type="string"/>
+      <bind nodeset="/cha_module_two_context/summary/success_note" readonly="true()" relevant=" /cha_module_two_context/assessment_passed  = 'yes'" required="true()" type="string"/>
+      <bind nodeset="/cha_module_two_context/summary/confidence_level" readonly="true()" relevant=" /cha_module_two_context/assessment_passed  = 'yes'" required="true()" type="string"/>
+      <bind nodeset="/cha_module_two_context/summary/gauge_mastery" readonly="true()" relevant=" /cha_module_two_context/assessment_passed  = 'yes'" required="true()" type="string"/>
+      <bind nodeset="/cha_module_two_context/summary/transmission_confidence" relevant=" /cha_module_two_context/assessment_passed  = 'yes'" required="true()" type="select1"/>
+      <bind nodeset="/cha_module_two_context/summary/preventive_measures_confidence" relevant=" /cha_module_two_context/assessment_passed  = 'yes'" required="true()" type="select1"/>
+      <bind nodeset="/cha_module_two_context/summary/feedback" relevant=" /cha_module_two_context/assessment_passed  = 'yes'" type="string"/>
+      <bind nodeset="/cha_module_two_context/summary/comments" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/cha_module_two_context/meta/instanceID" readonly="true()" type="string"/>
     </model>
   </h:head>
   <h:body class="pages">
-    <group appearance="field-list" ref="/cha_module_two/inputs">
+    <group appearance="field-list" ref="/cha_module_two_context/inputs">
       <label>Patient</label>
-      <input appearance="hidden" ref="/cha_module_two/inputs/source">
+      <input appearance="hidden" ref="/cha_module_two_context/inputs/source">
         <label>Source</label>
       </input>
-      <input appearance="hidden" ref="/cha_module_two/inputs/source_id">
+      <input appearance="hidden" ref="/cha_module_two_context/inputs/source_id">
         <label>Source ID</label>
       </input>
-      <group ref="/cha_module_two/inputs/user">
+      <group ref="/cha_module_two_context/inputs/user">
         <label>User</label>
       </group>
-      <group ref="/cha_module_two/inputs/contact">
+      <group ref="/cha_module_two_context/inputs/contact">
         <label>Contact</label>
-        <input appearance="hidden" ref="/cha_module_two/inputs/contact/_id">
+        <input appearance="hidden" ref="/cha_module_two_context/inputs/contact/_id">
           <label>_id</label>
         </input>
-        <input appearance="hidden" ref="/cha_module_two/inputs/contact/phone">
+        <input appearance="hidden" ref="/cha_module_two_context/inputs/contact/phone">
           <label>Phone</label>
         </input>
       </group>
     </group>
-    <group appearance="field-list" ref="/cha_module_two/training_intro">
+    <group appearance="field-list" ref="/cha_module_two_context/training_intro">
       <label>COVID-19 Care</label>
-      <input ref="/cha_module_two/training_intro/step_one">
+      <input ref="/cha_module_two_context/training_intro/step_one">
         <label>**Step 1:**
 
 Open Oppia Mobile to read the course content. Once complete, please return to this task for Step 2.</label>
       </input>
-      <input ref="/cha_module_two/training_intro/introduction">
+      <input ref="/cha_module_two_context/training_intro/introduction">
         <label>This second module, **COVID Care**, explains the role of a Community Health Worker in recognizing and managing COVID-19: and educating others on how to care for a patient with COVID-19.</label>
       </input>
-      <input ref="/cha_module_two/training_intro/open_oppia_button">
+      <input ref="/cha_module_two_context/training_intro/open_oppia_button">
         <label>[&lt;span style='background-color: #648af7; color:white; padding: 1em; text-decoration: none;border-radius: 8px; '&gt;Open Oppia Mobile&lt;/span&gt;](https://staging.cha.oppia-mobile.org/view?course=cht-demo)</label>
       </input>
-      <input ref="/cha_module_two/training_intro/step_two">
+      <input ref="/cha_module_two_context/training_intro/step_two">
         <label>**Step 2:**
 
 Complete a short assessment on the course material.</label>
       </input>
     </group>
-    <group appearance="field-list" ref="/cha_module_two/learning_quiz">
+    <group appearance="field-list" ref="/cha_module_two_context/learning_quiz">
       <label>Assessment</label>
-      <input ref="/cha_module_two/learning_quiz/assessment_note">
+      <input ref="/cha_module_two_context/learning_quiz/assessment_note">
         <label>We would like to ask you a few questions to understand your knowledge on COVID-19 with regards to this module:</label>
       </input>
-      <select1 ref="/cha_module_two/learning_quiz/next_steps_q">
+      <select1 ref="/cha_module_two_context/learning_quiz/next_steps_q">
         <label>1. A patient has fast breathing, difficulty speaking and bluish lips, or has a fever, is confused and cannot stay awake. What should you do next?</label>
         <item>
           <label>Tell patient to stay at home and lie down</label>
@@ -163,7 +163,7 @@ Complete a short assessment on the course material.</label>
           <value>refer</value>
         </item>
       </select1>
-      <select1 ref="/cha_module_two/learning_quiz/parts_to_cover_q">
+      <select1 ref="/cha_module_two_context/learning_quiz/parts_to_cover_q">
         <label>2. When caring for a suspected COVID-19 patient, what are the two most important parts of your body to cover?</label>
         <item>
           <label>Nose and mouth</label>
@@ -182,7 +182,7 @@ Complete a short assessment on the course material.</label>
           <value>hands_hair</value>
         </item>
       </select1>
-      <select1 ref="/cha_module_two/learning_quiz/same_room_q">
+      <select1 ref="/cha_module_two_context/learning_quiz/same_room_q">
         <label>3. What should you always do immediately after being in the same room as a COVID-19 patient?</label>
         <item>
           <label>Take your temperature</label>
@@ -202,32 +202,32 @@ Complete a short assessment on the course material.</label>
         </item>
       </select1>
     </group>
-    <group appearance="field-list summary" ref="/cha_module_two/summary">
+    <group appearance="field-list summary" ref="/cha_module_two_context/summary">
       <label></label>
-      <input ref="/cha_module_two/summary/submit">
+      <input ref="/cha_module_two_context/summary/submit">
         <label>&lt;h4 style="text-align:center;"&gt;Be sure you Submit to complete this action.&lt;/h4&gt;</label>
       </input>
-      <input appearance="h1 green" ref="/cha_module_two/summary/result">
+      <input appearance="h1 green" ref="/cha_module_two_context/summary/result">
         <label>Thank you</label>
       </input>
-      <input ref="/cha_module_two/summary/thank_you_note">
-        <label>Good start, but you only answered <output value=" /cha_module_two/assessment_score "/>** out of the 3 questions correctly.
+      <input ref="/cha_module_two_context/summary/thank_you_note">
+        <label>Good start, but you only answered <output value=" /cha_module_two_context/assessment_score "/>** out of the 3 questions correctly.
 This task will not be completed until all the questions are answered correctly.</label>
       </input>
-      <input ref="/cha_module_two/summary/generated_note_name_35">
+      <input ref="/cha_module_two_context/summary/generated_note_name_35">
         <label>**Do you need additional support on this topic?**</label>
         <hint>Optional</hint>
       </input>
-      <input ref="/cha_module_two/summary/success_note">
+      <input ref="/cha_module_two_context/summary/success_note">
         <label>Great Job! You've completed Module 2: COVID Care! You can revisit this content at any time in your Oppia app.</label>
       </input>
-      <input ref="/cha_module_two/summary/confidence_level">
+      <input ref="/cha_module_two_context/summary/confidence_level">
         <label>**The following questions are designed to understand your confidence to perform the tasks taught in this lesson.**</label>
       </input>
-      <input ref="/cha_module_two/summary/gauge_mastery">
+      <input ref="/cha_module_two_context/summary/gauge_mastery">
         <label>**Following this training, what is your level of confidence that you can effectively perform the following tasks related to COVID-19?**</label>
       </input>
-      <select1 ref="/cha_module_two/summary/transmission_confidence">
+      <select1 ref="/cha_module_two_context/summary/transmission_confidence">
         <label>1. Recognizing and managing COVID-19 cases</label>
         <item>
           <label>Not confident at all</label>
@@ -246,7 +246,7 @@ This task will not be completed until all the questions are answered correctly.<
           <value>very</value>
         </item>
       </select1>
-      <select1 ref="/cha_module_two/summary/preventive_measures_confidence">
+      <select1 ref="/cha_module_two_context/summary/preventive_measures_confidence">
         <label>2. Caring for the sick</label>
         <item>
           <label>Not confident at all</label>
@@ -265,11 +265,11 @@ This task will not be completed until all the questions are answered correctly.<
           <value>very</value>
         </item>
       </select1>
-      <input ref="/cha_module_two/summary/feedback">
+      <input ref="/cha_module_two_context/summary/feedback">
         <label>Do you have any other questions or feedback on this topic? (Optional)</label>
         <hint>Optional</hint>
       </input>
-      <input ref="/cha_module_two/summary/comments">
+      <input ref="/cha_module_two_context/summary/comments">
         <label>Write them down here and your supervisor will follow up</label>
       </input>
     </group>

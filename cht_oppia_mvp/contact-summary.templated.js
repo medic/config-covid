@@ -27,9 +27,9 @@ const context = {
   hasLocatorForm: hasReport('locator'),
   hasQuarantineForm: hasReport('quarantine'),
   isCHW: isCHW(),
-  // hasCompletedModuleOne: hasCompletedModuleTraining('cha_module_one'),
-  // hasCompletedModuleTwo: hasCompletedModuleTraining('cha_module_two'),
-  // hasCompletedModuleThree: hasCompletedModuleTraining('cha_module_three'),
+  hasCompletedModuleOne: hasCompletedModuleTraining('cha_module_one'),
+  hasCompletedModuleTwo: hasCompletedModuleTraining('cha_module_two'),
+  hasCompletedModuleThree: hasCompletedModuleTraining('cha_module_three'),
 };
 
 const fields = [

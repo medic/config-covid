@@ -1,0 +1,348 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Introduction To COVID-19</h:title>
+    <model>
+      <instance>
+        <cha_module_one_context delimiter="#" id="cha_module_one_context" prefix="J1!cha_module_one_context!" version="2020-10-02 15:10:03">
+          <inputs>
+            <meta>
+              <location>
+                <lat/>
+                <long/>
+                <error/>
+                <message/>
+              </location>
+            </meta>
+            <source/>
+            <source_id/>
+            <user/>
+            <contact>
+              <_id/>
+              <phone/>
+            </contact>
+          </inputs>
+          <patient_id/>
+          <patient_phone/>
+          <training_intro>
+            <step_one/>
+            <introduction/>
+            <open_oppia_button/>
+            <step_two/>
+          </training_intro>
+          <learning_quiz>
+            <transmission_q/>
+            <transmission_score/>
+            <asymptomatic_spread_q/>
+            <asymptomatic_spread_score/>
+            <prevention_measures_q/>
+            <prevention_measures_score/>
+            <hand_washing_q/>
+            <hand_washing_score/>
+            <hand_washing_duration_q/>
+            <hand_washing_duration_score/>
+            <sneeze_cough_q/>
+            <sneeze_cough_score/>
+            <household_q/>
+            <household_score/>
+            <social_distancing_q/>
+            <social_distancing_score/>
+          </learning_quiz>
+          <assessment_score/>
+          <assessment_passed/>
+          <summary>
+            <submit/>
+            <result/>
+            <thank_you_note/>
+            <generated_note_name_44/>
+            <success_note/>
+            <confidence_level/>
+            <gauge_mastery/>
+            <transmission_confidence/>
+            <preventive_measures_confidence/>
+            <feedback/>
+            <comments/>
+          </summary>
+          <meta tag="hidden">
+            <instanceID/>
+          </meta>
+        </cha_module_one_context>
+      </instance>
+      <instance id="contact-summary"/>
+      <bind nodeset="/cha_module_one_context/inputs" relevant="./source = 'user'"/>
+      <bind nodeset="/cha_module_one_context/inputs/source" type="string"/>
+      <bind nodeset="/cha_module_one_context/inputs/source_id" type="string"/>
+      <bind nodeset="/cha_module_one_context/inputs/contact/_id" type="db:person"/>
+      <bind nodeset="/cha_module_one_context/inputs/contact/phone" type="string"/>
+      <bind calculate="../inputs/contact/_id" nodeset="/cha_module_one_context/patient_id" type="string"/>
+      <bind calculate="../inputs/contact/phone" nodeset="/cha_module_one_context/patient_phone" type="string"/>
+      <bind nodeset="/cha_module_one_context/training_intro/step_one" readonly="true()" type="string"/>
+      <bind nodeset="/cha_module_one_context/training_intro/introduction" readonly="true()" type="string"/>
+      <bind nodeset="/cha_module_one_context/training_intro/open_oppia_button" readonly="true()" type="string"/>
+      <bind nodeset="/cha_module_one_context/training_intro/step_two" readonly="true()" type="string"/>
+      <bind nodeset="/cha_module_one_context/learning_quiz/transmission_q" required="true()" type="select1"/>
+      <bind calculate="if(selected( /cha_module_one_context/learning_quiz/transmission_q ,'respiratory_droplets'), 1, 0)" nodeset="/cha_module_one_context/learning_quiz/transmission_score" type="string"/>
+      <bind nodeset="/cha_module_one_context/learning_quiz/asymptomatic_spread_q" required="true()" type="select1"/>
+      <bind calculate="if(selected( /cha_module_one_context/learning_quiz/asymptomatic_spread_q ,'true'), 1, 0)" nodeset="/cha_module_one_context/learning_quiz/asymptomatic_spread_score" type="string"/>
+      <bind nodeset="/cha_module_one_context/learning_quiz/prevention_measures_q" required="true()" type="select"/>
+      <bind calculate="if(selected( /cha_module_one_context/learning_quiz/prevention_measures_q ,'hand_cleaning') and selected( /cha_module_one_context/learning_quiz/prevention_measures_q ,'avoid_touching_face') and selected( /cha_module_one_context/learning_quiz/prevention_measures_q ,'avoid_overcrowded_places') and selected( /cha_module_one_context/learning_quiz/prevention_measures_q ,'physical_distance') and not(selected( /cha_module_one_context/learning_quiz/prevention_measures_q ,'sun_exposure') or selected( /cha_module_one_context/learning_quiz/prevention_measures_q ,'hot_water')), 1, 0)" nodeset="/cha_module_one_context/learning_quiz/prevention_measures_score" type="string"/>
+      <bind nodeset="/cha_module_one_context/learning_quiz/hand_washing_q" required="true()" type="select1"/>
+      <bind calculate="if(selected( /cha_module_one_context/learning_quiz/hand_washing_q ,'soap_hand_sanitizer'), 1, 0)" nodeset="/cha_module_one_context/learning_quiz/hand_washing_score" type="string"/>
+      <bind nodeset="/cha_module_one_context/learning_quiz/hand_washing_duration_q" required="true()" type="select1"/>
+      <bind calculate="if(selected( /cha_module_one_context/learning_quiz/hand_washing_duration_q ,'20_seconds'), 1, 0)" nodeset="/cha_module_one_context/learning_quiz/hand_washing_duration_score" type="string"/>
+      <bind nodeset="/cha_module_one_context/learning_quiz/sneeze_cough_q" required="true()" type="select1"/>
+      <bind calculate="if(selected( /cha_module_one_context/learning_quiz/sneeze_cough_q ,'elbow_or_tissue'), 1, 0)" nodeset="/cha_module_one_context/learning_quiz/sneeze_cough_score" type="string"/>
+      <bind nodeset="/cha_module_one_context/learning_quiz/household_q" required="true()" type="select1"/>
+      <bind calculate="if(selected( /cha_module_one_context/learning_quiz/household_q ,'a_disinfectant'), 1, 0)" nodeset="/cha_module_one_context/learning_quiz/household_score" type="string"/>
+      <bind nodeset="/cha_module_one_context/learning_quiz/social_distancing_q" required="true()" type="select1"/>
+      <bind calculate="if(selected( /cha_module_one_context/learning_quiz/social_distancing_q ,'at_least_2_metres'), 1, 0)" nodeset="/cha_module_one_context/learning_quiz/social_distancing_score" type="string"/>
+      <bind calculate="int( /cha_module_one_context/learning_quiz/social_distancing_score ) + int( /cha_module_one_context/learning_quiz/hand_washing_duration_score ) + int( /cha_module_one_context/learning_quiz/hand_washing_score ) + int( /cha_module_one_context/learning_quiz/prevention_measures_score ) + int( /cha_module_one_context/learning_quiz/asymptomatic_spread_score ) + int( /cha_module_one_context/learning_quiz/transmission_score ) + int( /cha_module_one_context/learning_quiz/household_score ) + int( /cha_module_one_context/learning_quiz/sneeze_cough_score )" nodeset="/cha_module_one_context/assessment_score" type="string"/>
+      <bind calculate="if( /cha_module_one_context/assessment_score  = 8, 'yes', 'no')" nodeset="/cha_module_one_context/assessment_passed" type="string"/>
+      <bind nodeset="/cha_module_one_context/summary/submit" readonly="true()" type="string"/>
+      <bind nodeset="/cha_module_one_context/summary/result" readonly="true()" type="string"/>
+      <bind nodeset="/cha_module_one_context/summary/thank_you_note" readonly="true()" relevant=" /cha_module_one_context/assessment_passed  = 'no'" required="true()" type="string"/>
+      <bind nodeset="/cha_module_one_context/summary/generated_note_name_44" readonly="true()" relevant=" /cha_module_one_context/assessment_passed  = 'no'" type="string"/>
+      <bind nodeset="/cha_module_one_context/summary/success_note" readonly="true()" relevant=" /cha_module_one_context/assessment_passed  = 'yes'" required="true()" type="string"/>
+      <bind nodeset="/cha_module_one_context/summary/confidence_level" readonly="true()" relevant=" /cha_module_one_context/assessment_passed  = 'yes'" required="true()" type="string"/>
+      <bind nodeset="/cha_module_one_context/summary/gauge_mastery" readonly="true()" relevant=" /cha_module_one_context/assessment_passed  = 'yes'" required="true()" type="string"/>
+      <bind nodeset="/cha_module_one_context/summary/transmission_confidence" relevant=" /cha_module_one_context/assessment_passed  = 'yes'" required="true()" type="select1"/>
+      <bind nodeset="/cha_module_one_context/summary/preventive_measures_confidence" relevant=" /cha_module_one_context/assessment_passed  = 'yes'" required="true()" type="select1"/>
+      <bind nodeset="/cha_module_one_context/summary/feedback" readonly="true()" relevant=" /cha_module_one_context/assessment_passed  = 'yes'" required="true()" type="string"/>
+      <bind nodeset="/cha_module_one_context/summary/comments" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/cha_module_one_context/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body class="pages">
+    <group appearance="field-list" ref="/cha_module_one_context/inputs">
+      <label>Patient</label>
+      <input appearance="hidden" ref="/cha_module_one_context/inputs/source">
+        <label>Source</label>
+      </input>
+      <input appearance="hidden" ref="/cha_module_one_context/inputs/source_id">
+        <label>Source ID</label>
+      </input>
+      <group ref="/cha_module_one_context/inputs/user">
+        <label>User</label>
+      </group>
+      <group ref="/cha_module_one_context/inputs/contact">
+        <label>Contact</label>
+        <input appearance="hidden" ref="/cha_module_one_context/inputs/contact/_id">
+          <label>_id</label>
+        </input>
+        <input appearance="hidden" ref="/cha_module_one_context/inputs/contact/phone">
+          <label>Phone</label>
+        </input>
+      </group>
+    </group>
+    <group appearance="field-list" ref="/cha_module_one_context/training_intro">
+      <label>Introduction to COVID-19 course</label>
+      <input ref="/cha_module_one_context/training_intro/step_one">
+        <label>**Step 1:**
+
+Open Oppia Mobile to read the course content. Once complete, please return to this task for Step 2.</label>
+      </input>
+      <input ref="/cha_module_one_context/training_intro/introduction">
+        <label>This first module, **Introduction to COVID-19**, explains what coronavirus disease (COVID-19) is, where it comes from, and how it spreads. You will learn how to reduce the risk of contracting and spreading COVID-19, and review information on how to protect yourself and your community.</label>
+      </input>
+      <input ref="/cha_module_one_context/training_intro/open_oppia_button">
+        <label>[&lt;span style='background-color: #648af7; color:white; padding: 1em; text-decoration: none;border-radius: 8px; '&gt;Open Oppia Mobile&lt;/span&gt;](https://staging.cha.oppia-mobile.org/view?course=cht-demo)</label>
+      </input>
+      <input ref="/cha_module_one_context/training_intro/step_two">
+        <label>**Step 2:**
+
+Complete a short assessment on the course material.</label>
+      </input>
+    </group>
+    <group appearance="field-list" ref="/cha_module_one_context/learning_quiz">
+      <label>Assessment</label>
+      <select1 ref="/cha_module_one_context/learning_quiz/transmission_q">
+        <label>1. How is COVID-19 transmitted?</label>
+        <item>
+          <label>Mosquito bites</label>
+          <value>mosquito</value>
+        </item>
+        <item>
+          <label>Respiratory droplets (for example, from sneezing or coughing) from an infected person</label>
+          <value>respiratory_droplets</value>
+        </item>
+        <item>
+          <label>Rodents</label>
+          <value>rodents</value>
+        </item>
+        <item>
+          <label>It is genetically passed down</label>
+          <value>genetically</value>
+        </item>
+      </select1>
+      <select1 ref="/cha_module_one_context/learning_quiz/asymptomatic_spread_q">
+        <label>2. A person who is infected with COVID-19, but does not have symptoms can pass the virus to another person.</label>
+        <item>
+          <label>True</label>
+          <value>true</value>
+        </item>
+        <item>
+          <label>False</label>
+          <value>false</value>
+        </item>
+      </select1>
+      <select ref="/cha_module_one_context/learning_quiz/prevention_measures_q">
+        <label>3. What COVID-19 prevention measures can be taken by individuals?</label>
+        <hint>Select all that apply</hint>
+        <item>
+          <label>Frequent hand washing with soap and clean water or use of hand sanitizer</label>
+          <value>hand_cleaning</value>
+        </item>
+        <item>
+          <label>Avoid touching face to prevent introduction of the virus</label>
+          <value>avoid_touching_face</value>
+        </item>
+        <item>
+          <label>Avoid overcrowded places</label>
+          <value>avoid_overcrowded_places</value>
+        </item>
+        <item>
+          <label>Increase sun exposure</label>
+          <value>sun_exposure</value>
+        </item>
+        <item>
+          <label>Maintain physical distancing of at least 2 metres</label>
+          <value>physical_distance</value>
+        </item>
+        <item>
+          <label>Drink hot water or other hot liquid</label>
+          <value>hot_water</value>
+        </item>
+      </select>
+      <select1 ref="/cha_module_one_context/learning_quiz/hand_washing_q">
+        <label>4. Which of the following practices can help prevent the spread of COVID-19?</label>
+        <item>
+          <label>Soap and water</label>
+          <value>soap_and_water</value>
+        </item>
+        <item>
+          <label>Hand sanitizer</label>
+          <value>hand_sanitizer</value>
+        </item>
+        <item>
+          <label>Both soap and water OR hand sanitizer</label>
+          <value>soap_hand_sanitizer</value>
+        </item>
+      </select1>
+      <select1 ref="/cha_module_one_context/learning_quiz/hand_washing_duration_q">
+        <label>5. How long should you wash your hands to help prevent the spread of COVID-19?</label>
+        <item>
+          <label>At least 10 seconds</label>
+          <value>10_seconds</value>
+        </item>
+        <item>
+          <label>At least 20 seconds</label>
+          <value>20_seconds</value>
+        </item>
+      </select1>
+      <select1 ref="/cha_module_one_context/learning_quiz/sneeze_cough_q">
+        <label>6. What is the best way to cover your cough?</label>
+        <item>
+          <label>Cough into your elbow or tissue</label>
+          <value>elbow_or_tissue</value>
+        </item>
+        <item>
+          <label>Cough into your hand</label>
+          <value>hand</value>
+        </item>
+      </select1>
+      <select1 ref="/cha_module_one_context/learning_quiz/household_q">
+        <label>7. What should you use to clean surfaces you have touched to help prevent the spread of COVID-19?</label>
+        <item>
+          <label>Water only</label>
+          <value>water_only</value>
+        </item>
+        <item>
+          <label>A disinfectant</label>
+          <value>a_disinfectant</value>
+        </item>
+      </select1>
+      <select1 ref="/cha_module_one_context/learning_quiz/social_distancing_q">
+        <label>8. What is the minimum physical distance needed to prevent the spread of COVID-19?</label>
+        <item>
+          <label>At least 1 meter</label>
+          <value>at_least_1_metre</value>
+        </item>
+        <item>
+          <label>At least 2 meters</label>
+          <value>at_least_2_metres</value>
+        </item>
+      </select1>
+    </group>
+    <group appearance="field-list summary" ref="/cha_module_one_context/summary">
+      <label></label>
+      <input ref="/cha_module_one_context/summary/submit">
+        <label>&lt;h4 style="text-align:center;"&gt;Be sure you Submit to complete this action.&lt;/h4&gt;</label>
+      </input>
+      <input appearance="h1 green" ref="/cha_module_one_context/summary/result">
+        <label>Thank you</label>
+      </input>
+      <input ref="/cha_module_one_context/summary/thank_you_note">
+        <label>Good start, but you only answered **scored <output value=" /cha_module_one_context/assessment_score "/>** out of the 8 questions correctly.
+This task will not be completed until you answer all the questions correctly</label>
+        <hint>Optional</hint>
+      </input>
+      <input ref="/cha_module_one_context/summary/generated_note_name_44">
+        <label>Do you need additional support on this topic?</label>
+      </input>
+      <input ref="/cha_module_one_context/summary/success_note">
+        <label>Great Job! You've completed Module 1: Introduction to COVID-19! You can revisit this content at any time in your Oppia app.</label>
+      </input>
+      <input ref="/cha_module_one_context/summary/confidence_level">
+        <label>**The following questions are designed to understand your confidence to perform the tasks taught in this lesson.**</label>
+      </input>
+      <input ref="/cha_module_one_context/summary/gauge_mastery">
+        <label>**Following this training, what is your level of confidence that you can effectively perform the following tasks related to COVID-19?**</label>
+      </input>
+      <select1 ref="/cha_module_one_context/summary/transmission_confidence">
+        <label>1. Describe how COVID-19 is transmitted</label>
+        <item>
+          <label>Not confident at all</label>
+          <value>no_confidence</value>
+        </item>
+        <item>
+          <label>Not very confident</label>
+          <value>a_little</value>
+        </item>
+        <item>
+          <label>Somewhat confident</label>
+          <value>somewhat</value>
+        </item>
+        <item>
+          <label>Very confident</label>
+          <value>very</value>
+        </item>
+      </select1>
+      <select1 ref="/cha_module_one_context/summary/preventive_measures_confidence">
+        <label>2. Communicate preventative measures people can take to protect themselves from COVID-19</label>
+        <item>
+          <label>Not confident at all</label>
+          <value>no_confidence</value>
+        </item>
+        <item>
+          <label>Not very confident</label>
+          <value>a_little</value>
+        </item>
+        <item>
+          <label>Somewhat confident</label>
+          <value>somewhat</value>
+        </item>
+        <item>
+          <label>Very confident</label>
+          <value>very</value>
+        </item>
+      </select1>
+      <input ref="/cha_module_one_context/summary/feedback">
+        <label>Do you have any other questions or feedback on this topic? (Optional)</label>
+        <hint>Optional</hint>
+      </input>
+      <input ref="/cha_module_one_context/summary/comments">
+        <label>Write them down here and your supervisor will follow up</label>
+      </input>
+    </group>
+  </h:body>
+</h:html>

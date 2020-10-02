@@ -197,7 +197,7 @@ module.exports = [
             pass: false
         }));
       }
-      const validReports = contact.reports.filter(report => report.fields.inputs.source === 'task' && ((report.form === 'cha_module_one' || report.form === 'cha_module_two' || report.form === 'cha_module_three') && report.fields.assessment_passed === 'yes'));
+      const validReports = contact.reports.filter(report => ((assessmentModules.includes(report.form)) && report.fields.assessment_passed === 'yes'));
 
       for (let report of validReports) {
           const instance = Object.assign({}, original, {
