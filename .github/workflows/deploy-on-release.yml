@@ -1,0 +1,61 @@
+name: New release deploys to dev
+
+on: ['deployment']
+
+jobs:
+  deployment:
+    runs-on: ubuntu-18.04
+
+    steps:
+    - name: 'Deployment pending'
+      uses: 'deliverybot/deployment-status@master'
+      with:
+        state: 'pending'
+        token: '${{ github.token }}'
+
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
+      with:
+        node-version: 10.x
+
+    - name: Push "EBS with Tracing" to staging
+      uses: './.github/actions/deploy-with-medic-conf'
+      if: github.event.deployment.environment == 'ebs_with_tracing.staging'
+      with:
+        directory: 'ebs_with_tracing'
+        hostname: cht-covid.dev.medicmobile.org
+        username: ${{ secrets.DEV_USERNAME }}
+        password: ${{ secrets.DEV_PASSWORD }}
+
+    - name: Push "EBS with Tracing" to production
+      run: |
+        echo "ebs production deployment"
+      if: github.event.deployment.environment == 'ebs_with_tracing.production'
+    
+    - name: Push "Educational Modules" to staging
+      uses: './.github/actions/deploy-with-medic-conf'
+      if: github.event.deployment.environment == 'educational_modules.staging'
+      with:
+        directory: 'ebs_with_tracing'
+        hostname: cht-covid.dev.medicmobile.org
+        username: ${{ secrets.DEV_USERNAME }}
+        password: ${{ secrets.DEV_PASSWORD }}
+
+    - name: Push "Educational Modules" to production
+      run: |
+        echo "educational production deployment"
+      if: github.event.deployment.environment == 'educational_modules.production'
+
+    - name: 'Deployment success'
+      if: success()
+      uses: 'deliverybot/deployment-status@master'
+      with:
+        state: 'success'
+        token: '${{ github.token }}'
+
+    - name: 'Deployment failure'
+      if: failure()
+      uses: 'deliverybot/deployment-status@master'
+      with:
+        state: 'failure'
+        token: '${{ github.token }}'

@@ -1,0 +1,20 @@
+ebs_with_tracing.staging:
+  environment: ebs_with_tracing.staging
+  production_environment: false
+  # required_contexts: ["ci"]
+
+ebs_with_tracing.production:
+  environment: ebs_with_tracing.production
+  production_environment: true
+  # required_contexts: ["ci"]
+  
+educational_modules.staging:
+  environment: educational_modules.staging
+  production_environment: false
+  # required_contexts: ["ci"]
+
+educational_modules.production:
+  environment: educational_modules.production
+  production_environment: true
+  # required_contexts: ["ci"]
+  
