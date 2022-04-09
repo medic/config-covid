@@ -30,7 +30,7 @@
   "dependencies": {
     "csv-parse": "^4.8.8",
     "fs": "0.0.1-security",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "path": "^0.12.7",
     "pouchdb": "^7.2.1",
     "underscore": "^1.10.2",
